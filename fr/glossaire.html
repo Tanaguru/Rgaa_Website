@@ -37,11 +37,10 @@
 							<li><a href="#d">D</a></li>
 							<li><a href="#e">E</a></li>
 							<li><a href="#f">F</a></li>
-							<li><a href="#h">H</a></li>
 							<li><a href="#i">I</a></li>
+							<li><a href="#j">J</a></li>
 							<li><a href="#l">L</a></li>
 							<li><a href="#m">M</a></li>
-							<li><a href="#n">N</a></li>
 							<li><a href="#o">O</a></li>
 							<li><a href="#p">P</a></li>
 							<li><a href="#r">R</a></li>
@@ -49,7 +48,7 @@
 							<li><a href="#t">T</a></li>
 							<li><a href="#u">U</a></li>
 							<li><a href="#v">V</a></li>
-							<li><a href="#w">W</a></li>
+							<li><a href="#z">Z</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -59,6 +58,7 @@
 			<div class="page">
 
 				<h2 id="a">A</h2>
+				<p class="skiplink"><span class="goafter"><a href="#b">Lettre&nbsp;B</a></span></p>
 
 				<h3 id="mAccColl">Accéder à chaque page de la collection de pages</h3>
 				<p>Dans le cas où la collection de pages comporte un grand nombre de pages, il est habituel de présenter ces liens d'accès aux pages par groupes de liens, par séquences de 10&nbsp;liens, par&nbsp;exemple. Cette pratique valide le test.</p>
@@ -132,6 +132,10 @@
 
 
 				<h2 id="b">B</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#a">Lettre&nbsp;A</a></li>
+					<li class="goafter"><a href="#c">Lettre&nbsp;C</a></li>
+				</ul>
 
 				<h3 id="mBarreNav">Barre de navigation</h3>
 				<p>Liste de liens permettant une navigation spécifique dans le site, dans une rubrique ou dans une collection de pages. Les principales barres de navigation sont&nbsp;:</p>
@@ -171,97 +175,90 @@
 				</ul>
 
 
-				<h2 id="c">
-				C</h2>
+				<h2 id="c">C</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#b">Lettre&nbsp;B</a></li>
+					<li class="goafter"><a href="#d">Lettre&nbsp;D</a></li>
+				</ul>
 
-				<h3 id="mTitreCadre">
-				Cadre en ligne</h3>
+				<h3 id="mTitreCadre">Cadre en ligne</h3>
 				<p>Élément HTML (balise <code lang="en">iframe</code>) permettant d'afficher un contenu dans la page web dans laquelle il est implémenté.</p>
 
 
-				<h3 id="mcaptcha">
-				CAPTCHA</h3>
+				<h3 id="mcaptcha">CAPTCHA</h3>
 				<p>Un CAPTCHA est un test utilisé pour distinguer un utilisateur humain d'un ordinateur. Le&nbsp;test utilise souvent des images contenant du texte déformé, mélangé avec d'autres formes ou utilisant des jeux de couleur altérées, que l'utilisateur est invité à retaper. D'autres formes de CAPTCHA peuvent être basées sur des questions logiques ou des extraits sonores.</p>
 
 				<h3 id="mChpSaisie">
 				Champ de saisie de formulaire</h3>
 				<p>objet d'un formulaire permettant à l'utilisateur&nbsp;:</p>
 				<ul>
-				<li>de saisir des données textuelles ou préformatées :
-
+					<li>de saisir des données textuelles ou préformatées :
+						<ul>
+							<li><code lang="en">input type="text"</code>&nbsp;;</li>
+							<li><code lang="en">input type="password"</code>&nbsp;;</li>
+							<li><code lang="en">input type="search"</code>&nbsp;;</li>
+							<li><code lang="en">input type="tel"</code>&nbsp;;</li>
+							<li><code lang="en">input type="email"</code>&nbsp;;</li>
+							<li><code lang="en">input type="number"</code>&nbsp;;</li>
+							<li><code lang="en">input type="tel"</code></li>
+							<li><code lang="en">input type="url"</code>&nbsp;;</li>
+							<li><code lang="en">textarea</code>&nbsp;;</li>
+						</ul>
+					</li>
+					<li>de sélectionner des valeurs prédéfinies :
+						<ul>
+							<li><code lang="en">input type="checkbox"</code>&nbsp;;</li>
+							<li><code lang="en">input type="radio"</code>&nbsp;;</li>
+							<li><code lang="en">input type="date"</code>&nbsp;;</li>
+							<li><code lang="en">input type="range"</code>&nbsp;;</li>
+							<li><code lang="en">input type="color"</code>&nbsp;;</li>
+							<li><code lang="en">input type="time"</code>&nbsp;;</li>
+							<li><code lang="en">select</code>&nbsp;;</li>
+							<li><code lang="en">datalist</code>&nbsp;;</li>
+							<li><code lang="en">optgroup</code>&nbsp;;</li>
+							<li><code lang="en">option</code>&nbsp;;</li>
+							<li><code lang="en">keygen</code>&nbsp;;</li>
+						</ul>
+					</li>
+					<li>de télécharger des fichiers :
+						<ul>
+							<li><code lang="en">input type="file"</code>&nbsp;;</li>
+						</ul>
+					</li>
+					<li>ou d'afficher des résultats :
+						<ul>
+							<li><code lang="en">output</code>&nbsp;;</li>
+							<li><code lang="en">progress</code>&nbsp;;</li>
+							<li><code lang="en">meter</code>.</li>
+						</ul>
+					</li>
+				</ul>
+				<p>Les objets de formulaires suivants ne sont pas considérés comme des champs de formulaires&nbsp;:</p>
 				<ul>
-				<li><code lang="en">input type="text"</code>&nbsp;;</li>
-				<li><code lang="en">input type="password"</code>&nbsp;;</li>
-				<li><code lang="en">input type="search"</code>&nbsp;;</li>
-				<li><code lang="en">input type="tel"</code>&nbsp;;</li>
-				<li><code lang="en">input type="email"</code>&nbsp;;</li>
-				<li><code lang="en">input type="number"</code>&nbsp;;</li>
-				<li><code lang="en">input type="tel"</code></li>
-				<li><code lang="en">input type="url"</code>&nbsp;;</li>
-				<li><code lang="en">textarea</code>&nbsp;;</li>
-				</ul>
-</li>
-				<li>de sélectionner des valeurs prédéfinies :
-
-				<ul>
-				<li><code lang="en">input type="checkbox"</code>&nbsp;;</li>
-				<li><code lang="en">input type="radio"</code>&nbsp;;</li>
-				<li><code lang="en">input type="date"</code>&nbsp;;</li>
-				<li><code lang="en">input type="range"</code>&nbsp;;</li>
-				<li><code lang="en">input type="color"</code>&nbsp;;</li>
-				<li><code lang="en">input type="time"</code>&nbsp;;</li>
-				<li><code lang="en">select</code>&nbsp;;</li>
-				<li><code lang="en">datalist</code>&nbsp;;</li>
-				<li><code lang="en">optgroup</code>&nbsp;;</li>
-				<li><code lang="en">option</code>&nbsp;;</li>
-				<li><code lang="en">keygen</code>&nbsp;;</li>
-				</ul>
-</li>
-				<li>de télécharger des fichiers :
-
-				<ul>
-				<li><code lang="en">input type="file"</code>&nbsp;;</li>
-				</ul>
-</li>
-				<li>ou d'afficher des résultats :
-
-				<ul>
-				<li><code lang="en">output</code>&nbsp;;</li>
-				<li><code lang="en">progress</code>&nbsp;;</li>
-				<li><code lang="en">meter</code>.</li>
-				</ul>
-</li>
-				</ul>
-<p>Les objets de formulaires suivants ne sont pas considérés comme des champs de formulaires&nbsp;:</p>
-				<ul>
-				<li><code lang="en">input type="submit"</code>&nbsp;;</li>
-				<li><code lang="en">input type="reset"</code>&nbsp;;</li>
-				<li><code lang="en">input type="hidden"</code>&nbsp;;</li>
-				<li><code lang="en">input type="image"</code>&nbsp;;</li>
-				<li><code lang="en">input type="button"</code>&nbsp;;</li>
-				<li><code lang="en">button</code>.</li>
+					<li><code lang="en">input type="submit"</code>&nbsp;;</li>
+					<li><code lang="en">input type="reset"</code>&nbsp;;</li>
+					<li><code lang="en">input type="hidden"</code>&nbsp;;</li>
+					<li><code lang="en">input type="image"</code>&nbsp;;</li>
+					<li><code lang="en">input type="button"</code>&nbsp;;</li>
+					<li><code lang="en">button</code>.</li>
 				</ul>
 
-
-				<h3 id="mChangeLumi">
-				Changement brusque de luminosité ou effets de flash</h3>
+				<h3 id="mChangeLumi">Changement brusque de luminosité ou effets de flash</h3>
 				<p>Alternance de luminosité relative qui peut causer des crises chez certaines personnes si leur taille est suffisamment importante dans une gamme de fréquences spécifiques.</p>
 
-				<h3 id="mChangeLumi">
-				Changement de contexte</h3>
+				<h3 id="mChangeLumi">Changement de contexte</h3>
 				<p>Changements majeurs dans le&nbsp;contenu d'une page web qui, s'ils sont faits sans que l'utilisateur n'en soit conscient, peuvent désorienter l'utilisateur qui ne peut voir l'ensemble de la page en même temps. Les changements de contexte comprennent les changements&nbsp;:</p>
-
 				<ol>
-				<li>d'agent utilisateur&nbsp;;</li>
-				<li>d'espace de restitution&nbsp;;</li>
-				<li>de focus&nbsp;;</li>
-				<li>de contenu qui modifie la signification de la page web&nbsp;;</li>
-				</ol><p><strong>Note</strong>&nbsp;: Un changement de contenu n'est pas toujours un changement de contexte. Un changement dans le&nbsp;contenu comme le déploiement d'une arborescence, un menu dynamique ou un déplacement de tabulation ne change pas nécessairement le contexte à moins qu'il ne change aussi l'un des éléments énumérés ci-dessus (le&nbsp;focus, par&nbsp;exemple).</p>
+					<li>d'agent utilisateur&nbsp;;</li>
+					<li>d'espace de restitution&nbsp;;</li>
+					<li>de focus&nbsp;;</li>
+					<li>de contenu qui modifie la signification de la page web&nbsp;;</li>
+				</ol>
+				<p><strong>Note</strong>&nbsp;: Un changement de contenu n'est pas toujours un changement de contexte. Un changement dans le&nbsp;contenu comme le déploiement d'une arborescence, un menu dynamique ou un déplacement de tabulation ne change pas nécessairement le contexte à moins qu'il ne change aussi l'un des éléments énumérés ci-dessus (le&nbsp;focus, par&nbsp;exemple).</p>
 				<p><strong>Exemple</strong> : l'ouverture d'une nouvelle fenêtre, le déplacement du focus sur un composant différent, le déplacement vers une nouvelle page (y compris tout ce qui, pour l'utilisateur, aurait l'air d'un déplacement vers une autre page) ou la réorganisation significative du contenu d'une page sont autant d'exemples d'un changement de contexte.</p>
 
 
-				<h3 id="mLanguageChange">
-				Changement de langue</h3>
+				<h3 id="mLanguageChange">Changement de langue</h3>
 				<p>L'indication des changements de langue est nécessaire pour indiquer aux technologies d'assistance de modifier la restitution vocale d'un élément. Les changement de langue concernent tous les contenus, y compris les valeurs de certains attributs comme <code lang="en">title</code>.</p>
 				<p><strong>Note&nbsp;:</strong> il n'est pas possible d'indiquer des changements de langue dans une valeur d'attribut elle-même, dans ce cas le changement de langue est indiqué sur l'élément qui contient l'attribut. Par&nbsp;exemple un lien affecté d'un <code lang="en">title</code> en anglais devra comporter un attribut <code lang="en">lang="en"</code>. Lorsque l'attribut contient plusieurs passage de texte dans des langues différentes, le critère est non applicable.</p>
 
@@ -275,29 +272,23 @@
 				</ul>
 <p>Lorsqu'un code de pays est utilisé comme option, il peut servir à indiquer une régionalisation de la langue, l'indication "en-us" indique la langue américaine, par&nbsp;exemple. L'indication du code de langue ne concerne que la partie [code] avant le tiret.</p>
 
-				<h3 id="mCodeValide">
-				Code valide</h3>
-
-
+				<h3 id="mCodeValide">Code valide</h3>
 				<ul>
-				<li>Cas d'une page HTML : code dans lequel l'implémentation des balises et des attributs respecte les spécifications du type de document déclaré.
-
-				<ul>
-				<li><strong>Note 1</strong> : Sauf indication contraire, les attributs non répertoriés par les spécifications sont non applicables.</li>
-				<li><strong>Note 2</strong> : Sauf indication contraire, les balises non répertoriées par les spécifications sont non applicables.</li>
-				<li><strong>Note 3</strong> : La <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/xhtml1/#C_3">règle C3 de la spécification XHTML («&nbsp;Minimisation d'élément et contenu d'élément vide&nbsp;», en anglais)</a> stipule que l'utilisation d'éléments minimisés (<code lang="en">&lt;elm /&gt;</code>) pour des éléments vides (par&nbsp;exemple <code lang="en">&lt;p /&gt;</code> à la place de <code lang="en">&lt;p&gt;&lt;/p&gt;</code>) est déconseillée. Cette pratique constitue une non-conformité dans le cadre de RGAA.</li>
-				</ul>
-</li>
-				<li>Cas d'une page implémentant WAI-ARIA : code dans lequel l'implémentation des balises et des attributs respecte les spécifications du type de document déclaré et dans lequel l'implémentation WAI ARIA est conforme à la spécification WAI-ARIA.</li>
+					<li>Cas d'une page HTML : code dans lequel l'implémentation des balises et des attributs respecte les spécifications du type de document déclaré.
+						<ul>
+							<li><strong>Note 1</strong> : Sauf indication contraire, les attributs non répertoriés par les spécifications sont non applicables.</li>
+							<li><strong>Note 2</strong> : Sauf indication contraire, les balises non répertoriées par les spécifications sont non applicables.</li>
+							<li><strong>Note 3</strong> : La <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/xhtml1/#C_3">règle C3 de la spécification XHTML («&nbsp;Minimisation d'élément et contenu d'élément vide&nbsp;», en anglais)</a> stipule que l'utilisation d'éléments minimisés (<code lang="en">&lt;elm /&gt;</code>) pour des éléments vides (par&nbsp;exemple <code lang="en">&lt;p /&gt;</code> à la place de <code lang="en">&lt;p&gt;&lt;/p&gt;</code>) est déconseillée. Cette pratique constitue une non-conformité dans le cadre de RGAA.</li>
+						</ul>
+					</li>
+					<li>Cas d'une page implémentant WAI-ARIA : code dans lequel l'implémentation des balises et des attributs respecte les spécifications du type de document déclaré et dans lequel l'implémentation WAI ARIA est conforme à la spécification WAI-ARIA.</li>
 				</ul>
 
-				<h3 id="mCollecPage">
-				Collection de pages</h3>
+				<h3 id="mCollecPage">Collection de pages</h3>
 				<p>Pages reliées les unes aux autres par des liens et ayant un thème ou une nature commune. Par&nbsp;exemple, les pages de résultats d'un moteur de recherche ou les pages d'un catalogue (pour une même recherche) sont des collections de pages.</p>
 
 
-				<h3 id="mCorrectlyRendered">
-				Compatible avec les technologies d'assistance</h3>
+				<h3 id="mCorrectlyRendered">Compatible avec les technologies d'assistance</h3>
 				<p>Un contenu ou une fonctionnalité doit être compatible avec les technologies d'assistance des utilisateurs ainsi qu'avec les fonctions d'accessibilité des navigateurs et des autres agents utilisateurs via une API d'accessibilité.</p>
 				<p>Cela concerne, à la fois, la technologie, ses fonctionnalités et ses usages&nbsp;:</p>
 				<ul>
@@ -402,9 +393,12 @@
 				<p><strong>Note importante</strong> : lorsqu'une page est renvoyée avec des erreurs de saisie le titre de la page doit comporter la mention «&nbsp;<strong>erreur sur le formulaire</strong>&nbsp;».</p>
 
 
+				<h2 id="d">D</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#c">Lettre&nbsp;C</a></li>
+					<li class="goafter"><a href="#e">Lettre&nbsp;E</a></li>
+				</ul>
 
-				<h2 id="d">
-				D</h2>
 				<h3 id="mDescDetaillee">
 				Description détaillée (image)</h3>
 				<p>Contenu associé à une image en complément de son alternative textuelle afin de décrire en totalité l'information véhiculée par l'image. La description détaillée peut être insérée via&nbsp;:</p>
@@ -415,14 +409,16 @@
 				</ul>
 
 
-				<h2 id="e">
-				E</h2>
-				<h3 id="mCelluleTab">
-				En-tête de colonne ou de ligne</h3>
+				<h2 id="e">E</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#d">Lettre&nbsp;D</a></li>
+					<li class="goafter"><a href="#f">Lettre&nbsp;F</a></li>
+				</ul>
+
+				<h3 id="mCelluleTab">En-tête de colonne ou de ligne</h3>
 				<p>Contenu d'une cellule dans un tableau de données (la première cellule d'une colonne ou d'une ligne, généralement) qui sert d'intitulé pour la totalité ou une partie des cellules de la colonne ou de la ligne. Une colonne ou une ligne peut contenir plusieurs en-têtes (en-tête intermédiaire). Les en-têtes doivent utiliser une balise <code lang="en">th</code>.</p>
 
-				<h3 id="mEnsemblePages">
-				Ensemble de pages</h3>
+				<h3 id="mEnsemblePages">Ensemble de pages</h3>
 				<p>Pages web liées les unes aux autres par des liens et constituant un ensemble cohérent à l'intérieur d'un site web. Par&nbsp;exemple, les pages d'un processus de paiement électronique, les pages d'une rubrique spécifique, les pages d'un blog, les pages d'administration d'un compte client sont autant d'ensembles de page.</p>
 				<p><strong>Note</strong>&nbsp;: la page d'accueil d'un site web peut constituer, à elle seule, un «&nbsp;ensemble de pages&nbsp;» du fait de son unicité.</p>
 
@@ -442,6 +438,10 @@
 				<p>Texte à proximité du champ de formulaire permettant d'en connaître la nature, le type ou le format des informations attendues. L'étiquette peut être associée au champ de formulaire de plusieurs manières : par l'utilisation d'une balise <code lang="en">label</code>, l'utilisation de la propriété WAI-ARIA <code lang="en">aria-label</code>, l'utilisation d'une liaison entre le texte et le champ par la propriété WAI-ARIA <code lang="en">aria-labelledby</code>, l'utilisation de l'attribut <code lang="en">title</code>.</p>
 
 				<h2 id="f">F</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#e">Lettre&nbsp;E</a></li>
+					<li class="goafter"><a href="#i">Lettre&nbsp;I</a></li>
+				</ul>
 
 				<h3 id="mFeuilleStyle">
 				Feuille de style</h3>
@@ -459,9 +459,12 @@
 <p><strong>Note</strong>&nbsp;: s'il n'y a pas de son à un objet multimédia, il n'est pas utile de mettre une fonctionnalité de contrôle du volume. Si cette fonctionnalité est cependant présente et qu'elle nécessite une alternative textuelle pour être comprise par certains utilisateurs (exemple&nbsp;: bouton «&nbsp;volume&nbsp;» dans une vidéo en Flash), il faut alors lui en donner une puisque l'utilisateur est susceptible d'y accéder et de vouloir l'activer.</p>
 
 				<h2 id="i">I</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#F">Lettre&nbsp;F</a></li>
+					<li class="goafter"><a href="#j">Lettre&nbsp;J</a></li>
+				</ul>
 
-				<h3 id="mImgDeco">
-				Image de décoration</h3>
+				<h3 id="mImgDeco">Image de décoration</h3>
 				<p>image n'ayant aucune fonction et ne véhiculant aucune information particulière par rapport au contenu auquel elle est associée. Exemples&nbsp;:</p>
 				<ul>
 					<li>une image servant à caler la mise en page&nbsp;;</li>
@@ -469,12 +472,10 @@
 					<li>une image d'illustration n'apportant aucune information nécessaire à la compréhension du texte auquel elle est associée.</li>
 				</ul>
 
-				<h3 id="mImgObj">
-				Image objet</h3>
+				<h3 id="mImgObj">Image objet</h3>
 				<p>Image incorporée ou générée par une balise <code lang="en">object</code>.</p>
 
-				<h3 id="mImgInfo">
-				Image porteuse d'information</h3>
+				<h3 id="mImgInfo">Image porteuse d'information</h3>
 				<p>Image qui véhicule une information nécessaire à la compréhension du contenu auquel elle est associée.</p>
 
 
@@ -500,15 +501,14 @@
 				<p>Image servant dans un test, Captcha ou une image servant de test dans un quiz ou un jeu. Exemple&nbsp;: une série d'images présente un détail issu de tableaux célèbres; il faut reconnaître le titre et le peintre de chaque tableau. Dans cette situation, il n'est pas possible de donner une alternative pertinente (e.g le nom du tableau et/ou du peintre) sans rendre le test inutilisable. L'alternative doit alors se contenter de donner la possibilité d'identifier l'image, par&nbsp;exemple «&nbsp;image 1 du test&nbsp;».</p>
 
 
-				<h3 id="mInfoShape">
-				Indication donnée par la forme, la taille ou la position</h3>
+				<h3 id="mInfoShape">Indication donnée par la forme, la taille ou la position</h3>
 				<p>Il peut s'agir, par&nbsp;exemple&nbsp;:</p>
 				<ul>
-				<li>de la présence d'un marqueur visuel, pour indiquer la page active dans un menu de navigation, (indication donnée par la position)&nbsp;;</li>
-				<li>d'une mise en avant-plan pour indiquer un onglet actif (indication donnée par la forme)&nbsp;;</li>
-				<li>d'une modification de la taille de police dans un nuage de tags (indication donnée par la taille).</li>
+					<li>de la présence d'un marqueur visuel, pour indiquer la page active dans un menu de navigation, (indication donnée par la position)&nbsp;;</li>
+					<li>d'une mise en avant-plan pour indiquer un onglet actif (indication donnée par la forme)&nbsp;;</li>
+					<li>d'une modification de la taille de police dans un nuage de tags (indication donnée par la taille).</li>
 				</ul>
-<p>Ou tout autre effet graphique similaire.</p>
+				<p>Ou tout autre effet graphique similaire.</p>
 
 				<h3 id="mInfoCouleur">
 				Information (donnée par la couleur)</h3>
@@ -521,18 +521,21 @@
 				<p>Information textuelle comprise entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> d'un lien complété si&nbsp;nécessaire d'informations de contexte.</p>
 				<p>Les 4 différents types de liens sont&nbsp;:</p>
 				<ul>
-				<li>lien texte : il s'agit du texte compris entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte&nbsp;;</li>
-				<li>lien image : il s'agit du contenu de l'alternative textuelle de l'image comprise entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte&nbsp;;</li>
-				<li>lien composite : il s'agit de l'ensemble du texte et du contenu de l'alternative textuelle de la ou des images compris entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte&nbsp;;</li>
-				<li>lien vectoriel : il s'agit du contenu de l'alternative textuelle de l'image vectorielle (balise <code lang="en">svg</code> comprise entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte.</li>
+					<li>lien texte : il s'agit du texte compris entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte&nbsp;;</li>
+					<li>lien image : il s'agit du contenu de l'alternative textuelle de l'image comprise entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte&nbsp;;</li>
+					<li>lien composite : il s'agit de l'ensemble du texte et du contenu de l'alternative textuelle de la ou des images compris entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte&nbsp;;</li>
+					<li>lien vectoriel : il s'agit du contenu de l'alternative textuelle de l'image vectorielle (balise <code lang="en">svg</code> comprise entre <code lang="en">&lt;a href="…"&gt;</code> et <code lang="en">&lt;/a&gt;</code> complété si&nbsp;nécessaire d'informations de contexte.</li>
 				</ul>
-<p><strong>Note 1 :</strong> un lien image peut être constitué d'une image (balise <code lang="en">img</code>), d'une image objet (balise <code lang="en">object</code>) ou d'une image bitmap (balise <code lang="en">canvas</code>).</p>
+				<p><strong>Note 1 :</strong> un lien image peut être constitué d'une image (balise <code lang="en">img</code>), d'une image objet (balise <code lang="en">object</code>) ou d'une image bitmap (balise <code lang="en">canvas</code>).</p>
 				<p><strong>Note 2 :</strong> Un lien image pour lequel l'attribut <code lang="en">alt</code> est absent est considéré comme non applicable pour le critère 6.5.</p>
 
 
 
-				<h2 id="j">
-				J</h2>
+				<h2 id="j">J</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#i">Lettre&nbsp;I</a></li>
+					<li class="goafter"><a href="#l">Lettre&nbsp;L</a></li>
+				</ul>
 
 				<h3 id="mFontSize">
 				Jusqu'à ou à partir de 150&nbsp;% (1.5em) de la taille de police par défaut sans effet de graisse. Jusqu'à ou à partir de 120&nbsp;% (1.2em) de la taille de police par défaut en gras</h3>
@@ -542,18 +545,20 @@
 				<p>La taille de police par défaut est la taille définie par l'auteur pour le document ou, en son absence, la taille par défaut utilisée par l'agent utilisateur (<abbr title="id est" lang="la" xml:lang="la">ie</abbr> le navigateur).</p>
 
 
+				<h2 id="l">L</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#j">Lettre&nbsp;J</a></li>
+					<li class="goafter"><a href="#m">Lettre&nbsp;M</a></li>
+				</ul>
 
-				<h2 id="l">
-				L</h2>
-				<h3 id="mLangueDefaut">
-				Langue par défaut</h3>
+				<h3 id="mLangueDefaut">Langue par défaut</h3>
 				<p>indication de la langue de traitement principale du document qui peut être présente sur l'élément racine <code lang="en">html</code> ou sur chaque élément de la page concerné via les attributs <code lang="en">lang</code> et/ou <code lang="en">xml:lang</code> selon le schéma suivant&nbsp;:</p>
 				<ul>
-				<li>pour HTML jusqu'à la version 4.01 : attribut <code lang="en">lang</code> obligatoire, attribut <code lang="en">xml:lang</code> non supporté</li>
-				<li>pour XHTML 1.0 servi en <code lang="en">"text/html"</code> : attribut <code lang="en">lang</code> et <code lang="en">xml:lang</code> obligatoires</li>
-				<li>pour XHTML 1.0 servi en <code lang="en">"application/xhtml+xml"</code> : attribut <code lang="en">xml:lang</code> obligatoire, attribut <code lang="en">lang</code> recommandé</li>
-				<li>pour XHTML 1.1 : attribut <code lang="en">xml:lang</code> obligatoire, attribut <code lang="en">lang</code> non supporté</li>
-				<li>pour HTML5 : attribut <code lang="en">lang</code> obligatoire</li>
+					<li>pour HTML jusqu'à la version 4.01 : attribut <code lang="en">lang</code> obligatoire, attribut <code lang="en">xml:lang</code> non supporté</li>
+					<li>pour XHTML 1.0 servi en <code lang="en">"text/html"</code> : attribut <code lang="en">lang</code> et <code lang="en">xml:lang</code> obligatoires</li>
+					<li>pour XHTML 1.0 servi en <code lang="en">"application/xhtml+xml"</code> : attribut <code lang="en">xml:lang</code> obligatoire, attribut <code lang="en">lang</code> recommandé</li>
+					<li>pour XHTML 1.1 : attribut <code lang="en">xml:lang</code> obligatoire, attribut <code lang="en">lang</code> non supporté</li>
+					<li>pour HTML5 : attribut <code lang="en">lang</code> obligatoire</li>
 				</ul>
 
 				<h3 id="mNameRole">
@@ -644,8 +649,11 @@
 				</ul>
 
 
-				<h2 id="m">
-				M</h2>
+				<h2 id="m">M</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#l">Lettre&nbsp;L</a></li>
+					<li class="goafter"><a href="#o">Lettre&nbsp;O</a></li>
+				</ul>
 
 				<h3 id="mMecaRempl">
 				Mécanisme de remplacement</h3>
@@ -712,19 +720,26 @@
 				<li>respecter la structure générale, par&nbsp;exemple un ensemble de panneaux (rôle <code lang="en">tabpanel</code>) d'un système d'onglets est forcément lié à un ensemble d'onglets (rôle <code lang="en">tablist</code>)&nbsp;;</li>
 				<li>utiliser en remplacement d'un role ou d'une propriété WAI-ARIA mal supporté, un rôle ou une propriété WAI-ARIA équivalent, offrant un comportement et une restitution similaire.</li>
 				</ul>
-<p><strong>Note 2:</strong> Cela ne concerne pas le fait d'enrichir un motif de conception de rôles ou propriétés WAI-ARIA supplémentaires dont la compatibilité avec l'accessibilité est contrôlée par le test de restitution sur la base de référence. Par&nbsp;exemple l'ajout de la propriété <code lang="en">aria-hidden</code> sur les panneaux (rôle <code lang="en">tabpanel</code>) d'un système d'onglets ne définit pas un motif de conception adapté.</p>
-
+				<p><strong>Note 2:</strong> Cela ne concerne pas le fait d'enrichir un motif de conception de rôles ou propriétés WAI-ARIA supplémentaires dont la compatibilité avec l'accessibilité est contrôlée par le test de restitution sur la base de référence. Par&nbsp;exemple l'ajout de la propriété <code lang="en">aria-hidden</code> sur les panneaux (rôle <code lang="en">tabpanel</code>) d'un système d'onglets ne définit pas un motif de conception adapté.</p>
 
 
 				<h2 id="o">O</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#m">Lettre&nbsp;M</a></li>
+					<li class="goafter"><a href="#p">Lettre&nbsp;P</a></li>
+				</ul>
 
 				<h3 id="mOrdTab">Ordre de tabulation</h3>
 				<p>Ordre dans lequel le&nbsp;focus se déplace (vers un élément suivant ou vers un élément précédent). L'ordre naturel est celui qui est implémenté via le code source. Lorsqu'il est modifié par l'utilisation de l'attribut <code lang="en">tabindex</code> ou par l'utilisation d'une commande JavaScript, c'est l'ordre modifié qui fait référence.</p>
 				<p><strong>Attention</strong> : lorsqu'un élément initie un changement dans la page (changement de contexte, gestion de zones cachées, ajout de contenu, gestion de champs de formulaire…) il est nécessaire d'activer l'élément qui initie le changement pour tester la cohérence de l'ordre de tabulation.</p>
 
 
-
 				<h2 id="p">P</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#o">Lettre&nbsp;O</a></li>
+					<li class="goafter"><a href="#r">Lettre&nbsp;R</a></li>
+				</ul>
+
 
 				<h3 id="mPlanSite">Page «&nbsp;plan du site&nbsp;»</h3>
 				<p>Page dédiée présentant l'arborescence d'un site web, généralement sous forme de listes de liens organisées en rubriques et sous-rubriques donnant accès à l'ensemble des pages du site.</p>
@@ -762,6 +777,10 @@
 				<p>Les méthodes d'insertion de contenu conformes à la spécification DOM font appel aux propriétés et méthodes de l'objet Node par opposition aux méthodes propriétaires. Par&nbsp;exemple <code lang="en">document.write</code>, spécifique à la plateforme IE/Microsoft pour les navigateurs IE anciens.</p>
 
 				<h2 id="r">R</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#p">Lettre&nbsp;P</a></li>
+					<li class="goafter"><a href="#s">Lettre&nbsp;S</a></li>
+				</ul>
 
 				<h3 id="mCorrectlyRendered">Correctement restituée par les technologies d'assistance</h3>
 				<p>Lorsqu'un critère, un test ou une condition de test demande de vérifier la restitution d'un dispositif, il faut s'assurer que ladite restitution est compatible avec l'accessibilité.</p>
@@ -787,6 +806,10 @@
 				<p>Ces surcharges de rôles natifs doivent être respectées.</p>
 
 				<h2 id="s">S</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#r">Lettre&nbsp;R</a></li>
+					<li class="goafter"><a href="#t">Lettre&nbsp;T</a></li>
+				</ul>
 
 				<h3 id="mScript">Script</h3>
 				<p>Code généralement écrit sous forme d'une liste de commandes (par&nbsp;exemple JavaScript). Les langages interprétés côté client nécessitent un navigateur compatible sur lequel l'exécution du langage est active. Les commandes d'un langage de script côté client peuvent être embarquées ou contenues dans un fichier externe. Dans les deux cas, l'insertion se fait via la balise <code lang="en">&lt;script&gt;</code>.</p>
@@ -826,6 +849,10 @@
 				</ul>
 
 				<h2 id="t">T</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#s">Lettre&nbsp;S</a></li>
+					<li class="goafter"><a href="#u">Lettre&nbsp;U</a></li>
+				</ul>
 
 				<h3 id="tableau-de-donnes">Tableau de données</h3>
 				<p>Élément HTML (balise <code lang="en">table</code>) permettant de structurer des informations en lignes et en colonnes via des cellules de données (balise <code lang="en">td</code>) et des cellules d’en-têtes (balise <code lang="en">th</code>).</p>
@@ -906,6 +933,10 @@
 				<p><strong>Note importante :</strong> lorsque le type de champ de formulaire propose un masque de saisie, comme par&nbsp;exemple les champs <code lang="en">date</code> ou <code lang="en">time</code>, l'indication de format n'est pas nécessaire.</p>
 
 				<h2 id="u">U</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#t">Lettre&nbsp;T</a></li>
+					<li class="goafter"><a href="#v">Lettre&nbsp;V</a></li>
+				</ul>
 
 				<h3 id="uniquement-des-fins-de-presentation">Uniquement à des fins de présentation</h3>
 				<p>Uniquement à des fins de présentation : utilisation de balises HTML pour une finalité différente de celle prévue dans les spécifications (au regard du type de document déclaré). Exemples&nbsp;: utilisation des balises <code lang="en">h</code> à seule fin de créer un effet typographique ; utilisation de la balise <code lang="en">blockquote</code> à seule fin de mettre un paragraphe en retrait, etc.</p>
@@ -919,6 +950,11 @@
 				<p><strong>Note</strong>&nbsp;: dans le référentiel RGAA, la notion d'url est utilisée à la place de uri (chaîne de caractères compacte identifiant une ressource).</p>
 
 				<h2 id="v">V</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#u">Lettre&nbsp;U</a></li>
+					<li class="goafter"><a href="#z">Lettre&nbsp;Z</a></li>
+				</ul>
+
 
 				<h3 id="version-accessible-pour-un-document-en-tlchargement">Version accessible (pour un document en téléchargement)</h3>
 				<p>Les documents en téléchargement dont les types de format sont reconnus compatibles avec l'accessibilité doivent être rendus accessibles soit directement soit par l'intermédiaire d'une version accessible ou d'une version en HTML. Les formats de document dont la compatibilité est reconnue sont&nbsp;:</p>
@@ -937,11 +973,17 @@
 				<p>Généralement il est plus simple de produire une version sonore qu'une version textuelle lorsque la vidéo est très descriptive (la transcription textuelle nécessitant souvent un travail rédactionnel important). Il est rappelé, néanmoins, que seule la transcription textuelle assure un accès universel aux informations diffusées par la vidéo, dans le cas où un utilisateur ne serait pas en capacité de lancer la vidéo par&nbsp;exemple.</p>
 
 				<h2 id="z">Z</h2>
+				<ul class="skiplink">
+					<li class="gobefore"><a href="#y">Lettre&nbsp;V</a></li>
+					<li class="gobefore gotoc"><a href="#toc">Table of contents</a></li>
+				</ul>
+
+
 				<h3 id="zone-dune-image-ractive">Zone (d'une image réactive)</h3>
 				<p>Zone cliquable ou zone non cliquable d'une image réactive.</p>
 
 				<h3 id="zone-cliquable">Zone cliquable</h3>
-				<p>Région d'une image réactive à laquelle une action a été associée ; par&nbsp;exemple, le déclenchement d'un événement en cliquant sur un lien (pour une zone cliquable côté client : balise <code lang="en">area</code> avec l'attribut <code lang="en">href</code>). Les balises <code lang="en">area</code> sont contenues dans la balise <code lang="en">map</code>.</p>
+				<p>Région d'une image réactive à laquelle une action a été associée ; par&nbsp;exemple, le déclenchement d'un événement en cliquant sur un lien (pour une zone cliquable côté client&nbsp;: balise <code lang="en">area</code> avec l'attribut <code lang="en">href</code>). Les balises <code lang="en">area</code> sont contenues dans la balise <code lang="en">map</code>.</p>
 				<p>Pour les images réactives côté serveur, les coordonnées sont détenues sur le serveur.</p>
 
 				<h3 id="zone-den-tte">Zone d'en-tête</h3>

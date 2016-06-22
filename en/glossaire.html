@@ -503,13 +503,13 @@
 				<p><strong>Note:</strong> this page footer area, unique in a page, must not be mistaken with footers of sections, defined in HTML5 with the <code>footer</code> tag.
 				</p>
 				<p>See the technical definition as defined by the ARIA API: <a rel="external" class="external" href="https://www.w3.org/WAI/PF/aria/roles#contentinfo">Contentinfo (role)</a>.
-				<h3 id="Etiquette">
+				<h3 id="etiquette">
 				Form field label
 				</h3>
 				<p>Text located next to the form field describing the nature, type or format of expected input. The label can be associated with the form field in several ways: with a <code>label</code> tag, an <code>aria-label</code> property, an <code>aria-labelledby</code> property and its related text, a <code>title</code> attribute.
 				</p>
 
-				<h3 id="ChpSaisie">
+				<h3 id="ChampSaisie">
 				Form input field
 				</h3>
 				<p>
@@ -566,9 +566,7 @@
 				<li><code>button</code></li>
 				</ul>
 
-				<h3 id="TitreCadre">
-				Frame title
-				</h3>
+				<h3 id="TitreCadre">Frame title</h3>
 				<p>Value of the <code>title</code> attribute of the  <code>iframe</code> tag, describing the nature of the content provided via the inline frame, useful when navigationg from frame to frame, or displaying the list of frames in the page, for example.
 				</p>
 				<p><strong>Note 1:</strong> some inline frames only have a purely technical purpose, like preprocessing content displayed in the page (commonly found for social networks widgets like Facebook's, for instance).
@@ -636,7 +634,7 @@
 				Image implemented via the <code>object</code> tag and displaying text.
 				</p>
 
-				<h3 id="ImageCaption">Image caption</h3>
+				<h3 id="ImgCaption">Image caption</h3>
 				<p>For an image, a caption is an adjacent text, containing information about the image (for instance a copyright, a date, an author&hellip;), or information complementary to the one conveyed by the image (for instance, text associated with an image in a gallery).</p>
 				<p>When an image has a caption, it is necessary to tie the image and its caption together via a structure relationship, so that assistive technologies can process both as a whole.</p>
 				<p>The HTML5 specification defines the <code>figure</code> (container for the image and its caption) and <code>figcaption</code> (container for the caption) tags.</p>
@@ -651,10 +649,10 @@
 				<h3 id="ImgInfo">Image conveying information</h3>
 				<p>An image that conveys information needed to understand the content it is associated with.</p>
 
-				<h3 id="InfoDonneeCouleur">Image conveying information (provided by color)</h3>
+				<h3 id="ImgInfoCouleur">Image conveying information (provided by color)</h3>
 				<p>Image for which all or part of its content conveys information visually, by means of color only.</p>
 
-				<h3 id="LienImage">Image link</h3>
+				<h3 id="LienImg">Image link</h3>
 				<p>
 				Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is only constituted of an image. The link text of an image link is the content of the  text alternative of the image.
 				</p>
@@ -754,7 +752,7 @@
 					<li>a link text between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code>.</li>
 				</ul>
 
-				<h3 id="LienComposite">
+				<h3 id="LienComp">
 				Link (Combined)
 				</h3>
 				<p>Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is formed with at least 2 elements of different types; for example, text and one or several images. The link text of a combined link is the whole text and the content of the text alternatives of the image(s)  between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code>. 
@@ -872,7 +870,7 @@
 				<p>The assessor must also check that they are implemented according to the specifications, when they are used.</p>
 				<p><strong>Note:</strong> the ARIA roles, properties and states are implemented via attributes, like <code>role="banner"</code>, or <code>aria-hidden="true"</code> for instance.</p>
 
-				<h3 id="BarreNav">Navigation bar</h3>
+				<h3 id="navBar">Navigation bar</h3>
 				<p>
 				List of links providing a means to navigate in the website, in a category or in a collection of pages. The main navigation bars are:</p>
 				<ul>
@@ -882,7 +880,7 @@
 					<li>The menu of a subcategory</li>
 				</ul>
 
-				<h3 id="MenuNav">Navigation area, Navigation menu</h3>
+				<h3 id="navMenu">Navigation area, Navigation menu</h3>
 				<p>Area with a list of links, giving access to the main parts of the website. Most of times, the navigation menus are the main and secondary menus.
 				</p>
 				<p>Note: links found in the footer, pointing to the credits page, the legal information page, the sitemap, and other site-related information pages, are not considered as a navigation menu.</p>
@@ -898,7 +896,7 @@
 					<li>Search engine</li>
 				</ul>
 
-				<h3 id="MediaNoTemp">
+				<h3 id="MediaNonTemp">
 					Non time-based media
 				</h3>
 				<p>
@@ -997,7 +995,7 @@
 				<p>Computer code generally presented as  a list of instructions (in JavaScript, for example). Client-side scripting languages require a compatible browser where they are enabled. The instructions of a  client-side scripting language can be either embedded  in the HTML code, or fetched from  an external file. In both cases, scripts are included  via  <code>script</code> tags.
 				</p>
 
-				<h3 id="MoteurRecherche">
+				<h3 id="moteurRecherche">
 					Search engine (internal to a website)
 				</h3>
 				<p>Component of the site with which the user can perform searches on all the site's contents.
@@ -1012,7 +1010,7 @@
 				</h3>
 				<p>Form field designed to select  items in a pull-down list (<code>select</code> tag with <code>option</code> tags).</p>
 
-				<h3 id="EnsemblePages">
+				<h3 id="ensemblePages">
 					Set of pages
 				</h3>
 				<p>Pages linked to each other through links, and constituent a consistent set inside of a website. For example, the pages of an electronic payment process, the pages of a specific category, the pages of a blog, the pages to manage an account are sets of pages.
@@ -1020,7 +1018,7 @@
 				<p> <strong>Note:</strong> A website's home page can be considered as a "set of pages" (with only one element), as it can be quite  different from the rest of the site.
 				</p>
 
-				<h3 id="PlanSite">
+				<h3 id="planSite">
 					"Site map" page
 				</h3>
 				<p>Dedicated page presenting the structure of a web site, generally as lists of categories and subcategories, with links giving access to al the site's pages.
@@ -1109,7 +1107,7 @@
 				<h3 id="LienTexte">Text link</h3>
 				<p>Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is only constituted of text (called the link text). </p>
 
-				<h3 id="TranscriptTextuel">Text transcript (time-based media)</h3>
+				<h3 id="transcript">Text transcript (time-based media)</h3>
 				<p>
 				Text content associated with a time-based media through the appropriate technique (text in HTML, or in a text file located in the same page, or accessed via a hyperlink). Without having to play the media content, the user should be able to fully understand it, based on the audio and visual information transcripted. Only significant and useful information (audio and visual) should be included.</p>
 				<p>This textual information must be presented in the same chronological order as  in the time-based media.</p>

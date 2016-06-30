@@ -80,7 +80,7 @@
 				<p>Il appartient à l'auditeur de vérifier que ces adaptations sont cohérentes avec le motif de conception, ne modifient pas le comportement, en termes d'expérience utilisateur, du composant et que le composant adapté est correctement restitué par les technologies d'assistance.</p>
 				<p>Si ces exigences sont respectées, le composant peut-être déclaré «&nbsp;conforme&nbsp;» au motif de conception.</p>
 
-				<h3 id="Alerte">Alerte</h3>
+				<h3 id="alerte">Alerte</h3>
 				<p>Message d'alerte interrompant la navigation ou l'utilisation de la page, notamment en demandant de cliquer sur un bouton ou un lien pour continuer la navigation ou l'utilisation du contenu. Par&nbsp;exemple, une boîte de dialogue générée par JavaScript via la fonction alert. Par extension, une fenêtre modale (contenu présenté sous forme de «&nbsp;fenêtre&nbsp;» insérée ou affichée dans le DOM) qui nécessite d'être fermée pour continuer la navigation ou l'utilisation du contenu est considérée comme une alerte. Note&nbsp;: la désactivation des alertes concernées peut être proposée avant le déclenchement de l'alerte, par&nbsp;exemple, via un paramètre utilisateur ou lors de l'affichage de la première alerte, par&nbsp;exemple via une case à cocher «&nbsp;ne plus afficher cette alerte&nbsp;».</p>
 
 				<h3 id="AltScript">
@@ -242,10 +242,10 @@
 					<li><code lang="en">button</code>.</li>
 				</ul>
 
-				<h3 id="ChangeLumi">Changement brusque de luminosité ou effets de flash</h3>
+				<h3 id="changement-lumi">Changement brusque de luminosité ou effets de flash</h3>
 				<p>Alternance de luminosité relative qui peut causer des crises chez certaines personnes si leur taille est suffisamment importante dans une gamme de fréquences spécifiques.</p>
 
-				<h3 id="ChangeLumi">Changement de contexte</h3>
+				<h3 id="changement-contexte">Changement de contexte</h3>
 				<p>Changements majeurs dans le&nbsp;contenu d'une page web qui, s'ils sont faits sans que l'utilisateur n'en soit conscient, peuvent désorienter l'utilisateur qui ne peut voir l'ensemble de la page en même temps. Les changements de contexte comprennent les changements&nbsp;:</p>
 				<ol>
 					<li>d'agent utilisateur&nbsp;;</li>
@@ -257,17 +257,16 @@
 				<p><strong>Exemple</strong> : l'ouverture d'une nouvelle fenêtre, le déplacement du focus sur un composant différent, le déplacement vers une nouvelle page (y compris tout ce qui, pour l'utilisateur, aurait l'air d'un déplacement vers une autre page) ou la réorganisation significative du contenu d'une page sont autant d'exemples d'un changement de contexte.</p>
 
 
-				<h3 id="LanguageChange">Changement de langue</h3>
+				<h3 id="changement-langue">Changement de langue</h3>
 				<p>L'indication des changements de langue est nécessaire pour indiquer aux technologies d'assistance de modifier la restitution vocale d'un élément. Les changement de langue concernent tous les contenus, y compris les valeurs de certains attributs comme <code lang="en">title</code>.</p>
 				<p><strong>Note&nbsp;:</strong> il n'est pas possible d'indiquer des changements de langue dans une valeur d'attribut elle-même, dans ce cas le changement de langue est indiqué sur l'élément qui contient l'attribut. Par&nbsp;exemple un lien affecté d'un <code lang="en">title</code> en anglais devra comporter un attribut <code lang="en">lang="en"</code>. Lorsque l'attribut contient plusieurs passage de texte dans des langues différentes, le critère est non applicable.</p>
 
 
-				<h3 id="CodeLangue">
-				Code de langue</h3>
+				<h3 id="code-de-langue">Code de langue</h3>
 				<p>Code de 2 caractères (ISO 639-1) ou 3 caractères (ISO 639-2 et suivants) permettant d'indiquer la langue d'un document ou d'un passage de texte. L'indication du code de langue est constituée de deux parties séparées par un tiret sur le modèle <code lang="en">lang="[code]-[option]"</code>.</p>
 				<ul>
-				<li>[code] représente un code de langue valide sur 2 ou 3 caractères&nbsp;;</li>
-				<li>[option] est une indication laissée à l'appréciation de l'auteur.</li>
+					<li>[code] représente un code de langue valide sur 2 ou 3 caractères&nbsp;;</li>
+					<li>[option] est une indication laissée à l'appréciation de l'auteur.</li>
 				</ul>
 <p>Lorsqu'un code de pays est utilisé comme option, il peut servir à indiquer une régionalisation de la langue, l'indication "en-us" indique la langue américaine, par&nbsp;exemple. L'indication du code de langue ne concerne que la partie [code] avant le tiret.</p>
 
@@ -294,14 +293,13 @@
 				<li>la façon dont la technologie web est utilisée doit être compatible avec les technologies d'assistance des utilisateurs. Cela signifie que la façon dont la technologie est utilisée a été testée dans une perspective d'interopérabilité avec des utilisateurs des technologies d'assistance dans la ou les langues du contenu&nbsp;;</li>
 				<li>la technologie fonctionne de façon native dans des agents utilisateurs largement distribués qui sont, eux-mêmes, compatibles avec l'accessibilité (comme HTML et CSS) ou avec un module d'extension largement distribué qui est, lui-même, compatible avec l'accessibilité.</li>
 				</ul>
-<p>La vérification de la compatibilité avec les technologies d'assistance nécessite de réaliser un certain nombre de tests spécifiques à la technologie utilisée, par&nbsp;exemple&nbsp;:</p>
+				<p>La vérification de la compatibilité avec les technologies d'assistance nécessite de réaliser un certain nombre de tests spécifiques à la technologie utilisée, par&nbsp;exemple&nbsp;:</p>
 				<ul>
-				<li>vérifier le nom, le rôle, le paramétrage et les changement d'états des composants d'interface&nbsp;;</li>
-				<li>vérifier que la restitution d'un composant d'interface est correcte pour la ou les technologies d'assistance utilisées.</li>
+					<li>vérifier le nom, le rôle, le paramétrage et les changement d'états des composants d'interface&nbsp;;</li>
+					<li>vérifier que la restitution d'un composant d'interface est correcte pour la ou les technologies d'assistance utilisées.</li>
 				</ul>
 
-				<h3 id="CoherentODL">
-				Compréhensible (ordre de lecture)</h3>
+				<h3 id="CoherentODL">Compréhensible (ordre de lecture)</h3>
 				<p>Un contenu compréhensible est lisible (l'ordre des éléments est logique) et cohérent (l'enchaînement de la lecture est cohérent).</p>
 
 
@@ -776,11 +774,11 @@
 				<p>On procède alors à un test avec NVDA (dernière version) et Firefox, JAWS (version précédente) et IE9+ et Voice Over (dernière version) et Safari.</p>
 				<p>Si on constate que l'alternative est correctement restituée, le test est validé.</p>
 
-				<h3 id="RedirectAuto">
+				<h3 id="redirection-automatique">
 				Redirection automatique</h3>
 				<p>Procédé qui consiste pour l'affichage d'une page sur le poste client à rediriger automatiquement l'utilisateur vers une autre page, sur le même domaine ou sur un domaine différent.</p>
 
-				<h3 id="ResumeTab">Résumé (de tableau)</h3>
+				<h3 id="table-resume">Résumé (de tableau)</h3>
 				<p>Un résumé est un passage de texte associé à un tableau de données complexe. Il permet de donner des informations sur la nature et la structure du tableau afin d'en faciliter l'utilisation par les utilisateurs de technologies d'assistance par&nbsp;exemple.</p>
 				<p><strong>Note&nbsp;:</strong> l'attribut <code lang="en">summary</code> est obsolète non conforme en HTML5 et ne doit plus être utilisé.</p>
 				<p>Parmi les 5 techniques proposées par HTML5, la seule technique utilisable actuellement est celle qui consiste à insérer le résumé directement dans le titre (balise <code lang="en">caption</code>) en masquant le résumé via CSS si&nbsp;nécessaire.</p>
@@ -841,20 +839,20 @@
 					<li class="goafter"><a href="#u">Lettre&nbsp;U</a></li>
 				</ul>
 
-				<h3 id="tableau-de-donnes">Tableau de données</h3>
+				<h3 id="tableau-donnees">Tableau de données</h3>
 				<p>Élément HTML (balise <code lang="en">table</code>) permettant de structurer des informations en lignes et en colonnes via des cellules de données (balise <code lang="en">td</code>) et des cellules d’en-têtes (balise <code lang="en">th</code>).</p>
 
-				<h3 id="tableau-de-donnes-complexe">Tableau de données complexe</h3>
+				<h3 id="tableau-donnees-complexe">Tableau de données complexe</h3>
 				<p>Lorsqu'un tableau de données contient des en-têtes qui ne sont pas répartis uniquement sur la première ligne et/ou la première colonne de la grille ou dont la portée n'est pas valable pour l'ensemble de la colonne ou de la ligne, on parle de tableau de données complexe. Il est alors nécessaire de fournir un «&nbsp;résumé&nbsp;» permettant d'en expliquer sa nature et sa structure afin d'en faciliter la consultation pour des utilisateurs de technologies d'assistance par&nbsp;exemple.</p>
 
 				<h3 id="tableau-de-mise-en-forme">Tableau de mise en forme</h3>
 				<p>Technique qui utilise un élément HTML (balise <code lang="en">table</code>) pour contrôler l'affichage d'informations via des cellules (balise <code lang="en">td</code>).</p>
 
-				<h3 id="taille-des-caractres">Taille des caractères</h3>
+				<h3 id="taille-caracteres">Taille des caractères</h3>
 				<p>Valeur attribuée aux polices de caractères présentes sur une page web. Pour les contenus web, les tailles de caractères doivent être définies avec des unités relatives (%, em ou rem) ou des mots clés (xx-small, xx-small, x-small, small, medium, large, x-large, xx-large, xsmaller, or larger).</p>
 				<p><strong>Note</strong>&nbsp;: l'utilisation du pixel (px) est proscrite.</p>
 
-				<h3 id="texte-cach">Texte caché</h3>
+				<h3 id="texte-cache">Texte caché</h3>
 				<p>Les technologies d'assistance (notamment les lecteurs d'écran) ne restituent pas le texte masqué via les propriétés&nbsp;:</p>
 				<ul>
 					<li><code lang="en">display</code> avec la valeur none (<code lang="en">display: none;</code>)</li>
@@ -873,7 +871,7 @@
 				<p>Élément HTML (balise <code lang="en">h</code>) à 6 niveaux de hiérarchie (de <code lang="en">h1</code> pour le titre le plus important à <code lang="en">h6</code> pour le moins important) permettant de structurer l'information d'un contenu web. La hiérarchie entre les titres doit être respectée dans une page web et les degrés de titre ne peuvent pas être sautés (un titre <code lang="en">h3</code> ne peut pas venir directement après un titre <code lang="en">h1</code>, par&nbsp;exemple). Dans chaque page web, il doit y avoir un titre <code lang="en">h1</code>, au moins.</p>
 				<p><strong>Note</strong>&nbsp;: les titres cachés via CSS sont considérés comme présents et valident le <a href="criteres.html#crit-9-1">critère&nbsp;9.1</a>.</p>
 
-				<h3 id="titre-dun-tableau-de-donnes">Titre d'un tableau (de données)</h3>
+				<h3 id="titre-tableau">Titre d'un tableau (de données)</h3>
 				<p>Contenu d'un élément HTML (balise <code lang="en">caption</code>) qui permet d'identifier le&nbsp;contenu d'un tableau de données de manière claire et concise.</p>
 
 				<h3 id="TitreCadre">Titre de cadre</h3>
@@ -909,7 +907,7 @@
 				Type de document</h3>
 				<p>Ensemble de données de référence qui permet aux agents utilisateurs de connaître les caractéristiques techniques des langages utilisés sur la page web (balise <code lang="en">doctype</code>).</p>
 
-				<h3 id="type-et-format-de-donnes">
+				<h3 id="type-format-donnees">
 				Type et format de données</h3>
 				<p>Indication concernant le type et le format des données attendus lors de la saisie d'un champ de formulaire. Par&nbsp;exemple&nbsp;:</p>
 				<ul>
@@ -925,7 +923,7 @@
 					<li class="goafter"><a href="#v">Lettre&nbsp;V</a></li>
 				</ul>
 
-				<h3 id="uniquement-des-fins-de-presentation">Uniquement à des fins de présentation</h3>
+				<h3 id="uniquement-a-fin-de-presentation">Uniquement à des fins de présentation</h3>
 				<p>Uniquement à des fins de présentation : utilisation de balises HTML pour une finalité différente de celle prévue dans les spécifications (au regard du type de document déclaré). Exemples&nbsp;: utilisation des balises <code lang="en">h</code> à seule fin de créer un effet typographique ; utilisation de la balise <code lang="en">blockquote</code> à seule fin de mettre un paragraphe en retrait, etc.</p>
 				<p><strong>Note 1</strong> : l'utilisation d'éléments <code lang="en">div</code> ou <code lang="en">span</code> pour créer des paragraphes est considérée comme non conforme et invalide le critère.</p>
 				<p><strong>Note 2</strong> : WAI-ARIA propose un rôle <code lang="en">presentation</code> permettant de supprimer la sémantique d'un élément, par&nbsp;exemple <code lang="en">&lt;h1 role="presentation"&gt; Titre&lt;/h1&gt;</code>. Dans ce cas, le texte sera correctement restitué mais le titre lui ne le sera plus (l'élément restitué sera un élément indéterminé du type <code lang="en">&lt;&gt;Titre&lt;/&gt;</code>.L'utilisation du rôle <code lang="en">presentation</code> peut être requise lorsqu'on utilise un motif de conception ARIA.</p>
@@ -973,17 +971,17 @@
 				<p>Région d'une image réactive à laquelle une action a été associée ; par&nbsp;exemple, le déclenchement d'un événement en cliquant sur un lien (pour une zone cliquable côté client&nbsp;: balise <code lang="en">area</code> avec l'attribut <code lang="en">href</code>). Les balises <code lang="en">area</code> sont contenues dans la balise <code lang="en">map</code>.</p>
 				<p>Pour les images réactives côté serveur, les coordonnées sont détenues sur le serveur.</p>
 
-				<h3 id="zone-den-tte">Zone d'en-tête</h3>
+				<h3 id="zoneHeader">Zone d'en-tête</h3>
 				<p>Zone située en haut du document et contenant généralement le titre du document, un logo, un&nbsp;slogan…</p>
 				<p><strong>Note&nbsp;:</strong> Attention à ne pas confondre cette zone d'en-tête, unique dans le site, avec tout contenu pouvant être balisé en HTML5 avec l'élément <scope>header</scope>.</p>
 				<p>Voir la définition technique fournie par l'API ARIA : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/WAI/PF/aria/roles#banner" title="Banner(role) (nouvelle fenêtre)" target="_blank">Banner(role)</a></p>
 
-				<h3 id="zone-de-contenu-principal">Zone de contenu principal</h3>
+				<h3 id="zoneMain">Zone de contenu principal</h3>
 				<p>Zone contenant les principaux contenus de la page, là où se trouvent les informations et fonctionnalités de fond (donc en dehors des menus, de la recherche ou des zones secondaires de publicités, actualités connexes…).</p>
 				<p><strong>Note&nbsp;:</strong> Cette zone est unique dans la page. Elle peut être difficile à déterminer sur certaines pages particulières, comme la page d'accueil.</p>
-				<p>Voir la définition technique fournie par l'API ARIA : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/WAI/PF/aria/roles#main" title="Main(role) (nouvelle fenêtre)" target="_blank">Main(role)</a></p>
+				<p>Voir la définition technique fournie par l'API ARIA : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/WAI/PF/aria/roles#zoneMain" title="Main(role) (nouvelle fenêtre)" target="_blank">Main(role)</a></p>
 
-				<h3 id="zone-de-pied-de-page">Zone de pied de page</h3>
+				<h3 id="zoneFooter">Zone de pied de page</h3>
 				<p>Il s'agit des informations concernant le fonctionnement du site ou les informations légales. On y trouve par&nbsp;exemple les mentions légales, les crédits, les conditions d'utilisation, le plan du site et éventuellement la page accessibilité.</p>
 				<p><strong>Note&nbsp;:</strong> Attention à ne pas confondre cette zone de pied de page, unique dans le site, avec tout contenu pouvant être balisé en HTML5 avec l'élément <code lang="en">footer</code>.</p>
 				<p>Voir la définition technique fournie par l'API ARIA : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/WAI/PF/aria/roles#contentinfo" title="contentinfo(role) (nouvelle fenêtre)" target="_blank">contentinfo(role)</a></p>

@@ -66,7 +66,7 @@
 				<h3 id="AccColl">Access to each page (of the collection of pages)</h3>
 				<p>In the cases where the collection contains a large number of pages, it is usual to provide only links to one page in ten, for instance. This practice passes the test.</p>
 
-				<h3 id="AAClavierSouris">Accessible and activable by keyboard and mouse</h3>
+				<h3 id="accessible-clavier-souris">Accessible and activable by keyboard and mouse</h3>
 				<ul>
 					<li> A user interface component (link, button, clickable element in a Flash movie&hellip;) is accessible by keyboard and mouse when it can receive  focus, indifferently, through the use of the mouse pointer or the Tab key.
 					</li>
@@ -99,7 +99,7 @@
 				<p>It is the author's responsibility to check that these adaptations are consistent with the design pattern; that they do not modify the expected behavior, from a user experience point of view; and that the adapted component is correctly rendered by assistive technologies.</p>
 				<p>If these requirements are met, the component can be declared "compliant" with the design pattern.</p>
 
-				<h3 id="LienAdj">Adjacent link</h3>
+				<h3 id="lien-adjacent">Adjacent link</h3>
 				<p>Link adjacent to an element both in the layout (CSS enabled) and in the HTML code. In the HTML code, the link must be just before or after the element it is adjacent to.</p>
 
 				<h3 id="alerte">Alert</h3>
@@ -227,9 +227,7 @@
 					<li>the content of the <code>button</code> tag.</li>
 				</ul>
 
-				<h3 id="LienEvitement">
-					Bypass or skip links
-				</h3>
+				<h3 id="lien-evitement">Bypass or skip links</h3>
 				<p>Links whose purpose is to navigate inside of content (skip link, link to  the search form or the menu).</p>
 
 				<h2 id="c">C</h2>
@@ -239,13 +237,9 @@
 				</ul>
 
 				<h3 id="captcha">CAPTCHA</h3>
-				<p>
-					A CAPTCHA is a test designed to tell computers and humans apart. The test is often based on images containing distorted text, mixed with other shapes, or with altered colors. The user is requested to key in the obscured characters. Other forms of CAPTCHA can be based on logical questions or audio clips.
-				</p>
+				<p>A CAPTCHA is a test designed to tell computers and humans apart. The test is often based on images containing distorted text, mixed with other shapes, or with altered colors. The user is requested to key in the obscured characters. Other forms of CAPTCHA can be based on logical questions or audio clips.</p>
 
-				<h3 id="ChangContexte">
-					Change of context
-				</h3>
+				<h3 id="ChangContexte">Change of context</h3>
 				<p>Major changes in the content of the web page that, if made without user awareness, can disorient users who are not able to view the entire page simultaneously. Changes in context include changes of:</p>
 				<ol>
 					<li>user agent</li>
@@ -256,7 +250,7 @@
 				<p><strong>Note:</strong> A change of content is not always a change of context. Changes in content, such as an expanding outline, dynamic menu, or a tab control do not necessarily change the context, unless they also change one of the elements listed above (e.g., focus).</p>
 				<p><strong>Example:</strong> Opening a new window, moving focus to a different component, going to a new page (including anything that would seem to to users as if they had moved to a new page) or significantly re-arranging the content of a page, are examples of changes of context.</p>
 
-				<h3 id="ChangeNativeRole">Change of native role of an HTML element</h3>
+				<h3 id="changement-role-natif">Change of native role of an HTML element</h3>
 				<p>The WAI-ARIA specification allows to modify the native role of an element, like for instance changing an <code>A</code> element (with an href attribute) into a <code>BUTTON</code> element.
 				</p>
 				<p>These modifications can be made only under certain conditions, described in the document <a rel="external" class="external" href="https://www.w3.org/TR/aria-in-html/">Notes on Using WAI-ARIA in HTML</a>, which defines several restrictions, in particular.
@@ -272,17 +266,14 @@
 				Size of the characters of textual content found in the page. In order to be accessible, font sizes must be defined with relative units (<code>%</code>, <code>em</code> or <code>rem</code>) or keywords (<code>xx-small</code>, <code>x-small</code>, <code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>, <code>xx-large</code>, <code>smaller</code>, or <code>larger</code>).
 				<p><code>Note:</code> with regards to the RGAA, the use of the pixel unit (<code>px</code>) is prohibitted.</p>
 
-				<h3 id="CollecPage">Collection of pages</h3>
-				<p>
-				Pages linked to each other via hyperlinks, and with a common subject or nature. For example, the result pages of a search engine or the pages of a catalogue are collections of pages.</p>
+				<h3 id="collection-pages">Collection of pages</h3>
+				<p>Pages linked to each other via hyperlinks, and with a common subject or nature. For example, the result pages of a search engine or the pages of a catalogue are collections of pages.</p>
 
 				<h3 id="CoherentODL">Consistent (reading or tabbing order)</h3>
 				<p>Consistent content is readable (the elements order is logical) and understandable (the reading logic is consistent).
 				</p>
 
-				<h3 id="Contraste">
-					Contrast (color)
-				</h3>
+				<h3 id="contraste">Contrast (color)</h3>
 				<p>Significant opposition between a foreground color and a background color. The contrast ratio is based on the difference of relative luminance between background and foreground according to the rule: (L1 + 0.05) / (L2 +0.05) where L1 is the relative luminance of the lighter color, and L2 is the relative luminance of the darker  color. The luminance is calculated according to the following formula: L = 0,2126 * R + 0,7152 * G + 0,0722 * B where R, G and B are defined as:
 				<ul>
 					<li>if RsRGB >= 0,03928 then R = RsRGB/12,92 else R = ((RsRGB+0,055)/1,055) ^ 2,4</li>
@@ -296,16 +287,12 @@
 				<p> The "^" character is the exponentiation operator.</p>
 				<p><strong>Note:</strong> The contrast measurment is related to the text, the image of text, text and images of text in animations, the text in captions, and text that is embedded in videos. As far as text and images of text of animations and the text in captions and embedded text in videos are concerned, the font size must be measured according to the default displaying size, (as displayed). Text that is avaailable in the elements of an image or a video (for example a sign, a poster etc.) are not concerned.</p>
 
-				<h3 id="ControlSound">
-					Control (of autoplaying sound)
-				</h3>
+				<h3 id="controle-son">Control (of autoplaying sound)</h3>
 				<p>Ability for the user to pause and play an autoplaying sound. 
 				</p>
 				<p><strong>Note:</strong> when appropriate, the controlling device should be the first element in the page.</p>
 
-				<h3 id="FonctionControle">
-					Control features (time-based media)
-				</h3>
+				<h3 id="controle-fonctionnalites">Control features (time-based media)</h3>
 				<p>Functionalities enabling the user to control the playing of a time-based media, with the keyboard or the mouse, at least. The following requirements must be met:
 				</p>
 				<ul>
@@ -327,7 +314,7 @@
 				<p><strong>Note:</strong> If a multimedia object has no sound, there is no need for a feature to control its volume.
 				</p>
 
-				<h3 id="ControleMov">
+				<h3 id="controle-mouvement">
 					Control (moving or blinking content)
 				</h3>
 				<p>Ability for the user to control the display or reading of moving or blinking content at least with the keyboard and the mouse. 
@@ -362,7 +349,7 @@
 				</ul>
 				<p>Authors and administrators must guarantee that the technologies in use, and the way they are utilized by users, are compatible with their technologies (including assistive technologies). Information services or web sites, whatever their status, that provide public access cannot be considered as controlled environments.</p>
 
-				<h3 id="CorrectlyRendered">Correctly rendered (by assistive technologies)</h3>
+				<h3 id="correctement-restitue">Correctly rendered (by assistive technologies)</h3>
 				<p>When a criterion, a test or a test condition requires to verify that a device is correctly rendered by assistive technologies, it must be checked that this rendering is accessibility supported.</p>
 				<p>The test consists in checking that the rendering is relevant for at least one combination of the <a href="./base.html">Reference baseline</a> used to declare that an element, a device or an alternative is "accessibility supported".
 				For example: Test 1.3.7 requires to check that the alternative of a vector image conveying information is correctly rendered.
@@ -464,7 +451,7 @@
 					</h3>
 				-->
 
-				<h3 id="ExpliciteHorsContexte">
+				<h3 id="lien-explicite-hors-contexte">
 					Explicit out of context (link)
 				</h3>
 				<p>A link is explicit out of its context when the link text (content between <code>&lt;a href=""&gt;</code> and <code>&lt;/a&gt;</code>) provides enough information to understand the function and purpose of the link.</p>
@@ -646,7 +633,7 @@
 				<h3 id="ImgInfoCouleur">Image conveying information (provided by color)</h3>
 				<p>Image for which all or part of its content conveys information visually, by means of color only.</p>
 
-				<h3 id="LienImg">Image link</h3>
+				<h3 id="lien-image">Image link</h3>
 				<p>
 				Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is only constituted of an image. The link text of an image link is the content of the  text alternative of the image.
 				</p>
@@ -711,7 +698,7 @@
 				HTML element (<code>iframe</code> tag) providing a way to display contents from another page, inside the current web page.
 				</p>
 
-				<h3 id="ControleSaisie">
+				<h3 id="controle-saisie">
 				Input control (form)
 				</h3>
 				<p>All the processes designed to inform the user about required fields, expected types and formats, and  input errors in a form. These controls can be implemented by the content author, or rely upon HTML attributes (like <code>required</code> or <code>pattern</code>), WAI-ARIA properties (like <code>aria-required</code>) or field types automatically generating input indications or error messages (like <code>url</code>, <code>email</code>, <code>date</code>, <code>time</code>, for example).
@@ -738,7 +725,7 @@
 				</ul>
 				<p>When the [option]  is provided, it defines a language regionalisation. For example: <code>"en-us"</code> for American English. When checking for conformance against the RGAA, only the [code] part is evaluated.</p>
 
-				<h3 id="Lien">Link</h3>
+				<h3 id="lien">Link</h3>
 				<p>HTML element (<code>a</code> tag) that can be activated by the user (with the mouse, the keyboard&hellip;) and that initiates an action (generally, a page or file download) or an event generated by a script. A link has at least:
 				</p>
 				<ul>
@@ -746,7 +733,7 @@
 					<li>a link text between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code>.</li>
 				</ul>
 
-				<h3 id="LienComp">
+				<h3 id="lien-composite">
 				Link (Combined)
 				</h3>
 				<p>Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is formed with at least 2 elements of different types; for example, text and one or several images. The link text of a combined link is the whole text and the content of the text alternatives of the image(s)  between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code>. 
@@ -755,7 +742,7 @@
 				<p>On this subject, you may read this WCAG Technique: <a rel="external" class="external" href="http://www.w3.org/TR/WCAG20-TECHS/H2.html">H2 : Combining adjacent image and text links for the same resource</a>.
 				</p>
 
-				<h3 id="ContexteLien">
+				<h3 id="contexte-lien">
 				Link context
 				</h3>
 				<p>The link context represents additional information that can be programmatically determined from relationships with a link, combined with the link text, and presented to users in different modalities. Programmatically determined contexts that can make a link explicit are the following:
@@ -780,7 +767,7 @@
 				<p><code>Note 1:</code> One of the 9 link contexts alone must be sufficient to make the link explicit.</p>
 				<p><strong>Note 2:</strong> The RGAA considers that specific links like <code>mailto</code> links (interpreted by the user agent as a clickable e-mail address) are explicit by nature. therefore it is not required to inform the user, via a link title for instance, that the link triggers the opening of an e-mail client application. Authors are advised, however, to adapt this rule to the situation. For instance, if the page contains multiple clickable e-mail addresses, some opening thee-mail client application, other sending to a contact form, then it may be necessary to provide additional information in order to help the user understand the different uses of this type of links in this context.</p>
 
-				<h3 id="LienIdentique">
+				<h3 id="lien-identique">
 				Links (Identical)
 				</h3>
 				<p>Two links are considered identical when link x (link text only, content of the <code>title</code> attribute or link context) is equal to link y. This definition applies to all types of links: text links, image links (identical images) and combined links.</p>
@@ -820,13 +807,13 @@
 				</p>
 				<p>Authors are warned that relying upon the <code>title</code> attribute to convey information is unsafe. Specifically, contents in <code>title</code> attributes are not rendered visually when navigating with the keyboard, a tactile interface, or when an assistive technology user settings prevent them from being rendered. therefore, they should be used only as a last resort solution.</p>
 
-				<h3 id="LienNature">Link whose nature is not obvious</h3>
+				<h3 id="lien-nature-pas-evidente">Link whose nature is not obvious</h3>
 				<p>Link that can be confused with normal text, when it is indicated through color alone, by some types of users who have bad or no color perception. For example, in this text "New strike at SNCF", if the word "strike" is a link that is specified by color alone, its kind can be ignored by users who cannot perceive color and who access content with CSS enabled. On the other hand, in this text "New strike at SNCF, read more" if "read more" is a link, a user who does not perceive colors will have no difficulties to understand its nature.
 				</p><p>
 				<strong>Note:</strong> "indicated through color alone" means that the link is accompanied by no other visual indication (icon, underline, border&hellip;). As a consequence, a link of the same color as the surrounding text is targetted by this criterion.
 				</p>
 
-				<h3 id="Listes">Lists</h3>
+				<h3 id="listes">Lists</h3>
 				<p>Sequence of elements that can be grouped in the form of a structured list as ordered, unordered or definition lists. For example, the  links in a navigation menu is an unordered list of links, the different steps in a process are an ordered list of items, the pair term/definition in a glossary is a definition list. In HTML, lists are defined using the following tags:
 				</p>
 				<ul>
@@ -852,7 +839,7 @@
 					<li class="goafter"><a href="#o">Skip&nbsp;to&nbsp;O</a></li>
 				</ul>
 
-				<h3 id="NameRole">Name, role, value, settings and states changes</h3>
+				<h3 id="changement-etat">Name, role, value, settings and states changes</h3>
 				<p>A user interface component must have appropriate role and name; its values, states and parameters (if any) must also be available and correctly conveyed to accessibility APIs, in particular.</p>
 				<p>The name may be the component's text content, like the label of a button, for example. </p>
 				<p>The value may be the selected item of a select list, or the current value of a slider, for example.</p>
@@ -890,7 +877,7 @@
 					<li>Search engine</li>
 				</ul>
 
-				<h3 id="MediaNonTemp">
+				<h3 id="mediaNonTemp">
 					Non time-based media
 				</h3>
 				<p>
@@ -994,7 +981,7 @@
 				<p>See the technical definition of a search engine as defined by the ARIA API: <a rel="external" class="external" href="https://www.w3.org/WAI/PF/aria/roles#search">search (role)</a>.
 				</p>
 
-				<h3 id="ListeChoix">
+				<h3 id="liste-de-choix">
 					Selection list
 				</h3>
 				<p>Form field designed to select  items in a pull-down list (<code>select</code> tag with <code>option</code> tags).</p>
@@ -1093,7 +1080,7 @@
 				<p>Image used in a test, a <a href="#mcaptcha">CAPTCHA</a> or an image used for a test in a quiz or a game. Example: a series of images present a detail from famous paintings; the title and the painter of each painting must be found. In this case, it is not possible to provide a relevant alternative (e.g. the painting title and/or painter) without making the test useless. The alternative must then only provide the ability to identify the image; for example "image 1 of the test".
 				</p>
 
-				<h3 id="LienTexte">Text link</h3>
+				<h3 id="lien-textee">Text link</h3>
 				<p>Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is only constituted of text (called the link text). </p>
 
 				<h3 id="transcript">Text transcript (time-based media)</h3>
@@ -1102,7 +1089,7 @@
 				<p>This textual information must be presented in the same chronological order as  in the time-based media.</p>
 				<p>Note: if the media is served via an <code>object</code> tag, then the text transcript must not be inside of the <code>object</code> tag.</p>
 
-				<h3 id="MediaTemp">Time-based media (sound, video or synchronized)</h3>
+				<h3 id="mediaTemp">Time-based media (sound, video or synchronized)</h3>
 				<ul>
 					<li>Audio-only time-based media: audio content (Wave, MP3&hellip;)</li>
 					<li>Video-only time-based media:  images or pictures moving or played in sequence
@@ -1165,11 +1152,11 @@
 					<li>Case of a page that implements WAI ARIA: code in which the implementation of tags and attributes follows the specifications of the declared document type and in which WAI ARIA implementation conforms to the WAI ARIA specification.</li>
 				</ul>
 
-				<h3 id="VectorLink">Vector link</h3>
+				<h3 id="lien-vectoriel">Vector link</h3>
 				<p>Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is only constituted of a vector image (svg tag). The link text of a vector link is the alternative text of the vector image.
 				</p>
 
-				<h3 id="VisibleContent">
+				<h3 id="contenu-visible">
 					Visible content
 				</h3>
 				<p>For <a href="criteres.html#test-10-2-1">Test 10.2.1</a>: "available content" means that the visible content remains available when CSS styles have been disabled. For instance, an image conveying information, used as a background through CSS, fails this test, since information is not "available" when CSS styles are disabled. However,  an image conveying information, used as a background through CSS, but accompanied by a hidden text, passes this test because information is "available" when CSS styles are disabled.</p>

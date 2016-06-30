@@ -51,38 +51,33 @@
 		</header>
         <main id="main" role="main">
 			<div class="page">
+				<div id="howto">
+					<h2>Mode d'emploi</h2>
+					<p>Ce référentiel s'applique à tout contenu HTML (HTML4, XHTML1 et HTML5). Il utilise, pour certains tests une base de référence prenant en compte un ensemble de technologies d'assistance, de navigateurs et de systèmes d'exploitation sur lesquels l'accessibilité des composants d'interface développés par JavaScript doit être vérifié notamment. Une description détaillée de la base de référence est disponible ici : <a href="base.html">base de référence</a>.</p>
 
-<div id="howto">
-	<h2>Mode d'emploi</h3>
-	<p>Ce référentiel s'applique à tout contenu HTML (HTML4, XHTML1 et HTML5). Il utilise, pour certains tests une base de référence prenant en compte un ensemble de technologies d'assistance, de navigateurs et de systèmes d'exploitation sur lesquels l'accessibilité des composants d'interface développés par JavaScript doit être vérifié notamment. Une description détaillée de la base de référence est disponible ici : <a href="base.html">base de référence</a>.</p>
-	</section>
-<section>
-<h3>Note importante pour tout contenu antérieur à la spécification HTML5&nbsp;:</h3>
-	<p>Lorsque le code HTML de la page n'est pas du HTML5, les éléments HTML5 (balises et attributs) exigés par un critère ou test sont non applicables. Tous les autres critères ou tests restent applicables, y compris les dispositifs ARIA. Les critères et tests suivants sont non applicables&nbsp;:</p>
-	<ul>
-		<li>critère 1.10&nbsp;;</li>
-		<li>critère 9.2&nbsp;;</li>
-		<li>test 10.13.3&nbsp;;</li>
-		<li>test 11.10.1 (condition 2 relative à l'attribut HTML5 <code lang="en">required</code>).</li>
-	</ul>
-	</section>
-<section>
-<h3>Méthode de validation</h3>
-	<p>Le niveau de conformité est établi au niveau des critères selon ces statuts&nbsp;:</p>
-	<ul>
-		<li>conforme (C) : l'ensemble des tests applicables sont réussis&nbsp;;</li>
-		<li>non conforme (NC) : un test applicable est échoué, au moins&nbsp;;</li>
-		<li>non applicable (NA) : il n'y a pas de contenu concerné par le critère.</li>
-	</ul>
-	<p>RGAA propose, en plus de ces trois statuts de validation, deux statuts complémentaires&nbsp;:</p>
+					<h3>Note importante pour tout contenu antérieur à la spécification HTML5&nbsp;:</h3>
+					<p>Lorsque le code HTML de la page n'est pas du HTML5, les éléments HTML5 (balises et attributs) exigés par un critère ou test sont non applicables. Tous les autres critères ou tests restent applicables, y compris les dispositifs ARIA. Les critères et tests suivants sont non applicables&nbsp;:</p>
+					<ul>
+						<li>critère 1.10&nbsp;;</li>
+						<li>critère 9.2&nbsp;;</li>
+						<li>test 10.13.3&nbsp;;</li>
+						<li>test 11.10.1 (condition 2 relative à l'attribut HTML5 <code lang="en">required</code>).</li>
+					</ul>
+					<h3>Méthode de validation</h3>
+					<p>Le niveau de conformité est établi au niveau des critères selon ces statuts&nbsp;:</p>
+					<ul>
+						<li>conforme (C) : l'ensemble des tests applicables sont réussis&nbsp;;</li>
+						<li>non conforme (NC) : un test applicable est échoué, au moins&nbsp;;</li>
+						<li>non applicable (NA) : il n'y a pas de contenu concerné par le critère.</li>
+					</ul>
+					<p>RGAA propose, en plus de ces trois statuts de validation, deux statuts complémentaires&nbsp;:</p>
 
-	<ul>
-		<li>dérogé (D) : il existe des contenus dérogés applicables au critère&nbsp;;</li>
-		<li>non testé (NT) : le critère n'a pas été testé.</li>
-	</ul>
-	<p>Vous pouvez consulter, à ce sujet, le guide d'accompagnement : <a rel="external" class="external" href="https://references.modernisation.gouv.fr/4255-comment-verifie-t-la-conformite-au-rgaa-0">Comment vérifie-t-on la conformité au&nbsp;RGAA&nbsp;?</a></p>
-</div>
-
+					<ul>
+						<li>dérogé (D) : il existe des contenus dérogés applicables au critère&nbsp;;</li>
+						<li>non testé (NT) : le critère n'a pas été testé.</li>
+					</ul>
+					<p>Vous pouvez consulter, à ce sujet, le guide d'accompagnement : <a rel="external" class="external" href="https://references.modernisation.gouv.fr/4255-comment-verifie-t-la-conformite-au-rgaa-0">Comment vérifie-t-on la conformité au&nbsp;RGAA&nbsp;?</a></p>
+				</div>
 				<article id="images" class="thematique">
 					<header>
 						<h2>1. Images</h2>
@@ -113,28 +108,27 @@
 							</ul>
 						</div>
 					</header>
-
-<section>
-	<h3 id="crit-1-1"><em>Critère 1.1 [A]</em> Chaque image a-t-elle une alternative textuelle&nbsp;?</h3>
-	<ul>
-		<li>Test 1.1.1 : Chaque image (balise <code lang="en">img</code>) a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
-		<li>Test 1.1.2 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
-		<li>Test 1.1.3 : Chaque bouton de formulaire (balise <code lang="en">input</code> avec l'attribut <code lang="en">type="image"</code>) a-t-il un attribut <code lang="en">alt</code>&nbsp;?</li>
-		<li>Test 1.1.4 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> coté serveur est-t-elle doublée d'un lien dans la page&nbsp;?</li>
-	</ul>
-	<aside>
-		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
-		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" title="H36 (nouvelle fenêtre)" target="_blank">H36</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
-		<div class="tags">
-			<span>Mot-clés</span>
-			<ul>
-				<li>Niveau : A</li>
-				<li>Principe : Perceptible</li>
-			</ul>
-		</div>
-	</aside>
-</section>
+					<section>
+						<h3 id="crit-1-1"><em>Critère 1.1 [A]</em> Chaque image a-t-elle une alternative textuelle&nbsp;?</h3>
+						<ul>
+							<li id="test-1-1-1">Test 1.1.1 : Chaque image (balise <code lang="en">img</code>) a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
+							<li id="test-1-1-2">Test 1.1.2 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
+							<li id="test-1-1-3">Test 1.1.3 : Chaque bouton de formulaire (balise <code lang="en">input</code> avec l'attribut <code lang="en">type="image"</code>) a-t-il un attribut <code lang="en">alt</code>&nbsp;?</li>
+							<li id="test-1-1-4">Test 1.1.4 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> coté serveur est-t-elle doublée d'un lien dans la page&nbsp;?</li>
+						</ul>
+						<aside>
+							<h4>Correspondances WCAG 2.0</h4>
+							<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
+							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" title="H36 (nouvelle fenêtre)" target="_blank">H36</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
+							<div class="tags">
+								<span>Mot-clés</span>
+								<ul>
+									<li>Niveau : A</li>
+									<li>Principe : Perceptible</li>
+								</ul>
+							</div>
+						</aside>
+					</section>
 
 <section>
 	<h3 id="crit-1-2"><em>Critère 1.2 [A]</em> Pour chaque image de décoration ayant une alternative textuelle, cette alternative est-elle vide&nbsp;?</h3>
@@ -166,7 +160,7 @@
 	<aside>
 		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-12-a">Consulter la note technique au sujet du role "présentation"</a></p>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H67.html" title="H67 (nouvelle fenêtre)" target="_blank">H67</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G196.html" title="G196 (nouvelle fenêtre)" target="_blank">G196</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/C9.html" title="C9 (nouvelle fenêtre)" target="_blank">C9</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F39.html" title="F39 (nouvelle fenêtre)" target="_blank">F39</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F38.html" title="F38 (nouvelle fenêtre)" target="_blank">F38</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA4.html" title="ARIA4 (nouvelle fenêtre)" target="_blank">ARIA4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA10.html" title="ARIA10 (nouvelle fenêtre)" target="_blank">ARIA10</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -227,7 +221,7 @@
 		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-13-a">Consulter la note technique au sujet de l'attribut title et des des images vectorielles</a></p>
 		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-11-a">Consulter la note technique au sujet des images vectorielles</a></p>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G94.html" title="G94 (nouvelle fenêtre)" target="_blank">G94</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G95.html" title="G95 (nouvelle fenêtre)" target="_blank">G95</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F30.html" title="F30 (nouvelle fenêtre)" target="_blank">F30</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F71.html" title="F71 (nouvelle fenêtre)" target="_blank">F71</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G196.html" title="G196 (nouvelle fenêtre)" target="_blank">G196</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA4.html" title="ARIA4 (nouvelle fenêtre)" target="_blank">ARIA4</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -277,7 +271,7 @@
 	</ul>
 	<aside>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G143.html" title="G143 (nouvelle fenêtre)" target="_blank">G143</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G100.html" title="G100 (nouvelle fenêtre)" target="_blank">G100</a></p>
 		<div class="tags">
 		    <span>Mot-clés</span>
@@ -307,7 +301,7 @@
 	</ul>
 	<aside>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G144.html" title="G144 (nouvelle fenêtre)" target="_blank">G144</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -372,7 +366,7 @@
 <aside>
 	<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-16-a">Consulter la note technique au sujet des images vectorielle et de l'utilisation de la propriété <code lang="en">aria-describedby</code></a></p>
 	<h4>Correspondances WCAG 2.0</h4>
-	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a>
 	Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G92.html" title="G92 (nouvelle fenêtre)" target="_blank">G92</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G74.html" title="G74 (nouvelle fenêtre)" target="_blank">G74</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G73.html" title="G73 (nouvelle fenêtre)" target="_blank">G73</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H45.html" title="H45 (nouvelle fenêtre)" target="_blank">H45</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA6.html" title="ARIA6 (nouvelle fenêtre)" target="_blank">ARIA6</a></p>
 	<div class="tags">
 		<span>Mot-clés</span>
@@ -431,7 +425,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G92.html" title="G92 (nouvelle fenêtre)" target="_blank">G92</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F67.html" title="F67 (nouvelle fenêtre)" target="_blank">F67</a></p>
 
@@ -541,7 +535,7 @@
 	<aside>
 		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-11-a0">Consulter la note technique au sujet des légendes d'images</a></p>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G140.html" title="G140 (nouvelle fenêtre)" target="_blank">G140</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA4.html" title="ARIA4 (nouvelle fenêtre)" target="_blank">ARIA4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA6.html" title="ARIA6 (nouvelle fenêtre)" target="_blank">ARIA6</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -728,71 +722,59 @@
 </li>
 </ul>
 <aside>
-<h4>Correspondances WCAG 2.0</h4>
-
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-contrast" title="1.4.3 (nouvelle fenêtre)" target="_blank">1.4.3</a></p>
-
-<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G136.html" title="G136 (nouvelle fenêtre)" target="_blank">G136</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G145.html" title="G145 (nouvelle fenêtre)" target="_blank">G145</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/C29.html" title="C29 (nouvelle fenêtre)" target="_blank">C29</a></p>
-
-
-<div class="tags">
-    <span>Mot-clés</span>
-    <ul>
-              <li>Niveau : AA</li>
-              <li>Principe : Perceptible</li>
-          </ul>
-  </div>
-	</aside>
+	<h4>Correspondances WCAG 2.0</h4>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-contrast" title="1.4.3 (nouvelle fenêtre)" target="_blank">1.4.3</a></p>
+	<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G136.html" title="G136 (nouvelle fenêtre)" target="_blank">G136</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G145.html" title="G145 (nouvelle fenêtre)" target="_blank">G145</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/C29.html" title="C29 (nouvelle fenêtre)" target="_blank">C29</a></p>
+	<div class="tags">
+		<span>Mot-clés</span>
+		<ul>
+			<li>Niveau : AA</li>
+			<li>Principe : Perceptible</li>
+		</ul>
+	</div>
+</aside>
 </section>
-<section>
-<h3 id="crit-3-4"><em>Critère 3.4 [AAA]</em> Dans chaque page web, le contraste entre la couleur du texte et la couleur de son arrière-plan est-il amélioré (hors cas particuliers)&nbsp;?</h3>
-<ul>
-<li>Test 3.4.1 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
-</ul>
-</li>
-<li>Test 3.4.2 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
-</ul>
-</li>
-<li>Test 3.4.3 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
-</ul>
-</li>
-<li>Test 3.4.4 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
-</ul>
-</li>
-</ul>
-<aside>
-<h4>Correspondances WCAG 2.0</h4>
-
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast7" title="1.4.6 (nouvelle fenêtre)" target="_blank">1.4.6</a></p>
-
-<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G17.html" title="G17 (nouvelle fenêtre)" target="_blank">G17</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F83.html" title="F83 (nouvelle fenêtre)" target="_blank">F83</a></p>
-
-
-<div class="tags">
-    <span>Mot-clés</span>
-    <ul>
-              <li>Niveau : AAA</li>
-              <li>Principe : Perceptible</li>
-          </ul>
-  </div>
-     
-     </section>   
+	<section>
+		<h3 id="crit-3-4"><em>Critère 3.4 [AAA]</em> Dans chaque page web, le contraste entre la couleur du texte et la couleur de son arrière-plan est-il amélioré (hors cas particuliers)&nbsp;?</h3>
+		<ul>
+			<li>Test 3.4.1 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
+				</ul>
+			</li>
+			<li>Test 3.4.2 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
+				</ul>
+			</li>
+			<li>Test 3.4.3 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
+				</ul>
+			</li>
+			<li>Test 3.4.4 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
+				</ul>
+			</li>
+		</ul>
+		<aside>
+			<h4>Correspondances WCAG 2.0</h4>
+			<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast7" title="1.4.6 (nouvelle fenêtre)" target="_blank">1.4.6</a></p>
+			<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G17.html" title="G17 (nouvelle fenêtre)" target="_blank">G17</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F83.html" title="F83 (nouvelle fenêtre)" target="_blank">F83</a></p>
+			<div class="tags">
+				<span>Mot-clés</span>
+				<ul>
+					<li>Niveau : AAA</li>
+					<li>Principe : Perceptible</li>
+				</ul>
+			</div>
+		</aside>
+	</section>   
 </article>
 
 <article class="thematique">
@@ -1313,7 +1295,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G68.html" title="G68 (nouvelle fenêtre)" target="_blank">G68</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G100.html" title="G100 (nouvelle fenêtre)" target="_blank">G100</a></p>
 
@@ -1349,7 +1331,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H35.html" title="H35 (nouvelle fenêtre)" target="_blank">H35</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H46.html" title="H46 (nouvelle fenêtre)" target="_blank">H46</a></p>
 
@@ -1373,7 +1355,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H46.html" title="H46 (nouvelle fenêtre)" target="_blank">H46</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F30.html" title="F30 (nouvelle fenêtre)" target="_blank">F30</a></p>
 
@@ -1880,7 +1862,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H79.html" title="H79 (nouvelle fenêtre)" target="_blank">H79</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H78.html" title="H78 (nouvelle fenêtre)" target="_blank">H78</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H79.html" title="H79 (nouvelle fenêtre)" target="_blank">H79</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H80.html" title="H80 (nouvelle fenêtre)" target="_blank">H80</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H81.html" title="H81 (nouvelle fenêtre)" target="_blank">H81</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H30.html" title="H30 (nouvelle fenêtre)" target="_blank">H30</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F89.html" title="F89 (nouvelle fenêtre)" target="_blank">F89</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G91.html" title="G91 (nouvelle fenêtre)" target="_blank">G91</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G53.html" title="G53 (nouvelle fenêtre)" target="_blank">G53</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA7.html" title="ARIA7 (nouvelle fenêtre)" target="_blank">ARIA7</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA8.html" title="ARIA8 (nouvelle fenêtre)" target="_blank">ARIA8</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F63.html" title="F63 (nouvelle fenêtre)" target="_blank">F63</a></p>
 
@@ -1979,7 +1961,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G91.html" title="G91 (nouvelle fenêtre)" target="_blank">G91</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H30.html" title="H30 (nouvelle fenêtre)" target="_blank">H30</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F89.html" title="F89 (nouvelle fenêtre)" target="_blank">F89</a></p>
 
@@ -2094,7 +2076,7 @@
 </ul>
 <aside>
 	<h4>Correspondances WCAG 2.0</h4>
-	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 	<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G136.html" title="G136 (nouvelle fenêtre)" target="_blank">G136</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F19.html" title="F19 (nouvelle fenêtre)" target="_blank">F19</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F20.html" title="F20 (nouvelle fenêtre)" target="_blank">F20</a></p>
 	<div class="tags">
 		<span>Mot-clés</span>
@@ -2779,7 +2761,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G140.html" title="G140 (nouvelle fenêtre)" target="_blank">G140</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F3.html" title="F3 (nouvelle fenêtre)" target="_blank">F3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F87.html" title="F87 (nouvelle fenêtre)" target="_blank">F87</a></p>
 
@@ -4266,7 +4248,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G10.html" title="G10 (nouvelle fenêtre)" target="_blank">G10</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G135.html" title="G135 (nouvelle fenêtre)" target="_blank">G135</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F15.html" title="F15 (nouvelle fenêtre)" target="_blank">F15</a></p>
 
@@ -4294,7 +4276,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G10.html" title="G10 (nouvelle fenêtre)" target="_blank">G10</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G135.html" title="G135 (nouvelle fenêtre)" target="_blank">G135</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F15.html" title="F15 (nouvelle fenêtre)" target="_blank">F15</a></p>
 
@@ -4384,7 +4366,7 @@
 </ul>
 <aside>
 	<h4>Correspondances WCAG 2.0</h4>
-	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 	<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G160.html" title="G160 (nouvelle fenêtre)" target="_blank">G160</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G153.html" title="G153 (nouvelle fenêtre)" target="_blank">G153</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H86.html" title="H86 (nouvelle fenêtre)" target="_blank">H86</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F71.html" title="F71 (nouvelle fenêtre)" target="_blank">F71</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F72.html" title="F72 (nouvelle fenêtre)" target="_blank">F72</a></p>
 	<div class="tags">
 	<span>Mot-clés</span>
@@ -4409,7 +4391,7 @@
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H86.html" title="H86 (nouvelle fenêtre)" target="_blank">H86</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F71.html" title="F71 (nouvelle fenêtre)" target="_blank">F71</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F72.html" title="F72 (nouvelle fenêtre)" target="_blank">F72</a></p>
 

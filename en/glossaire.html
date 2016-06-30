@@ -13,7 +13,7 @@
 		<a name="top" id="top"></a>
         <header id="header" role="banner">
             <div class="headsite nav clearfix">
-                <strong id="logo"><a href="index.html">RGAA&nbsp;3.0</a></strong>
+                <strong id="logo"><a href="index.html">RGAA&nbsp;3.0 en</a> | <a href="../fr/">fr</a></strong>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu</button>
                 <nav id="nav" class="collapse navbar-collapse" role="navigation">
                     <ul><!--
@@ -27,7 +27,7 @@
             	</nav>
             </div>
             <div class="headrub page">
-                <h1>RGAA 3.0 - Glossary - English translation</h1>
+                <h1>Glossary</h1>
 				<p class="lead">The RGAA is the French government's General Accessibility Reference for Administrations. It is meant to provide a way to check compliance against <abbr title="Web Content Accessibility Guidelines, version 2.0">WCAG&nbsp;2.0</abbr>.</p>
 				<div id="navtoc">
 					<h2 id="toc">Table of Contents</h2>
@@ -102,7 +102,7 @@
 				<h3 id="LienAdj">Adjacent link</h3>
 				<p>Link adjacent to an element both in the layout (CSS enabled) and in the HTML code. In the HTML code, the link must be just before or after the element it is adjacent to.</p>
 
-				<h3 id="Alerte">Alert</h3>
+				<h3 id="alerte">Alert</h3>
 				<p>Alert message that interrupts navigation or consultation, requiring the user to click on a button or a link in order to proceed; for example, a dialog box generated via the <code>alert</code> JavaScript function. By extension, a pop-in (content presented in an overlay, is inserted in the DOM) that needs to be closed to proceed, is considered as an alert.</p>
 				<p>
 				<strong>Note:</strong> An option may be proposed  to disable the alerts before they are triggered, for example, via a user parameter. Other example:  when the first alert is displayed, a checkbox "do not display this alert anymore" can be ticked by the user. </p>
@@ -198,7 +198,7 @@
 				<strong>Note 2:</strong> In standard audio description, narration is added during existing pauses in dialogue. (See also extended audio description.)
 				<p><strong>Note 3:</strong> Where all of the video information is already provided in existing audio, no additional audio description is necessary.</p>
 
-				<h3 id="RedirectAuto">Automatic redirection</h3>
+				<h3 id="redirection-automatique">Automatic redirection</h3>
 				<p>
 				Process consisting in automatically redirecting the user from a page to another, on the same domain or a different domain.</p>
 
@@ -256,9 +256,7 @@
 				<p><strong>Note:</strong> A change of content is not always a change of context. Changes in content, such as an expanding outline, dynamic menu, or a tab control do not necessarily change the context, unless they also change one of the elements listed above (e.g., focus).</p>
 				<p><strong>Example:</strong> Opening a new window, moving focus to a different component, going to a new page (including anything that would seem to to users as if they had moved to a new page) or significantly re-arranging the content of a page, are examples of changes of context.</p>
 
-				<h3 id="ChangeNativeRole">
-					Change of native role of an HTML element
-				</h3>
+				<h3 id="ChangeNativeRole">Change of native role of an HTML element</h3>
 				<p>The WAI-ARIA specification allows to modify the native role of an element, like for instance changing an <code>A</code> element (with an href attribute) into a <code>BUTTON</code> element.
 				</p>
 				<p>These modifications can be made only under certain conditions, described in the document <a rel="external" class="external" href="https://www.w3.org/TR/aria-in-html/">Notes on Using WAI-ARIA in HTML</a>, which defines several restrictions, in particular.
@@ -266,15 +264,11 @@
 				<p>To be considered conformant, a change of the native role of an HTML element via WAI-ARIA must comply with these restrictions.
 				</p>
 
-				<h3 id="ChangeLumi">
-					Changes in luminosity (sudden) or flashing effects
-				</h3>
+				<h3 id="changement-lumi">Changes in luminosity (sudden) or flashing effects</h3>
 				<p>A rapid alternance of colors with very different levels of luminosity, that can cause seizures in some people, if the flashing area is large enough, and the rate of change within specific frequency ranges. 
 				</p>
 
-				<h3 id="TailleCaractere">
-					Character size
-				</h3>
+				<h3 id="TailleCaractere">Character size</h3>
 				Size of the characters of textual content found in the page. In order to be accessible, font sizes must be defined with relative units (<code>%</code>, <code>em</code> or <code>rem</code>) or keywords (<code>xx-small</code>, <code>x-small</code>, <code>small</code>, <code>medium</code>, <code>large</code>, <code>x-large</code>, <code>xx-large</code>, <code>smaller</code>, or <code>larger</code>).
 				<p><code>Note:</code> with regards to the RGAA, the use of the pixel unit (<code>px</code>) is prohibitted.</p>
 
@@ -496,7 +490,7 @@
 				<p><strong>Note 2:</strong> the focus visual cue must not be degraded, meaning that its visibility is lessened compared to the user agent's default style.
 				</p>
 
-				<h3 id="Footer">Footer</h3>
+				<h3 id="zoneFooter">Footer</h3>
 				<p>
 					Container of information related to the use of the site, or legal information. This is generally where can be found links to the help page, the credits page, terms of use, and the accessibility page, potentially.
 				</p>
@@ -730,12 +724,12 @@
 					<li class="goafter"><a href="#m">Skip&nbsp;to&nbsp;M</a></li>
 				</ul>
 
-				<h3 id="LanguageChange">Language change</h3>
+				<h3 id="changement-langue">Language change</h3>
 				<p>An indication of language change tells user agents which language-specific rules should be applied to render appropriately parts of the content   written in a human language different from the main language of the content. This includes, notably, the vocal restitution performed by speech synthesizers. Language changes apply to all contents, including some attributes like <code>title</code>.</p>
 				<p><strong>Note:</strong> in HTML, it is not technically possible to signal language changes inside an attribute value. In this case, the language change is signalled via the element bearing this attribute. For instance, an hyperlink with a <code>title</code> attribute in German, in a page whose main language is English, should have a <code>lang</code> attribute set to <code>"de"</code>. When the attribute contains several language changes, the criterion is not applicable. 
 				</p>
 
-				<h3 id="CodeLangue">Language code</h3>
+				<h3 id="code-de-langue">Language code</h3>
 				<p>Code with two characters (ISO 639-1) or 3 characters (ISO 639-2 and following) specifying the default language of a document or a chunk of text. The language code  is constituted of two parts separated by a dash on the model <code>lang="[code][-option]"</code>.
 				</p>
 				<ul>
@@ -847,10 +841,10 @@
 					<li class="goafter"><a href="#n">Skip&nbsp;to&nbsp;N</a></li>
 				</ul>
 
-				<h3 id="Main">Main content area</h3>
+				<h3 id="zoneMain">Main content area</h3>
 				<p>Container of the main contents of the page, where can be found principal information and functionalities (therefore excluding menu, the search form, or secondary content blocks contaning related news, ads, etc.).</p>
 				<p><strong>Note:</strong> there must be only one main content area. On some pages, defining what constitutes the main content can be challenging, like on homepages for instance.</p>
-				<p>See the technical definition as defined by the ARIA API: <a rel="external" class="external" href="https://www.w3.org/WAI/PF/aria/roles#main">Main (role)</a>.
+				<p>See the technical definition as defined by the ARIA API: <a rel="external" class="external" href="https://www.w3.org/WAI/PF/aria/roles#zoneMain">Main (role)</a>.
 
 				<h2 id="n">N</h2>
 				<ul class="skiplink">
@@ -927,14 +921,9 @@
 					<li class="goafter"><a href="#r">Skip&nbsp;to&nbsp;R</a></li>
 				</ul>
 
-				<h3 id="#PageHeader">
-					Page Header
-				</h3>
-				<p>
-					Also called banner. Content block, starting a web page, and containing generally the document's headline, a logo, a baseline&hellip;
-				</p>
-				<p><strong>Note:</strong> this header must not be mistaken with section headers, which can be defined in HTML5 with the <code>header</code> tag in any sectioning element.
-				</p>
+				<h3 id="#zoneHeader">Page Header</h3>
+				<p>Also called banner. Content block, starting a web page, and containing generally the document's headline, a logo, a baseline&hellip;</p>
+				<p><strong>Note:</strong> this header must not be mistaken with section headers, which can be defined in HTML5 with the <code>header</code> tag in any sectioning element.</p>
 				<p>See the technical definition of a banner as defined by the ARIA API: <a rel="external" class="external" href="https://www.w3.org/WAI/PF/aria/roles#banner">Banner (role)</a>.
 				</p>
 
@@ -1053,7 +1042,7 @@
 				<p>Set of instructions, written in CSS, a standardized language used to defined the layout of content elements in an HTML document (examples: page background color, text size/font/color, position in the page&hellip;). Style sheets can be external (CSS file), embedded (declared in the <code>head</code>) or inline (declared via the <code>style</code> attribute of a tag).
 				</p>
 
-				<h3 id="ResumeTab">
+				<h3 id="table-resume">
 					Summary (of a table)
 				</h3>
 				<p>A table summary is a chunk of text associated with a complex data table. It provides information on the nature and structure of the table, in order to ease its consultation for users of assistive technologies, for instance.
@@ -1138,7 +1127,7 @@
 				<p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates <a href="criteres.html#crit-4-21">criterion&nbsp;4.21</a> (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). therefore it can not be tabbed to.</p>
 				<p>Note 2: Animated GIFs, and JavaScript-based animations  are not considered as time-based media with regards to RGAA.</p>
 
-				<h3 id="TitreTab">Title (of a data table)</h3>
+				<h3 id="titre-tableau">Title (of a data table)</h3>
 				<p>Content of an HTML element (<code>caption</code> tag) describing the content of a data table. To be accessible the description must be relevant (clear and concise).
 				</p>
 

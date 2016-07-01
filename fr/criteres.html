@@ -1,3 +1,8 @@
+<!--
+RGAA 3.0 - juin 2015
+Source : http://references.modernisation.gouv.fr/referentiel-technique-0
+Fork : https://github.com/Tanaguru/Rgaa_Website
+-->
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -51,38 +56,33 @@
 		</header>
         <main id="main" role="main">
 			<div class="page">
+				<div id="howto">
+					<h2>Mode d'emploi</h2>
+					<p>Ce référentiel s'applique à tout contenu HTML (HTML4, XHTML1 et HTML5). Il utilise, pour certains tests une base de référence prenant en compte un ensemble de technologies d'assistance, de navigateurs et de systèmes d'exploitation sur lesquels l'accessibilité des composants d'interface développés par JavaScript doit être vérifié notamment. Une description détaillée de la base de référence est disponible ici : <a href="base.html">base de référence</a>.</p>
 
-<div id="howto">
-	<h2>Mode d'emploi</h3>
-	<p>Ce référentiel s'applique à tout contenu HTML (HTML4, XHTML1 et HTML5). Il utilise, pour certains tests une base de référence prenant en compte un ensemble de technologies d'assistance, de navigateurs et de systèmes d'exploitation sur lesquels l'accessibilité des composants d'interface développés par JavaScript doit être vérifié notamment. Une description détaillée de la base de référence est disponible ici : <a href="base.html">base de référence</a>.</p>
-	</section>
-<section>
-<h3>Note importante pour tout contenu antérieur à la spécification HTML5&nbsp;:</h3>
-	<p>Lorsque le code HTML de la page n'est pas du HTML5, les éléments HTML5 (balises et attributs) exigés par un critère ou test sont non applicables. Tous les autres critères ou tests restent applicables, y compris les dispositifs ARIA. Les critères et tests suivants sont non applicables&nbsp;:</p>
-	<ul>
-		<li>critère 1.10&nbsp;;</li>
-		<li>critère 9.2&nbsp;;</li>
-		<li>test 10.13.3&nbsp;;</li>
-		<li>test 11.10.1 (condition 2 relative à l'attribut HTML5 <code lang="en">required</code>).</li>
-	</ul>
-	</section>
-<section>
-<h3>Méthode de validation</h3>
-	<p>Le niveau de conformité est établi au niveau des critères selon ces statuts&nbsp;:</p>
-	<ul>
-		<li>conforme (C) : l'ensemble des tests applicables sont réussis&nbsp;;</li>
-		<li>non conforme (NC) : un test applicable est échoué, au moins&nbsp;;</li>
-		<li>non applicable (NA) : il n'y a pas de contenu concerné par le critère.</li>
-	</ul>
-	<p>RGAA propose, en plus de ces trois statuts de validation, deux statuts complémentaires&nbsp;:</p>
+					<h3>Note importante pour tout contenu antérieur à la spécification HTML5&nbsp;:</h3>
+					<p>Lorsque le code HTML de la page n'est pas du HTML5, les éléments HTML5 (balises et attributs) exigés par un critère ou test sont non applicables. Tous les autres critères ou tests restent applicables, y compris les dispositifs ARIA. Les critères et tests suivants sont non applicables&nbsp;:</p>
+					<ul>
+						<li>critère 1.10&nbsp;;</li>
+						<li>critère 9.2&nbsp;;</li>
+						<li>test 10.13.3&nbsp;;</li>
+						<li>test 11.10.1 (condition 2 relative à l'attribut HTML5 <code lang="en">required</code>).</li>
+					</ul>
+					<h3>Méthode de validation</h3>
+					<p>Le niveau de conformité est établi au niveau des critères selon ces statuts&nbsp;:</p>
+					<ul>
+						<li>conforme (C) : l'ensemble des tests applicables sont réussis&nbsp;;</li>
+						<li>non conforme (NC) : un test applicable est échoué, au moins&nbsp;;</li>
+						<li>non applicable (NA) : il n'y a pas de contenu concerné par le critère.</li>
+					</ul>
+					<p>RGAA propose, en plus de ces trois statuts de validation, deux statuts complémentaires&nbsp;:</p>
 
-	<ul>
-		<li>dérogé (D) : il existe des contenus dérogés applicables au critère&nbsp;;</li>
-		<li>non testé (NT) : le critère n'a pas été testé.</li>
-	</ul>
-	<p>Vous pouvez consulter, à ce sujet, le guide d'accompagnement : <a rel="external" class="external" href="https://references.modernisation.gouv.fr/4255-comment-verifie-t-la-conformite-au-rgaa-0">Comment vérifie-t-on la conformité au&nbsp;RGAA&nbsp;?</a></p>
-</div>
-
+					<ul>
+						<li>dérogé (D) : il existe des contenus dérogés applicables au critère&nbsp;;</li>
+						<li>non testé (NT) : le critère n'a pas été testé.</li>
+					</ul>
+					<p>Vous pouvez consulter, à ce sujet, le guide d'accompagnement : <a rel="external" class="external" href="https://references.modernisation.gouv.fr/4255-comment-verifie-t-la-conformite-au-rgaa-0">Comment vérifie-t-on la conformité au&nbsp;RGAA&nbsp;?</a></p>
+				</div>
 				<article id="images" class="thematique">
 					<header>
 						<h2>1. Images</h2>
@@ -113,28 +113,27 @@
 							</ul>
 						</div>
 					</header>
-
-<section>
-	<h3 id="crit-1-1"><em>Critère 1.1 [A]</em> Chaque image a-t-elle une alternative textuelle&nbsp;?</h3>
-	<ul>
-		<li>Test 1.1.1 : Chaque image (balise <code lang="en">img</code>) a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
-		<li>Test 1.1.2 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
-		<li>Test 1.1.3 : Chaque bouton de formulaire (balise <code lang="en">input</code> avec l'attribut <code lang="en">type="image"</code>) a-t-il un attribut <code lang="en">alt</code>&nbsp;?</li>
-		<li>Test 1.1.4 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> coté serveur est-t-elle doublée d'un lien dans la page&nbsp;?</li>
-	</ul>
-	<aside>
-		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
-		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" title="H36 (nouvelle fenêtre)" target="_blank">H36</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
-		<div class="tags">
-			<span>Mot-clés</span>
-			<ul>
-				<li>Niveau : A</li>
-				<li>Principe : Perceptible</li>
-			</ul>
-		</div>
-	</aside>
-</section>
+					<section>
+						<h3 id="crit-1-1"><em>Critère 1.1 [A]</em> Chaque image a-t-elle une alternative textuelle&nbsp;?</h3>
+						<ul>
+							<li id="test-1-1-1">Test 1.1.1 : Chaque image (balise <code lang="en">img</code>) a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
+							<li id="test-1-1-2">Test 1.1.2 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
+							<li id="test-1-1-3">Test 1.1.3 : Chaque bouton de formulaire (balise <code lang="en">input</code> avec l'attribut <code lang="en">type="image"</code>) a-t-il un attribut <code lang="en">alt</code>&nbsp;?</li>
+							<li id="test-1-1-4">Test 1.1.4 : Chaque <a href="glossaire.html#zone">zone</a> (balise <code lang="en">area</code>) d'une <a href="glossaire.html#ImgReactive">image réactive</a> coté serveur est-t-elle doublée d'un lien dans la page&nbsp;?</li>
+						</ul>
+						<aside>
+							<h4>Correspondances WCAG 2.0</h4>
+							<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
+							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" title="H36 (nouvelle fenêtre)" target="_blank">H36</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
+							<div class="tags">
+								<span>Mot-clés</span>
+								<ul>
+									<li>Niveau : A</li>
+									<li>Principe : Perceptible</li>
+								</ul>
+							</div>
+						</aside>
+					</section>
 
 <section>
 	<h3 id="crit-1-2"><em>Critère 1.2 [A]</em> Pour chaque image de décoration ayant une alternative textuelle, cette alternative est-elle vide&nbsp;?</h3>
@@ -164,9 +163,9 @@
 	</ul>
 
 	<aside>
-		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-12-a">Consulter la note technique au sujet du role "présentation"</a></p>
+		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-1-2">Consulter la note technique au sujet du role "présentation"</a></p>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H67.html" title="H67 (nouvelle fenêtre)" target="_blank">H67</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G196.html" title="G196 (nouvelle fenêtre)" target="_blank">G196</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/C9.html" title="C9 (nouvelle fenêtre)" target="_blank">C9</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F39.html" title="F39 (nouvelle fenêtre)" target="_blank">F39</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F38.html" title="F38 (nouvelle fenêtre)" target="_blank">F38</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA4.html" title="ARIA4 (nouvelle fenêtre)" target="_blank">ARIA4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA10.html" title="ARIA10 (nouvelle fenêtre)" target="_blank">ARIA10</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -218,16 +217,16 @@
 		<li>Un lien adjacent permet d'accéder à une alternative dont le&nbsp;contenu est pertinent et identique à l'attribut <code lang="en">title</code> de la balise <code lang="en">svg</code> s'il est présent</li>
 		</ul>
 		</li>
-		<li>Test 1.3.7 : Pour chaque image vectorielle porteuse d'information (balise <code lang="en">svg</code>) et&nbsp;possédant une alternative, cette alternative est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
-		<li>Test 1.3.8 : Pour chaque image bitmap porteuse d'information (balise <code lang="en">canvas</code>) et&nbsp;possédant une alternative (contenu entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code>), cette alternative est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+		<li>Test 1.3.7 : Pour chaque image vectorielle porteuse d'information (balise <code lang="en">svg</code>) et&nbsp;possédant une alternative, cette alternative est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+		<li>Test 1.3.8 : Pour chaque image bitmap porteuse d'information (balise <code lang="en">canvas</code>) et&nbsp;possédant une alternative (contenu entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code>), cette alternative est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
 		<li>Test 1.3.9 : Pour chaque image bitmap porteuse d'information (balise <code lang="en">canvas</code>) et&nbsp;possédant une alternative (contenu entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code>), cette alternative est-elle pertinente&nbsp;?</li>
 		<li>Test 1.3.10 : Pour chaque image porteuse d'information et ayant une alternative textuelle, l'alternative textuelle est-elle <a href="glossaire.html#AltCC">courte et concise</a> (hors <a href="glossaire.html#crit-13">cas particuliers</a>)&nbsp;?</li>
 	</ul>
 	<aside>
-		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-13-a">Consulter la note technique au sujet de l'attribut title et des des images vectorielles</a></p>
-		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-11-a">Consulter la note technique au sujet des images vectorielles</a></p>
+		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-1-3">Consulter la note technique au sujet de l'attribut title et des des images vectorielles</a></p>
+		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-1-1">Consulter la note technique au sujet des images vectorielles</a></p>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G94.html" title="G94 (nouvelle fenêtre)" target="_blank">G94</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G95.html" title="G95 (nouvelle fenêtre)" target="_blank">G95</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F30.html" title="F30 (nouvelle fenêtre)" target="_blank">F30</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F71.html" title="F71 (nouvelle fenêtre)" target="_blank">F71</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G196.html" title="G196 (nouvelle fenêtre)" target="_blank">G196</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA4.html" title="ARIA4 (nouvelle fenêtre)" target="_blank">ARIA4</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -271,13 +270,13 @@
 		<li>l'alternative textuelle implémentée via la balise <code lang="en">desc</code> permet d'identifier la nature et la fonction de l'image et est identique à l'attribut <code lang="en">title</code> de la balise <code lang="en">svg</code> s'il est présent</li>
 		</ul>
 		</li>
-		<li>Test 1.4.7 : Pour chaque image vectorielle (balise <code lang="en">svg</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+		<li>Test 1.4.7 : Pour chaque image vectorielle (balise <code lang="en">svg</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
 		<li>Test 1.4.8 : Pour chaque image bitmap (balise <code lang="en">canvas</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle, l'alternative textuelle permet-elle d'identifier la nature et la fonction de l'image&nbsp;?</li>
-		<li>Test 1.4.9 : Pour chaque image bitmap (balise <code lang="en">canvas</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+		<li>Test 1.4.9 : Pour chaque image bitmap (balise <code lang="en">canvas</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme image-test et ayant une alternative textuelle , l'alternative textuelle est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
 	</ul>
 	<aside>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G143.html" title="G143 (nouvelle fenêtre)" target="_blank">G143</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G100.html" title="G100 (nouvelle fenêtre)" target="_blank">G100</a></p>
 		<div class="tags">
 		    <span>Mot-clés</span>
@@ -307,7 +306,7 @@
 	</ul>
 	<aside>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G144.html" title="G144 (nouvelle fenêtre)" target="_blank">G144</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -346,7 +345,7 @@
 
 	<ul>
 	<li>Il existe un attribut <code lang="en">alt</code> contenant la référence à une description détaillée adjacente à l'image</li>
-	<li>Il existe un <a href="glossaire.html#LienAdj">lien adjacent</a> (via une <code lang="en">url</code> ou une <code lang="en">ancre</code>) permettant d'accéder au contenu de la <a href="glossaire.html#DescDetaillee">description détaillée</a></li>
+	<li>Il existe un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (via une <code lang="en">url</code> ou une <code lang="en">ancre</code>) permettant d'accéder au contenu de la <a href="glossaire.html#DescDetaillee">description détaillée</a></li>
 	</ul>
 	</li>
 	<li>Test 1.6.5 : Chaque image vectorielle (balise <code lang="en">svg</code>) qui nécessite une <a href="glossaire.html#DescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
@@ -358,7 +357,7 @@
 	<li>Il existe un lien adjacent (via une balise <code lang="en">url</code> ou une <code lang="en">ancre</code>) permettant d'accéder au contenu de la <a href="glossaire.html#DescDetaillee">description détaillée</a></li>
 	</ul>
 	</li>
-	<li>Test 1.6.6: Pour chaque image vectorielle (balise <code lang="en">svg</code>) qui implémente une référence à une <a href="glossaire.html#DescDetaillee">description détaillée</a> adjacente via une propriété <code lang="en">aria-label</code> ou une balise <code lang="en">desc</code>, cette référence est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+	<li>Test 1.6.6: Pour chaque image vectorielle (balise <code lang="en">svg</code>) qui implémente une référence à une <a href="glossaire.html#DescDetaillee">description détaillée</a> adjacente via une propriété <code lang="en">aria-label</code> ou une balise <code lang="en">desc</code>, cette référence est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
 	<li>Test 1.6.7: Chaque image bitmap (balise <code lang="en">canvas</code>) qui nécessite une <a href="glossaire.html#DescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
 
 	<ul>
@@ -367,12 +366,12 @@
 	<li>Il existe un lien adjacent (via une <code lang="en">url</code> ou une <code lang="en">ancre</code>) permettant d'accéder au contenu de la <a href="glossaire.html#DescDetaillee">description détaillée</a></li>
 	</ul>
 	</li>
-	<li>Test 1.6.8: Pour chaque image bitmap (balise <code lang="en">canvas</code>) qui implémente une référence à une <a href="glossaire.html#DescDetaillee">description détaillée</a> adjacente, cette référence est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+	<li>Test 1.6.8: Pour chaque image bitmap (balise <code lang="en">canvas</code>) qui implémente une référence à une <a href="glossaire.html#DescDetaillee">description détaillée</a> adjacente, cette référence est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
 </ul>
 <aside>
 	<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-16-a">Consulter la note technique au sujet des images vectorielle et de l'utilisation de la propriété <code lang="en">aria-describedby</code></a></p>
 	<h4>Correspondances WCAG 2.0</h4>
-	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a>
 	Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G92.html" title="G92 (nouvelle fenêtre)" target="_blank">G92</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G74.html" title="G74 (nouvelle fenêtre)" target="_blank">G74</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G73.html" title="G73 (nouvelle fenêtre)" target="_blank">G73</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H45.html" title="H45 (nouvelle fenêtre)" target="_blank">H45</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA6.html" title="ARIA6 (nouvelle fenêtre)" target="_blank">ARIA6</a></p>
 	<div class="tags">
 		<span>Mot-clés</span>
@@ -392,21 +391,21 @@
 <ul>
 <li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via l'adresse référencée dans l'attribut <code lang="en">longdesc</code> est pertinente</li>
 <li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> dans la page et signalée dans l'attribut <code lang="en">alt</code> est pertinente</li>
-<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#LienAdj">lien adjacent</a> est pertinente</li>
+<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente</li>
 </ul>
 </li>
 <li>Test 1.7.2 : Chaque <a href="glossaire.htm#mimgObj">image objet</a> (balise <code lang="en">object</code> avec l'attribut <code lang="en">type="image/…"</code>) ayant une <a href="glossaire.html#DescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
 
 <ul>
 <li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> adjacente à l'image objet est pertinente</li>
-<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#LienAdj">lien adjacent</a> est pertinente</li>
+<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente</li>
 </ul>
 </li>
 <li>Test 1.7.3 : Chaque image embarquée (balise <code lang="en">embed</code> avec l'attribut <code lang="en">type="image/…"</code>) ayant une <a href="glossaire.html#DescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
 
 <ul>
 <li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> adjacente à l'image embarquée est pertinente</li>
-<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#LienAdj">lien adjacent</a> est pertinente</li>
+<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente</li>
 </ul>
 </li>
 <li>Test 1.7.4 : Chaque image vectorielle (balise <code lang="en">svg</code>) ayant une <a href="glossaire.html#DescDetaillee">description détaillée</a> vérifie-t-elle une de ces conditions ?
@@ -414,10 +413,10 @@
 <ul>
 <li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> adjacente à l'image vectorielle est pertinente</li>
 <li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> contenue dans la balise <code lang="en">desc</code> est pertinente</li>
-<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#LienAdj">lien adjacent</a> est pertinente</li>
+<li>La <a href="glossaire.html#DescDetaillee">description détaillée</a> via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente</li>
 </ul>
 </li>
-<li>Test 1.7.5: Pour chaque image vectorielle (balise <code lang="en">svg</code>) ayant une description détaillée implémentée via la balise <code lang="en">desc</code>, cette description détaillée est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+<li>Test 1.7.5: Pour chaque image vectorielle (balise <code lang="en">svg</code>) ayant une description détaillée implémentée via la balise <code lang="en">desc</code>, cette description détaillée est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
 <li>Test 1.7.6: Chaque image bitmap (balise <code lang="en">canvas</code>) ayant une description détaillée vérifie-t-elle une de ces conditions ?
 
 <ul>
@@ -426,12 +425,12 @@
 <li>La description détaillée via un lien adjacent est pertinente</li>
 </ul>
 </li>
-<li>Test 1.7.7: Pour chaque image bitmap (balise <code lang="en">canvas</code>) ayant une description détaillée entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code>, cette description détaillée est-elle <a href="glossaire.html#CorrectlyRendered">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
+<li>Test 1.7.7: Pour chaque image bitmap (balise <code lang="en">canvas</code>) ayant une description détaillée entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code>, cette description détaillée est-elle <a href="glossaire.html#correctement-restitue">correctement restituée</a> par les technologies d'assistance&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G92.html" title="G92 (nouvelle fenêtre)" target="_blank">G92</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F67.html" title="F67 (nouvelle fenêtre)" target="_blank">F67</a></p>
 
@@ -539,9 +538,9 @@
 		</li>
 	</ul>
 	<aside>
-		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-11-a0">Consulter la note technique au sujet des légendes d'images</a></p>
+		<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-1-1">Consulter la note technique au sujet des légendes d'images</a></p>
 		<h4>Correspondances WCAG 2.0</h4>
-		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+		<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 		<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G140.html" title="G140 (nouvelle fenêtre)" target="_blank">G140</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA4.html" title="ARIA4 (nouvelle fenêtre)" target="_blank">ARIA4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA6.html" title="ARIA6 (nouvelle fenêtre)" target="_blank">ARIA6</a></p>
 		<div class="tags">
 			<span>Mot-clés</span>
@@ -554,9 +553,9 @@
 </section>
         
 </article>
-<article class="thematique">
+<article id="cadres" class="thematique">
 	<header>
-		<h2 id="cadres">2. Cadres</h2>
+		<h2>2. Cadres</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#images">Images</a></li>
@@ -615,9 +614,9 @@
 	</section>
 </article>
 
-<article class="thematique">
+<article id="couleurs" class="thematique">
 <header>
-	<h2 id="couleurs">3. Couleurs</h2>
+	<h2>3. Couleurs</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#cadres">Cadres</a></li>
@@ -649,8 +648,8 @@
 <li>Test 3.1.2 : Pour chaque indication de couleur donnée par un texte, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
 <li>Test 3.1.3 : Pour chaque image <a href="glossaire.html#ImgInfoCouleur">véhiculant une information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
 <li>Test 3.1.4 : Pour chaque <a href="glossaire.html#proprite-css-dterminant-une-couleur">propriété CSS déterminant une couleur</a> et véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
-<li>Test 3.1.5 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
-<li>Test 3.1.6 : Pour chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
+<li>Test 3.1.5 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
+<li>Test 3.1.6 : Pour chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -674,8 +673,8 @@
 <li>Test 3.2.2 : Pour chaque indication de couleur donnée par un texte, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle implémentée de façon <a href="glossaire.html#pertinence-information-autrement-que-par-la-couleur">pertinente</a>&nbsp;?</li>
 <li>Test 3.2.3 : Pour chaque image <a href="glossaire.html#ImgInfoCouleur">véhiculant une information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle implémentée de façon <a href="glossaire.html#pertinence-information-autrement-que-par-la-couleur">pertinente</a>&nbsp;?</li>
 <li>Test 3.2.4 : Pour chaque <a href="glossaire.html#proprite-css-dterminant-une-couleur">propriété CSS déterminant une couleur</a> et véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle implémentée de façon <a href="glossaire.html#pertinence-information-autrement-que-par-la-couleur">pertinente</a>&nbsp;?</li>
-<li>Test 3.2.5 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle implémentée de façon <a href="glossaire.html#pertinence-information-autrement-que-par-la-couleur">pertinente</a>&nbsp;?</li>
-<li>Test 3.2.6 : Pour chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle implémentée de façon <a href="glossaire.html#pertinence-information-autrement-que-par-la-couleur">pertinente</a>&nbsp;?</li>
+<li>Test 3.2.5 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle implémentée de façon <a href="glossaire.html#pertinence-information-autrement-que-par-la-couleur">pertinente</a>&nbsp;?</li>
+<li>Test 3.2.6 : Pour chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a> véhiculant une <a href="glossaire.html#InfoCouleur">information</a>, l'<a href="glossaire.html#InfoCouleur">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle implémentée de façon <a href="glossaire.html#pertinence-information-autrement-que-par-la-couleur">pertinente</a>&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -728,76 +727,64 @@
 </li>
 </ul>
 <aside>
-<h4>Correspondances WCAG 2.0</h4>
-
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-contrast" title="1.4.3 (nouvelle fenêtre)" target="_blank">1.4.3</a></p>
-
-<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G136.html" title="G136 (nouvelle fenêtre)" target="_blank">G136</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G145.html" title="G145 (nouvelle fenêtre)" target="_blank">G145</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/C29.html" title="C29 (nouvelle fenêtre)" target="_blank">C29</a></p>
-
-
-<div class="tags">
-    <span>Mot-clés</span>
-    <ul>
-              <li>Niveau : AA</li>
-              <li>Principe : Perceptible</li>
-          </ul>
-  </div>
-	</aside>
+	<h4>Correspondances WCAG 2.0</h4>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast-contrast" title="1.4.3 (nouvelle fenêtre)" target="_blank">1.4.3</a></p>
+	<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G136.html" title="G136 (nouvelle fenêtre)" target="_blank">G136</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G145.html" title="G145 (nouvelle fenêtre)" target="_blank">G145</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/C29.html" title="C29 (nouvelle fenêtre)" target="_blank">C29</a></p>
+	<div class="tags">
+		<span>Mot-clés</span>
+		<ul>
+			<li>Niveau : AA</li>
+			<li>Principe : Perceptible</li>
+		</ul>
+	</div>
+</aside>
 </section>
-<section>
-<h3 id="crit-3-4"><em>Critère 3.4 [AAA]</em> Dans chaque page web, le contraste entre la couleur du texte et la couleur de son arrière-plan est-il amélioré (hors cas particuliers)&nbsp;?</h3>
-<ul>
-<li>Test 3.4.1 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
-</ul>
-</li>
-<li>Test 3.4.2 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
-</ul>
-</li>
-<li>Test 3.4.3 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
-</ul>
-</li>
-<li>Test 3.4.4 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
-
-<ul>
-<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
-<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
-</ul>
-</li>
-</ul>
-<aside>
-<h4>Correspondances WCAG 2.0</h4>
-
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast7" title="1.4.6 (nouvelle fenêtre)" target="_blank">1.4.6</a></p>
-
-<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G17.html" title="G17 (nouvelle fenêtre)" target="_blank">G17</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F83.html" title="F83 (nouvelle fenêtre)" target="_blank">F83</a></p>
-
-
-<div class="tags">
-    <span>Mot-clés</span>
-    <ul>
-              <li>Niveau : AAA</li>
-              <li>Principe : Perceptible</li>
-          </ul>
-  </div>
-     
-     </section>   
+	<section>
+		<h3 id="crit-3-4"><em>Critère 3.4 [AAA]</em> Dans chaque page web, le contraste entre la couleur du texte et la couleur de son arrière-plan est-il amélioré (hors cas particuliers)&nbsp;?</h3>
+		<ul>
+			<li>Test 3.4.1 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
+				</ul>
+			</li>
+			<li>Test 3.4.2 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>jusqu'à 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 7:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 7:1, au moins</li>
+				</ul>
+			</li>
+			<li>Test 3.4.3 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 150&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.5em), le texte et le texte en image sans effet de graisse vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
+				</ul>
+			</li>
+			<li>Test 3.4.4 : Dans chaque page web, <a href="glossaire.htm#mTailleCaract%C3%A8re"><strong>à partir de 120&nbsp;%</strong> de la taille de police par défaut</a> (ou 1.2em), le texte et le texte en image en gras vérifient-ils une de ces conditions (<a href="cas-particuliers.html#crit-3-3-3-4" title="Cas particuliers pour le critère 3.4">hors cas particuliers</a>)&nbsp;?
+				<ul>
+					<li>le rapport de contraste entre le texte et son arrière-plan est de 4,5:1, au moins</li>
+					<li>un mécanisme permet à l'utilisateur d'afficher le texte avec un rapport de contraste de 4,5:1, au moins</li>
+				</ul>
+			</li>
+		</ul>
+		<aside>
+			<h4>Correspondances WCAG 2.0</h4>
+			<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#visual-audio-contrast7" title="1.4.6 (nouvelle fenêtre)" target="_blank">1.4.6</a></p>
+			<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G148.html" title="G148 (nouvelle fenêtre)" target="_blank">G148</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G17.html" title="G17 (nouvelle fenêtre)" target="_blank">G17</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G18.html" title="G18 (nouvelle fenêtre)" target="_blank">G18</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G174.html" title="G174 (nouvelle fenêtre)" target="_blank">G174</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F83.html" title="F83 (nouvelle fenêtre)" target="_blank">F83</a></p>
+			<div class="tags">
+				<span>Mot-clés</span>
+				<ul>
+					<li>Niveau : AAA</li>
+					<li>Principe : Perceptible</li>
+				</ul>
+			</div>
+		</aside>
+	</section>   
 </article>
 
-<article class="thematique">
+<article id="multimedia" class="thematique">
 	<header>
-		<h2 id="multimedia">4. Multimédia</h2>
+		<h2>4. Multimédia</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#couleurs">Couleurs</a></li>
@@ -846,29 +833,29 @@
 <br>Rendre possible le <a href="glossaire.html#contrle-de-la-consultation-dun-MediaTemp">contrôle de la consultation</a> de chaque media temporel et non-temporel au clavier et s'assurer de leur compatibilité avec les technologies d'assistance.</p>
 
 <ul>
-<li>Test 4.1.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement audio, vérifie-t-il, si&nbsp;nécessaire, l'une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.1">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.1.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement audio, vérifie-t-il, si&nbsp;nécessaire, l'une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 <li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> adjacente clairement identifiable</li>
 </ul>
 </li>
-<li>Test 4.1.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.1">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.1.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>Il existe une <a href="glossaire.html#version-alternative-audio-seulement">version alternative <q>audio seulement</q></a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une <a href="glossaire.html#version-alternative-audio-seulement">version alternative <q>audio seulement</q></a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 <li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> adjacente clairement identifiable</li>
 <li>Il existe une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée</li>
-<li>Il existe une version alternative avec une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une version alternative avec une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 </ul>
 </li>
-<li>Test 4.1.3 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.1">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.1.3 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 <li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> adjacente clairement identifiable</li>
 <li>Il existe une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée</li>
-<li>Il existe une version alternative avec une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une version alternative avec une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 </ul>
 </li>
 </ul>
@@ -893,8 +880,8 @@
 <h3 id="crit-4-2"><em>Critère 4.2 [A]</em> Pour chaque média temporel pré-enregistré ayant une transcription textuelle ou une audio-description synchronisée, celles-ci sont-elles pertinentes (hors cas particuliers)&nbsp;?</h3>
 
   <ul>
-<li>Test 4.2.1 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement audio, ayant une <a href="glossaire.html#transcript">transcription textuelle</a>, celle-ci est-elle pertinente (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.2">hors cas particuliers</a>)&nbsp;?</li>
-<li>Test 4.2.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.2">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.2.1 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement audio, ayant une <a href="glossaire.html#transcript">transcription textuelle</a>, celle-ci est-elle pertinente (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.2">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 4.2.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.2">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>La <a href="glossaire.html#transcript">transcription textuelle</a> est pertinente</li>
@@ -903,7 +890,7 @@
 <li>La <a href="glossaire.html#version-alternative-audio-seulement">version alternative <q>audio seulement</q></a> est pertinente</li>
 </ul>
 </li>
-<li>Test 4.2.3 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.2">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.2.3 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.2">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>La <a href="glossaire.html#transcript">transcription textuelle</a> est pertinente</li>
@@ -935,14 +922,14 @@
 
 
   <ul>
-<li>Test 4.3.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, l'une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.3">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.3.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, l'une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.3">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>Le <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé possède des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a></li>
-<li>Il existe une version alternative possédant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une url ou une ancre)</li>
+<li>Le <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé possède des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a></li>
+<li>Il existe une version alternative possédant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une url ou une ancre)</li>
 </ul>
 </li>
-<li>Test 4.3.2: Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré possédant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> diffusés via une balise <code lang="en">track</code>, la balise <code lang="en">track</code> possède-t-elle un attribut <code lang="en">kind="captions"</code></li>
+<li>Test 4.3.2: Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré possédant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> diffusés via une balise <code lang="en">track</code>, la balise <code lang="en">track</code> possède-t-elle un attribut <code lang="en">kind="captions"</code></li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -968,7 +955,7 @@
 
 
   <ul>
-<li>Test 4.4.1 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré ayant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a>, ces sous-titres sont-ils pertinents&nbsp;?</li>
+<li>Test 4.4.1 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré ayant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a>, ces sous-titres sont-ils pertinents&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -990,21 +977,21 @@
 <section>
 <h3 id="crit-4-5"><em>Critère 4.5 [AA]</em> Chaque média temporel en direct a-t-il, si&nbsp;nécessaire, des sous-titres synchronisés ou une transcription textuelle (hors cas particuliers)&nbsp;?</h3>
 <ul>
-<li>Test 4.5.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> seulement audio en direct vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.5">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.5.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> seulement audio en direct vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.5">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>Il existe des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a></li>
-<li>Il existe une version ayant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
-<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une version ayant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 <li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> adjacente clairement identifiable</li>
 </ul>
 </li>
-<li>Test 4.5.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé en direct vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.5">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.5.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé en direct vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.5">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>Il existe des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a></li>
-<li>Il existe une version ayant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
-<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une version ayant des <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 <li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> adjacente clairement identifiable</li>
 </ul>
 </li>
@@ -1029,7 +1016,7 @@
 <section>
 <h3 id="crit-4-6"><em>Critère 4.6 [AA]</em> Pour chaque média temporel en direct ayant des sous-titres synchronisés ou une transcription textuelle, ceux-ci sont-ils pertinents&nbsp;?</h3>
 <ul>
-<li>Test 4.6.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> seulement audio en direct vérifie-t-il une de ces conditions ?
+<li>Test 4.6.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> seulement audio en direct vérifie-t-il une de ces conditions ?
 
 <ul>
 <li>Les <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> sont pertinents</li>
@@ -1037,7 +1024,7 @@
 <li>La <a href="glossaire.html#transcript">transcription textuelle</a> est pertinente</li>
 </ul>
 </li>
-<li>Test 4.6.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé en direct vérifie-t-il une de ces conditions ?
+<li>Test 4.6.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé en direct vérifie-t-il une de ces conditions ?
 
 <ul>
 <li>Les <a href="glossaire.html#SsTitreSynchro">sous-titres synchronisés</a> sont pertinents</li>
@@ -1068,14 +1055,14 @@
 
 
   <ul>
-<li>Test 4.7.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.7">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.7.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.7">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>Il existe une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée</li>
 <li>Il existe une version alternative avec une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée</li>
 </ul>
 </li>
-<li>Test 4.7.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.7">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.7.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.7">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>Il existe une piste pour l'<a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée</li>
@@ -1105,8 +1092,8 @@
 
 
   <ul>
-<li>Test 4.8.1 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement vidéo ayant une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
-<li>Test 4.8.2 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé ayant une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.8.1 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement vidéo ayant une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.8.2 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé ayant une <a href="glossaire.html#audiodescription-synchronise-MediaTemp">audio-description</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -1133,8 +1120,8 @@
 
 
   <ul>
-<li>Test 4.9.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement audio a-t-il, si&nbsp;nécessaire, une interprétation en langue des signes adaptée à la langue du média (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.9">hors cas particuliers</a>)&nbsp;?</li>
-<li>Test 4.9.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré a-t-il, si&nbsp;nécessaire, une interprétation en langue des signes adaptée à la langue du média (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.9">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 4.9.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement audio a-t-il, si&nbsp;nécessaire, une interprétation en langue des signes adaptée à la langue du média (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.9">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 4.9.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré a-t-il, si&nbsp;nécessaire, une interprétation en langue des signes adaptée à la langue du média (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.9">hors cas particuliers</a>)&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -1156,8 +1143,8 @@
 <section>
 <h3 id="crit-4-10"><em>Critère 4.10 [AAA]</em> Pour chaque média temporel pré-enregistré ayant une interprétation en langue des signes, celle-ci est-elle pertinente&nbsp;?</h3>
   <ul>
-<li>Test 4.10.1 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement audio ayant une interprétation en langue des signes, celle-ci est-elle pertinente&nbsp;?</li>
-<li>Test 4.10.2 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré ayant une interprétation en langue des signes, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.10.1 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement audio ayant une interprétation en langue des signes, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.10.2 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré ayant une interprétation en langue des signes, celle-ci est-elle pertinente&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -1182,14 +1169,14 @@
 
 
   <ul>
-<li>Test 4.11.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.11">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.11.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.11">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>Il existe une <a href="glossaire.html#AudioDescE">audio-description étendue</a> synchronisée</li>
 <li>Il existe une version alternative avec une <a href="glossaire.html#AudioDescE">audio-description étendue</a> synchronisée</li>
 </ul>
 </li>
-<li>Test 4.11.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.11">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.11.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.11">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>Il existe une <a href="glossaire.html#AudioDescE">audio-description étendue</a> synchronisée</li>
@@ -1219,8 +1206,8 @@
 
 
   <ul>
-<li>Test 4.12.1 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé pré-enregistré ayant une <a href="glossaire.html#AudioDescE">audio-description étendue</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
-<li>Test 4.12.2 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> pré-enregistré seulement vidéo ayant une <a href="glossaire.html#AudioDescE">audio-description étendue</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.12.1 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé pré-enregistré ayant une <a href="glossaire.html#AudioDescE">audio-description étendue</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.12.2 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> pré-enregistré seulement vidéo ayant une <a href="glossaire.html#AudioDescE">audio-description étendue</a> synchronisée, celle-ci est-elle pertinente&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -1244,17 +1231,17 @@
 
 
   <ul>
-<li>Test 4.13.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé vérifie-t-il si&nbsp;nécessaire une de ces conditions <a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.13">(hors cas particuliers</a>)&nbsp;?
+<li>Test 4.13.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé vérifie-t-il si&nbsp;nécessaire une de ces conditions <a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.13">(hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 <li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> adjacente clairement identifiable</li>
 </ul>
 </li>
-<li>Test 4.13.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> seulement vidéo vérifie-t-il si&nbsp;nécessaire une de ces conditions <a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.13">(hors cas particuliers</a>)&nbsp;?
+<li>Test 4.13.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> seulement vidéo vérifie-t-il si&nbsp;nécessaire une de ces conditions <a href="cas-particuliers.html#crit-4-1-4-2-4-3-4-5-4-7-4-9-4-11-4-13" title="Cas particuliers pour le critère 4.13">(hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#LienAdj">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
+<li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> accessible via un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <code lang="en">url</code> ou une <code lang="en">ancre</code>)</li>
 <li>Il existe une <a href="glossaire.html#transcript">transcription textuelle</a> adjacente clairement identifiable</li>
 </ul>
 </li>
@@ -1282,8 +1269,8 @@
 
 
   <ul>
-<li>Test 4.14.1 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> seulement vidéo ayant une <a href="glossaire.html#transcript">transcription textuelle</a>, celle-ci est-elle pertinente&nbsp;?</li>
-<li>Test 4.14.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> synchronisé ayant une <a href="glossaire.html#transcript">transcription textuelle</a>, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.14.1 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> seulement vidéo ayant une <a href="glossaire.html#transcript">transcription textuelle</a>, celle-ci est-elle pertinente&nbsp;?</li>
+<li>Test 4.14.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> synchronisé ayant une <a href="glossaire.html#transcript">transcription textuelle</a>, celle-ci est-elle pertinente&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -1307,13 +1294,13 @@
 
 
   <ul>
-<li>Test 4.15.1 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> seulement son, seulement vidéo ou synchronisé, le&nbsp;contenu textuel adjacent permet-il d'identifier clairement le média temporel (<a href="cas-particuliers.html#crit-4-15" title="Cas particuliers pour le critère 4.15">hors cas particuliers</a>)&nbsp;?</li>
-<li>Test 4.15.2 : Pour chaque <a href="glossaire.html#MediaTemp">média temporel</a> seulement son en direct, seulement vidéo en direct ou synchronisé en direct, le&nbsp;contenu textuel adjacent permet-il d'identifier clairement le média temporel (<a href="cas-particuliers.html#crit-4-15" title="Cas particuliers pour le critère 4.15">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 4.15.1 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> seulement son, seulement vidéo ou synchronisé, le&nbsp;contenu textuel adjacent permet-il d'identifier clairement le média temporel (<a href="cas-particuliers.html#crit-4-15" title="Cas particuliers pour le critère 4.15">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 4.15.2 : Pour chaque <a href="glossaire.html#mediaTemp">média temporel</a> seulement son en direct, seulement vidéo en direct ou synchronisé en direct, le&nbsp;contenu textuel adjacent permet-il d'identifier clairement le média temporel (<a href="cas-particuliers.html#crit-4-15" title="Cas particuliers pour le critère 4.15">hors cas particuliers</a>)&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G68.html" title="G68 (nouvelle fenêtre)" target="_blank">G68</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G100.html" title="G100 (nouvelle fenêtre)" target="_blank">G100</a></p>
 
@@ -1331,25 +1318,25 @@
 <h3 id="crit-4-16"><em>Critère 4.16 [A]</em> Chaque média non temporel a-t-il, si&nbsp;nécessaire, une alternative (hors cas particuliers)&nbsp;?</h3>
   
   <ul>
-<li>Test 4.16.1 : Chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a> vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-16" title="Cas particuliers pour le critère 4.16">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.16.1 : Chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a> vérifie-t-il, si&nbsp;nécessaire, une de ces conditions (<a href="cas-particuliers.html#crit-4-16" title="Cas particuliers pour le critère 4.16">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>Un <a href="glossaire.html#LienAdj">lien adjacent</a>, clairement identifiable, contient l'adresse (<code lang="en">url</code>) d'une page contenant une alternative</li>
-<li>Un <a href="glossaire.html#LienAdj">lien adjacent</a>, clairement identifiable, permet d'accéder à une alternative dans la page</li>
+<li>Un <a href="glossaire.html#lien-adjacent">lien adjacent</a>, clairement identifiable, contient l'adresse (<code lang="en">url</code>) d'une page contenant une alternative</li>
+<li>Un <a href="glossaire.html#lien-adjacent">lien adjacent</a>, clairement identifiable, permet d'accéder à une alternative dans la page</li>
 </ul>
 </li>
-<li>Test 4.16.2 : Chaque média <a href="glossaire.html#MediaNonTemp">non temporel</a> associé à une alternative vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-16" title="Cas particuliers pour le critère 4.16">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.16.2 : Chaque média <a href="glossaire.html#mediaNonTemp">non temporel</a> associé à une alternative vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-16" title="Cas particuliers pour le critère 4.16">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>La page référencée par le <a href="glossaire.html#LienAdj">lien adjacent</a> est accessible</li>
-<li>L'alternative dans la page, référencée par le <a href="glossaire.html#LienAdj">lien adjacent</a>, est accessible.</li>
+<li>La page référencée par le <a href="glossaire.html#lien-adjacent">lien adjacent</a> est accessible</li>
+<li>L'alternative dans la page, référencée par le <a href="glossaire.html#lien-adjacent">lien adjacent</a>, est accessible.</li>
 </ul>
 </li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H35.html" title="H35 (nouvelle fenêtre)" target="_blank">H35</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H46.html" title="H46 (nouvelle fenêtre)" target="_blank">H46</a></p>
 
@@ -1368,12 +1355,12 @@
 
 
   <ul>
-<li>Test 4.17.1 : Pour chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a> ayant une alternative, cette alternative permet-elle d'accéder au même contenu et à des fonctionnalités similaires&nbsp;?</li>
+<li>Test 4.17.1 : Pour chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a> ayant une alternative, cette alternative permet-elle d'accéder au même contenu et à des fonctionnalités similaires&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H46.html" title="H46 (nouvelle fenêtre)" target="_blank">H46</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F30.html" title="F30 (nouvelle fenêtre)" target="_blank">F30</a></p>
 
@@ -1423,7 +1410,7 @@
 
 
   <ul>
-<li>Test 4.19.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> audio pré-enregistré et diffusé via une balise <code lang="en">object</code>, <code lang="en">video</code>, <code lang="en">audio</code>, <code lang="en">embed</code> ou proposé en téléchargement vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-19" title="Cas particuliers pour le critère 4.19">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.19.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> audio pré-enregistré et diffusé via une balise <code lang="en">object</code>, <code lang="en">video</code>, <code lang="en">audio</code>, <code lang="en">embed</code> ou proposé en téléchargement vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-19" title="Cas particuliers pour le critère 4.19">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>L'arrière-plan sonore peut être désactivé</li>
@@ -1452,24 +1439,20 @@
 </section>
 <section>
 <h3 id="crit-4-20"><em>Critère 4.20 [A]</em> La consultation de chaque média temporel est-elle, si&nbsp;nécessaire, contrôlable par le clavier et la souris&nbsp;?</h3>
-
-
-  <ul>
-<li>Test 4.20.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> a-t-il, si&nbsp;nécessaire, les <a href="glossaire.html#fonctionnalits-de-contrle-MediaTemp">fonctionnalités de contrôle</a> de sa consultation&nbsp;?</li>
-<li>Test 4.20.2 : Pour chaque média temporel, chaque fonctionnalité vérifie-t-elle une de ces conditions :
-
 <ul>
-<li>La fonctionnalité est <a href="glossaire.html#AAClavierSouris">accessible par le clavier et la souris</a></li>
-<li>Une fonctionnalité <a href="glossaire.html#AAClavierSouris">accessible par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
-</ul>
-</li>
-<li>Test 4.20.3 : Pour chaque média temporel, chaque fonctionnalité vérifie-t-elle une de ces conditions :
-
-<ul>
-<li>La fonctionnalité est <a href="glossaire.html#AAClavierSouris">activable par le clavier et la souris</a></li>
-<li>Une fonctionnalité <a href="glossaire.html#AAClavierSouris">activable par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
-</ul>
-</li>
+	<li>Test 4.20.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> a-t-il, si&nbsp;nécessaire, les <a href="glossaire.html#fonctionnalits-de-contrle-MediaTemp">fonctionnalités de contrôle</a> de sa consultation&nbsp;?</li>
+	<li>Test 4.20.2 : Pour chaque média temporel, chaque fonctionnalité vérifie-t-elle une de ces conditions :
+		<ul>
+			<li>La fonctionnalité est <a href="glossaire.html#accessible-clavier-souris">accessible par le clavier et la souris</a></li>
+			<li>Une fonctionnalité <a href="glossaire.html#accessible-clavier-souris">accessible par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
+		</ul>
+	</li>
+	<li>Test 4.20.3 : Pour chaque média temporel, chaque fonctionnalité vérifie-t-elle une de ces conditions :
+		<ul>
+			<li>La fonctionnalité est <a href="glossaire.html#accessible-clavier-souris">activable par le clavier et la souris</a></li>
+			<li>Une fonctionnalité <a href="glossaire.html#accessible-clavier-souris">activable par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
+		</ul>
+	</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -1491,22 +1474,19 @@
 <section>
 <h3 id="crit-4-21"><em>Critère 4.21 [A]</em> La consultation de chaque média non temporel est-elle contrôlable par le clavier et la souris&nbsp;?</h3>
 
-  
-
-
   <ul>
-<li>Test 4.21.1 : Pour chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a>, chaque fonctionnalité vérifie-t-elle une de ces conditions :
+<li>Test 4.21.1 : Pour chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a>, chaque fonctionnalité vérifie-t-elle une de ces conditions :
 
 <ul>
-<li>La fonctionnalité est <a href="glossaire.html#AAClavierSouris">accessible par le clavier et la souris</a></li>
-<li>Une fonctionnalité <a href="glossaire.html#AAClavierSouris">accessible par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
+<li>La fonctionnalité est <a href="glossaire.html#accessible-clavier-souris">accessible par le clavier et la souris</a></li>
+<li>Une fonctionnalité <a href="glossaire.html#accessible-clavier-souris">accessible par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
 </ul>
 </li>
-<li>Test 4.21.2 : Pour chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a>, chaque fonctionnalité vérifie-t-elle une de ces conditions :
+<li>Test 4.21.2 : Pour chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a>, chaque fonctionnalité vérifie-t-elle une de ces conditions :
 
 <ul>
-<li>La fonctionnalité est <a href="glossaire.html#AAClavierSouris">activable par le clavier et la souris</a></li>
-<li>Une fonctionnalité <a href="glossaire.html#AAClavierSouris">activable par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
+<li>La fonctionnalité est <a href="glossaire.html#accessible-clavier-souris">activable par le clavier et la souris</a></li>
+<li>Une fonctionnalité <a href="glossaire.html#accessible-clavier-souris">activable par le clavier et la souris</a> permettant de réaliser la même action est présente dans la page</li>
 </ul>
 </li>
 </ul>
@@ -1531,14 +1511,14 @@
 <h3 id="crit-4-22"><em>Critère 4.22 [A]</em> Chaque média temporel et non temporel est-il compatible avec les technologies d'assistance (hors cas particuliers)&nbsp;?</h3>
 
   <ul>
-<li>Test 4.22.1 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> et non temporel inséré via une balise <code lang="en">object</code> ou <code lang="en">embed</code> vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-22" title="Cas particuliers pour le critère 4.22">hors cas particuliers</a>)&nbsp;?
+<li>Test 4.22.1 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> et non temporel inséré via une balise <code lang="en">object</code> ou <code lang="en">embed</code> vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-4-22" title="Cas particuliers pour le critère 4.22">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>Le nom, le rôle, la valeur, le paramétrage et les changements d'états des composants d'interfaces sont accessibles aux technologies d'assistance via une API d'accessibilité</li>
 <li>Une alternative <a href="glossaire.html#compatible-avec-les-technologies-dassistance">compatible avec une API d'accessibilité</a> permet d'accéder aux mêmes fonctionnalités</li>
 </ul>
 </li>
-<li>Test 4.22.2 : Chaque <a href="glossaire.html#MediaTemp">média temporel</a> et non temporel inséré via une balise <code lang="en">object</code> ou <code lang="en">embed</code>, qui possède une alternative <a href="glossaire.html#compatible-avec-les-technologies-dassistance">compatible avec une API d'accessibilité</a>, vérifie-t-il une de ces conditions ?
+<li>Test 4.22.2 : Chaque <a href="glossaire.html#mediaTemp">média temporel</a> et non temporel inséré via une balise <code lang="en">object</code> ou <code lang="en">embed</code>, qui possède une alternative <a href="glossaire.html#compatible-avec-les-technologies-dassistance">compatible avec une API d'accessibilité</a>, vérifie-t-il une de ces conditions ?
 
 <ul>
 <li>L' alternative est adjacente au média temporel ou non temporel</li>
@@ -1565,9 +1545,9 @@
      
   </section>
 </article>
-<article class="thematique">
+<article id="tableaux" class="thematique">
 <header>
-	<h2 id="tableaux">5. Tableaux</h2>
+	<h2>5. Tableaux</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#multimedia">Multimedia</a></li>
@@ -1812,9 +1792,9 @@
      
 </section>
 </article>
-<article class="thematique">
+<article id="liens" class="thematique">
 <header>
-	<h2 id="liens">6. Liens</h2>
+	<h2>6. Liens</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#tableaux">Tableaux</a></li>
@@ -1839,48 +1819,48 @@
 	</div>
 </header>
 <section>
-<h3 id="crit-6-1-a-chaque-lien-est-il-explicite-hors-cas-particuliers-"><em>Critère 6.1 [A]</em> Chaque lien est-il explicite (hors cas particuliers)&nbsp;?</h3>
+<h3 id="crit-6-1"><em>Critère 6.1 [A]</em> Chaque lien est-il explicite (hors cas particuliers)&nbsp;?</h3>
 <ul>
-<li>Test 6.1.1 : Chaque <a href="glossaire.html#LienText">lien texte</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>)&nbsp;?
+<li>Test 6.1.1 : Chaque <a href="glossaire.html#lien-texte">lien texte</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>L'<a href="glossaire.html#IntituleLien">intitulé de&nbsp;lien</a> seul permet d'en comprendre la fonction et la destination</li>
-<li>Le <a href="glossaire.html#ContexteLien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
+<li>Le <a href="glossaire.html#contexte-lien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
 </ul>
 </li>
 <li>Test 6.1.2 : Chaque <a href="glossaire.html#lien-explicite-hors-contexte">lien image</a> (contenu de l'attribut <code lang="en">alt</code>, texte entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code> ou texte entre <code lang="en">&lt;object&gt;</code> et <code lang="en">&lt;/object&gt;</code>) vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>L'<a href="glossaire.html#IntituleLien">intitulé de&nbsp;lien</a> seul permet d'en comprendre la fonction et la destination</li>
-<li>Le <a href="glossaire.html#ContexteLien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
+<li>Le <a href="glossaire.html#contexte-lien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
 </ul>
 </li>
 <li>Test 6.1.3 : Chaque lien doublant une <a href="glossaire.html#zoneCliquable">zone cliquable</a> d'une <a href="glossaire.html#ImgReactive">image réactive coté serveur</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>L'<a href="glossaire.html#IntituleLien">intitulé de&nbsp;lien</a> seul permet d'en comprendre la fonction et la destination</li>
-<li>Le <a href="glossaire.html#ContexteLien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
+<li>Le <a href="glossaire.html#contexte-lien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
 </ul>
 </li>
-<li>Test 6.1.4 : Chaque <a href="glossaire.html#LienComp">lien composite</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>)&nbsp;?
+<li>Test 6.1.4 : Chaque <a href="glossaire.html#lien-composite">lien composite</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>L'<a href="glossaire.html#IntituleLien">intitulé de&nbsp;lien</a> seul permet d'en comprendre la fonction et la destination</li>
-<li>Le <a href="glossaire.html#ContexteLien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
+<li>Le <a href="glossaire.html#contexte-lien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
 </ul>
 </li>
 <li>Test 6.1.5 : Chaque <a href="glossaire.html#lien-texte">lien vectoriel</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.1">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>L'<a href="glossaire.html#IntituleLien">intitulé de&nbsp;lien</a> seul permet d'en comprendre la fonction et la destination</li>
-<li>Le <a href="glossaire.html#ContexteLien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
+<li>Le <a href="glossaire.html#contexte-lien">contexte du lien</a> permet d'en comprendre la fonction et la destination</li>
 </ul>
 </li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H79.html" title="H79 (nouvelle fenêtre)" target="_blank">H79</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H78.html" title="H78 (nouvelle fenêtre)" target="_blank">H78</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H79.html" title="H79 (nouvelle fenêtre)" target="_blank">H79</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H80.html" title="H80 (nouvelle fenêtre)" target="_blank">H80</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H81.html" title="H81 (nouvelle fenêtre)" target="_blank">H81</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H30.html" title="H30 (nouvelle fenêtre)" target="_blank">H30</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F89.html" title="F89 (nouvelle fenêtre)" target="_blank">F89</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G91.html" title="G91 (nouvelle fenêtre)" target="_blank">G91</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G53.html" title="G53 (nouvelle fenêtre)" target="_blank">G53</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA7.html" title="ARIA7 (nouvelle fenêtre)" target="_blank">ARIA7</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/ARIA8.html" title="ARIA8 (nouvelle fenêtre)" target="_blank">ARIA8</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F63.html" title="F63 (nouvelle fenêtre)" target="_blank">F63</a></p>
 
@@ -1895,13 +1875,13 @@
 	</aside>
 </section>
 <section>
-<h3 id="crit-6-2-a-pour-chaque-lien-ayant-un-titre-de-lien-celui-ci-est-il-pertinent-"><em>Critère 6.2 [A]</em> Pour chaque lien ayant un titre de lien, celui-ci est-il pertinent&nbsp;?</h3>
-ul>
-<li>Test 6.2.1 : Pour chaque <a href="glossaire.html#LienText">lien texte</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
-<li>Test 6.2.2 : Pour chaque <a href="glossaire.html#lien-explicite-hors-contexte">lien image</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
-<li>Test 6.2.3 : pour chaque <a href="glossaire.html#zoneCliquable">zone cliquable</a> (balise <code lang="en">area</code>) ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
-<li>Test 6.2.4 : Pour chaque <a href="glossaire.html#LienComp">lien composite</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
-<li>Test 6.2.5 : Pour chaque <a href="glossaire.html#lien-texte">lien vectoriel</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
+<h3 id="crit-6-2"><em>Critère 6.2 [A]</em> Pour chaque lien ayant un titre de lien, celui-ci est-il pertinent&nbsp;?</h3>
+<ul>
+	<li>Test 6.2.1 : Pour chaque <a href="glossaire.html#lien-texte">lien texte</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
+	<li>Test 6.2.2 : Pour chaque <a href="glossaire.html#lien-explicite-hors-contexte">lien image</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
+	<li>Test 6.2.3 : pour chaque <a href="glossaire.html#zoneCliquable">zone cliquable</a> (balise <code lang="en">area</code>) ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
+	<li>Test 6.2.4 : Pour chaque <a href="glossaire.html#lien-composite">lien composite</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
+	<li>Test 6.2.5 : Pour chaque <a href="glossaire.html#lien-texte">lien vectoriel</a> ayant un <a href="glossaire.html#titreLien">titre de lien</a> (attribut <code lang="en">title</code>), le&nbsp;contenu de cet attribut est-il pertinent&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -1923,7 +1903,7 @@ ul>
 <section>
 <h3 id="crit-6-3"><em>Critère 6.3 [AAA]</em> Chaque intitulé de&nbsp;lien seul est-il explicite hors contexte (hors cas particuliers)&nbsp;?</h3>
 <ul>
-<li>Test 6.3.1 : Chaque <a href="glossaire.html#LienText">lien texte</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.3">hors cas particuliers</a>)&nbsp;?
+<li>Test 6.3.1 : Chaque <a href="glossaire.html#lien-texte">lien texte</a> vérifie-t-il une de ces conditions (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.3">hors cas particuliers</a>)&nbsp;?
 
 <ul>
 <li>L'intitulé du lien est explicite hors contexte</li>
@@ -1931,10 +1911,10 @@ ul>
 <li>le&nbsp;contenu du titre de lien (attribut <code lang="en">title</code>) est explicite hors contexte</li>
 </ul>
 </li>
-<li>Test 6.3.2 : Chaque intitulé de <a href="glossaire.html#lien-explicite-hors-contexte">lien image</a> (contenu de l'attribut <code lang="en">alt</code>, texte entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code> ou texte entre <code lang="en">&lt;object&gt;</code> et <code lang="en">&lt;/object&gt;</code>) est-il <a href="glossaire.html#ExpliciteHorsContexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.4">hors cas particuliers</a>)&nbsp;?</li>
-<li>Test 6.3.3 : Chaque <a href="glossaire.html#IntituleLien">intitulé de&nbsp;lien</a> de type <a href="glossaire.html#zoneCliquable">zone cliquable</a> (contenu de l'attribut <code lang="en">alt</code> d'une balise <code lang="en">area</code>) est-il <a href="glossaire.html#ExpliciteHorsContexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.4">hors cas particuliers</a>)&nbsp;?</li>
-<li>Test 6.3.4 : Chaque <a href="glossaire.html#LienComp">lien composite</a> (contenu texte et de l'attribut <code lang="en">alt</code>) est-il <a href="glossaire.html#ExpliciteHorsContexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.4">hors cas particuliers</a>)</li>
-<li>Test 6.3.5 : Chaque intitulé de <a href="glossaire.html#lien-texte">lien vectoriel</a> (contenu de l'alternative de l'image vectorielle, balise <code lang="en">svg</code>) est-il <a href="glossaire.html#ExpliciteHorsContexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.3">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 6.3.2 : Chaque intitulé de <a href="glossaire.html#lien-explicite-hors-contexte">lien image</a> (contenu de l'attribut <code lang="en">alt</code>, texte entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code> ou texte entre <code lang="en">&lt;object&gt;</code> et <code lang="en">&lt;/object&gt;</code>) est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.4">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 6.3.3 : Chaque <a href="glossaire.html#IntituleLien">intitulé de&nbsp;lien</a> de type <a href="glossaire.html#zoneCliquable">zone cliquable</a> (contenu de l'attribut <code lang="en">alt</code> d'une balise <code lang="en">area</code>) est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.4">hors cas particuliers</a>)&nbsp;?</li>
+<li>Test 6.3.4 : Chaque <a href="glossaire.html#lien-composite">lien composite</a> (contenu texte et de l'attribut <code lang="en">alt</code>) est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.4">hors cas particuliers</a>)</li>
+<li>Test 6.3.5 : Chaque intitulé de <a href="glossaire.html#lien-texte">lien vectoriel</a> (contenu de l'alternative de l'image vectorielle, balise <code lang="en">svg</code>) est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (<a href="glossaire.html#crit-6-1-6-3" title="Cas particuliers pour le critère 6.3">hors cas particuliers</a>)&nbsp;?</li>
 </ul>
 <aside>
 	<h4>Correspondances WCAG 2.0</h4>
@@ -1950,7 +1930,7 @@ ul>
 </aside>
 </section>
 <section>
-<h3 id="crit-6-4-a-pour-chaque-page-web-chaque-lien-identique-a-t-il-les-mmes-fonction-et-destination-"><em>Critère 6.4 [A]</em> Pour chaque page web, chaque lien identique a-t-il les mêmes fonction et destination&nbsp;?</h3>
+<h3 id="crit-6-4"><em>Critère 6.4 [A]</em> Pour chaque page web, chaque lien identique a-t-il les mêmes fonction et destination&nbsp;?</h3>
 <ul>
 <li>Test 6.4.1 : Pour chaque page web, chaque <a href="glossaire.html#liens-identiques">lien identique</a> de <a href="glossaire.html#IntituleLien">type texte</a> a-t-il les mêmes fonction et destination&nbsp;?</li>
 <li>Test 6.4.2 : Pour chaque page web, chaque <a href="glossaire.html#liens-identiques">lien identique</a> de <a href="glossaire.html#IntituleLien">type image</a> a-t-il les mêmes fonction et destination&nbsp;?</li>
@@ -1972,14 +1952,14 @@ ul>
 </aside>
 </section>
 <section>
-<h3 id="crit-6-5-a-dans-chaque-page-web-chaque-lien-lexception-des-ancres-a-t-il-un-intitul-"><em>Critère 6.5 [A]</em> Dans chaque page web, chaque lien, à l'exception des ancres, a-t-il un intitulé&nbsp;?</h3>
+<h3 id="crit-6-5"><em>Critère 6.5 [A]</em> Dans chaque page web, chaque lien, à l'exception des ancres, a-t-il un intitulé&nbsp;?</h3>
 <ul>
 <li>Test 6.5.1 Dans chaque page web, chaque lien (balise <code lang="en">a</code> avec un attribut <code lang="en">href</code>), à l'exception des <a href="glossaire.html#ancre">ancres</a>, a-t-il un <a href="glossaire.html#IntituleLien">intitulé</a> entre <code lang="en">&lt;a&gt;</code> et <code lang="en">&lt;/a&gt;</code>&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-refs" title="2.4.4 (nouvelle fenêtre)" target="_blank">2.4.4</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-link" title="2.4.9 (nouvelle fenêtre)" target="_blank">2.4.9</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G91.html" title="G91 (nouvelle fenêtre)" target="_blank">G91</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H30.html" title="H30 (nouvelle fenêtre)" target="_blank">H30</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F89.html" title="F89 (nouvelle fenêtre)" target="_blank">F89</a></p>
 
@@ -1994,9 +1974,9 @@ ul>
 </aside>
 </section>
 </article>
-<article class="thematique">
+<article id="scripts" class="thematique">
 <header>
-	<h2 id="scripts">7. Scripts</h2>
+	<h2>7. Scripts</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#liens">Liens</a></li>
@@ -2021,22 +2001,22 @@ ul>
 	</div>
 </header>
 <section>
-<h3 id="crit-7-1-a-chaque-script-est-il-si-ncessaire-compatible-avec-les-technologies-dassistance-"><em>Critère 7.1 [A]</em> Chaque script est-il, si&nbsp;nécessaire, compatible avec les technologies d'assistance&nbsp;?</h3>
+<h3 id="crit-7-1"><em>Critère 7.1 [A]</em> Chaque script est-il, si&nbsp;nécessaire, compatible avec les technologies d'assistance&nbsp;?</h3>
 <ul>
 <li>Test 7.1.1 : Chaque <a href="glossaire.html#scripts">script</a> qui génère ou contrôle un composant d'interface vérifie-t-il, si&nbsp;nécessaire, une de ces conditions ?
 
 <ul>
-<li><a href="glossaire.html#le-nom-le-rle-la-valeur-le-paramtrage-et-les-changements-dtats">Le nom, le rôle, la valeur, le paramétrage et les changements d'états</a> sont accessibles aux technologies d'assistance via une API d'accessibilité</li>
+<li><a href="glossaire.html#changement-etat">Le nom, le rôle, la valeur, le paramétrage et les changements d'états</a> sont accessibles aux technologies d'assistance via une API d'accessibilité</li>
 <li>un composant d'interface accessible permettant d'accéder aux mêmes fonctionnalités est présent dans la page&nbsp;;</li>
 <li>une <a href="glossaire.html#AltScript">alternative</a> accessible permet d'accéder aux mêmes fonctionnalités.</li>
 </ul>
 </li>
 <li>Test 7.1.2 : Chaque fonctionnalité d'insertion de contenu contrôlée par un <a href="glossaire.html#scripts">script</a> utilise-t-elle des <a href="glossaire.html#proprits-et-methodes-conformes--la-spcification-dom">propriétés et méthodes conformes à la spécification DOM (Document Object Model)</a>&nbsp;?</li>
-<li>Test 7.1.3 :Chaque <a href="glossaire.html#scripts">script</a> qui génère, met à jour ou contrôle un composant d'interface qui comporte des rôles des états ou des propriétés correspondant à un <a href="glossaire.html#DesignPattern">motif de conception</a> défini par l'API ARIA vérifie-t-il une de ces conditions ?
+<li>Test 7.1.3 :Chaque <a href="glossaire.html#scripts">script</a> qui génère, met à jour ou contrôle un composant d'interface qui comporte des rôles des états ou des propriétés correspondant à un <a href="glossaire.html#design-pattern">motif de conception</a> défini par l'API ARIA vérifie-t-il une de ces conditions ?
 
 <ul>
-<li>Le composant d'interface est conforme au <a href="glossaire.html#DesignPattern">motif de conception</a> défini par l'API ARIA</li>
-<li>Un composant d'interface présent sur la page, permettant d'accéder aux mêmes fonctionnalités, est conforme au <a href="glossaire.html#DesignPattern">motif de conception</a> défini par l'API ARIA</li>
+<li>Le composant d'interface est conforme au <a href="glossaire.html#design-pattern">motif de conception</a> défini par l'API ARIA</li>
+<li>Un composant d'interface présent sur la page, permettant d'accéder aux mêmes fonctionnalités, est conforme au <a href="glossaire.html#design-pattern">motif de conception</a> défini par l'API ARIA</li>
 <li>Le composant d'interface <a href="glossaire.html#AdaptsARIADP">adapte un motif de conception</a> défini par l'API ARIA.</li>
 <li>Une <a href="glossaire.html#AltScript">alternative</a> accessible permet d'accéder aux mêmes fonctionnalités.</li>
 </ul>
@@ -2045,14 +2025,14 @@ ul>
 <li>Test 7.1.5 : Chaque <a href="glossaire.html#scripts">script</a> qui génère ou contrôle un composant d'interface via des rôles, des états ou des propriétés définis par l'API ARIA respecte-t-il une de ces conditions ?
 
 <ul>
-<li>Le composant d'interface est <a href="glossaire.html#CorrectlyRendered"></a><a href="glossaire.html#CorrectlyRendered">correctement restitué</a> par les technologies d'assistance</li>
+<li>Le composant d'interface est <a href="glossaire.html#correctement-restitue"></a><a href="glossaire.html#correctement-restitue">correctement restitué</a> par les technologies d'assistance</li>
 <li>Une <a href="glossaire.html#AltScript">alternative</a> accessible permet d'accéder aux mêmes fonctionnalités.</li>
 </ul>
 </li>
 <li>Test 7.1.6 : Chaque composant d'interface qui utilise un role ARIA <code lang="en">application</code> respecte-t-il une de ces conditions ?
 
 <ul>
-<li>Le composant d'interface est <a href="glossaire.html#CorrectlyRendered"></a><a href="glossaire.html#CorrectlyRendered">correctement restitué</a> par les technologies d'assistance</li>
+<li>Le composant d'interface est <a href="glossaire.html#correctement-restitue"></a><a href="glossaire.html#correctement-restitue">correctement restitué</a> par les technologies d'assistance</li>
 <li>Une <a href="glossaire.html#AltScript">alternative</a> accessible permet d'accéder aux mêmes fonctionnalités.</li>
 </ul>
 </li>
@@ -2094,7 +2074,7 @@ ul>
 </ul>
 <aside>
 	<h4>Correspondances WCAG 2.0</h4>
-	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 	<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G136.html" title="G136 (nouvelle fenêtre)" target="_blank">G136</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F19.html" title="F19 (nouvelle fenêtre)" target="_blank">F19</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F20.html" title="F20 (nouvelle fenêtre)" target="_blank">F20</a></p>
 	<div class="tags">
 		<span>Mot-clés</span>
@@ -2111,23 +2091,23 @@ ul>
 <li>Test 7.3.1 : Chaque élément possédant un gestionnaire d'événement contrôlé par un <a href="glossaire.html#scripts">script</a> vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-73" title="Cas particuliers pour le critère 7.3">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>L'élément est <a href="glossaire.html#AAClavierSouris">accessible par le clavier et la souris</a></li>
-<li>Un élément <a href="glossaire.html#AAClavierSouris">accessible par le clavier et la souris</a> permettant de réaliser la même action est présent dans la page</li>
+<li>L'élément est <a href="glossaire.html#accessible-clavier-souris">accessible par le clavier et la souris</a></li>
+<li>Un élément <a href="glossaire.html#accessible-clavier-souris">accessible par le clavier et la souris</a> permettant de réaliser la même action est présent dans la page</li>
 </ul>
 </li>
 <li>Test 7.3.2 : Chaque élément possédant un gestionnaire d'événement contrôlé par un <a href="glossaire.html#scripts">script</a> vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-73" title="Cas particuliers pour le critère 7.3">hors cas particuliers</a>)&nbsp;?
 
 <ul>
-<li>L'élément est <a href="glossaire.html#AAClavierSouris">activable par le clavier et la souris</a></li>
-<li>Un élément <a href="glossaire.html#AAClavierSouris">activable par le clavier et la souris</a> permettant de réaliser la même action est présent dans la page</li>
+<li>L'élément est <a href="glossaire.html#accessible-clavier-souris">activable par le clavier et la souris</a></li>
+<li>Un élément <a href="glossaire.html#accessible-clavier-souris">activable par le clavier et la souris</a> permettant de réaliser la même action est présent dans la page</li>
 </ul>
 </li>
 <li>Test 7.3.3 : Un <a href="glossaire.html#scripts">script</a> ne doit pas supprimer le <code lang="en">focus</code> d'un élément qui le reçoit. Cette règle est-elle respectée (<a href="cas-particuliers.html#crit-73" title="Cas particuliers pour le critère 7.3">hors cas particuliers</a>)&nbsp;?</li>
-<li>Test 7.3.4 : Chaque composant d'interface implémenté via un rôle défini par l'API ARIA et correspondant à un <a href="glossaire.html#DesignPattern">motif de conception</a> respecte-t-il une de ces conditions ?
+<li>Test 7.3.4 : Chaque composant d'interface implémenté via un rôle défini par l'API ARIA et correspondant à un <a href="glossaire.html#design-pattern">motif de conception</a> respecte-t-il une de ces conditions ?
 
 <ul>
-<li>Les interactions au clavier sont conformes au comportement défini par le <a href="glossaire.html#DesignPattern">motif de conception</a> pour les touches <code lang="en">Echap</code>, <code lang="en">Barre d'espace</code>, <code lang="en">Tabulation</code> et <code lang="en">Flèches de direction</code> au moins</li>
-<li>Un composant d'interface présent sur la page, permettant de réaliser la même action, possède des interactions au clavier conformes au comportement défini par le <a href="glossaire.html#DesignPattern">motif de conception</a> , pour les touches <code lang="en">Echap</code>, <code lang="en">Barre d'espace</code>, <code lang="en">Tabulation</code> et <code lang="en">Flèches de direction</code> au moins</li>
+<li>Les interactions au clavier sont conformes au comportement défini par le <a href="glossaire.html#design-pattern">motif de conception</a> pour les touches <code lang="en">Echap</code>, <code lang="en">Barre d'espace</code>, <code lang="en">Tabulation</code> et <code lang="en">Flèches de direction</code> au moins</li>
+<li>Un composant d'interface présent sur la page, permettant de réaliser la même action, possède des interactions au clavier conformes au comportement défini par le <a href="glossaire.html#design-pattern">motif de conception</a> , pour les touches <code lang="en">Echap</code>, <code lang="en">Barre d'espace</code>, <code lang="en">Tabulation</code> et <code lang="en">Flèches de direction</code> au moins</li>
 <li>Une alternative permettant d'accéder aux mêmes fonctionnalités est contrôlable par le clavier et à la souris.</li>
 </ul>
 </li>
@@ -2199,9 +2179,9 @@ ul>
 </aside>
 </section>
 </article>
-<article class="thematique">
+<article id="elements" class="thematique">
 	<header>
-		<h2 id="elements">8. Éléments Obligatoires</h2>
+		<h2>8. Éléments Obligatoires</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#scripts">Scripts</a></li>
@@ -2316,7 +2296,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-8-4-a-pour-chaque-page-web-ayant-une-LangueDefaut-le-code-de-langue-est-il-pertinent-"><em>Critère 8.4 [A]</em> Pour chaque page web ayant une langue par défaut, le code de langue est-il pertinent&nbsp;?</h3>
+<h3 id="crit-8-4"><em>Critère 8.4 [A]</em> Pour chaque page web ayant une langue par défaut, le code de langue est-il pertinent&nbsp;?</h3>
 <ul>
 <li>Test 8.4.1 : Pour chaque page web ayant une <a href="glossaire.html#LangueDefaut">langue par défaut</a>, le <a href="glossaire.html#code-de-langue">code de langue</a> vérifie-t-il ces conditions ?
 
@@ -2344,7 +2324,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-8-5-a-chaque-page-web-a-t-elle-un-titre-de-page-"><em>Critère 8.5 [A]</em> Chaque page web a-t-elle un titre de page&nbsp;?</h3>
+<h3 id="crit-8-5"><em>Critère 8.5 [A]</em> Chaque page web a-t-elle un titre de page&nbsp;?</h3>
 <ul>
 <li>Test 8.5.1 : Chaque page web a-t-elle un <a href="glossaire.html#titrePage">titre de page</a> (balise <code lang="en">title</code>)&nbsp;?</li>
 </ul>
@@ -2366,7 +2346,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-8-6-a-pour-chaque-page-web-ayant-un-titre-de-page-ce-titre-est-il-pertinent-"><em>Critère 8.6 [A]</em> Pour chaque page web ayant un titre de page, ce titre est-il pertinent&nbsp;?</h3>
+<h3 id="crit-8-6"><em>Critère 8.6 [A]</em> Pour chaque page web ayant un titre de page, ce titre est-il pertinent&nbsp;?</h3>
 <ul>
 <li>Test 8.6.1 : Pour chaque page web ayant un <a href="glossaire.html#titrePage">titre de page</a> (balise <code lang="en">title</code>), le&nbsp;contenu de cette balise est-il pertinent&nbsp;?</li>
 </ul>
@@ -2388,7 +2368,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-8-7-aa-dans-chaque-page-web-chaque-changement-de-langue-est-il-indiqu-dans-le-code-source-hors-cas-particuliers-"><em>Critère 8.7 [AA]</em> Dans chaque page web, chaque changement de langue est-il indiqué dans le code source (hors cas particuliers)&nbsp;?</h3>
+<h3 id="crit-8-7"><em>Critère 8.7 [AA]</em> Dans chaque page web, chaque changement de langue est-il indiqué dans le code source (hors cas particuliers)&nbsp;?</h3>
 <ul>
 <li>Test 8.7.1 : Dans chaque page web, chaque texte écrit dans une langue différente de la <a href="glossaire.html#LangueDefaut">langue par défaut</a> vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-87" title="Cas particuliers pour le critère 8.7">hors cas particuliers</a>)&nbsp;?
 
@@ -2416,7 +2396,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-8-8-aa-dans-chaque-page-web-chaque-changement-de-langue-est-il-pertinent-"><em>Critère 8.8 [AA]</em> Dans chaque page web, chaque changement de langue est-il pertinent&nbsp;?</h3>
+<h3 id="crit-8-8"><em>Critère 8.8 [AA]</em> Dans chaque page web, chaque changement de langue est-il pertinent&nbsp;?</h3>
 <ul>
 <li>Test 8.8.1 : Dans chaque page web, chaque changement de langue (attribut <code lang="en">lang</code> et/ou <code lang="en">xml:lang</code>) est-il valide&nbsp;?</li>
 <li>Test 8.8.2 : Dans chaque page web, chaque changement de langue (attribut <code lang="en">lang</code> et/ou <code lang="en">xml:lang</code>) est-il pertinent&nbsp;?</li>
@@ -2439,7 +2419,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-8-9-a-dans-chaque-page-web-les-balises-ne-doivent-pas-tre-utilises-uniquement-a-fin-de-presentation-cette-rgle-est-elle-respecte-"><em>Critère 8.9 [A]</em> Dans chaque page web, les balises ne doivent pas être utilisées uniquement à des fins de présentation. Cette règle est-elle respectée&nbsp;?</h3>
+<h3 id="crit-8-9"><em>Critère 8.9 [A]</em> Dans chaque page web, les balises ne doivent pas être utilisées uniquement à des fins de présentation. Cette règle est-elle respectée&nbsp;?</h3>
 <ul>
 <li>Test 8.9.1 : Dans chaque page web les balises (à l'exception de <code lang="en">div</code>, <code lang="en">span</code> et <code lang="en">table</code>) ne doivent pas être utilisées <a href="glossaire.html#uniquement-a-fin-de-presentation">uniquement à des fins de présentation</a>. Cette règle est-elle respectée&nbsp;?</li>
 </ul>
@@ -2461,7 +2441,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-8-10-a-dans-chaque-page-web-les-changements-du-sens-de-lecture-sont-ils-signals-"><em>Critère 8.10 [A]</em> Dans chaque page web, les changements du sens de lecture sont-ils signalés&nbsp;?</h3>
+<h3 id="crit-8-10"><em>Critère 8.10 [A]</em> Dans chaque page web, les changements du sens de lecture sont-ils signalés&nbsp;?</h3>
 <ul>
 <li>Test 8.10.1 : Dans chaque page web, chaque texte dont le sens de lecture est différent du <a href="glossaire.html#sens-de-lecture">sens de lecture</a> par défaut vérifie-t-il ces conditions ?
 
@@ -2490,9 +2470,9 @@ ul>
 </aside>
 </section>
 </article>
-<article class="thematique">
+<article id="structure" class="thematique">
 <header>
-	<h2 id="structure">9. Structuration de&nbsp;l'information</h2>
+	<h2>9. Structuration de&nbsp;l'information</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#elements">Éléments obligatoires</a></li>
@@ -2530,7 +2510,7 @@ ul>
 <li>Test 9.1.4 : Dans chaque page web, chaque <a href="glossaire.html#titre">titre</a> (balise <code lang="en">h</code> ou balise possédant un role ARIA <code lang="en">"heading"</code> associé à une propriété <code lang="en">aria-level</code>) est-il pertinent&nbsp;?</li>
 </ul>
 <aside>
-<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-91-a">Consulter la note technique au sujet du role ARIA <code lang="en">heading</code> et l'utilisation des titres <code lang="en">h1</code></a></p>
+<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-9-1">Consulter la note technique au sujet du role ARIA <code lang="en">heading</code> et l'utilisation des titres <code lang="en">h1</code></a></p>
 
 <h4>Correspondances WCAG 2.0</h4>
 
@@ -2549,7 +2529,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-9-2-a-dans-chaque-page-web-la-structure-du-document-est-elle-cohrente-"><em>Critère 9.2 [A]</em> Dans chaque page web, la structure du document est-elle cohérente&nbsp;?</h3>
+<h3 id="crit-9-2"><em>Critère 9.2 [A]</em> Dans chaque page web, la structure du document est-elle cohérente&nbsp;?</h3>
 <ul>
 <li>Test 9.2.1 : Dans chaque page web, la structure du document vérifie-t-elle ces conditions ?
 
@@ -2565,7 +2545,7 @@ ul>
 <li>Test 9.2.2 : Dans chaque page web, <a href="glossaire.html#DocumentOutline">l'arborescence du document</a> est-elle cohérente&nbsp;?</li>
 </ul>
 <aside>
-<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-92-a">Consulter la note technique au sujet de la structure du document et de l'<code lang="en">outline</code></a></p>
+<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-9-2">Consulter la note technique au sujet de la structure du document et de l'<code lang="en">outline</code></a></p>
 
 <h4>Correspondances WCAG 2.0</h4>
 
@@ -2584,7 +2564,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-9-3-a-dans-chaque-page-web-chaque-liste-est-elle-correctement-structure-"><em>Critère 9.3 [A]</em> Dans chaque page web, chaque liste est-elle correctement structurée&nbsp;?</h3>
+<h3 id="crit-9-3"><em>Critère 9.3 [A]</em> Dans chaque page web, chaque liste est-elle correctement structurée&nbsp;?</h3>
 <ul>
 <li>Test 9.3.1 : Dans chaque page web, les informations regroupées sous forme de listes non ordonnées vérifient-elles une de ces conditions ?
 
@@ -2603,7 +2583,7 @@ ul>
 <li>Test 9.3.3 : Dans chaque page web, les informations regroupées sous forme de listes de définitions utilisent-elles les balises <code lang="en">dl</code> et <code lang="en">dt</code>/<code lang="en">dd</code>&nbsp;?</li>
 </ul>
 <aside>
-<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-93-a">Consulter la note technique au sujet des roles <code lang="en">list</code> et <code lang="en">listitem</code></a></p>
+<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-9-3">Consulter la note technique au sujet des roles <code lang="en">list</code> et <code lang="en">listitem</code></a></p>
 
 <h4>Correspondances WCAG 2.0</h4>
 
@@ -2622,7 +2602,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-9-4-aaa-dans-chaque-page-web-la-premire-occurrence-de-chaque-abrviation-permet-elle-den-connatre-la-signification-"><em>Critère 9.4 [AAA]</em> Dans chaque page web, la première occurrence de chaque abréviation permet-elle d'en connaître la signification&nbsp;?</h3>
+<h3 id="crit-9-4"><em>Critère 9.4 [AAA]</em> Dans chaque page web, la première occurrence de chaque abréviation permet-elle d'en connaître la signification&nbsp;?</h3>
 <ul>
 <li>Test 9.4.1 : Dans chaque page web, la première occurrence de chaque abréviation vérifie-t-elle une de ces conditions ?
 
@@ -2636,7 +2616,7 @@ ul>
 </li>
 </ul>
 <aside>
-<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-94-aaa">Consulter la note technique au sujet du role ARIA <code lang="en">definition</code></a></p>
+<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-9-4">Consulter la note technique au sujet du role ARIA <code lang="en">definition</code></a></p>
 
 <h4>Correspondances WCAG 2.0</h4>
 
@@ -2655,7 +2635,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-9-5-aaa-dans-chaque-page-web-la-signification-de-chaque-abrviation-est-elle-pertinente-"><em>Critère 9.5 [AAA]</em> Dans chaque page web, la signification de chaque abréviation est-elle pertinente&nbsp;?</h3>
+<h3 id="crit-9-5"><em>Critère 9.5 [AAA]</em> Dans chaque page web, la signification de chaque abréviation est-elle pertinente&nbsp;?</h3>
 <ul>
 <li>Test 9.5.1 : Dans chaque page web, la signification de chaque abréviation est-elle pertinente&nbsp;?</li>
 </ul>
@@ -2677,7 +2657,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-9-6-a-dans-chaque-page-web-chaque-citation-est-elle-correctement-indique-"><em>Critère 9.6 [A]</em> Dans chaque page web, chaque citation est-elle correctement indiquée&nbsp;?</h3>
+<h3 id="crit-9-6"><em>Critère 9.6 [A]</em> Dans chaque page web, chaque citation est-elle correctement indiquée&nbsp;?</h3>
 <ul>
 <li>Test 9.6.1 : Dans chaque page web, chaque citation courte utilise-t-elle une balise <code lang="en">q</code>&nbsp;?</li>
 <li>Test 9.6.2 : Dans chaque page web, chaque bloc de citation utilise-t-il une balise <code lang="en">blockquote</code>&nbsp;?</li>
@@ -2700,9 +2680,9 @@ ul>
 </aside>
 </section>
 </article>
-<article class="thematique">
+<article id="presentation" class="thematique">
 <header>
-	<h2 id="presentation">10. Présentation de&nbsp;l'information</h2>
+	<h2>10. Présentation de&nbsp;l'information</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#structure">Structuration de l'information</a></li>
@@ -2728,7 +2708,7 @@ ul>
     						</ul>
     					</nav>
 	<h3>Recommandation</h3>
-	<p>Utiliser des <a href="glossaire.html#FeuilleStyle">feuilles de styles</a> pour contrôler la présentation de&nbsp;l'information. Vérifier l'effet de l'agrandissement des tailles de caractère sur la lisibilité. S'assurer que les liens sont correctement identifiables, que la prise de focus est signalée, que l'interlignage est suffisant et donner la possibilité à l'utilisateur de contrôler la justification des textes. S'assurer que les textes cachés sont <a href="glossaire.html#CorrectlyRendered">correctement restitués</a> et que l'information n'est pas donnée uniquement par la forme ou la position d'un élément.</p>
+	<p>Utiliser des <a href="glossaire.html#FeuilleStyle">feuilles de styles</a> pour contrôler la présentation de&nbsp;l'information. Vérifier l'effet de l'agrandissement des tailles de caractère sur la lisibilité. S'assurer que les liens sont correctement identifiables, que la prise de focus est signalée, que l'interlignage est suffisant et donner la possibilité à l'utilisateur de contrôler la justification des textes. S'assurer que les textes cachés sont <a href="glossaire.html#correctement-restitue">correctement restitués</a> et que l'information n'est pas donnée uniquement par la forme ou la position d'un élément.</p>
 	<div class="tags">
 		<span>Mot-clés</span>
 		<ul>
@@ -2737,7 +2717,7 @@ ul>
 	</div>
 </header>
 <section>
-<h3 id="crit-10-1-a-dans-le-site-web-des-feuilles-de-styles-sont-elles-utilises-pour-contrler-la-presentation-de-linformation-"><em>Critère 10.1 [A]</em> Dans le site web, des feuilles de styles sont-elles utilisées pour contrôler la présentation de&nbsp;l'information&nbsp;?</h3>
+<h3 id="crit-10-1"><em>Critère 10.1 [A]</em> Dans le site web, des feuilles de styles sont-elles utilisées pour contrôler la présentation de&nbsp;l'information&nbsp;?</h3>
 
   
 
@@ -2772,14 +2752,14 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-10-2-a-dans-chaque-page-web-le-contenu-visible-reste-t-il-prsent-lorsque-les-feuilles-de-styles-sont-dsactives-"><em>Critère 10.2 [A]</em> Dans chaque page web, le&nbsp;contenu visible reste-t-il présent lorsque les feuilles de styles sont désactivées&nbsp;?</h3>
+<h3 id="crit-10-2"><em>Critère 10.2 [A]</em> Dans chaque page web, le&nbsp;contenu visible reste-t-il présent lorsque les feuilles de styles sont désactivées&nbsp;?</h3>
 <ul>
 <li>Test 10.2.1 : Dans chaque page web, l'information reste-t-elle présente lorsque les <a href="glossaire.html#FeuilleStyle">feuilles de styles</a> sont désactivées&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G140.html" title="G140 (nouvelle fenêtre)" target="_blank">G140</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F3.html" title="F3 (nouvelle fenêtre)" target="_blank">F3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F87.html" title="F87 (nouvelle fenêtre)" target="_blank">F87</a></p>
 
@@ -2840,7 +2820,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-10-5-aa-dans-chaque-page-web-les-dclarations-css-de-couleurs-de-fond-dlment-et-de-police-sont-elles-correctement-utilises"><em>Critère 10.5 [AA]</em> Dans chaque page web, les déclarations CSS de couleurs de fond d'élément et de police sont-elles correctement utilisées&nbsp;?</h3><ul>
+<h3 id="crit-10-5"><em>Critère 10.5 [AA]</em> Dans chaque page web, les déclarations CSS de couleurs de fond d'élément et de police sont-elles correctement utilisées&nbsp;?</h3><ul>
 <li>Test 10.5.1 : Dans chaque page web, chaque déclaration CSS de couleurs de police (<code lang="en">color</code>), d'un élément susceptible de contenir du texte, est-elle accompagnée d'une déclaration de couleur de fond (<code lang="en">background</code>, <code lang="en">background-color</code>), au moins, héritée d'un parent&nbsp;?</li>
 <li>Test 10.5.2 : Dans chaque page web, chaque déclaration de couleur de fond (<code lang="en">background</code>, <code lang="en">background-color</code>), d'un élément susceptible de contenir du texte, est-elle accompagnée d'une déclaration de couleur de police (<code lang="en">color</code>) au moins, héritée d'un parent&nbsp;?</li>
 <li>Test 10.5.3 : Dans chaque page web, chaque utilisation d'une image pour créer une couleur de fond d'un élément susceptible de contenir du texte, via CSS (<code lang="en">background</code>, <code lang="en">background-image</code>), est-elle accompagnée d'une déclaration de couleur de fond (<code lang="en">background</code>, <code lang="en">background-color</code>), au moins, héritée d'un parent&nbsp;?</li>
@@ -2859,9 +2839,9 @@ ul>
 </aside>
 </section>
 <section>
-<h3 id="crit-10-6-a-dans-chaque-page-web-chaque-lien-dont-la-nature-nest-pas-vidente-est-il-visible-par-rapport-au-texte-environnant-"><em>Critère 10.6 [A]</em> Dans chaque page web, chaque lien dont la nature n'est pas évidente est-il visible par rapport au texte environnant&nbsp;?</h3>
+<h3 id="crit-10-6"><em>Critère 10.6 [A]</em> Dans chaque page web, chaque lien dont la nature n'est pas évidente est-il visible par rapport au texte environnant&nbsp;?</h3>
 <ul>
-<li>Test 10.6.1 : Dans chaque page web, chaque <a href="glossaire.html#LienText">lien texte</a> signalé uniquement par la couleur et dont la nature n'est pas évidente a-t-il un rapport de contraste supérieur ou égal à 3:1 par rapport au texte environnant&nbsp;?</li>
+<li>Test 10.6.1 : Dans chaque page web, chaque <a href="glossaire.html#lien-texte">lien texte</a> signalé uniquement par la couleur et dont la nature n'est pas évidente a-t-il un rapport de contraste supérieur ou égal à 3:1 par rapport au texte environnant&nbsp;?</li>
 </ul>
 <aside>
 	<h4>Correspondances WCAG 2.0</h4>
@@ -2877,7 +2857,7 @@ ul>
 </aside>
 </section>
 <section>
-<h3 id="crit-10-7-a-dans-chaque-page-web-pour-chaque-lment-recevant-le-focus-la-PriseFocus-est-elle-visible-"><em>Critère 10.7 [A]</em> Dans chaque page web, pour chaque élément recevant le&nbsp;focus, la prise de focus est-elle visible&nbsp;?</h3>
+<h3 id="crit-10-7"><em>Critère 10.7 [A]</em> Dans chaque page web, pour chaque élément recevant le&nbsp;focus, la prise de focus est-elle visible&nbsp;?</h3>
 <ul>
 <li>Test 10.7.1 : Pour chaque élément recevant le <code lang="en">focus</code>, l'indication visuelle du navigateur ne doit pas être supprimée (propriété CSS <code lang="en">outline</code>, <code lang="en">outline-color</code>, <code lang="en">outline-width</code>, <code lang="en">outline-style</code>). Cette règle est-elle respectée&nbsp;?</li>
 <li>Test 10.7.2 : Pour chaque élément recevant le <code lang="en">focus</code>, l'indication visuelle du navigateur ne doit pas être dégradée (propriété CSS <code lang="en">outline-color</code>). Cette règle est-elle respectée&nbsp;?</li>
@@ -2903,7 +2883,7 @@ ul>
 </aside>
 </section>
 <section>
-<h3 id="crit-10-8-aaa-dans-chaque-page-web-le-choix-de-la-couleur-de-fond-et-de-police-du-texte-est-il-contrlable-par-lutilisateur-"><em>Critère 10.8 [AAA]</em> Dans chaque page web, le choix de la couleur de fond et de police du texte est-il contrôlable par l'utilisateur&nbsp;?</h3>
+<h3 id="crit-10-8"><em>Critère 10.8 [AAA]</em> Dans chaque page web, le choix de la couleur de fond et de police du texte est-il contrôlable par l'utilisateur&nbsp;?</h3>
 <ul>
 <li>Test 10.8.1 : Pour chaque bloc de texte contenu dans une balise HTML, la couleur de fond est-elle contrôlable par l'utilisateur&nbsp;?</li>
 <li>Test 10.8.2 : Pour chaque bloc de texte contenu dans une balise HTML, la couleur de police est-elle contrôlable par l'utilisateur&nbsp;?</li>
@@ -2948,7 +2928,7 @@ ul>
 </aside>
 </section>
 <section>
-<h3 id="crit-10-10-aaa-pour-chaque-page-web-en-affichage-plein-cran-et-avec-une-taille-de-police-200-chaque-bloc-de-texte-reste-t-il-lisible-sans-lutilisation-de-la-barre-de-dfilement-horizontal-"><em>Critère 10.10 [AAA]</em> Pour chaque page web, en affichage plein écran et avec une taille de police à 200&nbsp;%, chaque bloc de texte reste-t-il lisible sans l'utilisation de la barre de défilement horizontal&nbsp;?</h3>
+<h3 id="crit-10-10"><em>Critère 10.10 [AAA]</em> Pour chaque page web, en affichage plein écran et avec une taille de police à 200&nbsp;%, chaque bloc de texte reste-t-il lisible sans l'utilisation de la barre de défilement horizontal&nbsp;?</h3>
 <ul>
 <li>Test 10.10.1 : Dans chaque page web, l'augmentation de la <a href="glossaire.html#taille-caracteres">taille des caractères</a> à 200&nbsp;% vérifie-t-elle une de ces conditions ?
 
@@ -3054,7 +3034,7 @@ ul>
 </li>
 </ul>
 <aside>
-	<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-1013-a">Consulter la note technique au sujet de la propriété <code lang="en">aria-hidden</code> et de l'attribut <code lang="en">hidden</code></a></p>
+	<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-10-13">Consulter la note technique au sujet de la propriété <code lang="en">aria-hidden</code> et de l'attribut <code lang="en">hidden</code></a></p>
 	<h4>Correspondances WCAG 2.0</h4>
 	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a></p>
 	<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG20-TECHS/G57.html" title="G57 (nouvelle fenêtre)" target="_blank">G57</a></p>
@@ -3072,8 +3052,8 @@ ul>
 <ul>
 <li>Test 10.14.1 : Dans chaque page web, pour chaque texte ou ensemble de texte, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée&nbsp;?</li>
 <li>Test 10.14.2 : Dans chaque page web, pour chaque image ou ensemble d'image, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée&nbsp;?</li>
-<li>Test 10.14.3 : Dans chaque page web, pour chaque <a href="glossaire.html#MediaTemp">média temporel</a>, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée&nbsp;?</li>
-<li>Test 10.14.4 : Dans chaque page web, pour chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a>, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée&nbsp;?</li>
+<li>Test 10.14.3 : Dans chaque page web, pour chaque <a href="glossaire.html#mediaTemp">média temporel</a>, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée&nbsp;?</li>
+<li>Test 10.14.4 : Dans chaque page web, pour chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a>, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée&nbsp;?</li>
 </ul>
 <aside>
 	<h4>Correspondances WCAG 2.0</h4>
@@ -3093,8 +3073,8 @@ ul>
 <ul>
 <li>Test 10.15.1 : Dans chaque page web, pour chaque texte ou ensemble de textes, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
 <li>Test 10.15.2 : Dans chaque page web, pour chaque image ou ensemble d'images, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
-<li>Test 10.15.3 : Dans chaque page web, pour chaque <a href="glossaire.html#MediaTemp">média temporel</a>, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
-<li>Test 10.15.4 : Dans chaque page web, pour chaque <a href="glossaire.html#MediaNonTemp">média non temporel</a>, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
+<li>Test 10.15.3 : Dans chaque page web, pour chaque <a href="glossaire.html#mediaTemp">média temporel</a>, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
+<li>Test 10.15.4 : Dans chaque page web, pour chaque <a href="glossaire.html#mediaNonTemp">média non temporel</a>, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
 </ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
@@ -3114,9 +3094,9 @@ ul>
 </aside>
 </section>
 </article>
-<article class="thematique">
+<article id="forms" class="thematique">
 <header>
-	<h2 id="forms">11. Formulaires</h2>
+	<h2>11. Formulaires</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#presentation">Présentation de l'information</a></li>
@@ -3142,7 +3122,7 @@ ul>
     						</ul>
     					</nav>
 	<h3>Recommandation</h3>
-	<p>Associer pour chaque formulaire chacun de ses champs à son intitulé, grouper les champs dans des blocs d'informations de même nature, structurer les listes de choix de manière pertinente, donner à chaque <a href="glossaire.html#BtnForm">bouton</a> un intitulé explicite. Vérifier la présence d'aide à la saisie, s'assurer que le <a href="glossaire.html#ControleSaisie">contrôle de saisie</a> est accessible et que l'utilisateur peut contrôler les données à caractère financier, juridique ou personnelles.</p>
+	<p>Associer pour chaque formulaire chacun de ses champs à son intitulé, grouper les champs dans des blocs d'informations de même nature, structurer les listes de choix de manière pertinente, donner à chaque <a href="glossaire.html#BtnForm">bouton</a> un intitulé explicite. Vérifier la présence d'aide à la saisie, s'assurer que le <a href="glossaire.html#controle-saisie">contrôle de saisie</a> est accessible et que l'utilisateur peut contrôler les données à caractère financier, juridique ou personnelles.</p>
 	<div class="tags">
 		<span>Mot-clés</span>
 		<ul>
@@ -3329,8 +3309,8 @@ ul>
 <section>
 <h3 id="crit-11-8"><em>Critère 11.8 [A]</em> Dans chaque formulaire, chaque liste de choix est-elle structurée de manière pertinente&nbsp;?</h3>
 <ul>
-<li>Test 11.8.1 : Dans chaque formulaire, pour chaque <a href="glossaire.html#ListeChoix">liste de choix</a> (balise <code lang="en">select</code>), les items sont-ils regroupés avec une balise <code lang="en">optgroup</code>, si&nbsp;nécessaire&nbsp;?</li>
-<li>Test 11.8.2 : Dans chaque <a href="glossaire.html#ListeChoix">liste de choix</a> (balise <code lang="en">select</code>), chaque regroupement d'items de liste (balise <code lang="en">optgroup</code>) possède-t-il un attribut <code lang="en">label</code>&nbsp;?</li>
+<li>Test 11.8.1 : Dans chaque formulaire, pour chaque <a href="glossaire.html#liste-de-choix">liste de choix</a> (balise <code lang="en">select</code>), les items sont-ils regroupés avec une balise <code lang="en">optgroup</code>, si&nbsp;nécessaire&nbsp;?</li>
+<li>Test 11.8.2 : Dans chaque <a href="glossaire.html#liste-de-choix">liste de choix</a> (balise <code lang="en">select</code>), chaque regroupement d'items de liste (balise <code lang="en">optgroup</code>) possède-t-il un attribut <code lang="en">label</code>&nbsp;?</li>
 <li>Test 11.8.3 : Pour chaque regroupement d'items de liste (balise <code lang="en">optgroup</code>) ayant un attribut <code lang="en">label</code>, le&nbsp;contenu de l'attribut <code lang="en">label</code> est-il pertinent&nbsp;?</li>
 </ul>
 <aside>
@@ -3466,13 +3446,13 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-11-11-aa-dans-chaque-formulaire-le-contrle-de-saisie-est-il-accompagn-si-ncessaire-de-suggestions-facilitant-la-correction-des-erreurs-de-saisie-"><em>Critère 11.11 [AA]</em> Dans chaque formulaire, le contrôle de saisie est-il accompagné, si&nbsp;nécessaire, de suggestions facilitant la correction des erreurs de saisie&nbsp;?</h3>
+<h3 id="crit-11-11"><em>Critère 11.11 [AA]</em> Dans chaque formulaire, le contrôle de saisie est-il accompagné, si&nbsp;nécessaire, de suggestions facilitant la correction des erreurs de saisie&nbsp;?</h3>
 <ul>
 <li>Test 11.11.1 : Pour chaque formulaire, pour chaque erreur de saisie, <a href="glossaire.html#type-format-donnees">les types et les formats de données</a> sont-ils suggérés, si&nbsp;nécessaire&nbsp;?</li>
 <li>Test 11.11.2 : Pour chaque formulaire, pour chaque erreur de saisie, des exemples de valeurs attendues sont-ils suggérés, si&nbsp;nécessaire&nbsp;?</li>
 </ul>
 <aside>
-<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-1111-aa">Consulter la note technique au sujet des contrôles automatiques de format HTML5</a></p>
+<p><strong>Note technique :</strong> <a href="notes-techniques.html#crit-11-11">Consulter la note technique au sujet des contrôles automatiques de format HTML5</a></p>
 
 <h4>Correspondances WCAG 2.0</h4>
 
@@ -3491,7 +3471,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-11-12-aa-pour-chaque-formulaire-les-donnes-caractre-financier-juridique-ou-personnel-peuvent-elles-tre-modifies-mises-jour-ou-rcupres-par-lutilisateur-"><em>Critère 11.12 [AA]</em> Pour chaque formulaire, les données à caractère financier, juridique ou personnel peuvent-elles être modifiées, mises à jour ou récupérées par l'utilisateur&nbsp;?</h3>
+<h3 id="crit-11-12"><em>Critère 11.12 [AA]</em> Pour chaque formulaire, les données à caractère financier, juridique ou personnel peuvent-elles être modifiées, mises à jour ou récupérées par l'utilisateur&nbsp;?</h3>
 <ul>
 <li>Test 11.12.1 : Pour chaque formulaire, la saisie des données à caractère financier, juridique ou personnelle vérifie-t-elle une de ces conditions ?
 
@@ -3527,7 +3507,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-11-13-aaa-pour-chaque-formulaire-toutes-les-donnes-peuvent-elles-tre-modifies-mises-jour-ou-rcupres-par-lutilisateur-"><em>Critère 11.13 [AAA]</em> Pour chaque formulaire, toutes les données peuvent-elles être modifiées, mises à jour ou récupérées par l'utilisateur&nbsp;?</h3>
+<h3 id="crit-11-13"><em>Critère 11.13 [AAA]</em> Pour chaque formulaire, toutes les données peuvent-elles être modifiées, mises à jour ou récupérées par l'utilisateur&nbsp;?</h3>
 <ul>
 <li>Test 11.13.1 : Pour chaque formulaire, la saisie des données vérifie-t-elle une de ces conditions ?
 
@@ -3563,7 +3543,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-11-14-aaa-pour-chaque-formulaire-des-aides-la-saisie-sont-elles-prsentes-"><em>Critère 11.14 [AAA]</em> Pour chaque formulaire, des aides à la saisie sont-elles présentes&nbsp;?</h3>
+<h3 id="crit-11-14"><em>Critère 11.14 [AAA]</em> Pour chaque formulaire, des aides à la saisie sont-elles présentes&nbsp;?</h3>
 <ul>
 <li>Test 11.14.1 : Chaque formulaire vérifie-t-il une de ces conditions ?
 
@@ -3622,7 +3602,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-11-15-aaa-pour-chaque-formulaire-chaque-aide-la-saisie-est-elle-pertinente-"><em>Critère 11.15 [AAA]</em> Pour chaque formulaire, chaque aide à la saisie est-elle pertinente&nbsp;?</h3>
+<h3 id="crit-11-15"><em>Critère 11.15 [AAA]</em> Pour chaque formulaire, chaque aide à la saisie est-elle pertinente&nbsp;?</h3>
 <ul>
 <li>Test 11.15.1 : Pour chaque formulaire, chaque aide à la saisie est-elle pertinente&nbsp;?</li>
 </ul>
@@ -3644,9 +3624,9 @@ ul>
 </aside>
 </section>
 </article>
-<article class="thematique">
+<article id="navigation" class="thematique">
 <header>
-	<h2 id="navigation">12. Navigation</h2>
+	<h2>12. Navigation</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#forms">Formulaires</a></li>
@@ -3680,7 +3660,7 @@ ul>
 	</div>
 </header>
 <section>
-<h3 id="crit-12-1-aa-chaque-ensemblePages-dispose-t-il-de-deux-systmes-de-navigation-diffrents-au-moins-hors-cas-particuliers-"><em>Critère 12.1 [AA]</em> Chaque ensemble de pages dispose-t-il de deux systèmes de navigation différents, au moins (hors cas particuliers)&nbsp;?</h3>
+<h3 id="crit-12-1"><em>Critère 12.1 [AA]</em> Chaque ensemble de pages dispose-t-il de deux systèmes de navigation différents, au moins (hors cas particuliers)&nbsp;?</h3>
 <ul>
 <li>Test 12.1.1 : Chaque <a href="glossaire.html#ensemblePages">ensemble de pages</a> vérifie-t-il une de ces conditions (<a href="cas-particuliers.html#crit-121" title="Cas particuliers pour le critère 12.1">hors cas particuliers</a>)&nbsp;?
 
@@ -3705,7 +3685,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-2-aa-dans-chaque-ensemblePages-le-menu-ou-les-barres-de-navigation-sont-ils-toujours-la-mme-place-hors-cas-particuliers-"><em>Critère 12.2 [AA]</em> Dans chaque ensemble de pages, le menu ou les barres de navigation sont-ils toujours à la même place (hors cas particuliers)&nbsp;?</h3>
+<h3 id="crit-12-2"><em>Critère 12.2 [AA]</em> Dans chaque ensemble de pages, le menu ou les barres de navigation sont-ils toujours à la même place (hors cas particuliers)&nbsp;?</h3>
 <ul>
 <li>Test 12.2.1 : Dans chaque <a href="glossaire.html#ensemblePages">ensemble de pages</a>, chaque page ayant un <a href="glossaire.html#navMenu">menu de navigation</a> vérifie-t-elle ces conditions (<a href="cas-particuliers.html#crit-12-2-12-3" title="Cas particuliers pour le critère 12.2">hors cas particuliers</a>)&nbsp;?
 
@@ -3740,7 +3720,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-3-aa-dans-chaque-ensemblePages-le-menu-et-les-barres-de-navigation-ont-ils-une-presentation-cohrente-hors-cas-particuliers-"><em>Critère 12.3 [AA]</em> Dans chaque ensemble de pages, le menu et les barres de navigation ont-ils une présentation cohérente (hors cas particuliers)&nbsp;?</h3>
+<h3 id="crit-12-3"><em>Critère 12.3 [AA]</em> Dans chaque ensemble de pages, le menu et les barres de navigation ont-ils une présentation cohérente (hors cas particuliers)&nbsp;?</h3>
 <ul>
 <li>Test 12.3.1 : Dans chaque <a href="glossaire.html#ensemblePages">ensemble de pages</a>, le <a href="glossaire.html#navMenu">menu de navigation</a> principal a-t-il une présentation cohérente (<a href="cas-particuliers.html#crit-12-2-12-3" title="Cas particuliers pour le critère 12.3">hors cas particuliers</a>)&nbsp;?</li>
 <li>Test 12.3.2 : Dans chaque <a href="glossaire.html#ensemblePages">ensemble de pages</a>, les barres de navigation répétées ont-elles une présentation cohérente (<a href="cas-particuliers.html#crit-12-2-12-3" title="Cas particuliers pour le critère 12.3">hors cas particuliers</a>)&nbsp;?</li>
@@ -3763,7 +3743,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-4-aa-la-planSite-est-elle-pertinente-"><em>Critère 12.4 [AA]</em> La page «&nbsp;plan du site&nbsp;» est-elle pertinente&nbsp;?</h3>
+<h3 id="crit-12-4"><em>Critère 12.4 [AA]</em> La page «&nbsp;plan du site&nbsp;» est-elle pertinente&nbsp;?</h3>
 <ul>
 <li>Test 12.4.1 : La <a href="glossaire.html#planSite">page «&nbsp;plan du site&nbsp;»</a> est-elle représentative de l'architecture générale du site&nbsp;?</li>
 <li>Test 12.4.2 : Les liens du plan du site sont-ils fonctionnels&nbsp;?</li>
@@ -3787,7 +3767,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-5-aa-dans-chaque-ensemblePages-la-planSite-est-elle-atteignable-de-manire-identique-"><em>Critère 12.5 [AA]</em> Dans chaque ensemble de pages, la page «&nbsp;plan du site&nbsp;» est-elle atteignable de manière identique&nbsp;?</h3>
+<h3 id="crit-12-5"><em>Critère 12.5 [AA]</em> Dans chaque ensemble de pages, la page «&nbsp;plan du site&nbsp;» est-elle atteignable de manière identique&nbsp;?</h3>
 <ul>
 <li>Test 12.5.1 : Dans chaque ensemble de pages, la <a href="glossaire.html#planSite">page «&nbsp;plan du site&nbsp;»</a> est-elle accessible à partir d'une fonctionnalité identique&nbsp;?</li>
 <li>Test 12.5.2 : Dans chaque ensemble de pages, la fonctionnalité vers la <a href="glossaire.html#planSite">page «&nbsp;plan du site&nbsp;»</a> est-elle située à la même place dans la présentation&nbsp;?</li>
@@ -3835,7 +3815,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-7-aa-dans-chaque-page-dune-collection-de-pages-des-liens-facilitant-la-navigation-sont-ils-prsents-"><em>Critère 12.7 [AA]</em> Dans chaque page d'une collection de pages, des liens facilitant la navigation sont-ils présents&nbsp;?</h3>
+<h3 id="crit-12-7"><em>Critère 12.7 [AA]</em> Dans chaque page d'une collection de pages, des liens facilitant la navigation sont-ils présents&nbsp;?</h3>
 <ul>
 <li>Test 12.7.1 : Chaque page d'une <a href="glossaire.html#collection-de-pages">collection de pages</a>, vérifie-t-elle ces conditions ?
 
@@ -3864,7 +3844,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-8-aaa-dans-chaque-page-web-un-fil-dariane-est-il-prsent-hors-cas-particuliers-"><em>Critère 12.8 [AAA]</em> Dans chaque page web, un fil d'Ariane est-il présent (hors cas particuliers)&nbsp;?</h3>
+<h3 id="crit-12-8"><em>Critère 12.8 [AAA]</em> Dans chaque page web, un fil d'Ariane est-il présent (hors cas particuliers)&nbsp;?</h3>
 <ul>
 <li>Test 12.8.1 : Dans chaque page web, un fil d'Ariane est-il présent (<a href="cas-particuliers.html#crit-128" title="Cas particuliers pour le critère 12.8">hors cas particuliers</a>)&nbsp;?</li>
 </ul>
@@ -3886,7 +3866,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-9-aaa-dans-chaque-page-web-le-fil-dariane-est-il-pertinent-"><em>Critère 12.9 [AAA]</em> Dans chaque page web, le fil d'Ariane est-il pertinent&nbsp;?</h3>
+<h3 id="crit-12-9"><em>Critère 12.9 [AAA]</em> Dans chaque page web, le fil d'Ariane est-il pertinent&nbsp;?</h3>
 <ul>
 <li>Test 12.9.1 : Dans chaque page web, le fil d'Ariane est-il représentatif de la position de la page dans l'arborescence du site&nbsp;?</li>
 </ul>
@@ -3908,7 +3888,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-10-a-dans-chaque-page-web-les-groupes-de-liens-importants-menu-navBar-et-la-zone-de-contenu-sont-ils-identifis-hors-cas-particuliers-"><em>Critère 12.10 [A]</em> Dans chaque page web, les groupes de liens importants (menu, barre de navigation…) et la zone de contenu sont-ils identifiés hors cas particuliers&nbsp;?</h3>
+<h3 id="crit-12-10"><em>Critère 12.10 [A]</em> Dans chaque page web, les groupes de liens importants (menu, barre de navigation…) et la zone de contenu sont-ils identifiés hors cas particuliers&nbsp;?</h3>
 <ul>
 <li>Test 12.10.1 : Dans chaque page web, chaque groupe de liens importants est-il implémenté dans une balise commune&nbsp;?</li>
 <li>Test 12.10.2 : Dans chaque page web, chaque groupe de liens importants vérifie-t-il une de ces conditions ?
@@ -3964,8 +3944,8 @@ ul>
 <ul>
 <li>Test 12.11.1 : Dans chaque page web, un lien permet-il d'éviter chaque groupe de liens importants identifié ou d'y accéder&nbsp;?</li>
 <li>Test 12.11.2 : Dans chaque page web, un lien permet-il d'éviter la zone de contenu identifiée ou d'y accéder&nbsp;?</li>
-<li>Test 12.11.3 : Dans chaque page web, chaque <a href="glossaire.html#LienEvitement">lien d'évitement ou d'accès rapide</a> est-il fonctionnel&nbsp;?</li>
-<li>Test 12.11.4 : Dans chaque ensemble de pages, les <a href="glossaire.html#LienEvitement">liens d'évitement ou d'accès rapide</a> vérifient-ils ces conditions ?
+<li>Test 12.11.3 : Dans chaque page web, chaque <a href="glossaire.html#lien-evitement">lien d'évitement ou d'accès rapide</a> est-il fonctionnel&nbsp;?</li>
+<li>Test 12.11.4 : Dans chaque ensemble de pages, les <a href="glossaire.html#lien-evitement">liens d'évitement ou d'accès rapide</a> vérifient-ils ces conditions ?
 
 <ul>
 <li>Chaque lien est situé à la même place dans la présentation</li>
@@ -3992,7 +3972,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-12-12-aaa-dans-chaque-page-web-la-page-en-cours-de-consultation-est-elle-indique-dans-le-mnavMenu-"><em>Critère 12.12 [AAA]</em> Dans chaque page web, la page en cours de consultation est-elle indiquée dans le menu de navigation&nbsp;?</h3>
+<h3 id="crit-12-12"><em>Critère 12.12 [AAA]</em> Dans chaque page web, la page en cours de consultation est-elle indiquée dans le menu de navigation&nbsp;?</h3>
 <ul>
 <li>Test 12.12.1 : Dans chaque page web, la page en cours de consultation est-elle indiquée dans le <a href="glossaire.html#navMenu">menu de navigation</a>&nbsp;?</li>
 </ul>
@@ -4056,9 +4036,9 @@ ul>
 </aside>
 </section>
 </article>
-<article class="thematique">
-<header>
-	<h2 id="consultation">13. Consultation</h2>
+				<article id="consultation" class="thematique">
+					<header>
+						<h2>13. Consultation</h2>
                         <ul class="skiplink">
                             <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
                             <li class="gobefore"><a href="#navigation">Navigation</a></li>
@@ -4266,7 +4246,7 @@ ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G10.html" title="G10 (nouvelle fenêtre)" target="_blank">G10</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G135.html" title="G135 (nouvelle fenêtre)" target="_blank">G135</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F15.html" title="F15 (nouvelle fenêtre)" target="_blank">F15</a></p>
 
@@ -4294,7 +4274,7 @@ ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-sequence" title="1.3.2 (nouvelle fenêtre)" target="_blank">1.3.2</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#content-structure-separation-programmatic" title="1.3.1 (nouvelle fenêtre)" target="_blank">1.3.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-skip" title="2.4.1 (nouvelle fenêtre)" target="_blank">2.4.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#navigation-mechanisms-focus-order" title="2.4.3 (nouvelle fenêtre)" target="_blank">2.4.3</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#meaning-doc-lang-id" title="3.1.1 (nouvelle fenêtre)" target="_blank">3.1.1</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#ensure-compat-rsv" title="4.1.2 (nouvelle fenêtre)" target="_blank">4.1.2</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G10.html" title="G10 (nouvelle fenêtre)" target="_blank">G10</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G135.html" title="G135 (nouvelle fenêtre)" target="_blank">G135</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F15.html" title="F15 (nouvelle fenêtre)" target="_blank">F15</a></p>
 
@@ -4384,7 +4364,7 @@ ul>
 </ul>
 <aside>
 	<h4>Correspondances WCAG 2.0</h4>
-	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+	<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 	<p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G160.html" title="G160 (nouvelle fenêtre)" target="_blank">G160</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/G153.html" title="G153 (nouvelle fenêtre)" target="_blank">G153</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H86.html" title="H86 (nouvelle fenêtre)" target="_blank">H86</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F71.html" title="F71 (nouvelle fenêtre)" target="_blank">F71</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F72.html" title="F72 (nouvelle fenêtre)" target="_blank">F72</a></p>
 	<div class="tags">
 	<span>Mot-clés</span>
@@ -4409,7 +4389,7 @@ ul>
 <aside>
 <h4>Correspondances WCAG 2.0</h4>
 
-<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all" hreflang="en">1.1.1</a></p>
+<p>Critère(s) de succès WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/Translations/WCAG20-fr/#text-equiv-all">1.1.1</a></p>
 
 <p>Technique(s) suffisante(s) et/ou échec(s) WCAG 2.0 : <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H86.html" title="H86 (nouvelle fenêtre)" target="_blank">H86</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F71.html" title="F71 (nouvelle fenêtre)" target="_blank">F71</a> - <a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/F72.html" title="F72 (nouvelle fenêtre)" target="_blank">F72</a></p>
 
@@ -4424,7 +4404,7 @@ ul>
 	</aside>
 </section>
 <section>
-<h3 id="crit-13-13-aaa-dans-chaque-page-web-pour-chaque-mot-dont-le-sens-ne-peut-tre-compris-sans-en-connatre-la-prononciation-celle-ci-est-elle-indique-"><em>Critère 13.13 [AAA]</em> Dans chaque page web, pour chaque mot dont le sens ne peut être compris sans en connaître la prononciation, celle-ci est-elle indiquée&nbsp;?</h3>
+<h3 id="crit-13-13"><em>Critère 13.13 [AAA]</em> Dans chaque page web, pour chaque mot dont le sens ne peut être compris sans en connaître la prononciation, celle-ci est-elle indiquée&nbsp;?</h3>
 <ul>
 <li>Test 13.13.1 : Dans chaque page web, chaque mot dont le sens ne peut être compris sans en connaître la prononciation, vérifie-t-il une de ces conditions ?
 
@@ -4562,18 +4542,15 @@ ul>
 </section>
 
 </article>
-                
-
-
-
 
 
         </main>
 		<footer id="footer" role="contentinfo">
 			<div class="page">
-				<p>Ce document est un document de l'État placé sous <a href="http://wiki.data.gouv.fr/wiki/Licence_Ouverte_/_Open_Licence" rel="external" class="external">licence ouverte&nbsp;1.0</a> ou ultérieure, comme tous les documents hébergés sur <a href="http://references.modernisation.gouv.fr/" rel="external" class="external">references.modernisation.gouv.fr</a>. Voir les conditions d'utilisation de la licence dans les <a href="http://references.modernisation.gouv.fr/mentions-legales" rel="external" class="external">mentions légales</a>.</p>
+				<h2>RGAA 3.0 - juin 2015.</h2>
+				<p>Ce document est un document de l'État placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence" rel="external" class="external">licence ouverte&nbsp;1.0 ou ultérieure</a>, comme tous les documents hébergés sur <a href="http://references.modernisation.gouv.fr/" rel="external" class="external">references.modernisation.gouv.fr</a>. Voir les conditions d'utilisation de la licence dans les <a href="http://references.modernisation.gouv.fr/mentions-legales" rel="external" class="external">mentions légales</a>.</p>
 				<p>Le référentiel technique (liste des critères, glossaire, cas particuliers, notes techniques, base de référence) est une copie adaptée du <a href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html" rel="external" class="external">référentiel AccessiWeb HTML5 / ARIA</a> - Version de travail du 19/12/2013 - Edité par l'association BrailleNet.</p>
-				<p>Cette page est réalisée avec <a href="http://tinytypo.tetue.net" rel="external" class="external">Tiny Typo</a>, par <a href="http://www.tanaguru.com/fr/" rel="external" class="external">Tanaguru</a>, un gentil dragon qui teste votre accessibilité&nbsp;web.</p>
+				<p>Cette page est réalisée avec <a href="http://tinytypo.tetue.net" rel="external" class="external">Tiny Typo</a>, par <a href="http://www.tanaguru.com/fr/" rel="external" class="external">Tanaguru</a>, un gentil dragon qui évalue votre accessibilité&nbsp;web.</p>
 				<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de page"><span>Haut de page</span></a></span></p>
 			</div>
 		</footer>

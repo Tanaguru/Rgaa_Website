@@ -1154,7 +1154,7 @@ main .skiplink a {
   border-width: 0 0 1px;
 }
 #navtoc li a,
-#navtoc .filters div {
+#navtoc .filter {
   display: block;
   padding: 5px;
 }
@@ -1168,11 +1168,8 @@ main .skiplink a {
   background-color: #2c699e;
   color: #f8f5f5;
 }
-#navtoc .filters div:last-child {
-  border-width: 0;
-}
-#navtoc .filters input,
-#navtoc .filters label {
+#navtoc .filter input,
+#navtoc .filter label {
   display: inline-block;
   vertical-align: middle;
 }

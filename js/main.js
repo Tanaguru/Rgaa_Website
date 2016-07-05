@@ -24,4 +24,12 @@ $( document ).ready(function() {
     		$("#btnnav").attr('aria-expanded','true');
     	}
     });
+
+    $('.filter input').on('click', function() {
+        var $this = $(this),
+            id = $this.attr('id'),
+            $section = $('section[data-level="'+ id + '"');
+
+        $this.prop('checked') ? $section.css('display', 'block') : $section.css('display', 'none');
+    });
 });

@@ -49,8 +49,10 @@ main .skiplink a { margin: 0 @gutter/2; }
 #header .headsite {
     z-index: 99;
     background: fade(@color-bg,90);
-    width: 100% !important; height: auto;
+    width: 100% !important; 
+    height: auto;
     text-align: center;
+    position: fixed;
 
     * { vertical-align: middle; }
     a, .on, #logo a { display: inline-block; padding: @gutter 0; color: @color; }
@@ -102,7 +104,13 @@ main .skiplink a { margin: 0 @gutter/2; }
   }
 }
 
-#header .headrub { clear: both; padding-top: @p*3; }
+#header .headrub {
+   clear: both; padding-top: @p*10.5;
+}
+
+@media (min-width: @screen-small) {
+  #header .headrub { padding-top: @p*8; }
+}
 
 #header h1 {
   margin-bottom: @gutter;

@@ -35,6 +35,21 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <h1>Criteria</h1>
                 <p class="lead">The <abbr lang="fr" title="Référentiel Général d'Accessibilité des Administrations">RGAA</abbr> is the French government's General Accessibility Reference for Administrations. It is meant to provide a way to check compliance against <abbr title="Web Content Accessibility Guidelines, version 2.0">WCAG&nbsp;2.0</abbr>.</p>
                 <div id="navtoc">
+                    <h2 id="filtres">Filters</h2>
+                    <div aria-labelledby="filtres">
+                        <div class="filter">
+                            <input type="checkbox" id="A" checked="true" aria-checked="true">
+                            <label for="A">A level</label>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" id="AA" checked="true" aria-checked="true">
+                            <label for="AA">AA level</label>
+                        </div>
+                        <div class="filter">
+                            <input type="checkbox" id="AAA" checked="true" aria-checked="true">
+                            <label for="AAA">AAA level</label>
+                        </div>
+                    </div>
                     <h2 id="toc">Table of Contents</h2>
                     <nav class="nav" role="navigation" aria-labelledby="toc">
                         <ul>
@@ -116,7 +131,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <p>Give each <a href="./glossaire.html#ImgInfo">image conveying information</a> a relevant <a href="./glossaire.html#AltTexteImg">text alternative</a> and a <a href="./glossaire.html#DescDetaillee">detailed description</a> if necessary. Replace images of text with styled text when possible.
                         </p>
                     </header>
-                    <section>
+                    <section data-level="A"> 
                         <h3 id="crit-1-1"><em>Criterion 1.1 [A]</em> Does each image have a <a href="./glossaire.html#AltTexteImg">text alternative</a>?</h3>
                         <ul>
                             <li id="test-1-1-1">Test 1.1.1: Does each image (<code>img</code> tag) have an <code>alt</code> attribute?</li>
@@ -130,7 +145,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s):  H36 - H37 - H53 - H24 - F65</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-1-2"><em>Criterion 1.2 [A]</em> For each <a href="./glossaire.html#ImgDeco">decorative image</a> with a <a href="./glossaire.html#AltTexteImg">text alternative</a>, is this alternative empty?</h3>
                         <ul>
                             <li id="test-1-2-1">
@@ -177,7 +192,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H67 - G196 - C9 - F39 - F38 - ARIA4 - ARIA10</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-1-3"><em>Criterion 1.3 [A]</em> For each <a href="./glossaire.html#ImgInfo">image conveying information</a> with a <a href="./glossaire.html#AltTexteImg">text alternative</a>, is this alternative relevant (except in <a title="Particular cases for criterion 1.3" href="./cas-particuliers.html#crit-1-3">particular cases</a>)?</h3>
                         <ul>
                             <li id="test-1-3-1">
@@ -274,7 +289,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G94 - G95 - F30 - F71 - G196 - ARIA4</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-1-4"><em>Criterion 1.4 [A]</em> For each image used as <a href="./glossaire.html#captcha">CAPTCHA</a>
                             or as <a href="./glossaire.html#ImgTest">test image</a>, with a <a href="./glossaire.html#AltTexteImg">text
                                 alternative</a>, does this alternative describe the nature and the purpose of the image?</h3>
@@ -346,7 +361,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G143 - G100</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-1-5"><em>Criterion 1.5 [A]</em> For each image used as  <a href="./glossaire.html#captcha">CAPTCHA</a>,
                             is a solution for alternative access to the content or to the purpose of the <a href="./glossaire.html#captcha">CAPTCHA</a> available?
                         </h3>
@@ -383,7 +398,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G144</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-1-6"><em>Criterion 1.6 [A]</em> Does each <a href="./glossaire.html#ImgInfo">image conveying information</a> have a <a href="./glossaire.html#DescDetaillee">detailed description</a> if necessary?</h3>
                         <ul>
                             <li id="test-1-6-1">Test 1.6.1: Does each <a href="./glossaire.html#ImgInfo">image
@@ -477,7 +492,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G92 - G74 - G73 - H45 - ARIA6</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-1-7"><em>Criterion 1.7 [A]</em> For each <a href="./glossaire.html#ImgInfo">image conveying information</a> with a <a href="./glossaire.html#DescDetaillee">detailed description</a>, is this description relevant?</h3>
                         <ul>
                             <li id="test-1-7-1">Test 1.7.1: Does each <a href="./glossaire.html#ImgInfo">image conveying information</a> (<code>img</code> or <code>input</code>  tag with the attribute  <code>type="image"</code>) with a <a href="./glossaire.html#DescDetaillee">detailed description</a> meet one of the following conditions?
@@ -541,7 +556,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G92- F67</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-1-8"><em>Criterion 1.8 [AA]</em> When an alternate
                             mechanism is missing, each <a href="./glossaire.html#ImgText">image
                                 of text</a> conveying information must be replaced with
@@ -590,7 +605,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G136 - G140 - C22 - C30</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-1-9"><em>Criterion 1.9 [AAA]</em> Each <a href="./glossaire.html#ImgText">image
                                 of text</a> conveying information must be replaced with
                             <a href="./glossaire.html#TexteStyle">styled text</a>. Has this rule been followed (except in <a title="Particular cases for criterion 1.9" href="./cas-particuliers.html#crit-1-9">particular cases</a>)?</h3>
@@ -625,7 +640,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G140 - C22 - C30</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-1-10"><em>Criterion 1.10
                             [A]</em> Is each <a href="./glossaire.html#ImgCaption">image caption</a> correctly associated with the
                             corresponding image, if necessary?</h3>
@@ -723,7 +738,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             GProvide each <a href="./glossaire.html#CadreEnLigne"><code>iframe</code></a> with a relevant title.
                         </p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-2-1"><em>Criterion 2.1 [A]</em> Does each <a href="./glossaire.html#CadreEnLigne"><code>iframe</code></a>
                             have a <a href="./glossaire.html#TitreCadre">frame
                                 title</a>?</h3>
@@ -737,7 +752,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H64</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-2-2"><em>Criterion 2.2 [A]</em> For each <a href="./glossaire.html#CadreEnLigne"><code>iframe</code></a>
                             with a frame title, is this <a href="./glossaire.html#TitreCadre">frame
                                 title</a> relevant?</h3>
@@ -774,7 +789,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <p>Do not provide <a href="./glossaire.html#InfoCouleur">information</a>
                             through color only, and use sufficient color contrasts.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-3-1"><em>Criterion 3.1 [A]</em> On each web page, <a href="./glossaire.html#InfoCouleur">information</a> must
                             not  be conveyed only through color. Has this rule been
                             followed?</h3>
@@ -813,7 +828,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G14 - G182 - G111 - G117 - G138 - G205</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-3-2"><em>Criterion 3.2 [A]</em> On each web page, <a href="./glossaire.html#InfoCouleur">information</a> 
                             must not be conveyed only through color. Has this rule been
                             implemented in a <a href="./glossaire.html#Pertinent">relevant</a> way?</h3>
@@ -853,7 +868,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G138 - F13</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-3-3"><em>Criterion 3.3 [AA]</em> On each web page, is
                             the <a href="./glossaire.html#contraste">contrast</a>
                             between the text and background colors sufficient (except in <a title="Particular cases for criterion 3.3" href="./cas-particuliers.html#crit-3-">particular cases</a>)?</h3>
@@ -910,7 +925,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G18 - G136 - G148 - G174 - G145 - C29</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-3-4"><em>Criterion 3.4 [AAA]</em> On each web page, is
                             the <a href="./glossaire.html#contraste">contrast</a>
                             between the text and background colors enhanced (except
@@ -1017,7 +1032,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             media with the keyboard and ensure that they are
                             compatible with assistive technologies.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-1"><em>Criterion 4.1 [A]</em> Does each prerecorded <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> have a <a href="./glossaire.html#transcript">text
                                 transcript</a> or an audio description if necessary (except
@@ -1084,7 +1099,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G58 - G69 - G78 - G158 - G159 - G173 - G8 - G166 - SM6 - SM7</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-2"><em>Criterion 4.2 [A]</em> For each prerecorded <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> with a <a href="./glossaire.html#transcript">text
                                 transcript</a> or a synchronized audio description, are
@@ -1132,7 +1147,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F30 - F67 - SM6 - SM7</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-3"><em>Criterion 4.3 [A]</em> Does each prerecorded
                             synchronized <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> have <a href="./glossaire.html#SsTitreSynchro">synchronized
@@ -1166,7 +1181,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G58 - G93 - G87 - H95 - SM11 - SM12 - F74 - F75</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-4"><em>Criterion 4.4 [A]</em> For each prerecorded
                             synchronized <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> with <a href="./glossaire.html#SsTitreSynchro">synchronized
@@ -1183,7 +1198,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G87 - G93 - F8 - F74 - F75 - SM11 - SM12</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-4-5"><em>Criterion 4.5 [AA]</em> Does each live <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> have <a href="./glossaire.html#SsTitreSynchro">synchronized
                                 captions</a> or a <a href="./glossaire.html#transcript">text
@@ -1231,7 +1246,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G9 - G150 - G151 - G157 - H95 - SM11 - SM12</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-4-6"><em>Criterion 4.6 [AA]</em> Are each <a href="./glossaire.html#SsTitreSynchro">synchronized
                                 captions</a> or <a href="./glossaire.html#transcript">text
                                 transcript</a>, provided for live <a href="./glossaire.html#mediaTemp">time-based
@@ -1266,7 +1281,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F8</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-4-7"><em>Criterion 4.7 [AA]</em> Does each prerecorded <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> have a synchronized <a href="./glossaire.html#AudioDesc">audio
                                 description</a> if necessary (except
@@ -1302,7 +1317,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G8 - G58 - G78 - G173 - H96 - SM1 - SM2 - SM6 - SM7</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-4-8"><em>Criterion 4.8 [AA]</em> For each prerecorded <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> with a synchronized audio description, is this
                             audio description relevant?</h3>
@@ -1322,7 +1337,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): SM1 - SM2 - SM6 - SM7</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-4-9"><em>Criterion 4.9 [AAA]</em> Does each prerecorded
                             <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> have a sign language interpretation (except
@@ -1345,7 +1360,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G54 - G81 - SM13 - SM14 </p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-4-10"><em>Criterion 4.10 [AAA]</em> For each prerecorded
                             <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> with a sign language interpretation is this
@@ -1366,7 +1381,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G54 - G81 - SM13 - SM14</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-4-11"><em>Criterion 4.11 [AAA]</em> Does each
                             prerecorded <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> have a synchronized <a href="./glossaire.html#AudioDescE">extended
@@ -1404,7 +1419,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G8 - G58 - H96 - SM1 - SM2</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-4-12"><em>Criterion 4.12 [AAA]</em> For each prerecorded
                             <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> with a synchronized extended audio
@@ -1427,7 +1442,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G8 - SM1 - SM2</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-4-13"><em>Criterion 4.13 [AAA]</em> Does each
                             synchronized or video-only <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> have a <a href="./glossaire.html#transcript">text
@@ -1467,7 +1482,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G58 - G69 - G159</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-4-14"><em>Criterion 4.14 [AAA]</em> For each
                             synchronized or video-only <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> with a <a href="./glossaire.html#transcript">text
@@ -1488,7 +1503,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F74</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-15"><em>Criterion 4.15 [A]</em> Can each <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> be clearly identified (except
                             in <a title="Particular cases for criterion 4.15" href="./cas-particuliers.html#crit-4-15">particular cases</a>)?</h3>
@@ -1512,7 +1527,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G68 - G100</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-16"><em>Criterion 4.16 [A]</em> Does each <a href="./glossaire.html#mediaNonTemp">non
                                 time-based media</a> have, if
                             necessary, an alternative (except
@@ -1550,7 +1565,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H35 - H46</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-17"><em>Criterion 4.17 [A]</em> For each <a href="./glossaire.html#mediaNonTemp">non
                                 time-based media</a> with an alternative, is this
                             alternative relevant?</h3>
@@ -1567,7 +1582,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H46 - F30</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-18"><em>Criterion 4.18 [A]</em> Can each <a href="./glossaire.html#controle-son">autoplaying sound  be controlled by the user</a>?</h3>
                         <ul>
                             <li id="test-4-18-1">Test 4.18.1: Does each audio
@@ -1591,7 +1606,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G60 - G170 - G171 - F23 - F93</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-4-19"><em>Criterion 4.19 [AAA]</em> For each prerecorded
                             audio-only <a href="./glossaire.html#mediaTemp">time-based
                                 media</a>, are the dialogues audible enough (except
@@ -1622,7 +1637,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G56</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-20"><em>Criterion 4.20 [A]</em> Can each <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> be, if necessary,
                             <a href="./glossaire.html#ControleClavSour">controlled
@@ -1663,7 +1678,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G90 - G4 - G202</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-21"><em>Criterion 4.21 [A]</em> Can each <a href="./glossaire.html#mediaNonTemp">non
                                 time-based media</a> be controlled by the keyboard and
                             by the mouse?</h3>
@@ -1699,7 +1714,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G90 - G4</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-4-22"><em>Criterion 4.22 [A]</em> Is each <a href="./glossaire.html#mediaTemp">time-based
                                 media</a> and each non time-based media compatible with
                             assistive technologies (except
@@ -1773,7 +1788,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             to associate data cells with header cells. Ensure that
                             each layout table is correctly linearized.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-1"><em>Criterion 5.1 [A]</em> Does each 
                             <a href="./glossaire.html#TabDonneeComplexe">complex data
                                 table</a> have a <a href="./glossaire.html#table-resume">summary</a>?
@@ -1790,7 +1805,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H73</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-2"><em>Criterion 5.2 [A]</em> For each 
                             <a href="./glossaire.html#TabDonneeComplexe">complex data
                                 table</a> with a <a href="./glossaire.html#table-resume">summary</a>,
@@ -1807,7 +1822,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H73</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-3"><em>Criterion 5.3 [A]</em> For each <a href="./glossaire.html#TabMiseForme">layout
                                 table</a>, is the linearized content still
                             understandable?</h3>
@@ -1829,7 +1844,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F49 - ARIA4</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-4"><em>Criterion 5.4 [A]</em> Does each <a href="./glossaire.html#TabDonnee">data
                                 table</a> have a <a href="./glossaire.html#titre-tableau">title</a>?</h3>
                         <ul>
@@ -1842,7 +1857,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H39</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-5"><em>Criterion 5.5 [A]</em> For each <a href="./glossaire.html#TabDonnee">data
                                 table</a> with a <a href="./glossaire.html#titre-tableau">title</a>,
                             is this title relevant?</h3>
@@ -1858,7 +1873,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H39</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-6"><em>Criterion 5.6 [A]</em> For each <a href="./glossaire.html#TabDonnee">data
                                 table</a>, are each <a href="./glossaire.html#EnteteTab">column
                                 header</a> and each <a href="./glossaire.html#EnteteTab">row
@@ -1877,7 +1892,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H51 - F91</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-7"><em>Criterion 5.7 [A]</em> For each <a href="./glossaire.html#TabDonnee">data
                                 table</a>, is each cell associated with its header using
                             the appropriate technique?</h3>
@@ -1920,7 +1935,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H63 - H43</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-5-8"><em>Criterion 5.8 [A]</em> Each <a href="./glossaire.html#TabMiseForme">layout
                                 table</a> must not use elements intended for data
                             tables. Has this rule been followed?</h3>
@@ -1969,7 +1984,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 title</a> as sparsely as possible. Add links or a
                             navigation form to the areas of a server-side image map.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-6-1"><em>Criterion 6.1 [A]</em> Is each <a href="./glossaire.html#lien">link</a>
                             explicit (except in <a title="Particular cases for criterion 6.1"
                                                    href="./cas-particuliers.html#crit-6-">particular
@@ -2045,7 +2060,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H78 - H79 - H80 - H81 - H30 - F89 - G91 - G53 - ARIA7 - ARIA8 - F63</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-6-2"><em>Criterion 6.2 [A]</em> For each <a href="./glossaire.html#lien">link</a>
                             with a <a href="./glossaire.html#TitreLien">link title</a>, is this title relevant?</h3>
                         <ul>
@@ -2074,7 +2089,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H33</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-6-3"><em>Criterion 6.3 [AAA]</em> Is each <a href="./glossaire.html#IntituleLien">link
                                 text</a> alone <a href="./glossaire.html#lienHorsContexte">explicit
                                 out of context</a> (except
@@ -2120,7 +2135,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G91 - G189 - H33 - SCR30</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-6-4"><em>Criterion 6.4 [A]</em> For
                             each web page, does each <a href="./glossaire.html#lien-identique">identical
                                 link</a> have the same purpose and target?</h3>
@@ -2137,7 +2152,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H78 - H79 - H80 - G91 - G197 - H30 - H33 - ARIA7 - ARIA8</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-6-5"><em>Criterion 6.5 [A]</em> On each web page, does
                             each <a href="./glossaire.html#lien">link</a>,
                             except in <a href="./glossaire.html#AncreNom">anchor</a>,
@@ -2179,7 +2194,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             controllable at least by keyboard and mouse, and ensure
                             that it is compatible with assistive technologies.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-7-1"><em>Criterion 7.1 [A]</em> Does each <a href="./glossaire.html#script">script</a>
                             support assistive technologies, if necessary?</h3>
                         <ul>
@@ -2248,7 +2263,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G10 - G135 - G136 - ARIA4 - ARIA5 - ARIA18 - ARIA19 - SCR21 - F15 - F19 - F42 - F59 - F79 - F20</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-7-2"><em>Criterion 7.2 [A]</em> For each <a href="./glossaire.html#script">script</a>
                             with an <a href="./glossaire.html#AltScript">alternative</a>,
                             is this <a href="./glossaire.html#AltScript">alternative</a>
@@ -2291,7 +2306,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G136 - F19 - F20</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-7-3"><em>Criterion 7.3 [A]</em> Can each <a href="./glossaire.html#script">script</a>
                             be <a href="./glossaire.html#ControleClavSour">controlled
                                 by keyboard and mouse</a> (except
@@ -2347,7 +2362,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G202 - SCR2 - SCR20 - SCR29 - SCR35 - G90 - F42 - F54 - F55</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-7-4"><em>Criterion 7.4 [A]</em> For each <a href="./glossaire.html#script">script</a>
                             that initiates a <a href="./glossaire.html#ChangContexte">change
                                 of context</a>, is the user warned or can he control it?</h3>
@@ -2373,7 +2388,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F9 - F22 - F36 - F37 - F41 - F76 - G13 - G76 - G80 - G107 - H32 - H84 - SCR19</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-7-5"><em>Criterion 7.5 [AAA]</em> Can each <a href="./glossaire.html#script">script</a>
                             causing an unrequested <a href="./glossaire.html#alerte">alert</a>
                             be controlled by the user (except in <a title="Particular cases for criterion 7.5"
@@ -2423,7 +2438,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             human language and changes in the direction of reading
                             order are specified.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-1"><em>Criterion 8.1 [A]</em> Is each web page defined
                             by a <a href="./glossaire.html#DTD">document
                                 type</a>?</h3>
@@ -2445,7 +2460,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G134 - G192</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-2"><em>Criterion 8.2 [A]</em> For each web page, is
                             the source code <a href="./glossaire.html#CodeValide">valid</a>
                             according to the specified <a href="./glossaire.html#DTD">document
@@ -2473,7 +2488,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G134 - G192 - H74 - H75 - H88 - H93 - H94 - F70 - F77 - F62</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-3"><em>Criterion 8.3 [A]</em> On each web page, is the
                             <a href="./glossaire.html#LangueDefaut">
                                 default human language</a> identifiable?</h3>
@@ -2498,7 +2513,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H57</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-4"><em>Criterion 8.4 [A]</em> For each web page with a
                             <a href="./glossaire.html#LangueDefaut">
                                 default human language</a>, is the <a href="./glossaire.html#code-de-langue">
@@ -2522,7 +2537,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H57</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-5"><em>Criterion 8.5 [A]</em> Does each web page have
                             a <a href="./glossaire.html#TitrePage">page
                                 title</a>?</h3>
@@ -2537,7 +2552,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G88 - G127 - H25</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-6"><em>Criterion 8.6 [A]</em> For each web page with a
                             <a href="./glossaire.html#TitrePage">page
                                 title</a>, is this title relevant?</h3>
@@ -2553,7 +2568,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s):G88 - G127 - F25</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-8-7"><em>Criterion 8.7 [AA]</em> On each web page, is
                             each change in the human language identified via the
                             source code (except
@@ -2578,7 +2593,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H58</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-8-8"><em>Criterion 8.8 [AA]</em> On each web page, is
                             each change in human language relevant?</h3>
                         <ul>
@@ -2595,7 +2610,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H58</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-9"><em>Criterion 8.9 [A]</em> On each web page, tags
                             must not be used <a href="./glossaire.html#UniquPres">only
                                 for layout</a>. Has this rule been followed?</h3>
@@ -2610,7 +2625,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G115 - H88 - F43 - F92</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-8-10"><em>Criterion 8.10 [A]</em> On each web page, are
                             changes in <a href="./glossaire.html#SensLecture">reading
                                 direction</a> identified?</h3>
@@ -2658,7 +2673,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             landmarks, lists, abbreviations and quotes to structure
                             information. </p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-9-1"><em>Criterion 9.1 [A]</em> On each web page, is
                             information structured by the appropriate use of <a href="./glossaire.html#Titre">headings</a>?</h3>
                         <ul>
@@ -2689,7 +2704,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H69 - G115 - G130 - H42 - G141 - ARIA4 - ARIA12</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-9-2"><em>Criterion 9.2 [A]</em> On each web page, is the
                             <a href="./glossaire.html#DocumentOutline">document outline</a> coherent?</h3>
                         <ul>
@@ -2717,7 +2732,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G115 - ARIA11</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-9-3"><em>Criterion 9.3 [A]</em> On each web page, is
                             each <a href="./glossaire.html#listes">list</a>
                             structured  appropriately?</h3>
@@ -2752,7 +2767,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G153 - G115 - H40 - H48 - H97 - F2</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-9-4"><em>Criterion 9.4
                             [AAA]</em> On each web page, does the first occurence of each <a href="./glossaire.html#Abbr">abbreviation</a>
                             help to know its meaning?</h3>
@@ -2784,7 +2799,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G55 - G70 - G97 - G102 - H28</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-9-5"><em>Criterion 9.5
                             [AAA]</em> On each web page, is the meaning of each <a href="./glossaire.html#Abbr">abbreviation</a>
                             relevant?</h3>
@@ -2799,7 +2814,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G55 - G70 - G97 - G102 - H28</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-9-6"><em>Criterion 9.6
                             [A]</em> On each web page, is each quotation identified
                             properly?</h3>
@@ -2855,7 +2870,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             properly and that information is not conveyed only by an
                             element's shape, size or location.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-1"><em>Criterion 10.1 [A]</em> In the <a href="./glossaire.html#SiteWeb">Web
                                 site</a>, are <a href="./glossaire.html#FeuilleStyle">style
                                 sheets</a> used to control <a href="./glossaire.html#PresInfo">information
@@ -2885,7 +2900,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G140 - F32 - F33 - F34 - C6 - C8 - C18 - C22 - F48</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-2"><em>Criterion 10.2 [A]</em> On each web page, is <a href="./glossaire.html#contenu-visible">visible
                                 content</a> still available when <a href="./glossaire.html#FeuilleStyle">style
                                 sheets</a> or images are disabled?</h3>
@@ -2900,7 +2915,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G140 - F3 - F87</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-3"><em>Criterion 10.3 [A]</em> On each web page, is
                             information still <a href="./glossaire.html#CoherentODL">understandable</a>
                             when <a href="./glossaire.html#FeuilleStyle">style
@@ -2917,7 +2932,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F1 - G59</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-10-4"><em>Criterion 10.4 [AA]</em> On each web page, is
                             text still readable when <a href="./glossaire.html#TailleCaractere">character
                                 size</a> is increased until at least 200%?</h3>
@@ -2943,7 +2958,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G146 - F80 - F69 - C14 - C12 - C13 - C17 - C28 - G179 - SCR34</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-10-5"><em>Criterion 10.5 [AA]</em> On each web page, are
                             CSS declarations for background and foreground colors
                             appropriate?</h3>
@@ -2970,7 +2985,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F24</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-6"><em>Criterion 10.6 [A]</em> On each web page, can
                             each <a href="./glossaire.html#lien-nature-pas-evidente">link
                                 whose nature is not obvious</a> be distinguished from
@@ -2988,7 +3003,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G183 - F73</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-7"><em>Criterion 10.7 [A]</em> On each web page, is
                             the <a href="./glossaire.html#PriseFocus">focus
                             </a> visible for each element that receives focus?</h3>
@@ -3021,7 +3036,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G149 - G183 - F73 - F78 - G165 - C15 - G195 - SCR31</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-10-8"><em>Criterion 10.8 [AAA]</em> On each web page,
                             can the user specify the background and foreground colors?</h3>
                         <ul>
@@ -3046,7 +3061,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G156 - G175</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-10-9"><em>Criterion 10.9 [AAA]</em> for each web page,
                             text must not be fully justified. Has this rule been followed?</h3>
                         <ul>
@@ -3065,7 +3080,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F88 - G166 - G172</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-10-10"><em>Criterion 10.10 [AAA]</em> For each web page,
                             on a full-screen window and with a font size of 200%, is
                             each block of text still readable without the use of
@@ -3090,7 +3105,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G146 - G206 - C19 - C24 - C28</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-10-11"><em>Criterion 10.11 [AAA]</em> For each web page,
                             is the length of lines of text equal to 80 characters or
                             less (except in <a title="Particular cases for criterion 10.11" href="./cas-particuliers.html#crit-10-11">particular cases</a>)?</h3>
@@ -3114,7 +3129,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G204 - C20</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-10-12"><em>Criterion 10.12 [AAA]</em> For each web page,
                             is line and paragraph spacing sufficient?</h3>
                         <ul>
@@ -3145,7 +3160,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G188 - C21</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-13"><em>Criterion 10.13 [A]</em> For each web page,
                             are <a href="./glossaire.html#TexteCache">hidden
                                 texts</a> rendered properly by assistive technologies?</h3>
@@ -3204,7 +3219,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G57</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-14"><em>Criterion 10.14 [A]</em> On each web page,
                             information must not be <a href="./glossaire.html#InfoShape">conveyed by shape, size or location</a> alone. Has this rule been followed?</h3>
                         <ul>
@@ -3230,7 +3245,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G96 - G111 - G140 - F14 - F26</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-10-15"><em>Criterion 10.15 [A]</em> On each web page,
                             information must not be <a href="./glossaire.html#InfoShape">conveyed by shape, size or location</a> alone. Has this rule been implemented in a
                             relevant way?</h3>
@@ -3296,7 +3311,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 control</a> is accessible and that the user can
                             control financial, legal or personal data.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-1"><em>Criterion 11.1 [A]</em> Does each <a href="./glossaire.html#ChampSaisie">form
                                 field</a> have a <a href="./glossaire.html#etiquette">label</a>?</h3>
                         <ul>
@@ -3349,7 +3364,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H44 - H65 - G82 - G131 - ARIA6 - ARIA9 - ARIA16 - ARIA14 - F17 - F82 - F86 - F68</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-2"><em>Criterion 11.2 [A]</em> Is each label that is
                             associated with a <a href="./glossaire.html#ChampSaisie">form
                                 field</a> relevant?</h3>
@@ -3373,7 +3388,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H44 - H65 - G182 - G131 - ARIA6 - ARIA9 - ARIA16 - ARIA14</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-11-3"><em>Criterion 11.3 [AA]</em> On a given page, or set of pages, all form fields with similar functions must have consistent  <a href="./glossaire.html#etiquette">labels</a>. Has this rule been followed?</h3>
                         <ul>
                             <li id="test-11-3-1">
@@ -3389,7 +3404,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F31</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-4"><em>Criterion 11.4 [A]</em> In each form, are each
                             <a href="./glossaire.html#etiquette">label</a>
                             and its related control positioned next to each other?</h3>
@@ -3404,7 +3419,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G162</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-5"><em>Criterion 11.5 [A]</em> In each form, is the <a href="./glossaire.html#InfoMNature">information of same nature</a> grouped together, if necessary?</h3>
                         <ul>
                             <li id="test-11-5-1">Test 11.5.1: In each form, is the <a href="./glossaire.html#InfoMNature">information of same nature</a> grouped together via a <code>fieldset</code> tag, if necessary? </li>
@@ -3415,7 +3430,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H71</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-6"><em>Criterion 11.6 [A]</em> In each form, does
                             each form field grouping have a legend?</h3>
                         <ul>
@@ -3429,7 +3444,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H71</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-7"><em>Criterion 11.7 [A]</em> In each form, is each
                             legend, related to a form field grouping, relevant?</h3>
                         <ul>
@@ -3443,7 +3458,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H71</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-8"><em>Criterion 11.8 [A]</em> In each form, is each
                             <a href="./glossaire.html#liste-de-choix">selection
                                 list</a> structured in a relevant way?</h3>
@@ -3465,7 +3480,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H85</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-9"><em>Criterion 11.9 [A]</em> In each form, is the
                             text of each <a href="./glossaire.html#BtnForm">button</a>
                             relevant?</h3>
@@ -3506,7 +3521,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H36 - H91 - ARIA6 - ARIA9 - ARIA16 - ARIA14</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-11-10"><em>Criterion 11.10 [A]</em> In each form, is the
                             <a href="./glossaire.html#controle-saisie">input
                                 control</a> used in a relevant way?</h3>
@@ -3647,7 +3662,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G83 - G84 - G85 - G89 - G184 - H44 - H89 - H90 - F81 - SCR18 - SCR32 - ARIA1 - ARIA2 - ARIA6 - ARIA9 - ARIA16 - ARIA21</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-11-11"><em>Criterion 11.11 [AA]</em> In each form, is <a href="./glossaire.html#controle-saisie">input
                                 control</a> accompanied, if necessary,
                             by suggestions helping with the correction of input
@@ -3668,7 +3683,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G84 - G85 - G89 - G177 - H89</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-11-12"><em>Criterion 11.12 [AA]</em> For each form, can
                             financial, legal or personal data be changed, updated or
                             retrieved by the user?</h3>
@@ -3703,7 +3718,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G98 - G99 - G155 - G164 - G168</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-11-13"><em>Criterion 11.13 [AAA]</em> For each form, can
                             all data be changed, updated or recovered by the user?</h3>
                         <ul>
@@ -3734,7 +3749,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G98 - G99 - G155 - G164 - G168</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-11-14"><em>Criterion 11.14 [AAA]</em> For each form, is
                             input assistance available?</h3>
                         <ul>
@@ -3816,7 +3831,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G71 - G193 - G194 - G184 - G89 - ARIA1 - ARIA6 - ARIA9 - ARIA16 - F81</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-11-15"><em>Criterion 11.15 [AAA]</em> For each form, is
                             each input assistance relevant?</h3>
                         <ul>
@@ -3868,7 +3883,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             Ensure that tabbing order is consistent and that the
                             page does not contain keyboard traps.</p>
                     </header>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-12-1"><em>Criterion 12.1 [AA]</em> Does each <a href="./glossaire.html#ensemblePages">set
                                 of pages</a> have at least two different <a href="./glossaire.html#SysNav">navigation
                                 systems</a> (except in <a title="Particular cases for criterion 12.1"  href="./cas-particuliers.html#crit-12-1">particular cases</a>)?</h3>
@@ -3888,7 +3903,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G63 - G64 - G161</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-12-2"><em>Criterion 12.2 [AA]</em> On each <a href="./glossaire.html#ensemblePages">set
                                 of pages</a>, are the menu or the <a href="./glossaire.html#navBar">navigation
                                 bars</a> always located at the same place (except in <a title="Particular cases for criterion 12.2"
@@ -3925,7 +3940,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G61 - F66</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-12-3"><em>Criterion 12.3 [AA]</em> On each <a href="./glossaire.html#ensemblePages">set
                                 of pages</a>, do the menu and the <a href="./glossaire.html#navBar">navigation bars</a> have a
                             consistent presentation (except in <a title="Particular cases for criterion 12.3"
@@ -3944,7 +3959,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G61</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-12-4"><em>Criterion 12.4 [AA]</em> Is the <a href="./glossaire.html#planSite">"site
                                 map" page</a> relevant?</h3>
                         <ul>
@@ -3963,7 +3978,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G63</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-12-5"><em>Criterion 12.5 [AA]</em> In each set of pages,
                             is the <a href="./glossaire.html#planSite">"site
                                 map" page</a> accessible in an identical way?</h3>
@@ -3987,7 +4002,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G61 - G63</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-12-6"><em>Criterion 12.6 [AA]</em> In each set of pages,
                             is the <a href="./glossaire.html#moteurRecherche">search
                                 function</a> accessible in an identical way?</h3>
@@ -4011,7 +4026,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G61 - F66</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AA">
                         <h3 id="crit-12-7"><em>Criterion 12.7 [AA]</em> On each page within a
                             <a href="./glossaire.html#collection-pages">collection
                                 of pages</a>, are links facilitating navigation
@@ -4035,7 +4050,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G125 - G126 - G127 - G185</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-12-8"><em>Criterion 12.8 [AAA]</em> On each web page, is a
                             breadcrumb trail available (except in <a title="Particular cases for criterion 12.8" href="./cas-particuliers.html#crit-12-8">particular cases</a>)?</h3>
                         <ul>
@@ -4048,7 +4063,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G65</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-12-9"><em>Criterion 12.9 [AAA]</em> On each web page, is
                             the breadcrumb trail relevant?</h3>
                         <ul>
@@ -4062,7 +4077,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G65</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-12-10"><em>Criterion 12.10 [A]</em> On each web page,
                             are groups of important links (menu, navigation bar)
                             and the <a href="./glossaire.html#zoneMain">main content area</a> identified (except in <a title="Particular cases for criterion 12.10" href="./cas-particuliers.html#crit-12-10">particular cases</a>)?</h3>
@@ -4124,7 +4139,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G115 - H50 - ARIA4 - ARIA11</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-12-11"><em>Criterion 12.11 [A]</em> On each web page, are <a href="./glossaire.html#lien-evitement">bypass or skip links</a> to groups of important links and to the <a href="./glossaire.html#zoneMain">main content area</a> available (except in <a title="Particular cases for criterion 12.11" href="./cas-particuliers.html#crit-12-11">particular cases</a>)?</h3>
                         <ul>
                             <li id="test-12-11-1">Test 12.11.1: On each web page,
@@ -4152,7 +4167,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G1 - G59 - G123 - G124 - SCR28 - F66</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-12-12"><em>Criterion 12.12 [AAA]</em> On each web page,
                             is the current  page specified in the <a href="./glossaire.html#navMenu">navigation
                                 menu</a>?</h3>
@@ -4167,7 +4182,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G128</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-12-13"><em>Criterion 12.13 [A]</em> On each web page, is
                             <a href="./glossaire.html#OrdTab">tabbing
                                 order</a> <a href="./glossaire.html#CoherentODL">consistent</a>?</h3>
@@ -4185,7 +4200,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G59 - H4 - F44 - SCR26 - SCR27 - SCR37 - C27 - F85</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-12-14"><em>Criterion 12.14 [A]</em> On each web page,
                             navigation must not contain keyboard trap. Has this rule
                             been followed?</h3>
@@ -4250,7 +4265,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             accessible versions or make downloadable documents 
                             accessible.</p>
                     </header>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-1"><em>Criterion 13.1 [A]</em> For each web page, can
                             the user control each time limit that modifies content (except in <a title="Particular cases for criterion 13.1" href="./cas-particuliers.html#crit-13-1">particular cases</a>)?</h3>
                         <ul>
@@ -4318,7 +4333,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): F40 - F41 - F61 - F58 - G76 - G186 - G198 -  H76 - SVR1- SCR1 - SCR36 - G133 - G180 - G75 - G110 - SCR16</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-2"><em>Criterion 13.2 [A]</em> On each web page, is
                             the user warned each time a new window opens?</h3>
                         <ul>
@@ -4339,7 +4354,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G201 - H33 - H83 - F22 - SCR24</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-3"><em>Criterion 13.3 [A]</em> On each web page, the
                             opening of a new window must not happen without user
                             action. Has this rule been followed?</h3>
@@ -4354,7 +4369,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G107 - F22 - F52 - F55 - F60</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-13-4"><em>Criterion 13.4 [AAA]</em> On each web page, a
                             task must not require a time limit to be completed, except
                             if it occurs in real time or if this time limit is
@@ -4376,7 +4391,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G5</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-13-5"><em>Criterion 13.5 [AAA]</em> On each web page,
                             when an authenticated session is interrupted, is the data
                             entered by the user retrieved after re-authenticating?</h3>
@@ -4391,7 +4406,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G105 - G181 - F12</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-6"><em>Criterion 13.6 [A]</em> On each web page, for
                             each file that can be downloaded, is there sufficient
                             information provided  (except in <a title="Particular cases for criterion 13.6"
@@ -4415,7 +4430,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): H33</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-7"><em>Criterion 13.7 [A]</em> On each web page, does
                             each electronic <a href="./glossaire.html#Vaccessible">document
                                 that can be downloaded</a> have an accessible version if
@@ -4442,7 +4457,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G10 - G135 - F15</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-8"><em>Criterion 13.8 [A]</em> For each electronic
                             document with an accessible version, does this version
                             provide the same information?</h3>
@@ -4464,7 +4479,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G10 - G135 - F15</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-13-9"><em>Criterion 13.9 [AAA]</em> On each web page,
                             are unusual phrases, idioms or jargon made explicit?</h3>
                         <ul>
@@ -4487,7 +4502,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G55 - G101 - G112 - G160 - G153 - H54</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-13-10"><em>Criterion 13.10 [AAA]</em> On each web page,
                             for each phrase used in an unusual or restricted way, each
                             idiom or jargon with a definition, is this definition
@@ -4513,7 +4528,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): <a rel="external" class="external" href="http://www.w3.org/TR/WCAG-TECHS/G55.html">G55</a> - <a rel="external" class="external" href="http://www.w3.org/TR/WCAG-TECHS/G101.html">G101</a> - <a rel="external" class="external" href="http://www.w3.org/TR/WCAG-TECHS/G112.html">G112</a> - <a rel="external" class="external" href="http://www.w3.org/TR/WCAG-TECHS/H54.html">H54</a></p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-11"><em>Criterion 13.11 [A]</em> On each web page,
                             does each cryptical content (ASCII art, emoticon,
                             cryptical syntax) have an alternative?</h3>
@@ -4533,7 +4548,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G160 - G153 - H86 - F71 - F72</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-12"><em>Criterion 13.12 [A]</em> On each web page,
                             for each cryptical content (ASCII art, emoticon, cryptical
                             syntax) with an alternative, is this alternative relevant?</h3>
@@ -4554,7 +4569,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): <a rel="external" class="external" href="http://www.w3.org/TR/WCAG-TECHS/H86.html">H86</a> - <a rel="external" class="external" href="http://www.w3.org/TR/WCAG-TECHS/F71.html">F71</a> - <a rel="external" class="external" href="http://www.w3.org/TR/WCAG-TECHS/F72.html">F72</a></p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-13-13"><em>Criterion 13.13 [AAA]</em> On each web page,
                             for each word whose meaning cannot be understood without
                             knowing the pronunciation, is this pronunciation
@@ -4578,7 +4593,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G62 - G120 - G121 - G160 - G153</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-13-14"><em>Criterion 13.14 [AAA]</em> On each web page,
                             does each text that requires a reading ability more
                             advanced than the lower secondary education level have an
@@ -4607,7 +4622,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G79 - G86 - G103 - G160 - G153</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-15"><em>Criterion 13.15 [A]</em> On each web page,
                             are <a href="./glossaire.html#changement-lumi">sudden
                                 changes in luminosity or flashing effects</a> used
@@ -4661,7 +4676,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G15 - G19 - G176</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="AAA">
                         <h3 id="crit-13-16"><em>Criterion 13.16 [AAA]</em> On each web page,
                             do the <a href="./glossaire.html#changement-lumi">sudden
                                 changes in luminosity or flashing effects</a> have a
@@ -4687,7 +4702,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <p>WCAG&nbsp;2.0 sufficient technique(s) and/or failure(s): G19</p>
                         </aside>
                     </section>
-                    <section>
+                    <section data-level="A">
                         <h3 id="crit-13-17"><em>Criterion 13.17 [A]</em> On each web page,
                             can each moving or blinking content be <a href="./glossaire.html#controle-mouvement">controlled
                                 by the user</a>?</h3>

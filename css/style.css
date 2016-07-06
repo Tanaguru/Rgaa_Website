@@ -597,7 +597,7 @@ table {
   vertical-align: bottom;
 }
 .table tbody tr:hover td {
-  background-color: rgba(34, 34, 34, 0.050000000000000044);
+  background-color: rgba(34, 34, 34, 0.05);
 }
 .table tfoot {
   font-style: italic;
@@ -659,7 +659,7 @@ blockquote {
   z-index: 0;
   position: relative;
   padding-left: 1.5em;
-  border: solid rgba(34, 34, 34, 0.19999999999999996);
+  border: solid rgba(34, 34, 34, 0.2);
   border-width: 0 0 0 5px;
 }
 blockquote:before {
@@ -670,7 +670,7 @@ blockquote:before {
   content: "\00AB";
   line-height: 0;
   font-size: 10em;
-  color: rgba(34, 34, 34, 0.09999999999999998);
+  color: rgba(34, 34, 34, 0.1);
 }
 cite,
 .cite {
@@ -805,7 +805,7 @@ Inlined to avoid required HTTP connection: h5bp.com/r */
   img {
     page-break-inside: avoid;
   }
-  @page  {
+  @page {
     margin: 2cm .5cm;
   }
   p,
@@ -1023,9 +1023,9 @@ main .skiplink a {
   width: 100% !important;
   height: auto;
   text-align: center;
+  position: fixed;
   /*#nav { background: @color; }
     #nav, #nav a { color: @color-bg; }*/
-
 }
 #header .headsite * {
   vertical-align: middle;
@@ -1103,7 +1103,12 @@ main .skiplink a {
 }
 #header .headrub {
   clear: both;
-  padding-top: 4.5em;
+  padding-top: 15.75em;
+}
+@media (min-width: 480px) {
+  #header .headrub {
+    padding-top: 12em;
+  }
 }
 #header h1 {
   margin-bottom: 10px;
@@ -1119,16 +1124,16 @@ main .skiplink a {
 #navtoc {
   padding: 1.5em 0;
   background: rgba(248, 245, 245, 0.9);
-  font-size: .88em;
+  font-size: .8em;
 }
 #navtoc h2 {
   padding: 0;
   color: #2c699e;
   font-size: 1em;
   font-weight: bold;
-  position: absolute;
-  left: -999em;
-  height: 1%;
+}
+#navtoc h2#toc {
+  margin-top: 20px;
 }
 #navtoc ul {
   margin-left: 0;
@@ -1148,7 +1153,8 @@ main .skiplink a {
 #navtoc li {
   border-width: 0 0 1px;
 }
-#navtoc li a {
+#navtoc li a,
+#navtoc .filter {
   display: block;
   padding: 5px;
 }
@@ -1162,6 +1168,11 @@ main .skiplink a {
   background-color: #2c699e;
   color: #f8f5f5;
 }
+#navtoc .filter input,
+#navtoc .filter label {
+  display: inline-block;
+  vertical-align: middle;
+}
 /* LARGE : menu lateral */
 @media (min-height: 34em) and (min-width: 940px) {
   .page {
@@ -1171,16 +1182,14 @@ main .skiplink a {
   }
   #header .headsite {
     /*width: 940px;
-      max-width: 100%;
-      padding-right: 0 !important;*/
-  
+    max-width: 100%;
+    padding-right: 0 !important;*/
   }
   #navtoc {
     position: fixed;
     width: 200px;
-    top: 130px;
+    top: 70px;
     /*margin-left: -220px;*/
-  
     padding: 0;
     text-align: left;
     margin-left: 680px;
@@ -1278,7 +1287,7 @@ var,
 tt {
   padding: .1em .3em;
   background-color: rgba(44, 105, 158, 0.05);
-  border: 1px solid rgba(44, 105, 158, 0.09999999999999998);
+  border: 1px solid rgba(44, 105, 158, 0.1);
 }
 /* * Atténuer ce qui est annexe */
 #howto,
@@ -1355,7 +1364,7 @@ tt {
 }
 .thematique header nav li {
   display: inline-block;
-  margin: 5px 3.3333333333333335px;
+  margin: 5px 3.33333333px;
 }
 .thematique header nav li a {
   display: block;
@@ -1401,4 +1410,3 @@ tt {
 .thematique section > ul ul li {
   margin-bottom: 5px;
 }
-/* end */

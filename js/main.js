@@ -28,8 +28,15 @@ $( document ).ready(function() {
     $('.filter input').on('click', function() {
         var $this = $(this),
             id = $this.attr('id'),
-            $section = $('section[data-level="'+ id + '"');
+            $sections = $('section[data-level="'+ id + '"'),
+            $anchors = $('a[data-level="'+ id + '"');
 
-        $this.prop('checked') ? $section.css('display', 'block') : $section.css('display', 'none');
+        if ( $this.prop('checked') ) {
+            $sections.css('display', 'block');
+            $anchors.removeClass('disabled');
+        } else {
+            $sections.css('display', 'none');
+            $anchors.addClass('disabled');
+        }
     });
 });

@@ -78,6 +78,7 @@ pre, code, samp, var, tt { padding: .1em .3em; background-color: fade(@color,5%)
   display: block; width: 100%; margin: @gutter 0 @p; clear: both; text-align: center; font-size: 80%;
   li { display: inline-block; margin: @gutter/2 @gutter/3; }
   li a { display: block; margin: 0; padding: @gutter/2 @gutter; border: 1px solid; border-radius: @gutter/2; color: @color; font-weight: bold; }
+  li a.disabled { background-color: #ccc !important; cursor: not-allowed; color: #999 !important; border-color: #999 !important;}
   li a:focus,
   li a:hover,
   li a:active { background-color: fade(@color, 10%); }

@@ -46,16 +46,24 @@ $( document ).ready(function() {
 
     $(window).scroll(function() {
 
-	    var position = $(this).scrollTop();
+    	var heightMenu           = $('.headsite').outerHeight(true),
+    		paddingTopThematique = parseInt($('.thematique h2').css('padding-top')),
+	        position             = $(this).scrollTop() + heightMenu - paddingTopThematique;
 
 	    $('.thematique').each(function() {
 	        var target = $(this).offset().top;
 	        var id = $(this).attr('id');
-	        
+
 	        if (position >= target) {
 	            $('#navtoc > nav > ul > li').removeClass('on');
 	            $('#navtoc > nav > ul > li > a[href=#' + id + ']').parent().addClass('on');
 	        }
 	    });
 	});
+
+    /**
+     * Mise à jour de l'ancre active à l'ouverture du site
+     */
+
+	$(window).trigger('scroll');
 });

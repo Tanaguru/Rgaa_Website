@@ -11,7 +11,7 @@ a:active { color: @color; border-width: 0 0 2px; border-color: @color; }
 
 /* * titres */
 h2 {
-  padding-top: @p*2;
+  padding-top: @p*2.5;
   text-align: center;
   font-weight: bold;
   font-size: 2em;
@@ -66,7 +66,7 @@ pre, code, samp, var, tt { padding: .1em .3em; background-color: fade(@color,5%)
 
 /* * thematique */
 
-.thematique h2 {
+.thematique:not(#howto) h2 {
   margin: 0 0 @gutter;
   padding-bottom: @gutter*2;
   border-bottom: @gutter solid @color;

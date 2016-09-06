@@ -105,11 +105,18 @@ main .skiplink a { margin: 0 @gutter/2; }
 }
 
 #header .headrub {
-   clear: both; padding-top: @p*10.5;
+   clear: both; 
+   padding-top: @p*2;
+}
+
+body.opened-menu #header .headrub {
+   padding-top: @p*10;
 }
 
 @media (min-width: @screen-small) {
-  #header .headrub { padding-top: @p*8; }
+  #header .headrub { padding-top: @p*4; } 
+  
+  body.opened-menu #header .headrub { padding-top: @p*8; }
 }
 
 #header h1 {
@@ -169,6 +176,11 @@ main .skiplink a { margin: 0 @gutter/2; }
     max-height: calc(~"100% - 80px");
     overflow-y: auto;
   }
+
+  body.opened-menu #navtoc {
+    top: 150px;
+  }
+
   .gotoc { display: none; }
 
 }

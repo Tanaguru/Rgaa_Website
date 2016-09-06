@@ -8,9 +8,11 @@ $( document ).ready(function() {
 
     $("#btnnav").on('click', function() {
     	if (toto){
+    		$('body').removeClass('opened-menu');
     		$('#nav').hide();
     		$("#btnnav").attr('aria-expanded','false');
     	} else {
+    		$('body').addClass('opened-menu');
     		$('#nav').show();
     		$("#btnnav").attr('aria-expanded','true');
     	}

@@ -1,3 +1,12 @@
+/**
+ * Récupération de la hauteur du menu principal
+ */
+
+var heightMenu = $('.headsite').outerHeight(true);
+
+$('#nav').hide();
+
+
 $( document ).ready(function() {
 
 	/**
@@ -39,15 +48,13 @@ $( document ).ready(function() {
         }
     });
 
-
     /**
 	 * Gestion du scroll
 	 */
 
     $(window).scroll(function() {
 
-    	var heightMenu           = $('.headsite').outerHeight(true),
-    		paddingTopThematique = parseInt($('.thematique h2').css('padding-top')),
+    	var paddingTopThematique = parseInt($('.thematique h2').css('padding-top')),
 	        position             = $(this).scrollTop() + heightMenu - paddingTopThematique;
 
 	    $('.thematique').each(function() {
@@ -61,9 +68,23 @@ $( document ).ready(function() {
 	    });
 	});
 
+
+    /**
+     * Fix scroll vers un critère spécifique
+     */
+
+    $("a[href^=#crit]").on('click', function(e) {
+        e.preventDefault();
+        var crit = $(this).attr('href');
+        $('html, body').scrollTop($(crit).offset().top - $('.headsite').height());
+        e.target.blur();
+    });
+
+
     /**
      * Mise à jour de l'ancre active à l'ouverture du site
      */
 
 	$(window).trigger('scroll');
+
 });

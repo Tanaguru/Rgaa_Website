@@ -76,6 +76,7 @@ $( document ).ready(function() {
     $("a[href^=#crit]").on('click', function(e) {
         e.preventDefault();
         var crit = $(this).attr('href');
+        document.location.hash = crit;
         $('html, body').scrollTop($(crit).offset().top - $('.headsite').height());
         e.target.blur();
     });

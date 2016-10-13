@@ -56,9 +56,11 @@ $( document ).ready(function() {
             $anchors = $('a[data-level="'+ id + '"');
 
         if ( $this.prop('checked') ) {
+            $this.attr('aria-checked', 'true');
             $sections.css('display', 'block');
             $anchors.removeClass('disabled');
         } else {
+            $this.attr('aria-checked', 'false');
             $sections.css('display', 'none');
             $anchors.addClass('disabled');
         }

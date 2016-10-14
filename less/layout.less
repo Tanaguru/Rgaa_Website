@@ -58,6 +58,12 @@ main .skiplink a { margin: 0 @gutter/2; }
     a, .on, #logo a { display: inline-block; padding: @gutter 0; color: @color; }
 
     #logo { display: block; border-bottom: 1px solid fade(@color-mid,20); }
+    
+    /* abbréviation */
+    #logo abbr { vertical-align: top; cursor: auto;}
+
+    #logo a:first-of-type abbr { margin-left: 0.5rem; }
+
     button { position: absolute; top: 0; right: 0; margin: @gutter @gutter 0; }
 
     /*#nav { background: @color; }

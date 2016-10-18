@@ -1,22 +1,22 @@
 <!--
-RGAA 3.0 - juin 2015
-Source : http://references.modernisation.gouv.fr/referentiel-technique-0
+RGAA 3.0 2016 - juin 2016
+Source : http://references.modernisation.gouv.fr/rgaa/
 Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Cas particuliers - RGAA 3.0</title>
+		<title>Cas particuliers - RGAA 3.0 2016</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="../css/style.css">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<a name="top" id="top"></a>
+		<a id="top"></a>
         <header id="header" role="banner">
             <div class="headsite nav clearfix">
-                <strong id="logo"><a href="index.html">RGAA&nbsp;3.0 fr</a> | <a href="../en/">en</a></strong>
+                <strong id="logo"><a href="index.html">RGAA <abbr title="Français">fr</abbr></a> | <a href="../en/"><abbr lang="en" title="English">en</abbr></a></strong>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu</button>
                 <nav id="nav" class="collapse navbar-collapse" role="navigation">
                     <ul><!--
@@ -39,6 +39,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li><a href="#images">Images</a></li>
 							<li><a href="#couleurs">Couleurs</a></li>
 							<li><a href="#multimedia">Multimedia</a></li>
+							<li><a href="#tableaux">Tableaux</a></li>
 							<li><a href="#liens">Liens</a></li>
 							<li><a href="#scripts">Scripts</a></li>
 							<li><a href="#elements">Éléments obligatoires</a></li>
@@ -109,7 +110,24 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<li>le media temporel fait partie d'un test qui deviendrait inutile si la transcription textuelle, les sous-titres synchronisés ou l'audio-description étaient communiqués.</li>
 				</ul>
 				<p>Dans ces situations, le critère est non applicable.</p>
-
+				
+				<h2 id="tableaux">Tableaux</h2>
+				<h3 id="crit-5-3">Critères 5.3</h3>
+				<p>L’API ARIA propose un mécanisme permettant de <a href="glossaire.html#modification-du-rle-natif-dun-lment-html">surcharger le rôle natif d’un élément HTML</a> pour proposer des composants. Ainsi, il est possible d’utiliser des <a href="glossaire.html#tableau-de-mise-en-forme">tableaux de mise en forme</a> pour construire des <a href="glossaire.html#listes">listes</a>&nbsp;: </p>
+				<pre>
+					<code lang="en">
+&lt;table role="list"&gt;
+	&lt;tr role="listitem"&gt;
+		&lt;td role="presentation"&gt;&lt;img src="puce.png" alt=""/&gt;&lt;/td&gt;
+		&lt;td role="presentation"&gt;lorem ipsum&lt;/td&gt;
+	&lt;/tr&gt;
+	…
+&lt;/table&gt;</code>
+				</pre>
+				<p>Si cet usage est fortement déconseillé, il est néanmoins conforme.
+				  Le tableau n’étant pas restitué comme un tableau mais comme une liste, il n’est pas utile de signaler qu’il s’agit d’un tableau de mise en forme.
+				  Dans ce cas, le critère est non applicable.
+				</p>
 				<h2 id="liens">Liens</h2>
 
 				<h3 id="crit-6-1-6-3">Critères 6.1 et 6.3</h3>
@@ -172,7 +190,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
         </main>
 		<footer id="footer" role="contentinfo">
 			<div class="page">
-				<h2>RGAA 3.0 - juin 2015.</h2>
+				<h2>RGAA 3.0 2016 - juin 2016.</h2>
 				<p>Ce document est un document de l'État placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence" rel="external" class="external">licence ouverte&nbsp;1.0 ou ultérieure</a>, comme tous les documents hébergés sur <a href="http://references.modernisation.gouv.fr/" rel="external" class="external">references.modernisation.gouv.fr</a>. Voir les conditions d'utilisation de la licence dans les <a href="http://references.modernisation.gouv.fr/mentions-legales" rel="external" class="external">mentions légales</a>.</p>
 				<p>Le référentiel technique (liste des critères, glossaire, cas particuliers, notes techniques, base de référence) est une copie adaptée du <a href="http://www.accessiweb.org/index.php/accessiweb-html5aria-liste-deployee.html" rel="external" class="external">référentiel AccessiWeb HTML5 / ARIA</a> - Version de travail du 19/12/2013 - Edité par l'association BrailleNet.</p>
 				<p>Cette page est réalisée avec <a href="http://tinytypo.tetue.net" rel="external" class="external">Tiny Typo</a>, par <a href="http://www.tanaguru.com/fr/" rel="external" class="external">Tanaguru</a>, un gentil dragon qui évalue votre accessibilité&nbsp;web.</p>
@@ -180,5 +198,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 			</div>
 		</footer>
         <script src="../js/main.js"></script>
+        <script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-76056657-1', 'auto');
+			ga('send', 'pageview');
+		</script>
 	</body>
 </html>

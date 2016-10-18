@@ -49,20 +49,27 @@ main .skiplink a { margin: 0 @gutter/2; }
 #header .headsite {
     z-index: 99;
     background: fade(@color-bg,90);
-    width: 100% !important; height: auto;
+    width: 100% !important; 
+    height: auto;
     text-align: center;
+    position: fixed;
 
     * { vertical-align: middle; }
     a, .on, #logo a { display: inline-block; padding: @gutter 0; color: @color; }
 
     #logo { display: block; border-bottom: 1px solid fade(@color-mid,20); }
+    
+    /* abbréviation */
+    #logo abbr { vertical-align: top; cursor: auto;}
+
+    #logo a:first-of-type abbr { margin-left: 0.5rem; }
+
     button { position: absolute; top: 0; right: 0; margin: @gutter @gutter 0; }
 
     /*#nav { background: @color; }
     #nav, #nav a { color: @color-bg; }*/
 
     #nav {
-      display: none;
       border-bottom: 1px solid fade(@color-mid,20);
       font-size: .88em;
 
@@ -102,7 +109,20 @@ main .skiplink a { margin: 0 @gutter/2; }
   }
 }
 
-#header .headrub { clear: both; padding-top: @p*3; }
+#header .headrub {
+   clear: both; 
+   padding-top: @p*2;
+}
+
+body.opened-menu #header .headrub {
+   padding-top: @p*10;
+}
+
+@media (min-width: @screen-small) {
+  #header .headrub { padding-top: @p*4; } 
+  
+  body.opened-menu #header .headrub { padding-top: @p*8; }
+}
 
 #header h1 {
   margin-bottom: @gutter;
@@ -117,20 +137,21 @@ main .skiplink a { margin: 0 @gutter/2; }
 #navtoc {
   padding: @p 0;
   background: fade(@color-bg,90);
-  font-size: .88em;
+  font-size: .8em;
 
-  h2 { padding: 0; color: @color; font-size: 1em; font-weight: bold; .offscreen; }
-
+  h2 { padding: 0; color: @color; font-size: 1em; font-weight: bold; }
+  h2#toc { margin-top: 20px; }
   ul { .list-none; margin: 0; }
   ul,
   li { border-color: fade(@color-mid, 20%); border-style: solid; }
   ul { border-width: 1px 0 0; .list-none; }
   li { border-width: 0 0 1px; }
-  li a { display: block; padding: @gutter/2; }
+  li a, .filter { display: block; padding: @gutter/2; }
   li a:focus,
   li a:hover,
   li a:active { background-color: fade(@color, 20%); color: inherit; }
   li.on { background-color: @color; color: @color-bg; }
+  .filter input, .filter label { display: inline-block; vertical-align: middle;} 
 }
 
 /* LARGE : menu lateral */
@@ -152,12 +173,19 @@ main .skiplink a { margin: 0 @gutter/2; }
   #navtoc {
     position: fixed;
     width: 200px;
-    top: @gutter*13;
+    top: 70px;
     /*margin-left: -220px;*/
     padding: 0;
     text-align: left;
     margin-left: 680px;
+    max-height: calc(~"100% - 80px");
+    overflow-y: auto;
   }
+
+  body.opened-menu #navtoc {
+    top: 150px;
+  }
+
   .gotoc { display: none; }
 
 }

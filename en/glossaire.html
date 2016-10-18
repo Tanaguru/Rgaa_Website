@@ -1,5 +1,5 @@
 <!--
-English translation of the RGAA 3.0 - october 2016
+English translation of the RGAA 3.0 2016 - october 2016
 Source : https://github.com/DISIC/rgaa_referentiel_en
 Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
@@ -8,7 +8,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Glossary - RGAA 3.0 2016 (English translation)</title>
-		<meta content="English translation of the RGAA 3.0, French official accessibility guidelines. Glossary." name="description" />
+		<meta content="English translation of the RGAA 3.0 2016, French official accessibility guidelines. Glossary." name="description" />
 		<meta content="RGAA, RGAA 3.0 2016, French accessibility guidelines, English translation, glossary" name="keywords" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="../css/style.css">
@@ -18,7 +18,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 		<a id="top"></a>
         <header id="header" role="banner">
             <div class="headsite nav clearfix">
-                <strong id="logo"><a href="index.html">RGAA 3.0 2016 <abbr title="English">en</abbr></a> | <a href="../fr/"><abbr lang="fr" title="Français">fr</abbr></a></strong>
+                <strong id="logo"><a href="index.html">RGAA <abbr title="English">en</abbr></a> | <a href="../fr/"><abbr lang="fr" title="Français">fr</abbr></a></strong>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu</button>
                 <nav id="nav" class="collapse navbar-collapse" role="navigation">
                     <ul><!--
@@ -113,6 +113,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<h3 id="alternative-courte-et-concise">Alternative (short and concise)</h3>
 				<p>Rendering a text alternative via an assistive technology (like a screen magnifier for instance), requires that it should be as short as possible. A length of 80 characters is strongly recommended; it will reduce the manipulations to read the text alternative for users of Braille displays or screen magnifiers, in particular.</p>
 
+				<h3 id="alternative-svg">Alternative (to an SVG image)</h3> 
+				<p>Are considered as possible alternatives to an SVG image&nbsp;:</p> 
+				<ul> 
+					<li>An alternate mechanism</li> 
+					<li>An adjacent link which allows access to an alternative with a pertinent content, and identical to the propriety <code>aria-label</code> and to the attribute <code>title</code> from the <code>&lt;svg&gt;</code> tag, if it is defined.</li> 
+				</ul> 
+
 				<h3 id="alternative-textuelle-image">Alternative (Text alternative of an image)</h3>
 				<p>A text asssociated to an image via an appropriate technique, describing the information conveyed by the image (in relation with the context of the Web content it is included in). RGAA considers four types of alternatives, depending on the purpose of the image:</p>
 				<ul>
@@ -157,9 +164,6 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h3 id="zone-non-cliquable">Area (Non clickable)</h3>
 				<p>Image map with no attached behavior (for a client-side area: <code>area</code> tag with no <code>href</code> attribute). The <code>area</code> tags are descendants of a <code>map</code> tag.</p>
-
-				<h3 id="zone-texte">Area (Text)</h3>
-				<p>Image map region containing text.</p>
 
 				<h3 id="audiodescription-etendue">Audio description (Extended)</h3>
 				<p>Audio description that is added to an audiovisual presentation by pausing the video so that there is time to add additional description.</p>
@@ -867,6 +871,15 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h3 id="tableau-de-mise-en-forme">Table (for layout)</h3>
 				<p>Web design technique based on the TABLE and TD elements to position  contents on screen. </p>
+
+				<h3 id="attribut-target"><code>Target</code> attribute</h3> 
+				<p><code>Target</code> attribute opens a new window or a new tab depending on its value. The following <code>target</code> values don't open a new window&nbsp;:</p> 
+				<ul> 
+					<li><code>_self</code>&nbsp;;</li> 
+					<li><code>_top</code>&nbsp;;</li> 
+					<li><code>_parent</code>.</li> 
+				</ul> 
+				<p>For all other <code>target</code> values, the element on which it is positioned open a new window or tab. This is the case of the value <code>_blank</code> for example, but also any other value (numeric or alphabetical) not defined by the specification. Note also that these values ​​do not cause error when validating source code in HTML5.</p> 
 
 				<h3 id="image-test">Test image</h3>
 				<p>Image used in a test, a <a href="#mcaptcha">CAPTCHA</a> or an image used for a test in a quiz or a game. Example: a series of images present a detail from famous paintings; the title and the painter of each painting must be found. In this case, it is not possible to provide a relevant alternative (e.g. the painting title and/or painter) without making the test useless. The alternative must then only provide the ability to identify the image; for example "image 1 of the test".</p>

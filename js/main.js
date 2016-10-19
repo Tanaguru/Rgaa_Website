@@ -32,18 +32,22 @@ $( document ).ready(function() {
 	var toto = false;
 
     $("#btnnav").on('click', function() {
-    	if (toto){
-    		$('body').removeClass('opened-menu');
-    		$('#nav').hide();
-    		$("#btnnav").attr('aria-expanded','false');
-    	} else {
-    		$('body').addClass('opened-menu');
-    		$('#nav').show();
-    		$("#btnnav").attr('aria-expanded','true');
-    	}
-    	toto = !toto;
+    	toto ? closeMenu() : openMenu();
     });
 
+    function closeMenu() {
+        $('body').removeClass('opened-menu');
+        $('#nav').hide();
+        $("#btnnav").attr('aria-expanded','false');
+        toto = false;
+    }
+
+    function openMenu() {
+        $('body').addClass('opened-menu');
+        $('#nav').show();
+        $("#btnnav").attr('aria-expanded','true');
+        toto = true;
+    }
 
     /**
 	 * Gestion des filtres sur les critères
@@ -96,12 +100,27 @@ $( document ).ready(function() {
      * Fix : position du scroll lorsque l'on clique sur l'ancre d'un critère
      */
 
-    $("a[href^=#crit]").on('click', function(e) {
+    $('a[href^=#crit]').on('click', function(e) {
         e.preventDefault();
         var crit = $(this).attr('href');
         document.location.hash = crit;
         $('html, body').scrollTop($(crit).offset().top - $('.headsite').height());
         e.target.blur();
     });
+
+    /**
+     * Ouverture du menu principal à l'activation du lien d'évitement "Aller au menu"
+     */
+
+    $('#go-to-menu').on({
+        click : openMenu,
+        keydown: function(e) {
+            if (e.keyCode == 13) {
+                openMenu();
+                $('#nav').find('a').first().focus();
+            }
+        }
+    });
+
 
 });

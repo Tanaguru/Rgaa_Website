@@ -1,2 +1,2 @@
 # Rgaa_Website
-Rgaa by Tanaguru
+http://rgaa.tanaguru.com

@@ -216,3 +216,25 @@ main { clear:both; }
 #navtoc { display: none; }
 #footer { border-top-width: 1px; }
 }
+
+/* * skiplinks top */
+
+.skiplinks-top {
+  position: relative;
+  z-index: 9999;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+
+  a {
+    font-size: 1rem;
+    position: absolute;
+    left: -9999rem;
+
+    &:focus { 
+      position: initial;
+      left: 0;
+      padding-left: 1rem;
+    }
+  }
+}

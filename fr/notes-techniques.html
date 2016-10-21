@@ -46,7 +46,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li><a href="#scripts">Scripts</a></li>
 							<li><a href="#structure">Structuration de&nbsp;l'informatione</a></li>
 							<li><a href="#presentation">Présentation de&nbsp;l'information</a></li>
-							<li><a href="#forms">Formulaires</a></li>
+							<li><a href="#formulaires">Formulaires</a></li>
 							<li><a href="#navigation">Navigation</a></li>
 						</ul>
 					</nav>
@@ -144,7 +144,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p>La spécification HTML5 propose un attribut <code lang="en">hidden</code> qui permet de rendre indisponible (quand l'attribut <code lang="en">hidden</code> est présent) un contenu dans le DOM généré (de manière similaire au <code lang="en">type="hidden"</code> sur un contrôle de formulaire). Sauf si le&nbsp;contenu contrôlé par <code lang="en">hidden</code> n'a pas vocation à être restitué par les technologies d'assistance, la valeur de l'attribut <code lang="en">hidden</code> doit être cohérente avec l'état affiché ou masqué du contenu à l'écran.</p>
 				<p>Il est possible d'avoir des situations où un contenu contrôlé par <code lang="en">hidden</code> ou <code lang="en">aria-hidden</code> se trouve momentanément dans un état incohérent avec le statut affiché ou masqué du contenu, par&nbsp;exemple si l'on désire rendre disponible un élément mais que son affichage à l'écran reste dépendant d'une action ultérieure. Dans ce cas, c'est l'état final du contenu qui doit être considéré.</p>
 
-				<h2 id="forms">Formulaires</h2>
+				<h2 id="formulaires">Formulaires</h2>
 
 				<h3 id="crit-11-11">Critère 11.11 [AA]</h3>
 				<p>Certains types de formulaire HTML5 proposent des messages d'aide à la saisie automatique, par&nbsp;exemple les types <code lang="en">url</code> et <code lang="en">email</code> affichent un message du type «&nbsp;veuillez saisir une adresse email valide&nbsp;» dans le cas où l'adresse email saisie ne correspond pas au format attendu. Ces messages sont personnalisables via l'API <span lang="en">Constraint Validation</span> qui peut permettre de personnaliser les messages d'erreur et valider le critère, attention cependant le support de cette API n'est pas encore stabilisé. Le type <code lang="en">pattern</code> qui permet d'effectuer automatiquement des contrôle de format (via des expressions régulières) affiche également un message d'aide mais ce dernier est personnalisable via l'attribut <code lang="en">title</code>, ce dispositif valide le critère.</p>

@@ -6,11 +6,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8">
 		<title>Notes techniques - RGAA 3.0 2016</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="../css/style.css">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    	<link rel="shortcut icon" href="../favicon.ico">
 	</head>
 	<body>
 		<ul class="skiplinks-top">
@@ -45,7 +46,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li><a href="#scripts">Scripts</a></li>
 							<li><a href="#structure">Structuration de&nbsp;l'informatione</a></li>
 							<li><a href="#presentation">Présentation de&nbsp;l'information</a></li>
-							<li><a href="#forms">Formulaires</a></li>
+							<li><a href="#formulaires">Formulaires</a></li>
 							<li><a href="#navigation">Navigation</a></li>
 						</ul>
 					</nav>
@@ -81,7 +82,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<p>La description détaillée adjacente peut être implémentée via un élément <code lang="en">&lt;figcaption&gt;</code>, dans ce cas le critère 1.10 doit être vérifié (utilisation de <code lang="en">&lt;figure&gt;</code> et du rôle <code lang="en">group</code>, notamment).</p>
 
-				<h3 id="crit-1-8-1-9">Critère 1.8 [AA] et 1.9 [AAA]</h3>
+				<h3 id="crit-1-8">Critère 1.8 [AA] et 1.9 [AAA]</h3>
 				<p>Le texte dans les images vectorielles étant du texte réel, il n'est pas concerné par ce critère.</p>
 
 				<h3 id="crit-1-10">Critère 1.10 [A]</h3>
@@ -103,7 +104,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p>Cela signifie que la désactivation de JavaScript pour l'ensemble de la page ne sera pas acceptée comme une méthode valable, à moins qu'elle ne remette pas en cause l'utilisation des autres composants.</p>
 
 				<h3 id="crit-7-3">Critère 7.3 [A]</h3>
-				<p>ARIA définit pour un certain nombre de rôles dédiés au développement de composants d'interface un ensemble d'interactions au clavier basé sur les touches <kbd>Echap</kbd>, <kbd>Barre d'espace</kbd>, <kbd>Tabulation</kbd> et touches de direction auxquelles peuvent se rajouter d'autres interactions basées sur les touches de pagination, de <kbd>Début</kbd> ou de <kbd>Fin</kbd> par&nbsp;exemple. Afin d'accompagner la prise en charge progressive de ces interactions au clavier, le référentiel limite l'exigence aux touches d'interactions principales (<kbd>Echap</kbd>, <kbd>Barre d'espace</kbd>, <kbd>Tabulation</kbd>, flèches de direction) telles qu'elles sont définies par les <a href="glossaire.html#design-pattern">motifs de conception</a>.</p>
+				<p>ARIA définit pour un certain nombre de rôles dédiés au développement de composants d'interface un ensemble d'interactions au clavier basé sur les touches <kbd>Echap</kbd>, <kbd>Barre d'espace</kbd>, <kbd>Tabulation</kbd> et touches de direction auxquelles peuvent se rajouter d'autres interactions basées sur les touches de pagination, de <kbd>Début</kbd> ou de <kbd>Fin</kbd> par&nbsp;exemple. Afin d'accompagner la prise en charge progressive de ces interactions au clavier, le référentiel limite l'exigence aux touches d'interactions principales (<kbd>Echap</kbd>, <kbd>Barre d'espace</kbd>, <kbd>Tabulation</kbd>, flèches de direction) telles qu'elles sont définies par les <a href="glossaire.html#motif-de-conception">motifs de conception</a>.</p>
 
 				<h2 id="structure">Structuration de&nbsp;l'information</h2>
 
@@ -143,7 +144,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p>La spécification HTML5 propose un attribut <code lang="en">hidden</code> qui permet de rendre indisponible (quand l'attribut <code lang="en">hidden</code> est présent) un contenu dans le DOM généré (de manière similaire au <code lang="en">type="hidden"</code> sur un contrôle de formulaire). Sauf si le&nbsp;contenu contrôlé par <code lang="en">hidden</code> n'a pas vocation à être restitué par les technologies d'assistance, la valeur de l'attribut <code lang="en">hidden</code> doit être cohérente avec l'état affiché ou masqué du contenu à l'écran.</p>
 				<p>Il est possible d'avoir des situations où un contenu contrôlé par <code lang="en">hidden</code> ou <code lang="en">aria-hidden</code> se trouve momentanément dans un état incohérent avec le statut affiché ou masqué du contenu, par&nbsp;exemple si l'on désire rendre disponible un élément mais que son affichage à l'écran reste dépendant d'une action ultérieure. Dans ce cas, c'est l'état final du contenu qui doit être considéré.</p>
 
-				<h2 id="forms">Formulaires</h2>
+				<h2 id="formulaires">Formulaires</h2>
 
 				<h3 id="crit-11-11">Critère 11.11 [AA]</h3>
 				<p>Certains types de formulaire HTML5 proposent des messages d'aide à la saisie automatique, par&nbsp;exemple les types <code lang="en">url</code> et <code lang="en">email</code> affichent un message du type «&nbsp;veuillez saisir une adresse email valide&nbsp;» dans le cas où l'adresse email saisie ne correspond pas au format attendu. Ces messages sont personnalisables via l'API <span lang="en">Constraint Validation</span> qui peut permettre de personnaliser les messages d'erreur et valider le critère, attention cependant le support de cette API n'est pas encore stabilisé. Le type <code lang="en">pattern</code> qui permet d'effectuer automatiquement des contrôle de format (via des expressions régulières) affiche également un message d'aide mais ce dernier est personnalisable via l'attribut <code lang="en">title</code>, ce dispositif valide le critère.</p>

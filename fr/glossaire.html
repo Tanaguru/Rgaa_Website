@@ -6,11 +6,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta charset="utf-8">
 		<title>Glossaire - RGAA 3.0 2016</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <link rel="stylesheet" href="../css/style.css">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    	<link rel="shortcut icon" href="../favicon.ico">
 	</head>
 	<body class="glossaire">
 		<ul class="skiplinks-top">
@@ -67,7 +68,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 			<div class="page">
 				
 				<h2 id="a">A</h2>
-				<p class="skiplink"><span class="goafter"><a href="#b">Lettre&nbsp;B</a></span></p>  
+				<ul class="skiplink">
+					<li class="goafter"><a href="#b">Lettre&nbsp;B</a></li>
+				</ul>  
 				
 				<h3 id="acceder-collection-de-pages">Accéder à chaque page de la collection de pages</h3> 
 				<p>Dans le cas où la collection de pages comporte un grand nombre de pages, il est habituel de présenter ces liens d’accès aux pages par groupes de liens, par séquences de 10 liens, par exemple. Cette pratique valide le test.</p> 
@@ -127,7 +130,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<h3 id="arborescence-du-document">Arborescence du document</h3> 
 				<p>Le test 9.2.2 demande de vérifier que la structure des éléments sectionnant (<code lang="en">nav</code>, <code lang="en">section</code>, <code lang="en">article</code> par exemple) est cohérente, c’est-à-dire représentative de l’architecture du document. Cette structure est complémentaire à la structure des titres <code lang="en">h(x)</code> qui en sont un élément.</p> 
 				<p>L’utilisation innapropriée de ces éléments sectionnants peut générer une arborescence de document incohérente, par exemple par l’utilisation abusive d’éléments <code lang="en">section</code> ou <code lang="en">article</code>.</p> 
-				<p><strong>Note 1&nbsp;:</strong> Pour accompagner la prise en charge progressive de l’arborescence du document et compte tenu du fait que le référentiel exige de disposer, en tout état de cause, d’une structure de contenu (balises <code lang="en">h(x)</code>) robuste et cohérente, <strong>il est acceptable de considérer le test 9.2.2 comme non applicable</strong> lorsqu’il n’est pas possible de s’assurer que l’arborescence du document est parfaitement cohérente. Vous pouvez consulter, à ce sujet la note technique&nbsp;: <a href="notes-techniques.html#nt-9-2">Note technique au sujet de l’arborescence du document</a>. </p> 
+				<p><strong>Note 1&nbsp;:</strong> Pour accompagner la prise en charge progressive de l’arborescence du document et compte tenu du fait que le référentiel exige de disposer, en tout état de cause, d’une structure de contenu (balises <code lang="en">h(x)</code>) robuste et cohérente, <strong>il est acceptable de considérer le test 9.2.2 comme non applicable</strong> lorsqu’il n’est pas possible de s’assurer que l’arborescence du document est parfaitement cohérente. Vous pouvez consulter, à ce sujet la note technique&nbsp;: <a href="notes-techniques.html#crit-9-2">Note technique au sujet de l’arborescence du document</a>. </p> 
 				<p><strong>Note 2&nbsp;:</strong> vous pouvez consulter, à ce sujet, l’exemple donné par la spécification HTML5&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/html5/sections.html#sample-outlines">4.3.10.2 <span lang="en">Sample outlines</span></a>.</p> 
 				
 				<h3 id="attribut-target">Attribut <code lang="en">target</code></h3> 
@@ -490,7 +493,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				
 				<h3 id="image-texte">Image texte</h3> 
 				<p>Image affichant du texte.</p> 
-				<p><strong>Note&nbsp;:</strong> il n’est pas recommandé d’utiliser des images textes. Lorsqu’il est possible de reproduire les mêmes effets en CSS, le <a href="criteres.html#crit-1-8">critère 1.8 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>]</a> impose que le texte soit reproduit en texte CSS, ou qu’un mécanisme de remplacement permette à l’utilisateur de remplacer ces images par du <a href="#texte-styl">texte stylé</a> en CSS.</p> 
+				<p><strong>Note&nbsp;:</strong> il n’est pas recommandé d’utiliser des images textes. Lorsqu’il est possible de reproduire les mêmes effets en CSS, le <a href="criteres.html#crit-1-8">critère 1.8 [<span aria-label="double-A"><span aria-hidden="true">AA</span></span>]</a> impose que le texte soit reproduit en texte CSS, ou qu’un mécanisme de remplacement permette à l’utilisateur de remplacer ces images par du <a href="#texte-style">texte stylé</a> en CSS.</p> 
 				
 				<h3 id="image-texte-objet">Image texte objet</h3> 
 				<p>Image générée par la balise <code lang="en">object</code> et affichant du texte.</p> 
@@ -542,7 +545,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				 <span class="goafter"><a href="#m">Lettre&nbsp;M</a></span> 
 				</ul>  
 				
-				<h3 id="langue-par-dfaut">Langue par défaut</h3> 
+				<h3 id="langue-par-defaut">Langue par défaut</h3> 
 				<p>Indication de la langue de traitement principale du document qui peut être présente sur l’élément racine <code lang="en">html</code> ou sur chaque élément de la page concerné <i>via</i> les attributs <code lang="en">lang</code> et/ou <code lang="en">xml:lang</code> selon le schéma suivant&nbsp;:</p> 
 				<ul> 
 					<li>Pour HTML jusqu’à la version 4.01&nbsp;: attribut <code lang="en">lang</code> obligatoire, attribut <code lang="en">xml:lang</code> non supporté</li> 
@@ -754,7 +757,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				
 				<h3 id="correctement-restituee">Correctement restitué (par les technologies d’assistance)</h3> 
 				<p>Lorsqu’un critère, un test ou une condition de test demande de vérifier la restitution d’un dispositif, il faut s’assurer que ladite restitution est compatible avec l’accessibilité.</p> 
-				<p>Le test consiste à vérifier que la restitution est pertinente pour au moins une des combinaisons de la <a href="base-de-reference.html">base de référence</a> utilisée pour déclarer qu’un élément, un dispositif ou une alternative est "compatible avec l’accessibilité".</p> 
+				<p>Le test consiste à vérifier que la restitution est pertinente pour au moins une des combinaisons de la <a href="base.html">base de référence</a> utilisée pour déclarer qu’un élément, un dispositif ou une alternative est "compatible avec l’accessibilité".</p> 
 				<p>Par exemple&nbsp;: le test 1.3.7 demande de vérifier que l’alternative d’une image porteuse d’information vectorielle est correctement restituée.</p> 
 				<p>On procède alors à un test avec NVDA (dernière version) et <span lang="en">Firefox</span>, <span lang="en">JAWS</span> (version précédente) et IE9+, et <span lang="en">Voice Over</span> (dernière version) et Safari.</p> 
 				<p>Si on constate que l’alternative est correctement restituée, le test est validé.</p> 
@@ -763,7 +766,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p>Un résumé est un passage de texte associé à un tableau de données complexe. Il permet de donner des informations sur la nature et la structure du tableau afin d’en faciliter l’utilisation par les utilisateurs de technologies d’assistance par exemple.</p> 
 				<p><strong>Note&nbsp;:</strong> l’attribut <code lang="en">summary</code> est obsolète non conforme en HTML5 et ne doit plus être utilisé.</p> 
 				<p>Parmi les 5 techniques proposées par HTML5, la seule technique utilisable actuellement est celle qui consiste à insérer le résumé directement dans le titre (balise <code lang="en">caption</code>) en masquant le résumé <i>via</i> CSS si nécessaire.</p> 
-				<p><a href="notes-techniques.html#nt-5-1">Consulter la note technique au sujet du résumé de tableau</a>.</p> 
+				<p><a href="notes-techniques.html#crit-5-1">Consulter la note technique au sujet du résumé de tableau</a>.</p> 
 				
 				<h2 id="s">S</h2>
 				<ul class="skiplink"> 
@@ -920,7 +923,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<li>Adobe PDF&nbsp;;</li> 
 					<li><span lang="en">Epub</span>/Daisy.</li> 
 				</ul> 
-				<p>Les contenus doivent être conformes à la <a href="../sites/default/files/liste-criteres-documents-bureautiques-telechargement-RGAA.odt">liste des critères Documents Bureautiques en téléchargement (format ODT, 74 kilo-octets)</a>.</p> 
+				<p>Les contenus doivent être conformes à la <a href="http://references.modernisation.gouv.fr/sites/default/files/liste-criteres-documents-bureautiques-telechargement-RGAA.odt">liste des critères Documents Bureautiques en téléchargement (format ODT, 74 kilo-octets)</a>.</p> 
 				<p><strong>Note</strong>&nbsp;: le format txt ne peut pas être utilisé pour produire une version accessible pour un document en téléchargement.</p> 
 				
 				<h3 id="version-alternative-audio-seulement">Version alternative "audio seulement"</h3> 

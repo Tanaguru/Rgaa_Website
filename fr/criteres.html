@@ -1,5 +1,5 @@
 <!-- 
-RGAA 3.0 2016 - juin 2016 
+RGAA 3.0 2017 - juin 2017 
 Source : http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html 
 Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
@@ -7,7 +7,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <title>Critères - RGAA 3.0 2016</title>
+    <title>Critères - RGAA 3.0 2017</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -133,7 +133,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                     <ul>
                         <li id="test-1-1-1">Test 1.1.1&nbsp;: Chaque image (balise <code lang="en">img</code>) a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
                         <li id="test-1-1-2">Test 1.1.2&nbsp;: Chaque <a href="glossaire.html#zone-image-reactive">zone</a> (balise <code lang="en">area</code>) d’une <a href="glossaire.html#image-reactive">image réactive</a> a-t-elle un attribut <code lang="en">alt</code>&nbsp;?</li>
-                        <li id="test-1-1-3">Test 1.1.3&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> de formulaire (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>) a-t-il un attribut <code lang="en">alt</code>&nbsp;?</li>
+                        <li id="test-1-1-3">Test 1.1.3&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> de type image (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>) a-t-il un attribut <code lang="en">alt</code>&nbsp;?</li>
                         <li id="test-1-1-4">Test 1.1.4&nbsp;: Chaque <a href="glossaire.html#zone-cliquable">zone cliquable</a> d’une <a href="glossaire.html#image-reactive">image réactive</a> coté serveur est-t-elle doublée d’un lien dans la page&nbsp;?</li>
                     </ul>
                     <aside>
@@ -170,6 +170,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>La balise <code lang="en">object</code> possède un attribut <code lang="en">aria-hidden="true"</code>&nbsp;;</li>
                                 <li>L’alternative textuelle entre <code lang="en">&lt;object&gt;</code> et <code lang="en">&lt;/object&gt;</code> est vide&nbsp;;</li>
+								<li>La balise <code lang="en">object</code> ou l'un de ses enfants est dépourvue d'attribut <code lang="en">title</code>&nbsp;;</li> \ 
                                 <li>La balise <code lang="en">object</code> ou l’un de ses enfants est dépourvue de rôle, propriété ou état ARIA visant à labelliser l’image (<code lang="en">aria-label</code>, <code lang="en">aria-describedby</code>, <code lang="en">aria-labelledby</code> par exemple).</li>
                             </ul>
                         </li>
@@ -185,12 +186,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>La balise <code lang="en">canvas</code> possède un attribut <code lang="en">aria-hidden="true"</code>&nbsp;;</li>
                                 <li>Le contenu entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code> est dépourvue de contenus textuels&nbsp;;</li>
+								<li>La balise <code lang="en">canvas</code> ou l’un de ses enfants est dépourvue d’attribut <code lang="en">title</code>&nbsp;;</li>
                                 <li>La balise <code lang="en">canvas</code> ou l’un de ses enfants est dépourvue de rôle, propriété ou état ARIA visant à labelliser l’image (<code lang="en">aria-label</code>, <code lang="en">aria-describedby</code>, <code lang="en">aria-labelledby</code> par exemple).</li>
                             </ul>
                         </li>
                         <li id="test-1-2-6">Test 1.2.6&nbsp;: Chaque image embarquée (balise <code lang="en">embed</code> avec l’attribut <code lang="en">type="image/…"</code>) <a href="glossaire.html#image-de-decoration">de décoration</a>, sans <a href="glossaire.html#legende-dimage">légende</a>, vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>La balise <code lang="en">embed</code> possède un attribut <code lang="en">aria-hidden="true"</code>&nbsp;;</li>
+								<li>La balise La balise <code lang="en">embed</code> ou l’un de ses enfants est dépourvue d’attribut <code lang="en">title</code>&nbsp;;</li> \
                                 <li>La balise <code lang="en">embed</code> ou l’un de ses enfants est dépourvue de rôle, propriété ou état ARIA visant à labelliser l’image (<code lang="en">aria-label</code>, <code lang="en">aria-describedby</code>, <code lang="en">aria-labelledby</code> par exemple).</li>
                             </ul>
                         </li>
@@ -228,7 +231,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>S’il est présent, le contenu du passage de texte lié <i>via</i> la propriété <code lang="en">aria-labelledby</code> est identique au contenu de l’attribut <code lang="en">alt</code>.</li>
                             </ul>
                         </li>
-                        <li id="test-1-3-3">Test 1.3.3&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> associé à une image (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>), ayant un attribut <code lang="en">alt</code>, vérifie-t-il ces conditions (hors <a href="cas-particuliers.html#crit-1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>)&nbsp;?
+                        <li id="test-1-3-3">Test 1.3.3&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> de type image (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>), ayant un attribut <code lang="en">alt</code>, vérifie-t-il ces conditions (hors <a href="cas-particuliers.html#crit-1-3" title="Cas particuliers pour le critère 1.3">cas particuliers</a>)&nbsp;?
                             <ul>
                                 <li>Le contenu de l’attribut <code lang="en">alt</code> est pertinent&nbsp;;</li>
                                 <li>S’il est présent, le contenu de l’attribut <code lang="en">title</code> est identique au contenu de l’attribut <code lang="en">alt</code>&nbsp;;</li>
@@ -266,7 +269,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>La balise <code lang="en">svg</code> possède un <code lang="en">role="img"</code>&nbsp;;</li>
                                 <li>La balise <code lang="en">svg</code> possède une propriété <code lang="en">aria-label</code> dont le contenu est pertinent et identique à l’attribut <code lang="en">title</code> s’il est présent&nbsp;;</li>
-                                <li>La balise <code lang="en">svg</code> possède une balise <code lang="en">desc</code> dont le contenu est pertinent et contient un passage de texte identique à la propriété <code lang="en">aria-label</code> et à l’attribut <code lang="en">title</code> de la balise <code lang="en">svg</code> s’il est présent.</li>
+                                <li>La balise <code lang="en">svg</code> possède une balise <code lang="en">desc</code> dont le contenu est pertinent et contient un passage de texte identique à la propriété <code lang="en">aria-label</code>.</li>
                             </ul>
                         </li>
                         <li id="test-1-3-9">Test 1.3.9&nbsp;: Pour chaque image vectorielle (balise <code lang="en">svg</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a> et possédant une alternative, cette alternative est-elle <a href="glossaire.html#correctement-restituee">correctement restituée</a> par les technologies d’assistance&nbsp;?</li>
@@ -359,8 +362,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>La balise <code lang="en">svg</code> possède un <code lang="en">role="img"</code>&nbsp;;</li>
                                 <li>La balise <code lang="en">svg</code> possède une propriété <code lang="en">aria-label</code> dont le contenu permet de comprendre la nature et la fonction de l’image et identique à l’attribut <code lang="en">title</code> s’il est présent&nbsp;;</li>
-                                <li>La balise <code lang="en">svg</code> possède une balise <code lang="en">desc</code> dont le contenu permet de comprendre la nature et la fonction de l’image et identique à la propriété <code lang="en">aria-label</code> et à l’attribut <code lang="en">title</code> de la balise <code lang="en">svg</code> s’il est présent&nbsp;;</li>
-                                <li>Un <a href="glossaire.html#lien-adjacent">lien adjacent</a> permet d’accéder à une alternative dont le contenu permet de comprendre la nature et la fonction de l’image et identique à la propriété <code lang="en">aria-label</code> et à l’attribut <code lang="en">title</code> de la balise <code lang="en">svg</code> s’il est présent.</li>
+                                <li>La balise <code lang="en">svg</code> possède une balise <code lang="en">desc</code> dont le contenu permet de comprendre la nature et la fonction de l’image et identique à la propriété <code lang="en">aria-label</code>&nbsp;;</li>
+                                <li>Un <a href="glossaire.html#lien-adjacent">lien adjacent</a> permet d’accéder à une alternative dont le contenu permet de comprendre la nature et la fonction de l’image et identique à la propriété <code lang="en">aria-label</code>.</li>
                             </ul>
                         </li>
                         <li id="test-1-4-9">Test 1.4.9&nbsp;: Pour chaque image vectorielle (balise <code lang="en">svg</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme <a href="glossaire.html#image-test">image-test</a>, possédant une <a href="glossaire.html#alternative-svg">alternative</a>, cette alternative est-elle <a href="glossaire.html#correctement-restituee">correctement restituée</a> par les technologies d’assistance&nbsp;?</li>
@@ -378,7 +381,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>S’il est présent, le contenu de l’attribut <code lang="en">title</code> est identique au passage de texte lié par la propriété <code lang="en">aria-labelledby</code>.</li>
                             </ul>
                         </li>
-                        <li id="test-1-4-12">Test 1.4.12&nbsp;: Pour chaque image <span lang="en">bitmap</span> (balise <code lang="en">canvas</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme <a href="glossaire.html#image-test">image-test</a>, ayant une alternative textuelle, l’alternative textuelle est-elle <a href="glossaire.html#correctement-restituee">correctement restituée</a> par les technologies d’assistance&nbsp;? </li>
+                        <li id="test-1-4-12">Test 1.4.12&nbsp;: Pour chaque image <span lang="en">bitmap</span> (balise <code lang="en">canvas</code>) utilisée comme <a href="glossaire.html#captcha">CAPTCHA</a> ou comme <a href="glossaire.html#image-test">image-test</a>, ayant une alternative (contenu entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code>), cette, l’alternative textuelle est-elle <a href="glossaire.html#correctement-restituee">correctement restituée</a> par les technologies d’assistance&nbsp;? </li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -451,7 +454,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>Il existe une propriété <code lang="en">aria-describedby</code> référençant un passage de texte faisant office de description détaillée.</li>
                             </ul>
                         </li>
-                        <li id="test-1-6-5">Test 1.6.5&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> de type image (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteur d’information</a>, qui implémente une référence à une <a href="glossaire.html#description-detaillee-image">description détaillée</a> adjacente <i>via</i> une propriété <code lang="en">aria-describedby</code>, vérifie-t-il ces conditions&nbsp;?
+                        <li id="test-1-6-5">Test 1.6.5&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> de type image (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteur d’information</a>, qui implémente une référence à une <a href="glossaire.html#description-detaillee-image">description détaillée</a> <i>via</i> une propriété <code lang="en">aria-describedby</code>, vérifie-t-il ces conditions&nbsp;?
                             <ul>
                                 <li>Le passage de texte est identifié <i>via</i> un attribut <code lang="en">id</code>&nbsp;;</li>
                                 <li>La valeur de l’attribut <code lang="en">id</code> est unique&nbsp;;</li>
@@ -461,7 +464,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <li id="test-1-6-6">Test 1.6.6&nbsp;: Chaque image vectorielle (balise <code lang="en">svg</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, qui nécessite une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle une de ces conditions&nbsp;?
                             <ul>
                                 <li>Il existe une propriété <code lang="en">aria-label</code> contenant une référence à une description détaillée adjacente à l’image vectorielle&nbsp;;</li>
-                                <li>Il existe une balise <code lang="en">desc</code> contenant une référence à une description détaillée adjacente à l’image vectorielle&nbsp;;</li>
+                                <li>La balise <code lang="en">title</code> contient la description détaillée&nbsp;;</li>
                                 <li>Il existe une balise <code lang="en">desc</code> contenant la description détaillée&nbsp;;</li>
                                 <li>Il existe un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (<i>via</i> une <a href="glossaire.html#url">url</a> ou une <a href="glossaire.html#ancre">ancre</a>) permettant d’accéder au contenu de la description détaillée.</li>
                             </ul>
@@ -494,42 +497,41 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-1-7"><em>Critère 1.7 [A]</em> Pour chaque <a href="glossaire.html#image-porteuse-dinformation">image porteuse d’information</a> ayant une description détaillée, cette description est-elle pertinente ?</h3>
                     <ul>
-                        <li id="test-1-7-1">Test 1.7.1&nbsp;: Chaque image (balise <code lang="en">img</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle une de ces conditions&nbsp;?
+                        <li id="test-1-7-1">Test 1.7.1&nbsp;: Chaque image (balise <code lang="en">img</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>La description détaillée <i>via</i> l’adresse référencée dans l’attribut <code lang="en">longdesc</code> est pertinente&nbsp;;</li>
                                 <li>La description détaillée dans la page et signalée dans l’attribut <code lang="en">alt</code> est pertinente&nbsp;;</li>
                                 <li>La description détaillée <i>via</i> un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente.</li>
                             </ul>
                         </li>
-                        <li id="test-1-7-2">Test 1.7.2&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> de type image (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteur d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-il une de ces conditions&nbsp;?
+                        <li id="test-1-7-2">Test 1.7.2&nbsp;: Chaque <a href="glossaire.html#bouton-formulaire">bouton</a> de type image (balise <code lang="en">input</code> avec l’attribut <code lang="en">type="image"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteur d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-il ces conditions&nbsp;?
                             <ul>
-                                <li>La description détaillée <i>via</i> l’adresse référencée dans l’attribut <code lang="en">longdesc</code> est pertinente&nbsp;;</li>
                                 <li>La description détaillée dans la page et signalée dans l’attribut <code lang="en">alt</code> est pertinente&nbsp;;</li>
                                 <li>La description détaillée <i>via</i> un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente&nbsp;;</li>
                                 <li>Le passage de texte référencé <i>via</i> la propriété <code lang="en">aria-describedby</code> est pertinent.</li>
                             </ul>
                         </li>
-                        <li id="test-1-7-3">Test 1.7.3&nbsp;: Chaque <a href="glossaire.html#image-objet">image objet</a> (balise <code lang="en">object</code> avec l’attribut <code lang="en">type="image/…"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle une de ces conditions&nbsp;?
+                        <li id="test-1-7-3">Test 1.7.3&nbsp;: Chaque <a href="glossaire.html#image-objet">image objet</a> (balise <code lang="en">object</code> avec l’attribut <code lang="en">type="image/…"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>La description détaillée adjacente à l’image objet est pertinente&nbsp;;</li>
                                 <li>La description détaillée <i>via</i> un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente.</li>
                             </ul>
                         </li>
-                        <li id="test-1-7-4">Test 1.7.4&nbsp;: Chaque image embarquée (balise <code lang="en">embed</code> avec l’attribut <code lang="en">type="image/…"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle une de ces conditions&nbsp;?
+                        <li id="test-1-7-4">Test 1.7.4&nbsp;: Chaque image embarquée (balise <code lang="en">embed</code> avec l’attribut <code lang="en">type="image/…"</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>La description détaillée adjacente à l’image embarquée est pertinente&nbsp;;</li>
                                 <li>La description détaillée <i>via</i> un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente.</li>
                             </ul>
                         </li>
-                        <li id="test-1-7-5">Test 1.7.5&nbsp;: Chaque image vectorielle (balise <code lang="en">svg</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle une de ces conditions&nbsp;?
+                        <li id="test-1-7-5">Test 1.7.5&nbsp;: Chaque image vectorielle (balise <code lang="en">svg</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle ces conditions&nbsp;?
                             <ul>
-                                <li>La description détaillée adjacente à l’image vectorielle est pertinente&nbsp;;</li>
+								<li>La description détaillée adjacente à l'image vectorielle et signalée dans la propriété <code lang="en">aria-label</code> ou la balise <code lang="en">desc</code> est pertinente.</li>
                                 <li>La description détaillée contenue dans la balise <code lang="en">desc</code> est pertinente&nbsp;;</li>
                                 <li>La description détaillée <i>via</i> un <a href="glossaire.html#lien-adjacent">lien adjacent</a> est pertinente.</li>
                             </ul>
                         </li>
                         <li id="test-1-7-6">Test 1.7.6&nbsp;: Pour chaque image vectorielle (balise <code lang="en">svg</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a> implémentée <i>via</i> la balise <code lang="en">desc</code>, cette description détaillée est-elle <a href="glossaire.html#correctement-restituee">correctement restituée</a> par les technologies d’assistance&nbsp;?</li>
-                        <li id="test-1-7-7">Test 1.7.7&nbsp;: Chaque image <span lang="en">bitmap</span> (balise <code lang="en">canvas</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle une de ces conditions&nbsp;?
+                        <li id="test-1-7-7">Test 1.7.7&nbsp;: Chaque image <span lang="en">bitmap</span> (balise <code lang="en">canvas</code>) <a href="glossaire.html#image-porteuse-dinformation">porteuse d’information</a>, ayant une <a href="glossaire.html#description-detaillee-image">description détaillée</a>, vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>La description détaillée adjacente à l’image <span lang="en">bitmap</span> est pertinente&nbsp;;</li>
                                 <li>La description détaillée contenue entre <code lang="en">&lt;canvas&gt;</code> et <code lang="en">&lt;/canvas&gt;</code> est pertinente&nbsp;;</li>
@@ -806,6 +808,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>Un mécanisme permet à l’utilisateur d’afficher le texte avec un rapport de contraste de 3:1, au moins.</li>
                             </ul>
                         </li>
+						<li id="test-3-3-5">Test 3.3.5&nbsp;: Chaque mécanisme qui permet d'afficher le texte avec un rapport de contraste conforme a-t-il un rapport de contraste supérieur ou égal à 4,5:1&nbsp;?
+                        </li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -846,6 +850,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>Le rapport de <a href="glossaire.html#contraste">contraste</a> entre le texte et son arrière-plan est de 4.5:1, au moins&nbsp;;</li>
                                 <li>Un mécanisme permet à l’utilisateur d’afficher le texte avec un rapport de contraste de 4.5:1, au moins.</li>
                             </ul>
+                        </li>
+						<li id="test-3-4-5">Test 3.4.5&nbsp;: Chaque mécanisme qui permet d'afficher le texte avec un rapport de contraste conforme a-t-il un rapport de contraste supérieur ou égal à 7:1&nbsp;?
                         </li>
                     </ul>
                     <aside>
@@ -916,10 +922,11 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <li id="test-4-1-2">Test 4.1.2&nbsp;: Chaque <a href="glossaire.html#media-temporel">média temporel</a> pré-enregistré seulement vidéo vérifie-t-il, si nécessaire, l’une de ces conditions (hors <a href="cas-particuliers.html#crit-4-1" title="Cas particuliers pour le critère 4.1">cas particuliers</a>)&nbsp;?
                             <ul>
                                 <li>Il existe une <a href="glossaire.html#version-alternative-audio-seulement">version alternative «&nbsp;audio seulement&nbsp;»</a> accessible <i>via</i> un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <a href="glossaire.html#url">url</a> ou une <a href="glossaire.html#ancre">ancre</a>)&nbsp;;</li>
-                                <li>Il existe une <a href="glossaire.html#transcription-textuelle">transcription textuelle</a> accessible <i>via</i> un lien adjacent (une url ou une ancre)&nbsp;;</li>
+                                <li>Il existe une version <a href="glossaire.html#version-alternative-audio-seulement">version alternative «&nbsp;audio seulement&nbsp;»</a> adjacente clairement identifiable&nbsp;;</li>
+								<li>Il existe une <a href="glossaire.html#transcription-textuelle">transcription textuelle</a> accessible <i>via</i> un lien adjacent (une url ou une ancre)&nbsp;;</li>
                                 <li>Il existe une transcription textuelle adjacente clairement identifiable&nbsp;;</li>
-                                <li>Il existe une <a href="glossaire.html#audiodescription-synchronisee">audio-description</a> synchronisée&nbsp;;</li>
-                                <li>Il existe une version alternative avec une audio-description synchronisée accessible <i>via</i> un lien adjacent (une url ou une ancre).</li>
+                                <li>Il existe une <a href="glossaire.html#audiodescription-synchronisee">audiodescription</a> synchronisée&nbsp;;</li>
+                                <li>Il existe une version alternative avec une audiodescription synchronisée accessible <i>via</i> un lien adjacent (une url ou une ancre).</li>
                             </ul>
                         </li>
                         <li id="test-4-1-3">Test 4.1.3&nbsp;: Chaque <a href="glossaire.html#media-temporel">média temporel</a> synchronisé pré-enregistré vérifie-t-il, si nécessaire, une de ces conditions (hors <a href="cas-particuliers.html#crit-4-1" title="Cas particuliers pour le critère 4.1">cas particuliers</a>)&nbsp;?
@@ -1250,7 +1257,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                     <h3 id="crit-4-14"><em>Critère 4.14 [AAA]</em> Pour chaque média temporel synchronisé ou seulement vidéo, ayant une transcription textuelle, celle-ci est-elle pertinente ?</h3>
                     <ul>
                         <li id="test-4-14-1">Test 4.14.1&nbsp;: Pour chaque <a href="glossaire.html#media-temporel">média temporel</a> seulement vidéo ayant une <a href="glossaire.html#transcription-textuelle">transcription textuelle</a>, celle-ci est-elle pertinente&nbsp;?</li>
-                        <li id="test-4-14-2">Test 4.14.2&nbsp;: Chaque <a href="glossaire.html#media-temporel">média temporel</a> synchronisé ayant une <a href="glossaire.html#transcription-textuelle">transcription textuelle</a>, celle-ci est-elle pertinente&nbsp;?</li>
+                        <li id="test-4-14-2">Test 4.14.2&nbsp;: Pour chaque <a href="glossaire.html#media-temporel">média temporel</a> synchronisé ayant une <a href="glossaire.html#transcription-textuelle">transcription textuelle</a>, celle-ci est-elle pertinente&nbsp;?</li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -1442,13 +1449,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-4-22"><em>Critère 4.22 [A]</em> Chaque média temporel et non temporel est-il compatible avec les technologies d’assistance (hors cas particuliers) ?</h3>
                     <ul>
-                        <li id="test-4-22-1">Test 4.22.1&nbsp;: Chaque <a href="glossaire.html#media-temporel">média temporel</a> et <a href="glossaire.html#media-non-temporel">non temporel</a> inséré <i>via</i> une balise <code lang="en">object</code> ou <code lang="en">embed</code> vérifie-t-il une de ces conditions (hors <a href="cas-particuliers.html#crit-4-22" title="Cas particuliers pour le critère 4.22">cas particuliers</a>)&nbsp;?
+                        <li id="test-4-22-1">Test 4.22.1&nbsp;: Chaque <a href="glossaire.html#media-temporel">média temporel</a> et <a href="glossaire.html#media-non-temporel">non temporel</a> vérifie-t-il une de ces conditions (hors <a href="cas-particuliers.html#crit-4-22" title="Cas particuliers pour le critère 4.22">cas particuliers</a>)&nbsp;?
                             <ul>
                                 <li>Le nom, le rôle, la valeur, le paramétrage et les changements d’états des composants d’interfaces sont accessibles aux technologies d’assistance <i>via</i> une API d’accessibilité&nbsp;;</li>
                                 <li>Une alternative <a href="glossaire.html#compatible-technologies-assistance">compatible avec une API d’accessibilité</a> permet d’accéder aux mêmes fonctionnalités.</li>
                             </ul>
                         </li>
-                        <li id="test-4-22-2">Test 4.22.2&nbsp;: Chaque <a href="glossaire.html#media-temporel">média temporel</a> et <a href="glossaire.html#media-non-temporel">non temporel</a> inséré <i>via</i> une balise <code lang="en">object</code> ou <code lang="en">embed</code>, qui possède une alternative <a href="glossaire.html#compatible-technologies-assistance">compatible avec les technologies d’assistance</a>, vérifie-t-il une de ces conditions&nbsp;?
+                        <li id="test-4-22-2">Test 4.22.2&nbsp;: Chaque <a href="glossaire.html#media-temporel">média temporel</a> et <a href="glossaire.html#media-non-temporel">non temporel</a> qui possède une alternative <a href="glossaire.html#compatible-technologies-assistance">compatible avec les technologies d’assistance</a>, vérifie-t-il une de ces conditions&nbsp;?
                             <ul>
                                 <li>L’alternative est adjacente au média temporel ou non temporel&nbsp;;</li>
                                 <li>L’alternative est accessible <i>via</i> un <a href="glossaire.html#lien-adjacent">lien adjacent</a> (une <a href="glossaire.html#url">url</a> ou une <a href="glossaire.html#ancre">ancre</a>)&nbsp;;</li>
@@ -1578,7 +1585,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-5-5"><em>Critère 5.5 [A]</em> Pour chaque tableau de données ayant un titre, celui-ci est-il pertinent ?</h3>
                     <ul>
-                        <li id="test-5-5-1">Test 5.5.1&nbsp;: Pour chaque <a href="glossaire.html#tableau-de-donnees">tableau de données</a> (balise <code lang="en">table</code>) ayant une balise <code lang="en">caption</code>, le contenu de cette balise donne-t-il le <a href="glossaire.html#titre-tableau">titre du tableau</a>&nbsp;?</li>
+                        <li id="test-5-5-1">Test 5.5.1&nbsp;: Pour chaque <a href="glossaire.html#tableau-de-donnees">tableau de données</a> (balise <code lang="en">table</code>) ayant un <a href="glossaire.html#titre-tableau">titre de tableau</a> dans la balise <code lang="en">caption</code>, le titre est-il pertinent&nbsp;?</li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -1653,7 +1660,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                     <ul>
                         <li id="test-5-8-1">Test 5.8.1&nbsp;: Chaque <a href="glossaire.html#tableau-de-mise-en-forme">tableau de mise en forme</a> (balise <code lang="en">table</code>) vérifie-t-il ces conditions&nbsp;?
                             <ul>
-                                <li>Le tableau de mise en forme (balise <code lang="en">table</code>) ne possède pas de balises <code lang="en">caption</code>, <code lang="en">th</code>, <code lang="en">thead</code>, <code lang="en">tfoot</code>&nbsp;;</li>
+                                <li>Le tableau de mise en forme (balise <code lang="en">table</code>) ne possède pas de balises <code lang="en">caption</code>, <code lang="en">th</code>, <code lang="en">thead</code>, <code lang="en">tfoot</code>, <code lang="en">colgroup</code>&nbsp;;</li>
                                 <li>Les cellules du tableau de mise en forme (balise <code lang="en">td</code>) ne possèdent pas d’attributs <code lang="en">scope</code>, <code lang="en">headers</code>, <code lang="en">colgroup</code>, <code lang="en">axis</code>.</li>
                             </ul>
                         </li>
@@ -1762,8 +1769,19 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>Le contenu du titre de lien (attribut <code lang="en">title</code>) est explicite hors contexte.</li>
                             </ul>
                         </li>
-                        <li id="test-6-3-2">Test 6.3.2&nbsp;: Chaque intitulé de <a href="glossaire.html#lien-image">lien image</a> est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (hors <a href="cas-particuliers.html#crit-6-1" title="Cas particuliers pour le critère 6.3">cas particuliers</a>)&nbsp;?</li>
-                        <li id="test-6-3-3">Test 6.3.3&nbsp;: Chaque <a href="glossaire.html#lien-composite">lien composite</a> (contenu texte et de l’attribut <code lang="en">alt</code>) est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (hors <a href="cas-particuliers.html#crit-6-1" title="Cas particuliers pour le critère 6.3">cas particuliers</a>)&nbsp;?</li>
+                        <li id="test-6-3-2">Test 6.3.2&nbsp;: Chaque intitulé de <a href="glossaire.html#lien-image">lien image</a> vérifie-t-il une de ces conditions (hors <a href="cas-particuliers.html#crit-6-1" title="Cas particuliers pour le critère 6.3">cas particuliers</a>)&nbsp;?</li>
+                            <ul>
+                                <li>L’intitulé du lien est <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a>&nbsp;;</li>
+                                <li>Un mécanisme permet à l’utilisateur d’obtenir un intitulé de lien explicite hors contexte&nbsp;;</li>
+                                <li>Le contenu du titre de lien (attribut <code lang="en">title</code>) est explicite hors contexte.</li>
+                            </ul>                        
+						<li id="test-6-3-3">Test 6.3.3&nbsp;: Chaque <a href="glossaire.html#lien-composite">lien composite</a> (contenu texte et de l’attribut <code lang="en">alt</code>) est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (hors <a href="cas-particuliers.html#crit-6-1" title="Cas particuliers pour le critère 6.3">cas particuliers</a>)&nbsp;?
+							<ul>
+                                <li>L’intitulé du lien est <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a>&nbsp;;</li>
+                                <li>Un mécanisme permet à l’utilisateur d’obtenir un intitulé de lien explicite hors contexte&nbsp;;</li>
+                                <li>Le contenu du titre de lien (attribut <code lang="en">title</code>) est explicite hors contexte.</li>
+                            </ul>  
+						</li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -1862,7 +1880,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             </ul>
                         </li>
                         <li id="test-7-1-4">Test 7.1.4&nbsp;: Chaque <a href="glossaire.html#modification-role-natif-element-html">modification du rôle natif</a> d’un élément HTML respecte-t-elle les règles et préconisations indiquées dans la spécification HTML5 et les notes techniques associées&nbsp;?</li>
-                        <li id="test-7-1-5">Test 7.1.5&nbsp;: Chaque <a href="glossaire.html#script">script</a> qui génère ou contrôle un composant d’interface <i>via</i> des rôles, des états ou des propriétés définis par l’API ARIA respecte-t-il une de ces conditions&nbsp;?
+                        <li id="test-7-1-5">Test 7.1.5&nbsp;: Chaque <a href="glossaire.html#script">script</a> qui génère ou contrôle un composant d’interface respecte-t-il une de ces conditions&nbsp;?
                             <ul>
                                 <li>Le composant d’interface est <a href="glossaire.html#correctement-restituee">correctement restitué</a> par les technologies d’assistance&nbsp;;</li>
                                 <li>Une <a href="glossaire.html#alternative-script">alternative</a> accessible permet d’accéder aux mêmes fonctionnalités.</li>
@@ -1872,6 +1890,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>Le composant d’interface est <a href="glossaire.html#correctement-restituee">correctement restitué</a> par les technologies d’assistance&nbsp;;</li>
                                 <li>Une <a href="glossaire.html#alternative-script">alternative</a> accessible permet d’accéder aux mêmes fonctionnalités.</li>
+                            </ul>
+                        </li>
+						<li id="test-7-1-7">Test 7.1.7&nbsp;: Chaque <a href="glossaire.html#script">script</a> qui génère ou contrôle un <a href="glossaire.html#composants">composant d'interface</a> vérifie-t-il ces conditions&nbsp;?
+                            <ul>
+                                <li>Le composant possède un nom pertinent&nbsp;;</li>
+                                <li>Le composant possède un rôle pertinent.</li>
                             </ul>
                         </li>
                     </ul>
@@ -2218,12 +2242,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-8-10"><em>Critère 8.10 [A]</em> Dans chaque page Web, les changements du sens de lecture sont-ils signalés ?</h3>
                     <ul>
-                        <li id="test-8-10-1">Test 8.10.1&nbsp;: Dans chaque page Web, chaque texte dont le <a href="glossaire.html#sens-de-lecture">sens de lecture</a> est différent du sens de lecture par défaut vérifie-t-il ces conditions&nbsp;?
-                            <ul>
-                                <li>Le texte est contenu dans une balise possédant un attribut <code lang="en">dir</code>&nbsp;;</li>
-                                <li>La valeur de l’attribut <code lang="en">dir</code> est conforme (<code lang="en">rtl</code> ou <code lang="en">ltr</code>)&nbsp;;</li>
-                                <li>La valeur de l’attribut <code lang="en">dir</code> est pertinente.</li>
-                            </ul>
+                        <li id="test-8-10-1">Test 8.10.1&nbsp;: Dans chaque page Web, chaque texte dont le <a href="glossaire.html#sens-de-lecture">sens de lecture</a> est différent du sens de lecture par défaut est contenu dans une balise possédant un attribut dir&nbsp;?
                         </li>
                         <li id="test-8-10-2">Test 8.10.2&nbsp;: Dans chaque page Web, chaque changement du <a href="glossaire.html#sens-de-lecture">sens de lecture</a> (attribut <code lang="en">dir</code>) vérifie-t-il ces conditions&nbsp;?
                             <ul>
@@ -2516,10 +2535,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                     </aside>
                 </section>
                 <section data-level="AA">
-                    <h3 id="crit-10-4"><em>Critère 10.4 [AA]</em> Dans chaque page Web, le texte reste-t-il lisible lorsque la taille des caractères est augmentée jusqu’à 200%, au moins ?</h3>
+                    <h3 id="crit-10-4"><em>Critère 10.4 [AA]</em> Dans chaque page Web, le texte reste-t-il lisible lorsque la taille des caractères est augmentée jusqu’à 200%, au moins (hors <a href="cas-particuliers.html#crit-10-4" title="Cas particuliers pour le critère 10.4">cas particuliers</a>)&nbsp;?</h3>
                     <ul>
-                        <li id="test-10-4-1">Test 10.4.1&nbsp;: Dans les <a href="glossaire.html#feuille-de-style">feuilles de styles</a> du <a href="glossaire.html#site-web">site Web</a>, les unités non relatives (<code lang="en">pt</code>, <code lang="en">pc</code>, <code lang="en">mm</code>, <code lang="en">cm</code>, <code lang="en">in</code>) ne doivent pas être utilisées pour les types de média <code lang="en">screen</code>, <code lang="en">tv</code>, <code lang="en">handheld</code>, <code lang="en">projection</code>. Cette règle est-elle respectée&nbsp;?</li>
-                        <li id="test-10-4-2">Test 10.4.2&nbsp;: Dans les <a href="glossaire.html#feuille-de-style">feuilles de styles</a> du <a href="glossaire.html#site-web">site Web</a>, pour les types de média <code lang="en">screen</code>, <code lang="en">tv</code>, <code lang="en">handheld</code>, <code lang="en">projection</code>, les tailles de caractères utilisent-elles uniquement des <a href="glossaire.html#taille-des-caracteres">unités relatives</a>&nbsp;?</li>
+                        <li id="test-10-4-1">Test 10.4.1&nbsp;: Dans les <a href="glossaire.html#feuille-de-style">feuilles de styles</a> du <a href="glossaire.html#site-web">site Web</a>, les unités non relatives (<code lang="en">pt</code>, <code lang="en">pc</code>, <code lang="en">mm</code>, <code lang="en">cm</code>, <code lang="en">in</code>) ne doivent pas être utilisées pour les types de média <code lang="en">screen</code>, <code lang="en">tv</code>, <code lang="en">handheld</code>, <code lang="en">projection</code>. Cette règle est-elle respectée (hors <a href="cas-particuliers.html#crit-10-4" title="Cas particuliers pour le critère 10.4">cas particuliers</a>)&nbsp;?</li>
+                        <li id="test-10-4-2">Test 10.4.2&nbsp;: Dans les <a href="glossaire.html#feuille-de-style">feuilles de styles</a> du <a href="glossaire.html#site-web">site Web</a>, pour les types de média <code lang="en">screen</code>, <code lang="en">tv</code>, <code lang="en">handheld</code>, <code lang="en">projection</code>, les tailles de caractères utilisent-elles uniquement des <a href="glossaire.html#taille-des-caracteres">unités relatives</a> (hors <a href="cas-particuliers.html#crit-10-4" title="Cas particuliers pour le critère 10.4">cas particuliers</a>)&nbsp;?</li>
                         <li id="test-10-4-3">Test 10.4.3&nbsp;: Dans chaque page Web, l’augmentation de la <a href="glossaire.html#taille-des-caracteres">taille des caractères</a> jusqu’à 200%, au moins, ne doit pas provoquer de perte d’information. Cette règle est-elle respectée&nbsp;?</li>
                     </ul>
                     <aside>
@@ -2844,10 +2863,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>L’étiquettepossède un attribut <code lang="en">id</code>&nbsp;;</li>
                                 <li>La valeur de l’attribut <code lang="en">id</code> est unique&nbsp;;</li>
                                 <li>Les valeurs de la propriété ARIA <code lang="en">aria-labelledby</code> sont égales à la valeur des attributs <code lang="en">id</code> des passages de textes utilisés pour créer l’<a href="glossaire.html#etiquette">étiquette</a>&nbsp;;</li>
-                                <li>L’étiquetteliée par la propriété ARIA <code lang="en">aria-labelledby</code> est visible à la <a href="glossaire.html#prise-de-focus">prise de focus</a> au moins.</li>
                             </ul>
                         </li>
-                        <li id="test-11-1-4">Test 11.1.4&nbsp;: Chaque <a href="glossaire.html#champ-de-saisie">champ de formulaire</a> qui utilise une propriété ARIA <code lang="en">aria-label</code> doit être accompagné d’un passage de texte visible et accolé au champ permettant de comprendre la nature de la saisie attendue. Cette règle est-elle respectée&nbsp;?</li>
+                        <li id="test-11-1-4">Test 11.1.4&nbsp;: Chaque <a href="glossaire.html#champ-de-saisie">champ de formulaire</a> qui utilise une propriété ARIA <code lang="en">aria-label</code> ou <code lang="en">aria-labelledby</code> est-il, si nécessaire, accompagné d'un passage de texte visible et accolé au champ permettant de comprendre la nature de la saisie attendue&nbsp;?</li>
                         <li id="test-11-1-5">Test 11.1.5&nbsp;: Chaque <a href="glossaire.html#champ-de-saisie">champ de formulaire</a> qui utilise un attribut <code lang="en">title</code> comme <a href="glossaire.html#etiquette">étiquette</a>, vérifie-t-il une de ces conditions&nbsp;?
                             <ul>
                                 <li>L’attribut <code lang="en">placeholder</code> est absent&nbsp;;</li>
@@ -2929,7 +2947,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-11-5"><em>Critère 11.5 [A]</em> Dans chaque formulaire, les informations de même nature sont-elles regroupées, si nécessaire ?</h3>
                     <ul>
-                        <li id="test-11-5-1">Test 11.5.1&nbsp;: Dans chaque formulaire, les <a href="glossaire.html#bloc-dinformations-de-meme-nature">informations de même nature</a> sont-elles regroupées <i>via</i> une balise <code lang="en">fieldset</code>, si nécessaire&nbsp;?</li>
+                        <li id="test-11-5-1">Test 11.5.1&nbsp;: Dans chaque formulaire, les <a href="glossaire.html#bloc-dinformations-de-meme-nature">informations de même nature</a> sont-elles regroupées, si nécessaire&nbsp;?</li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -2947,7 +2965,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-11-6"><em>Critère 11.6 [A]</em> Dans chaque formulaire, chaque regroupement de champs de formulaire a-t-il une légende ?</h3>
                     <ul>
-                        <li id="test-11-6-1">Test 11.6.1&nbsp;: Chaque regroupement de <a href="glossaire.html#champ-de-saisie">champs de formulaire</a> (balise <code lang="en">fieldset</code>) est-il suivi dans le code source par une légende (balise <code lang="en">legend</code>)&nbsp;?</li>
+                        <li id="test-11-6-1">Test 11.6.1&nbsp;: Chaque regroupement de <a href="glossaire.html#champ-de-saisie">champs de formulaire</a> possède-t-il une légende&nbsp;?</li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -2965,7 +2983,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-11-7"><em>Critère 11.7 [A]</em> Dans chaque formulaire, chaque légende associée à un groupement de champs de formulaire est-elle pertinente ?</h3>
                     <ul>
-                        <li id="test-11-7-1">Test 11.7.1&nbsp;: Dans chaque formulaire, chaque légende (balise <code lang="en">legend</code>) associée à un groupement de <a href="glossaire.html#champ-de-saisie">champs de formulaire</a> (balise <code lang="en">fieldset</code>) est-elle pertinente&nbsp;?</li>
+                        <li id="test-11-7-1">Test 11.7.1&nbsp;: Dans chaque formulaire, chaque légende associée à un groupement de <a href="glossaire.html#champ-de-saisie">champs de formulaire</a> est-elle pertinente&nbsp;?</li>
                     </ul>
                     <aside>
                         <h4>Correspondances WCAG&nbsp;2.0</h4>
@@ -3003,7 +3021,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-11-9"><em>Critère 11.9 [A]</em> Dans chaque formulaire, l’intitulé de chaque bouton est-il pertinent ?</h3>
                     <ul>
-                        <li id="test-11-9-1">Test 11.9.1&nbsp;: Dans chaque formulaire, l’intitulé de chaque <a href="glossaire.html#bouton-formulaire">bouton</a> vérifie-t-il une de ces conditions&nbsp;?
+                        <li id="test-11-9-1">Test 11.9.1&nbsp;: Dans chaque formulaire, l’intitulé de chaque <a href="glossaire.html#bouton-formulaire">bouton</a> vérifie-t-il ces conditions&nbsp;?
                             <ul>
                                 <li>Le contenu de l’attribut <code lang="en">value</code> des boutons de formulaire de type <code lang="en">submit</code>, <code lang="en">reset</code> ou <code lang="en">button</code> est pertinent&nbsp;;</li>
                                 <li>Le contenu de la balise <code lang="en">&lt;button&gt;</code> est pertinent&nbsp;;</li>
@@ -3016,7 +3034,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>Le passage de texte servant d’intitulé possède un attribut <code lang="en">id</code>&nbsp;;</li>
                                 <li>La valeur de l’attribut <code lang="en">id</code> est unique&nbsp;;</li>
-                                <li>Les valeurs de la propriété ARIA <code lang="en">aria-labelledby</code> sont égales aux valeurs des attributs <code lang="en">id</code> des passages de texte utilisés pour créer l’<a href="glossaire.html#etiquette">étiquette</a>&nbsp;;</li>
+                                <li>Les valeurs de la propriété ARIA <code lang="en">aria-labelledby</code> sont égales aux valeurs des attributs <code lang="en">id</code> des passages de texte utilisés pour créer l’intitulé</a>&nbsp;;</li>
                                 <li>Le passage de texte est pertinent.</li>
                             </ul>
                         </li>
@@ -3042,11 +3060,11 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>L’indication de champ obligatoire est donnée par un passage de texte situé avant le <a href="glossaire.html#champ-de-saisie">champ de formulaire</a>&nbsp;;</li>
                                 <li>L’indication de champ obligatoire est donnée <i>via</i> un attribut <code lang="en">required</code>&nbsp;;</li>
                                 <li>L’indication de champ obligatoire est donnée <i>via</i> la propriété ARIA <code lang="en">aria-required</code>&nbsp;;</li>
-                                <li>L’indication de champ obligatoire est donnée dans l’<a href="glossaire.html#etiquette">étiquette</a> (balise <code lang="en">label</code>, attribut <code lang="en">title</code>, propriété ARIA <code lang="en">aria-label</code>, passage de texte lié <i>via</i> la propriété ARIA <code lang="en">aria-labelledby</code>) du champ de formulaire&nbsp;;</li>
+                                <li>L’indication de champ obligatoire est donnée dans l’<a href="glossaire.html#etiquette">étiquette</a> du champ de formulaire&nbsp;;</li>
                                 <li>L’indication de champ obligatoire est donnée par un passage de texte lié par la propriété ARIA <code lang="en">aria-describedby</code>.</li>
                             </ul>
                         </li>
-                        <li id="test-11-10-2">Test 11.10.2&nbsp;: Chaque indication de champ obligatoire qui utilise les propriétés ARIA <code lang="en">aria-label</code>, <code lang="en">aria-required</code> ou l’attribut <code lang="en">required</code> doit être accompagnée d’une indication visuelle explicite dans l’<a href="glossaire.html#etiquette">étiquette</a> (balise <code lang="en">label</code>) ou dans un passage de texte lié au champ par la propriété ARIA <code lang="en">aria-describedby</code> ou <code lang="en">aria-labelledby</code>, cette règle est-elle respectée&nbsp;?</li>
+                        <li id="test-11-10-2">Test 11.10.2&nbsp;: Chaque indication de champ obligatoire qui utilise les propriétés ARIA <code lang="en">aria-label</code>, <code lang="en">aria-required</code> ou l’attribut <code lang="en">required</code> doit être accompagnée d’une indication visuelle explicite dans l’<a href="glossaire.html#etiquette">étiquette</a> ou dans un passage de texte lié au champ par la propriété ARIA <code lang="en">aria-describedby</code> ou <code lang="en">aria-labelledby</code>, cette règle est-elle respectée&nbsp;?</li>
                         <li id="test-11-10-3">Test 11.10.3&nbsp;: Chaque indication de champ obligatoire qui utilise un passage de texte lié par la propriété ARIA <code lang="en">aria-describedby</code> ou <code lang="en">aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>Le passage de texte est identifié <i>via</i> un attribut <code lang="en">id</code>&nbsp;;</li>
@@ -3056,7 +3074,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         </li>
                         <li id="test-11-10-4">Test 11.10.4&nbsp;: Pour chaque formulaire, les erreurs de saisie vérifient-elles une de ces conditions&nbsp;?
                             <ul>
-                                <li>L’erreur de saisie est indiquée dans l’<a href="glossaire.html#etiquette">étiquette</a> (balise <code lang="en">label</code>, attribut <code lang="en">title</code>, propriété ARIA <code lang="en">aria-label</code>, passage de texte lié <i>via</i> la propriété ARIA <code lang="en">aria-labelledby</code>) du <a href="glossaire.html#champ-de-saisie">champ de formulaire</a>&nbsp;;</li>
+                                <li>L’erreur de saisie est indiquée dans l’<a href="glossaire.html#etiquette">étiquette</a> du <a href="glossaire.html#champ-de-saisie">champ de formulaire</a>&nbsp;;</li>
                                 <li>L’erreur de saisie est indiquée par un passage de texte avant le champ de formulaire&nbsp;;</li>
                                 <li>Le champ de formulaire possède un <code lang="en">type</code> qui produit de manière automatique un message d’erreur de saisie&nbsp;;</li>
                                 <li>L’erreur de saisie est indiquée par un passage de texte lié par la propriété ARIA <code lang="en">aria-describedby</code>&nbsp;;</li>
@@ -3073,12 +3091,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         </li>
                         <li id="test-11-10-7">Test 11.10.7&nbsp;: Pour chaque formulaire, chaque champ obligatoire vérifie-t-il une de ces conditions&nbsp;?
                             <ul>
-                                <li>Le <a href="glossaire.html#type-et-format-de-donnees">type de données et/ou de format</a> est indiqué, si nécessaire, dans l’<a href="glossaire.html#etiquette">étiquette</a> (balise <code lang="en">label</code>, attribut <code lang="en">title</code>, propriété ARIA <code lang="en">aria-label</code>, texte lié <i>via</i> la propriété ARIA <code lang="en">aria-labelledby</code>) du champ&nbsp;;</li>
+                                <li>Le <a href="glossaire.html#type-et-format-de-donnees">type de données et/ou de format</a> est indiqué, si nécessaire, dans l’<a href="glossaire.html#etiquette">étiquette</a> du champ&nbsp;;</li>
                                 <li>Le type de données et/ou de format est indiqué, si nécessaire, par un passage de texte avant le <a href="glossaire.html#champ-de-saisie">champ de formulaire</a>&nbsp;;</li>
-                                <li>Le type de données et/ou de format est indiqué, si nécessaire, par un texte lié par la propriété ARIA <code lang="en">aria-describedby</code>.</li>
+                                <li>Le type de données et/ou de format est indiqué, si nécessaire, par un passage de texte lié par la propriété ARIA <code lang="en">aria-describedby</code>.</li>
                             </ul>
                         </li>
-                        <li id="test-11-10-8">Test 11.10.8&nbsp;: Chaque indication du <a href="glossaire.html#type-et-format-de-donnees">type de données et/ou de format</a> réalisée grâce à la propriété ARIA <code lang="en">aria-label</code> doit être accompagnée d’une indication visuelle explicite dans l’étiquette (balise <code lang="en">label</code>) ou dans un passage de texte lié au champ par la propriété ARIA <code lang="en">aria-describedby</code> ou <code lang="en">aria-labelledby</code>, cette règle est-elle respectée&nbsp;?</li>
+                        <li id="test-11-10-8">Test 11.10.8&nbsp;: Chaque indication du <a href="glossaire.html#type-et-format-de-donnees">type de données et/ou de format</a> réalisée grâce à la propriété ARIA <code lang="en">aria-label</code> doit être accompagnée d’une indication visuelle explicite dans l’étiquette ou dans un passage de texte lié au champ par la propriété ARIA <code lang="en">aria-describedby</code> ou <code lang="en">aria-labelledby</code>, cette règle est-elle respectée&nbsp;?</li>
                         <li id="test-11-10-9">Test 11.10.9&nbsp;: Chaque indication de <a href="glossaire.html#type-et-format-de-donnees">type de données et/ou de format</a> qui utilise un passage de texte lié par la propriété ARIA <code lang="en">aria-describedby</code> ou <code lang="en">aria-labelledby</code> vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>Le passage de texte est identifié <i>via</i> un attribut <code lang="en">id</code>&nbsp;;</li>
@@ -3194,7 +3212,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>Il existe un lien vers une page d’aide&nbsp;;</li>
                                 <li>Il existe des indications avant le formulaire&nbsp;;</li>
                                 <li>Il existe des indications avant les <a href="glossaire.html#champ-de-saisie">champs de formulaire</a>&nbsp;;</li>
-                                <li>Il existe des indications dans l’<a href="glossaire.html#etiquette">étiquette</a> (balise <code lang="en">label</code>, attribut <code lang="en">title</code>, propriété <code lang="en">aria-label</code>, passage de texte lié <i>via</i> la propriété <code lang="en">aria-labelledby</code>) du champ de formulaire&nbsp;;</li>
+                                <li>Il existe des indications dans l’<a href="glossaire.html#etiquette">étiquette</a> du champ de formulaire&nbsp;;</li>
                                 <li>Il existe des indications dans un passage de texte lié par la propriété ARIA <code lang="en">aria-describedby</code>&nbsp;;</li>
                                 <li>Un assistant est disponible.</li>
                             </ul>
@@ -3211,7 +3229,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>Un correcteur orthographique est disponible&nbsp;;</li>
                                 <li>Des suggestions de saisie sont disponibles avant le champ du formulaire&nbsp;;</li>
-                                <li>Des suggestions de saisie sont disponibles dans l’<a href="glossaire.html#etiquette">étiquette</a> (balise <code lang="en">label</code>, attribut <code lang="en">title</code>, propriété <code lang="en">aria-label</code>, passage de texte lié <i>via</i> la propriété <code lang="en">aria-labelledby</code>) du <a href="glossaire.html#champ-de-saisie">champ de formulaire</a>&nbsp;;</li>
+                                <li>Des suggestions de saisie sont disponibles dans l’<a href="glossaire.html#etiquette">étiquette</a> du <a href="glossaire.html#champ-de-saisie">champ de formulaire</a>&nbsp;;</li>
                                 <li>Des suggestions de saisie sont disponibles dans un passage de texte lié par la propriété ARIA <code lang="en">aria-describedby</code>.</li>
                             </ul>
                         </li>
@@ -3485,22 +3503,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="A">
                     <h3 id="crit-12-10"><em>Critère 12.10 [A]</em> Dans chaque page Web, les groupes de liens importants (menu, barre de navigation…) et la zone de contenu sont-ils identifiés ?</h3>
                     <ul>
-                        <li id="test-12-10-1">Test 12.10.1&nbsp;: Dans chaque page Web, chaque groupe de liens importants est-il implémenté dans une balise commune&nbsp;?</li>
-                        <li id="test-12-10-2">Test 12.10.2&nbsp;: Dans chaque page Web, chaque groupe de liens importants vérifie-t-il une de ces conditions&nbsp;?
-                            <ul>
-                                <li>La balise structurant le groupe de liens importants possède un attribut <code lang="en">id</code>&nbsp;;</li>
-                                <li>La balise structurant le groupe de liens importants est immédiatement précédée, dans le code source, d’une <a href="glossaire.html#ancre">ancre</a>&nbsp;;</li>
-                                <li>Le premier lien du groupe de liens est immédiatement précédé, dans le code source, d’une ancre.</li>
-                            </ul>
-                        </li>
-                        <li id="test-12-10-3">Test 12.10.3&nbsp;: Dans chaque page Web, la <a href="glossaire.html#zone-main">zone de contenu</a> vérifie-t-elle une de ces conditions&nbsp;?
-                            <ul>
-                                <li>La zone de contenu possède un attribut <code lang="en">id</code>&nbsp;;</li>
-                                <li>La zone de contenu est immédiatement précédée, dans le code source, d’une <a href="glossaire.html#ancre">ancre</a>&nbsp;;</li>
-                                <li>Le premier élément de la zone de contenu est immédiatement précédé, dans le code source, d’une ancre.</li>
-                            </ul>
-                        </li>
-                        <li id="test-12-10-4">Test 12.10.4&nbsp;: Dans chaque page Web, la structure du document vérifie-t-elle ces conditions&nbsp;?
+                        <li id="test-12-10-1">Test 12.10.1&nbsp;: Dans chaque page Web, la structure du document vérifie-t-elle ces conditions&nbsp;?
                             <ul>
                                 <li>La <a href="glossaire.html#zone-header">zone d’en-tête de la page</a> possède un rôle ARIA <code lang="en">banner</code>&nbsp;;</li>
                                 <li>Le <a href="glossaire.html#menu-de-navigation">menu de navigation</a> principal possède un rôle ARIA <code lang="en">navigation</code>&nbsp;;</li>
@@ -4018,7 +4021,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                 <section data-level="AAA">
                     <h3 id="crit-13-16"><em>Critère 13.16 [AAA]</em> Dans chaque page Web, les changements brusques de luminosité ou les effets de flash ont-ils une fréquence inférieure ou égale à 3 par seconde ?</h3>
                     <ul>
-                        <li id="test-13-16-1">Test 13.16.1&nbsp;: Dans chaque page Web, chaque <a href="glossaire.html#changements-brusques-de-luminosite">changement brusque de luminosité ou effet de flash</a> provoqué par une image animée (balise <code lang="en">img</code>, balise <code lang="en">svg</code>, balise <code lang="en">embed</code>, balise <code lang="en">canvas</code> ou balise <code lang="en">object</code>) a-t-il une fréquence inférieure ou égale à 3 par seconde&nbsp;?</li>
+                        <li id="test-13-16-1">Test 13.16.1&nbsp;: Dans chaque page Web, chaque <a href="glossaire.html#changements-brusques-de-luminosite">changement brusque de luminosité ou effet de flash</a> provoqué par une image (balise <code lang="en">img</code>, balise <code lang="en">svg</code>, balise <code lang="en">embed</code>, balise <code lang="en">canvas</code> ou balise <code lang="en">object</code>) a-t-il une fréquence inférieure ou égale à 3 par seconde&nbsp;?</li>
                         <li id="test-13-16-2">Test 13.16.2&nbsp;: Dans chaque page Web chaque <a href="glossaire.html#changements-brusques-de-luminosite">changement brusque de luminosité ou effet de flash</a> provoqué par un <a href="glossaire.html#script">script</a> a-t-il une fréquence inférieure ou égale à 3 par seconde&nbsp;?</li>
                         <li id="test-13-16-3">Test 13.16.3&nbsp;: Dans chaque page Web, chaque <a href="glossaire.html#changements-brusques-de-luminosite">changement brusque de luminosité ou effet de flash</a> provoqué par une mise en forme CSS a-t-il une fréquence inférieure ou égale à 3 par seconde&nbsp;?</li>
                     </ul>
@@ -4073,7 +4076,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
     </main>
     <footer id="footer" role="contentinfo">
         <div class="page">
-            <p>RGAA 3.0 2016 - juin 2016 - <a href="mentions.html">Mentions légales</a>.</p>
+            <p>RGAA 3.0 2017 - Juillet 2017 - <a href="mentions.html">Mentions légales</a>.</p>
             <p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
         </div>
     </footer>

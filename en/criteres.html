@@ -146,7 +146,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 Test 1.1.2: Does each <a href="./glossaire.html#zone-image-reactive">area</a> (<code>area</code> tag) of an <a href="./glossaire.html#image-reactive">image map</a> have an <code>alt</code> attribute?
                             </li>
                             <li id="test-1-1-3">
-                                Test 1.1.3: Does each form button (<code>input</code> tag with the <code>type="image"</code> attribute) have an <code>alt</code> attribute?
+                                Test 1.1.3: Does each image button (<code>input</code> tag with the <code>type="image"</code> attribute) have an <code>alt</code> attribute?
                             </li>
                             <li id="test-1-1-4">
                                 Test 1.1.4: Does each clickable area (<code>area</code> tag) of a server-side image map have an equivalent link in the page?
@@ -182,6 +182,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <ul>
                                     <li>The <code>object</code> tag has an attribut aria-hidden="true" ;</li>
                                     <li>The text alternative between <code>object</code> and <code>/object</code> is empty ;</li>
+									<li>The <code>object</code> tag or one of its children has no <code>title</code> attribute.</li>
                                     <li>The <code>object</code> tag or one of its children do not have ARIA role, properties or state, that aims at labeling the image (for example : <code>aria-label</code>, <code>aria-describedby</code>, <code>aria-labelledby</code>).</li>
                                 </ul>
                             </li>
@@ -199,6 +200,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <ul>
                                     <li>The <code>canvas</code> tag has an <code>aria-hidden="true"</code>;</li>
                                     <li>The text content between <code>canvas</code> and <code>/canvas</code> is empty;</li>
+									<li>The <code>canvas</code> tag or one of its children has no <code>title</code> attribute;</li>
                                     <li>The <code>canvas</code> tag, or one of its children, has no ARIA role, property or state, that aims at labeling the canvas image (<code>aria-label</code>, <code>aria-describedby</code>, or <code>aria-labelledby</code>, for example).</li>
                                 </ul>
                             </li>
@@ -206,6 +208,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 Test 1.2.6: Does each decorative embedded image (<code>embed</code> tag with attribute <code>type="image/</code>..."), not conveying any information, meet the following conditions:
                                 <ul>
                                     <li>The <code>embed</code> tag has an <code>aria-hidden="true"</code>;</li>
+									<li>The <code>object</code> tag or one of its children has no <code>title</code> attribute;</li>
                                     <li>The <code>embed</code> tag, or one of its children, has no ARIA role, property or state, that aims at labeling the embed image (<code>aria-label</code>, <code>aria-describedby</code>, or <code>aria-labelledby</code>, for example).</li>
                                 </ul>
                             </li>
@@ -239,7 +242,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 </ul>
                             </li>
                             <li id="test-1-3-3">
-                                Test 1.3.3: Does each button associated with an image (<code>input</code> tag with the attribute <code>type="image"</code>), and with an <code>alt</code> attribute, meet the following conditions (except in <a title="Particular cases for criterion 1.3"  href="./cas-particuliers.html#crit-1-3">particular</a> cases)?
+                                Test 1.3.3: Does each image button (<code>input</code> tag with the attribute <code>type="image"</code>), and with an <code>alt</code> attribute, meet the following conditions (except in <a title="Particular cases for criterion 1.3"  href="./cas-particuliers.html#crit-1-3">particular</a> cases)?
                                 <ul>
                                     <li>The <code>alt</code> attribute value is relevant;</li>
                                     <li>If present, the value of the <code>title</code> attribute matches the value of the <code>alt</code> attribute;</li>
@@ -283,7 +286,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <ul>
                                     <li>The <code>svg</code> tag has a <code>role=\"img\"</code>;</li> 
                                     <li>The <code>svg</code> tag has an <code>aria-label</code> property with a relevant value, matching the <code>title</code> attribute of the <code>svg</code> tag, if present;</li>
-                                    <li>The <code>svg</code> tag has a <code>desc</code> tag with a relevant content, equal to the <code>aria-label</code> and <code>title</code> attribute of the <code>svg</code> tag, if present.</li>
+                                    <li>The <code>svg</code> tag has a <code>desc</code> tag with a relevant content, equal to the <code>aria-label</code>.</li>
                                 </ul>
                             </li>
                             <li id="test-1-3-9">
@@ -383,8 +386,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 Test 1.4.8: Does each vector image (<code>svg</code> tag), used as a CAPTCHA or test image, with a text alternative, meet the following conditions:
                                 <ul>
                                     <li>The <code>svg</code> tag has a <code>role=\"img\"</code>;</li> 
-                                    <li>The text alternative provided via the <code>aria-label</code> describes the nature and purpose of the image, and matches the value of the <code>title</code> attribute of the <code>svg</code> tag, if present;</li>
-                                    <li>The text alternative provided via the <code>desc</code> tag describes the nature and purpose of the image, and matches the value of the <code>title</code> attribute of the <code>svg</code> tag, if present.</li>
+                                    <li>The text alternative provided via the <code>aria-label</code> describes the nature and purpose of the image;</li>
+                                    <li>The text alternative provided via the <code>desc</code> tag describes the nature and purpose of the image;</li>
+									<li>There is <a target="_blank" title="adjacent link Glossary (new window)" href="http://rgaa.tanaguru.com/en/glossaire.html#lien-adjacent">adjacent link</a>that allows access to an alternative, where the content allows to understand the image nature and operation ,and identical to the <code>aria-label</code> property.</li>
                                 </ul>
                             </li>
                             <li id="test-1-4-9">
@@ -407,7 +411,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 </ul>
                             </li>
                             <li id="test-1-4-12">
-                                Test 1.4.12: For each bitmap image (<code>canvas</code> tag), used as a CAPTCHA or test image, with a text alternative, is this alternative correctly rendered by assistive technologies?
+                                Test 1.4.12: For each bitmap image (<code>canvas</code> tag), used as a CAPTCHA or test image, with an alternative (content between <canvas> and </canvas>),, is this alternative correctly rendered by assistive technologies?
                             </li>
                         </ul>
                         <aside>
@@ -486,7 +490,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 Test 1.6.6: Does each vector image (<code>svg</code> tag) <a href="./glossaire.html#image-porteuse-dinformation">conveying information</a> needing a detailed description, meet one of the following conditions?
                                 <ul>
                                     <li>There is an <code>aria-label</code> property referencing a detailed description adjacent to the vector image;</li>
-                                    <li>There is a <code>desc</code> tag containing a reference to a detailed description adjacent to the vector image;</li>
+                                    <li>The <code>title</code> tag contain a detailed description;</li>
                                     <li>There is a <code>desc</code> tag containing a detailed description;</li>
                                     <li>There is an <a href="./glossaire.html#lien-adjacent">adjacent link</a> (URL or anchor) giving access to the detailed description.</li>
                                 </ul>
@@ -520,7 +524,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-1-7"><em>Criterion 1.7 [A]</em> For each <a href="./glossaire.html#image-porteuse-dinformation">image conveying information</a> with a <a href="./glossaire.html#description-detaillee-image">detailed description</a>, is this description relevant?</h3>
                         <ul>
                             <li id="test-1-7-1">
-                                Test 1.7.1: Does each <a href="./glossaire.html#image-porteuse-dinformation">image conveying information</a> (<code>img</code> or <code>input</code> tag with the attribute <code>type="image"</code>) with a <a href="./glossaire.html#description-detaillee-image">detailed description</a> meet one of the following conditions?
+                                Test 1.7.1: Does each <a href="./glossaire.html#image-porteuse-dinformation">image conveying information</a> (<code>img</code> or <code>input</code> tag with the attribute <code>type="image"</code>) with a <a href="./glossaire.html#description-detaillee-image">detailed description</a> meet the following conditions?
                                 <ul>
                                     <li>The <a href="./glossaire.html#description-detaillee-image">detailed description</a> referenced via the URL in the <code>longdesc</code> attribute is relevant</li>
                                     <li>The <a href="./glossaire.html#description-detaillee-image">detailed description</a> available in the page and identified in the <code>alt</code> attribute is relevant</li>
@@ -528,31 +532,31 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 </ul>
                             </li>
                             <li id="test-1-7-2">
-                                Test 1.7.2: Does each image button (<code>input</code> tag with the attribute <code>type=\""image/\""</code>) with a detailed description meet one of the following conditions? 
+                                Test 1.7.2: Does each image button (<code>input</code> tag with the attribute <code>type=\""image/\""</code>) with a detailed description meet the following conditions? 
                                 <ul>
-                                    <li>The detailed description referenced via the URL in the <code>longdesc</code> attribute is relevant;</li> 
                                     <li>The detailed description in the page and reported in the <code>alt</code> attribute is relevant;</li> 
                                     <li>The detailed description available via an <a href="./glossaire.html#lien-adjacent">adjacent link</a> is relevant;</li>
                                     <li>The content text referenced via the <code>aria-describedby</code> attribute.</li>
                                 </ul>
                             </li>
                             <li id="test-1-7-3">
-                                Test 1.7.3: Does each <a href="./glossaire.html#image-objet">image object</a> (<code>object</code> tag with the attribute <code>type="image/"</code>) with a detailed description meet one of the following conditions?
+                                Test 1.7.3: Does each <a href="./glossaire.html#image-objet">image object</a> (<code>object</code> tag with the attribute <code>type="image/"</code>) with a detailed description meet the following conditions?
                                 <ul>
                                     <li>The detailed description adjacent to the embedded image is relevant;</li>
                                     <li>The detailed description available via an <a href="./glossaire.html#lien-adjacent">adjacent link</a> is relevant.</li>
                                 </ul>
                             </li>
                             <li id="test-1-7-4">
-                                Test 1.7.4: Does each embedded image (<code>embed</code> tag with the attribute <code>type="image/"</code>) with a detailed description meet one of the  following conditions?
+                                Test 1.7.4: Does each embedded image (<code>embed</code> tag with the attribute <code>type="image/"</code>) with a detailed description meet the  following conditions?
                                 <ul>
                                     <li>The detailed description adjacent to the embedded image is relevant;</li>
                                     <li>The detailed description available via an <a href="./glossaire.html#lien-adjacent">adjacent link</a> is relevant.</li>
                                 </ul>
                             </li>
                             <li id="test-1-7-5">
-                                Test 1.7.5: Does each vector image (<code>svg</code> tag) with a detailed description meet one of the following conditions? 
+                                Test 1.7.5: Does each vector image (<code>svg</code> tag) with a detailed description meet the following conditions? 
                                 <ul>
+									<li>The detailed description adjacent to the vector image available via an <code lang="en">aria-label</code> attribut or a <code lang="en">desc</code> tag is relevant;</li>
                                     <li>The detailed description adjacent to the vector image is relevant;</li>
                                     <li>The detailed description available via an <a href="./glossaire.html#lien-adjacent">adjacent link</a> is relevant.</li>
                                 </ul>
@@ -561,7 +565,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 Test 1.7.6 : For each vector image (<code>svg</code> tag) with a detailed description, is this detailed description correctly rendered by assistive technologies?
                             </li>
                             <li id="test-1-7-7">
-                                Test 1.7.7: Does each bitmap image (<code>canvas</code> tag) with a detailed description meet one of the following conditions?
+                                Test 1.7.7: Does each bitmap image (<code>canvas</code> tag) with a detailed description meet the following conditions?
                                 <ul>
                                     <li>The detailed description adjacent to the bitmap image is relevant;</li> 
                                     <li>The detailed description available between <code>canvas</code> and <code>/canvas</code> is relevant;</li>
@@ -838,6 +842,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                     <li>The user can display the text with a contrast ratio of at least 3:1, via a provided mechanism</li>
                                 </ul>
                             </li>
+							<li id="test-3-3-5">Test 3.3.5&nbsp;: Does each mechanism, to display the text with a compliant contrast ratio, has a contrast ratio of at least 4.5:1&nbsp;?
+                        </li>
                         </ul>
                         <aside>
                             <h4>Mapping with WCAG&nbsp;2.0</h4>
@@ -877,6 +883,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                     <li>The user can display the text with a contrast ratio of at least 4.5:1, via a provided mechanism</li>
                                 </ul>
                             </li>
+							<li id="test-3-4-5">Test 3.4.5&nbsp;: Does each mechanism, to display the text with a compliant contrast ratio, has a contrast ratio of at least 7:1&nbsp;?
                         </ul>
                         <aside>
                             <h4>Mapping with WCAG&nbsp;2.0</h4>
@@ -936,7 +943,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 Test 4.1.2: Does each prerecorded video-only <a href="./glossaire.html#media-temporel">time-based media</a> meet one of the following conditions if necessary (except in <a title="Particular cases for criterion 4.1" href="./cas-particuliers.html#crit-4-1">particular cases</a>)?
                                 <ul>
                                     <li>There is an <a href="./glossaire.html#version-alternative-audio-seulement">alternative audio-only version</a> that is accessible via an <a href="./glossaire.html#lien-adjacent">adjacent link</a> (a URL or an  <a href="./glossaire.html#ancre">anchor</a>)</li>
-                                    <li>There is an adjacent <a href="./glossaire.html#transcription-textuelle">text transcript</a> that can be clearly identified</li>
+                                    <li>There is an adjacent <a href="./glossaire.html#version-alternative-audio-seulement">alternative audio-only version</a> that can be clearly identified</li>
+									<li>There is an <a href="./glossaire.html#transcription-textuelle">text transcript</a> that is accessible via an <a href="./glossaire.html#lien-adjacent">adjacent link</a></li>
+									<li>There is an adjacent <a href="./glossaire.html#transcription-textuelle">text transcript</a> that can be clearly identified</li>
                                     <li>A synchronized <a href="./glossaire.html#audiodescription-synchronisee">audio description</a> is available</li>
                                     <li>There is an alternative version with a synchronized audio description that is accessible via an <a href="./glossaire.html#lien-adjacent">adjacent link</a> (a URL or an  <a href="./glossaire.html#ancre">anchor</a>)</li>
                                 </ul>
@@ -1392,14 +1401,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-4-22"><em>Criterion 4.22 [A]</em> Is each <a href="./glossaire.html#media-temporel">time-based media</a> and each <a href="./glossaire.html#media-non-temporel">non time-based media</a> compatible with assistive technologies (except in <a title="Particular cases for criterion 4.22" href="./cas-particuliers.html#crit-4-22">particular cases</a>)?</h3>
                         <ul>
                             <li id="test-4-22-1">
-                                Test 4.22.1: Does each <a href="./glossaire.html#media-temporel">time-based media</a> and each <a href="./glossaire.html#media-non-temporel">non time-based media</a>, inserted via an <code>object</code> or <code>embed</code> tag, meet one of the following conditions (except in <a title="Particular cases for criterion 4.22" href="./cas-particuliers.html#crit-4-12">particular cases</a>)?
+                                Test 4.22.1: Does each <a href="./glossaire.html#media-temporel">time-based media</a> and each <a href="./glossaire.html#media-non-temporel">non time-based media</a>, meet one of the following conditions (except in <a title="Particular cases for criterion 4.22" href="./cas-particuliers.html#crit-4-12">particular cases</a>)?
                                 <ul>
                                     <li>The <a href="./glossaire.html#changement-etat">name, role, value, settings and states changes</a> of the interface components are accessible to assistive technologies via an accessibility API </li>
                                     <li>An alternative <a href="./glossaire.html#compatible-technologies-assistance">compatible with an accessibility API</a> provides the same functionalities</li>
                                 </ul>
                             </li>
                             <li id="test-4-22-2">
-                                Test 4.22.2: Does each <a href="./glossaire.html#media-temporel">time-based media</a> and each <a href="./glossaire.html#media-non-temporel">non time-based media</a>, inserted via an <code>object</code> or <code>embed</code> tag, with an alternative <a href="./glossaire.html#compatible-technologies-assistance">compatible with an accessibility API</a>, meet one of the following conditions? 
+                                Test 4.22.2: Does each <a href="./glossaire.html#media-temporel">time-based media</a> and each <a href="./glossaire.html#media-non-temporel">non time-based media</a> with an alternative <a href="./glossaire.html#compatible-technologies-assistance">compatible with an accessibility API</a>, meet one of the following conditions? 
                                 <ul>
                                     <li>The alternative is adjacent to the time-based media, or the non time-based media</li>
                                     <li>The alternative can be reached via an <a href="./glossaire.html#lien-adjacent">adjacent link</a> (a URL or an  <a href="./glossaire.html#ancre">anchor</a>)</li>
@@ -1498,7 +1507,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-5-5"><em>Criterion 5.5 [A]</em> For each <a href="./glossaire.html#tableau-de-donnees">data table</a> with a <a href="./glossaire.html#titre-tableau">title</a>, is this title relevant?</h3>
                         <ul>
                             <li id="test-5-5-1">
-                                Test 5.5.1: For each <a href="./glossaire.html#tableau-de-donnees">data table</a> (<code>table</code> tag) with a <code>caption</code> tag, does the content of this tag provide the <a href="./glossaire.html#titre-tableau">title</a> of the table?
+                                Test 5.5.1: For each <a href="./glossaire.html#tableau-de-donnees">data table</a> (<code>table</code> tag) with a title implemented via a <code>caption</code> tag, does the <a href="./glossaire.html#titre-tableau">title</a> relevant?
                             </li>
                         </ul>
                         <aside>
@@ -1563,7 +1572,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <li id="test-5-8-1">
                                 Test 5.8.1: Does each <a href="./glossaire.html#tableau-de-mise-en-forme">layout table</a> (<code>table</code> tag) meet the following conditions:
                                 <ul>
-                                    <li>The <a href="./glossaire.html#tableau-de-mise-en-forme">layout table</a> (<code>table</code> tag) does not have any <code>caption</code>, <code>th</code>, <code>thead</code>, <code>tfoot</code> tags</li>
+                                    <li>The <a href="./glossaire.html#tableau-de-mise-en-forme">layout table</a> (<code>table</code> tag) does not have any <code>caption</code>, <code>th</code>, <code>thead</code>, <code>tfoot</code>, <code lang="en">tfoot</code> tags</li>
                                     <li>The cells of the <a href="./glossaire.html#tableau-de-mise-en-forme">layout table</a> (<code>td</code> tag) have no <code>scope</code>, <code>headers</code>, <code>colgroup</code>, <code>axis</code> attributes.</li>
                                 </ul>
                             </li>
@@ -1680,17 +1689,21 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 </ul>
                             </li>
                             <li id="test-6-3-2">
-                                Test 6.3.2: Is each text for an <a href="./glossaire.html#lien-image">image link</a> <a href="./glossaire.html#lien-explicite-hors-contexte">explicit out of context</a> (except in <a title="Particular cases for criterion 6.3" href="./cas-particuliers.html#crit-6-1">particular cases</a>)?
-                            </li>
+                                Test 6.3.2: Is each text for an <a href="./glossaire.html#lien-image">image link</a> meet one of the following conditions (except in <a title="Particular cases for criterion 6.3" href="./cas-particuliers.html#crit-6-1">particular cases</a>)?
+                                <ul>
+                                    <li>The link text is explicit out of its context</li>
+                                    <li>The user can get an explicit link text out of its context, via a provided mechanism</li>
+                                    <li>The content of the link title (<code>title</code> attribute) is explicit out of its context</li>
+                                </ul>                            
+							</li>
                             <li id="test-6-3-3">
-                                Test 6.3.3: Is each <a href="./glossaire.html#intitule-de-lien">link text</a> such as a <a href="./glossaire.html#zone-cliquable">clickable area</a> (content of the <code>alt</code> attribute of an <code>area</code> tag) <a href="./glossaire.html#lien-explicite-hors-contexte">explicit out of context</a> (except  in <a title="Particular cases for criterion 6.3" href="./cas-particuliers.html#crit-6-1">particular cases</a>)?
-                            </li>
-                            <li id="test-6-3-4">
-                                Test 6.3.4: Is each <a href="./glossaire.html#lien-composite">combined link</a> (content of the text and of the <code>alt</code> attribute) <a href="./glossaire.html#lien-explicite-hors-contexte">explicit out of context</a> (except in <a title="Particular cases for criterion 6.3" href="./cas-particuliers.html#crit-6-1">particular cases</a>)?
-                            </li>
-                            <li id="test-6-3-5">
-                                Test 6.3.5: Is each <a href="./glossaire.html#lien-vectoriel">vector link</a> (content of the alternative of the vector image, <code>svg</code> tag) <a href="./glossaire.html#lien-explicite-hors-contexte">explicit out of context</a> (except in <a title="Particular cases for criterion 6.3" href="./cas-particuliers.html#crit-6-1">particular cases</a>)? 
-                            </li>
+                                Test 6.3.3: Is each <a href="./glossaire.html#lien-composite">combined link</a> (content of the text and of the <code>alt</code> attribute) <a href="./glossaire.html#lien-explicite-hors-contexte">explicit out of context</a> (except in <a title="Particular cases for criterion 6.3" href="./cas-particuliers.html#crit-6-1">particular cases</a>)?
+								<ul>
+                                    <li>The link text is explicit out of its context</li>
+                                    <li>The user can get an explicit link text out of its context, via a provided mechanism</li>
+                                    <li>The content of the link title (<code>title</code> attribute) is explicit out of its context</li>
+                                </ul> 
+							</li>
                         </ul>
                         <aside>
                             <h4>Mapping with WCAG&nbsp;2.0</h4>
@@ -1784,7 +1797,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 Test 7.1.4: Does each <a href="./glossaire.html#changement-role-natif">change of native role of an HTML element</a> respect the rules and recommendations of the HTML5 specifications, and the associated technical notes?
                             </li>
                             <li id="test-7-1-5">
-                                Test 7.1.5: Does each <a href="./glossaire.html#script">script</a> generating or controlling an interface component, via roles, states or properties defined by the ARIA API, meet one of the following conditions? 
+                                Test 7.1.5: Does each <a href="./glossaire.html#script">script</a> generating or controlling an interface component, meet one of the following conditions? 
                                 <ul>
                                     <li>The interface component is <a href="./glossaire.html#correctement-restitue">correctly rendered</a> by assistive technologies</li>
                                     <li>An accessible alternative provides access to the same functionalities</li>
@@ -1797,6 +1810,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                     <li>An accessible alternative provides access to the same functionalities</li>
                                 </ul>
                             </li>
+							<li id="test-7-1-7">Test 7.1.7&nbsp;: Does each <a href="./glossaire.html#script">script</a> generating or controlling an interface component meet one of the following conditions &nbsp;?
+                            <ul>
+                                <li>The interface component has a relevant name&nbsp;;</li>
+                                <li>The interface component has a relevant aria role.</li>
+                            </ul>
+                        </li>
                         </ul>
                         <p><strong>Technical note:</strong> read the <a href="./notes-techniques.html#crit-7-1">technical note about the alternatives to scripts</a>.</p>
                         <aside>
@@ -2079,12 +2098,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-8-10"><em>Criterion 8.10 [A]</em> On each web page, are changes in <a href="./glossaire.html#sens-de-lecture">reading direction</a> identified?</h3>
                         <ul>
                             <li id="test-8-10-1">
-                                Test 8.10.1: On each web page, does each text for which the reading direction is different from the default <a href="./glossaire.html#sens-de-lecture">reading direction</a> meet the following conditions:
-                                <ul>
-                                    <li>The text is contained in an element with a <code>dir</code> attribute</li>
-                                    <li>The value of the <code>dir</code> attribute is valid (<code>rtl</code> or <code>ltr</code>)</li>
-                                    <li>The value of the <code>dir</code> attribute is relevant</li>
-                                </ul>
+                                Test 8.10.1: On each web page, does each text for which the reading direction is different from the default <a href="./glossaire.html#sens-de-lecture">reading direction</a> is contained in an tag with a dir attribute &nbsp;?
                             </li>
                             <li id="test-8-10-2">
                                 Test 8.10.2 : On each Web page, does each change reading direction (<code>dir</code> attribute) meet the following conditions:
@@ -2330,13 +2344,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         </aside>
                     </section>
                     <section data-level="AA">
-                        <h3 id="crit-10-4"><em>Criterion 10.4 [AA]</em> On each web page, is text still readable when <a href="./glossaire.html#taille-des-caracteres">character size</a> is increased until at least 200%?</h3>
+                        <h3 id="crit-10-4"><em>Criterion 10.4 [AA]</em> On each web page, is text still readable when <a href="./glossaire.html#taille-des-caracteres">character size</a> is increased until at least 200% (except in particular cases)?</h3>
                         <ul>
                             <li id="test-10-4-1">
-                                Test 10.4.1: In the <a href="./glossaire.html#feuille-de-style">style sheets</a> of the <a href="./glossaire.html#site-web">website</a>, non relative units (pt, pc, mm, cm, in) must not be used for the media types screen, tv, handheld, projection. Has this rule been followed?
+                                Test 10.4.1: In the <a href="./glossaire.html#feuille-de-style">style sheets</a> of the <a href="./glossaire.html#site-web">website</a>, non relative units (pt, pc, mm, cm, in) must not be used for the media types screen, tv, handheld, projection. Has this rule been followed (except in particular cases)?
                             </li>
                             <li id="test-10-4-2">
-                                Test 10.4.2: In the <a href="./glossaire.html#feuille-de-style">style sheets</a> of the <a href="./glossaire.html#site-web">website</a>, for the media types screen, tv, handheld, projection, do font sizes use relative units only?
+                                Test 10.4.2: In the <a href="./glossaire.html#feuille-de-style">style sheets</a> of the <a href="./glossaire.html#site-web">website</a>, for the media types screen, tv, handheld, projection, do font sizes use relative units only (except in particular cases)?
                             </li>
                             <li id="test-10-4-3">
                                 Test 10.4.3: On each web page, increasing the <a href="./glossaire.html#taille-des-caracteres">character size</a> up to 200% must not cause loss of information. Has this rule been followed? 
@@ -2637,11 +2651,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                     <li>The label has an <code>id</code> attribute</li>
                                     <li>The value of the <code>id</code> attribute is unique</li>
                                     <li>The value of the ARIA <code>aria-labelledby</code> property matches the value of the label <code>id</code> attribute</li>
-                                    <li>The label associated with the <code>aria-describedby</code> property is visible on focus at less.</li>
                                 </ul>
                             </li>
                             <li id="test-11-1-4">
-                                Test 11.1.4: Does each form field that uses a property ARIA <code>aria-label</code> must be accompanied by a visible text passage and attached to the field to understand the nature of the expected input. Does this rule is respected?
+                                Test 11.1.4: Does each form field that uses a property ARIA <code>aria-label</code> or <code>aria-labelledby</code>, if necessary, is accompanied by a visible text passage and attached to the field to understand the nature of the expected input ?
                             </li>
                             <li id="test-11-1-5">
                                 Test 11.1.4: Does each form field that uses a <code>title</code> attribute, meet the following conditions: 
@@ -2713,7 +2726,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-11-5"><em>Criterion 11.5 [A]</em> In each form, is the <a href="./glossaire.html#bloc-dinformations-de-meme-nature">information of same nature</a> grouped together, if necessary?</h3>
                         <ul>
                             <li id="test-11-5-1">
-                                Test 11.5.1: In each form, is the <a href="./glossaire.html#bloc-dinformations-de-meme-nature">information of same nature</a> grouped together via a <code>fieldset</code> tag, if necessary?
+                                Test 11.5.1: In each form, is the <a href="./glossaire.html#bloc-dinformations-de-meme-nature">information of same nature</a> grouped together, if necessary?
                             </li>
                         </ul>
                         <aside>
@@ -2726,7 +2739,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-11-6"><em>Criterion 11.6 [A]</em> In each form, does each form field grouping have a legend?</h3>
                         <ul>
                             <li id="test-11-6-1">
-                                Test 11.6.1: Is each form field grouping (<code>fieldset</code> tag) followed by a legend (<code>legend</code> tag) in the source code?
+                                Test 11.6.1: Is each form field grouping have a legend?
                             </li>
                         </ul>
                         <aside>
@@ -2739,7 +2752,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-11-7"><em>Criterion 11.7 [A]</em> In each form, is each legend, related to a form field grouping, relevant?</h3>
                         <ul>
                             <li id="test-11-7-1">
-                                Test 11.7.1: In each form, is each legend (<code>legend</code> tag), related to a form field grouping (<code>fieldset</code> tag), relevant? 
+                                Test 11.7.1: In each form, is each legend, related to a form field grouping, relevant? 
                             </li>
                         </ul>
                         <aside>
@@ -2771,7 +2784,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-11-9"><em>Criterion 11.9 [A]</em> In each form, is the text of each <a href="./glossaire.html#bouton-formulaire">button</a> relevant?</h3>
                         <ul>
                             <li id="test-11-9-1">
-                                Test 11.9.1: In each form, does the text of each <a href="./glossaire.html#bouton-formulaire">button</a> meet one of the following conditions? 
+                                Test 11.9.1: In each form, does the text of each <a href="./glossaire.html#bouton-formulaire">button</a> meet the following conditions? 
                                 <ul>
                                     <li>The content of the <code>value</code> attribute of the form buttons of type <code>submit</code>, <code>reset</code> or <code>button</code> is relevant</li>
                                     <li>The content of the <code>button</code> tag is relevant</li>
@@ -2785,7 +2798,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <ul>
                                     <li>The referenced chunk of text has an <code>id</code> attribute</li>
                                     <li>The value of the <code>id</code> attribute is unique</li>
-                                    <li>The value of the ARIA property <code>aria-labelledby</code> matches the value of the <code>id</code> attribute of the chunk of text used to create the label</li>
+                                    <li>The value of the ARIA property <code>aria-labelledby</code> matches the value of the <code>id</code> attribute of the chunk of text</li>
                                     <li>The chunk of text is relevant</li>
                                 </ul>
                             </li>
@@ -2805,12 +2818,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                     <li>The mandatory field indication is provided via a chunk of text before the form field</li>
                                     <li>The mandatory field indication is provided via a "<code>required</code>" attribute</li>
                                     <li>The mandatory field indication is provided via an <code>aria-required</code> ARIA property</li>
-                                    <li>The mandatory field indication is provided via the label (<code>label</code> tag, or <code>title</code> attribute, or <code>aria-label</code> property, or labelling chunk of text identified via the <code>aria-labelledby</code> property) of the form field</li>
+                                    <li>The mandatory field indication is provided via the label of the form field</li>
                                     <li>The mandatory field indication is provided via a chunk of text, tied to the form field via the <code>aria-describedby</code> ARIA property</li>
                                 </ul>
                             </li>
                             <li id="test-11-10-2">
-                                Test 11.10.2: Each mandatory field indication based on the ARIA properties <code>aria-label</code>, <code>aria-required</code>, or the "<code>required</code>" attribute, must have an explicit visual cue in its label (<code>label</code> tag) or in a chunk of text tied to the form field via the ARIA property <code>aria-describedby</code> or <code>aria-labelledby</code>. Has this rule been followed?
+                                Test 11.10.2: Each mandatory field indication based on the ARIA properties <code>aria-label</code>, <code>aria-required</code>, or the "<code>required</code>" attribute, must have an explicit visual cue in its label or in a chunk of text tied to the form field via the ARIA property <code>aria-describedby</code> or <code>aria-labelledby</code>. Has this rule been followed?
                             </li>
                             <li id="test-11-10-3">
                                 Test 11.10.3: Does each mandatory field indication provided via a chunk of text tied by an ARIA property <code>aria-describedby</code> or <code>aria-labelledby</code> meet the following conditions?
@@ -2824,7 +2837,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <li id="test-11-10-4">
                                 Test 11.10.4: For each form, do the input errors meet one of the following conditions? 
                                 <ul>
-                                    <li>The input error message is provided via the label (<code>label</code> tag, or <code>title</code> attribute, or <code>aria-label</code> property, or labelling chunk of text identified via the <code>aria-labelledby</code> property) of the form field</li>
+                                    <li>The input error message is provided via the label of the form field</li>
                                     <li>The input error message is provided via a chunk of text before the form field</li>
                                     <li>The form field has a type that automatically generates an input error message</li>
                                     <li>The input error message is provided via a chunk of text tied to the form field via the ARIA property <code>aria-describedby</code></li>
@@ -2845,13 +2858,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <li id="test-11-10-7">
                                 Test 11.10.7: For each form, does each mandatory field meet one of the following conditions?
                                 <ul>
-                                    <li>The data type and/or format is provided, if necessary, via the field label (<code>label</code> tag, or <code>title</code> attribute, or <code>aria-label</code> property, or labelling chunk of text identified via the <code>aria-labelledby</code> property)</li>
+                                    <li>The data type and/or format is provided, if necessary, via the field label</li>
                                     <li>The data type and/or format is provided, if necessary, via a chunk of text before the form field </li>
                                     <li>The data type and/or format is provided via a chunk of text, tied to the form field via the <code>aria-describedby</code> ARIA property</li>
                                 </ul>
                             </li>
                             <li id="test-11-10-8">
-                                Test 11.10.8: Each data type and/or format indication based on the ARIA properties <code>aria-label</code> must have an explicit visual cue in its label (<code>label</code> tag) or in a chunk of text tied to the form field via the ARIA property <code>aria-describedby</code> or <code>aria-labelledby</code>. Has this rule been followed?
+                                Test 11.10.8: Each data type and/or format indication based on the ARIA properties <code>aria-label</code> must have an explicit visual cue in its label or in a chunk of text tied to the form field via the ARIA property <code>aria-describedby</code> or <code>aria-labelledby</code>. Has this rule been followed?
                             </li>
                             <li id="test-11-10-9">
                                 Test 11.10.9: Does each data type and/or format indication provided via a chunk of text tied by an ARIA property <code>aria-describedby</code> or <code>aria-labelledby</code> meet the following conditions? 
@@ -2951,7 +2964,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                     <li>There is a link to a help page</li>
                                     <li>Indications before the form are available</li>
                                     <li>Indications before form fields are available</li>
-                                    <li>Indications are provided via the form field label (<code>label</code> tag, or title attribute, or <code>aria-label</code> property, or labelling chunk of text identified via the <code>aria-labelledby</code> property)</li>
+                                    <li>Indications are provided via the form field label</li>
                                     <li>Indications are provided via a chunk of text, tied to the form field via the <code>aria-describedby</code> ARIA property</li>
                                     <li>an assistant is available</li>
                                 </ul>
@@ -2972,7 +2985,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <ul>
                                     <li>A spell checking tool is available</li>
                                     <li>Input suggestions are provided before the form field</li>
-                                    <li>Input suggestions are provided via the form field label (<code>label</code> tag, or <code>title</code> attribute, or <code>aria-label</code> property, or labelling chunk of text identified via the <code>aria-labelledby</code> property)</li>
+                                    <li>Input suggestions are provided via the form field label</li>
                                     <li>Input suggestions are provided via a chunk of text, tied to the form field via the <code>aria-describedby</code> ARIA property</li>
                                 </ul>
                             </li>
@@ -3202,26 +3215,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-12-10"><em>Criterion 12.10 [A]</em> On each web page, are groups of important links (menu, navigation bar) and the <a href="./glossaire.html#zone-main">main content area</a> identified (except in <a title="Particular cases for criterion 12.10" href="./cas-particuliers.html#crit-12-10">particular cases</a>)?</h3>
                         <ul>
                             <li id="test-12-10-1">
-                                Test 12.10.1: On each web page, is each group of important links implemented in a single tag?
-                            </li>
-                            <li id="test-12-10-2">
-                                Test 12.10.2: On each web page, does each group of important links meet one of the following conditions?
-                                <ul>
-                                    <li>The element that structures the group of important links has an <code>id</code> attribute</li>
-                                    <li>The element that structures the group of important links is immediately preceeded, in the source code, with a named  <a href="./glossaire.html#ancre">anchor</a></li>
-                                    <li>The first link in the group is immediately preceeded, in the source code, with a named  <a href="./glossaire.html#ancre">anchor</a></li>
-                                </ul>
-                            </li>
-                            <li id="test-12-10-3">
-                                Test 12.10.3: On each web page, does the <a href="./glossaire.html#zone-main">main content area</a> meet one of the following conditions?
-                                <ul>
-                                    <li>The <a href="./glossaire.html#zone-main">main content area</a> has an <code>id</code> attribute</li>
-                                    <li>The <a href="./glossaire.html#zone-main">main content area</a> is immediately preceeded, in the source code, with a named  <a href="./glossaire.html#ancre">anchor</a></li>
-                                    <li>The first element of the <a href="./glossaire.html#zone-main">main content area</a> is immediately preceeded, in the source code, with a named  <a href="./glossaire.html#ancre">anchor</a></li>
-                                </ul>
-                            </li>
-                            <li id="test-12-10-4">
-                                Test 12.10.4: On each web page, does the <a href="./glossaire.html#arborescence-du-document">document outline</a> meet the following conditions: 
+                                Test 12.10.1: On each web page, does the <a href="./glossaire.html#arborescence-du-document">document outline</a> meet the following conditions: 
                                 <ul>
                                     <li>The <a href="./glossaire.html#zone-header">page header</a> has an ARIA <code>role="banner"</code></li>
                                     <li>The main <a href="./glossaire.html#menu-de-navigation">navigation menu</a> has an ARIA <code>role="navigation"</code></li>
@@ -3660,7 +3654,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <h3 id="crit-13-16"><em>Criterion 13.16 [AAA]</em> On each web page, do the <a href="./glossaire.html#changements-brusques-de-luminosite">sudden changes in luminosity or flashing effects</a> have a frequency lower than or equal to 3 per second?</h3>
                         <ul>
                             <li id="test-13-16-1">
-                                Test 13.16.1: On each web page, does each sudden change in luminosity or a flashing effect caused by an animated image (<code>img</code> tag, <code>svg</code> tag, <code>embed</code> tag, <code>canvas</code> tag, or <code>object</code> tag) have a frequency lower than or equal to 3 per second?
+                                Test 13.16.1: On each web page, does each sudden change in luminosity or a flashing effect caused by an image (<code>img</code> tag, <code>svg</code> tag, <code>embed</code> tag, <code>canvas</code> tag, or <code>object</code> tag) have a frequency lower than or equal to 3 per second?
                             </li>
                             <li id="test-13-16-2">
                                 Test 13.16.2: On each web page, does each sudden change in luminosity or a flashing effect caused by a <a href="./glossaire.html#script">script</a> have a frequency lower than or equal to 3 per second?

@@ -1,17 +1,50 @@
-<!-- 
-RGAA 3.0 2017 - juin 2017 
-Source : http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html 
+<!--
+RGAA 3.0 2017 - juin 2017
+Source : http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html
 Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8">
-    <title>Critères - RGAA 3.0 2017</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="shortcut icon" href="../favicon.ico">
+	<meta charset="utf-8">
+	<title>Critères - RGAA 3.0 2017</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="shortcut icon" href="../../favicon.ico">
+
+	<!-- Matomo -->
+	<script type="text/javascript">
+		var _paq = window._paq || [];
+
+		/* CNIL - cookie duration */
+		_paq.push([function() {
+			var self = this;
+			function getOriginalVisitorCookieTimeout() {
+				var now = new Date(),
+				nowTs = Math.round(now.getTime() / 1000),
+				visitorInfo = self.getVisitorInfo();
+				var createTs = parseInt(visitorInfo[2]);
+				var cookieTimeout = 33696000; // 13 mois en secondes
+				var originalTimeout = createTs + cookieTimeout - nowTs;
+				return originalTimeout;
+			}
+			this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+		}]);
+
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(["setDoNotTrack", true]);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="https://matomo.tanaguru.com/";
+			_paq.push(['setTrackerUrl', u+'matomo.php']);
+			_paq.push(['setSiteId', '3']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
 </head>
 <body class="criteres">
     <ul class="skiplinks-top">
@@ -170,7 +203,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                             <ul>
                                 <li>La balise <code lang="en">object</code> possède un attribut <code lang="en">aria-hidden="true"</code>&nbsp;;</li>
                                 <li>L’alternative textuelle entre <code lang="en">&lt;object&gt;</code> et <code lang="en">&lt;/object&gt;</code> est vide&nbsp;;</li>
-								<li>La balise <code lang="en">object</code> ou l'un de ses enfants est dépourvue d'attribut <code lang="en">title</code>&nbsp;;</li> \ 
+								<li>La balise <code lang="en">object</code> ou l'un de ses enfants est dépourvue d'attribut <code lang="en">title</code>&nbsp;;</li> \
                                 <li>La balise <code lang="en">object</code> ou l’un de ses enfants est dépourvue de rôle, propriété ou état ARIA visant à labelliser l’image (<code lang="en">aria-label</code>, <code lang="en">aria-describedby</code>, <code lang="en">aria-labelledby</code> par exemple).</li>
                             </ul>
                         </li>
@@ -1774,13 +1807,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                 <li>L’intitulé du lien est <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a>&nbsp;;</li>
                                 <li>Un mécanisme permet à l’utilisateur d’obtenir un intitulé de lien explicite hors contexte&nbsp;;</li>
                                 <li>Le contenu du titre de lien (attribut <code lang="en">title</code>) est explicite hors contexte.</li>
-                            </ul>                        
+                            </ul>
 						<li id="test-6-3-3">Test 6.3.3&nbsp;: Chaque <a href="glossaire.html#lien-composite">lien composite</a> (contenu texte et de l’attribut <code lang="en">alt</code>) est-il <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a> (hors <a href="cas-particuliers.html#crit-6-1" title="Cas particuliers pour le critère 6.3">cas particuliers</a>)&nbsp;?
 							<ul>
                                 <li>L’intitulé du lien est <a href="glossaire.html#lien-explicite-hors-contexte">explicite hors contexte</a>&nbsp;;</li>
                                 <li>Un mécanisme permet à l’utilisateur d’obtenir un intitulé de lien explicite hors contexte&nbsp;;</li>
                                 <li>Le contenu du titre de lien (attribut <code lang="en">title</code>) est explicite hors contexte.</li>
-                            </ul>  
+                            </ul>
 						</li>
                     </ul>
                     <aside>
@@ -4080,22 +4113,6 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
             <p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
-    <script>
-    (function(i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function() {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-76056657-1', 'auto');
-    ga('send', 'pageview');
-    </script>
+    <script src="../../js/main.js"></script>
 </body>
 </html>

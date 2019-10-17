@@ -1,0 +1,72 @@
+AddDefaultCharset utf-8
+DefaultLanguage fr-FR
+
+# Prevent directory browsing (don't list all files in a directory without a default document)
+# https://htaccessbook.com/what-is-options-all/
+<IfModule mod_autoindex.c>
+  Options All -Indexes
+</IfModule>
+
+# Interdire le référencement du fichier robots.txt
+<Files ~ "robots\.txt$">
+  Header set X-Robots-Tag "noindex"
+</Files>
+
+# Ajout types de fichiers
+AddType x-font/otf .otf
+AddType x-font/ttf .ttf
+AddType x-font/eot .eot
+AddType x-font/woff .woff
+AddType x-font/woff2 .woff2
+
+# Compression gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE x-font/ttf
+  AddOutputFilterByType DEFLATE x-font/otf
+  AddOutputFilterByType DEFLATE x-font/eot
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE application/pdf
+</IfModule>
+
+# Mise en cache navigateur
+<IfModule mod_expires.c>
+  # Enable expirations
+  ExpiresActive On
+
+  # Default directive
+  ExpiresDefault "now plus 1 year"
+
+  ExpiresByType image/gif "now plus 1 year"
+  ExpiresByType image/jpeg "now plus 1 year"
+  ExpiresByType image/png "now plus 1 year"
+  ExpiresByType text/css "now plus 1 year"
+  ExpiresByType text/javascript "now plus 1 year"
+  ExpiresByType application/javascript "now plus 1 year"
+  ExpiresByType image/svg+xml "now plus 1 year"
+  ExpiresByType x-font/otf "now plus 1 year"
+  ExpiresByType x-font/ttf "now plus 1 year"
+  ExpiresByType x-font/eot "now plus 1 year"
+  ExpiresByType x-font/woff "now plus 1 year"
+  ExpiresByType x-font/woff2 "now plus 1 year"
+  ExpiresByType image/x-icon "now plus 1 year"
+</IfModule>
+
+# Sécurité (cf. Dareboost)
+<IfModule mod_headers.c>
+
+  # Désactiver la détection automatique du type des ressources
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Bloquer la totalité du contenu lorsqu'une attaque XSS est suspectée
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Anti-attaques du type "clickjacking"
+  # SAMEORIGIN value to allow WordPress and plugins updates
+  Header always set X-FRAME-OPTIONS "SAMEORIGIN"
+
+  # Politique de sécurité sur la provenance des ressources CSP
+  #Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self';"
+</IfModule>

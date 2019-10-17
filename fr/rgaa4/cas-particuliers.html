@@ -9,9 +9,42 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 		<meta charset="utf-8">
 		<title>Cas particuliers - RGAA 3.0 2016</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="../css/style.css">
+	    <link rel="stylesheet" href="../../css/style.css">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    	<link rel="shortcut icon" href="../favicon.ico">
+    	<link rel="shortcut icon" href="../../favicon.ico">
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq || [];
+
+			/* CNIL - cookie duration */
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDoNotTrack", true]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://matomo.tanaguru.com/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
 	</head>
 	<body>
 		<ul class="skiplinks-top">
@@ -115,7 +148,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h3 id="crit-4-22">Critère 4.22</h3>
 				<p>Il existe une gestion de cas particulier lorsque : le média temporel ou non temporel est utilisé à des fins décoratives (i.e il n'apporte aucune information). Dans ces situations, le critère est non applicable.</p>
-				
+
 				<h2 id="tableaux">Tableaux</h2>
 				<h3 id="crit-5-3">Critères 5.3</h3>
 				<p>L’API ARIA propose un mécanisme permettant de <a href="glossaire.html#modification-role-natif-element-html">surcharger le rôle natif d’un élément HTML</a> pour proposer des composants. Ainsi, il est possible d’utiliser des <a href="glossaire.html#tableau-de-mise-en-forme">tableaux de mise en forme</a> pour construire des <a href="glossaire.html#listes">listes</a>&nbsp;: </p>
@@ -163,7 +196,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p><strong>Note&nbsp;:</strong> pour les noms commun de langue étrangère, absents dans le dictionnaire officiel de la langue par défaut de la page web et qui sont passés dans le langage commun (exemple&nbsp;: <i>newsletter</i>) : le critère est <strong>applicable</strong>, uniquement lorsque l'absence d'indication de langue peut provoquer une incompréhension pour la restitution</p>
 
 				<h2 id="presentation">Présentation de&nbsp;l'information</h2>
-				
+
 				<h3 id="crit-10-4">Critère 10.4</h3>
 				<p>Il existe une gestion de cas particuliers pour les polices-icônes. Les polices-icônes permettent de créer des icônes à partir d'un fichier de police. Dans ces cas, il est autorisé d'utiliser des tailles en unités fixes pour la propriété CSS font-size.</p>
 
@@ -199,18 +232,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
         </main>
 		<footer id="footer" role="contentinfo">
 			<div class="page">
-				<p>RGAA 3.0 2016 - juin 2016 - <a href="mentions.html">Mentions légales</a>.</p>
+				<p>RGAA 4.0 - octobre 2019 - <a href="mentions.html">Mentions légales</a>.</p>
 			</div>
 		</footer>
-        <script src="../js/main.js"></script>
-        <script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-76056657-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+        <script src="../../js/main.js"></script>
 	</body>
 </html>

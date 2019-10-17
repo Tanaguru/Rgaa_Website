@@ -9,9 +9,42 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 		<meta charset="utf-8">
 		<title>Base de référence - RGAA 3.0 2016</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="../css/style.css">
+	    <link rel="stylesheet" href="../../css/style.css">
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    	<link rel="shortcut icon" href="../favicon.ico">
+    	<link rel="shortcut icon" href="../../favicon.ico">
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq || [];
+
+			/* CNIL - cookie duration */
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDoNotTrack", true]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://matomo.tanaguru.com/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
 	</head>
 	<body>
 		<ul class="skiplinks-top">
@@ -55,7 +88,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<h2 id="compatible">Compatible avec les technologies d'assistance - Base de référence</h2>
 				<p>La base de référence est constituée des configurations (technologie d'assistance, système d'exploitation, navigateur) qui permettent de déclarer qu'un dispositif HTML5/ARIA est «&nbsp;compatible avec l'accessibilité&nbsp;» tel que défini par WCAG&nbsp;2.</p>
 				<p>Elle est établie par consensus à partir de la liste des technologies d'assistance dont l'usage est suffisamment répandu, ou, dans certains cas (par&nbsp;exemple pour OSX) lorsqu'elle est fournie de manière native et constitue le moyen privilégié d'accès à l'information et aux fonctionnalités.</p>
-        
+
 				<h2 id="baseline">Base de référence</h2>
 				<p>La base de référence permettant de couvrir la proportion la plus large des usages est constituée de combinaisons associant des technologies d'assistance d'usage suffisamment répandu, les deux systèmes d'exploitation Windows XP+ et OSX et les trois navigateurs IE9+, Firefox et Safari.</p>
 				<p>Pour qu'un dispositif HTML5/ARIA ou son alternative soit considéré comme compatible avec l'accessibilité il faut qu'il soit pleinement fonctionnel, en termes de restitution et de fonctionnalités, sur au moins une des combinaisons suivantes&nbsp;:</p>
@@ -133,7 +166,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				</table>
 
 				<p><strong>Note&nbsp;:</strong> Compte tenu que le lecteur d'écran NVDA ne nécessite pas l'achat d'une licence commerciale et couvre toutes les versions de Windows, les deux premières combinaisons devraient être privilégiées. La combinaison NVDA + Window-Eyes ne peut pas être retenue car elle ne couvre pas une proportion suffisamment large d'usages.</p>
-				        
+
 				<h2 id="additional">Exigences complémentaires</h2>
 				<p>Les règles suivantes doivent également être respectées&nbsp;:</p>
 				<ol>
@@ -157,19 +190,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
         </main>
 		<footer id="footer" role="contentinfo">
 			<div class="page">
-				<p>RGAA 3.0 2016 - juin 2016 - <a href="mentions.html">Mentions légales</a>.</p>
+				<p>RGAA 4.0 - octobre 2019 - <a href="mentions.html">Mentions légales</a>.</p>
             	<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
 			</div>
 		</footer>
-        <script src="../js/main.js"></script>
-       	<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-76056657-1', 'auto');
-			ga('send', 'pageview');
-		</script>
+        <script src="../../js/main.js"></script>
 	</body>
 </html>

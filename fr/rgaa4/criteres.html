@@ -1,6 +1,6 @@
-<!-- 
-RGAA 3.0 2017 - juin 2017 
-Source : http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html 
+<!--
+RGAA 3.0 2017 - juin 2017
+Source : http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html
 Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
 <!DOCTYPE html>
@@ -12,6 +12,39 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
     <link rel="stylesheet" href="../../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="../../favicon.ico">
+
+	<!-- Matomo -->
+	<script type="text/javascript">
+		var _paq = window._paq || [];
+
+		/* CNIL - cookie duration */
+		_paq.push([function() {
+			var self = this;
+			function getOriginalVisitorCookieTimeout() {
+				var now = new Date(),
+				nowTs = Math.round(now.getTime() / 1000),
+				visitorInfo = self.getVisitorInfo();
+				var createTs = parseInt(visitorInfo[2]);
+				var cookieTimeout = 33696000; // 13 mois en secondes
+				var originalTimeout = createTs + cookieTimeout - nowTs;
+				return originalTimeout;
+			}
+			this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+		}]);
+
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(["setDoNotTrack", true]);
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+			var u="https://matomo.tanaguru.com/";
+			_paq.push(['setTrackerUrl', u+'matomo.php']);
+			_paq.push(['setSiteId', '3']);
+			var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<!-- End Matomo Code -->
 </head>
 
 <body class="criteres">
@@ -154,7 +187,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                         <ul>
                             <li>Principe : Perceptible</li>
                         </ul>
-                    
+
                 </header>
                 <section data-level="A">
                     <h3 id="crit-1-1"><em>Critère 1.1 [A]</em> Chaque image porteuse d'information a-t-elle une
@@ -338,7 +371,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                         satisfaisant du rôle "none".</p>
                                     <h4>Correspondances WCAG&nbsp;2.1</h4>
 
-                                    <p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 
+                                    <p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;:
                                         <ul>
                                         <li><a
                                             href="https://www.w3.org/TR/WCAG21/#non-text-content" rel="external"
@@ -350,7 +383,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                         </li>
                                         </ul>
                                     </p>
-                                        <p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: 
+                                        <p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;:
                                             <ul>
                                                 <li><a
                                                 hreflang="en" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H67"
@@ -388,7 +421,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                                 target="_blank">ARIA10</a>
                                                 </li>
                                             </ul>
-                                        </p>                              
+                                        </p>
                                     <div class="tags">
                                         <span>Mot-clés</span>
                                         <ul>
@@ -6247,7 +6280,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
                                                 Bypass Blocks (AA), 2.4.3 Focus Order (A), 3.1.1 Language of Page (A),
                                                 4.1.2 Name, Role, Value (A)
                                             </p>
-                                            <p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: 
+                                            <p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;:
                                                 <ul>
                                                     <li><a
                                                     hreflang="en" href="https://www.w3.org/WAI/WCAG21/Techniques/html/H36"
@@ -6810,27 +6843,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
     <footer id="footer" role="contentinfo">
         <div class="page">
             <p>RGAA 3.0 2017 - Juillet 2017 - <a href="mentions.html">Mentions légales</a>.</p>
-            <p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut
-                            de la page</span></a></span></p>
+            <p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
         </div>
     </footer>
     <script src="../../js/main.js"></script>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-76056657-1', 'auto');
-        ga('send', 'pageview');
-    </script>
 </body>
 
 </html>

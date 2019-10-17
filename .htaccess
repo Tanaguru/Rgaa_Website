@@ -1,8 +1,6 @@
 AddDefaultCharset utf-8
 DefaultLanguage fr-FR
 
-DirectoryIndex http://rgaa.tanaguru.com/fr/rgaa3/criteres.html
-
 # Prevent directory browsing (don't list all files in a directory without a default document)
 # https://htaccessbook.com/what-is-options-all/
 <IfModule mod_autoindex.c>
@@ -71,3 +69,4 @@ AddType x-font/woff2 .woff2
 
   # Politique de sécurité sur la provenance des ressources CSP
   #Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self';"
+</IfModule>

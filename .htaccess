@@ -68,6 +68,6 @@ AddType x-font/woff2 .woff2
   Header always set X-FRAME-OPTIONS "SAMEORIGIN"
 
   # Politique de sécurité sur la provenance des ressources CSP
-  Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self';"
+  #Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self';"
 
 </IfModule>

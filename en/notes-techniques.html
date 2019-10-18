@@ -14,6 +14,39 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     	<link rel="shortcut icon" href="../favicon.ico">
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq || [];
+
+			/* CNIL - cookie duration */
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDoNotTrack", true]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://matomo.tanaguru.com/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
 	</head>
 	<body>
 		<ul class="skiplinks-top">
@@ -39,7 +72,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
             <div class="headrub page">
                 <h1>Technical Notes</h1>
 				<p class="lead">The technical notes below provide explanations regarding some HTML5 elements whose support can be inconsistent across different user agents, and propositions made by the <abbr lang="fr" title="Référentiel Général d'Accessibilité des Administrations">RGAA</abbr> to circumvent potential issues.</p>
-				<div id="navtoc"> 
+				<div id="navtoc">
 					<h2 id="toc">Table of Contents</h2>
 					<nav class="nav" role="navigation" aria-labelledby="toc">
 						<ul>
@@ -117,7 +150,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p>For certain user interface components design patterns, ARIA defines a set of keyboard interactions  based on <kbd>Esc</kbd>, <kbd>Spacebar</kbd>, <kbd>Tab</kbd> and arrow keys; and, occasionally, other interactions based on <kbd>Page Up</kbd>, <kbd>Page Down</kbd>, Home and End keys, for example. In order to allow gradual implementation of these components with complex keyboard interactions, the RGAA restricts the requirements to only main keys (<kbd>Esc</kbd>, <kbd>Spacebar</kbd>, <kbd>Tab</kbd>, Arrow keys) as per the <a href="./glossaire.html#motif-de-conception">ARIA  design patterns.</a></p>
 
 				<h2 id="structure">Information structure</h2>
-				
+
 				<h3 id="crit-9-1">Criterion 9.1 [A]</h3>
 				<p>The ARIA specification allows the use of the role <code>heading</code> combined with the <code>aria-level</code> property (hierarchical level in the document outline) to mark headings. Although it is preferable to use the native &lt;h<i>x</i>&gt; elements in HTML , the use of the WAI-ARIA role <code>heading</code> is compatible with accessibility.</p>
 				<p>While the HTML5 specification allows the use of only level 1 headings (<code>&lt;h1&gt;</code>), the lack of support by assistive technologies makes it necessary to use a relevant headings hierarchy.
@@ -148,7 +181,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				</p>
 				<p>References: <a rel="external" class="external" href="http://www.w3.org/WAI/PF/aria/roles#list">The Role Model,  List Role</a> and <a rel="external" class="external" href="http://www.w3.org/WAI/PF/aria/states_and_properties#aria-setsize">The role model - ARIA SETSIZE</a>.</p>
 
-				<h3 id="crit-9-4">Criterion 9.4 [AAA]</h3>	
+				<h3 id="crit-9-4">Criterion 9.4 [AAA]</h3>
 				<p>Despite the existence of the <code>definition</code> role, used in combination with the <code>aria-labelledby</code> property, WAI-ARIA does not offer a role equivalent  to HTML definition lists (<code>DL</code>). The  <code>definition</code> role can not, therefore, be used as an equivalent of an HTML definition list <code>DL</code>.</p>
 
 				<h2 id="presentation">Presentation of information</h2>
@@ -180,14 +213,5 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
             </div>
         </footer>
         <script src="../js/main.js"></script>
-        <script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-76056657-1', 'auto');
-			ga('send', 'pageview');
-		</script>
 	</body>
 </html>

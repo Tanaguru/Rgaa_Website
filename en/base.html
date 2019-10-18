@@ -5,7 +5,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
 <!DOCTYPE html>
 <html lang="en">
-	<head>   
+	<head>
 		<meta charset="utf-8">
 		<title>Baseline - RGAA 3.0 2017 (English translation)</title>
 		<meta content="English translation of the RGAA 3.0 2017, French official accessibility guidelines. Baseline." name="description">
@@ -14,8 +14,41 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     	<link rel="shortcut icon" href="../favicon.ico">
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq || [];
+
+			/* CNIL - cookie duration */
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDoNotTrack", true]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://matomo.tanaguru.com/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
 	</head>
-	<body>  
+	<body>
 		<ul class="skiplinks-top">
 			<li><a id="go-to-menu" href="#nav">Go to menu</a></li>
 			<li><a href="#main">Go to content</a></li>
@@ -142,7 +175,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</tbody>
 				</table>
 				<p><strong>Note:</strong> Since the NVDA screen reader does not require the purchase of a commercial license and covers all versions of Windows, the first two combinations should be preferred. The combination NVDA + Window-Eyes can not be accepted because it does not cover a sufficiently large proportion of uses.</p>
-				
+
 				<h2 id="additional">Additional requirements</h2>
 				<p>The following rules must be observed:
 				</p>
@@ -174,14 +207,5 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
             </div>
         </footer>
         <script src="../js/main.js"></script>
-        <script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-76056657-1', 'auto');
-			ga('send', 'pageview');
-		</script>
 	</body>
-</html>										
+</html>

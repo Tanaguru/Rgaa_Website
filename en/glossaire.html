@@ -14,6 +14,39 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     	<link rel="shortcut icon" href="../favicon.ico">
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq || [];
+
+			/* CNIL - cookie duration */
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDoNotTrack", true]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://matomo.tanaguru.com/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
 	</head>
 	<body class="glossaire">
 	    <ul class="skiplinks-top">
@@ -120,12 +153,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<h3 id="alternative-courte-et-concise">Alternative (short and concise)</h3>
 				<p>Rendering a text alternative via an assistive technology (like a screen magnifier for instance), requires that it should be as short as possible. A length of 80 characters is strongly recommended; it will reduce the manipulations to read the text alternative for users of Braille displays or screen magnifiers, in particular.</p>
 
-				<h3 id="alternative-svg">Alternative (to an SVG image)</h3> 
-				<p>Are considered as possible alternatives to an SVG image&nbsp;:</p> 
-				<ul> 
-					<li>An alternate mechanism</li> 
-					<li>An adjacent link which allows access to an alternative with a pertinent content, and identical to the propriety <code>aria-label</code> and to the attribute <code>title</code> from the <code>&lt;svg&gt;</code> tag, if it is defined.</li> 
-				</ul> 
+				<h3 id="alternative-svg">Alternative (to an SVG image)</h3>
+				<p>Are considered as possible alternatives to an SVG image&nbsp;:</p>
+				<ul>
+					<li>An alternate mechanism</li>
+					<li>An adjacent link which allows access to an alternative with a pertinent content, and identical to the propriety <code>aria-label</code> and to the attribute <code>title</code> from the <code>&lt;svg&gt;</code> tag, if it is defined.</li>
+				</ul>
 
 				<h3 id="alternative-textuelle-image">Alternative (Text alternative of an image)</h3>
 				<p>A text asssociated to an image via an appropriate technique, describing the information conveyed by the image (in relation with the context of the Web content it is included in). RGAA considers four types of alternatives, depending on the purpose of the image:</p>
@@ -333,7 +366,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<li>date (yyyy/mm/dd)</li>
 					<li>Total in euros</li>
 					<li>Zip code (5 numbers: eg. 75001)</li>
-					
+
 				</ul>
 				<p><strong>Important note</strong>: when the type of the form field involves an input mask, like for instance fields of types <code>date</code> or <code>time</code>, the indication of expected format is not required.</p>
 
@@ -868,8 +901,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h3 id="ordre-de-tabulation">Tabbing order</h3>
 				<p>Order in which the focus moves (to the next element or to the previous element). The natural order is the order of the source code. When it is modified by the use of the <code>tabindex</code> attribute or by scripting, then the modified order is the reference.</p>
-				<p> <strong>Warning:</strong> During testing, when an element initiates a change in the document (change of context, management of hidden areas, content addition, management of form fields&hellip;) it is necessary to trigger this change and check that the consistence of the tabbing order is preserved. 
-					
+				<p> <strong>Warning:</strong> During testing, when an element initiates a change in the document (change of context, management of hidden areas, content addition, management of form fields&hellip;) it is necessary to trigger this change and check that the consistence of the tabbing order is preserved.
+
 				<h3 id="tableau-de-donnees-complexe">Table (complex data table)</h3>
 				<p><a href="#tableau-de-donnees"></a>Data tables are considered as complex, in the RGAA, when they have header cells outside of the first row and/or column, or whose scope does not cover the whole row or column. For these tables it is necessary to provide a summary, to describe their nature and structure, in order to ease its consultation by assistive technologies users, in particular.</p>
 
@@ -879,14 +912,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<h3 id="tableau-de-mise-en-forme">Table (for layout)</h3>
 				<p>Web design technique based on the TABLE and TD elements to position  contents on screen. </p>
 
-				<h3 id="attribut-target"><code>Target</code> attribute</h3> 
-				<p><code>Target</code> attribute opens a new window or a new tab depending on its value. The following <code>target</code> values don't open a new window&nbsp;:</p> 
-				<ul> 
-					<li><code>_self</code>&nbsp;;</li> 
-					<li><code>_top</code>&nbsp;;</li> 
-					<li><code>_parent</code>.</li> 
-				</ul> 
-				<p>For all other <code>target</code> values, the element on which it is positioned open a new window or tab. This is the case of the value <code>_blank</code> for example, but also any other value (numeric or alphabetical) not defined by the specification. Note also that these values ​​do not cause error when validating source code in HTML5.</p> 
+				<h3 id="attribut-target"><code>Target</code> attribute</h3>
+				<p><code>Target</code> attribute opens a new window or a new tab depending on its value. The following <code>target</code> values don't open a new window&nbsp;:</p>
+				<ul>
+					<li><code>_self</code>&nbsp;;</li>
+					<li><code>_top</code>&nbsp;;</li>
+					<li><code>_parent</code>.</li>
+				</ul>
+				<p>For all other <code>target</code> values, the element on which it is positioned open a new window or tab. This is the case of the value <code>_blank</code> for example, but also any other value (numeric or alphabetical) not defined by the specification. Note also that these values ​​do not cause error when validating source code in HTML5.</p>
 
 				<h3 id="image-test">Test image</h3>
 				<p>Image used in a test, a <a href="#captcha">CAPTCHA</a> or an image used for a test in a quiz or a game. Example: a series of images present a detail from famous paintings; the title and the painter of each painting must be found. In this case, it is not possible to provide a relevant alternative (e.g. the painting title and/or painter) without making the test useless. The alternative must then only provide the ability to identify the image; for example "image 1 of the test".</p>
@@ -918,7 +951,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 					</li>
-				</ul>    
+				</ul>
 				<p>A time-based media can be broadcast live or be provided to play in an asynchronous way (prerecorded media).</p>
 				<p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates <a href="criteres.html#crit-4-21">criterion&nbsp;4.21</a> (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). therefore it can not be tabbed to.</p>
 				<p>Note 2: Animated GIFs, and JavaScript-based animations  are not considered as time-based media with regards to RGAA.</p>
@@ -993,14 +1026,5 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
             </div>
         </footer>
         <script src="../js/main.js"></script>
-        <script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-76056657-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		</body>
-	</html>	
+	</body>
+</html>

@@ -18,6 +18,7 @@ AddType x-font/ttf .ttf
 AddType x-font/eot .eot
 AddType x-font/woff .woff
 AddType x-font/woff2 .woff2
+AddType text/javascript .js
 
 # Compression gzip
 <IfModule mod_deflate.c>

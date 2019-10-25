@@ -1,17 +1,21 @@
 <!--
-RGAA 3.0 2016 - juin 2016
-Source : http://references.modernisation.gouv.fr/rgaa/
+RGAA 4.0
+Source : https://www.numerique.gouv.fr/publications/rgaa-accessibilite/methode/criteres/
 Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<title>Glossaire - RGAA 3.0 2016</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="../../css/style.css">
-	    <script src="js/jquery-2.1.1.min.js"></script>
-    	<link rel="shortcut icon" href="../../favicon.ico">
+		<title>Glossaire - RGAA 4.0 2019 - Tanaguru</title>
+		<meta name="description" content="Glossaire du RGAA 4.0 2019, mis en page par Tanaguru. Toutes les définitions pour bien comprendre les critères.">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/rgaa4-glossaire.html" hreflang="fr">
+        <!-- <link rel="alternate" href="http://rgaa.tanaguru.com/en/rgaa4-glossary.html" hreflang="en"> -->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery-2.1.1.min.js"></script>
 
 		<!-- Matomo -->
 		<script type="text/javascript">
@@ -48,65 +52,73 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 	</head>
 	<body class="glossaire">
 		<ul class="skiplinks-top">
-			<li><a id="go-to-menu" href="#nav">Aller au menu</a></li>
+			<li><a id="go-to-menu" href="#nav">Aller au menu RGAA 4</a></li>
 			<li><a href="#main">Aller au contenu</a></li>
 		</ul>
 		<a id="top"></a>
         <header id="header" role="banner">
             <div class="headsite nav clearfix">
-                <div class="container">
-                    <p id="logo"><a href="/fr/rgaa3/">RGAA3 (<abbr title="Français">FR</abbr>)</a> - <a href="/fr/rgaa4/">RGAA4 (<abbr title="Français">FR</abbr>)</a> - <a href="/en/">RGAA3 (<abbr title="English" lang="en">EN</abbr>)</a></p>
+                <div class="container headsite-container">
+                    <p class="headsite-logo"><a href="/" title="RGAA par Tanaguru - Accueil" class="headsite-logo-link"><img src="/images/tanaguru-logo.svg" alt="Tanaguru" width="40" height="40" class="headsite-logo-img" /> RGAA</a></p>
 
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu</button>
+                    <nav role="navigation" aria-label="Menu principal" class="main-nav">
+                        <ul class="main-nav-list"><!--
+                        --><li class="main-nav-item"><a href="/rgaa3-criteres.html" class="main-nav-link">Version 3.2017</a></li><!--
+                        --><li class="main-nav-item"><a href="/rgaa4-criteres.html" class="main-nav-link">Version 4.0</a></li><!--
+                        --><li class="main-nav-item"><a href="/en/" lang="en" hreflang="en" class="main-nav-link">English version</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="btn-nav-rgaa-container">
+                        <button type="button" class="navbar-toggle collapsed btn-nav-rgaa" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu RGAA 4</button>
+                    </div>
                 </div>
             </div>
             <nav id="nav" class="collapse navbar-collapse" role="navigation">
                 <ul><!--
-                --><li><a href="./criteres.html">Critères</a></li><!--
+                --><li><a href="rgaa4-criteres.html">Critères</a></li><!--
                 --><li><strong class="on">Glossaire</strong></li><!--
-                --><li><a href="./cas-particuliers.html">Cas particuliers</a></li><!--
-                --><li><a href="./notes-techniques.html">Notes techniques</a></li><!--
-                --><li><a href="./base.html">Base de référence</a></li><!--
-                --><li><a href="./references.html">Références</a></li><!--
+                --><li><a href="rgaa4-base.html">Base de référence</a></li><!--
+                --><li><a href="rgaa4-references.html">Références</a></li><!--
             --></ul>
             </nav>
-            <div class="headrub page">
-                <h1>Glossaire</h1>
-				<p class="lead">Le référentiel <abbr title="Référentiel Général d'Accessibilité des Administrations">RGAA</abbr> fait référence à de nouveaux termes, de nouvelles définitions. À&nbsp;l'occasion de la parution officielle du référentiel RGAA, la liste des nouvelles définitions sera mise à jour si&nbsp;nécessaire et intégrée au glossaire RGAA.</p>
-				<div id="navtoc">
-					<h2 id="toc">Sommaire</h2>
-					<nav class="nav" role="navigation" aria-labelledby="toc">
-						<ul>
-							<li><a href="#a">A</a></li>
-							<li><a href="#b">B</a></li>
-							<li><a href="#c">C</a></li>
-							<li><a href="#d">D</a></li>
-							<li><a href="#e">E</a></li>
-							<li><a href="#f">F</a></li>
-							<li><a href="#i">I</a></li>
-							<li><a href="#j">J</a></li>
-							<li><a href="#l">L</a></li>
-							<li><a href="#m">M</a></li>
-							<li><a href="#o">O</a></li>
-							<li><a href="#p">P</a></li>
-							<li><a href="#r">R</a></li>
-							<li><a href="#s">S</a></li>
-							<li><a href="#t">T</a></li>
-							<li><a href="#u">U</a></li>
-							<li><a href="#v">V</a></li>
-							<li><a href="#z">Z</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
 		</header>
         <main id="main" role="main">
+            <div class="headrub page">
+                <h1>Glossaire - RGAA 4.0 2019 (Travail en cours)</h1>
+                <p class="lead">Le référentiel <abbr title="Référentiel Général d'Accessibilité des Administrations">RGAA</abbr> fait référence à de nouveaux termes, de nouvelles définitions. À&nbsp;l'occasion de la parution officielle du référentiel RGAA, la liste des nouvelles définitions sera mise à jour si&nbsp;nécessaire et intégrée au glossaire RGAA.</p>
+                <div id="navtoc">
+                    <h2 id="toc">Sommaire</h2>
+                    <nav class="nav" role="navigation" aria-labelledby="toc">
+                        <ul>
+                            <li><a href="#a">A</a></li>
+                            <li><a href="#b">B</a></li>
+                            <li><a href="#c">C</a></li>
+                            <li><a href="#d">D</a></li>
+                            <li><a href="#e">E</a></li>
+                            <li><a href="#f">F</a></li>
+                            <li><a href="#i">I</a></li>
+                            <li><a href="#j">J</a></li>
+                            <li><a href="#l">L</a></li>
+                            <li><a href="#m">M</a></li>
+                            <li><a href="#o">O</a></li>
+                            <li><a href="#p">P</a></li>
+                            <li><a href="#r">R</a></li>
+                            <li><a href="#s">S</a></li>
+                            <li><a href="#t">T</a></li>
+                            <li><a href="#u">U</a></li>
+                            <li><a href="#v">V</a></li>
+                            <li><a href="#z">Z</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 			<div class="page">
 				<h2 id="a">A</h2>
 				<ul class="skiplink">
 					<li class="goafter"><a href="#b">Lettre&nbsp;B</a></li>
 				</ul>
-                 <h3 id="glossaire-1">Accéder à chaque page de la collection de pages</h3>
+                <h3 id="glossaire-1">Accéder à chaque page de la collection de pages</h3>
                 <p>Dans le cas où la collection de pages comporte un grand nombre de pages, il est habituel de présenter ces liens d'accès aux pages par groupes de liens, par séquences de 10 liens, par exemple. Cette pratique valide le test.</p>
                 <h3 id="glossaire-2">Accessible et activable par le clavier et tout dispositif de pointage</h3>
                 <ul>
@@ -1024,11 +1036,11 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 			</div>
         </main>
 		<footer id="footer" role="contentinfo">
-			<div class="page">
-				<p>RGAA 4.0 - octobre 2019 - <a href="mentions.html">Mentions légales</a>.</p>
-            	<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
-			</div>
-		</footer>
-        <script src="../../js/main.js"></script>
+            <div class="page">
+                <p><a href="mentions.html">Mentions légales</a> - <a href="https://github.com/Tanaguru/Rgaa_Website">Contribuer à ce projet sur Github</a></p>
+                <p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
 	</body>
 </html>

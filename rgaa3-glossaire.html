@@ -1,17 +1,18 @@
 <!--
-RGAA 3.0 2016 - juin 2016
-Source : http://references.modernisation.gouv.fr/rgaa/
+RGAA 3.0 2017 - juin 2017
+Source : http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html
 Fork : https://github.com/Tanaguru/Rgaa_Website
 -->
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-		<title>Glossaire - RGAA 3.0 2016</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="../../css/style.css">
-	    <script src="js/jquery-2.1.1.min.js"></script>
-    	<link rel="shortcut icon" href="../../favicon.ico">
+		<title>Glossaire - RGAA 3.0 2017 - Tanaguru</title>
+		<meta name="description" content="Glossaire du RGAA 3 2017, mis en page par Tanaguru. Toutes les définitions pour bien comprendre les critères.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<link rel="shortcut icon" href="favicon.ico">
 
 		<!-- Matomo -->
 		<script type="text/javascript">
@@ -48,31 +49,43 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 	</head>
 	<body class="glossaire">
 		<ul class="skiplinks-top">
-			<li><a id="go-to-menu" href="#nav">Aller au menu</a></li>
+			<li><a id="go-to-menu" href="#nav">Aller au menu RGAA 3</a></li>
 			<li><a href="#main">Aller au contenu</a></li>
 		</ul>
 		<a id="top"></a>
         <header id="header" role="banner">
 			<div class="headsite nav clearfix">
-				<div class="container">
-					<p id="logo"><a href="/fr/rgaa3/">RGAA3 (<abbr title="Français">FR</abbr>)</a> - <a href="/fr/rgaa4/">RGAA4 (<abbr title="Français">FR</abbr>)</a> - <a href="/en/">RGAA3 (<abbr title="English" lang="en">EN</abbr>)</a></p>
+				<div class="container headsite-container">
+					<p class="headsite-logo"><a href="/" title="RGAA par Tanaguru - Accueil" class="headsite-logo-link"><img src="/images/tanaguru-logo.svg" alt="Tanaguru" width="40" height="40" class="headsite-logo-img" /> RGAA</a></p>
 
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu</button>
+					<nav role="navigation" aria-label="Menu principal" class="main-nav">
+						<ul class="main-nav-list"><!--
+						--><li class="main-nav-item"><a href="/rgaa3-criteres.html" class="main-nav-link">Version 3.2017</a></li><!--
+						--><li class="main-nav-item"><a href="/rgaa4-criteres.html" class="main-nav-link">Version 4.0</a></li><!--
+						--><li class="main-nav-item"><a href="/en/" lang="en" hreflang="en" class="main-nav-link">English version</a></li>
+						</ul>
+					</nav>
+
+					<div class="btn-nav-rgaa-container">
+						<button type="button" class="navbar-toggle collapsed btn-nav-rgaa" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu RGAA 3</button>
+					</div>
 				</div>
 			</div>
-			<nav id="nav" class="collapse navbar-collapse" role="navigation">
+			<nav id="nav" class="collapse navbar-collapse" role="navigation" aria-label="Menu des pages du RGAA 3">
 				<ul><!--
-				--><li><a href="./criteres.html">Critères</a></li><!--
+				--><li><a href="rgaa3-criteres.html">Critères</a></li><!--
 				--><li><strong class="on">Glossaire</strong></li><!--
-				--><li><a href="./cas-particuliers.html">Cas particuliers</a></li><!--
-				--><li><a href="./notes-techniques.html">Notes techniques</a></li><!--
-				--><li><a href="./base.html">Base de référence</a></li><!--
-				--><li><a href="./references.html">Références</a></li><!--
+				--><li><a href="rgaa3-cas-particuliers.html">Cas particuliers</a></li><!--
+				--><li><a href="rgaa3-notes-techniques.html">Notes techniques</a></li><!--
+				--><li><a href="rgaa3-base.html">Base de référence</a></li><!--
+				--><li><a href="rgaa3-references.html">Références</a></li><!--
 			--></ul>
 			</nav>
-            <div class="headrub page">
-                <h1>Glossaire</h1>
-				<p class="lead">Le référentiel <abbr title="Référentiel Général d'Accessibilité des Administrations">RGAA</abbr> fait référence à de nouveaux termes, de nouvelles définitions. À&nbsp;l'occasion de la parution officielle du référentiel RGAA, la liste des nouvelles définitions sera mise à jour si&nbsp;nécessaire et intégrée au glossaire RGAA.</p>
+		</header>
+        <main id="main" role="main">
+			<div class="headrub page">
+				<h1>Glossaire du RGAA 3 2017</h1>
+				<p class="lead">Le référentiel RGAA (Référentiel Général d'Accessibilité pour les Administrations) fait référence à de nouveaux termes, de nouvelles définitions. À&nbsp;l'occasion de la parution officielle du référentiel RGAA, la liste des nouvelles définitions sera mise à jour si&nbsp;nécessaire et intégrée au glossaire RGAA.</p>
 				<div id="navtoc">
 					<h2 id="toc">Sommaire</h2>
 					<nav class="nav" role="navigation" aria-labelledby="toc">
@@ -99,10 +112,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</nav>
 				</div>
 			</div>
-		</header>
-        <main id="main" role="main">
 			<div class="page">
-
 				<h2 id="a">A</h2>
 				<ul class="skiplink">
 					<li class="goafter"><a href="#b">Lettre&nbsp;B</a></li>
@@ -191,8 +201,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="b">B</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#a">Lettre&nbsp;A</a></span>
-				 <span class="goafter"><a href="#c">Lettre&nbsp;C</a></span>
+					<li class="gobefore"><a href="#a">Lettre&nbsp;A</a></li>
+					<li class="goafter"><a href="#c">Lettre&nbsp;C</a></li>
 				</ul>
 
 				<h3 id="barre-de-navigation">Barre de navigation</h3>
@@ -234,8 +244,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="c">C</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#b">Lettre&nbsp;B</a></span>
-				 <span class="goafter"><a href="#d">Lettre&nbsp;D</a></span>
+					<li class="gobefore"><a href="#b">Lettre&nbsp;B</a></li>
+					<li class="goafter"><a href="#d">Lettre&nbsp;D</a></li>
 				</ul>
 
 				<h3 id="cadre-en-ligne">Cadre en ligne</h3>
@@ -422,8 +432,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="d">D</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#c">Lettre&nbsp;C</a></span>
-				 <span class="goafter"><a href="#e">Lettre&nbsp;E</a></span>
+					<li class="gobefore"><a href="#c">Lettre&nbsp;C</a></li>
+					<li class="goafter"><a href="#e">Lettre&nbsp;E</a></li>
 				</ul>
 
 				<h3 id="description-detaillee-image">Description détaillée (image)</h3>
@@ -436,8 +446,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="e">E</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#d">Lettre&nbsp;D</a></span>
-				 <span class="goafter"><a href="#f">Lettre&nbsp;F</a></span>
+					<li class="gobefore"><a href="#d">Lettre&nbsp;D</a></li>
+					<li class="goafter"><a href="#f">Lettre&nbsp;F</a></li>
 				</ul>
 
 				<h3 id="ensemble-de-pages">Ensemble de pages</h3>
@@ -483,8 +493,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="f">F</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#e">Lettre&nbsp;E</a></span>
-				 <span class="goafter"><a href="#i">Lettre&nbsp;I</a></span>
+					<li class="gobefore"><a href="#e">Lettre&nbsp;E</a></li>
+					<li class="goafter"><a href="#i">Lettre&nbsp;I</a></li>
 				</ul>
 
 				<h3 id="feuille-de-style">Feuille de style</h3>
@@ -502,8 +512,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="i">I</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#f">Lettre&nbsp;F</a></span>
-				 <span class="goafter"><a href="#j">Lettre&nbsp;J</a></span>
+					<li class="gobefore"><a href="#f">Lettre&nbsp;F</a></li>
+					<li class="goafter"><a href="#j">Lettre&nbsp;J</a></li>
 				</ul>
 
 				<h3 id="image-de-decoration">Image de décoration</h3>
@@ -568,8 +578,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="j">J</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#i">Lettre&nbsp;I</a></span>
-				 <span class="goafter"><a href="#l">Lettre&nbsp;L</a></span>
+					<li class="gobefore"><a href="#i">Lettre&nbsp;I</a></li>
+					<li class="goafter"><a href="#l">Lettre&nbsp;L</a></li>
 				</ul>
 
 				<h3 id="taille-caracteres">Jusqu’à ou à partir de 150% (1.5em) de la taille de police par défaut sans effet de graisse. Jusqu’à ou à partir de 120% (1.2em) de la taille de police par défaut en gras</h3>
@@ -580,8 +590,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="l">L</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#j">Lettre&nbsp;J</a></span>
-				 <span class="goafter"><a href="#m">Lettre&nbsp;M</a></span>
+					<li class="gobefore"><a href="#j">Lettre&nbsp;J</a></li>
+					<li class="goafter"><a href="#m">Lettre&nbsp;M</a></li>
 				</ul>
 
 				<h3 id="langue-par-defaut">Langue par défaut</h3>
@@ -676,8 +686,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="m">M</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#l">Lettre&nbsp;L</a></span>
-				 <span class="goafter"><a href="#o">Lettre&nbsp;O</a></span>
+					<li class="gobefore"><a href="#l">Lettre&nbsp;L</a></li>
+					<li class="goafter"><a href="#o">Lettre&nbsp;O</a></li>
 				</ul>
 
 				<h3 id="mecanisme-de-remplacement">Mécanisme de remplacement</h3>
@@ -737,8 +747,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="o">O</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#m">Lettre&nbsp;M</a></span>
-				 <span class="goafter"><a href="#p">Lettre&nbsp;P</a></span>
+					<li class="gobefore"><a href="#m">Lettre&nbsp;M</a></li>
+					<li class="goafter"><a href="#p">Lettre&nbsp;P</a></li>
 				</ul>
 
 				<h3 id="ordre-de-tabulation">Ordre de tabulation</h3>
@@ -747,8 +757,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="p">P</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#o">Lettre&nbsp;O</a></span>
-				 <span class="goafter"><a href="#r">Lettre&nbsp;R</a></span>
+					<li class="gobefore"><a href="#o">Lettre&nbsp;O</a></li>
+					<li class="goafter"><a href="#r">Lettre&nbsp;R</a></li>
 				</ul>
 
 				<h3 id="page-plan-du-site">Page "plan du site"</h3>
@@ -787,8 +797,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="r">R</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#p">Lettre&nbsp;P</a></span>
-				 <span class="goafter"><a href="#s">Lettre&nbsp;S</a></span>
+					<li class="gobefore"><a href="#p">Lettre&nbsp;P</a></li>
+					<li class="goafter"><a href="#s">Lettre&nbsp;S</a></li>
 				</ul>
 
 				<h3 id="redirection">Redirection</h3>
@@ -809,8 +819,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="s">S</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#r">Lettre&nbsp;R</a></span>
-				 <span class="goafter"><a href="#t">Lettre&nbsp;T</a></span>
+					<li class="gobefore"><a href="#r">Lettre&nbsp;R</a></li>
+					<li class="goafter"><a href="#t">Lettre&nbsp;T</a></li>
 				</ul>
 
 				<h3 id="script">Script</h3>
@@ -852,8 +862,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="t">T</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#s">Lettre&nbsp;S</a></span>
-				 <span class="goafter"><a href="#u">Lettre&nbsp;U</a></span>
+					<li class="gobefore"><a href="#s">Lettre&nbsp;S</a></li>
+					<li class="goafter"><a href="#u">Lettre&nbsp;U</a></li>
 				</ul>
 
 				<h3 id="tableau-de-donnees">Tableau de données</h3>
@@ -933,8 +943,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="u">U</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#t">Lettre&nbsp;T</a></span>
-				 <span class="goafter"><a href="#v">Lettre&nbsp;V</a></span>
+					<li class="gobefore"><a href="#t">Lettre&nbsp;T</a></li>
+					<li class="goafter"><a href="#v">Lettre&nbsp;V</a></li>
 				</ul>
 
 				<h3 id="uniquement-presentation">Uniquement à des fins de présentation</h3>
@@ -950,8 +960,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="v">V</h2>
 				<ul class="skiplink">
-				 <span class="gobefore"><a href="#u">Lettre&nbsp;U</a></span>
-				 <span class="goafter"><a href="#z">Lettre&nbsp;Z</a></span>
+					<li class="gobefore"><a href="#u">Lettre&nbsp;U</a></li>
+					<li class="goafter"><a href="#z">Lettre&nbsp;Z</a></li>
 				</ul>
 
 				<h3 id="version-accessible-document">Version accessible (pour un document en téléchargement)</h3>
@@ -972,8 +982,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h2 id="z">Z</h2>
 				<ul class="skiplink">
-					 <li class="gobefore"><a href="#v">Lettre&nbsp;V</a></li>
-					 <li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
+					<li class="gobefore"><a href="#v">Lettre&nbsp;V</a></li>
+					<li class="gobefore gotoc"><a href="#toc">Sommaire</a></li>
 				</ul>
 
 				<h3 id="zone-image-reactive">Zone (d’une image réactive)</h3>
@@ -1007,12 +1017,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p>Les balises <code lang="en">area</code> sont contenues dans la balise <code lang="en">map</code>.</p>
 			</div>
         </main>
-		<footer id="footer" role="contentinfo">
-			<div class="page">
-				<p>RGAA 3.0 2016 - juin 2016 - <a href="mentions.html">Mentions légales</a>.</p>
-            	<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
-			</div>
-		</footer>
-        <script src="../../js/main.js"></script>
+        <footer id="footer" role="contentinfo">
+            <div class="page">
+                <p><a href="mentions.html">Mentions légales</a> - <a href="https://github.com/Tanaguru/Rgaa_Website">Contribuer à ce projet sur Github</a></p>
+                <p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
 	</body>
 </html>

@@ -1,0 +1,51 @@
+/* --------------------------------------------------
+
+	Page
+
+----------------------------------------------------- */
+.page {
+	max-width: @screen-medium;
+	margin: 0 auto;
+	text-align: left;
+
+	@media (max-width: @screen-medium) {
+		width: 80%;
+	}
+
+	@media (max-width: @screen-small) {
+		width: auto;
+		margin: 0 @gutter;
+    }
+
+    @media (min-height: 34em) and (min-width: 940px) {
+        width: @screen-medium;
+        padding-right: 220px !important;
+        box-sizing: content-box;
+    }
+}
+
+/* Page headrub */
+.headrub {
+	clear: both;
+    padding-top: @p*2;
+
+    h1 {
+        margin-bottom: @gutter;
+        padding-top: @gutter;
+        font-weight: bold;
+        color: @color;
+    }
+
+    .lead {
+        margin: 0;
+        font-size: 1em;
+    }
+}
+
+body.opened-menu .headrub {
+    padding-top: @p*10;
+
+    @media (min-width: @screen-small) {
+        padding-top: @p*8;
+    }
+}

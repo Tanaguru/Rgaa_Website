@@ -9,7 +9,7 @@ $('#nav').hide();
 $( document ).ready(function() {
 
     /**
-     * Corrige la position du scroll si l'url contient une ancre 
+     * Corrige la position du scroll si l'url contient une ancre
      * L'événement "scroll de la fenêtre" est déclenché pour mettre à jour l'ancre actif
      */
 
@@ -19,12 +19,12 @@ $( document ).ready(function() {
             $('html, body').animate({scrollTop : $(id).offset().top - $('.headsite').height()}, 0);
         }, 50);
     }
-    else 
+    else
     {
         // Mise à jour de l'ancre active à l'ouverture du site
         $(window).trigger('scroll');
     }
- 
+
 	/**
 	 * Gestion de l'ouverture/fermeture du menu
 	 */
@@ -74,7 +74,7 @@ $( document ).ready(function() {
 	 * Indication de l'ancre actif sur les pages "Critères" et "Glossaire"
 	 */
 
-    if ($('.criteres').length || $('.glossaire').length) {
+    if ($('.home').length || $('.criteres').length || $('.glossaire').length) {
 
         $(window).scroll(function() {
 

@@ -1,0 +1,33 @@
+/* --------------------------------------------------
+
+	Footer
+
+----------------------------------------------------- */
+
+#footer {
+	margin-top: @p*4;
+	padding: @p 0;
+	background-color: fade(@color-mid, 20%);
+    border-top: @gutter solid @color;
+
+    @media print {
+        border-top-width: 1px;
+    }
+
+	h2 {
+        margin-top: 0;
+        padding-top: 0;
+        font-size: small;
+        text-align: left;
+    }
+
+	p {
+        font-size: small;
+    }
+}
+
+@media (min-width: @screen-medium) {
+	#footer .page {
+        padding: @p 0 @p/4;
+    }
+}

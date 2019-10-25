@@ -1,0 +1,110 @@
+/* --------------------------------------------------
+
+	Skip links
+
+----------------------------------------------------- */
+.skiplink {
+    .list-none;
+    font-size: small;
+
+    @media print {
+        display: none;
+    }
+}
+
+#skiplinks {
+    margin: @gutter/2 @gutter;
+    color: @color-txt;
+}
+
+main .skiplink {
+    text-align: center;
+
+    a {
+        margin: 0 @gutter/2;
+    }
+}
+
+main .thematique .skiplink {
+    text-align: right;
+}
+
+.skiplink .gobefore a:after,
+.skiplink .goafter a:after {
+    color: @color;
+}
+.skiplink .gobefore a:after {
+    content: ' ⬆';
+}
+.skiplink .goafter a:after {
+    content: ' ⬇';
+}
+
+.skiplink .gotop {
+	position: fixed;
+	bottom: @gutter;
+    right: @gutter;
+
+    @media (min-width: @screen-large) {
+        right: 25%;
+    }
+    @media (min-height: 34em) and (min-width: 940px) {
+        display: none;
+    }
+
+    a {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background: fade(@color-txt,30);
+        border: 0;
+        border-radius: 5px;
+        font-size: 30px;
+        line-height: -30px;
+        text-align: center;
+
+        &::after {
+            color: @color-txt;
+        }
+
+        &:focus,
+        &:hover {
+            background: fade(@color-txt,50);
+
+            &:after {
+                color: lighten(@color-bg,20);
+            }
+        }
+    }
+
+    span {
+        .offscreen;
+    }
+}
+
+.gotoc {
+    @media (min-height: 34em) and (min-width: 940px) {
+        display: none;
+    }
+}
+
+/* * skiplinks top */
+.skiplinks-top {
+	position: relative;
+	z-index: 9999;
+	list-style: none;
+	margin: 0;
+	text-align: left;
+
+	a {
+		font-size: 1rem;
+		position: absolute;
+		left: -9999rem;
+
+		&:focus {
+			position: initial;
+			left: 0;
+			padding-left: 1rem;
+		}
+	}
+}

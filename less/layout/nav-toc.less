@@ -1,0 +1,86 @@
+/* --------------------------------------------------
+
+	Table of content - Nav
+
+----------------------------------------------------- */
+
+#navtoc {
+	padding: @p 0;
+	background: fade(@color-bg,90);
+    font-size: .8em;
+
+    @media (min-height: 34em) and (min-width: 940px) {
+		position: fixed;
+		width: 200px;
+		top: 70px;
+		padding: 0;
+		text-align: left;
+		margin-left: 680px;
+		max-height: calc(~"100% - 80px");
+		overflow-y: auto;
+    }
+
+    @media print {
+        display: none;
+    }
+
+	h2 {
+        padding: 0;
+        color: @color;
+        font-size: 1em;
+        font-weight: bold;
+
+        &#toc {
+            margin-top: 20px;
+        }
+    }
+
+	ul,
+	li {
+        border-color: fade(@color-mid, 20%);
+        border-style: solid;
+    }
+
+	ul {
+        .list-none;
+        margin: 0;
+        border-width: 1px 0 0;
+    }
+
+	li {
+        border-width: 0 0 1px;
+
+        a {
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: fade(@color, 20%);
+                color: inherit;
+            }
+        }
+
+        &.on {
+            background-color: @color;
+            color: @color-bg;
+        }
+    }
+
+    li a,
+    .filter {
+        display: block;
+        padding: @gutter/2;
+    }
+
+    .filter input,
+    .filter label {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+body.opened-menu #navtoc {
+
+    @media (min-height: 34em) and (min-width: 940px) {
+        top: 150px;
+    }
+}

@@ -1,0 +1,169 @@
+/* --------------------------------------------------
+
+	Header + nav
+
+----------------------------------------------------- */
+
+/* Headsite */
+.headsite {
+    width: 100% !important;
+    height: auto;
+	border-bottom: 1px solid fade(@color-mid,20);
+    background: fade(@color-bg,90);
+    text-align: center;
+}
+
+.headsite-container {
+
+    @media (min-width: @screen-medium) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Logo */
+.headsite-logo {
+    margin: 0 @gutter*2 0 0;
+    padding: @gutter @gutter 0 @gutter;
+    font-weight: bold;
+
+    @media (min-width: @screen-medium) {
+        padding-bottom: @gutter;
+    }
+}
+
+.headsite-logo-link {
+    display: inline-block;
+    padding: 0;
+    color: @color;
+}
+
+.headsite-logo-img {
+    vertical-align: middle;
+}
+
+/* Main navigation */
+.main-nav {
+    font-size: 0.85em;
+
+    @media (min-width: @screen-medium) {
+        padding: @gutter 0;
+        font-size: 0.9em;
+    }
+
+    .main-nav-list {
+        margin: 0;
+    }
+
+    .main-nav-item {
+        display: inline-block;
+        margin-top: @gutter;
+        padding: 0 @gutter;
+
+        @media (min-width: @screen-medium) {
+            margin-top: 0;
+        }
+    }
+
+    .main-nav-link {
+        color: @color;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
+
+        &::after {
+            display: none;
+        }
+
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+    }
+}
+
+/* Menu de navigation RGAA (with the "Menu" button) */
+.btn-nav-rgaa-container {
+    min-width: 130px;
+    padding: @gutter 0;
+}
+
+.btn-nav-rgaa {
+    padding: 0.5em 1em;
+    background-color: @color;
+    border: 1px solid @color;
+    border-radius: 0.5em;
+    color: @color-bg;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: @color-bg;
+        color: @color;
+    }
+}
+
+#nav {
+	border-bottom: 1px solid fade(@color-mid,20);
+    font-size: .88em;
+
+    @media print {
+        display: none;
+    }
+
+    * {
+		vertical-align: middle;
+	}
+
+	ul {
+        .list-none;
+        margin: 0;
+
+        @media (min-width: @screen-medium) {
+            font-size: 1em;
+        }
+    }
+
+	li {
+        @media (min-width: @screen-small) {
+            display: inline;
+        }
+
+        a:focus,
+        a:hover,
+        a:active {
+            background-color: fade(@color, 20%);
+        }
+
+        .on {
+            background-color: @color;
+            color: @color-bg;
+            font-weight: normal;
+        }
+    }
+
+	a,
+	.on {
+		display: inline-block;
+		border: 0;
+        color: @color;
+
+        @media (max-width: @screen-small) {
+            display: block;
+            padding: @gutter/2 @gutter;
+        }
+
+        @media (min-width: @screen-small) {
+            padding: @gutter @gutter;
+        }
+
+        @media (min-width: @screen-medium) {
+            padding: @gutter*2 @gutter;
+        }
+	}
+}

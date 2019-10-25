@@ -1,0 +1,147 @@
+<!--
+RGAA 3.0 2017 - juin 2017
+Source : http://references.modernisation.gouv.fr/rgaa-accessibilite/criteres.html
+Fork : https://github.com/Tanaguru/Rgaa_Website
+-->
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Références - RGAA 3 2017 - Tanaguru</title>
+		<meta name="description" content="Les références documentaires qui ont permis d'établir le RGAA 3 2017, mis en page par Tanaguru">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/rgaa3-references.html" hreflang="fr">
+		<link rel="alternate" href="http://rgaa.tanaguru.com/en/rgaa3-references.html" hreflang="en">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-2.1.1.min.js"></script>
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq || [];
+
+			/* CNIL - cookie duration */
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDoNotTrack", true]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://matomo.tanaguru.com/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
+	</head>
+	<body class="toc-follow">
+		<ul class="skiplinks-top">
+			<li><a id="go-to-menu" href="#nav">Aller au menu RGAA 3</a></li>
+			<li><a href="#main">Aller au contenu</a></li>
+		</ul>
+		<a id="top"></a>
+        <header id="header" role="banner">
+			<div class="headsite nav clearfix">
+				<div class="container headsite-container">
+					<p class="headsite-logo"><a href="/" title="RGAA par Tanaguru - Accueil" class="headsite-logo-link"><img src="/images/tanaguru-logo.svg" alt="Tanaguru" width="40" height="40" class="headsite-logo-img" /> RGAA</a></p>
+
+					<nav role="navigation" aria-label="Menu principal" class="main-nav">
+						<ul class="main-nav-list"><!--
+						--><li class="main-nav-item"><a href="/rgaa3-criteres.html" class="main-nav-link">Version 3.2017</a></li><!--
+						--><li class="main-nav-item"><a href="/rgaa4-criteres.html" class="main-nav-link">Version 4.0</a></li><!--
+						--><li class="main-nav-item"><a href="/en/" lang="en" hreflang="en" class="main-nav-link">English version</a></li>
+						</ul>
+					</nav>
+
+					<div class="btn-nav-rgaa-container">
+						<button type="button" class="navbar-toggle collapsed btn-nav-rgaa" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu RGAA 3</button>
+					</div>
+				</div>
+			</div>
+			<nav id="nav" class="collapse navbar-collapse" role="navigation" aria-label="Menu des pages du RGAA 3">
+				<ul><!--
+				--><li><a href="rgaa3-criteres.html">Critères</a></li><!--
+				--><li><a href="rgaa3-glossaire.html">Glossaire</a></li><!--
+				--><li><a href="rgaa3-cas-particuliers.html">Cas particuliers</a></li><!--
+				--><li><a href="rgaa3-notes-techniques.html">Notes techniques</a></li><!--
+				--><li><a href="rgaa3-base.html">Base de référence</a></li><!--
+				--><li><strong class="on">Références</strong></li><!--
+			--></ul>
+			</nav>
+		</header>
+        <main id="main" role="main">
+			<div class="headrub page">
+				<h1>Références - RGAA 3 2017</h1>
+				<p class="lead">Le RGAA (Référentiel Général d'Accessibilité des Administrations) a été établi en utilisant un certain nombre de références et de sources documentaires. Ce document liste les références qui ont été utilisées.</p>
+				<div id="navtoc">
+					<h2 id="toc">Sommaire</h2>
+					<nav class="nav" role="navigation" aria-labelledby="toc">
+						<ul>
+							<li><a href="#reference">Documents de référence</a></li>
+							<li><a href="#other">Autres documents</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="page">
+				<h2 id="reference">Documents de référence</h2>
+				<ol>
+					<li>Traduction française agréée&nbsp;: <a rel="external" class="external" href="http://www.w3.org/Translations/WCAG20-fr/">Règles pour l'accessibilité des contenus web (WCAG)&nbsp;2.0</a></li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/WCAG20-TECHS/">Techniques For WCAG 2</a></li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/html401/">HTML 4.01 Specification</a></li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/html5/">HTML5 A vocabulary and associated APIs for HTML and XHTML</a>
+					<br>- référence à la date d'Octobre 2014</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/html/wg/drafts/html/master/">HTML 5.1 Nightly A vocabulary and associated APIs for HTML and XHTML</a>
+					<br>- référence à la date de Juillet 2014</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://w3c.github.io/aria-in-html/">Using WAI-ARIA in HTML</a>
+					<br> - référence à la date de Juin 2014</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/html-alt-techniques/">HTML5: Techniques for providing useful text alternatives</a>
+					<br>- référence à la date d'Octobre 2012</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/wai-aria/">Accessible Rich Internet Applications (WAI-ARIA) 1.0</a>
+					<br> - référence à la date de mars 2014</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/WAI/PF/aria-practices/">WAI-ARIA 1.0 Authoring Practices</a>
+					<br> - référence à la date d'Avril 2014</li>
+				</ol>
+				<h2 id="other">Autres documents</h2>
+				<ol>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/WAI/GL/wiki/Main_Page">Web Content Accessibility Guidelines Working Group (Wiki)</a></li>
+					<li><a rel="external" class="external" hreflang="en" href="http://rawgit.com/w3c/html-api-map/master/index.html">HTML to Platform Accessibility APIs Implementation Guide</a>
+					<br> - référence à la date de Juillet 2014</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/UAAG20/">User Agent Accessibility Guidelines (UAAG) 2.0</a>
+					<br> - référence à la date de Novembre 2013</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/WAI/AU/ATAG20/">Authoring Tool Accessibility Guidelines (ATAG) 2.0</a>
+					<br> - référence à la date d'Octobre 2013</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/wai-aria-implementation/">WAI-ARIA 1.0 User Agent Implementation Guide</a>
+					<br> - référence à la date de mars 2014</li>
+					<li><a rel="external" class="external" hreflang="en" href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a>
+					<br> - référence à la date de Juillet 2014</li>
+					<li><a rel="external" class="external" hreflang="en" href="http://www.w3.org/TR/core-aam-1.1/">Core Accessibility API Mappings 1.1</a>
+					<br> - référence à la date de Juin 2014</li>
+				</ol>
+			</div>
+        </main>
+		<footer id="footer" role="contentinfo">
+			<div class="page">
+				<p><a href="mentions.html">Mentions légales</a> - <a href="https://github.com/Tanaguru/Rgaa_Website">Contribuer à ce projet sur Github</a></p>
+				<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Retour en haut de la page"><span>Haut de la page</span></a></span></p>
+			</div>
+		</footer>
+		<script src="js/main.js"></script>
+	</body>
+</html>

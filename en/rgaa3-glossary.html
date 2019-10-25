@@ -7,13 +7,15 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Glossary - RGAA 3.0 2017 (English translation)</title>
-		<meta content="English translation of the RGAA 3.0 2017, French official accessibility guidelines. Glossary." name="description">
-		<meta content="RGAA, RGAA 3.0 2016, French accessibility guidelines, English translation, glossary" name="keywords">
+		<title>Glossary - RGAA 3.0 2017 (English translation) - Tanaguru</title>
+		<meta content="English translation of the RGAA 3 2017, French official accessibility guidelines. Glossary." name="description">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/rgaa3-glossaire.html" hreflang="fr">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/en/rgaa3-glossary.html" hreflang="en">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="../js/jquery-2.1.1.min.js"></script>
-    	<link rel="shortcut icon" href="../favicon.ico">
 
 		<!-- Matomo -->
 		<script type="text/javascript">
@@ -49,31 +51,40 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 		<!-- End Matomo Code -->
 	</head>
 	<body class="glossaire">
-	    <ul class="skiplinks-top">
-            <li><a id="go-to-menu" href="#nav">Go to menu</a></li>
+		<ul class="skiplinks-top">
+            <li><a id="go-to-menu" href="#nav">Go to RGAA 3 menu</a></li>
             <li><a href="#main">Go to content</a></li>
         </ul>
 		<a id="top"></a>
         <header id="header" role="banner">
 			<div class="headsite nav clearfix">
-				<div class="container">
-					<p id="logo"><a href="/fr/rgaa3/">RGAA3 (<abbr title="Français" lang="fr">FR</abbr>)</a> - <a href="/fr/rgaa4/">RGAA4 (<abbr title="Français" lang="fr">FR</abbr>)</a> - <a href="/en/">RGAA3 (<abbr title="English">EN</abbr>)</a></p>
+				<div class="container headsite-container">
+					<p class="headsite-logo"><a href="/en/" title="RGAA by Tanaguru - Home" class="headsite-logo-link"><img src="/images/tanaguru-logo.svg" alt="Tanaguru" width="40" height="40" class="headsite-logo-img" /> RGAA</a></p>
 
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu</button>
+					<nav role="navigation" aria-label="Main navigation menu" class="main-nav">
+						<ul class="main-nav-list"><!--
+						--><li class="main-nav-item"><a href="/en/rgaa3-criteria.html" class="main-nav-link">3.2017 version</a></li><!--
+						--><li class="main-nav-item"><a href="/" lang="fr" hreflang="fr" class="main-nav-link">Version française</a></li>
+						</ul>
+					</nav>
+
+					<div class="btn-nav-rgaa-container">
+						<button type="button" class="navbar-toggle collapsed btn-nav-rgaa" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">RGAA 3 Menu</button>
+					</div>
 				</div>
 			</div>
 			<nav id="nav" class="collapse navbar-collapse" role="navigation">
 				<ul><!--
-				--><li><a href="./criteres.html">Criteria</a></li><!--
+				--><li><a href="./rgaa3-criteria.html">Criteria</a></li><!--
 				--><li><strong class="on">Glossary</strong></li><!--
-				--><li><a href="./cas-particuliers.html">Particular cases</a></li><!--
-				--><li><a href="./notes-techniques.html">Technical notes</a></li><!--
-				--><li><a href="./base.html">Baseline</a></li><!--
-				--><li><a href="./references.html">References</a></li><!--
+				--><li><a href="./rgaa3-particular-cases.html">Particular cases</a></li><!--
+				--><li><a href="./rgaa3-technical-notes.html">Technical notes</a></li><!--
+				--><li><a href="./rgaa3-baseline.html">Baseline</a></li><!--
+				--><li><a href="./rgaa3-references.html">References</a></li><!--
 			--></ul>
 			</nav>
             <div class="headrub page">
-                <h1>Glossary</h1>
+                <h1>Glossary - RGAA 3 2017</h1>
 				<p class="lead">The RGAA is the French government's General Accessibility Reference for Administrations. It is meant to provide a way to check compliance against <abbr title="Web Content Accessibility Guidelines, version 2.0">WCAG&nbsp;2.0</abbr>.</p>
 				<div id="navtoc">
 					<h2 id="toc">Table of Contents</h2>
@@ -523,7 +534,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 				<h3 id="titre">Heading</h3>
 				<p>HTML element (h<i>n</i> tag) with 6 hierarchy levels (from <code>h1</code> for the most important heading to <code>h6</code> for the less important), allowing to define and title sections in a Web content. The hierarchy between headings must be respected on a web page, and the heading levels cannot be skipped: a <code>h3</code> heading (level&nbsp;3) cannot be the next heading after a <code>h1</code> heading (level&nbsp;1), for example. On each web page, there must be at least one <code>h1</code> heading.</p>
-				<p><strong>Note:</strong> Headings hidden via CSS are considered as available to the user, and validate <a href="criteres.html#crit-9-1">criterion&nbsp;9.1</a>.</p>
+				<p><strong>Note:</strong> Headings hidden via CSS are considered as available to the user, and validate <a href="rgaa3-criteria.html#crit-9-1">criterion&nbsp;9.1</a>.</p>
 
 				<h3 id="texte-cache">Hidden text</h3>
 				<p>Assistive technologies (in particular, screen readers) do not render content hidden via these properties:</p><ul>
@@ -536,7 +547,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<li>(HTML5) <code>hidden</code> attribute</li>
 				<li>(HTML+ARIA) <code>aria-hidden=true</code></li>
 				</ul>
-				<p>All text content using one or more of these properties are scoped by the <a href="criteres.html#crit-10-13">criterion&nbsp;10.13</a>.</p>
+				<p>All text content using one or more of these properties are scoped by the <a href="rgaa3-criteria.html#crit-10-13">criterion&nbsp;10.13</a>.</p>
 
 				<h2 id="i">I</h2>
 				<ul class="skiplink">
@@ -701,7 +712,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				</li>
 				</ul>
 				<p><strong>Note 1:</strong> An image link can be based on an image (<code>img</code> tag), on image object (<code>object</code> tag) or a bitmap image (<code>canvas</code> tag).</p>
-				<p><strong>Note 2:</strong> An image link with a missing <code>alt</code> attribute is considered as not applicable for <a href="criteres.html#crit-6-5">criterion&nbsp;6.5</a>.</p>
+				<p><strong>Note 2:</strong> An image link with a missing <code>alt</code> attribute is considered as not applicable for <a href="rgaa3-criteria.html#crit-6-5">criterion&nbsp;6.5</a>.</p>
 
 				<h3 id="titre-de-lien">Link title</h3>
 				<p>Content of the <code>title</code> attribute of a link. This content must be set only if it is necessary to identify the link target in an explicit way. A link title must duplicate the link text, and add  complementary information. A link title will be considered as not relevant in the following situations:</p>
@@ -779,7 +790,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<h3 id="media-non-temporel">
 					Non time-based media</h3>
 				<p>Content that is not time-dependant, that can be played via a plugin (Flash, Java, Silverlight&hellip;) or via <code>svg</code> and <code>canvas</code> tags. For example, an interactive map in Flash, a Flash-based or Java application, a user-controlled slideshow, are non time-based media. A non time-based media can contain time-based media (a Flash-based gallery of videos, for example).</p>
-				<p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates <a href="criteres.html#crit-4-21">criterion&nbsp;4.21</a> (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). therefore it can not be tabbed to.</p>
+				<p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates <a href="rgaa3-criteria.html#crit-4-21">criterion&nbsp;4.21</a> (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). therefore it can not be tabbed to.</p>
 
 				<h2 id="o">O</h2>
 				<ul class="skiplink">
@@ -956,7 +967,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</li>
 				</ul>
 				<p>A time-based media can be broadcast live or be provided to play in an asynchronous way (prerecorded media).</p>
-				<p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates <a href="criteres.html#crit-4-21">criterion&nbsp;4.21</a> (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). therefore it can not be tabbed to.</p>
+				<p><strong>Note :</strong> the use of the <code>wmode</code> parameter for a Flash object with the values "<code>transparent</code>" and "<code>opaque</code>" invalidates <a href="rgaa3-criteria.html#crit-4-21">criterion&nbsp;4.21</a> (Can each non time-based media be controlled by the keyboard and by the mouse?). When accessed with a  screenreader, these values make the Flash movie inaccessible (the object is ignored, or can not be browsed). therefore it can not be tabbed to.</p>
 				<p>Note 2: Animated GIFs, and JavaScript-based animations  are not considered as time-based media with regards to RGAA.</p>
 
 				<h3 id="titre-tableau">Title (of a data table)</h3>
@@ -998,7 +1009,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				<p>Link whose content between <code>&lt;a href="&hellip;"&gt;</code> and <code>&lt;/a&gt;</code> is only constituted of a vector image (svg tag). The link text of a vector link is the alternative text of the vector image.</p>
 
 				<h3 id="contenu-visible">Visible content</h3>
-				<p>For <a href="criteres.html#test-10-2-1">Test 10.2.1</a>: "available content" means that the visible content remains available when CSS styles have been disabled. For instance, an image conveying information, used as a background through CSS, fails this test, since information is not "available" when CSS styles are disabled. However,  an image conveying information, used as a background through CSS, but accompanied by a hidden text, passes this test because information is "available" when CSS styles are disabled.</p>
+				<p>For <a href="rgaa3-criteria.html#test-10-2-1">Test 10.2.1</a>: "available content" means that the visible content remains available when CSS styles have been disabled. For instance, an image conveying information, used as a background through CSS, fails this test, since information is not "available" when CSS styles are disabled. However,  an image conveying information, used as a background through CSS, but accompanied by a hidden text, passes this test because information is "available" when CSS styles are disabled.</p>
 				<p><strong>Note:</strong> authors are formally advised against using images conveying information as CSS backgrounds, even when hidden texts are available. </p>
 
 				<h2 id="w">W</h2>
@@ -1022,12 +1033,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				</ul>
 			</div>
         </main>
-        <footer id="footer" role="contentinfo">
-            <div class="page">
-                <p>English translation of the RGAA 3.0 2017 - août 2017 - <a href="mentions.html">Legal Notice</a>.</p>
-            	<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Back to top"><span>Back to top</span></a></span></p>
-            </div>
-        </footer>
+		<footer id="footer" role="contentinfo">
+			<div class="page">
+				<p><a href="legal-notice.html">Legal Notice</a> - <a href="https://github.com/Tanaguru/Rgaa_Website">Contribute to this project on Github</a></p>
+				<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Back to top"><span>Back to top</span></a></span></p>
+			</div>
+		</footer>
         <script src="../js/main.js"></script>
 	</body>
 </html>

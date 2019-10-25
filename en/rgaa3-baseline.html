@@ -7,13 +7,15 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Baseline - RGAA 3.0 2017 (English translation)</title>
-		<meta content="English translation of the RGAA 3.0 2017, French official accessibility guidelines. Baseline." name="description">
-		<meta content="RGAA, RGAA 3.0 2016, French accessibility guidelines, English translation, baseline" name="keywords">
+		<title>Baseline - RGAA 3 2017 (English translation) - Tanaguru</title>
+		<meta content="English translation of the RGAA 3 2017, French official accessibility guidelines. Baseline." name="description">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/rgaa3-base.html" hreflang="fr">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/en/rgaa3-baseline.html" hreflang="en">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="../favicon.ico">
 		<link rel="stylesheet" href="../css/style.css">
 		<script src="../js/jquery-2.1.1.min.js"></script>
-    	<link rel="shortcut icon" href="../favicon.ico">
 
 		<!-- Matomo -->
 		<script type="text/javascript">
@@ -50,30 +52,41 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 	</head>
 	<body>
 		<ul class="skiplinks-top">
-			<li><a id="go-to-menu" href="#nav">Go to menu</a></li>
+			<li><a id="go-to-menu" href="#nav">Go to RGAA 3 menu</a></li>
 			<li><a href="#main">Go to content</a></li>
 		</ul>
 		<a id="top"></a>
         <header id="header" role="banner">
 			<div class="headsite nav clearfix">
-				<div class="container">
-					<p id="logo"><a href="/fr/rgaa3/">RGAA3 (<abbr title="Français" lang="fr">FR</abbr>)</a> - <a href="/fr/rgaa4/">RGAA4 (<abbr title="Français" lang="fr">FR</abbr>)</a> - <a href="/en/">RGAA3 (<abbr title="English">EN</abbr>)</a></p>
+				<div class="container headsite-container">
+                    <p class="headsite-logo"><a href="/en/" title="RGAA by Tanaguru - Home" class="headsite-logo-link"><img src="/images/tanaguru-logo.svg" alt="Tanaguru" width="40" height="40" class="headsite-logo-img" /> RGAA</a></p>
 
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">Menu</button>
-				</div>
+                    <nav role="navigation" aria-label="Main navigation menu" class="main-nav">
+                        <ul class="main-nav-list"><!--
+                        --><li class="main-nav-item"><a href="/en/rgaa3-criteria.html" class="main-nav-link">3.2017 version</a></li><!--
+                        --><li class="main-nav-item"><a href="/" lang="fr" hreflang="fr" class="main-nav-link">Version française</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="btn-nav-rgaa-container">
+                        <button type="button" class="navbar-toggle collapsed btn-nav-rgaa" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" id="btnnav">RGAA 3 Menu</button>
+                    </div>
+                </div
 			</div>
-			<nav id="nav" class="collapse navbar-collapse" role="navigation">
+			<nav id="nav" class="collapse navbar-collapse" role="navigation" aria-label="RGAA 3 pages Navigation menu">
 				<ul><!--
-				--><li><a href="./criteres.html">Criteria</a></li><!--
-				--><li><a href="./glossaire.html">Glossary</a></li><!--
-				--><li><a href="./cas-particuliers.html">Particular cases</a></li><!--
-				--><li><a href="./notes-techniques.html">Technical notes</a></li><!--
+				--><li><a href="./rgaa3-criteria.html">Criteria</a></li><!--
+				--><li><a href="./rgaa3-glossary.html">Glossary</a></li><!--
+				--><li><a href="./rgaa3-particular-cases.html">Particular cases</a></li><!--
+				--><li><a href="./rgaa3-technical-notes.html">Technical notes</a></li><!--
 				--><li><strong class="on">Baseline</strong></li><!--
-				--><li><a href="./references.html">References</a></li><!--
+				--><li><a href="./rgaa3-references.html">References</a></li><!--
 			--></ul>
 			</nav>
-            <div class="headrub page">
-                <h1>Baseline</h1>
+		</header>
+		<main id="main" role="main">
+			<div class="headrub page">
+				<h1>Baseline - RGAA 3 2017</h1>
 				<p class="lead">Several <abbr lang="fr" title="Référentiel Général d'Accessibilité des Administrations">RGAA</abbr> criteria refer  to rendering tests on a range of assistive technologies, browsers and operating systems. This document describes and explains the combinations selected to constitute the baseline.</p>
 				<div id="navtoc">
 					<h2 id="toc">Table of Contents</h2>
@@ -87,8 +100,6 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</nav>
 				</div>
 			</div>
-		</header>
-		<main id="main" role="main">
 			<div class="page">
 				<h2 id="compatible">Compatible with assistive technologies - Baseline</h2>
 				<p>The reference baseline consists of configurations (assistive technology, operating system, browser) used to declare a HTML5&nbsp;/ ARIA  based piece of software is <a rel="external" class="external" href="http://www.w3.org/Translations/WCAG20-fr/#accessibility-supporteddef">"accessibility supported" as defined by WCAG&nbsp;2.0</a>.</p>
@@ -124,18 +135,26 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<caption>Baseline - Combination 2</caption>
 					<thead>
 						<tr>
-							<th scope="col">Assistive technology</th><th>AT version</th><th scope="col">Browser</th>
+							<th scope="col">Assistive technology</th>
+							<th>AT version</th>
+							<th scope="col">Browser</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>JAWS</td><td>Previous version</td><td>Firefox</td>
+							<td>JAWS</td>
+							<td>Previous version</td>
+							<td>Firefox</td>
 						</tr>
 						<tr>
-							<td>NVDA</td><td>Latest version</td><td>Firefox or Internet Explorer 9+</td>
+							<td>NVDA</td>
+							<td>Latest version</td>
+							<td>Firefox or Internet Explorer 9+</td>
 						</tr>
 						<tr>
-							<td>Voice Over</td><td>Latest version</td><td>Safari</td>
+							<td>Voice Over</td>
+							<td>Latest version</td>
+							<td>Safari</td>
 						</tr>
 					</tbody>
 				</table>
@@ -143,18 +162,26 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<caption>Baseline - Combination 3</caption>
 					<thead>
 						<tr>
-							<th scope="col">Assistive technology</th><th scope="col">AT version</th><th scope="col">Browser</th>
+							<th scope="col">Assistive technology</th>
+							<th scope="col">AT version</th>
+							<th scope="col">Browser</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>JAWS</td><td>Previous version</td><td>Firefox</td>
+							<td>JAWS</td>
+							<td>Previous version</td>
+							<td>Firefox</td>
 						</tr>
 						<tr>
-							<td>Window-Eyes</td><td>Previous version</td><td>Firefox or Internet Explorer 9+</td>
+							<td>Window-Eyes</td>
+							<td>Previous version</td>
+							<td>Firefox or Internet Explorer 9+</td>
 						</tr>
 						<tr>
-							<td>Voice Over</td><td>Latest version</td><td>Safari</td>
+							<td>Voice Over</td>
+							<td>Latest version</td>
+							<td>Safari</td>
 						</tr>
 					</tbody>
 				</table>
@@ -162,18 +189,26 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<caption>Baseline - Combination 4</caption>
 					<thead>
 						<tr>
-							<th scope="col">Assistive technology</th><th scope="col">AT version</th><th scope="col">Browser</th>
+							<th scope="col">Assistive technology</th>
+							<th scope="col">AT version</th>
+							<th scope="col">Browser</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>Window-Eyes</td><td>Previous version</td><td>Firefox</td>
+							<td>Window-Eyes</td>
+							<td>Previous version</td>
+							<td>Firefox</td>
 						</tr>
 						<tr>
-							<td>JAWS</td><td>Previous version</td><td>Firefox or Internet Explorer 9+</td>
+							<td>JAWS</td>
+							<td>Previous version</td>
+							<td>Firefox or Internet Explorer 9+</td>
 						</tr>
 						<tr>
-							<td>Voice Over</td><td>Latest version</td><td>Safari</td>
+							<td>Voice Over</td>
+							<td>Latest version</td>
+							<td>Safari</td>
 						</tr>
 					</tbody>
 				</table>
@@ -203,12 +238,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				</p>
 			</div>
         </main>
-        <footer id="footer" role="contentinfo">
-            <div class="page">
-                <p>English translation of the RGAA 3.0 2017 - août 2017 - <a href="mentions.html">Legal Notice</a>.</p>
-            	<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Back to top"><span>Back to top</span></a></span></p>
-            </div>
-        </footer>
+		<footer id="footer" role="contentinfo">
+			<div class="page">
+				<p><a href="legal-notice.html">Legal Notice</a> - <a href="https://github.com/Tanaguru/Rgaa_Website">Contribute to this project on Github</a></p>
+				<p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Back to top"><span>Back to top</span></a></span></p>
+			</div>
+		</footer>
         <script src="../js/main.js"></script>
 	</body>
 </html>

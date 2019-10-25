@@ -1,11 +1,106 @@
-<html>
-<head>
-<title>RGAA</title>
-<script language="JavaScript">
-<!--
-if (parent.frames.length==0) parent.location.href="criteres.html"
-// -->
-</script>
-</head>
-<body></body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>RGAA (Reference Document for the Improvement of Accessibility) - Web version by Tanaguru</title>
+        <meta name="description" content="Discover the RGAA (Reference Document for the Improvement of Accessibility) in versions 3.2017 and 4 in French and English">
+        <link rel="alternate" href="http://rgaa.tanaguru.com" hreflang="fr">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/en/" hreflang="en">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/jquery-2.1.1.min.js"></script>
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq || [];
+
+			/* CNIL - cookie duration */
+			_paq.push([function() {
+				var self = this;
+				function getOriginalVisitorCookieTimeout() {
+					var now = new Date(),
+					nowTs = Math.round(now.getTime() / 1000),
+					visitorInfo = self.getVisitorInfo();
+					var createTs = parseInt(visitorInfo[2]);
+					var cookieTimeout = 33696000; // 13 mois en secondes
+					var originalTimeout = createTs + cookieTimeout - nowTs;
+					return originalTimeout;
+				}
+				this.setVisitorCookieTimeout( getOriginalVisitorCookieTimeout() );
+			}]);
+
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDoNotTrack", true]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="https://matomo.tanaguru.com/";
+				_paq.push(['setTrackerUrl', u+'matomo.php']);
+				_paq.push(['setSiteId', '3']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
+	</head>
+	<body class="home">
+        <ul class="skiplinks-top">
+            <li><a href="#main">Go to content</a></li>
+        </ul>
+        <a id="top"></a>
+        <header id="header" role="banner">
+            <div class="headsite nav clearfix">
+                <div class="container headsite-container">
+                    <p class="headsite-logo"><a href="/en/" title="RGAA by Tanaguru - Home" class="headsite-logo-link"><img src="/images/tanaguru-logo.svg" alt="Tanaguru" width="40" height="40" class="headsite-logo-img" /> RGAA</a></p>
+
+                    <nav role="navigation" aria-label="Main navigation menu" class="main-nav">
+                        <ul class="main-nav-list"><!--
+                        --><li class="main-nav-item"><a href="/en/rgaa3-criteria.html" class="main-nav-link">3.2017 version</a></li><!--
+                        --><li class="main-nav-item"><a href="/" lang="fr" hreflang="fr" class="main-nav-link">Version française</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="btn-nav-rgaa-container"></div>
+                </div>
+            </div>
+        </header>
+        <main id="main" role="main">
+            <div class="headrub page">
+                <h1>RGAA (Reference Document for the Improvement of Accessibility) - Web version by Tanaguru</h1>
+                <p class="lead">This website aims to present the RGAA in a different form from the official version, which is more appropriate for us at Tanaguru. It has the same content as the official version. However, some typos may have slipped into our pages. Feel free to <a href="https://github.com/Tanaguru/Rgaa_Website">let us know about them on the Github project</a>!</p>
+                <div id="navtoc">
+                    <h2 id="toc">Table of Contents</h2>
+                    <nav class="nav" role="navigation" aria-labelledby="toc">
+                        <ul>
+                            <li><a href="#rgaa4">RGAA 4.0</a></li>
+                            <li><a href="#rgaa3-2017">RGAA 3.2017</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="page">
+                <h2 id="rgaa4">List of the RGAA 4.0 pages<br /> (work in progress)</h2>
+                <p>Upcoming content…</p>
+
+                <h2 id="rgaa3-2017">List of the RGAA 3.2017 pages</h2>
+                <ul>
+                    <li><a href="/en/rgaa3-criteria.html">RGAA 3.2017 <strong>Criteria</strong></a></li>
+                    <li><a href="/en/rgaa3-glossary.html">RGAA 3.2017 <strong>Glossary</strong></a></li>
+                    <li><a href="/en/rgaa3-particular-cases.html">RGAA 3.2017 <strong>Particular cases</strong></a></li>
+                    <li><a href="/en/rgaa3-technical-notes.html">RGAA 3.2017 <strong>Technical notes</strong></a></li>
+                    <li><a href="/en/rgaa3-baseline.html">RGAA 3.2017 <strong>Baseline</strong></a></li>
+                    <li><a href="/en/rgaa3-references.html">RGAA 3.2017 <strong>References</strong></a></li>
+                </ul>
+            </div>
+        </main>
+        <footer id="footer" role="contentinfo">
+            <div class="page">
+                <p><a href="legal-notice.html">Legal Notice</a> - <a href="https://github.com/Tanaguru/Rgaa_Website">Contribute to this project on Github</a></p>
+                <p class="skiplink"><span class="gobefore gotop"><a href="#top" title="Back to top"><span>Back to top</span></a></span></p>
+            </div>
+        </footer>
+        <script src="../js/main.js"></script>
+    </body>
 </html>

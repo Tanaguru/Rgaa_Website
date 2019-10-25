@@ -1,13 +1,11 @@
 /* --------------------------------------------------
 
-   Composition helpers
-   [fr] Aides a la composition
-   
-   (c) 2010-2014 Tiny Typo v1.3.4 - MIT License - tinytypo.tetue.net
+	Composition helpers
+	[fr] Aides a la composition
+
+	(c) 2010-2014 Tiny Typo v1.3.4 - MIT License - tinytypo.tetue.net
 
 ----------------------------------------------------- */
-
-@import "var.less";
 
 /* Box model
 [fr] http://blog.goetter.fr/post/27612618411/box-sizing-et-pourquoi-pas
@@ -15,9 +13,7 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Blocks */
@@ -47,12 +43,12 @@ hr.clear { visibility: hidden; }
 
 /* clearfix : http://www.positioniseverything.net/easyclearing.html */
 .clearfix:after {
-    content: "\0020";
-    display: block; 
-    height: 0; 
-    clear: both; 
-    visibility: hidden;
-    overflow: hidden;
+	content: "\0020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	overflow: hidden;
 }
 .clearfix { display: inline-table; }
 

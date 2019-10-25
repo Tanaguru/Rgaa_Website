@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<title>Mentions légales - RGAA par Tanaguru</title>
 		<meta name="description" content="Mentions légales du site RGAA proposé par Tanaguru">
+        <link rel="alternate" href="http://rgaa.tanaguru.com/mentions.html" hreflang="fr">
+		<link rel="alternate" href="http://rgaa.tanaguru.com/en/legal-notice.html" hreflang="en">
+
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="favicon.ico">
 		<link rel="stylesheet" href="css/style.css">
 		<script src="js/jquery-2.1.1.min.js"></script>
-		<link rel="shortcut icon" href="favicon.ico">
 
 		<!-- Matomo -->
 		<script type="text/javascript">
@@ -42,37 +45,58 @@
 		</script>
 		<!-- End Matomo Code -->
 	</head>
-	<body class="glossaire">
+	<body class="mentions">
 		<ul class="skiplinks-top">
 			<li><a href="#main">Aller au contenu</a></li>
 		</ul>
 		<a id="top"></a>
         <header id="header" role="banner">
 			<div class="headsite nav clearfix">
-				<div class="container">
-					<p id="logo"><a href="/rgaa3-criteres.html">RGAA3 (<abbr title="Français">FR</abbr>)</a> - <a href="/rgaa4-criteres.html">RGAA4 (<abbr title="Français">FR</abbr>)</a> - <a href="/en/">RGAA3 (<abbr title="English" lang="en">EN</abbr>)</a></p>
+				<div class="container headsite-container">
+					<p class="headsite-logo"><a href="/" title="RGAA par Tanaguru - Accueil" class="headsite-logo-link"><img src="/images/tanaguru-logo.svg" alt="Tanaguru" width="40" height="40" class="headsite-logo-img" /> RGAA</a></p>
+
+					<nav role="navigation" aria-label="Menu principal" class="main-nav">
+						<ul class="main-nav-list"><!--
+						--><li class="main-nav-item"><a href="/rgaa3-criteres.html" class="main-nav-link">Version 3.2017</a></li><!--
+						--><li class="main-nav-item"><a href="/rgaa4-criteres.html" class="main-nav-link">Version 4.0</a></li><!--
+						--><li class="main-nav-item"><a href="/en/" lang="en" hreflang="en" class="main-nav-link">English version</a></li>
+						</ul>
+					</nav>
+
+					<div class="btn-nav-rgaa-container"></div>
 				</div>
-			</div>
-            <div class="headrub page">
-                <h1>Mentions légales</h1>
 			</div>
 		</header>
         <main id="main" role="main">
+			<div class="headrub page">
+				<h1>Mentions légales</h1>
+                <div id="navtoc">
+                    <h2 id="toc">Sommaire</h2>
+                    <nav class="nav" role="navigation" aria-labelledby="toc">
+                        <ul>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#responsables">Responsables légaux</a></li>
+                            <li><a href="#credits">Crédits</a></li>
+                            <li><a href="#analytics">Mesure d’audience du site Web</a></li>
+                        </ul>
+                    </nav>
+                </div>
+			</div>
 			<div class="page">
-				<p>Le RGAA (Référentiel Général d’Accessibilité des Administrations) est un document d’état placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence" rel="external" class="external">licence ouverte</a> (voir les <a href="http://references.modernisation.gouv.fr/mentions-legales" rel="external" class="external">conditions d’utilisation</a>).</p>
+				<p>Le RGAA (Référentiel Général d’Amélioration de l’Accessibilité) est un document d’état placé sous <a href="https://www.etalab.gouv.fr/licence-ouverte-open-licence" rel="external" class="external">licence ouverte</a> (voir les <a href="http://references.modernisation.gouv.fr/mentions-legales" rel="external" class="external">conditions d’utilisation</a>).</p>
 				<p>Ce site est une initiative de l’équipe Tanaguru. Il&nbsp;s’agit d’une reproduction fidèle au document original&nbsp;: seules quelques corrections mineures d’orthographe et de présentation y&nbsp;ont été apportées.</p>
 				<p><em>Avertissement&nbsp;: cette version n’a pas de valeur normative. Le seul document normatif est le <a href="http://references.modernisation.gouv.fr/rgaa-accessibilite/" rel="external" class="external">RGAA officiel en&nbsp;français</a>, conforme à la <a href="http://www.w3.org/Translations/WCAG20-fr/" rel="external" class="external">norme internationale <abbr title="Web Content Accessibility Guidelines" rel="external" class="external" lang="en">WCAG</abbr></a>.</em></p>
 
-				<h2 class="h3">Contact</h2>
+				<h2 id="contact" class="h3">Contact</h2>
 				<p>Si vous détectez des erreurs, si vous avez des suggestions ou si vous souhaitez contribuer, rendez-vous sur <a href="https://github.com/Tanaguru/Rgaa_Website/issues" rel="external" class="external">notre dépôt Github</a>.</p>
 
-				<h2 class="h3">Responsables légaux</h2>
+				<h2 id="responsables" class="h3">Responsables légaux</h2>
 				<p>Ce site est édité par <a href="http://www.oceaneconsulting.com" rel="external" class="external">Océane Consulting</a> et hébergé par <a href="https://www.ovh.com" rel="external" class="external">OVH</a>, France.</p>
 
-				<h2 class="h3">Crédits</h2>
+				<h2 id="credits" class="h3">Crédits</h2>
 				<p>Cette page est réalisée avec <a href="http://tinytypo.tetue.net" rel="external" class="external">Tiny Typo</a>, par <a href="http://www.tanaguru.com/fr/" rel="external" class="external">Tanaguru</a>, un gentil dragon qui évalue votre accessibilité&nbsp;web.</p>
 
-				<h2 class="h3">Mesure d’audience du site Web</h2>
+				<h2 id="analytics" class="h3">Mesure d’audience du site Web</h2>
 				<p>Nous utilisons le service <a href="https://matomo.org/">Matomo</a> afin de mesurer l’audience de ce site Web.</p>
 				<p>Les statistiques sont recueillies en respectant les règles énoncées par la CNIL :</p>
 				<ul>

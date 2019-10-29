@@ -70,6 +70,12 @@ AddType text/javascript .js
 	#Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self';"
 </IfModule>
 
+# 404 page
+ErrorDocument 404 /404.html
+
+# 403 page
+ErrorDocument 403 /403.html
+
 # Redirections
 <IfModule mod_rewrite.c>
 	Options +FollowSymLinks

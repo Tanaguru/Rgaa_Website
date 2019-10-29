@@ -74,7 +74,9 @@ AddType text/javascript .js
 
 # Redirections
 <IfModule mod_rewrite.c>
-  RewriteEngine On
+  Options +FollowSymLinks
+	RewriteEngine On
+	RewriteBase /
 
   # French URLs
   Redirect 301 /fr/ http://rgaa.tanaguru.com

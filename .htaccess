@@ -7,12 +7,12 @@ DefaultLanguage fr-FR
   Options All -Indexes
 </IfModule>
 
-# Interdire le référencement du fichier robots.txt
+# Prevent robots.txt file indexing
 <Files ~ "robots\.txt$">
   Header set X-Robots-Tag "noindex"
 </Files>
 
-# Ajout types de fichiers
+# Add file types
 AddType x-font/otf .otf
 AddType x-font/ttf .ttf
 AddType x-font/eot .eot
@@ -20,7 +20,7 @@ AddType x-font/woff .woff
 AddType x-font/woff2 .woff2
 AddType text/javascript .js
 
-# Compression gzip
+# Gzip compression
 <IfModule mod_deflate.c>
   AddOutputFilterByType DEFLATE image/svg+xml
   AddOutputFilterByType DEFLATE x-font/ttf
@@ -32,7 +32,7 @@ AddType text/javascript .js
   AddOutputFilterByType DEFLATE application/pdf
 </IfModule>
 
-# Mise en cache navigateur
+# Browser caching
 <IfModule mod_expires.c>
   # Enable expirations
   ExpiresActive On
@@ -55,7 +55,7 @@ AddType text/javascript .js
   ExpiresByType image/x-icon "now plus 1 year"
 </IfModule>
 
-# Sécurité (cf. Dareboost)
+# Sécurity (cf. Dareboost)
 <IfModule mod_headers.c>
 
   # Désactiver la détection automatique du type des ressources
@@ -70,4 +70,55 @@ AddType text/javascript .js
 
   # Politique de sécurité sur la provenance des ressources CSP
   #Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; base-uri 'self';"
+</IfModule>
+
+# Redirections
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # French URLs
+  Redirect 301 /fr/ http://rgaa.tanaguru.com
+  Redirect 301 /fr/mentions.html http://rgaa.tanaguru.com/mentions.html
+
+  Redirect 301 /fr/rgaa4/ http://rgaa.tanaguru.com/rgaa4-criteres.html
+  Redirect 301 /fr/rgaa4/base.html http://rgaa.tanaguru.com/rgaa4-base.html
+  Redirect 301 /fr/rgaa4/cas-particuliers.html http://rgaa.tanaguru.com/rgaa4-criteres.html
+  Redirect 301 /fr/rgaa4/criteres.html http://rgaa.tanaguru.com/rgaa4-criteres.html
+  Redirect 301 /fr/rgaa4/glossaire.html http://rgaa.tanaguru.com/rgaa4-glossaire.html
+  Redirect 301 /fr/rgaa4/notes-techniques.html http://rgaa.tanaguru.com/rgaa4-criteres.html
+  Redirect 301 /fr/rgaa4/references.html http://rgaa.tanaguru.com/rgaa4-references.html
+  Redirect 301 /fr/rgaa4/mentions.html http://rgaa.tanaguru.com/mentions.html
+
+  Redirect 301 /fr/rgaa3/ http://rgaa.tanaguru.com/rgaa3-criteres.html
+  Redirect 301 /fr/rgaa3/base.html http://rgaa.tanaguru.com/rgaa3-base.html
+  Redirect 301 /fr/rgaa3/cas-particuliers.html http://rgaa.tanaguru.com/rgaa3-cas-particuliers.html
+  Redirect 301 /fr/rgaa3/criteres.html http://rgaa.tanaguru.com/rgaa3-criteres.html
+  Redirect 301 /fr/rgaa3/glossaire.html http://rgaa.tanaguru.com/rgaa3-glossaire.html
+  Redirect 301 /fr/rgaa3/notes-techniques.html http://rgaa.tanaguru.com/rgaa3-notes-techniques.html
+  Redirect 301 /fr/rgaa3/references.html http://rgaa.tanaguru.com/rgaa3-references.html
+  Redirect 301 /fr/rgaa3/mentions.html http://rgaa.tanaguru.com/mentions.html
+
+  Redirect 301 /fr/base.html http://rgaa.tanaguru.com/rgaa3-base.html
+  Redirect 301 /fr/cas-particuliers.html http://rgaa.tanaguru.com/rgaa3-cas-particuliers.html
+  Redirect 301 /fr/criteres.html http://rgaa.tanaguru.com/rgaa3-criteres.html
+  Redirect 301 /fr/glossaire.html http://rgaa.tanaguru.com/rgaa3-glossaire.html
+  Redirect 301 /fr/notes-techniques.html http://rgaa.tanaguru.com/rgaa3-notes-techniques.html
+  Redirect 301 /fr/references.html http://rgaa.tanaguru.com/rgaa3-references.html
+
+  # English URLs
+  Redirect 301 /en/rgaa3/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
+  Redirect 301 /en/rgaa3/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
+  Redirect 301 /en/rgaa3/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
+  Redirect 301 /en/rgaa3/glossaire.html http://rgaa.tanaguru.com/en/rgaa3-glossary.html
+  Redirect 301 /en/rgaa3/notes-techniques.html http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html
+  Redirect 301 /en/rgaa3/references.html http://rgaa.tanaguru.com/en/rgaa3-references.html
+  Redirect 301 /en/rgaa3/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
+
+  Redirect 301 /en/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
+  Redirect 301 /en/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
+  Redirect 301 /en/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
+  Redirect 301 /en/glossaire.html http://rgaa.tanaguru.com/en/rgaa3-glossary.html
+  Redirect 301 /en/notes-techniques.html http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html
+  Redirect 301 /en/references.html http://rgaa.tanaguru.com/en/rgaa3-references.html
+  Redirect 301 /en/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
 </IfModule>

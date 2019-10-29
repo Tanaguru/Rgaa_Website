@@ -2,9 +2,8 @@ AddDefaultCharset utf-8
 DefaultLanguage fr-FR
 
 # Prevent directory browsing (don't list all files in a directory without a default document)
-# https://htaccessbook.com/what-is-options-all/
 <IfModule mod_autoindex.c>
-  Options All -Indexes
+  Options -Indexes
 </IfModule>
 
 # Prevent robots.txt file indexing
@@ -73,53 +72,55 @@ AddType text/javascript .js
 </IfModule>
 
 # Redirections
-Options +FollowSymLinks
-RewriteEngine On
-RewriteBase /
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+	RewriteEngine On
+	RewriteBase /
 
-# French URLs
-RedirectPermanent /fr/ http://rgaa.tanaguru.com/
-RedirectPermanent /fr/mentions.html http://rgaa.tanaguru.com/mentions.html
+  # French URLs
+  RedirectPermanent /fr/ http://rgaa.tanaguru.com/
+  RedirectPermanent /fr/mentions.html http://rgaa.tanaguru.com/mentions.html
 
-RedirectPermanent /fr/rgaa4/ http://rgaa.tanaguru.com/rgaa4-criteres.html
-RedirectPermanent /fr/rgaa4/base.html http://rgaa.tanaguru.com/rgaa4-base.html
-RedirectPermanent /fr/rgaa4/cas-particuliers.html http://rgaa.tanaguru.com/rgaa4-criteres.html
-RedirectPermanent /fr/rgaa4/criteres.html http://rgaa.tanaguru.com/rgaa4-criteres.html
-RedirectPermanent /fr/rgaa4/glossaire.html http://rgaa.tanaguru.com/rgaa4-glossaire.html
-RedirectPermanent /fr/rgaa4/notes-techniques.html http://rgaa.tanaguru.com/rgaa4-criteres.html
-RedirectPermanent /fr/rgaa4/references.html http://rgaa.tanaguru.com/rgaa4-references.html
-RedirectPermanent /fr/rgaa4/mentions.html http://rgaa.tanaguru.com/mentions.html
+  RedirectPermanent /fr/rgaa4/ http://rgaa.tanaguru.com/rgaa4-criteres.html
+  RedirectPermanent /fr/rgaa4/base.html http://rgaa.tanaguru.com/rgaa4-base.html
+  RedirectPermanent /fr/rgaa4/cas-particuliers.html http://rgaa.tanaguru.com/rgaa4-criteres.html
+  RedirectPermanent /fr/rgaa4/criteres.html http://rgaa.tanaguru.com/rgaa4-criteres.html
+  RedirectPermanent /fr/rgaa4/glossaire.html http://rgaa.tanaguru.com/rgaa4-glossaire.html
+  RedirectPermanent /fr/rgaa4/notes-techniques.html http://rgaa.tanaguru.com/rgaa4-criteres.html
+  RedirectPermanent /fr/rgaa4/references.html http://rgaa.tanaguru.com/rgaa4-references.html
+  RedirectPermanent /fr/rgaa4/mentions.html http://rgaa.tanaguru.com/mentions.html
 
-RedirectPermanent /fr/rgaa3/ http://rgaa.tanaguru.com/rgaa3-criteres.html
-RedirectPermanent /fr/rgaa3/base.html http://rgaa.tanaguru.com/rgaa3-base.html
-RedirectPermanent /fr/rgaa3/cas-particuliers.html http://rgaa.tanaguru.com/rgaa3-cas-particuliers.html
-RedirectPermanent /fr/rgaa3/criteres.html http://rgaa.tanaguru.com/rgaa3-criteres.html
-RedirectPermanent /fr/rgaa3/glossaire.html http://rgaa.tanaguru.com/rgaa3-glossaire.html
-RedirectPermanent /fr/rgaa3/notes-techniques.html http://rgaa.tanaguru.com/rgaa3-notes-techniques.html
-RedirectPermanent /fr/rgaa3/references.html http://rgaa.tanaguru.com/rgaa3-references.html
-RedirectPermanent /fr/rgaa3/mentions.html http://rgaa.tanaguru.com/mentions.html
+  RedirectPermanent /fr/rgaa3/ http://rgaa.tanaguru.com/rgaa3-criteres.html
+  RedirectPermanent /fr/rgaa3/base.html http://rgaa.tanaguru.com/rgaa3-base.html
+  RedirectPermanent /fr/rgaa3/cas-particuliers.html http://rgaa.tanaguru.com/rgaa3-cas-particuliers.html
+  RedirectPermanent /fr/rgaa3/criteres.html http://rgaa.tanaguru.com/rgaa3-criteres.html
+  RedirectPermanent /fr/rgaa3/glossaire.html http://rgaa.tanaguru.com/rgaa3-glossaire.html
+  RedirectPermanent /fr/rgaa3/notes-techniques.html http://rgaa.tanaguru.com/rgaa3-notes-techniques.html
+  RedirectPermanent /fr/rgaa3/references.html http://rgaa.tanaguru.com/rgaa3-references.html
+  RedirectPermanent /fr/rgaa3/mentions.html http://rgaa.tanaguru.com/mentions.html
 
-RedirectPermanent /fr/base.html http://rgaa.tanaguru.com/rgaa3-base.html
-RedirectPermanent /fr/cas-particuliers.html http://rgaa.tanaguru.com/rgaa3-cas-particuliers.html
-RedirectPermanent /fr/criteres.html http://rgaa.tanaguru.com/rgaa3-criteres.html
-RedirectPermanent /fr/glossaire.html http://rgaa.tanaguru.com/rgaa3-glossaire.html
-RedirectPermanent /fr/notes-techniques.html http://rgaa.tanaguru.com/rgaa3-notes-techniques.html
-RedirectPermanent /fr/references.html http://rgaa.tanaguru.com/rgaa3-references.html
+  RedirectPermanent /fr/base.html http://rgaa.tanaguru.com/rgaa3-base.html
+  RedirectPermanent /fr/cas-particuliers.html http://rgaa.tanaguru.com/rgaa3-cas-particuliers.html
+  RedirectPermanent /fr/criteres.html http://rgaa.tanaguru.com/rgaa3-criteres.html
+  RedirectPermanent /fr/glossaire.html http://rgaa.tanaguru.com/rgaa3-glossaire.html
+  RedirectPermanent /fr/notes-techniques.html http://rgaa.tanaguru.com/rgaa3-notes-techniques.html
+  RedirectPermanent /fr/references.html http://rgaa.tanaguru.com/rgaa3-references.html
 
-# English URLs
-RedirectPermanent /en/rgaa3/ http://rgaa.tanaguru.com/en/rgaa3-criteria.html
-RedirectPermanent /en/rgaa3/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
-RedirectPermanent /en/rgaa3/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
-RedirectPermanent /en/rgaa3/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
-RedirectPermanent /en/rgaa3/glossaire.html http://rgaa.tanaguru.com/en/rgaa3-glossary.html
-RedirectPermanent /en/rgaa3/notes-techniques.html http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html
-RedirectPermanent /en/rgaa3/references.html http://rgaa.tanaguru.com/en/rgaa3-references.html
-RedirectPermanent /en/rgaa3/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
+  # English URLs
+  RedirectPermanent /en/rgaa3/ http://rgaa.tanaguru.com/en/rgaa3-criteria.html
+  RedirectPermanent /en/rgaa3/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
+  RedirectPermanent /en/rgaa3/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
+  RedirectPermanent /en/rgaa3/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
+  RedirectPermanent /en/rgaa3/glossaire.html http://rgaa.tanaguru.com/en/rgaa3-glossary.html
+  RedirectPermanent /en/rgaa3/notes-techniques.html http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html
+  RedirectPermanent /en/rgaa3/references.html http://rgaa.tanaguru.com/en/rgaa3-references.html
+  RedirectPermanent /en/rgaa3/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
 
-RedirectPermanent /en/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
-RedirectPermanent /en/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
-RedirectPermanent /en/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
-RedirectPermanent /en/glossaire.html http://rgaa.tanaguru.com/en/rgaa3-glossary.html
-RedirectPermanent /en/notes-techniques.html http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html
-RedirectPermanent /en/references.html http://rgaa.tanaguru.com/en/rgaa3-references.html
-RedirectPermanent /en/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
+  RedirectPermanent /en/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
+  RedirectPermanent /en/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
+  RedirectPermanent /en/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
+  RedirectPermanent /en/glossaire.html http://rgaa.tanaguru.com/en/rgaa3-glossary.html
+  RedirectPermanent /en/notes-techniques.html http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html
+  RedirectPermanent /en/references.html http://rgaa.tanaguru.com/en/rgaa3-references.html
+  RedirectPermanent /en/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
+</IfModule>

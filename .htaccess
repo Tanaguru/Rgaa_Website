@@ -79,7 +79,7 @@ AddType text/javascript .js
 	RewriteBase /
 
   # French URLs
-  RedirectPermanent /fr/ http://rgaa.tanaguru.com
+  RedirectPermanent /fr/ http://rgaa.tanaguru.com/
   RedirectPermanent /fr/mentions.html http://rgaa.tanaguru.com/mentions.html
 
   RedirectPermanent /fr/rgaa4/ http://rgaa.tanaguru.com/rgaa4-criteres.html
@@ -108,6 +108,7 @@ AddType text/javascript .js
   RedirectPermanent /fr/references.html http://rgaa.tanaguru.com/rgaa3-references.html
 
   # English URLs
+  RedirectPermanent /en/rgaa3/ http://rgaa.tanaguru.com/en/rgaa3-criteria.html
   RedirectPermanent /en/rgaa3/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
   RedirectPermanent /en/rgaa3/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
   RedirectPermanent /en/rgaa3/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html

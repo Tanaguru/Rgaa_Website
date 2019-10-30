@@ -1,2 +1,4 @@
+sitemap: http://rgaa.tanaguru.com/sitemap.xml
+
 User-agent: *
 Allow: /

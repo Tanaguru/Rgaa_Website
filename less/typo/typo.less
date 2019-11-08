@@ -1,16 +1,16 @@
 /* --------------------------------------------------
 
-  Typographical base
+	Typographical base
 
-  (c) 2010-2014 Tiny Typo v1.3.4 - MIT License - tinytypo.tetue.net
+	(c) 2010-2014 Tiny Typo v1.3.4 - MIT License - tinytypo.tetue.net
 
 ----------------------------------------------------- */
 
 
 html {
-  font-size: 100.01%; // IE < 6
-  -ms-text-size-adjust: 100%; // iOS
-  -webkit-text-size-adjust: 100%; // iOS
+	font-size: 100.01%; // IE < 6
+	-ms-text-size-adjust: 100%; // iOS
+	-webkit-text-size-adjust: 100%; // iOS
 }
 /* Cf.: http://www.pompage.net/pompe/definir-des-tailles-de-polices-en-CSS/
 et http://forum.alsacreations.com/topic-4-54377-1.html
@@ -62,8 +62,8 @@ big, .big		{ font-size: 130%; }
 abbr[title],
 acronym[title] { text-decoration: none; border-bottom: .1em dotted; cursor: help; }
 @media print {
-  abbr[title] { border-bottom: 0; }
-  abbr[title]:after { content: " (" attr(title) ")"; }
+	abbr[title] { border-bottom: 0; }
+	abbr[title]:after { content: " (" attr(title) ")"; }
 }
 
 dfn, .dfn { font-weight: bold; font-style: italic; }
@@ -89,13 +89,6 @@ sub, .sub { bottom: -0.25em; }
 .text-justify { text-align: justify; text-justify: newspaper; }
 
 /* Lists */
-ul,
-ol,
-li,
-dl,
-dt,
-dd {}
-
 ul { list-style-type: disc; }
 ul ul { list-style-type: circle; }
 ul ul ul { list-style-type: square; }
@@ -113,12 +106,22 @@ ul { margin-left: @alinea;
 -webkit-margin-before: 0;
 -webkit-margin-after: 0; }
 
-dl {}
 dt { font-weight: bold; }
 dd { margin-left: @alinea; }
 
-.list-none { margin-left: 0; list-style: none; }
-.list-none li:before { content: ''; }
+.list-none {
+	margin-left: 0;
+	list-style: none;
+
+	li {
+		margin-top: 0;
+		margin-bottom: 0;
+
+		&::before {
+			content: "";
+		}
+	}
+}
 
 .list-square { margin-left: 1.5em; list-style: square; }
 .list-square li:before { content: ''; }
@@ -214,36 +217,56 @@ var { font-style: italic; }
 }
 
 /* Paragraphs */
-p, .p, ul, ol, dl, dd, blockquote, address, pre, .table, fieldset { margin-bottom: @p; }
+p,
+.p,
+ul,
+ol,
+dl,
+dd,
+blockquote,
+address,
+pre,
+.table,
+fieldset {
+	margin-bottom: @p;
+}
+
+ul,
+ol {
+	margin-top: @p;
+}
+
+li {
+	margin-top: @p/2;
+	margin-bottom: @p/2;
+}
 
 /* Typography for small screens
 [fr] http://www.alsacreations.com/astuce/lire/1177 */
 
 @media (max-width: @screen-medium) {
+	/* fixer une largeur maximale  de 100 % aux elements potentiellement problematiques */
+	img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video { max-width: 100% !important; }
 
-  /* fixer une largeur maximale  de 100 % aux elements potentiellement problematiques */
-  img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video { max-width: 100% !important; }
-
-  /* gestion des mots longs */
-  textarea, table, td, th, pre, code, samp { word-wrap: break-word; /* cesure forcee */ }
-  pre, code, samp { white-space: pre-line; /* passage a la ligne specifique pour les elements a chasse fixe */ }
-
+	/* gestion des mots longs */
+	textarea, table, td, th, pre, code, samp { word-wrap: break-word; /* cesure forcee */ }
+	pre, code, samp { white-space: pre-line; /* passage a la ligne specifique pour les elements a chasse fixe */ }
 }
 
 /* orientation iOS5 font-size fix */
 @media (orientation: landscape) and (max-device-width: @screen-medium) {
-  html,
-  body { -webkit-text-size-adjust: 100%; }
+	html,
+	body { -webkit-text-size-adjust: 100%; }
 }
 
 /* Print styles from HTML5 Boilerplate
 Inlined to avoid required HTTP connection: h5bp.com/r */
 
 @media print {
-  pre, blockquote { page-break-inside: avoid; }
-  thead { display: table-header-group; }
-  tr, img { page-break-inside: avoid; }
-  @page { margin: 2cm .5cm; }
-  p, h2, h3 { orphans: 3; widows: 3; }
-  h2, h3 { page-break-after: avoid; }
+	pre, blockquote { page-break-inside: avoid; }
+	thead { display: table-header-group; }
+	tr, img { page-break-inside: avoid; }
+	@page { margin: 2cm .5cm; }
+	p, h2, h3 { orphans: 3; widows: 3; }
+	h2, h3 { page-break-after: avoid; }
 }

@@ -122,8 +122,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li class="goafter"><a href="#lettre-b">Lettre&nbsp;B</a></li>
 					</ul>
 
+					<!-- Plus d'actualité dans RGAA 4
 					<h3 id="glossaire-1">Accéder à chaque page de la collection de pages</h3>
-					<p>Dans le cas où la collection de pages comporte un grand nombre de pages, il est habituel de présenter ces liens d’accès aux pages par groupes de liens, par séquences de 10 liens, par exemple. Cette pratique valide le test.</p>
+					<p>Dans le cas où la collection de pages comporte un grand nombre de pages, il est habituel de présenter ces liens d’accès aux pages par groupes de liens, par séquences de 10 liens, par exemple. Cette pratique valide le test.</p> -->
 
 					<h3 id="glossaire-2">Accessible et activable par le clavier et tout dispositif de pointage</h3>
 					<ul>
@@ -734,36 +735,43 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</ul>
 					<p>Référence&nbsp;: <a href="https://www.w3.org/TR/accname-1.1/" lang="en" hreflang="en" rel="external" class="external">Accessible name and description calculation</a>.</p>
 					<p>Dans le cas où le «&nbsp;nom accessible&nbsp;» est obtenu à partir du contenu du lien, celui-ci sera variable en fonction des cas suivants&nbsp;:</p>
-					<p>Lien texte&nbsp;:</p>
-					<p>En HTML, le «&nbsp;nom accessible&nbsp;» correspond au texte constitué à partir&nbsp;:</p>
 					<ul>
-						<li>Du texte contenu dans le lien&nbsp;;</li>
-						<li>Du texte contenu dans les éléments enfants du lien.</li>
+						<li>
+							<strong>Lien texte&nbsp;:</strong><br />En HTML, le «&nbsp;nom accessible&nbsp;» correspond au texte constitué à partir&nbsp;:
+							<ul>
+								<li>Du texte contenu dans le lien&nbsp;;</li>
+								<li>Du texte contenu dans les éléments enfants du lien.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Lien image&nbsp;:</strong><br />En HTML, le «&nbsp;nom accessible&nbsp;» correspond au texte constitué à partir de l’alternative textuelle d’une ou plusieurs images dans le lien du type&nbsp;:
+							<ul>
+								<li>Image (balise <code>&lt;img&gt;</code> ou balise ayant l’attribut WAI-ARIA <code>role="img"</code>)&nbsp;;</li>
+								<li>Image objet (balise <code>&lt;object&gt;</code>)&nbsp;;</li>
+								<li>Image bitmap (balise <code>&lt;canvas&gt;</code>)&nbsp;;</li>
+								<li>Image vectorielle (balise <code>&lt;svg&gt;</code>).</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Lien composite&nbsp;:</strong><br />En HTML, le «&nbsp;nom accessible&nbsp;» correspond au texte constitué à partir de l’ensemble&nbsp;:
+							<ul>
+								<li>Du texte contenu dans le lien&nbsp;;</li>
+								<li>Du texte contenu dans les éléments enfant du lien&nbsp;;</li>
+								<li>Du contenu de l’alternative textuelle de la ou des images comprises dans le lien.</li>
+							</ul>
+						</li>
+						<li>
+							<strong>Lien SVG&nbsp;:</strong><br />Dans le cas d’un lien SVG (version 1.1), le «&nbsp;nom accessible&nbsp;» est obtenu comme suit&nbsp;:
+							<ul>
+								<li>Passage de texte associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
+								<li>Sinon, contenu de l’attribut WAI-ARIA <code>aria-label</code>&nbsp;;</li>
+								<li>Sinon, contenu de l’élément <code>&lt;title&gt;</code> enfant direct du lien&nbsp;;</li>
+								<li>Sinon, contenu de l’attribut <code>x-link:title</code>&nbsp;;</li>
+								<li>Sinon, contenu texte d’un ou plusieurs éléments <code>&lt;text&gt;</code>.</li>
+							</ul>
+							<p>Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore pris en compte et effectif au sein des différents lecteurs d’écran. A ce jour, le support est disponible avec VoiceOver, mais incomplet ou lacunaire avec JAWS et NVDA. Si bien que le plus petit dénominateur commun sur lequel il est possible de se reposer pour fournir un intitulé au lien est l’élément <code>&lt;text&gt;</code>.</p>
+						</li>
 					</ul>
-					<p>Lien image&nbsp;:</p>
-					<p>En HTML, le «&nbsp;nom accessible&nbsp;» correspond au texte constitué à partir de l’alternative textuelle d’une ou plusieurs images dans le lien du type&nbsp;:</p>
-					<ul>
-						<li>Image (balise <code>&lt;img&gt;</code> ou balise ayant l’attribut WAI-ARIA <code>role="img"</code>)&nbsp;;</li>
-						<li>Image objet (balise <code>&lt;object&gt;</code>)&nbsp;;</li>
-						<li>Image bitmap (balise <code>&lt;canvas&gt;</code>)&nbsp;;</li>
-						<li>Image vectorielle (balise <code>&lt;svg&gt;</code>).</li>
-					</ul>
-					<p>Lien composite&nbsp;:</p>
-					<p>En HTML, le «&nbsp;nom accessible&nbsp;» correspond au texte constitué à partir de l’ensemble&nbsp;:</p>
-					<ul>
-						<li>Du texte contenu dans le lien&nbsp;;</li>
-						<li>Du texte contenu dans les éléments enfant du lien&nbsp;;</li>
-						<li>Du contenu de l’alternative textuelle de la ou des images comprises dans le lien.</li>
-					</ul>
-					<p>Dans le cas d’un lien SVG (version 1.1), le «&nbsp;nom accessible&nbsp;» est obtenu comme suit&nbsp;:</p>
-					<ul>
-						<li>Passage de texte associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
-						<li>Sinon, contenu de l’attribut WAI-ARIA <code>aria-label</code>&nbsp;;</li>
-						<li>Sinon, contenu de l’élément <code>&lt;title&gt;</code> enfant direct du lien&nbsp;;</li>
-						<li>Sinon, contenu de l’attribut <code>x-link:title</code>&nbsp;;</li>
-						<li>Sinon, contenu texte d’un ou plusieurs éléments <code>&lt;text&gt;</code>.</li>
-					</ul>
-					<p>Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore pris en compte et effectif au sein des différents lecteurs d’écran. A ce jour, le support est disponible avec VoiceOver, mais incomplet ou lacunaire avec JAWS et NVDA. Si bien que le plus petit dénominateur commun sur lequel il est possible de se reposer pour fournir un intitulé au lien est l’élément <code>&lt;text&gt;</code>.</p>
 					<p><strong>Note 1&nbsp;:</strong> un <a href="#glossaire-57">intitulé de lien</a> sera considéré comme non-explicite dans le cas où le «&nbsp;nom accessible&nbsp;» ne reprend pas l’<a href="#glossaire-58">intitulé visible</a> du lien.</p>
 					<p><strong>Note 2&nbsp;:</strong> en raison de la configuration possible des aides techniques permettant de forcer la restitution du «&nbsp;nom accessible&nbsp;» issu du contenu de l’attribut <code>title</code> au détriment du «&nbsp;nom accessible&nbsp;» issu du contenu du lien. Un <a href="#glossaire-57">intitulé de lien</a> sera considéré comme non-explicite dans le cas où le lien possède un attribut <code>title</code> dont la valeur ne reprendrait pas au moins le «&nbsp;nom accessible&nbsp;» issu du contenu du lien.</p>
 					<p><strong>Note 3&nbsp;:</strong> dans le cas de la présence de plusieurs liens ayant une destination différente dont le «&nbsp;nom accessible&nbsp;» est identique. L’<a href="#glossaire-57">intitulé de lien</a> seul sera considéré comme non-explicite si le contexte de lien ne permet pas de les différencier.</p>

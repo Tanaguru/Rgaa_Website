@@ -137,7 +137,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Le critère ne peut être considéré comme conforme qu’à la condition que les raccourcis clavier utilisés soient correctement documentés, qu’ils soient fonctionnels et qu’ils respectent le <a href="/rgaa4-criteres.html/#crit-12-10">critère 12.10</a>.</p>
 
 					<h3 id="glossaire-3">Accolés (étiquette et champ accolés)</h3>
-					<p>Il faut que l’étiquette et son champ soient visuellement proches de manière à ce que la relation entre les deux ne puisse pas prêter à confusion.</p>
+					<p>Il faut que l’<a href="#glossaire-40">étiquette</a> et son champ soient visuellement proches de manière à ce que la relation entre les deux ne puisse pas prêter à confusion.</p>
 
 					<h3 id="glossaire-4">Alerte</h3>
 					<p>Message d’alerte interrompant la navigation ou l’utilisation de la page, notamment en demandant de cliquer sur un bouton ou un lien pour continuer la navigation ou l’utilisation du contenu. Par exemple, une boîte de dialogue générée par JavaScript via la fonction <code>alert</code>. Par extension, une fenêtre modale (contenu présenté sous forme de «&nbsp;fenêtre&nbsp;» insérée ou affichée dans le DOM) qui nécessite d’être fermée pour continuer la navigation ou l’utilisation du contenu est considérée comme une alerte.</p>
@@ -170,7 +170,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</ul>
 					<p>Dans le cas d’un élément graphique, le «&nbsp;nom accessible&nbsp;» est obtenu selon l’ordre suivant&nbsp;:</p>
 					<ul>
-						<li>Passage de texte associé via l’attribut WAI-ARIA <code>aria-labelledby</code> pour les balises&nbsp;:
+						<li><a href="#glossaire-87">Passage de texte</a> associé via l’attribut WAI-ARIA <code>aria-labelledby</code> pour les balises&nbsp;:
 
 							<ul>
 								<li><code>&lt;img&gt;</code>&nbsp;;</li>
@@ -217,7 +217,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Néanmoins, en cas de support partiel de l’algorithme de calcul du «&nbsp;nom accessible&nbsp;», c’est la valeur réellement restituée par les technologies d’assistance utilisées dans l’environnement de test (ou «&nbsp;base de référence&nbsp;») qu’il faudra considérer comme alternative textuelle.</p>
 					<p>Par exemple&nbsp;:</p>
 					<ul>
-						<li>En cas de présence conjointe d’un attribut WAI-ARIA <code>aria-label</code> et d’un attribut WAI-ARIA <code>aria-labelledby</code> sur une balise <code>&lt;img&gt;</code>, c’est le passage de texte référencé par l’attribut WAI-ARIA <code>aria-labelledby</code> qui doit être considérée comme alternative textuelle si le contenu du passage de texte est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test.</li>
+						<li>En cas de présence conjointe d’un attribut WAI-ARIA <code>aria-label</code> et d’un attribut WAI-ARIA <code>aria-labelledby</code> sur une balise <code>&lt;img&gt;</code>, c’est le <a href="#glossaire-87">passage de texte</a> référencé par l’attribut WAI-ARIA <code>aria-labelledby</code> qui doit être considérée comme alternative textuelle si le contenu du <a href="#glossaire-87">passage de texte</a> est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test.</li>
 						<li>En cas de présence conjointe d’un attribut WAI-ARIA <code>aria-label</code> et d’un attribut <code>alt</code> sur une balise <code>&lt;img&gt;</code>, c’est le contenu de l’attribut WAI-ARIA <code>aria-label</code> qui doit être considéré comme alternative textuelle si le contenu de l’attribut WAI-ARIA <code>aria-label</code> est réellement restitué par les technologies d’assistance utilisées dans l’environnement de test.</li>
 					</ul>
 					<p>Référence&nbsp;: <a href="https://www.w3.org/TR/accname-1.1/" lang="en" hreflang="en" rel="external" class="external">Accessible name and description calculation</a>.</p>
@@ -281,7 +281,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Il est également possible de restituer un bouton à l’aide du rôle WAI-ARIA <code>button</code>.</p>
 					<p>L’intitulé du bouton peut être de six types&nbsp;:</p>
 					<ul>
-						<li>Le contenu du passage de texte associé au bouton via l’attribut WAI-ARIA <code>aria-labelledby</code> lorsqu’il est présent&nbsp;;</li>
+						<li>Le contenu du <a href="#glossaire-87">passage de texte</a> associé au bouton via l’attribut WAI-ARIA <code>aria-labelledby</code> lorsqu’il est présent&nbsp;;</li>
 						<li>Le contenu de l’attribut <code>aria-label</code> lorsqu’il est présent&nbsp;;</li>
 						<li>Le contenu de l’attribut <code>alt</code> d’un bouton de type <code>image</code>&nbsp;;</li>
 						<li>Le contenu de l’attribut <code>value</code> des boutons de type <code>submit</code>, <code>reset</code> ou <code>button</code>&nbsp;;</li>
@@ -297,7 +297,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Sinon contenu de la balise <code>&lt;button&gt;</code>&nbsp;;</li>
 						<li>Sinon <code>title</code>.</li>
 					</ul>
-					<p>Cet ordre doit être utilisé pour l’évaluation de la pertinence du «&nbsp;nom accessible&nbsp;» du bouton. Par exemple, même dans le cas de la présence d’un <code>title</code> et d’un passage de texte référencé par <code>aria-labelledby</code> sur le même bouton, c’est le passage de texte référencé par <code>aria-labelledby</code> qui doit être évalué.</p>
+					<p>Cet ordre doit être utilisé pour l’évaluation de la pertinence du «&nbsp;nom accessible&nbsp;» du bouton. Par exemple, même dans le cas de la présence d’un <code>title</code> et d’un <a href="#glossaire-87">passage de texte</a> référencé par <code>aria-labelledby</code> sur le même bouton, c’est le <a href="#glossaire-87">passage de texte</a> référencé par <code>aria-labelledby</code> qui doit être évalué.</p>
 					<p>Référence&nbsp;: <a href="http://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-calculation" lang="en" hreflang="en" rel="external" class="external">Accessible name and description calculation</a>.</p>
 					<p>Par ailleurs, un «&nbsp;nom accessible&nbsp;» sera considéré comme non-pertinent s’il ne reprend pas le texte visible du bouton. Par exemple&nbsp;:</p>
 					<p><code>&lt;button aria-label="confirmer la saisie"&gt;valider la saisie&lt;/button&gt;</code></p>
@@ -605,14 +605,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Sinon <code>&lt;label&gt;</code>&nbsp;;</li>
 						<li>Sinon <code>title</code>.</li>
 					</ul>
-					<p>Cet ordre doit être utilisé pour l’évaluation de la pertinence de l’étiquette (<a href="/rgaa4-criteres.html/#crit-11-2">critère 11.2</a>). Par exemple, même dans le cas de la présence d’un <code>&lt;label&gt;</code>, c’est le passage de texte référencé par <code>aria-labelledby</code> qui doit être pris en compte.</p>
+					<p>Cet ordre doit être utilisé pour l’évaluation de la pertinence de l’étiquette (<a href="/rgaa4-criteres.html/#crit-11-2">critère 11.2</a>). Par exemple, même dans le cas de la présence d’un <code>&lt;label&gt;</code>, c’est le <a href="#glossaire-87">passage de texte</a> référencé par <code>aria-labelledby</code> qui doit être pris en compte.</p>
 					<p>Référence&nbsp;: <a href="http://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-calculation" lang="en" hreflang="en" rel="external" class="external">Accessible name and description calculation</a>.</p>
 					<p>Note importante au sujet de l’utilisation de <code>placeholder</code>&nbsp;: lorsque l’attribut <code>placeholder</code> est présent, il est susceptible d’être restitué à la place de l’attribut <code>title</code>. Par conséquent, lorsque ces deux attributs <code>title</code> et <code>placeholder</code> sont présents, ils doivent être identiques.</p>
 					<p>Note au sujet des étiquettes liées par <code>aria-labelledby</code>&nbsp;: Il s’agit d’un ou de plusieurs passages de texte identifiés par des <code>id</code> et liés par <code>aria-labelledby</code> sur le modèle suivant&nbsp;: <code>aria-labelledby="ID1 ID2 ID3…"</code>. Pour assurer une compatibilité maximum avec les agents utilisateurs, notamment Internet Explorer 11, il est recommandé d’implémenter un <code>tabindex="-1"</code> sur les passages de textes qui ne sont pas des éléments interactifs (bouton, liens, éléments de formulaires, etc.).</p>
 					<p><strong>Note&nbsp;:</strong> l’attribut <code>aria-label</code> ne peut pas être utilisé pour indiquer le caractère obligatoire d’un champ.</p>
 
 					<h3 id="glossaire-41">Étiquettes cohérentes</h3>
-					<p>Les étiquettes de champs de formulaire présentes dans une même page ou dans un ensemble de pages et réclamant la saisie d’une même information doivent être formulées sans ambiguïté pour que l’utilisateur sache que l’information qu’il doit communiquer est la même.</p>
+					<p>Les <a href="#glossaire-40">étiquettes</a> de champs de formulaire présentes dans une même page ou dans un ensemble de pages et réclamant la saisie d’une même information doivent être formulées sans ambiguïté pour que l’utilisateur sache que l’information qu’il doit communiquer est la même.</p>
 				</article>
 				<article id="lettre-f">
 					<h2>F</h2>
@@ -723,14 +723,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>«&nbsp;Nom accessible&nbsp;» restitué par les technologies d’assistance.</p>
 					<p>Dans le cas d’un lien HTML, le «&nbsp;nom accessible&nbsp;» est obtenu selon l’ordre suivant&nbsp;:</p>
 					<ul>
-						<li>Passage de texte associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
+						<li><a href="#glossaire-87">Passage de texte</a> associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
 						<li>Sinon, contenu de l’attribut WAI-ARIA <code>aria-label</code>&nbsp;;</li>
 						<li>Sinon, contenu du lien&nbsp;;</li>
 						<li>Sinon, contenu de l’attribut <code>title</code>.</li>
 					</ul>
 					<p>Cet ordre doit être utilisé pour déterminer ce qui constitue l’intitulé du lien. Par exemple&nbsp;:</p>
 					<ul>
-						<li>En cas de présence conjointe d’un attribut WAI-ARIA <code>aria-label</code> et d’un attribut WAI-ARIA <code>aria-labelledby</code>, c’est le passage de texte référencé par l’attribut WAI-ARIA <code>aria-labelledby</code> qui doit être considéré comme l’intitulé&nbsp;;</li>
+						<li>En cas de présence conjointe d’un attribut WAI-ARIA <code>aria-label</code> et d’un attribut WAI-ARIA <code>aria-labelledby</code>, c’est le <a href="#glossaire-87">passage de texte</a> référencé par l’attribut WAI-ARIA <code>aria-labelledby</code> qui doit être considéré comme l’intitulé&nbsp;;</li>
 						<li>En cas de présence conjointe d’un attribut WAI-ARIA <code>aria-label</code> et d’un contenu dans le lien, c’est le contenu de l’attribut WAI-ARIA <code>aria-label</code> qui doit être considéré comme l’intitulé.</li>
 					</ul>
 					<p>Référence&nbsp;: <a href="https://www.w3.org/TR/accname-1.1/" lang="en" hreflang="en" rel="external" class="external">Accessible name and description calculation</a>.</p>
@@ -763,7 +763,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>
 							<strong>Lien SVG&nbsp;:</strong><br />Dans le cas d’un lien SVG (version 1.1), le «&nbsp;nom accessible&nbsp;» est obtenu comme suit&nbsp;:
 							<ul>
-								<li>Passage de texte associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
+								<li><a href="#glossaire-87">Passage de texte</a> associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
 								<li>Sinon, contenu de l’attribut WAI-ARIA <code>aria-label</code>&nbsp;;</li>
 								<li>Sinon, contenu de l’élément <code>&lt;title&gt;</code> enfant direct du lien&nbsp;;</li>
 								<li>Sinon, contenu de l’attribut <code>x-link:title</code>&nbsp;;</li>
@@ -780,7 +780,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 					<h3 id="glossaire-58">Intitulé visible</h3>
 					<p>Texte affiché faisant office d’intitulé visible à l’écran au sein d’un bouton ou d’un lien.</p>
-					<p>Texte affiché faisant office d’étiquette pour un champ formulaire.</p>
+					<p>Texte affiché faisant office d’<a href="#glossaire-40">étiquette</a> pour un champ formulaire.</p>
 					<p>Ce texte peut être constitué de texte ou d’une image contenant du texte.</p>
 
 					<h3 id="glossaire-59">Items de même nature des listes de choix</h3>
@@ -831,8 +831,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 					<h3 id="glossaire-63">Légende</h3>
 					<p>HTML propose un dispositif permettant de titrer les groupes de champs de même nature par l’intermédiaire des éléments <code>&lt;fieldset&gt;</code> et <code>&lt;legend&gt;</code>.</p>
-					<p>Il est également possible de créer des regroupements avec le rôle WAI-ARIA <code>group</code> et un passage de texte, faisant office de légende, liée par l’attribut WAI-ARIA <code>aria-labelledby</code> ou implémentée par l’intermédiaire d’un attribut WAI-ARIA <code>aria-label</code>.</p>
-					<p><strong>Note 1&nbsp;:</strong> Les regroupements de champs peuvent utiliser d’autres méthodes qui associent l’information du regroupement directement dans l’étiquette du champ. Par exemple, par l’intermédiaire d’un attribut <code>title</code>, d’un attribut WAI-ARIA <code>aria-label</code>, d’une liaison <code>aria-labelledby</code> faisant office d’étiquette ou encore par l’attribut WAI-ARIA <code>aria-describedby</code> associant un texte complémentaire. Dans ce cas, le regroupement de champs devient inutile puisque les labels sont suffisamment pertinents.</p>
+					<p>Il est également possible de créer des regroupements avec le rôle WAI-ARIA <code>group</code> et un <a href="#glossaire-87">passage de texte</a>, faisant office de légende, liée par l’attribut WAI-ARIA <code>aria-labelledby</code> ou implémentée par l’intermédiaire d’un attribut WAI-ARIA <code>aria-label</code>.</p>
+					<p><strong>Note 1&nbsp;:</strong> Les regroupements de champs peuvent utiliser d’autres méthodes qui associent l’information du regroupement directement dans l’<a href="#glossaire-40">étiquette</a> du champ. Par exemple, par l’intermédiaire d’un attribut <code>title</code>, d’un attribut WAI-ARIA <code>aria-label</code>, d’une liaison <code>aria-labelledby</code> faisant office d’<a href="#glossaire-40">étiquette</a> ou encore par l’attribut WAI-ARIA <code>aria-describedby</code> associant un texte complémentaire. Dans ce cas, le regroupement de champs devient inutile puisque les labels sont suffisamment pertinents.</p>
 					<p><strong>Note 2&nbsp;:</strong> Lorsque le formulaire est constitué d’un seul bloc d’informations de même nature (l’identité et l’adresse de l’utilisateur, par exemple) ou d’un champ unique (un moteur de recherche, par exemple), le regroupement des champs n’est pas obligatoire.</p>
 
 					<h3 id="glossaire-64">Légende d'image</h3>
@@ -909,7 +909,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Lien contenu dans un élément <code>&lt;svg&gt;</code>.</p>
 					<p>Dans le cas d’un lien SVG (version 1.1), le «&nbsp;nom accessible&nbsp;» est obtenu comme suit&nbsp;:</p>
 					<ul>
-						<li>Passage de texte associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
+						<li><a href="#glossaire-87">Passage de texte</a> associé par l’attribut WAI-ARIA <code>aria-labelledby</code>&nbsp;;</li>
 						<li>Sinon, contenu de l’attribut WAI-ARIA <code>aria-label</code>&nbsp;;</li>
 						<li>Sinon, contenu de l’élément <code>&lt;title&gt;</code> enfant direct du lien&nbsp;;</li>
 						<li>Sinon, contenu de l’attribut <code>x-link:title</code>&nbsp;;</li>
@@ -1086,7 +1086,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<h3 id="glossaire-86">Passage de texte associé au tableau de données</h3>
 					<p>Texte dans une balise <code>&lt;caption&gt;</code> ou dans une balise associée au tableau de données via l’attribut WAI-ARIA <code>aria-labelledby</code>.</p>
 
-					<h3 id="glossaire-87">Passage de texte lié par aria-labelledby ou aria-describedby</h3>
+					<h3 id="glossaire-87">Passage de texte lié par <code>aria-labelledby</code> ou <code>aria-describedby</code></h3>
 					<p>Il s’agit d’un ou de plusieurs passages de texte identifiés par des <code>id</code> dont la valeur est unique dans la page et associés à un élément (champ de formulaire, bouton, etc. ) par les attributs WAI-ARIA <code>aria-labelledby</code> ou <code>aria-describedby</code> sur le modèle suivant&nbsp;: <code>aria-labelledby="ID1 ID2 ID3…"</code> où la valeur de l’attribut utilisé est égale à la liste des valeurs d’attributs <code>id</code> des passages de texte à associer présents dans la page.</p>
 					<p><strong>Note 1&nbsp;:</strong> pour assurer une compatibilité maximum avec les agents utilisateurs, notamment Internet Explorer 11, il est recommandé d’implémenter un <code>tabindex="-1"</code> sur les passages de textes qui ne sont pas des éléments interactifs (bouton, liens, éléments de formulaires, etc.).</p>
 					<p><strong>Note 2&nbsp;:</strong> la valeur des attributs WAI-ARIA <code>aria-labelledby</code> ou <code>aria-describedby</code> ne doivent pas créer de référence récursive (A référence B qui référence A) ou traversante (A qui référence B qui référence C).</p>
@@ -1106,7 +1106,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>La prise de focus est l’état renvoyé par un élément qui reçoit l’attention suite à une action de l’utilisateur. Il y a trois moyens en HTML de donner le focus à un élément&nbsp;:</p>
 					<ul>
 						<li>En activant l’élément par un dispositif de pointage (exemple&nbsp;: souris)&nbsp;;</li>
-						<li>En atteignant l’élément par la touche tabulation ou majuscule + tabulation&nbsp;;</li>
+						<li>En atteignant l’élément par la touche <kbd>tabulation</kbd> ou <kbd>majuscule + tabulation</kbd>&nbsp;;</li>
 						<li>En activant l’élément par un raccourci clavier (<code>accesskey</code>).</li>
 					</ul>
 					<p>Certains éléments reçoivent naturellement le focus, par exemple&nbsp;: <code>&lt;a href&gt;</code>, <code>&lt;area href&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;legend&gt;</code>, <code>&lt;optgroup&gt;</code>, <code>&lt;option&gt;</code> et <code>&lt;textarea&gt;</code>. Le comportement de l’élément, lors de la prise de focus, dépend de sa nature&nbsp;; un lien, par exemple, devra être activé après la prise de focus (sauf utilisation de script). En revanche, un élément de formulaire, comme <code>&lt;textarea&gt;</code>, devra autoriser la saisie suite à la prise de focus. Les éléments <label> et &lt;legend&gt; ne reçoivent la prise de focus que via le pointeur souris. Pour l’élément <code>&lt;label&gt;</code>, le comportement attendu est de transférer la prise de focus sur l’élément qui lui est associé.</label></p>
@@ -1156,7 +1156,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Si on constate que l’alternative est correctement restituée, le test est validé.</p>
 
 					<h3 id="glossaire-99">Résumé (de tableau)</h3>
-					<p>Un résumé est un passage de texte associé à un tableau de données complexe. Il permet de donner des informations sur la nature et la structure du tableau afin d’en faciliter l’utilisation par les utilisateurs de technologies d’assistance par exemple.</p>
+					<p>Un résumé est un <a href="#glossaire-86">passage de texte</a> associé à un tableau de données complexe. Il permet de donner des informations sur la nature et la structure du tableau afin d’en faciliter l’utilisation par les utilisateurs de technologies d’assistance par exemple.</p>
 					<p><strong>Note&nbsp;:</strong> en HTML5, la seule technique utilisable actuellement est celle qui consiste à insérer le résumé directement dans le titre (balise <code>&lt;caption&gt;</code>) en masquant le résumé via CSS si nécessaire.</p>
 					<p>Dans les versions précédentes de HTML, le résumé peut être inséré via un attribut <code>summary</code> sur la balise <code>&lt;table&gt;</code>.</p>
 					<p>Dans le cas d’une balise avec l’attribut WAI-ARIA <code>role="table"</code>, le résumé doit être fourni au moyen d’un attribut <code>aria-describedby</code> et être correctement restitué par les technologies d’assistance.</p>
@@ -1179,8 +1179,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</ul>
 					<p><strong>Note&nbsp;:</strong> en l’absence d’indication de sens de lecture via l’attribut <code>dir</code> sur l’élément <code>html</code>, <code>body</code>, ou un des parents du texte analysé, le sens de lecture par défaut est de gauche à droite (valeur <code>ltr</code>).</p>
 
-					<h3 id="glossaire-102">Si nécessaire (texte visible en complément de l'attribut aria-label ou aria-labelledby)</h3>
-					<p>Les attributs WAI-ARIA <code>aria-label</code> et <code>aria-labelledby</code> peuvent être utilisées pour créer une étiquette de champ de formulaire. L’étiquette ainsi créée restera invisible ce qui permet de résoudre beaucoup de cas où un label visible n’est pas souhaité.</p>
+					<h3 id="glossaire-102">Si nécessaire (texte visible en complément de l'attribut <code>aria-label</code> ou <code>aria-labelledby</code>)</h3>
+					<p>Les attributs WAI-ARIA <code>aria-label</code> et <code>aria-labelledby</code> peuvent être utilisées pour créer une <a href="#glossaire-40">étiquette</a> de champ de formulaire. L’<a href="#glossaire-40">étiquette</a> ainsi créée restera invisible ce qui permet de résoudre beaucoup de cas où un label visible n’est pas souhaité.</p>
 					<p>En revanche cela crée un risque potentiel pour certains utilisateurs et il peut être nécessaire qu’un texte visible et accolé au champ vienne compléter le dispositif proposé par l’attribut WAI-ARIA <code>aria-label</code> ou <code>aria-labelledby</code>.</p>
 
 					<h3 id="glossaire-103">Site web&nbsp;: ensemble de toutes les pages web</h3>
@@ -1224,7 +1224,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 					<h3 id="glossaire-108">Tableau de données ayant un titre</h3>
 					<p>Tableau de données ayant un attribut ou contenant une balise dont le contenu fait office de titre.</p>
-					<p>Tableau de données précédé ou suivi d’un passage de texte associé au tableau faisant office de titre.</p>
+					<p>Tableau de données précédé ou suivi d’un <a href="#glossaire-86">passage de texte</a> associé au tableau faisant office de titre.</p>
 					<p>Dans la mesure où il est bien correctement restitué et associé par les technologies d’assistance au tableau de données, le titre associé peut être&nbsp;:</p>
 					<ul>
 						<li>Dans une balise <code>&lt;caption&gt;</code>&nbsp;;</li>

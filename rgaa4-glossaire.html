@@ -130,7 +130,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<ul>
 						<li>Un composant d’interface (lien, bouton, …) est accessible au clavier et par tout dispositif de pointage lorsque l’utilisateur peut prendre, indifféremment, le focus par un pointeur ou la touche tabulation.</li>
 						<li>Un composant d’interface (lien, bouton, …) est activable au clavier et par tout dispositif de pointage lorsque l’utilisateur peut enclencher, indifféremment, l’action prévue par le composant d’interface par une pression du pointeur ou la touche entrée du clavier.</li>
-						<li>Attention&nbsp;: pour certains composants d’interface comme les <span lang="en">sliders</span> (bouton coulissant ou rotatif…), il n’est pas possible de contrôler le composant par la seule touche d’entrée. Dans ces situations, d’autres touches (comme les touches de direction) peuvent être utilisées. En particulier pour les éléments ayant un rôle WAI-ARIA correspondant à un motif de conception il est recommandé de considérer le document <a href="http://www.w3.org/TR/wai-aria-practices/" hreflang="en" rel="external" class="external"><span lang="en">WAI-ARIA 1.1 Authoring Practices</span> lors de leur implémentation</a>.</li>
+						<li><strong>Attention&nbsp;:</strong> pour certains composants d’interface comme les <span lang="en">sliders</span> (bouton coulissant ou rotatif…), il n’est pas possible de contrôler le composant par la seule touche d’entrée. Dans ces situations, d’autres touches (comme les touches de direction) peuvent être utilisées. En particulier pour les éléments ayant un rôle WAI-ARIA correspondant à un motif de conception il est recommandé de considérer le document <a href="http://www.w3.org/TR/wai-aria-practices/" hreflang="en" rel="external" class="external"><span lang="en">WAI-ARIA 1.1 Authoring Practices</span> lors de leur implémentation</a>.</li>
 					</ul>
 					<p>Dans le référentiel, l’expression «&nbsp;contrôlable par le clavier et tout dispositif de pointage&nbsp;» se rapporte également à la présente définition.</p>
 					<p><strong>Note importante&nbsp;:</strong> le recours à certaines technologies peut rendre la gestion du focus trop complexe ou trop instable pour ne reposer que sur la tabulation, les touches de direction et la touche entrée. Dans ce cas, la mise à disposition de raccourcis clavier peut être la seule solution pour rendre le composant utilisable.</p>
@@ -539,7 +539,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Pour un bouton blanc avec une bordure verte qui devient noire à la prise de focus et au survol, le fond blanc à l’extérieur de la bordure verte de l’état par défaut et de la bordure noire de l’état au survol et au focus correspond à la couleur d’arrière-plan contiguë.</li>
 					</ul>
 					<p>Couleur contiguë&nbsp;: couleur directement en contact avec une autre couleur. Exemple dans un panneau de «&nbsp;sens interdit&nbsp;» le rouge du panneau est la couleur contiguë au trait blanc au centre du panneau.</p>
-					<p>Note 1: dans le cas de la présence d’un dégradé, c’est la couleur contiguë la moins contrastée du dégradé qui sera à considérer comme la couleur contiguë ou couleur d’arrière-plan contiguë.</p>
+					<p><strong>Note 1&nbsp;:</strong> dans le cas de la présence d’un dégradé, c’est la couleur contiguë la moins contrastée du dégradé qui sera à considérer comme la couleur contiguë ou couleur d’arrière-plan contiguë.</p>
 					<p><strong>Note 2&nbsp;:</strong> dans le cas de la présence de plusieurs couleurs, c’est l’ensemble des couleurs qui seront à considérer comme couleur contiguë ou couleur d’arrière-plan contiguë.</p>
 				</article>
 				<article id="lettre-d">
@@ -769,7 +769,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								<li>Sinon, contenu de l’attribut <code>x-link:title</code>&nbsp;;</li>
 								<li>Sinon, contenu texte d’un ou plusieurs éléments <code>&lt;text&gt;</code>.</li>
 							</ul>
-							<p>Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore pris en compte et effectif au sein des différents lecteurs d’écran. A ce jour, le support est disponible avec VoiceOver, mais incomplet ou lacunaire avec JAWS et NVDA. Si bien que le plus petit dénominateur commun sur lequel il est possible de se reposer pour fournir un intitulé au lien est l’élément <code>&lt;text&gt;</code>.</p>
+							<p>Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore pris en compte et effectif au sein des différents lecteurs d’écran. À ce jour, le support est disponible avec VoiceOver, mais incomplet ou lacunaire avec JAWS et NVDA. Si bien que le plus petit dénominateur commun sur lequel il est possible de se reposer pour fournir un intitulé au lien est l’élément <code>&lt;text&gt;</code>.</p>
 						</li>
 					</ul>
 					<p><strong>Note 1&nbsp;:</strong> un <a href="#glossaire-57">intitulé de lien</a> sera considéré comme non-explicite dans le cas où le «&nbsp;nom accessible&nbsp;» ne reprend pas l’<a href="#glossaire-58">intitulé visible</a> du lien.</p>
@@ -793,7 +793,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li class="goafter"><a href="#lettre-m">Lettre&nbsp;M</a></li>
 					</ul>
 
-					<h3 id="glossaire-60">Landmarks</h3>
+					<h3 id="glossaire-60"><span lang="en">Landmarks</span></h3>
 					<p>WAI-ARIA propose des rôles permettant d’indiquer les zones principales (régions) du document. Ces rôles sont très profitables aux utilisateurs de lecteurs d’écran notamment, mais également aux utilisateurs de la navigation au clavier qui peuvent ainsi bénéficier de fonctionnalités de navigation rapide dans la structure du document.</p>
 					<p>Les rôles doivent être définis dans le document en fonction de la nature de la zone&nbsp;:</p>
 					<ul>
@@ -803,7 +803,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>La zone de <a href="#glossaire-127">pied de page</a> doit avoir un attribut WAI-ARIA <code>role="contentinfo"</code>&nbsp;;</li>
 						<li>La zone de <a href="#glossaire-82">moteur de recherche</a> sur le site doit avoir un attribut WAI-ARIA <code>role="search"</code>.</li>
 					</ul>
-					<p><strong>Note 1&nbsp;:</strong> Si la plupart des lecteurs d’écran mettent à disposition ces fonctionnalités, les navigateurs n’ont pas encore proposé de fonctionnalité de navigation dédiée pour les utilisateurs qui ne peuvent pas utiliser la souris. La mise en place des liens d’évitement reste donc à privilégier par rapport aux landmarks.</p>
+					<p><strong>Note 1&nbsp;:</strong> Si la plupart des lecteurs d’écran mettent à disposition ces fonctionnalités, les navigateurs n’ont pas encore proposé de fonctionnalité de navigation dédiée pour les utilisateurs qui ne peuvent pas utiliser la souris. La mise en place des liens d’évitement reste donc à privilégier par rapport aux <span lang="en">landmarks</span>.</p>
 					<p><strong>Note 2&nbsp;:</strong> Les rôles WAI-ARIA <code>banner</code>, <code>main</code> et <code>contentinfo</code> doivent être uniques dans la page. Le rôle WAI-ARIA <code>navigation</code> est réservé aux zones de navigations principales et secondaires. Lorsqu’il y a plusieurs rôles WAI-ARIA <code>navigation</code>, il peut être utile de les différencier en précisant un nom à chacune des zones via l’attribut WAI-ARIA <code>aria-label</code> ou <code>aria-labelledby</code>.</p>
 
 					<h3 id="glossaire-61">Langue par défaut</h3>
@@ -822,7 +822,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Le nom peut être l’intitulé du composant (l’intitulé d’un bouton, par exemple).</p>
 					<p>La valeur est, par exemple, l’élément sélectionné d’une liste déroulante ou la valeur actuelle d’un curseur (<span lang="en">slider</span>).</p>
 					<p>Le rôle correspond au type d’élément défini par la spécification HTML ou WAI-ARIA (comme la balise <code>&lt;button&gt;</code> ou l’attribut WAI-ARIA <code>role="button"</code>).</p>
-					<p>Le paramétrage correspond aux informations particulières d’un composant, généralement mis à disposition par WAI-ARIA. Par exemple aria-controls est un paramètre qui transmet aux APIs l’information que le composant contrôle tel ou tel contenu (référencé par son identifiant - attribut <code>id</code>).</p>
+					<p>Le paramétrage correspond aux informations particulières d’un composant, généralement mis à disposition par WAI-ARIA. Par exemple <code>aria-controls</code> est un paramètre qui transmet aux APIs l’information que le composant contrôle tel ou tel contenu (référencé par son identifiant - attribut <code>id</code>).</p>
 					<p>Les changements d’états sont également mis à disposition par WAI-ARIA. Par exemple <code>aria-expanded</code> est un état permettant de signaler aux APIs que le composant est «&nbsp;ouvert&nbsp;» ou «&nbsp;fermé&nbsp;». À noter qu’un état peut également être transmis via le nom, lorsque l’intitulé est changé dynamiquement pour correspondre à l’état de la zone contrôlée notamment.</p>
 					<p>Ces paramètres ne sont pas obligatoires mais peuvent être requis s’ils sont indispensables pour rendre le composant accessible. C’est à l’auditeur de considérer les cas où ces paramètres sont indispensables en fonction du contexte lié à l’utilisation du composant.</p>
 					<p>L’auditeur doit également vérifier que, lorsqu’ils sont présents, ces paramètres sont correctement utilisés.</p>
@@ -844,7 +844,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Une image qui n’est pas insérée dans un élément <code>figure</code>&nbsp;;</li>
 						<li>Une image insérée dans un élément <code>figure</code> sans élément <code>figcaption</code>.</li>
 					</ul>
-					<p><strong>Note&nbsp;:</strong> lorsque le texte adjacent à l’image peut faire office de texte de remplacement, il n’est pas obligatoire de recourir à l’ensemble figure, figcaption, l’image pouvant être simplement traitée comme une image de décoration.</p>
+					<p><strong>Note&nbsp;:</strong> lorsque le texte adjacent à l’image peut faire office de texte de remplacement, il n’est pas obligatoire de recourir à l’ensemble <code>figure</code>, <code>figcaption</code>, l’image pouvant être simplement traitée comme une image de décoration.</p>
 					<p>Vous pouvez consulter, à ce sujet, la note <a href="https://www.w3.org/TR/html51/semantics-embedded-content.html#alt-text" lang="en" hreflang="en" rel="external" class="external">Requirements for providing text to act as an alternative for images</a> du W3C.</p>
 
 					<h3 id="glossaire-65">Lien</h3>
@@ -870,7 +870,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Image bitmap (balise <code>&lt;canvas&gt;</code>)&nbsp;;</li>
 						<li>Image vectorielle (balise <code>&lt;svg&gt;</code>).</li>
 					</ul>
-					<p>Note importante: il est rappelé que l’utilisation de deux liens adjacents (lien image et lien texte) et identiques constitue une gêne importante pour l’utilisateur. Même si cela ne constitue pas une non-conformité, cet usage devrait être évité. Une manière de traiter ce type de liens est d’inclure l’image dans le lien texte de façon à constituer un lien composite, ce qui évitera la redondance.</p>
+					<p><strong>Note importante&nbsp;:</strong> il est rappelé que l’utilisation de deux liens adjacents (lien image et lien texte) et identiques constitue une gêne importante pour l’utilisateur. Même si cela ne constitue pas une non-conformité, cet usage devrait être évité. Une manière de traiter ce type de liens est d’inclure l’image dans le lien texte de façon à constituer un lien composite, ce qui évitera la redondance.</p>
 					<p>Vous pouvez consulter à ce sujet la technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H2" lang="en" hreflang="en" rel="external" class="external">H2&nbsp;: Combining adjacent image and text links for the same resource</a>.</p>
 
 					<h3 id="glossaire-68">Lien dont la nature n'est pas évidente</h3>
@@ -902,8 +902,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p><strong>Note 2&nbsp;:</strong> les liens d’évitements ou d’accès rapide doivent être situés à la même place dans la présentation et dans le même ordre relatif dans le code source afin de satisfaire au <a href="/rgaa4-criteres.html/#crit-12-2">critère 12.2</a>.</p>
 
 					<h3 id="glossaire-72">Liens identiques</h3>
-					<p>Deux liens sont dits identiques quand le lien x (intitulé du lien seul, contenu de l’attribut title ou contexte du lien) est égal au lien y. Cette définition s’applique à tous les types de liens&nbsp;: lien texte, lien image (les liens ont alors la même image) et lien composite.</p>
-					<p>Attention&nbsp;: des liens avec des intitulés identiques mais des titres de liens différents ou des contextes de liens différents ne sont pas identiques (exemple&nbsp;: <code>&lt;a href="lien_bar.html" title="cliquer ici pour télécharger la barre d'outils"&gt;cliquer ici&lt;/a&gt;</code> et <code>&lt;a href="lien_doc.html" title="cliquer ici pour télécharger le document"&gt;cliquer ici&lt;/a&gt;</code>).</p>
+					<p>Deux liens sont dits identiques quand le lien x (intitulé du lien seul, contenu de l’attribut <code>title</code> ou contexte du lien) est égal au lien y. Cette définition s’applique à tous les types de liens&nbsp;: lien texte, lien image (les liens ont alors la même image) et lien composite.</p>
+					<p><strong>Attention&nbsp;:</strong> des liens avec des intitulés identiques mais des titres de liens différents ou des contextes de liens différents ne sont pas identiques (exemple&nbsp;: <code>&lt;a href="lien_bar.html" title="cliquer ici pour télécharger la barre d'outils"&gt;cliquer ici&lt;/a&gt;</code> et <code>&lt;a href="lien_doc.html" title="cliquer ici pour télécharger le document"&gt;cliquer ici&lt;/a&gt;</code>).</p>
 
 					<h3 id="glossaire-73">Lien SVG</h3>
 					<p>Lien contenu dans un élément <code>&lt;svg&gt;</code>.</p>
@@ -915,7 +915,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Sinon, contenu de l’attribut <code>x-link:title</code>&nbsp;;</li>
 						<li>Sinon, contenu texte d’un ou plusieurs éléments <code>&lt;text&gt;</code>.</li>
 					</ul>
-					<p>Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore pris en compte et effectif au sein des différents lecteurs d’écran. A ce jour, le support est disponible avec VoiceOver, mais incomplet ou lacunaire avec JAWS et NVDA. Si bien que le plus petit dénominateur commun sur lequel il est possible de se reposer pour fournir un intitulé au lien est l’élément <code>&lt;text&gt;</code>.</p>
+					<p>Il faut cependant être vigilant car cet algorithme de calcul n’est pas encore pris en compte et effectif au sein des différents lecteurs d’écran. À ce jour, le support est disponible avec VoiceOver, mais incomplet ou lacunaire avec JAWS et NVDA. Si bien que le plus petit dénominateur commun sur lequel il est possible de se reposer pour fournir un intitulé au lien est l’élément <code>&lt;text&gt;</code>.</p>
 
 					<h3 id="glossaire-74">Listes</h3>
 					<p>Suite d’éléments pouvant être regroupés sous la forme d’une liste structurée ordonnée, non ordonnée ou de définition. Par exemple la suite des liens d’un menu de navigation est une liste de liens non ordonnée, les différentes étapes d’une procédure est une liste d’éléments ordonnés, le couple terme/description d’un glossaire est une liste de description. En HTML, les listes utilisent les balises suivantes&nbsp;:</p>
@@ -1009,9 +1009,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p><strong>Note&nbsp;:</strong> l’utilisation du paramètre <code>wmode</code> pour un objet Flash avec les valeurs <code>"transparent"</code> et <code>"opaque"</code> invalide de fait le <a href="/rgaa4-criteres.html/#crit-4-12">critère 4.12</a>. En effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash vue du côté des utilisateurs de lecteur d’écran est invisible.</p>
 
 					<h3 id="glossaire-79">Média temporel (type son, vidéo et synchronisé)</h3>
-					<p>Média temporel seulement audio&nbsp;: contenu sonore (Wav, Mp3…);</p>
-					<p>Média temporel seulement vidéo&nbsp;: images ou photos en mouvement ou en séquence;</p>
-					<p>Média temporel synchronisé&nbsp;: flux audio ou vidéo synchronisé avec un autre format pour présenter de l’information et/ou comportant des composants temporels interactifs. Un média temporel peut être consulté de 2 manières différentes&nbsp;:</p>
+					<p><strong>Média temporel seulement audio&nbsp;:</strong> contenu sonore (Wav, Mp3…);</p>
+					<p><strong>Média temporel seulement vidéo&nbsp;:</strong> images ou photos en mouvement ou en séquence;</p>
+					<p><strong>Média temporel synchronisé&nbsp;:</strong> flux audio ou vidéo synchronisé avec un autre format pour présenter de l’information et/ou comportant des composants temporels interactifs. Un média temporel peut être consulté de 2 manières différentes&nbsp;:</p>
 					<ul>
 						<li>Fichier à télécharger consultable avec un logiciel externe à la page web&nbsp;;</li>
 						<li>Contenu embarqué dans la page web et consultable dans la page web via&nbsp;:
@@ -1069,7 +1069,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 					<h3 id="glossaire-84">Ordre de tabulation</h3>
 					<p>Ordre dans lequel le focus se déplace (vers un élément suivant ou vers un élément précédent). L’ordre naturel est celui qui est implémenté via le code source. Lorsqu’il est modifié par l’utilisation de l’attribut <code>tabindex</code> ou par l’utilisation d’une commande JavaScript, c’est l’ordre modifié qui fait référence.</p>
-					<p>Attention&nbsp;: lorsqu’un élément initie un changement dans la page (changement de contexte, gestion de zones cachées, ajout de contenu, gestion de champs de formulaire…) il est nécessaire d’activer l’élément qui initie le changement pour tester la cohérence de l’ordre de tabulation.</p>
+					<p><strong>Attention&nbsp;:</strong> lorsqu’un élément initie un changement dans la page (changement de contexte, gestion de zones cachées, ajout de contenu, gestion de champs de formulaire…) il est nécessaire d’activer l’élément qui initie le changement pour tester la cohérence de l’ordre de tabulation.</p>
 				</article>
 				<article id="lettre-p">
 					<h2>P</h2>
@@ -1300,7 +1300,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 	à l'aide de plusieurs balises &lt;br&gt;
 &lt;/div&gt;</code></pre>
 					<p><strong>Note 2&nbsp;:</strong> WAI-ARIA propose un rôle <code>presentation</code> permettant de supprimer la sémantique d’un élément, par exemple <code>&lt;h1 role="presentation"&gt;Titre&lt;/h1&gt;</code>. Dans ce cas, le texte sera correctement restitué mais son rôle de titre ne le sera plus. L’utilisation du rôle <code>presentation</code> peut être requise lorsque l’on utilise un motif de conception WAI-ARIA.</p>
-					<p>Le rôle WAI-ARIA <code>presentation</code> peut être également utilisé pour supprimer la sémantique d’un élément lorsque ce dernier est utilisé uniquement à des fins de présentation, par exemple <code>&lt;blockquote role="presentation"&gt;</code> aura le même effet qu’une absence d’élément &lt;blockquote&gt;.</p>
+					<p>Le rôle WAI-ARIA <code>presentation</code> peut être également utilisé pour supprimer la sémantique d’un élément lorsque ce dernier est utilisé uniquement à des fins de présentation, par exemple <code>&lt;blockquote role="presentation"&gt;</code> aura le même effet qu’une absence d’élément <code>&lt;blockquote&gt;</code>.</p>
 					<p>Même si cette utilisation est fortement déconseillée (dans le cas de technologie d’assistance qui n’implémenteraient pas WAI-ARIA par exemple) elle peut être considérée comme conforme à WCAG. En revanche l’utilisation d’un rôle WAI-ARIA <code>presentation</code> sur un élément dont la nature (par exemple la sémantique) est essentielle à la compréhension du contenu est une violation des règles WCAG (particulièrement de l’échec <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F92" hreflang="en" rel="external" class="external">F92</a>) et invalide le critère.</p>
 
 					<h3 id="glossaire-120">URL</h3>

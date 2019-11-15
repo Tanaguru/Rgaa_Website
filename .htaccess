@@ -37,14 +37,14 @@ AddType text/javascript .js
 	ExpiresActive On
 
 	# Default directive
-	ExpiresDefault "now plus 1 year"
+	ExpiresDefault "now plus 1 week"
 
 	ExpiresByType image/gif "now plus 1 year"
 	ExpiresByType image/jpeg "now plus 1 year"
 	ExpiresByType image/png "now plus 1 year"
-	ExpiresByType text/css "now plus 1 year"
-	ExpiresByType text/javascript "now plus 1 year"
-	ExpiresByType application/javascript "now plus 1 year"
+	ExpiresByType text/css "now plus 1 month"
+	ExpiresByType text/javascript "now plus 1 month"
+	ExpiresByType application/javascript "now plus 1 month"
 	ExpiresByType image/svg+xml "now plus 1 year"
 	ExpiresByType x-font/otf "now plus 1 year"
 	ExpiresByType x-font/ttf "now plus 1 year"

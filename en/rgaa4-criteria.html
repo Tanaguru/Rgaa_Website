@@ -549,31 +549,31 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-1-6-7">Test 1.6.7&nbsp;: Does each bitmap image (<code>&lt;canvas&gt;</code> tag) conveying information, needing a detailed description, meet one of the following conditions?
 								<ul>
-									<li>Il existe un attribut WAI-ARIA <code>aria-label</code> contenant l'<a href="rgaa4-glossary.html#glossaire-8">alternative textuelle</a> et une référence à une <a href="rgaa4-glossary.html#glossaire-35">description détaillée</a> adjacente.</li>
-									<li>Il existe un attribut WAI-ARIA <code>aria-labelledby</code> associant un <a href="rgaa4-glossary.html#glossaire-87">passage de texte</a> faisant office d'<a href="rgaa4-glossary.html#glossaire-8">alternative textuelle</a> et un autre faisant office de <a href="rgaa4-glossary.html#glossaire-35">description détaillée</a>.</li>
-									<li>Il existe un contenu textuel entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> faisant référence à une <a href="rgaa4-glossary.html#glossaire-35">description détaillée</a> adjacente à l'image bitmap.</li>
-									<li>Il existe un contenu textuel entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code> faisant office de <a href="rgaa4-glossary.html#glossaire-35">description détaillée</a>.</li>
-									<li>Il existe un <a href="rgaa4-glossary.html#glossaire-66">lien ou bouton adjacent</a> permettant d'accéder à la <a href="rgaa4-glossary.html#glossaire-35">description détaillée</a>.</li>
+									<li>A WAI-ARIA <code>aria-label</code> attribute, with the text alternative and a reference to a detailed adjacent description, is available.</li>
+									<li>A WAI-ARIA <code>aria-labelledby</code> attribute associating a text acting as text alternative and another as detailed description is available.</li>
+									<li>There is a text content between <code>&lt;canvas&gt;</code> and <code>&lt;/canvas&gt;</code> refering to a detailed description adjacent to the bitmap image.</li>
+									<li>There is a text content between <code>&lt;canvas&gt;</code> and <code>&lt;canvas&gt;</code> acting as a detailed description.</li>
+									<li>There is an adjacent link or button giving access to the detailed description.</li>
 								</ul>
 							</li>
-							<li id="test-1-6-8">Test 1.6.8&nbsp;: For each bitmap image (canvas tag) conveying information, implementing a reference to an adjacent detailed description, is this reference properly rendered by assistive technologies?
+							<li id="test-1-6-8">Test 1.6.8&nbsp;: For each bitmap image (<code>&lt;canvas&gt;</code> tag) conveying information, implementing a reference to an adjacent detailed description, is this reference properly rendered by assistive technologies?
 							</li>
-							<li id="test-1-6-9">Test 1.6.9&nbsp;: Does each image (img,input with the type="image" attribute, area, object, embed, svg, canvas tag or element with a WAI-ARIA role="img" attribute) conveying information, with a detailed description and using a WAI-ARIA aria-describedby attribute, does the WAI-ARIA aria-describedby attribute refer to the detailed description?
+							<li id="test-1-6-9">Test 1.6.9&nbsp;: Does each image (<code>&lt;img&gt;</code>, <code>&lt;input&gt;</code> with the <code>type="image"</code> attribute, <code>&lt;area&gt;</code>, <code>&lt;object&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;svg&gt;</code>, <code>&lt;canvas&gt;</code> tag or element with a WAI-ARIA <code>role="img"</code> attribute) conveying information, with a detailed description and using a WAI-ARIA <code>aria-describedby</code> attribute, does the WAI-ARIA <code>aria-describedby</code> attribute refer to the detailed description?
 							</li>
-							<li id="test-1-6-10">Test 1.6.10&nbsp;: Does each element with a WAI-ARIA role="img" conveying information, requiring a detailed description, meet one of the following conditions?
+							<li id="test-1-6-10">Test 1.6.10&nbsp;: Does each element with a WAI-ARIA <code>role="img"</code> conveying information, requiring a detailed description, meet one of the following conditions?
 								<ul>
-									<li>A WAI-ARIA aria-label attribute containing a text alternative and a reference to a detailed adjacent description is available.</li>
-									<li>A WAI-ARIA aria-labelledby attribute linking a chunk of text acting as text alternative and another text acting as detailed description is available.</li>
-									<li>A WAI-ARIA aria-describedby attribute linking a chunk of text acting as detailed description is available.</li>
+									<li>A WAI-ARIA <code>aria-label</code> attribute containing a text alternative and a reference to a detailed adjacent description is available.</li>
+									<li>A WAI-ARIA <code>aria-labelledby</code> attribute linking a chunk of text acting as text alternative and another text acting as detailed description is available.</li>
+									<li>A WAI-ARIA <code>aria-describedby</code> attribute linking a chunk of text acting as detailed description is available.</li>
 									<li>There is an adjacent link or button giving access to the detailed description.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
-							<h4>Note Technique</h4>
-							<p>In the case of the SVG, the lack of support for the <title> and <desc> elements by assistive technologies creates a difficulty in the case of the implementation of an text alternative for the image or its detailed description. In this case, it is recommended to use the WAI-ARIA aria-label attribute to implement both a short text alternative and a reference to an adjacent detailed description or the WAI-ARIA aria-labelledby attribute to link the pieces of texts acting as short alternative and detailed description.</p>
-							<p>The use of WAI-ARIA aria-describedby attribute is not possible to link an image to its detailed description due to lack of support by assistive technologies.</p>
-							<p>The adjacent detailed description may be implemented using a <figcaption> tag, in this case, the 1.9 Criterion should be verified (notably with regards to the use of <figure> tags, WAI-ARIA role="figure" attribute and aria-label).</p>
+							<h4>Technical notes</h4>
+							<p>In the case of the SVG, the lack of support for the <code>&lt;title&gt;</code> and <code>&lt;desc&gt;</code> elements by assistive technologies creates a difficulty in the case of the implementation of an text alternative for the image or its detailed description. In this case, it is recommended to use the WAI-ARIA <code>aria-label</code> attribute to implement both a short text alternative and a reference to an adjacent detailed description or the WAI-ARIA <code>aria-labelledby</code> attribute to link the pieces of texts acting as short alternative and detailed description.</p>
+							<p>The use of WAI-ARIA <code>aria-describedby</code> attribute is not possible to link an image to its detailed description due to lack of support by assistive technologies.</p>
+							<p>The adjacent detailed description may be implemented using a <code>&lt;figcaption&gt;</code> tag, in this case, the 1.9 Criterion should be verified (notably with regards to the use of <code>&lt;figure&gt;</code> tags, WAI-ARIA <code><code>role="figure"</code></code> attribute and <code>aria-label</code>).</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.1.1 Non-text Content (A)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -591,54 +591,54 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-1-7"><em>Criterion 1.7 [A]</em> For each image conveying information, with a detailed description, is this description relevant?</h3>
 						<ul>
-							<li id="test-1-7-1">Test 1.7.1&nbsp;: Does each image (img) conveying information, with a detailed description meet the following conditions?
+							<li id="test-1-7-1">Test 1.7.1&nbsp;: Does each image (<code>&lt;img&gt;</code> tag) conveying information, with a detailed description meet the following conditions?
 								<ul>
-									<li>The detailed description available via the URL of the longdesc attribute is relevant.</li>
+									<li>The detailed description available via the URL of the <code>longdesc</code> attribute is relevant.</li>
 									<li>The detailed description available in the page and identified by the text alternative attribute is relevant.</li>
 									<li>The detailed description available via an adjacent link or button is relevant.</li>
-									<li>The content text referenced via the aria-describedby attribute is relevant.</li>
+									<li>The content text referenced via the <code>aria-describedby</code> attribute is relevant.</li>
 								</ul>
 							</li>
-							<li id="test-1-7-2">Test 1.7.2&nbsp;: Does each image button (input tag with the type="image" attribute) conveying information, with a detailed description, meet the following conditions?
+							<li id="test-1-7-2">Test 1.7.2&nbsp;: Does each image button (<code>&lt;input&gt;</code> tag with the <code>type="image"</code> attribute) conveying information, with a detailed description, meet the following conditions?
 								<ul>
 									<li>The detailed description available in the page and identified by the text alternative attribute is relevant.</li>
 									<li>The detailed description available via an adjacent link or button is relevant.</li>
-									<li>The content text referenced via the aria-describedby attribute is relevant.</li>
+									<li>The content text referenced via the <code>aria-describedby</code> attribute is relevant.</li>
 								</ul>
 							</li>
-							<li id="test-1-7-3">Test 1.7.3&nbsp;: Does each image object (object tag with the type="image/…" attribute) conveying information, with a detailed description, meet the following conditions?
+							<li id="test-1-7-3">Test 1.7.3&nbsp;: Does each image object (<code>&lt;object&gt;</code> tag with the <code>type="image/…"</code> attribute) conveying information, with a detailed description, meet the following conditions?
 								<ul>
 									<li>The detailed description available in the page and identified by the text alternative attribute is relevant.</li>
-									<li>The detailed description adjacent  to the image object is relevant.</li>
+									<li>The detailed description adjacent to the image object is relevant.</li>
 									<li>The detailed description available via an adjacent link or button is relevant.</li>
-									<li>The text content linked via the aria-describedby attribute is relevant.</li>
+									<li>The text content linked via the <code>aria-describedby</code> attribute is relevant.</li>
 								</ul>
 							</li>
-							<li id="test-1-7-4">Test 1.7.4&nbsp;: Does each embedded image (embed tag with the type="image/…" attribute) conveying information, with a detailed description, meet the following conditions?
+							<li id="test-1-7-4">Test 1.7.4&nbsp;: Does each embedded image (<code>&lt;embed&gt;</code> tag with the <code>type="image/…"</code> attribute) conveying information, with a detailed description, meet the following conditions?
 								<ul>
 									<li>The detailed description available in the page and identified by the text alternative attribute is relevant.</li>
 									<li>The detailed description adjacent to the embedded image is relevant.</li>
 									<li>The detailed description available via an adjacent link or button is relevant.</li>
-									<li>The content text linked via the aria-describedby attribute is relevant.</li>
+									<li>The content text linked via the <code>aria-describedby</code> attribute is relevant.</li>
 								</ul>
 							</li>
-							<li id="test-1-7-5">Test 1.7.5&nbsp;: Does each vector image (svg tag) conveying information, with a detailed description meet the following conditions?
+							<li id="test-1-7-5">Test 1.7.5&nbsp;: Does each vector image (<code>&lt;svg&gt;</code> tag) conveying information, with a detailed description meet the following conditions?
 								<ul>
 									<li>The detailed description available in the page and identified by the text alternative attribute is relevant.</li>
-									<li>The detailed description available in the page and identified in a desc tag or a title tag is relevant.</li>
-									<li>The detailed description in the desc tag is relevant.</li>
+									<li>The detailed description available in the page and identified in a <code>&lt;desc&gt;</code> tag or a <code>&lt;title&gt;</code> tag is relevant.</li>
+									<li>The detailed description in the <code>&lt;desc&gt;</code> tag is relevant.</li>
 									<li>The detailed description available via an adjacent link or button is relevant.</li>
-									<li>The content text linked via the aria-describedby attribute is relevant.</li>
+									<li>The content text linked via the <code>aria-describedby</code> attribute is relevant.</li>
 								</ul>
 							</li>
-							<li id="test-1-7-6">Test 1.7.6&nbsp;: Does each bitmap image (canvas tag) conveying information, with a detailed description meet the following conditions?
+							<li id="test-1-7-6">Test 1.7.6&nbsp;: Does each bitmap image (<code>&lt;canvas&gt;</code> tag) conveying information, with a detailed description meet the following conditions?
 								<ul>
 									<li>The detailed description available in the page and identified by the text alternative attribute is relevant.</li>
-									<li>The detailed description available in the page and identified by the text between <canvas> and </canvas> is relevant.</li>
-									<li>The detailed description between<canvas> and </canvas> is relevant.</li>
+									<li>The detailed description available in the page and identified by the text between <code>&lt;canvas&gt;</code> and <code>&lt;/canvas&gt;</code> is relevant.</li>
+									<li>The detailed description between <code>&lt;canvas&gt;</code> and <code>&lt;/canvas&gt;</code> is relevant.</li>
 									<li>The detailed description adjacent to the bitmap image is relevant.</li>
 									<li>The detailed description available via an adjacent link or button is relevant.</li>
-									<li>The content text linked via the aria-describedby attribute is relevant.</li>
+									<li>The content text linked via the <code>aria-describedby</code> attribute is relevant.</li>
 								</ul>
 							</li>
 						</ul>
@@ -660,22 +660,21 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="AA">
 						<h3 id="crit-1-8"><em>Criterion 1.8 [AA]</em> Each image conveying information, in the absence of a replacement mechanism, should, if possible, be replaced by a styled text. Is this rule followed?</h3>
 						<ul>
-							<li id="test-1-8-1">Test 1.8.1&nbsp;: Does each text image (img tag or element with a WAI-ARIA role="img" attribute) conveying information, when an alternate mechanism is missing, must be replaced with styled text, if possible. Has this rule been followed (except for particular cases)?
+							<li id="test-1-8-1">Test 1.8.1&nbsp;: Does each text image (<code>&lt;img&gt;</code> tag or element with a WAI-ARIA <code>role="img"</code> attribute) conveying information, when an alternate mechanism is missing, must be replaced with styled text, if possible. Has this rule been followed (except for particular cases)?
 							</li>
-							<li id="test-1-8-2">Test 1.8.2&nbsp;: Does each text image button (input tag the type="image" attribute) conveying information, when an alternate mechanism is missing, must be replaced, if possible, with styled text. Has this rule been followed (except for particular cases)?
+							<li id="test-1-8-2">Test 1.8.2&nbsp;: Does each text image button (<code>&lt;input&gt;</code> tag the <code>type="image"</code> attribute) conveying information, when an alternate mechanism is missing, must be replaced, if possible, with styled text. Has this rule been followed (except for particular cases)?</li>
+							<li id="test-1-8-3">Test 1.8.3&nbsp;: Each text image (<code>&lt;object&gt;</code> tag the <code>type="image/…"</code> attribute) conveying information, when an alternate mechanism is missing, must be replaced, if possible, with styled text. Has this rule been followed (except for particular cases)?</li>
+							<li id="test-1-8-4">Test 1.8.4&nbsp;: Each embedded text image (<code>&lt;embed&gt;</code> tag with the <code>type="image/…"</code> attribute) conveying information, when an alternate mechanism is missing, must be replaced with styled text, if possible. Has this rule been followed (except for particular cases)?
 							</li>
-							<li id="test-1-8-3">Test 1.8.3&nbsp;: Each text image (object tag the type="image/…" attribute) conveying information, when an alternate mechanism is missing, must be replaced, if possible, with styled text. Has this rule been followed (except for particular cases)?
-							</li>
-							<li id="test-1-8-4">Test 1.8.4&nbsp;: Each embedded text image (embed tag with the type="image/…" attribute) conveying information, when an alternate mechanism is missing, must be replaced with styled text, if possible. Has this rule been followed (except for particular cases)?
-							</li>
-							<li id="test-1-8-5">Test 1.8.5&nbsp;: Does each bitmap text image (canvas tag) conveying information, when an alternate mechanism is missing, must be replaced with styled text, if possible. Has this rule been followed (except for particular cases)?
-							</li>
+							<li id="test-1-8-5">Test 1.8.5&nbsp;: Does each bitmap text image (<code>&lt;canvas&gt;</code> tag) conveying information, when an alternate mechanism is missing, must be replaced with styled text, if possible. Has this rule been followed (except for particular cases)?</li>
 						</ul>
 						<aside>
-							<h4>Note Technique</h4>
-							<p>The text in vector images being real text, it is not concerned by this Criterion.</p>
-							<h4>Note Technique</h4>
+							<h4>Particular cases</h4>
 							<p>For this Criterion, there is a particular case management when the text is part of a logo, a trade name, a CAPTCHA, an image-test or an image which graphical accuracy would be considered as essential to the good transmission of the information conveyed by the image. In those situations, the Criterion is not applicable for those elements.</p>
+
+							<h4>Technical notes</h4>
+							<p>The text in vector images being real text, it is not concerned by this Criterion.</p>
+
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.4.5 Images of Text (AA)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -693,55 +692,53 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-1-9"><em>Criterion 1.9 [A]</em> Is each legend, where necessary, properly linked to its corresponding image?</h3>
 						<ul>
-							<li id="test-1-9-1">Test 1.8.1&nbsp;: Does each image with a caption (img tag or input tag with the attribute type="image", or element with a WAI-ARIA role="img" associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
+							<li id="test-1-9-1">Test 1.8.1&nbsp;: Does each image with a caption (<code>&lt;img&gt;</code> tag or <code>&lt;input&gt;</code> tag with the attribute <code>type="image"</code>, or element with a WAI-ARIA <code>role="img"</code> associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
 								<ul>
-									<li>The image (img tag or input tag with the attribute type="image", or element with a WAI-ARIA role="img" associated with an adjacent caption) and its caption are contained in a figure tag.</li>
-									<li>The figure tag has a WAI-ARIA role="group" or role="figure" attribute.</li>
-									<li>The figure tag has a WAI-ARIA aria-label attribute which value is identical to the caption.</li>
-									<li>The caption is in figcaption tag.</li>
+									<li>The image (<code>&lt;img&gt;</code> tag or <code>&lt;input&gt;</code> tag with the attribute <code>type="image"</code>, or element with a WAI-ARIA <code>role="img"</code> associated with an adjacent caption) and its caption are contained in a <code>&lt;figure&gt;</code> tag.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code><code>role="group"</code></code> or <code><code>role="figure"</code></code> attribute.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>aria-label</code> attribute which value is identical to the caption.</li>
+									<li>The caption is in <code>figcaption</code> tag.</li>
 								</ul>
 							</li>
-							<li id="test-1-9-2">Test 1.9.2&nbsp;: Does each object image with a caption (object tag with the attribute type="image/" associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
+							<li id="test-1-9-2">Test 1.9.2&nbsp;: Does each object image with a caption (<code>&lt;object&gt;</code> tag with the attribute <code>type="image"</code> associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
 								<ul>
-									<li>The object image (object tag) and its caption are contained in a figure tag.</li>
-									<li>The figure tag has a WAI-ARIA role="figure" or role="group" attribute.</li>
-									<li>The figure tag has a WAI-ARIA aria-label attribute which value is identical to the caption.</li>
-									<li>The caption is in figcaption tag.</code>.</li>
+									<li>The object image (<code>&lt;object&gt;</code> tag) and its caption are contained in a <code>&lt;figure&gt;</code> tag.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code><code>role="figure"</code></code> or <code><code>role="group"</code></code> attribute.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>aria-label</code> attribute which value is identical to the caption.</li>
+									<li>The caption is in <code>&lt;figcaption&gt;</code> tag.</li>
 								</ul>
 							</li>
-							<li id="test-1-9-3">Test 1.9.3&nbsp;: Does each embedded image with a caption (embed tag associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
+							<li id="test-1-9-3">Test 1.9.3&nbsp;: Does each embedded image with a caption (<code>&lt;embed&gt;</code> tag associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
 								<ul>
-									<li>The embedded image (embed tag) and its caption are contained in a figure tag.</li>
-									<li>The figure tag has a WAI-ARIA role="figure" or role="group" attribute.</li>
-									<li>The figure tag has a WAI-ARIA aria-label attribute which value is identical to the caption.</li>
-									<li>The caption is in figcaption tag.</li>
+									<li>The embedded image (<code>&lt;embed&gt;</code> tag) and its caption are contained in a <code>&lt;figure&gt;</code> tag.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>role="figure"</code> or <code>role="group"</code> attribute.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>aria-label</code> attribute which value is identical to the caption.</li>
+									<li>The caption is in <code>&lt;figcaption&gt;</code> tag.</li>
 								</ul>
 							</li>
-							<li id="test-1-9-4">Test 1.9.4&nbsp;: Does each vector image with a caption (svg tag associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
+							<li id="test-1-9-4">Test 1.9.4&nbsp;: Does each vector image with a caption (<code>&lt;svg&gt;</code> tag associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
 								<ul>
-									<li>The vector image (svg tag) and its caption are contained in a figure tag.</li>
-									<li>The figure tag has a WAI-ARIA role="figure" or role="group" attribute.</li>
-									<li>The figure tag has a WAI-ARIA aria-label attribute which value is identical to the caption.</li>
-									<li>The caption is in figcaption tag.</li>
+									<li>The vector image (<code>&lt;svg&gt;</code> tag) and its caption are contained in a <code>&lt;figure&gt;</code> tag.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>role="figure"</code> or <code>role="group"</code> attribute.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>aria-label</code> attribute which value is identical to the caption.</li>
+									<li>The caption is in <code>&lt;figcaption&gt;</code> tag.</li>
 								</ul>
 							</li>
-							<li id="test-1-9-5">Test 1.9.5&nbsp;: Does each bitmap image with a caption (canvas tag associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
+							<li id="test-1-9-5">Test 1.9.5&nbsp;: Does each bitmap image with a caption (<code>&lt;canvas&gt;</code> tag associated with an adjacent caption) with a text alternative, meet, where necessary, the following conditions?
 								<ul>
-									<li>The bitmap image (canvas tag) and its caption are contained in a figure tag.</li>
-									<li>The figure tag has a WAI-ARIA role="figure" or role="group" attribute.</li>
-									<li>The figure tag has a WAI-ARIA aria-label attribute which value is identical to the caption.</li>
-									<li>The caption is in figcaption tag.</li>
+									<li>The bitmap image (<code>&lt;canvas&gt;</code> tag) and its caption are contained in a <code>&lt;figure&gt;</code> tag.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>role="figure"</code> or <code>role="group"</code> attribute.</li>
+									<li>The <code>&lt;figure&gt;</code> tag has a WAI-ARIA <code>aria-label</code> attribute which value is identical to the caption.</li>
+									<li>The caption is in <code>&lt;figcaption&gt;</code> tag.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
-							<h4>Note Technique</h4>
-							<p>The implementation of a WAI-ARIA role="group" attribute or role="figure" on the parent <figure> element is meant to overcome the lack of current support <figure> elements by assistive technologies. The use of a <figcaption> element to link a caption to an image requires at least the use of a WAI-ARIA aria-label attribute on the <figure> parent element which content should be identical to the content of the <figcaption> element. To ensure optimal support, there can also be an explicit association between the content of the text alternative of the image and the content of <figcaption> element, for example:
-								<img src="image.png" alt="Photo : soleil couchant" /><figcaption>Photo : crédit xxx</figcaption>
-							   </p>
-	<pre class="html"><code>&lt;img src="image.png" alt="Photo : soleil couchant" /&gt;&lt;figcaption&gt;Photo : crédit xxx&lt;/figcaption&gt;</code></pre>
-							<p>The WAI-ARIA aria-labelledby and aria-describedby attributes cannot be used currently because of the lack of support by assistive technologies.</p>
-							<p>Note : additionally, captioned images should respect 1.1 et 1.3 Criterions related to images conveying information.</p>
+							<h4>Technical notes</h4>
+							<p>The implementation of a WAI-ARIA <code>role="group"</code> attribute or <code>role="figure"</code> on the parent <code>&lt;figure&gt;</code> element is meant to overcome the lack of current support <code>&lt;figure&gt;</code> elements by assistive technologies. The use of a <code>&lt;figcaption&gt;</code> element to link a caption to an image requires at least the use of a WAI-ARIA <code>aria-label</code> attribute on the <code>&lt;figure&gt;</code> parent element which content should be identical to the content of the <code>&lt;figcaption&gt;</code> element. To ensure optimal support, there can also be an explicit association between the content of the text alternative of the image and the content of <code>&lt;figcaption&gt;</code> element, for example:</p>
+<pre><code class="html">&lt;img src="image.png" alt="Photo : soleil couchant" /&gt;&lt;figcaption&gt;Photo : crédit xxx&lt;/figcaption&gt;</code></pre>
+							<p>The WAI-ARIA <code>aria-labelledby</code> and <code>aria-describedby</code> attributes cannot be used currently because of the lack of support by assistive technologies.</p>
+							<p>Note : additionally, captioned images should respect 1.1 et 1.3 Criteria related to images conveying information.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.1.1 Non-text Content (A), 4.1.2 Name, Role, Value (A)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -781,7 +778,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-2-1"><em>Criterion 2.1 [A]</em> Does each frame have a frame title?</h3>
 						<ul>
-							<li id="test-2-1-1">Test 2.1.1&nbsp;: Does each frame (iframe tag or frame) have a title attribute?</li>
+							<li id="test-2-1-1">Test 2.1.1&nbsp;: Does each frame (<code>&lt;iframe&gt;</code> or <code>&lt;frame&gt;</code> tag) have a <code>title</code> attribute?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -801,7 +798,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-2-2"><em>Criterion 2.2 [A]</em> For each frame with a frame title, is this frame title relevant?</h3>
 						<ul>
-							<li id="test-2-2-1">Test 2.2.1&nbsp;: For each frame(iframe tag or frame) with a title attribute, is the content of this attribute relevant?</li>
+							<li id="test-2-2-1">Test 2.2.1&nbsp;: For each frame (<code>&lt;iframe&gt;</code> or <code>&lt;frame&gt;</code> tag) with a <code>title</code> attribute, is the content of this attribute relevant?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -844,18 +841,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-3-1"><em>Criterion 3.1 [A]</em> On each web page, information should not be conveyed only through colour. Is this rule followed?</h3>
 						<ul>
-							<li id="test-3-1-1">Test 3.1.1&nbsp;: For each word or for each group of words where colour is used to convey information, information must not be conveyed only through colour. Has this rule been followed?
-							</li>
-							<li id="test-3-1-2">Test 3.1.2&nbsp;: For each colour indication provided by a text, information must not be conveyed only through colour. Has this rule been followed?
-							</li>
-							<li id="test-3-1-3">Test 3.1.3&nbsp;: For each image conveying information, information must not be conveyed only through colour. Has this rule been followed?
-							</li>
-							<li id="test-3-1-4">Test 3.1.4&nbsp;: For each CSS property defining a colour and conveying information, information must not be conveyed only through colour. Has this rule been followed?
-							</li>
-							<li id="test-3-1-5">Test 3.1.5&nbsp;: For each time-based media conveying information, information must not be conveyed only through colour. Has this rule been followed?
-							</li>
-							<li id="test-3-1-6">Test 3.1.6&nbsp;: For each non-time-based media conveying information, information must not be conveyed only through colour. Has this rule been followed?
-							</li>
+							<li id="test-3-1-1">Test 3.1.1&nbsp;: For each word or for each group of words where colour is used to convey information, information must not be conveyed only through colour. Has this rule been followed?</li>
+							<li id="test-3-1-2">Test 3.1.2&nbsp;: For each colour indication provided by a text, information must not be conveyed only through colour. Has this rule been followed?</li>
+							<li id="test-3-1-3">Test 3.1.3&nbsp;: For each image conveying information, information must not be conveyed only through colour. Has this rule been followed?</li>
+							<li id="test-3-1-4">Test 3.1.4&nbsp;: For each CSS property defining a colour and conveying information, information must not be conveyed only through colour. Has this rule been followed?</li>
+							<li id="test-3-1-5">Test 3.1.5&nbsp;: For each time-based media conveying information, information must not be conveyed only through colour. Has this rule been followed?</li>
+							<li id="test-3-1-6">Test 3.1.6&nbsp;: For each non-time-based media conveying information, information must not be conveyed only through colour. Has this rule been followed?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -899,17 +890,16 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 									<li>The user can display the text with a contrast ratio of at least 3:1, via a provided mechanism.</li>
 								</ul>
 							</li>
-							<li id="test-3-2-5">Test 3.2.5&nbsp;: In the mechanism allowing to display a compliant contrast ratio, is the contrast ratio between the text and the background colour high enough ?
-							</li>
+							<li id="test-3-2-5">Test 3.2.5&nbsp;: In the mechanism allowing to display a compliant contrast ratio, is the contrast ratio between the text and the background colour high enough ?</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
-							<p>In those situations, the Criterions are non-applicable for the following elements.</p>
+							<h4>Particular cases</h4>
+							<p>In those situations, the Criteria are non-applicable for the following elements.</p>
 							<ul>
 								<li>The text is part of a logo or a brand, organisation or company name;</li>
 								<li>The text or the image of text is purely decorative;</li>
 								<li>The text is part of an image conveying an information, but the text it-self does not carry any essential information;</li>
-								<li>The text or the image of text is part of an interface element on which no action is possible (for example a button with a disabled attribute).</li>
+								<li>The text or the image of text is part of an interface element on which no action is possible (for example a button with a <code>disabled</code> attribute).</li>
 							</ul>
 
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -947,11 +937,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 									<li>A mechanism allows a contrast ratio of at least 3.1.</li>
 								</ul>
 							</li>
-							<li id="test-3-3-4">Test 3.3.4&nbsp;: In the mechanism allowing to display a compliant contrast ratio, are the colours of the component or of the graphical element contrasted enough ?
-							</li>
+							<li id="test-3-3-4">Test 3.3.4&nbsp;: In the mechanism allowing to display a compliant contrast ratio, are the colours of the component or of the graphical element contrasted enough ?</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>The following cases are not applicable for this Criterion :</p>
 							<ul>
 								<li>Inactive interface component on which no action is possible (for example a button with a disabled attribute).</li>
@@ -1038,7 +1027,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>There is a particular case management when:</p>
 							<ul>
 								<li>The time-based media is used for decorative purposes (i.e. it does not convey any information);</li>
@@ -1081,26 +1070,15 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-4-2-3">Test 4.2.3&nbsp;: Does each pre-recorded time-based media have, where necessary, synchronised subtitles (except for particular cases)?
 								<ul>
 									<li>The text transcript is relevant.</li>
-									<li>Il existe une <a href="rgaa4-glossary.html#glossaire-116">transcription textuelle</a> adjacente clairement identifiable.</li>
 									<li>The synchronized audio description is relevant.</li>
 									<li>The synchronized audio description of the alternative version is relevant.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
-							<p>Il existe une gestion de cas particulier lorsque :</p>
-							<ul>
-								<li>Le <a href="rgaa4-glossary.html#glossaire-79">média temporel</a> est utilisé à des fins décoratives (c'est-à-dire qu'il n'apporte aucune information) ;</li>
-								<li>Le <a href="rgaa4-glossary.html#glossaire-79">média temporel</a> est lui-même une alternative à un contenu de la page (une vidéo en langue des signes ou la vocalisation d'un texte, par exemple) ;</li>
-								<li>Le <a href="rgaa4-glossary.html#glossaire-79">média temporel</a> est utilisé pour accéder à une version agrandie ;</li>
-								<li>Le <a href="rgaa4-glossary.html#glossaire-79">média temporel</a> est utilisé comme un <a href="rgaa4-glossary.html#glossaire-15">captcha</a> ;</li>
-								<li>Le <a href="rgaa4-glossary.html#glossaire-79">média temporel</a> fait partie d'un test qui deviendrait inutile si la <a href="rgaa4-glossary.html#glossaire-116">transcription textuelle</a>, les <a href="rgaa4-glossary.html#glossaire-104">sous-titres synchronisés</a> ou l'audiodescription étaient communiqués ;</li>
-								<li>Pour les services de l’État, les collectivités territoriales et leurs établissements : si le <a href="rgaa4-glossary.html#glossaire-79">média temporel</a> a été publié entre le 23 septembre 2019 et le 23 septembre 2020 sur un site internet, intranet ou extranet créé depuis le 23 septembre 2018, il est exempté de l’obligation d’accessibilité ;</li>
-								<li>Pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si le <a href="rgaa4-glossary.html#glossaire-79">média temporel</a> a été publié avant le 23 septembre 2020, il est exempté de l’obligation d’accessibilité.</li>
-							</ul>
-							<p>Dans ces situations, le critère est non applicable.</p>
-							<p>Ce cas particulier s'applique également aux critères 4.2, 4.3, 4.5</p>
+							<h4>Particular cases</h4>
+							<p>See Particular cases Criterion 4.1</p>
+
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.2.1 Audio-only and Video-only (Prerecorded) (A), 1.2.3 Audio Description and Media Alternative (Prerecorded) (A)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -1124,23 +1102,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 									<li>An alternative version with synchronized captions is accessible via an adjacent link or button.</li>
 								</ul>
 							</li>
-							<li id="test-4-3-2">Test 4.3.2&nbsp;: For each pre-recorded synchronized time-based media with synchronized captions provided through a track tag, does the track tag have an attribute kind="captions"?
-							</li>
+							<li id="test-4-3-2">Test 4.3.2&nbsp;: For each pre-recorded synchronized time-based media with synchronized captions provided through a <code>&lt;track&gt;</code> tag, does the <code>&lt;track&gt;</code> tag have a <code>kind="captions"</code> attribute?</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
-							<p>There is a particular case management when:</p>
-							<ul>
-								<li>The time-based media is used for decorative purposes (i.e. it does not convey any information);</li>
-								<li>The time-based media is itself an alternative to a content on the page (a video in sign language or the vocalisation of a text, for example);</li>
-								<li>The time-based media is used to access to an expanded version;</li>
-								<li>The time-based media is used as a CAPTCHA;</li>
-								<li>The time-based media is part of a test that would become useless if a text transcription, subtitles or audio-description were communicated;</li>
-								<li>For State services, regional governments and their establishments: if the time-based media was published between the 23rd September 2019 and the 23rd September 2020 on an internet, intranet or extranet website created after the 23rd September 2018, it is exempt of accessibility obligation.</li>
-								<li>For legal persons under private law mentioned in the 2nd to 4th paragraphs of the chapter I of the 11th February 2005’s article 47: if the time-based media was published before the 23rd September 2020, it is exempt of accessibility obligation.</li>
-							</ul>
-							<p>In those situations, the Criterion is not applicable.</p>
-							<p>This particular case also applies to Criteria 4.2, 4.3, 4.5.</p>
+							<h4>Particular cases</h4>
+							<p>See Particular cases Criterion 4.1</p>
+
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.2.1 Audio-only and Video-only (Prerecorded) (A), 1.2.3 Audio Description and Media Alternative (Prerecorded) (A)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -1189,19 +1156,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
-							<p>There is a particular case management when:</p>
-							<ul>
-								<li>The time-based media is used for decorative purposes (i.e. it does not convey any information);</li>
-								<li>The time-based media is itself an alternative to a content on the page (a video in sign language or the vocalisation of a text, for example);</li>
-								<li>The time-based media is used to access to an expanded version;</li>
-								<li>The time-based media is used as a CAPTCHA;</li>
-								<li>The time-based media is part of a test that would become useless if a text transcription, subtitles or audio-description were communicated;</li>
-								<li>For State services, regional governments and their establishments: if the time-based media was published between the 23rd September 2019 and the 23rd September 2020 on an internet, intranet or extranet website created after the 23rd September 2018, it is exempt of accessibility obligation.</li>
-								<li>For legal persons under private law mentioned in the 2nd to 4th paragraphs of the chapter I of the 11th February 2005’s article 47: if the time-based media was published before the 23rd September 2020, it is exempt of accessibility obligation.</li>
-							</ul>
-							<p>In those situations, the Criterion is not applicable.</p>
-							<p>This particular case also applies to Criteria 4.2, 4.3, 4.5.</p>
+							<h4>Particular cases</h4>
+							<p>See Particular cases Criterion 4.1</p>
+
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.2.1 Audio-only and Video-only (Prerecorded) (A), 1.2.3 Audio Description and Media Alternative (Prerecorded) (A)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -1219,10 +1176,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="AA">
 						<h3 id="crit-4-6"><em>Criterion 4.6 [A]</em> For each pre-recorded time-based media with a synchronised audio description, is the audio description relevant?</h3>
 						<ul>
-							<li id="test-4-6-1">Test 4.6.1&nbsp;: For each pre-recorded video-only time-based media with a synchronized audio description, is this audio description relevant?
-							</li>
-							<li id="test-4-6-2">Test 4.6.2&nbsp;: For each synchronized time-based media with a synchronized audio description, is this audio description relevant?
-							</li>
+							<li id="test-4-6-1">Test 4.6.1&nbsp;: For each pre-recorded video-only time-based media with a synchronized audio description, is this audio description relevant?</li>
+							<li id="test-4-6-2">Test 4.6.2&nbsp;: For each synchronized time-based media with a synchronized audio description, is this audio description relevant?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1242,11 +1197,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-4-7"><em>Criterion 4.7 [A]</em> Is each time-based media clearly identifiable?</h3>
 						<ul>
-							<li id="test-4-7-1">Test 4.7.1&nbsp;: For each audio-only, video-only or synchronized time-based media, does the adjacent textual content help to clearly identify the time-based media (except for particular cases)?
-							</li>
+							<li id="test-4-7-1">Test 4.7.1&nbsp;: For each audio-only, video-only or synchronized time-based media, does the adjacent textual content help to clearly identify the time-based media (except for particular cases)?</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>There is a particular case management when the time-based media is used for decorative purposes (i.e. it does not convey any information). In this situation, the Criterion is not applicable.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.1.1 Non-text Content (A)</p>
@@ -1279,7 +1233,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>There is a particular case management when:</p>
 							<ul>
 								<li>The non-time-based media is used for decorative purposes (i.e. it does not convey any information);</li>
@@ -1304,8 +1258,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-4-9"><em>Criterion 4.9 [A]</em> For each non-time-based media with an alternative, is this alternative relevant?</h3>
 						<ul>
-							<li id="test-4-9-1">Test 4.9.1&nbsp;: For each non time-based media with an alternative, does this alternative provide access to the same content, and to similar functionalities?
-							</li>
+							<li id="test-4-9-1">Test 4.9.1&nbsp;: For each non time-based media with an alternative, does this alternative provide access to the same content, and to similar functionalities?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1326,7 +1279,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-4-10"><em>Criterion 4.10 [A]</em> Can the user control each sound triggered automatically?</h3>
 						<ul>
-							<li id="test-4-10-1">Test 4.10.1&nbsp;: Does each audio sequence played automatically via an object, video, audio, embed tag, bgsound attribute or a JavaScript code meet one of the following conditions?
+							<li id="test-4-10-1">Test 4.10.1&nbsp;: Does each audio sequence played automatically via an <code>&lt;object&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;audio&gt;</code>, <code>&lt;embed&gt;</code> tag, <code>bgsound</code> attribute or a JavaScript code meet one of the following conditions?
 								<ul>
 									<li>The audio sequence lasts 3 seconds or less.</li>
 									<li>The audio sequence can be stopped by an action initiated by the user.</li>
@@ -1350,7 +1303,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-4-11"><em>Criterion 4.11 [A]</em>Can the consultation of each time-based media, where necessary, be controlled with a keyboard and any pointing device?</h3>
+						<h3 id="crit-4-11"><em>Criterion 4.11 [A]</em> Can the consultation of each time-based media, where necessary, be controlled with a keyboard and any pointing device?</h3>
 						<ul>
 							<li id="test-4-11-1">Test 4.11.1&nbsp;: Does each time-based media have the control features to be played, where necessary?</li>
 							<li id="test-4-11-2">Test 4.11.2&nbsp;: For each time-based media, does each feature meet one of the following conditions?
@@ -1386,7 +1339,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-4-12-1">Test 4.12.1&nbsp;: For each non time-based media, does each feature meet one of the following conditions?
 								<ul>
-									<li>The feature can be reached by the keyboard and any pointing device. </li>
+									<li>The feature can be reached by the keyboard and any pointing device.</li>
 									<li>A keyboard and any pointing device feature, performing the same action, is available on the same page.</li>
 								</ul>
 							</li>
@@ -1431,7 +1384,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>There is a particular case management when the time-based or non-time-based media is used for decorative purposes (i.e. it does not convey any information). In those situations, the Criterion is not applicable.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 4.1.2 Name, Role, Value (A)</p>
@@ -1478,8 +1431,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-5-1"><em>Criterion 5.1 [A]</em> Does each complex data table have a summary?</h3>
 						<ul>
-							<li id="test-5-1-1">Test 5.1.1&nbsp;: For each complex data table, is summary available?
-							</li>
+							<li id="test-5-1-1">Test 5.1.1&nbsp;: For each complex data table, is summary available?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1499,8 +1451,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-5-2"><em>Criterion 5.2 [A]</em> For each complex data table with a summary, is the summary relevant?</h3>
 						<ul>
-							<li id="test-5-2-1">Test 5.2.1&nbsp;: For each complex data table with a summary, is this summary relevant?
-							</li>
+							<li id="test-5-2-1">Test 5.2.1&nbsp;: For each complex data table with a summary, is this summary relevant?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1518,13 +1469,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-5-3"><em>Criterion 5.3 [A]</em> For each presentation table, does the linearized content remain understandable (except for particular cases)?
-						</h3>
+						<h3 id="crit-5-3"><em>Criterion 5.3 [A]</em> For each presentation table, does the linearized content remain understandable (except for particular cases)?</h3>
 						<ul>
 							<li id="test-5-3-1">Test 5.3.1&nbsp;: Does each layout table meet the following conditions?
 								<ul>
 									<li>The linearized content is still understandable.</li>
-									<li>The table tag has an attribute role="presentation".</li>
+									<li>The <code>table</code> tag has an attribute <code>role="presentation"</code>.</li>
 								</ul>
 							</li>
 						</ul>
@@ -1566,8 +1516,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-5-5"><em>Criterion 5.5 [A]</em> For each data table with a title, is the title relevant?</h3>
 						<ul>
-							<li id="test-5-5-1">Test 5.5.1&nbsp;: For each data table with a title, does this title help to identify the content of the data table in a clear and concise manner?
-							</li>
+							<li id="test-5-5-1">Test 5.5.1&nbsp;: For each data table with a title, does this title help to identify the content of the data table in a clear and concise manner?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1589,18 +1538,17 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-5-6-1">Test 5.6.1&nbsp;: For each data table, does each column header applied on the whole of the column, meet one of the following conditions?
 								<ul>
-									<li>The column header has a th tag.</li>
-									<li>The column header has at WAI-ARIA role="columnheader" attribute.</li>
+									<li>The column header has a <code>&lt;th&gt;</code> tag.</li>
+									<li>The column header has at WAI-ARIA <code>&lt;role="columnheader"&gt;</code> attribute.</li>
 								</ul>
 							</li>
 							<li id="test-5-6-2">Test 5.6.2&nbsp;: For each data table, does each row header applied on the whole of the column, meet one of the following conditions?
 								<ul>
-									<li>The row header has a th tag.</li>
-									<li>The row header has at WAI-ARIA role="rowheader" attribute.</li>
+									<li>The row header has a <code>&lt;th&gt;</code> tag.</li>
+									<li>The row header has at WAI-ARIA <code>role="rowheader"</code> attribute.</li>
 								</ul>
 							</li>
-							<li id="test-5-6-3">Test 5.6.3&nbsp;: For each data table, is each header not applied on the whole of the row or column structured with th?
-							</li>
+							<li id="test-5-6-3">Test 5.6.3&nbsp;: For each data table, is each header not applied on the whole of the row or column structured with a <code>&lt;th&gt;</code>?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1618,47 +1566,48 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-5-7"><em>Criterion 5.7 [A]</em> For each th tag content applied to the whole row or to the whole column, does th tag, meet one of the following conditions (except for particular cases)?</h3>
+						<h3 id="crit-5-7"><em>Criterion 5.7 [A]</em> For each <code>&lt;th&gt;</code> tag content applied to the whole row or to the whole column, does <code>&lt;th&gt;</code> tag, meet one of the following conditions (except for particular cases)?</h3>
 						<ul>
-							<li id="test-5-7-1">Test 5.7.1&nbsp;: For each th tag content applied to the whole row or to the whole column, does th tag, meet one of the following conditions (except for particular cases)?
+							<li id="test-5-7-1">Test 5.7.1&nbsp;: For each <code>&lt;th&gt;</code> tag content applied to the whole row or to the whole column, does <code>&lt;th&gt;</code> tag, meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>The th tag has an id attribute unique.</li>
-									<li>The th tag has an scope attribute.</li>
-									<li>The th tag has a WAI-ARIA role="rowheader" or role="columnheader" attribute.</li>
-
+									<li>The <code>&lt;th&gt;</code> tag has an <code>id</code> attribute unique.</li>
+									<li>The <code>&lt;th&gt;</code> tag has a <code>scope</code> attribute.</li>
+									<li>The <code>&lt;th&gt;</code> tag has a WAI-ARIA <code>role="rowheader"</code> or <code>role="columnheader"</code> attribute.</li>
 								</ul>
 							</li>
-							<li id="test-5-7-2">Test 5.7.2&nbsp;: For each th tag content applied to the whole row or to the whole column, and having a scope attribute, does th tag meet one of the following conditions (except for particular cases)?
+							<li id="test-5-7-2">Test 5.7.2&nbsp;: For each <code>&lt;th&gt;</code> tag content applied to the whole row or to the whole column, and having a <code>scope</code> attribute, does <code>&lt;th&gt;</code> tag meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>The th tag doesn't have a scope attribute.</li>
-									<li>The th tag has an scope attribute with "col" value for column headers.</li>
+									<li>The <code>&lt;th&gt;</code> tag doesn't have a <code>scope</code> attribute.</li>
+									<li>The <code>&lt;th&gt;</code> tag has an <code>scope</code> attribute with <code>"col"</code> value for column headers.</li>
 								</ul>
 							</li>
-							<li id="test-5-7-3">Test 5.7.3&nbsp;: For each th tag content not applied to the whole row or to the whole column, does th tag meet one of the following conditions (except for particular cases)?
+							<li id="test-5-7-3">Test 5.7.3&nbsp;: For each <code>&lt;th&gt;</code> tag content not applied to the whole row or to the whole column, does <code>&lt;th&gt;</code> tag meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>The th tag doesn't have a scope attribute.</li>
-									<li>The th tag doesn't have a WAI-ARIA role="rowheader" or role="columnheader" attribute.</li>
-									<li>The th tag has an id attribute unique.</li>
+									<li>The <code>&lt;th&gt;</code> tag doesn't have a <code>scope</code> attribute.</li>
+									<li>The <code>&lt;th&gt;</code> tag doesn't have a WAI-ARIA <code>role="rowheader"</code> or <code>role="columnheader"</code> attribute.</li>
+									<li>The <code>&lt;th&gt;</code> tag has an <code>id</code> attribute unique.</li>
 								</ul>
 							</li>
-							<li id="test-5-7-4">Test 5.7.4&nbsp;: For each td or th tag content associated to one or many headers having id attributes, does the tag meet one of the following conditions?
+							<li id="test-5-7-4">Test 5.7.4&nbsp;: For each <code>td</code> or <code>&lt;th&gt;</code> tag content associated to one or many headers having <code>id</code> attributes, does the tag meet one of the following conditions?
 								<ul>
-									<li>The tag has a headers attribute.</li>
-									<li>The headers attribute has the list of id values attributes of the associated headers.</li>
+									<li>The tag has a <code>headers</code> attribute.</li>
+									<li>The <code>headers</code> attribute has the list of <code>id</code> values attributes of the associated headers.</li>
 								</ul>
 							</li>
-							<li id="test-5-7-5">Test 5.7.5&nbsp;: For each element with a WAI-ARIA role="rowheader" or "columnheader" attribute which content applied to the whole row or column, does the element meet one of the following conditions?
+							<li id="test-5-7-5">Test 5.7.5&nbsp;: For each element with a WAI-ARIA <code>role="rowheader"</code> or <code>"columnheader"</code> attribute which content applied to the whole row or column, does the element meet one of the following conditions?
 								<ul>
-									<li>The element has a WAI-ARIA role="rowheader" attribute for the row headers.</li>
-									<li>The element has a WAI-ARIA role="columnheader" attribute for the column headers.</li>
+									<li>The element has a WAI-ARIA <code>role="rowheader"</code> attribute for the row headers.</li>
+									<li>The element has a WAI-ARIA <code>role="columnheader"</code> attribute for the column headers.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
-							<p>If the headers attribute is implemented on a cell already linked to a (line or column) header with the scope attribute (with the value col or row), the header or the headers referenced by the attribute headers will be rendered by assistive technologies. Headers linked using the scope attribute will be ignored.</p>
-							<h4>Cas particuliers</h4>
-							<p>In the case of data tables with headers on only one line or column, the headers may be structured using the <th> tag without scope attribute.</p>
+							<h4>Particular cases</h4>
+							<p>In the case of data tables with headers on only one line or column, the headers may be structured using the <code>&lt;th&gt;</code> tag without <code>scope</code> attribute.</p>
+
+							<h4>Technical notes</h4>
+							<p>If the <code>headers</code> attribute is implemented on a cell already linked to a (line or column) header with the <code>scope</code> attribute (with the value <code>col</code> or <code>row</code>), the header or the headers referenced by the attribute <code>headers</code> will be rendered by assistive technologies. Headers linked using the <code>scope</code> attribute will be ignored.</p>
+
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships (A)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -1676,10 +1625,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-5-8"><em>Criterion 5.8 [A]</em> Each presentation table should not use elements meant for data tables. Is this rule followed?</h3>
 						<ul>
-							<li id="test-5-8-1">Test 5.8.1&nbsp;: Does each layout table (table tag or element with a WAI-ARIA role="table" attribute) meet the following conditions?
+							<li id="test-5-8-1">Test 5.8.1&nbsp;: Does each layout table (<code>table</code> tag or element with a WAI-ARIA <code>role="table"</code> attribute) meet the following conditions?
 								<ul>
-									<li>The layout table (table tag or element with a WAI-ARIA role="table" attribute) doesn't have caption, th, thead, tfoot, colgroup tag, or element with a WAI-ARIA role="rowheader", role="columnheader" attribute.</li>
-									<li>The layout table cells (td tag or a WAI-ARIA role="cell" attribute) doesn't have scope, headers, axis attribute.</li>
+									<li>The layout table (<code>table</code> tag or element with a WAI-ARIA <code>role="table"</code> attribute) doesn't have <code>&lt;caption&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;thead&gt;</code>, <code>&lt;tfoot&gt;</code>, <code>&lt;colgroup&gt;</code> tag, or element with a WAI-ARIA <code>role="rowheader"</code>, <code>role="columnheader"</code> attribute.</li>
+									<li>The layout table cells (<code>td</code> tag or a WAI-ARIA <code>role="cell"</code> attribute) doesn't have <code>scope</code>, <code>headers</code>, <code>axis</code> attribute.</li>
 								</ul>
 							</li>
 						</ul>
@@ -1725,14 +1674,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-6-1-1">Test 6.1.1&nbsp;: Does each link text meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>The link text alone is sufficient to understand the link purpose and target</li>
-									<li>The link text associated to the link context is sufficient to understand the link purpose and target</li>
+									<li>The link text alone is sufficient to understand the link purpose and target.</li>
+									<li>The link text associated to the link context is sufficient to understand the link purpose and target.</li>
 								</ul>
 							</li>
 							<li id="test-6-1-2">Test 6.1.2&nbsp;: Does each image link meet one of the following conditions (except for particular cases)?
 								<ul>
 									<li>The link text alone is sufficient to understand the link purpose and target.</li>
-									<li>The link text associated to the link context is sufficient to understand the link purpose and target</li>
+									<li>The link text associated to the link context is sufficient to understand the link purpose and target.</li>
 								</ul>
 							</li>
 							<li id="test-6-1-3">Test 6.1.3&nbsp;: Does each link that doubles a clickable area of a server-side image map meet one of the following conditions (except for particular cases)?
@@ -1747,11 +1696,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 									<li>The link text associated to the link context is sufficient to understand the link purpose and target.</li>
 								</ul>
 							</li>
-							<li id="test-6-1-5">Test 6.1.5&nbsp;: For each link having a visible text, does the accessible name of the link contain at least the visible text (except for particular cases)?
-							</li>
+							<li id="test-6-1-5">Test 6.1.5&nbsp;: For each link having a visible text, does the accessible name of the link contain at least the visible text (except for particular cases)?</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>There is a particular case management for the 6.1.1, 6.1.2, 6.1.3 et 6.1.4 tests when the link is ambiguous for everyone. In this situation, where it is not possible to make the link explicit in its context, the Criterion is not applicable.</p>
 							<p>There is a particular case management for the 6.1.5 test when:</p>
 							<ul>
@@ -1776,7 +1724,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-6-2"><em>Criterion 6.2 [A]</em> On each web page, does each link, except for anchors, have a text?</h3>
 						<ul>
-							<li id="test-6-2-1">Test 6.2.1&nbsp;: On each web page, does each link, except for anchor links, have a text between <a> and </a>?</li>
+							<li id="test-6-2-1">Test 6.2.1&nbsp;: On each web page, does each link, except for anchor links, have a text between <code>&lt;a&gt;</code> and <code>&lt;/a&gt;</code>?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1843,7 +1791,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>The 7.1 Criterion implements the notion of « compatible with assistive technologies » as defined in the WCAG, as well as the use of WAI-ARIA to make a component or a functionality accessible. The good use of WAI-ARIA is verified using the 7.1.1, 7.1.2, 7.1.3 tests.</p>
 							<p>Important Note: in an HTML5 Environment, a lot of components may need JavaScript to work ; as a consequence, providing an alternative to a JavaScript component that may not be made accessible will benefit from a specific method for the component involved, allowing to replace it by an accessible alternative (and to reactivate it). It means that disabling JavaScript for the whole page will not be accepted as a valuable method, unless it does not challenge the use of other components.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -1863,11 +1811,11 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-7-2"><em>Criterion 7.2 [A]</em> For each script with an alternative, is this alternative relevant?</h3>
 						<ul>
-							<li id="test-7-2-1">Test 7.2.1&nbsp;: Does each script beginning with the script tag, and having an alternative, meet one of the following conditions?
+							<li id="test-7-2-1">Test 7.2.1&nbsp;: Does each script beginning with the <code>&lt;script&gt;</code> tag, and having an alternative, meet one of the following conditions?
 								<ul>
-									<li>The alternative between <noscript> and </noscript> allows to access to similar content and functionalities.</li>
+									<li>The alternative between <code>&lt;noscript&gt;</code> and <code>&lt;/noscript&gt;</code> allows to access to similar content and functionalities.</li>
 									<li>When JavaScript is disabled, the displayed page allows to access to similar content and functionalities.</li>
-									<li>The alternative page allows to access to similar content and functionalities. </li>
+									<li>The alternative page allows to access to similar content and functionalities.</li>
 									<li>The server-side script language allows to access to similar content and functionalities.</li>
 									<li>The alternative available in the same page allows to access to similar content and functionalities.</li>
 								</ul>
@@ -1903,11 +1851,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 									<li>An element that is accessible with keyboard and any pointing device, performing the same action, is available in the page.</li>
 								</ul>
 							</li>
-							<li id="test-7-3-2">Test 7.3.2&nbsp;: A script must not remove focus from an element that receives it. Has this rule been followed (except for particular cases)?
-							</li>
+							<li id="test-7-3-2">Test 7.3.2&nbsp;: A script must not remove focus from an element that receives it. Has this rule been followed (except for particular cases)?</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>There is a particular case management when the functionality depends on the use of an event listener without universal equivalent; for example, a free-hand drawing application cannot be rendered controllable with keyboard. In those situations, the Criterion is not applicable.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A), 2.1.1 Keyboard(A), 2.4.7 Focus Visible(AA)</p>
@@ -1929,7 +1876,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-7-4-1">Test 7.4.1&nbsp;: Does each script initiating a change of context meet one of the following conditions?
 								<ul>
 									<li>The user is warned by a text of the action of the script and the type of change before it is activated.</li>
-									<li>The change of context is initiated by an explicit button (input tag of type submit, button or image, or button tag).</li>
+									<li>The change of context is initiated by an explicit button (<code>input</code> tag of type <code>submit</code>, <code>button</code> or <code>image</code>, or <code>button</code> tag).</li>
 									<li>The change of context is initiated by an explicit link.</li>
 								</ul>
 							</li>
@@ -1952,19 +1899,19 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="AA">
 						<h3 id="crit-7-5"><em>Criterion 7.5 [A]</em> On each web page, are status messages properly rendered by assistive technologies?</h3>
 						<ul>
-							<li id="test-7-5-1">Test 7.5.1&nbsp;: Does a status message informing of an action's success, result or state of an application use the WAI-ARIA role="status" attribute?</li>
-							<li id="test-7-5-2">Test 7.5.2&nbsp;: Does a status message providing a suggestion, or informing of the presence of an error use the WAI-ARIA role="alert" attribute?</li>
-							<li id="test-7-5-3">Test 7.5.3&nbsp;: Does a status message indicating the progress of a process use one of the WAI-ARIA role="log", role="progressbar" or role="status" attributes?</li>
+							<li id="test-7-5-1">Test 7.5.1&nbsp;: Does a status message informing of an action's success, result or state of an application use the WAI-ARIA <code>role="status"</code> attribute?</li>
+							<li id="test-7-5-2">Test 7.5.2&nbsp;: Does a status message providing a suggestion, or informing of the presence of an error use the WAI-ARIA <code>role="alert"</code> attribute?</li>
+							<li id="test-7-5-3">Test 7.5.3&nbsp;: Does a status message indicating the progress of a process use one of the WAI-ARIA <code>role="log"</code>, <code>role="progressbar"</code> or <code>role="status"</code> attributes?</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
-							<p>The WAI-ARIA log, status et alert roles implicitly have a WAI-ARIA aria-live et aria-atomic attribute value. It is therefore possible to considered that (in compliance with the WAI-ARIA 1.1 specification):</p>
+							<h4>Technical notes</h4>
+							<p>The WAI-ARIA <code>log</code>, <code>status</code> et <code>alert</code> roles implicitly have a WAI-ARIA <code>aria-live</code> et <code>aria-atomic</code> attribute value. It is therefore possible to considered that (in compliance with the WAI-ARIA 1.1 specification):</p>
 							<ul>
-								<li>A WAI-ARIA aria-live="polite" attribute associated with a status message may be considered for a WAI-ARIA log role.</li>
-								<li>A WAI-ARIA aria-live="polite" attribute and an aria-atomic="true" attribute linked associated with a status message may be considered for a WAI-ARIA status role.</li>
-								<li>An aria-live="assertive" attribute and an aria-atomic="true" attribute associated with a status message may be considered for a WAI-ARIA alert role.</li>
+								<li>A WAI-ARIA <code>aria-live="polite"</code> attribute associated with a status message may be considered for a WAI-ARIA <code>log</code> role.</li>
+								<li>A WAI-ARIA <code>aria-live="polite"</code> attribute and an <code>aria-atomic="true"</code> attribute linked associated with a status message may be considered for a WAI-ARIA <code>status</code> role.</li>
+								<li>An <code>aria-live="assertive"</code> attribute and an <code>aria-atomic="true"</code> attribute associated with a status message may be considered for a WAI-ARIA <code>alert</code> role.</li>
 							</ul>
-							<p>This is on condition that the nature of the status message satisfies properly the connection implicitly established.  In the case of a message status indicating the progression of a process and graphically materialized by a progress bar, an explicit WAI-ARIA progressbar is necessary.</p>
+							<p>This is on condition that the nature of the status message satisfies properly the connection implicitly established. In the case of a message status indicating the progression of a process and graphically materialized by a progress bar, an explicit WAI-ARIA <code>progressbar</code> is necessary.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 4.1.3 Status Messages(AA)</p>
 							<p>Technique(s) suffisante(s) et/ou échec(s) WCAG&nbsp;2.1&nbsp;: <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H36.html" rel="external" title="H36 (nouvelle fenêtre)" target="_blank" class="external">H36</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H37.html" rel="external" class="external" title="H37 (nouvelle fenêtre)" target="_blank">H37</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H53.html" rel="external" class="external" title="H53 (nouvelle fenêtre)" target="_blank">H53</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H24.html" rel="external" class="external" title="H24 (nouvelle fenêtre)" target="_blank">H24</a> - <a hreflang="en" href="http://www.w3.org/TR/WCAG-TECHS/H65.html" rel="external" class="external" title="F65 (nouvelle fenêtre)" target="_blank">F65</a></p>
@@ -2012,9 +1959,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-8-1"><em>Criterion 8.1 [A]</em> Is each web page defined by a document type?</h3>
 						<ul>
-							<li id="test-8-1-1">Test 8.1.1&nbsp;: For each web page, is the document type (doctype tag) available?</li>
-							<li id="test-8-1-2">Test 8.1.2&nbsp;: For each web page is the document type (doctype tag) valid?</li>
-							<li id="test-8-1-3">Test 8.1.3&nbsp;: For each web page with a document type declaration, is this declaration located before the <html> tag in the source code?</li>
+							<li id="test-8-1-1">Test 8.1.1&nbsp;: For each web page, is the document type (<code>doctype</code> tag) available?</li>
+							<li id="test-8-1-2">Test 8.1.2&nbsp;: For each web page is the document type (<code>doctype</code> tag) valid?</li>
+							<li id="test-8-1-3">Test 8.1.3&nbsp;: For each web page with a document type declaration, is this declaration located before the <code>&lt;html&gt;</code> tag in the source code?</li>
 						</ul>
 						<aside>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2045,7 +1992,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
 							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2073,7 +2020,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
 							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2101,7 +2048,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
 							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2124,7 +2071,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-8-5-1">Test 8.5.1&nbsp;: Chaque page web a-t-elle un <a href="rgaa4-glossary.html#glossaire-115">titre de page</a> (balise <code>&lt;title&gt;</code>) ?</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
 							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2172,7 +2119,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il y a une gestion de cas particuliers sur le <a href="rgaa4-glossary.html#glossaire-20">changement de langue</a> pour les cas suivants&nbsp;:</p>
 							<ul>
 								<li>Nom propre, le critère est non applicable ;</li>
@@ -2303,7 +2250,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-9-1-3">Test 9.1.1&nbsp;: Dans chaque page web, chaque passage de texte constituant un titre est-il structuré à l'aide d'une balise <code>&lt;hx&gt;</code> ou d'une balise possédant un attribut WAI-ARIA <code>role="heading"</code> associé à un attribut WAI-ARIA <code>aria-level</code> ?</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>ARIA permet de définir des <a href="rgaa4-glossary.html#glossaire-113">titres</a> via le rôle <code>heading</code> et l'attribut <code>aria-level</code> (indication du niveau de titre). Bien qu'il soit préférable d'utiliser l'élément de titre natif en HTML <code>&lt;hx&gt;</code>, l'utilisation du rôle WAI-ARIA <code>heading</code> est compatible avec l'accessibilité. Bien que la spécification HTML5 autorise l'utilisation exclusive de <a href="rgaa4-glossary.html#glossaire-113">titres</a> de niveau 1 (<code>&lt;h1&gt;</code>), le manque de support des technologies d'assistance oblige à utiliser une hiérarchie de <a href="rgaa4-glossary.html#glossaire-113">titres</a> pertinente.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A), 2.4.1 Bypass Block(A), 2.4.6 Headings and Labels(AA), 4.1.2 Name, Role, Value(A)</p>
@@ -2334,7 +2281,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>La balise <code>&lt;main&gt;</code> peut être utilisée plusieurs fois dans le même document HTML. Néanmoins, il ne peut y avoir en permanence qu'une seule balise visible et lisible par les technologies d'assistances, les autres devant disposer d'un attribut <code>hidden</code> ou d’un style permettant de les masquer aux technologies d’assistances. À noter cependant que l’utilisation d’un style seul restera insuffisant pour assurer l’unicité d’une balise <code>&lt;main&gt;</code> visible en cas de désactivation des feuilles de styles.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A)</p>
@@ -2369,7 +2316,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>Les attributs WAI-ARIA <code>role="list"</code> et <code>"listitem"</code> peuvent nécessiter l'utilisation des attributs WAI-ARIA <code>aria-setsize</code> et <code>aria-posinset</code> dans le cas où l'ensemble de la liste n'est pas disponible via le DOM généré au moment de la consultation. Les attributs WAI-ARIA <code>role="tree"</code>, <code>"tablist"</code>, <code>"menu"</code>, <code>"combobox"</code> et <code>"listbox"</code> ne sont pas équivalents à une liste HTML <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>. Voir : The roles model - list</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A)</p>
@@ -2392,7 +2339,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-9-4-2">Test 9.4.2&nbsp;: Dans chaque page web, chaque bloc de citation utilise-t-il une balise <code>&lt;blockquote&gt;</code> ?</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>Les attributs WAI-ARIA <code>role="list"</code> et <code>"listitem"</code> peuvent nécessiter l'utilisation des attributs WAI-ARIA <code>aria-setsize</code> et <code>aria-posinset</code> dans le cas où l'ensemble de la liste n'est pas disponible via le DOM généré au moment de la consultation. Les attributs WAI-ARIA <code>role="tree"</code>, <code>"tablist"</code>, <code>"menu"</code>, <code>"combobox"</code> et <code>"listbox"</code> ne sont pas équivalents à une liste HTML <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>. Voir : The roles model - list</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A)</p>
@@ -2533,7 +2480,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Dans le cas des textes en image et des sous-titres de vidéo le critère est non applicable.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.4.4 Resize Text(AA)</p>
@@ -2637,7 +2584,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>WAI-ARIA propose un attribut <code>aria-hidden</code> (<code>true</code> ou <code>false</code>) qui permet d'inhiber la restitution d'un contenu en direction des technologies d'assistance, sans action sur sa visibilité en direction des agents utilisateurs : un contenu avec <code>aria-hidden="true"</code> ne sera donc plus vocalisable, mais restera visible. Sauf si le contenu contrôlé par <code>aria-hidden</code> n'a pas vocation à être restitué par les technologies d'assistance, la valeur de l'attribut <code>aria-hidden</code> doit être cohérente avec l'état affiché ou masqué du contenu à l'écran. La spécification HTML5 propose un attribut <code>hidden</code> qui permet de rendre indisponible (quand l'attribut <code>hidden</code> est présent) un contenu dans le DOM généré (de manière similaire au <code>type="hidden"</code> sur un contrôle de formulaire). Il est possible d'avoir des situations où un contenu contrôlé par <code>hidden</code> ou <code>aria-hidden</code> se trouve momentanément dans un état incohérent avec le statut affiché ou masqué du contenu, par exemple si l'on désire rendre disponible un élément, mais que son affichage à l'écran reste dépendant d'une action ultérieure. Dans ce cas, c'est l'état final du contenu qui doit être considéré.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.2 Meaningful Sequence(A), 4.1.2 Name, Role, Value(A)</p>
@@ -2716,7 +2663,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Font exception à ce critère les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :</p>
 							<ul>
 								<li>Les images, les graphiques ou les vidéos.</li>
@@ -2753,7 +2700,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Font exception à ce critère les contenus pour lesquels l'utilisateur n'a pas de possibilité de personnalisation :</p>
 							<ul>
 								<li>Les sous-titres directement intégrés à une vidéo.</li>
@@ -2790,7 +2737,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Lorsque le contenu additionnel est contrôlé par l'agent utilisateur (par exemple, attribut <code>title</code> ou validation native de formulaire) ou correspond à une fenêtre modale conforme au motif de conception WAI-ARIA dialog, le critère 10.13 est non applicable. Lorsque le contenu additionnel ne masque ou ne remplace aucun contenu <a href="rgaa4-glossary.html#glossaire-49">porteur d'information</a>n le test 10.13.1 est non applicable.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.4.13 Content on Hover or Focus(AA)</p>
@@ -2939,7 +2886,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particulier pour le test 11.2.5 lorsque&nbsp;:</p>
 							<ul>
 								<li>La ponctuation et les lettres majuscules sont présentes dans le texte de l'étiquette visible : elles peuvent être ignorées dans le nom accessible sans porter à conséquence.</li>
@@ -3003,7 +2950,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Les tests 11.4.2 et 11.4.3 seront considérés comme non applicable :</p>
 							<ul>
 								<li>Dans le cas où l'étiquette mélange une portion de texte qui se lit de droite à gauche avec une portion de texte qui se lit de gauche à droite.</li>
@@ -3031,7 +2978,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-11-5-1">Test 11.5.1&nbsp;: Les champs de même nature vérifient-ils l'une de ces conditions, si nécessaire ?
 								<ul>
 									<li>Les champs de même nature sont regroupés dans une balise <code>&lt;fieldset&gt;</code>.</li>
-									<li>Les champs de même nature sont regroupés dans une balise possédant un attribut WAI-ARIA <code>role="group"</code>.</li>
+									<li>Les champs de même nature sont regroupés dans une balise possédant un attribut WAI-ARIA <code><code>role="group"</code></code>.</li>
 									<li>Les champs de même nature de type radio (<code>&lt;input type="radio"&gt;</code> ou balises possédant un attribut WAI-ARIA <code>role="radio"</code>) sont regroupés dans une balise possédant un attribut WAI-ARIA <code>role="radiogroup"</code> ou <code>"group"</code>.</li>
 								</ul>
 							</li>
@@ -3145,7 +3092,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particulier pour le test 11.2.5 lorsque :</p>
 							<ul>
 								<li>La ponctuation et les lettres majuscules sont présentes dans le texte de l'étiquette visible : elles peuvent être ignorées dans le nom accessible sans porter à conséquence.</li>
@@ -3212,7 +3159,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Le test 11.10.1 sera considéré comme non applicable lorsque le formulaire comporte un seul champ de formulaire ou qu'il indique les champs optionnels de manière :</p>
 							<ul>
 								<li>Visible ;</li>
@@ -3243,7 +3190,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>Certains types de contrôles en HTML5 proposent des messages d'aide à la saisie automatique : par exemple le type <code>email</code> affiche un message du type « veuillez saisir une adresse e-mail valide » dans le cas où l'adresse e-mail saisie ne correspond pas au format attendu. Ces messages sont personnalisables via l'API Constraint Validation, ce qui permet de personnaliser les messages d'erreur et de valider le critère. L’attribut <code>pattern</code> permet d'effectuer automatiquement des contrôles de format (via des expressions régulières) et affiche un message d'aide personnalisable via l'attribut <code>title</code> : ce dispositif valide également le critère.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 3.3.3 Error Suggestion (AA)</p>
@@ -3303,7 +3250,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>La liste des valeurs possibles pour l'attribut <code>autocomplete</code> repose sur la liste des valeurs présentes dans la spécifications WCAG2.1 qui reprend elle-même la liste des valeurs de type « <code>field name</code> » de la spécification HTML5.2. Le critère WCAG demande à ce que l'une de ces valeurs soit présente pour qualifier un champ de saisie concernant l'utilisateur.</p>
 							<p>Ce que le critère WCAG laisse implicite, ce sont les différentes règles de construction possibles pour obtenir une valeur (simple ou composée) pour l'attribut <code>autocomplete</code>. C'est cependant l'affaire du développeur de fournir à l'attribut <code>autocomplete</code> une valeur ou un ensemble de valeurs valides au regard des exigences de l'algorithme fourni par la spécification HTML5.2. Ainsi, un attribut <code>autocomplete</code> ne peut contenir qu'une seule valeur de type <code>field name</code>, comme "<code>name</code>" ou "<code>street-address</code>". On peut avoir également un ensemble composé de différentes valeurs comme, par exemple, <code>autocomplete="shipping name"</code> ou <code>autocomplete="section-software shipping street-address"</code> : "<code>section-software</code>" renvoie à une valeur de type <code>scope</code> et "<code>shipping</code>" à une valeur de type <code>hint set</code>, mais toujours une seule valeur de type <code>field name</code>.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -3363,7 +3310,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particuliers lorsque le site web est constitué d'une seule page ou d'un nombre très limité de pages (cf. note) pour lesquels la fonction de recherche du navigateur dans le contenu est considérée comme équivalente à un moteur de recherche. Dans ce cas-là, le critère est non applicable.</p>
 							<p>Note : l'appréciation d'un nombre très limité de pages devrait réserver ce cas particulier à un site de 2 ou 3 pages, par exemple, avec un volume de contenu peu important.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -3391,7 +3338,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particulier lorsque :</p>
 							<ul>
 								<li>Les pages d'un <a href="rgaa4-glossary.html#glossaire-37">ensemble de pages</a> sont le résultat ou une partie d'un processus (un processus de paiement ou de prise de commande, par exemple) ;</li>
@@ -3530,7 +3477,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particuliers lorsque le site web est constitué d'une seule page. Dans ce cas de figure, l'obligation de la présence d'un lien d'accès rapide est liée au contexte de la page : présence ou absence de navigation ou de contenus additionnels, par exemple. Le critère peut être considéré comme non applicable lorsqu'il est avéré qu'un lien d'accès rapide est inutile.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 2.4.1 Bypass Blocks (A), 2.4.3 Focus Order (A), Consistent Navigation (AA)</p>
@@ -3630,7 +3577,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-12-11-1">Test 12.11.1&nbsp;: Dans chaque page web, les contenus additionnels apparaissant au survol, à la prise de focus ou à l'activation d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>sont-ils, si nécessaire, atteignables au clavier ?</li>
 						</ul>
 						<aside>
-							<h4>Note technique</h4>
+							<h4>Technical notes</h4>
 							<p>Ce critère adresse les situations où un contenu additionnel contient des <a href="rgaa4-glossary.html#glossaire-23">composants d'interface </a>avec lesquels il doit être possible d'interagir au clavier. Par exemple, une infobulle personnalisée qui propose un lien dans son contenu.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 2.1.1 Keyboard (A)</p>
@@ -3708,7 +3655,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particuliers lorsque la limite de temps est essentielle, notamment lorsqu'elle ne pourrait pas être supprimée sans changer fondamentalement le contenu ou les fonctionnalités liées au contenu.</p>
 							<p>Dans ces situations, le critère est non applicable. Par exemple, le rafraîchissement d'un flux RSS dans une page n'est pas une limite de temps essentielle ; le critère est applicable. En revanche, une redirection automatique qui amène vers la nouvelle version d'une page à partir d'une url obsolète est essentielle ; le critère est non applicable.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -3944,7 +3891,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe des interfaces pour lesquelles l'orientation du périphérique est essentielle à leur utilisation. Dans ces situations, le critère est non applicable. Il peut s'agir d'interfaces de jeu, de piano, de dépôt de chèques bancaires, etc. Si l'interface est le seul moyen d'accéder au service proposé, une alternative devrait être mise en place pour pallier cette carence.</p>
 							<p>Références documentaires :</p>
 							<ul>
@@ -4006,7 +3953,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particulier lorsque la fonctionnalité nécessite que le comportement attendu soit réalisé lors d'un événement descendant, par exemple, un émulateur de clavier dont les touches doivent s'activer à la pression comme sur un clavier physique. Dans ces situations, le critère est non applicable.</p>
 							<h4>Correspondances WCAG&nbsp;2.1</h4>
 							<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 2.5.2 Pointer Cancellation (A)</p>
@@ -4034,7 +3981,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 						</ul>
 						<aside>
-							<h4>Cas particuliers</h4>
+							<h4>Particular cases</h4>
 							<p>Il existe une gestion de cas particulier lorsque :</p>
 							<ul>
 								<li>Le mouvement est essentiel à l'accomplissement de la fonctionnalité (ex. podomètre).</li>

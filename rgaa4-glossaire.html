@@ -299,9 +299,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</ul>
 					<p>Cet ordre doit être utilisé pour l’évaluation de la pertinence du «&nbsp;nom accessible&nbsp;» du bouton. Par exemple, même dans le cas de la présence d’un <code>title</code> et d’un <a href="#glossaire-87">passage de texte</a> référencé par <code>aria-labelledby</code> sur le même bouton, c’est le <a href="#glossaire-87">passage de texte</a> référencé par <code>aria-labelledby</code> qui doit être évalué.</p>
 					<p>Référence&nbsp;: <a href="http://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-calculation" lang="en" hreflang="en" rel="external" class="external">Accessible name and description calculation</a>.</p>
-					<p>Par ailleurs, un «&nbsp;nom accessible&nbsp;» sera considéré comme non-pertinent s’il ne reprend pas le texte visible du bouton. Par exemple&nbsp;:</p>
-					<p><code>&lt;button aria-label="confirmer la saisie"&gt;valider la saisie&lt;/button&gt;</code></p>
-					<p>sera considéré comme non conforme au <a href="/rgaa4-criteres.html#crit-11-2">critère 11.2</a>.</p>
+					<p>Par ailleurs, un «&nbsp;nom accessible&nbsp;» sera considéré comme non-pertinent s’il ne reprend pas le texte visible du bouton. Par exemple&nbsp;: <code>&lt;button aria-label="confirmer la saisie"&gt;valider la saisie&lt;/button&gt;</code> sera considéré comme non conforme au <a href="/rgaa4-criteres.html#crit-11-2">critère 11.2</a>.</p>
 				</article>
 				<article id="lettre-c">
 					<h2>C</h2>
@@ -334,46 +332,46 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>De saisir des données textuelles ou préformatées&nbsp;:
 
 							<ul>
-								<li><code>input type="text"</code>&nbsp;;</li>
-								<li><code>input type="password"</code>&nbsp;;</li>
-								<li><code>input type="search"</code>&nbsp;;</li>
-								<li><code>input type="email"</code>&nbsp;;</li>
-								<li><code>input type="number"</code>&nbsp;;</li>
-								<li><code>input type="tel"</code>&nbsp;;</li>
-								<li><code>input type="url"</code>&nbsp;;</li>
-								<li><code>textarea</code>.</li>
+								<li><code>&lt;input type="text"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="password"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="search"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="email"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="number"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="tel"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="url"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;textarea&gt;</code>.</li>
 							</ul>
 						</li>
 						<li>De sélectionner des valeurs prédéfinies&nbsp;:
 
 							<ul>
-								<li><code>input type="checkbox"</code>&nbsp;;</li>
-								<li><code>input type="radio"</code>&nbsp;;</li>
-								<li><code>input type="date"</code>&nbsp;;</li>
-								<li><code>input type="range"</code>&nbsp;;</li>
-								<li><code>input type="color"</code>&nbsp;;</li>
-								<li><code>input type="time"</code>&nbsp;;</li>
-								<li><code>input type="month"</code>&nbsp;;</li>
-								<li><code>input type="week"</code>&nbsp;;</li>
-								<li><code>input type="datetime-local"</code>&nbsp;;</li>
-								<li><code>select</code>&nbsp;;</li>
-								<li><code>datalist</code>&nbsp;;</li>
-								<li><code>optgroup</code>&nbsp;;</li>
-								<li><code>option</code>.</li>
+								<li><code>&lt;input type="checkbox"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="radio"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="date"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="range"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="color"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="time"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="month"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="week"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="datetime-local"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;select&gt;</code>&nbsp;;</li>
+								<li><code>&lt;datalist&gt;</code>&nbsp;;</li>
+								<li><code>&lt;optgroup&gt;</code>&nbsp;;</li>
+								<li><code>&lt;option&gt;</code>.</li>
 							</ul>
 						</li>
 						<li>De télécharger des fichiers&nbsp;:
 
 							<ul>
-								<li><code>input type="file"</code>.</li>
+								<li><code>&lt;input type="file"&gt;</code>.</li>
 							</ul>
 						</li>
 						<li>Ou d’afficher des résultats&nbsp;:
 
 							<ul>
-								<li><code>output</code>&nbsp;;</li>
-								<li><code>progress</code>&nbsp;;</li>
-								<li><code>meter</code>.</li>
+								<li><code>&lt;output&gt;</code>&nbsp;;</li>
+								<li><code>&lt;progress&gt;</code>&nbsp;;</li>
+								<li><code>&lt;meter&gt;</code>.</li>
 							</ul>
 						</li>
 						<li>Les balises possédant un rôle WAI-ARIA permettant de restituer un champ de formulaire sont également couvertes par cette définition&nbsp;:
@@ -395,12 +393,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Les objets de formulaires et rôle WAI-ARIA suivants ne sont pas considérés comme des champs de formulaires&nbsp;:
 
 							<ul>
-								<li><code>input type="submit"</code>&nbsp;;</li>
-								<li><code>input type="reset"</code>&nbsp;;</li>
-								<li><code>input type="hidden"</code>&nbsp;;</li>
-								<li><code>input type="image"</code>&nbsp;;</li>
-								<li><code>input type="button"</code>&nbsp;;</li>
-								<li><code>button</code>&nbsp;;</li>
+								<li><code>&lt;input type="submit"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="reset"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="hidden"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="image"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;input type="button"&gt;</code>&nbsp;;</li>
+								<li><code>&lt;button&gt;</code>&nbsp;;</li>
 								<li>attribut WAI-ARIA <code>role="button"</code>.</li>
 							</ul>
 						</li>
@@ -1280,7 +1278,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Montant en euros&nbsp;;</li>
 						<li>Code postal (5 chiffres&nbsp;: ex. 75001).</li>
 					</ul>
-					<p><strong>Note importante&nbsp;:</strong> lorsque le type de champ de formulaire propose un masque de saisie, comme par exemple les champs date ou time, l’indication de format n’est pas nécessaire.</p>
+					<p><strong>Note importante&nbsp;:</strong> lorsque le type de champ de formulaire propose un masque de saisie, comme par exemple les champs <code>date</code> ou <code>time</code>, l’indication de format n’est pas nécessaire.</p>
 				</article>
 				<article id="lettre-u">
 					<h2>U</h2>

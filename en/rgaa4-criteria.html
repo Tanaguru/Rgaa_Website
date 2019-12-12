@@ -2044,7 +2044,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</ul>
 						</nav>
 						<h3>General guidelines</h3>
-						<p>Vérifier que chaque page Web a un code source valide selon le <a href="rgaa4-glossary.html#glossaire-117">type de document</a>, un titre pertinent et une indication de <a href="rgaa4-glossary.html#glossaire-61">langue par défaut</a>. Vérifier que les balises ne sont pas utilisées <a href="rgaa4-glossary.html#glossaire-119">uniquement à des fins de présentation</a>, que les changements de langues et de direction de <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> sont indiqués.</p>
+						<p>Check that each web page has a valid source code according to the document type, a relevant title and a default human language identification. Check that tags are not used for presentation only, that changes in human language and changes in the direction of reading order are specified.</p>
 						<div class="tags"><span>Mots clés</span>
 							<ul>
 								<li>Principe : Perceptible</li>
@@ -2076,23 +2076,22 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-8-2"><em>Criterion 8.2 [A]</em> Pour chaque page web, le code source généré est-il valide selon le <a href="rgaa4-glossary.html#glossaire-117">type de document</a> spécifié(<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-8-2"><em>Criterion 8.2 [A]</em> For each web page, is the generated source code valid depending on the specified document type (except for particular cases)?</h3>
 						<ul>
-							<li id="test-8-2-1">Test 8.2.1&nbsp;: Pour chaque déclaration de <a href="rgaa4-glossary.html#glossaire-117">type de document</a>, le code source généré de la page vérifie-t-il ces conditions(<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-8-2-1">Test 8.2.1&nbsp;: For each document type declaration, does the source code of the page meet the following conditions (except for particular cases)?
 								<ul>
-									<li>Les balises, attributs et valeurs d'attributs respectent les <a href="rgaa4-glossary.html#glossaire-117">règles d'écriture</a> ;</li>
-									<li>L'imbrication des balises est conforme ;</li>
-									<li>L'ouverture et la fermeture des balises sont conformes ;</li>
-									<li>Les valeurs d'attribut id sont uniques dans la page ;</li>
-									<li>Les attributs ne sont pas doublés sur un même élément.</li>
+									<li>Tags, attributes and attribute values follow the writing rules.</li>
+									<li>Tags nesting is compliant.</li>
+									<li>Opening and closing tags are compliant.</li>
+									<li>Id attributes values are unique in the page.</li>
+									<li>The attribute are not double on the same element. .</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
-							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
-
+							<p>There is a particular case management regarding the compliance of HTML code.</p>
+							<p>To accompany the gradual support of HTML5 by browsers, accessibility APIs and assistive technologies, some criteria may require the presence of attributes or tags declared "obsolete" in HTML5. Also, insomuch as tags or attributes declared “obsolete” are used, they remain subject to the other criteria of the RGAA (for example, the <marquee> tag would not be compliant with regards to the 13.8 Criterion) and their accessibility support should be verified with regards to the chosen test environment (or “reference basis”).</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 4.1.1 Parsing(A), 4.1.2 Name, Role, Value(A)</p>
@@ -2110,17 +2109,17 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-8-3"><em>Criterion 8.3 [A]</em> Dans chaque page web, la <a href="rgaa4-glossary.html#glossaire-61">langue par défaut</a> est-elle présente ?</h3>
+						<h3 id="crit-8-3"><em>Criterion 8.3 [A]</em> Is the default language present on each web page?</h3>
 						<ul>
-							<li id="test-8-3-1">Test 8.3.1&nbsp;: Pour chaque page web, l'indication de <a href="rgaa4-glossary.html#glossaire-61">langue par défaut</a> vérifie-t-elle une de ces conditions ?
+							<li id="test-8-3-1">Test 8.3.1&nbsp;: For each web page, does the default human language identification meet one of the following conditions?
 								<ul>
-									<li>L'indication de la langue de la page (attribut <code>lang</code> et/ou <code>xml:lang</code>) est donnée pour l'élément <code>&lt;html&gt;</code>.</li>
-									<li>L'indication de la langue de la page (attribut <code>lang</code> et/ou <code>xml:lang</code>) est donnée sur chaque élément de texte ou sur l'un des éléments parents.</li>
+									<li>The human language identification (lang and/or xml:lang attribute) for the page is provided via the Html element.</li>
+									<li>The human language identification (lang and/or xml:lang attribute) for the page is provided via each text element or one of the parent elements. </li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
-							<h4>Particular cases</h4>
+							<h4>Particular cases [à traduire]</h4>
 							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
 							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
 
@@ -2141,20 +2140,16 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-8-4"><em>Criterion 8.4 [A]</em> Pour chaque page web ayant une <a href="rgaa4-glossary.html#glossaire-61">langue par défaut</a>, le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> est-il pertinent ?</h3>
+						<h3 id="crit-8-4"><em>Criterion 8.4 [A]</em> For each web page with a default language, is the language code relevant?</h3>
 						<ul>
-							<li id="test-8-4-1">Test 8.4.1&nbsp;: Pour chaque page web ayant une <a href="rgaa4-glossary.html#glossaire-61">langue par défaut</a>, le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> vérifie-t-il ces conditions ?
+							<li id="test-8-4-1">Test 8.4.1&nbsp;: For each web page with a default human language, does the language code meet the following conditions? 
 								<ul>
-									<li>Le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> est valide.</li>
-									<li>Le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> est pertinent.</li>
+									<li>The language code is valid.</li>
+									<li>The language code is relevant.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
-							<h4>Particular cases</h4>
-							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
-							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
-
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 3.1.1 Language of Page(A)</p>
@@ -2172,15 +2167,11 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-8-5"><em>Criterion 8.5 [A]</em> Chaque page web a-t-elle un <a href="rgaa4-glossary.html#glossaire-115">titre de page</a> ?</h3>
+						<h3 id="crit-8-5"><em>Criterion 8.5 [A]</em> Does each web page have a page title?</h3>
 						<ul>
-							<li id="test-8-5-1">Test 8.5.1&nbsp;: Chaque page web a-t-elle un <a href="rgaa4-glossary.html#glossaire-115">titre de page</a> (balise <code>&lt;title&gt;</code>) ?</li>
+							<li id="test-8-5-1">Test 8.5.1&nbsp;: Does each web page have a page title (title tag)?</li>
 						</ul>
 						<aside>
-							<h4>Particular cases</h4>
-							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
-							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés « obsolètes » en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés « obsolètes » sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au critère 13.8) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test(ou « base de référence ») retenu.</p>
-
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 2.4.2 Page Titled(A)</p>
@@ -2198,9 +2189,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-8-6"><em>Criterion 8.6 [A]</em> Chaque page web a-t-elle un <a href="rgaa4-glossary.html#glossaire-115">titre de page</a> ?</h3>
+						<h3 id="crit-8-6"><em>Criterion 8.6 [A]</em> For each web page with a page title, is the title relevant?</h3>
 						<ul>
-							<li id="test-8-6-1">Test 8.6.1&nbsp;: Pour chaque page web ayant un <a href="rgaa4-glossary.html#glossaire-115">titre de page</a> (balise <code>&lt;title&gt;</code>), le contenu de cette balise est-il pertinent&nbsp;?</li>
+							<li id="test-8-6-1">Test 8.6.1&nbsp;: For each web page with a page title (title tag), is the content of this tag relevant?</li>
 						</ul>
 						<aside>
 							<div class="criterion-mapping">
@@ -2220,28 +2211,28 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-8-7"><em>Criterion 8.7 [AA]</em> Dans chaque page web, chaque <a href="rgaa4-glossary.html#glossaire-20">changement de langue</a> est-il indiqué dans le code source (<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-8-7"><em>Criterion 8.7 [AA]</em> On each web page, is each change of language indicated in the source code (except for particular cases)?</h3>
 						<ul>
-							<li id="test-8-7-1">Test 8.7.1&nbsp;: Dans chaque page web, chaque texte écrit dans une langue différente de la <a href="rgaa4-glossary.html#glossaire-61">langue par défaut</a> vérifie-t-il une de ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-8-7-1">Test 8.7.1&nbsp;: On each web page, does each text written in a language differing from the default human language meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>L'indication de langue est donnée sur l'élément contenant le texte (attribut <code>lang</code> et / ou <code>xml:lang</code>).</li>
-									<li>L'indication de langue est donnée sur un des éléments parents (attribut <code>lang</code> et/ou <code>xml:lang</code>).</li>
+									<li>The human language identification is provided via the element containing the text (lang and/or xml:lang attribute).</li>
+									<li>The human language identification is provided via one of the parent elements (lang and/or xml:lang attribute).</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Il y a une gestion de cas particuliers sur le <a href="rgaa4-glossary.html#glossaire-20">changement de langue</a> pour les cas suivants&nbsp;:</p>
+							<p>There is a particular case management regarding the language change in the following cases:</p>
 							<ul>
-								<li>Nom propre, le critère est non applicable ;</li>
-								<li>Nom commun de langue étrangère présent dans le dictionnaire officiel de la langue (voir note 1 ci-dessous) par défaut de la page web, le critère est non applicable ;</li>
-								<li>Le terme de langue étrangère soumis, via un champ de formulaire et rappelé dans la page(par exemple comme indication du terme recherché dans le cas d'un moteur de recherche), le critère est non applicable ;</li>
-								<li>Passage de texte dont la langue ne peut pas être déterminée : le critère est non applicable ;</li>
-								<li>Terme ou passage de texte issus d'une langue morte ou imaginaire pour laquelle il n'existe pas d'interprétation vocale : le critère est non applicable.</li>
+								<li>Proper noun: the criterion is not applicable;</li>
+								<li>Common noun in a foreign language, present in the official dictionary of the web page’s default language (see note 1 below), the criterion is not applicable;</li>
+								<li>The term in foreign language previously submitted by the user via a form field and displayed on the page (such as, for example, an indication of the searched term, in the case of a search engine), the criterion is not applicable;</li>
+								<li>Piece of text in a language that cannot be determined: the criterion is not applicable;</li>
+								<li>Term or piece of text from a dead or imaginary language, which does not have any vocal interpretation: the criterion is not applicable.</li>
 							</ul>
 							<ol>
-								<li>Note 1 : le dictionnaire officiel est celui recommandé par l'académie en charge de la langue en question. Pour la France, par exemple, le lien vers le dictionnaire officiel se trouve sur le site de l'Académie française à l'adresse suivante : <a href="http://www.academie-francaise.fr/le-dictionnaire/la-9e-edition">http://www.academie-francaise.fr/le-dictionnaire/la-9e-edition</a>. Pour toute demande auprès du service du dictionnaire de l'Académie française, utiliser le formulaire de contact du service du dictionnaire.</li>
-								<li>Note 2 : pour les noms communs de langue étrangère, absents dans le dictionnaire officiel de la <a href="rgaa4-glossary.html#glossaire-61">langue par défaut</a> de la page web, et qui sont passés dans le langage commun (exemple : newsletter) : le critère est applicable, uniquement lorsque l'absence d'indication de langue peut provoquer une incompréhension pour la restitution.</li>
+								<li>Note 1 : The official dictionary is recommended by the academy in charge of the language in question. For France, for example, the link to the official dictionary is on the French Academy's website at the following address: http://www.academie-francaise.fr/le-dictionnaire/la-9e-edition. For any request to the service of the dictionary of the French Academy, use the online contact form of the dictionary service.</li>
+								<li>Note 2 : For the common nouns in foreign language, absent from the official dictionary of the web page’s default language, and moved to common language (for example: the English word « newsletter » in French language) : the criterion is applicable, only when a missing language indication may cause a misunderstanding in the restitution.</li>
 							</ol>
 
 							<div class="criterion-mapping">
@@ -2261,12 +2252,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-8-8"><em>Criterion 8.8 [AA]</em> Dans chaque page web, le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> de chaque <a href="rgaa4-glossary.html#glossaire-20">changement de langue</a> est-il valide et pertinent ?</h3>
+						<h3 id="crit-8-8"><em>Criterion 8.8 [AA]</em> On each web page, is the language code for each language change valid and relevant?</h3>
 						<ul>
-							<li id="test-8-8-1">Test 8.8.1&nbsp;: Pour chaque page web, le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> de chaque <a href="rgaa4-glossary.html#glossaire-20">changement de langue</a> vérifie-t-il ces conditions ?
+							<li id="test-8-8-1">Test 8.8.1&nbsp;: On each web page, does the language code of each change of language meet the following conditions?
 								<ul>
-									<li>Le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> est valide.</li>
-									<li>Le <a href="rgaa4-glossary.html#glossaire-21">code de langue</a> est pertinent.</li>
+									<li>The language code is valid.</li>
+									<li>The language code is relevant.</li>
 								</ul>
 							</li>
 						</ul>
@@ -2288,9 +2279,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-8-9"><em>Criterion 8.9 [A]</em> Dans chaque page web, les balises ne doivent pas être utilisées <a href="rgaa4-glossary.html#glossaire-119">uniquement à des fins de présentation</a>. Cette règle est-elle respectée ?</h3>
+						<h3 id="crit-8-9"><em>Criterion 8.9 [A]</em> On each web page, tags should not be used for presentation purposes. Is this rule followed?</h3>
 						<ul>
-							<li id="test-8-9-1">Test 8.9.1&nbsp;: Dans chaque page web les balises (à l'exception de <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code> et <code>&lt;table&gt;</code>) ne doivent pas être utilisées <a href="rgaa4-glossary.html#glossaire-119">uniquement à des fins de présentation</a>. Cette règle est-elle respectée ?</li>
+							<li id="test-8-9-1">Test 8.9.1&nbsp;: On each web page, tags must not be used (except div, span and table) only for layout. Has this rule been followed?</li>
 						</ul>
 						<aside>
 							<div class="criterion-mapping">
@@ -2310,14 +2301,14 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-8-10"><em>Criterion 8.10 [A]</em> Dans chaque page web, les changements du <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> sont-ils signalés ?</h3>
+						<h3 id="crit-8-10"><em>Criterion 8.10 [A]</em> On each web page, are changes in reading direction identified?</h3>
 						<ul>
-							<li id="test-8-10-1">Test 8.10.1&nbsp;: Dans chaque page web, chaque texte dont le <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> est différent du <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> par défaut est contenu dans une balise possédant un attribut <code>dir</code> ?
+							<li id="test-8-10-1">Test 8.10.1&nbsp;: On each web page, is each text which reading direction is different from the default reading direction contained in an element with a dir attribute?
 							</li>
-							<li id="test-8-10-2">Test 8.10.1&nbsp;: Dans chaque page web, chaque changement du <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> (attribut <code>dir</code>) vérifie-t-il ces conditions ?
+							<li id="test-8-10-2">Test 8.10.1&nbsp;: On each Web page, does each change in reading direction (dir attribute) meet the following conditions? 
 								<ul>
-									<li>La valeur de l'attribut <code>dir</code> est conforme (<code>rtl</code> ou <code>ltr</code>).</li>
-									<li>La valeur de l'attribut <code>dir</code> est pertinente.</li>
+									<li>The value of the <code>dir</code> attribute is valid (<code>rtl</code> or <code>ltr</code>).</li>
+									<li>The value of the <code>dir</code> attribute is relevant </li>
 								</ul>
 							</li>
 						</ul>
@@ -2341,7 +2332,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				</article>
 				<article id="structure" class="thematique">
 					<header>
-						<h2>9. Information structure</h2>
+						<h2>9. Information Structure</h2>
 						<ul class="skiplink">
 							<li class="gobefore"><a href="#elements">Mandatory elements</a></li>
 							<li class="goafter"><a href="#presentation">Presentation of information</a></li>
@@ -2355,7 +2346,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</ul>
 						</nav>
 						<h3>General guidelines</h3>
-						<p>Utiliser des <a href="rgaa4-glossary.html#glossaire-113">titres</a>, des listes, des abréviations et des citations pour structurer l’information. S’assurer que la structure du document est cohérente.</p>
+						<p>Use headings, landmarks, lists, abbreviations and quotes to structure information.</p>
 						<div class="tags"><span>Mots clés</span>
 							<ul>
 								<li>Principe : Perceptible</li>
@@ -2363,16 +2354,16 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</div>
 					</header>
 					<section data-level="A">
-						<h3 id="crit-9-1"><em>Criterion 9.1 [A]</em> Dans chaque page web, l'information est-elle structurée par l'utilisation appropriée de <a href="rgaa4-glossary.html#glossaire-113">titres</a> ?</h3>
+						<h3 id="crit-9-1"><em>Criterion 9.1 [A]</em> On each web page, is information structured by the appropriate use of headings?</h3>
 						<ul>
-							<li id="test-9-1-1">Test 9.1.1&nbsp;: Dans chaque page web, la hiérarchie entre les <a href="rgaa4-glossary.html#glossaire-113">titres</a> (balise <code>&lt;hx&gt;</code> ou balise possédant un attribut WAI-ARIA <code>role="heading"</code> associé à un attribut WAI-ARIA <code>aria-level</code>) est-elle pertinente ?</li>
-							<li id="test-9-1-2">Test 9.1.1&nbsp;: Dans chaque page web, le contenu de chaque titre(balise <code>&lt;hx&gt;</code> ou balise possédant un attribut WAI-ARIA <code>role="heading"</code> associé à un attribut WAI-ARIA <code>aria-level</code>) est-il pertinent ?</li>
-							<li id="test-9-1-3">Test 9.1.1&nbsp;: Dans chaque page web, chaque passage de texte constituant un titre est-il structuré à l'aide d'une balise <code>&lt;hx&gt;</code> ou d'une balise possédant un attribut WAI-ARIA <code>role="heading"</code> associé à un attribut WAI-ARIA <code>aria-level</code> ?</li>
+							<li id="test-9-1-1">Test 9.1.1&nbsp;: On each web page, is the hierarchy between the headings (hx or elements with a WAI-ARIA role="heading" associated to an aria-level attribute) relevant?</li>
+							<li id="test-9-1-2">Test 9.1.1&nbsp;: On each web page, is the content of each heading (hx or element with an ARIA role="heading" associated to an aria-level attribute) relevant?</li>
+							<li id="test-9-1-3">Test 9.1.1&nbsp;: On each web page, for each text used as heading, is each heading structured by hx tag or a tag with an ARIA role="heading" associated to an aria-level attribute?</li>
 						</ul>
 						<aside>
 							<h4>Technical notes</h4>
-							<p>ARIA permet de définir des <a href="rgaa4-glossary.html#glossaire-113">titres</a> via le rôle <code>heading</code> et l'attribut <code>aria-level</code> (indication du niveau de titre). Bien qu'il soit préférable d'utiliser l'élément de titre natif en HTML <code>&lt;hx&gt;</code>, l'utilisation du rôle WAI-ARIA <code>heading</code> est compatible avec l'accessibilité. Bien que la spécification HTML5 autorise l'utilisation exclusive de <a href="rgaa4-glossary.html#glossaire-113">titres</a> de niveau 1 (<code>&lt;h1&gt;</code>), le manque de support des technologies d'assistance oblige à utiliser une hiérarchie de <a href="rgaa4-glossary.html#glossaire-113">titres</a> pertinente.</p>
-
+							<p>The ARIA specification allows the use of the role heading combined with the aria-level property (indication of hierarchical level in the document outline) to mark headings. Although it is preferable to use the native <hx> elements in HTML, the use of the WAI-ARIA role heading is compatible with accessibility.</p>
+							<p>While the HTML5 specification allows the use of only level 1 headings (<h1>), the lack of support by assistive technologies makes it necessary to use a relevant headings hierarchy.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A), 2.4.1 Bypass Block(A), 2.4.6 Headings and Labels(AA), 4.1.2 Name, Role, Value(A)</p>
@@ -2390,23 +2381,22 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-9-2"><em>Criterion 9.2 [A]</em> Dans chaque page web, la structure du document est-elle cohérente(<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-9-2"><em>Criterion 9.2 [A]</em> On each page, is the document structure coherent (except for particular cases)?</h3>
 						<ul>
-							<li id="test-9-2-1">Test 9.1.1&nbsp;: Dans chaque page web, la structure du document vérifie-t-elle ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-9-2-1">Test 9.2.1&nbsp;: On each web page, does the document outline meet the following conditions (except for particular cases)? 
 								<ul>
-									<li>La <a href="rgaa4-glossary.html#glossaire-125">zone d'en-tête</a> de la page est structurée via une balise <code>&lt;header&gt;</code>.</li>
-									<li>Les zones de navigation principales et secondaires sont structurées via une balise <code>&lt;nav&gt;</code>.</li>
-									<li>La balise <code>&lt;nav&gt;</code> est réservée à la structuration des zones de navigation principales et secondaires.</li>
-									<li>La zone de contenu principal est structurée via une balise <code>&lt;main&gt;</code>.</li>
-									<li>La structure du document utilise une balise <code>&lt;main&gt;</code> visible unique.</li>
-									<li>La zone de pied de page est structurée via une balise <code>&lt;footer&gt;</code>.</li>
+									<li>The page header is identified via a header tag.</code>.</li>
+									<li>The main and secondary navigation areas are identified via a nav tag.</li>
+									<li>The nav tag is used only to identify the main and secondary navigation areas.</li>
+									<li>The main content area is identified via a main tag. </li>
+									<li>The main tag is unique in the page.</li>
+									<li>The page footer area is identified via a footer tag.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Technical notes</h4>
-							<p>La balise <code>&lt;main&gt;</code> peut être utilisée plusieurs fois dans le même document HTML. Néanmoins, il ne peut y avoir en permanence qu'une seule balise visible et lisible par les technologies d'assistances, les autres devant disposer d'un attribut <code>hidden</code> ou d’un style permettant de les masquer aux technologies d’assistances. À noter cependant que l’utilisation d’un style seul restera insuffisant pour assurer l’unicité d’une balise <code>&lt;main&gt;</code> visible en cas de désactivation des feuilles de styles.</p>
-
+							<p>The main tag may be used several times in the same HTML document. However, there can only be one tag visible and readable by assistive technologies at all times, others should have a hidden attribute or a style allowing to hide them from assistive technologies. Note however that using only a style will remain insufficient to ensure the unicity of the visible <main> tag in case style sheets were disabled.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A)</p>
@@ -2424,27 +2414,28 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-9-3"><em>Criterion 9.3 [A]</em> Dans chaque page web, chaque liste est-elle correctement structurée ?</h3>
+						<h3 id="crit-9-3"><em>Criterion 9.3 [A]</em> On each web page, is each list structured appropriately?</h3>
 						<ul>
-							<li id="test-9-3-1">Test 9.3.1&nbsp;: Dans chaque page web, les informations regroupées visuellement sous forme de liste non ordonnée vérifient-elles une de ces conditions ?
+							<li id="test-9-3-1">Test 9.3.1&nbsp;: On each web page, does information grouped in an unordered list meet one of the following conditions? 
 								<ul>
-									<li>La liste utilise les balises HTML <code>&lt;ul&gt;</code> et <code>&lt;li&gt;</code>.</li>
-									<li>La liste utilise les attributs WAI-ARIA <code>role="list"</code> et <code>"listitem"</code>.</li>
+									<li>The list uses the ul and li tags.</li>
+									<li>The list uses the WAI-ARIA role="list" attribute and "listitem".</li>
 								</ul>
 							</li>
-							<li id="test-9-3-2">Test 9.3.2&nbsp;: Dans chaque page web, les informations regroupées visuellement sous forme de liste ordonnée vérifient-elles une de ces conditions ?
+							<li id="test-9-3-2">Test 9.3.2&nbsp;: On each web page, does information grouped in ordered lists meet one of the following conditions? 
 								<ul>
-									<li>La liste utilise les balises HTML <code>&lt;ol&gt;</code> et <code>&lt;li&gt;</code>.</li>
-									<li>La liste utilise les attributs WAI-ARIA <code>role="list"</code> et <code>"listitem"</code>.</li>
+									<li>The list uses the ol and li tags.</li>
+									<li>The list uses the WAI- ARIA role="list" attribute and listitem.</li>
 								</ul>
 							</li>
-							<li id="test-9-3-3">Test 9.3.3&nbsp;: Dans chaque page web, les informations regroupées sous forme de liste de description utilisent-elles les balises <code>&lt;dl&gt;</code> et <code>&lt;dt&gt;</code> / <code>&lt;dd&gt;</code> ?
+							<li id="test-9-3-3">Test 9.3.3&nbsp;: On each web page, does information grouped in definition lists use the dl and dt / dd tags?  
 							</li>
 						</ul>
 						<aside>
 							<h4>Technical notes</h4>
-							<p>Les attributs WAI-ARIA <code>role="list"</code> et <code>"listitem"</code> peuvent nécessiter l'utilisation des attributs WAI-ARIA <code>aria-setsize</code> et <code>aria-posinset</code> dans le cas où l'ensemble de la liste n'est pas disponible via le DOM généré au moment de la consultation. Les attributs WAI-ARIA <code>role="tree"</code>, <code>"tablist"</code>, <code>"menu"</code>, <code>"combobox"</code> et <code>"listbox"</code> ne sont pas équivalents à une liste HTML <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>. Voir : The roles model - list</p>
-
+							<p>The WAI-ARIA Roles list and listitem may require the use of the aria-setsize and aria-posinset properties, if the entire list is not available via the DOM generated at the time of rendering.</p>
+							<p>The WAI-ARIA role="tree", "tablist", "menu", "combobox" et "listbox" attributes are not equivalent to an HTML ul or ol list.</p>
+							<p>See : <a href="https://www.w3.org/WAI/PF/aria/roles#list">The roles model - list</a></p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A)</p>
@@ -2462,15 +2453,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-9-4"><em>Criterion 9.4 [A]</em> Dans chaque page web, chaque citation est-elle correctement indiquée ?</h3>
+						<h3 id="crit-9-4"><em>Criterion 9.4 [A]</em> On each web page, is each quotation identified properly?</h3>
 						<ul>
-							<li id="test-9-4-1">Test 9.4.1&nbsp;: Dans chaque page web, chaque citation courte utilise-t-elle une balise <code>&lt;q&gt;</code> ?</li>
-							<li id="test-9-4-2">Test 9.4.2&nbsp;: Dans chaque page web, chaque bloc de citation utilise-t-il une balise <code>&lt;blockquote&gt;</code> ?</li>
+							<li id="test-9-4-1">Test 9.4.1&nbsp;: On each web page, does each short quotation use a q tag?</li>
+							<li id="test-9-4-2">Test 9.4.2&nbsp;: On each web page, does each long quotation use a blockquote tag?</li>
 						</ul>
 						<aside>
-							<h4>Technical notes</h4>
-							<p>Les attributs WAI-ARIA <code>role="list"</code> et <code>"listitem"</code> peuvent nécessiter l'utilisation des attributs WAI-ARIA <code>aria-setsize</code> et <code>aria-posinset</code> dans le cas où l'ensemble de la liste n'est pas disponible via le DOM généré au moment de la consultation. Les attributs WAI-ARIA <code>role="tree"</code>, <code>"tablist"</code>, <code>"menu"</code>, <code>"combobox"</code> et <code>"listbox"</code> ne sont pas équivalents à une liste HTML <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>. Voir : The roles model - list</p>
-
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.1 Info and Relationships(A)</p>
@@ -2490,7 +2478,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 				</article>
 				<article id="presentation" class="thematique">
 					<header>
-						<h2>10. Presentation of information</h2>
+						<h2>10. Information Presentation</h2>
 						<ul class="skiplink">
 							<li class="gobefore"><a href="#structure">Information structure</a></li>
 							<li class="goafter"><a href="#formulaires">Forms</a></li>
@@ -2514,7 +2502,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</ul>
 						</nav>
 						<h3>General guidelines</h3>
-						<p>Utiliser des feuilles de styles pour contrôler la présentation de l’information. Vérifier l’effet de l’agrandissement des taille des caractères sur la lisibilité. S’assurer que les liens sont correctement identifiables, que la prise de focus est signalée, que l’interlignage est suffisant et donner la possibilité à l’utilisateur de contrôler la justification des textes. S’assurer que les textes cachés sont <a href="rgaa4-glossary.html#glossaire-98">correctement restitués</a> et que l’information n’est pas donnée uniquement par la forme ou la position d’un élément.</p>
+						<p>Use style sheets to control information presentation. Check for the effect of font size increasing on readability. Ensure that links can be correctly identified, that focus is specified, that line spacing is suffiscient, and give the user the ability to control text justification. Ensure that hidden texts are rendered properly and that information is not conveyed only by an element's shape, size or location.</p>
 						<div class="tags"><span>Mots clés</span>
 							<ul>
 								<li>Principe : Perceptible</li>
@@ -2522,17 +2510,17 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</div>
 					</header>
 					<section data-level="A">
-						<h3 id="crit-10-1"><em>Criterion 10.1 [A]</em> Dans le site web, des feuilles de styles sont-elles utilisées pour contrôler la présentation de l'information ?</h3>
+						<h3 id="crit-10-1"><em>Criterion 10.1 [A]</em> On each web page, are style sheets used to control information presentation?</h3>
 						<ul>
-							<li id="test-10-1-1">Test 10.1.1&nbsp;: Dans chaque page web, les balises servant à la présentation de l'information ne doivent pas être présentes dans le code source généré des pages. Cette règle est-elle respectée ?
+							<li id="test-10-1-1">Test 10.1.1&nbsp;: On each web page, tags used for information presentation must not be available in the source code. Has this rule been followed?
 							</li>
-							<li id="test-10-1-2">Test 10.1.1&nbsp;: Dans chaque page web, les attributs servant à la présentation de l'information ne doivent pas être présents dans le code source généré des pages. Cette règle est-elle respectée ?
+							<li id="test-10-1-2">Test 10.1.1&nbsp;: On each web page, attributes used for information presentation must not be available in the source code. Has this rule been followed?
 							</li>
-							<li id="test-10-1-3">Test 10.1.1&nbsp;: Dans chaque page web, l'utilisation des espaces vérifie-t-elle ces conditions ?
+							<li id="test-10-1-3">Test 10.1.1&nbsp;: On each web page, does the use of white spaces meet the following conditions? 
 								<ul>
-									<li>Les espaces ne sont pas utilisés pour séparer les lettres d'un mot.</li>
-									<li>Les espaces ne sont pas utilisés pour simuler des tableaux.</li>
-									<li>Les espaces ne sont pas utilisés pour simuler des colonnes de texte.</li>
+									<li>White spaces characters are not used to control spacing within a word. </li>
+									<li>White spaces characters are not used to format tables in plain text content.</li>
+									<li>White spaces characters are not used to create multiple columns in plain text content.</li>
 								</ul>
 							</li>
 						</ul>
@@ -2554,9 +2542,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-2"><em>Criterion 10.2 [A]</em> Dans chaque page web, le contenu visible reste-t-il présent lorsque les feuilles de styles sont désactivées ?</h3>
+						<h3 id="crit-10-2"><em>Criterion 10.2 [A]</em> On each web page, does visible contents remain present when style sheets are disabled?</h3>
 						<ul>
-							<li id="test-10-2-1">Test 10.1.1&nbsp;: Dans chaque page web, l'information reste-t-elle présente lorsque les feuilles de styles sont désactivées ?</li>
+							<li id="test-10-2-1">Test 10.2.1&nbsp;: On each web page, is visible content still available when style sheets are disabled?</li>
 						</ul>
 						<aside>
 							<div class="criterion-mapping">
@@ -2576,9 +2564,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-3"><em>Criterion 10.3 [A]</em> Dans chaque page web, l'information reste-t-elle compréhensible lorsque les feuilles de styles sont désactivées ?</h3>
+						<h3 id="crit-10-3"><em>Criterion 10.3 [A]</em> On each web page, does information remain understandable when style sheets are disabled?</h3>
 						<ul>
-							<li id="test-10-3-1">Test 10.3.1&nbsp;: Dans chaque page web, l'information reste-t-elle compréhensible lorsque les feuilles de styles sont désactivées ?</li>
+							<li id="test-10-3-1">Test 10.3.1&nbsp;: On each web page, is information still understandable when style sheets are disabled?</li>
 						</ul>
 						<aside>
 							<div class="criterion-mapping">
@@ -2598,28 +2586,28 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-4"><em>Criterion 10.4 [A]</em> Dans chaque page web, le texte reste-t-il lisible lorsque la taille des caractères est augmentée jusqu'à 200%, au moins (<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-10-4"><em>Criterion 10.4 [A]</em> On each web page, is text still readable when character size is increased until at least 200% (except for particular cases)?</h3>
 						<ul>
-							<li id="test-10-4-1">Test 10.4.1&nbsp;: Dans les feuilles de styles du site web, les unités non relatives (pt, pc, mm, cm, in) ne doivent pas être utilisées pour les types de média <code>screen</code>, <code>tv</code>, <code>handheld</code>, <code>projection</code>. Cette règle est-elle respectée (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-4-1">Test 10.4.1&nbsp;: In the style sheets of the website, non-relative units (pt, pc, mm, cm, in) must not be used for the media types screen, tv, handheld, projection. Has this rule been followed (except for particular cases)?
 							</li>
-							<li id="test-10-4-2">Test 10.4.2&nbsp;: Dans chaque page web, l'augmentation de la taille des caractères jusqu'à 200 %, au moins, ne doit pas provoquer de perte d'information. Cette règle est-t-elle respectée selon une de ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-4-2">Test 10.4.2&nbsp;: On each web page, increasing the character size up to 200% must not cause loss of information. Has this rule been followed (except for particular cases)? 
 								<ul>
-									<li>Lors de l'utilisation de la fonction d'agrandissement du texte du navigateur.</li>
-									<li>Lors de l'utilisation des fonctions de zoom graphique du navigateur.</li>
-									<li>Lors de l'utilisation d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>propre au site permettant d'agrandir le texte ou de zoomer.</li>
+									<li>When using the navigator's text zoom functionality.</li>
+									<li>When using the navigator's graphic zoom functionality.</li>
+									<li>When using an interface component belonging to the website to increase the text size or to zoom.</li>
 								</ul>
 							</li>
-							<li id="test-10-4-3">Test 10.4.3&nbsp;: Dans chaque page web, l'augmentation de la taille des caractères jusqu'à 200 %, au moins, doit être possible pour l’ensemble du texte dans la page. Cette règle est-t-elle respectée selon une de ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-4-3">Test 10.4.3&nbsp;: On each web page, increasing the character size up to at least 200% should be possible for the entire text in the page. Does this rule meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>Lors de l'utilisation de la fonction d'agrandissement du texte du navigateur.</li>
-									<li>Lors de l'utilisation des fonctions de zoom graphique du navigateur.</li>
-									<li>Lors de l'utilisation d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>propre au site permettant d'agrandir le texte ou de zoomer.</li>
+									<li>When using the navigator's text zoom functionality.</li>
+									<li>When using the navigator's graphic zoom functionality.</li>
+									<li>When using an interface component belonging to the website to increase the text size or to zoom.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Dans le cas des textes en image et des sous-titres de vidéo le critère est non applicable.</p>
+							<p>In the case of text in images and video subtitles, the criterion is not applicable.</p>
 
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2638,13 +2626,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-5"><em>Criterion 10.5 [A]</em> Dans chaque page web, les déclarations CSS de couleurs de fond d'élément et de police sont-elles correctement utilisées ?</h3>
+						<h3 id="crit-10-5"><em>Criterion 10.5 [A]</em> On each web page, are CSS declarations of background and foreground colours for elements and fonts used appropriately?</h3>
 						<ul>
-							<li id="test-10-5-1">Test 10.5.1&nbsp;: Dans chaque page web, chaque déclaration CSS de couleurs de police (<code>color</code>), d'un élément susceptible de contenir du texte, est-elle accompagnée d'une déclaration de couleur de fond (<code>background</code>, <code>background-color</code>), au moins, héritée d'un parent ?
+							<li id="test-10-5-1">Test 10.5.1&nbsp;: On each web page, is each CSS declaration of a font colour (colour), for an element that may contain text, accompanied by a background colour (background, background-colour) declaration, at least, inherited from a parent element?
 							</li>
-							<li id="test-10-5-2">Test 10.5.2&nbsp;: Dans chaque page web, chaque déclaration de couleur de fond (<code>background</code>, <code>background-color</code>), d'un élément susceptible de contenir du texte, est-elle accompagnée d'une déclaration de couleur de police (<code>color</code>) au moins, héritée d'un parent ?
+							<li id="test-10-5-2">Test 10.5.2&nbsp;: On each web page, is each CSS declaration of a background colour (background, background-colour), for an element that may contain text, accompanied by a font colour (colour) declaration, at least, inherited from a parent element?
 							</li>
-							<li id="test-10-5-3">Test 10.5.3&nbsp;: Dans chaque page web, chaque utilisation d'une image pour créer une couleur de fond d'un élément susceptible de contenir du texte, via CSS (<code>background</code>, <code>background-image</code>), est-elle accompagnée d'une déclaration de couleur de fond (<code>background</code>, <code>background-color</code>), au moins, héritée d'un parent ?
+							<li id="test-10-5-3">Test 10.5.3&nbsp;: On each web page, is each image used to provide a background colour for an element that may contain text, via CSS (background, background-image), accompanied by a background colour declaration (background, background-colour), at least, inherited from a parent element?
 							</li>
 						</ul>
 						<aside>
@@ -2665,13 +2653,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-6"><em>Criterion 10.6 [A]</em> Dans chaque page web, chaque <a href="rgaa4-glossary.html#glossaire-68">lien dont la nature n'est pas évidente</a> est-il visible par rapport au texte environnant ?</h3>
+						<h3 id="crit-10-6"><em>Criterion 10.6 [A]</em> On each web page, can each link whose nature is not obvious be distinguished from the surrounding text?</h3>
 						<ul>
-							<li id="test-10-6-1">Test 10.6.1&nbsp;: Dans chaque page web, chaque <a href="rgaa4-glossary.html#glossaire-70">lien texte</a> signalé uniquement par la couleur, et dont la nature n'est pas évidente, vérifie-t-il ces conditions ?
+							<li id="test-10-6-1">Test 10.6.1&nbsp;: On each web page, does each text link indicated through colour alone, and whose nature is not obvious, meet the following conditions? 
 								<ul>
-									<li>La couleur du lien à un rapport de <a href="rgaa4-glossary.html#glossaire-29">contraste </a>supérieur ou égal à 3:1 par rapport au texte environnant.</li>
-									<li>Le lien dispose d'une indication visuelle au survol autre qu'un changement de couleur.</li>
-									<li>Le lien dispose d'une indication visuelle au focus autre qu'un changement de couleur.</li>
+									<li>The link colour has a contrast ratio of 3:1 or greater with the surrounding text.</li>
+									<li>When hovering over the link, a visual indication of the colour change is available.</li>
+									<li>When the focus is on the link, a visual indication of the colour change.</li>
 								</ul>
 							</li>
 						</ul>
@@ -2693,13 +2681,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-7"><em>Criterion 10.7 [A]</em> Dans chaque page web, pour chaque élément recevant le focus, la prise de focus est-elle visible ?</h3>
+						<h3 id="crit-10-7"><em>Criterion 10.7 [A]</em> On each web page, is the focus visible for each element that receives focus?</h3>
 						<ul>
-							<li id="test-10-7-1">Test 10.7.1&nbsp;: Pour chaque élément recevant le focus, la
-								prise de focus vérifie-t-elle une de ces conditions ?
+							<li id="test-10-7-1">Test 10.7.1&nbsp;: For each element receiving focus, does the focus meet one of the following conditions?
 								<ul>
-									<li>Le style du focus natif du navigateur n'est pas supprimé ou dégradé.</li>
-									<li>Un style du focus défini par l'auteur est visible.</li>
+									<li>The browser default visual cue must not be degraded or removed. </li>
+									<li>A focus style defined by the author is visible.</li>
 								</ul>
 							</li>
 						</ul>
@@ -2721,19 +2708,21 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-8"><em>Criterion 10.8 [A]</em> Pour chaque page web, les contenus cachés ont-ils vocation à être ignorés par les technologies d'assistance ?</h3>
+						<h3 id="crit-10-8"><em>Criterion 10.8 [A]</em> For each web page, are hidden contents destined to be ignored by assistive technologies?</h3>
 						<ul>
-							<li id="test-10-8-1">Test 10.8.1&nbsp;: Dans chaque page web, chaque contenu caché vérifie-t-il une de ces conditions ?
+							<li id="test-10-8-1">Test 10.8.1&nbsp;: On each web page, does each hidden content meet one of the following conditions?
 								<ul>
-									<li>Le contenu caché a vocation à être ignoré par les technologies d'assistance.</li>
-									<li>Le contenu caché n’a pas vocation à être ignoré par les technologies d’assistances et est rendu restituable par les technologies d'assistance suite à une action de l'utilisateur réalisable au clavier ou par tout dispositif de pointage sur un élément précédent le contenu caché ou suite à un repositionnement du focus dessus.</li>
+									<li>The hidden content is not intended to be rendered by assistive technologies.</li>
+									<li>The hidden content can be rendered by assistive technologies following a user's action on a keyboard and any pointing device.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Technical notes</h4>
-							<p>WAI-ARIA propose un attribut <code>aria-hidden</code> (<code>true</code> ou <code>false</code>) qui permet d'inhiber la restitution d'un contenu en direction des technologies d'assistance, sans action sur sa visibilité en direction des agents utilisateurs : un contenu avec <code>aria-hidden="true"</code> ne sera donc plus vocalisable, mais restera visible. Sauf si le contenu contrôlé par <code>aria-hidden</code> n'a pas vocation à être restitué par les technologies d'assistance, la valeur de l'attribut <code>aria-hidden</code> doit être cohérente avec l'état affiché ou masqué du contenu à l'écran. La spécification HTML5 propose un attribut <code>hidden</code> qui permet de rendre indisponible (quand l'attribut <code>hidden</code> est présent) un contenu dans le DOM généré (de manière similaire au <code>type="hidden"</code> sur un contrôle de formulaire). Il est possible d'avoir des situations où un contenu contrôlé par <code>hidden</code> ou <code>aria-hidden</code> se trouve momentanément dans un état incohérent avec le statut affiché ou masqué du contenu, par exemple si l'on désire rendre disponible un élément, mais que son affichage à l'écran reste dépendant d'une action ultérieure. Dans ce cas, c'est l'état final du contenu qui doit être considéré.</p>
-
+							<p>WAI-ARIA provides an aria-hidden attribute (true or false) that inhibits the rendering of a content to assistive technologies, without affecting its visibility for user agents: a content with aria-hidden="true" will not be spoken out but remains visible.</p>
+							<p>Unless the content controlled by aria-hidden is not intended to be rendered by assistive technologies, the value of the aria-hidden attribute must be consistent with the displayed or hidden status of the on-screen content.</p>
+							<p>The HTML5 specification describes a hidden attribute that can make unavailable (when the hidden attribute is present) content in the generated DOM (similar to type="hidden" on a form control).</p>
+							<p>There can be situations where a content controlled with hidden or aria-hidden is momentarily in a state inconsistent with the content’s displayed or hidden status, for example when an item is meant to be available but visually displayed only upon further action. In this case, it is the final state of the content that should be considered.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.2 Meaningful Sequence(A), 4.1.2 Name, Role, Value(A)</p>
@@ -2751,15 +2740,15 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-9"><em>Criterion 10.9 [A]</em> Dans chaque page web, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée ?</h3>
+						<h3 id="crit-10-9"><em>Criterion 10.9 [A]</em> On each web page, information must not be conveyed through shape, size or position alone. Is this rule followed?</h3>
 						<ul>
-							<li id="test-10-9-1">Test 10.9.1&nbsp;: Dans chaque page web, pour chaque texte ou ensemble de textes, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée ?
+							<li id="test-10-9-1">Test 10.9.1&nbsp;: On each web page, for each text or set of text, information must not be conveyed by shape, size or position alone. Has this rule been followed?
 							</li>
-							<li id="test-10-9-2">Test 10.9.2&nbsp;: Dans chaque page web, pour chaque image ou ensemble d'images, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée ?
+							<li id="test-10-9-2">Test 10.9.2&nbsp;: On each web page, for each image or set of images, information must not be conveyed by shape, size or position alone. Has this rule been followed?
 							</li>
-							<li id="test-10-9-3">Test 10.9.3&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossary.html#glossaire-79">média temporel</a>, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée ?
+							<li id="test-10-9-3">Test 10.9.3&nbsp;: On each web page, for each time-based media, information must not be conveyed by shape, size or position alone. Has this rule been followed?
 							</li>
-							<li id="test-10-9-4">Test 10.9.4&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossary.html#glossaire-78">média non temporel</a>, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle respectée ?
+							<li id="test-10-9-4">Test 10.9.4&nbsp;: On each web page, for each non time-based media, information must not be conveyed by shape, size or position alone. Has this rule been followed?
 							</li>
 						</ul>
 						<aside>
@@ -2780,15 +2769,15 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-10-10"><em>Criterion 10.10 [A]</em> Dans chaque page web, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente ?</h3>
+						<h3 id="crit-10-10"><em>Criterion 10.10 [A]</em> On each web page, information must not be conveyed through shape, size or position alone. Is this rule implemented in a relevant way?</h3>
 						<ul>
-							<li id="test-10-10-1">Test 10.10.1&nbsp;: Dans chaque page web, pour chaque texte ou ensemble de textes, l'information ne doit pas être donnée uniquement par la forme, taille ou position. Cette règle est-elle implémentée de façon pertinente ?
+							<li id="test-10-10-1">Test 10.10.1&nbsp;: On each web page, for each text or set of text, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
 							</li>
-							<li id="test-10-10-2">Test 10.10.2&nbsp;: Dans chaque page web, pour chaque image ou ensemble d'images, l'information ne doit pas être donnée par la forme, taille ou position uniquement.Cette règle est-elle implémentée de façon pertinente ?
+							<li id="test-10-10-2">Test 10.10.2&nbsp;: On each web page, for each image or set of images, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
 							</li>
-							<li id="test-10-10-3">Test 10.10.3&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossary.html#glossaire-79">média temporel</a>, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente ?
+							<li id="test-10-10-3">Test 10.10.3&nbsp;: On each web page, for each time-based media, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
 							</li>
-							<li id="test-10-10-4">Test 10.10.4&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossary.html#glossaire-78">média non temporel</a>, l'information ne doit pas être donnée par la forme, taille ou position uniquement. Cette règle est-elle implémentée de façon pertinente ?
+							<li id="test-10-10-4">Test 10.10.4&nbsp;: On each web page, for each non time-based media, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
 							</li>
 						</ul>
 						<aside>
@@ -2809,24 +2798,24 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-10-11"><em>Criterion 10.11 [AA]</em> Pour chaque page web, les contenus peuvent-ils être présentés sans avoir recours à la fois à un défilement vertical pour une fenêtre ayant une hauteur de 256px ou une largeur de 320px (<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-10-11"><em>Criterion 10.11 [AA]</em> For each web page, can contents be presented without requiring for both a vertical and horizontal scroll for windows with a height of 256px or with a width of 320px (except for particular cases)?</h3>
 						<ul>
-							<li id="test-10-11-1">Test 10.11.1&nbsp;: Pour chaque page web, lorsque le contenu dont le <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> est horizontal est affiché dans une fenêtre réduite à une largeur de 320px, l'ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement horizontal (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-11-1">Test 10.11.1&nbsp;: For each web page, when the content, which reading direction is horizontal, is put in a window reduced to a width of 320px, all information and functionalities are available without any horizontal scroll bar (expect for particular cases)?
 							</li>
-							<li id="test-10-11-2">Test 10.11.2&nbsp;: Pour chaque page web, lorsque le contenu dont le <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> est vertical est affiché dans une fenêtre réduite à une hauteur de 256px, l'ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement vertical (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-11-2">Test 10.11.2&nbsp;: For each web page, when the content, which reading direction is vertical, is put in a window reduced to a width of 320px, all information and functionalities are available without any vertical scroll bar (expect for particular cases)?
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Font exception à ce critère les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :</p>
+							<p>The contents which layout requires two dimensions to be understood or used are exceptions to this criterion, such as:</p>
 							<ul>
-								<li>Les images, les graphiques ou les vidéos.</li>
-								<li>Les jeux (jeux de plateforme, par exemple).</li>
-								<li>Les présentations(type diaporama, par exemple).</li>
-								<li>Les tableaux de données(complexes).</li>
-								<li>Les interfaces où il est nécessaire d'avoir un ascenseur horizontal lors de la manipulation de l'interface.</li>
+								<li>Images, graphics or videos.</li>
+								<li>Games (platform games for example).</li>
+								<li>Presentations (slideshow, for example).</li>
+								<li>Data tables (complex).</li>
+								<li>Interfaces where it is necessary to have a horizontal scroll bar during the interface manipulation.</li>
 							</ul>
-							<p>Note : la majorité des navigateurs sur les systèmes d'exploitation mobile (Android, iOS) ne gère pas correctement la redistribution en cas de zoom. Dans ce contexte le critère sera considéré comme non applicable sur ces environnements.</p>
+							<p>Note : the majority of browsers on mobile operating systems (Android, iOS) do not generate properly the reflow when zooming. In this context, the criterion will be considered as not applicable on those environments.</p>
 
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2845,26 +2834,25 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-10-12"><em>Criterion 10.12 [AA]</em> Dans chaque page web, les propriétés d'espacement du texte peuvent-elles être redéfinies par l'utilisateur sans perte de contenu ou de fonctionnalité (<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-10-12"><em>Criterion 10.12 [AA]</em> On each web page, can text spacing properties be redefined by the user without loss of content or functionality (except for particular cases)?</h3>
 						<ul>
-							<li id="test-10-12-1">Test 10.12.1&nbsp;: Dans chaque page web, le texte reste-t-il lisible lorsque l'affichage est modifié selon ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-12-1">Test 10.12.1&nbsp;: For each web page, does each block of text meet one of the following conditions (expect for particular cases)? 
 								<ul>
-									<li>L'espacement entre les lignes (<code>line-height</code>) est augmenté jusqu'à 1,5 fois la taille de la police&nbsp;;</li>
-									<li>L'espacement suivant les paragraphes (balise <code>&lt;p&gt;</code>) est augmenté jusqu'à 2 fois la taille de la police&nbsp;;</li>
-									<li>L'espacement des lettres (<code>letter-spacing</code>) est augmenté jusqu'à 0,12 fois la taille de la police&nbsp;;</li>
-									<li>L'espacement des mots (<code>word-spacing</code>) est augmenté jusqu'à 0,16 fois la taille de la police.</li>
+									<li>The line spacing (line-height) is, at least, 1.5 times the text size.</li>
+									<li>The spacing between two paragraphs is, at least, 2 times the text size.</li>
+									<li>The letters spacing (letter-spacing) is, at least, 0.12 times the text size.</li>
+									<li>The words spacing (word-spacing) is, at least, 0.16 times the text size.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Font exception à ce critère les contenus pour lesquels l'utilisateur n'a pas de possibilité de personnalisation :</p>
+							<p>Contents that cannot be personalised by the user are exceptions to this criterion:</p>
 							<ul>
-								<li>Les sous-titres directement intégrés à une vidéo.</li>
-								<li>Les images texte.</li>
-								<li>Le texte au sein d'une balise <code>&lt;canvas&gt;</code>.</li>
+								<li>Subtitles embedded in a video.</li>
+								<li>Images of text.</li>
+								<li>Text inside a canvas tag.</li>
 							</ul>
-
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.4.12 Text Spacing(AA)</p>
@@ -2882,24 +2870,24 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-10-13"><em>Criterion 10.13 [AA]</em> Dans chaque page web, les contenus additionnels apparaissant à la prise de focus ou au survol d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>sont-ils contrôlables par l'utilisateur (<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-10-13"><em>Criterion 10.13 [AA]</em> On each web page, are additional contents appearing upon focus or hover over an interface component controllable by the user?</h3>
 						<ul>
-							<li id="test-10-13-1">Test 10.13.1&nbsp;: Chaque contenu additionnel devenant visible à la prise de focus ou au survol d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>peut-il être masqué par une action utilisateur sans déplacer le focus ou le pointeur de la souris (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-13-1">Test 10.13.1&nbsp;: Each additional content becoming visible upon focusing or hovering over an interface content can be hidden by an user's action without moving the focus or the mouse cursor (except for particular cases)?
 							</li>
-							<li id="test-10-13-2">Test 10.13.2&nbsp;: Chaque contenu additionnel qui apparaît au survol d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>peut-il être survolé par le pointeur de la souris sans disparaître (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-13-2">Test 10.13.2&nbsp;: Each additional content appearing upon hovering over an interface content can be hovered with the mouse cursor without disappearing (except for particular cases)?
 							</li>
-							<li id="test-10-13-3">Test 10.13.3&nbsp;: Chaque contenu additionnel qui apparaît à la prise de focus ou au survol d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>vérifie-t-il une de ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-10-13-3">Test 10.13.3&nbsp;: Each additional content becoming visible upon focusing or hovering over an interface component meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>Le contenu additionnel reste visible jusqu'à ce que l'utilisateur retire le pointeur souris ou le focus du contenu additionnel et du <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>ayant déclenché son apparition.</li>
-									<li>Le contenu additionnel reste visible jusqu'à ce l'utilisateur déclenche une action masquant ce contenu sans déplacer le focus ou le pointeur souris du <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>ayant déclenché son apparition.</li>
-									<li>Le contenu additionnel reste visible jusqu'à ce qu'il ne soit plus valide.</li>
+									<li>The additional content is still visible until the user moves the mouse cursor out or moves the focus out of the additional content and of the interface component that triggered its appearance. </li>
+									<li>The additional content is still visible until the user makes an action hiding this content without moving the focus or the mouse cursor of the interface component that triggered its appearance. </li>
+									<li>The additional content is still visible until it is no longer valid.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Lorsque le contenu additionnel est contrôlé par l'agent utilisateur (par exemple, attribut <code>title</code> ou validation native de formulaire) ou correspond à une fenêtre modale conforme au motif de conception WAI-ARIA dialog, le critère 10.13 est non applicable. Lorsque le contenu additionnel ne masque ou ne remplace aucun contenu <a href="rgaa4-glossary.html#glossaire-49">porteur d'information</a>n le test 10.13.1 est non applicable.</p>
-
+							<p>When additional content is controlled by the user agent (for example, a title attribute or a native form validation) or corresponds to a modal window compliant with the WAI-ARIA dialog design pattern, the 10.13 Criterion 10.13 is not applicable.</p>
+							<p>When the additional content does not hide or replace any content conveying information, the 10.13.1 test is not applicable.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.4.13 Content on Hover or Focus(AA)</p>
@@ -2917,20 +2905,20 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-10-14"><em>Criterion 10.14 [AA]</em> Dans chaque page web, les contenus additionnels apparaissant via les styles CSS uniquement peuvent-ils être rendus visibles au clavier et par tout dispositif de pointage ?</h3>
+						<h3 id="crit-10-14"><em>Criterion 10.14 [AA]</em> On each web page, can additional contents appearing only via CSS style sheets rendered visible using keyboard or any pointing device?</h3>
 						<ul>
-							<li id="test-10-14-1">Test 10.14.1&nbsp;: Dans chaque page web, les contenus additionnels apparaissant au survol d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>via les styles CSS respectent-ils si nécessaire une de ces conditions ?
+							<li id="test-10-14-1">Test 10.14.1&nbsp;: On each web page, does the additional contents appearing upon hovering over an interface component via the CSS styles meet one of the following conditions, where necessary? 
 								<ul>
-									<li>Les contenus additionnels apparaissent également à l'activation du composant via le clavier et tout dispositif de pointage.</li>
-									<li>Les contenus additionnels apparaissent également à la prise de focus du composant.</li>
-									<li>Les contenus additionnels apparaissent également par le biais de l'activation ou de la prise de focus d'un autre composant.</li>
+									<li>Additional contents also appear upon activation of the component via keyboard and pointing device.</li>
+									<li>Additional contents also appear upon focus on the component.</li>
+									<li>Additional contents also appear upon activation of the component or upon focus on another component.</li>
 								</ul>
 							</li>
-							<li id="test-10-14-2">Test 10.14.2&nbsp;: Dans chaque page web, les contenus additionnels apparaissant au focus d'un <a href="rgaa4-glossary.html#glossaire-23">composant d'interface </a>via les styles CSS respectent-ils si nécessaire une de ces conditions ?
+							<li id="test-10-14-2">Test 10.14.2&nbsp;: On each web page, does the additional contents appear upon focus on an interface component via the CSS styles meet one of the following conditions, where necessary? 
 								<ul>
-									<li>Les contenus additionnels apparaissent également à l'activation du composant via le clavier et tout dispositif de pointage.</li>
-									<li>Les contenus additionnels apparaissent également au survol du composant.</li>
-									<li>Les contenus additionnels apparaissent également par le biais de l'activation ou du survol d'un autre composant.</li>
+									<li>Additional contents appear also upon activation of a component via keyboard and any pointing device.</li>
+									<li>Additional contents appear also upon hovering over the component. </li>
+									<li>Additional contents appear also upon activation of a component or upon hovering over another component.</li>
 								</ul>
 							</li>
 						</ul>
@@ -2977,7 +2965,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</ul>
 						</nav>
 						<h3>General guidelines</h3>
-						<p>Associer pour chaque formulaire chacun de ses champs à son étiquette, grouper les champs dans des blocs d’informations de même nature, structurer les listes de choix de manière pertinente, donner à chaque bouton un intitulé explicite. Vérifier la présence d’aide à la saisie, s’assurer que le <a href="rgaa4-glossary.html#glossaire-33">contrôle de saisie</a> est accessible et que l’utilisateur peut contrôler les données à caractère financier, juridique ou personnel.</p>
+						<p>For each form, associate each control with its label, group controls in similar blocks of information, structure selection lists in a consistent way, give each button an explicit label. Check that input help is available, ensure that the input control is accessible and that the user can control financial, legal or personal data.</p>
 						<div class="tags"><span>Mots clés</span>
 							<ul>
 								<li>Principe : Perceptible</li>
@@ -2985,29 +2973,28 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</div>
 					</header>
 					<section data-level="A">
-						<h3 id="crit-11-1"><em>Criterion 11.1 [A]</em> Chaque champ de formulaire a-t-il une étiquette ?</h3>
+						<h3 id="crit-11-1"><em>Criterion 11.1 [A]</em> Does each form field have a label?</h3>
 						<ul>
-							<li id="test-11-1-1">Test 11.1.1&nbsp;: Chaque champ de formulaire vérifie-t-il une de ces conditions ?
+							<li id="test-11-1-1">Test 11.1.1&nbsp;: Does each form field meet one of the following conditions?
 								<ul>
-									<li>Le champ de formulaire possède un attribut WAI-ARIA <code>aria-labelledby</code> référençant un <a href="rgaa4-glossary.html#glossaire-87">passage de texte</a> identifié.</li>
-									<li>Le champ de formulaire possède un attribut WAI-ARIA <code>aria-label</code>.</li>
-									<li>Une balise <code>&lt;label&gt;</code> ayant un attribut <code>for</code> est associée au champ de formulaire.</li>
-									<li>Le champ de formulaire possède un attribut <code>title</code>.</li>
-									<li>Un <a href="rgaa4-glossary.html#glossaire-13">bouton</a> adjacent au champ de formulaire lui fournit une étiquette visible et un attribut WAI-ARIA <code>aria-label</code>, <code>aria-labelledby</code> ou <code>title</code> lui fournit un nom accessible.</li>
+									<li>The form field has a WAI-ARIA aria-labelledby attribute that references an identified chunk of text.</li>
+									<li>The form field has a WAI-ARIA aria-label attribute.</li>
+									<li>A label tag having for attribute is associated with the form field.									</li>
+									<li>The form field has a title attribute.</li>
+									<li>A button adjacent to the form field provides it with a visible label and a WAI-ARIA aria-label, aria-labelledby or title attribute provides it with an accessible name.</li>
 								</ul>
 							</li>
-							<li id="test-11-1-2">Test 11.1.1&nbsp;: Chaque champ de formulaire associé à une balise <code>&lt;label&gt;</code> ayant un attribut <code>for</code>, vérifie-t-il ces conditions ?
+							<li id="test-11-1-2">Test 11.2.1&nbsp;: Does each form field associated with a label tag having a for attribute, meet the following conditions?
 								<ul>
-									<li>Le champ de formulaire possède un attribut <code>id</code>.</li>
-									<li>La valeur de l'attribut <code>for</code> est égale à la valeur de l'attribut <code>id</code> du champ de formulaire associé.</li>
+									<li>The form field has an id attribute.</li>
+									<li>The value of the for attribute matches the value of the corresponding form field id attribute.</li>
 								</ul>
 							</li>
-							<li id="test-11-1-3">Test 10.1.1&nbsp;: Chaque champ de formulaire ayant une
-								étiquette dont le contenu n'est pas visible ou à proximité (masqué, <code>aria-label</code>) ou qui n’est pas accolé au champ (<code>aria-labelledby</code>), vérifie-t-il une de ses conditions ?
+							<li id="test-11-1-3">Test 10.1.1&nbsp;: Does each form field associated with a label, which content is not visible or adjacent (hidden, aria-label, aria-labelledby), meet one of the following conditions?
 								<ul>
-									<li>Le champ de formulaire possède un attribut <code>title</code> dont le contenu permet de comprendre la nature de la saisie attendue.</li>
-									<li>Le champ de formulaire est accompagné d'un passage de texte accolé au champ qui devient visible à la prise de focus permettant de comprendre la nature de la saisie attendue.</li>
-									<li>Le champ de formulaire est accompagné d'un passage de texte visible accolé au champ permettant de comprendre la nature de la saisie attendue.</li>
+									<li>The form field has a title attribute which content allowing to understand describing the nature of the expected input.</li>
+									<li>The form field has a piece of text becoming visible upon focus allowing to understand describing the nature of the expected input.</li>
+									<li>The form field has a visible piece of text adjacent to the input allowing to understand describing the nature of the expected input.</li>
 								</ul>
 							</li>
 						</ul>
@@ -3029,37 +3016,36 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="A">
-						<h3 id="crit-11-2"><em>Criterion 11.2 [A]</em> Chaque étiquette associée à un champ de formulaire est-elle pertinente(<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-11-2"><em>Criterion 11.2 [A]</em> Is each label associated to a form field relevant (except for particular cases)?</h3>
 						<ul>
-							<li id="test-11-2-1">Test 11.2.1&nbsp;: Chaque balise <code>&lt;label&gt;</code> permet-elle de connaître la fonction exacte du champ de formulaire auquel elle est associée ?
+							<li id="test-11-2-1">Test 11.2.1&nbsp;: Does each label tag describe the exact function of the associated form field?
 							</li>
-							<li id="test-11-2-2">Test 11.2.2&nbsp;: Chaque attribut <code>title</code> permet-il de connaître la fonction exacte du champ de formulaire auquel il est associé ?
+							<li id="test-11-2-2">Test 11.2.2&nbsp;: Does each label tag describe the exact function of the associated form field?
 							</li>
-							<li id="test-11-2-3">Test 11.2.3&nbsp;: Chaque étiquette implémentée via l'attribut WAI-ARIA <code>aria-label</code> permet-elle de connaître la fonction exacte du champ de formulaire auquel elle est associée ?
+							<li id="test-11-2-3">Test 11.2.3&nbsp;: Does each title attribute describe the exact function of the associated form field?
 							</li>
-							<li id="test-11-2-4">Test 11.2.4&nbsp;: Chaque <a href="rgaa4-glossary.html#glossaire-87">passage de texte</a> associé via l'attribut WAI-ARIA <code>aria-labelledby</code> permet-il de connaître la fonction exacte du champ de formulaire auquel il est associée ?
+							<li id="test-11-2-4">Test 11.2.4&nbsp;: Does each label implemented via the WAI-ARIA aria-label attribute describe the exact function of the associated form field?
 							</li>
-							<li id="test-11-2-5">Test 11.2.5&nbsp;: Chaque champ de formulaire ayant un intitulé
-								visible vérifie-t-il ces conditions(<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-11-2-5">Test 11.2.5&nbsp;: Does each form field associated with a visible text meet the following conditions (except for particular cases)?
 								<ul>
-									<li>S'il est présent, le contenu de l'attribut WAI-ARIA <code>aria-label</code> du champ de formulaire contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
-									<li>S'il est présent, le <a href="rgaa4-glossary.html#glossaire-87">passage de texte</a> lié au champ de formulaire via un attribut WAI-ARIA <code>aria-labelledby</code> contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.
-									</li>
-									<li>S'il est présent, le contenu de l'attribut <code>title</code> du champ de formulaire contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
-									<li>S'il est présent le contenu de la balise <code>&lt;label&gt;</code> associé au champ de formulaire contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
+									<li>If present, the content of the form field WAI-ARIA aria-label attribute matches the visible text, at least.</li>
+									<li>If present, the content of the form field WAI-ARIA aria-labelledby attribute matches the visible text, at least. </li>
+									<li>If present, the content of the form field title attribute matches the visible text, at least.</li>
+									<li>If present, the content of the form field label attribute matches the visible text, at least.</li>
 								</ul>
 							</li>
-							<li id="test-11-2-6">Test 11.2.6&nbsp;: Chaque <a href="rgaa4-glossary.html#glossaire-13">bouton</a> adjacent au champ de formulaire qui fournit une étiquette visible permet-il de connaître la fonction exacte du champ de formulaire auquel il est associé ?
+							<li id="test-11-2-6">Test 11.2.6&nbsp;: Does each button adjacent to a form field providing a visible label allow to know the exact function of its associated form field.
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Il existe une gestion de cas particulier pour le test 11.2.5 lorsque&nbsp;:</p>
+							<p>There is a particular case management for the 11.2.5 test when:</p>
 							<ul>
-								<li>La ponctuation et les lettres majuscules sont présentes dans le texte de l'étiquette visible : elles peuvent être ignorées dans le nom accessible sans porter à conséquence.</li>
-								<li>Le texte de l'étiquette visible sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d'un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”).Le cas des symboles mathématiques fait cependant exception(voir la note ci - dessous).</li>
+								<li>Punctuation and capital letters are present in the text of the visible label: it may be ignored in the accessible name with no consequences.</li>
+								<li>The text of the visible label is used as a symbol: the text should not be interpreted literally at the accessible name’s level. The name should express the function conveyed by the symbol (for example, “B” in a text editor would have as an accessible name “Set as bold”, the sign “>”, depending on the context, may mean “Next” or “Play the video”). The case of mathematic symbols however may be an exception (see the note below).</li>
 							</ul>
-
+							<p>Notes: If the visible label represents a mathematic expression, the mathematic symbols may be used literally as label for the accessible name (ex: “A>B”). The user is left with consideration to operate the connection between the expression and what should be spelled depending on his knowledge of his speech recognition application (“A greater than B” or “A superior to B”).</p>
+							<p>This particular case also applies to the 11.9.3 test.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 2.4.6 Headings and Labels(AA), 2.5.3 Label in Name(A), 3.3.2 Labels or Instructions(AA)</p>
@@ -3077,11 +3063,11 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-3"><em>Criterion 11.3 [AA]</em> Dans chaque formulaire, chaque étiquette associée à un champ de formulaire ayant la même fonction et répété plusieurs fois dans une même page ou dans un <a href="rgaa4-glossary.html#glossaire-37">ensemble de pages</a> est-elle cohérente ?</h3>
+						<h3 id="crit-11-3"><em>Criterion 11.3 [AA]</em> On a given page, or set of pages, all form fields with similar functions must have consistent labels. Has this rule been followed?</h3>
 						<ul>
-							<li id="test-11-3-1">Test 11.3.1&nbsp;: Chaque étiquette associée à un champ de formulaire ayant la même fonction et répétée plusieurs fois dans une même page est-elle cohérente ?
+							<li id="test-11-3-1">Test 11.3.1&nbsp;: Is each label associated to a form field having the same function and repeated several times in the same page relevant?
 							</li>
-							<li id="test-11-3-2">Test 11.3.2&nbsp;: Chaque étiquette associée à un champ de formulaire ayant la même fonction et répétée dans un <a href="rgaa4-glossary.html#glossaire-37">ensemble de pages</a> est-elle cohérente ?
+							<li id="test-11-3-2">Test 11.3.2&nbsp;: Is each label associated to a form field having the same function and repeated several times in a set of pages relevant?
 							</li>
 						</ul>
 						<aside>
@@ -3102,33 +3088,31 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-4"><em>Criterion 11.4 [AA]</em> Dans chaque formulaire, chaque étiquette de champ et son champ associé sont-ils accolés(<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-11-4"><em>Criterion 11.4 [AA]</em> In each form, are each field label and its related field positioned next to each other?</h3>
 						<ul>
-							<li id="test-11-4-1">Test 11.4.1&nbsp;: Chaque étiquette de champ et son champ associé sont-ils accolés ?
+							<li id="test-11-4-1">Test 11.4.1&nbsp;: In each form, are each label and its related control positioned next to each other?
 							</li>
-							<li id="test-11-4-2">Test 11.4.2&nbsp;: Chaque étiquette accolée à un champ (à
-								l'exception des case à cocher, bouton radio ou balise ayant un attribut WAI-ARIA
-								<code>role="checkbox"</code>, <code>role="radio"</code> ou <code>role="switch"</code>), vérifie-t-elle ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-11-4-2">Test 11.4.2&nbsp;: Does each label positioned next to a form field (except checkbox, radio button or elements having a WAI-ARIA role="checkbox", role="radio" or role="switch" attribute) meet the following conditions (except for particular cases)?
 								<ul>
-									<li>L'étiquette est visuellement accolée immédiatement au-dessus ou à gauche du champ de formulaire lorsque le <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> de la langue de l'étiquette est de gauche à droite.</li>
-									<li>L'étiquette est visuellement accolée immédiatement au-dessus ou à droite du champ de formulaire lorsque le <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> de la langue de l'étiquette est de droite à gauche.</li>
+									<li>The label is visually positioned immediately to the left or above a form field when its reading direction is from left to right.</li>
+									<li>The label is visually positioned immediately to the right or above a form field when its reading direction is from right to left.</li>
 								</ul>
 							</li>
-							<li id="test-11-4-3">Test 11.4.3&nbsp;: Chaque étiquette accolée à un champ de type <code>checkbox</code> ou <code>radio</code> ou à une balise ayant un attribut WAI-ARIA <code>role="checkbox"</code>, <code>role="radio"</code> ou <code>role="switch"</code>, vérifie-t-elle ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-11-4-3">Test 11.4.3&nbsp;: Each label positioned next to a form field checkbox or radio or elements having a WAI-ARIA role="checkbox", role="radio" or role="switch" attribute, meet the following conditions (except for particular cases)?
 								<ul>
-									<li>L'étiquette est visuellement accolée immédiatement au-dessus ou à droite du champ de formulaire lorsque le <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> de la langue de l'étiquette est de gauche à droite.</li>
-									<li>L'étiquette est visuellement accolée immédiatement au-dessus ou à gauche du champ de formulaire lorsque le <a href="rgaa4-glossary.html#glossaire-101">sens de lecture</a> de la langue de l'étiquette est de droite à gauche.</li>
+									<li>The label is visually positioned immediately, to the right or above, a form field when its reading direction is from left to right.</li>
+									<li>The label is visually positioned immediately, to the left or above, a form field when its reading direction is from right to left.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Les tests 11.4.2 et 11.4.3 seront considérés comme non applicable :</p>
+							<p>The 11.4.2 et 11.4.3 tests will be considered as not applicable in the cases where:</p>
 							<ul>
-								<li>Dans le cas où l'étiquette mélange une portion de texte qui se lit de droite à gauche avec une portion de texte qui se lit de gauche à droite.</li>
-								<li>Dans le cas où un formulaire contient des labels de plusieurs langues qui se liraient de droite à gauche et inversement.Par exemple un formulaire de commande en arabe qui propose une liste de cases à cocher de produit en langue française ou mixant des produits en langue arabe et en langue française.</li>
-								<li>Dans le cas où les champs de type <code>radio</code> ou <code>checkbox</code> et les balises ayant un attribut WAI-ARIA <code>role="checkbox"</code>, <code>role="radio"</code> ou <code>role="switch"</code> ne sont pas visuellement présentés sous forme de bouton radio ou de case à cocher</li>
-								<li>Dans le cas où les champs seraient utilisés dans un contexte où il pourrait être légitime, du point de vue de l'expérience utilisateur, de placer les étiquettes de manière différente à celle requise dans les tests 11.4.2 et 11.4.3.</li>
+								<li>the label mixes a piece of text that is read from right to left with a piece of text that is read from left to right./li>
+								<li>a form contains labels in several languages that are read from right to left and backwards. For example, an order form in Arabic proposing a list of checkboxes of products written in French or mixing products in both Arabic and French.</li>
+								<li>radio or checkbox type fields and tags with a WAI-ARIA role="checkbox", role="radio" or role="switch" attribute are not visually displayed as radio buttons or checkboxes.</li>
+								<li>•	fields were used in a context where it may be legitimate, from a user standpoint, to place the labels in a different manner than it is required in the 11.4.2 et 11.4.3 tests.</li>
 							</ul>
 
 							<div class="criterion-mapping">
@@ -3148,13 +3132,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-5"><em>Criterion 11.5 [AA]</em> Dans chaque formulaire, les champs de même nature sont-ils regroupés, si nécessaire ?</h3>
+						<h3 id="crit-11-5"><em>Criterion 11.5 [AA]</em> In each form, is the information of same nature grouped together, where necessary?</h3>
 						<ul>
-							<li id="test-11-5-1">Test 11.5.1&nbsp;: Les champs de même nature vérifient-ils l'une de ces conditions, si nécessaire ?
+							<li id="test-11-5-1">Test 11.5.1&nbsp;: For each form fields of same nature meet one of the following conditions, where necessary? 
 								<ul>
-									<li>Les champs de même nature sont regroupés dans une balise <code>&lt;fieldset&gt;</code>.</li>
-									<li>Les champs de même nature sont regroupés dans une balise possédant un attribut WAI-ARIA <code><code>role="group"</code></code>.</li>
-									<li>Les champs de même nature de type radio (<code>&lt;input type="radio"&gt;</code> ou balises possédant un attribut WAI-ARIA <code>role="radio"</code>) sont regroupés dans une balise possédant un attribut WAI-ARIA <code>role="radiogroup"</code> ou <code>"group"</code>.</li>
+									<li>Form fields of same nature are grouped in a fieldset tag.</li>
+									<li>Form fields of same nature are grouped in an element having the WAI-ARIA role="group" attribute.</li>
+									<li>Form fields of same nature of radio type (input type="radio" or element having a WAI-ARIA role="radio" attribute) are grouped in an element having the WAI-ARIA role="radiogroup" or role="group" attribute.</li>
 								</ul>
 							</li>
 						</ul>
@@ -3176,9 +3160,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-6"><em>Criterion 11.6 [AA]</em> Dans chaque formulaire, chaque regroupement de champs de formulaire a-t-il une <a href="rgaa4-glossary.html#glossaire-63">légende</a> ?</h3>
+						<h3 id="crit-11-6"><em>Criterion 11.6 [AA]</em> In each form, does each form field grouping have a legend?</h3>
 						<ul>
-							<li id="test-11-6-1">Test 11.6.1&nbsp;: Chaque regroupement de champs de même nature possède-t-il une <a href="rgaa4-glossary.html#glossaire-63">légende</a> ?
+							<li id="test-11-6-1">Test 11.6.1&nbsp;: Does each form field group have a legend?  
 							</li>
 						</ul>
 						<aside>
@@ -3199,9 +3183,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-7"><em>Criterion 11.7 [AA]</em> Dans chaque formulaire, chaque <a href="rgaa4-glossary.html#glossaire-63">légende</a> associée à un regroupement de champs de même nature est-elle pertinente ?</h3>
+						<h3 id="crit-11-7"><em>Criterion 11.7 [AA]</em> In each form, is each legend related to a group of form fields of similar nature, relevant?</h3>
 						<ul>
-							<li id="test-11-7-1">Test 11.7.1&nbsp;: Chaque <a href="rgaa4-glossary.html#glossaire-63">légende</a> associée à un regroupement de champs de même nature est-elle pertinente ?
+							<li id="test-11-7-1">Test 11.7.1&nbsp;: In each form, is each legend related to a form field group relevant? 
 							</li>
 						</ul>
 						<aside>
@@ -3222,18 +3206,18 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-8"><em>Criterion 11.8 [AA]</em> Dans chaque formulaire, les items de même nature d'une liste de choix sont-ils regroupées de manière pertinente ?</h3>
+						<h3 id="crit-11-8"><em>Criterion 11.8 [AA]</em> In each form, are items of similar nature from a list of choice grouped in a relevant way?</h3>
 						<ul>
-							<li id="test-11-8-1">Test 11.8.1&nbsp;: Pour chaque balise <code>&lt;select&gt;</code>, les items de même nature d'une liste de choix sont-ils regroupés avec une balise <code>&lt;optgroup&gt;</code>, si nécessaire ?
+							<li id="test-11-8-1">Test 11.8.1&nbsp;: In each select tag, do items of the same nature of a selection list are grouped together with an optgroup tag, where necessary?
 							</li>
-							<li id="test-11-8-2">Test 11.8.2&nbsp;: Dans chaque balise <code>&lt;select&gt;</code>, chaque balise <code>&lt;optgroup&gt;</code> possède-t-elle un attribut <code>label</code> ?
+							<li id="test-11-8-2">Test 11.8.2&nbsp;: In each select tag, does each optgroup tag have a label attribute?
 							</li>
-							<li id="test-11-8-3">Test 11.8.3&nbsp;: Pour chaque balise <code>&lt;optgroup&gt;</code> ayant un attribut label, le contenu de l'attribut <code>label</code> est-il pertinent ?
+							<li id="test-11-8-3">Test 11.8.3&nbsp;: For each optgroup tag with a label attribute, is the content of the label attribute relevant?
 							</li>
 						</ul>
 						<aside>
 							<h4> Note technique</h4>
-							<p>Il est possible d’utiliser une balise ayant un attribut WAI-ARIA <code>role="listbox"</code> en remplacement d’une balise <code>&lt;select&gt;</code>. En revanche, il est impossible de créer des groupes d’options au moyen de WAI-ARIA. De ce fait, une liste nécessitant un regroupement d’options et structurée à l’aide d’une balise ayant un attribut WAI-ARIA <code>role="listbox"</code> sera considérée comme non conforme au critère 11.8.</p>
+							<p>It is possible to use a tag which WAI-ARIA role="listbox" attribute as a replacement for <select> tag. However, it is impossible to create option groups using WAI-ARIA. Therefore, a list, that requires gathering options in groups and structured using a tag with a WAI-ARIA role="listbox" attribute, will be considered as not compliant with the 11.8 Criterion.</p>
 
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -3252,37 +3236,32 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-9"><em>Criterion 11.9 [AA]</em> Dans chaque formulaire, l'intitulé de chaque <a href="rgaa4-glossary.html#glossaire-13">bouton</a> est-il pertinent (<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-11-9"><em>Criterion 11.9 [AA]</em> In each form, is the text of each button relevant (except for particular cases)?</h3>
 						<ul>
-							<li id="test-11-9-1">Test 11.9.1&nbsp;: L'intitulé de chaque <a href="rgaa4-glossary.html#glossaire-13">bouton</a> est-il pertinent&nbsp;?
+							<li id="test-11-9-1">Test 11.9.1&nbsp;: Does the text of each button meet the following conditions?
 								<ul>
-									<li>S'il est présent, le contenu de l'attribut WAI-ARIA <code>aria-label</code> est pertinent.</li>
-									<li>S'il est présent, le <a href="rgaa4-glossary.html#glossaire-87">passage de texte</a> lié au <a href="rgaa4-glossary.html#glossaire-13">bouton</a> via un attribut WAI-ARIA <code>aria-labelledby</code> est pertinent.</li>
-									<li>S'il est présent, le contenu de l'attribut <code>value</code> d'une balise <code>&lt;input&gt;</code> de type <code>submit</code>, <code>reset</code> ou <code>button</code> est pertinent.</li>
-									<li>S'il est présent, le contenu de la balise <code>&lt;button&gt;</code> est pertinent.</li>
-									<li>S'il est présent, le contenu de l'attribut <code>alt</code> d'une balise <code>&lt;input&gt;</code> de type <code>image</code> est pertinent.</li>
-									<li>S'il est présent, le contenu de l'attribut <code>title</code> est pertinent.</li>
+									<li>If present, the content of the ARIA property aria-label is relevant. </li>
+									<li>If present, the piece of text associated with the button via an ARIA property aria-labelledby. </li>
+									<li>If present, the content of the value attribute of the form type submit, reset or button buttons is relevant. </li>
+									<li>If present, the content of the button tag is relevant.</li>
+									<li>If present, the content of the alt attribute of an image type input is relevant.</li>
+									<li>If present, the content of the title attribute is relevant. </li>
 								</ul>
 							</li>
-							<li id="test-11-9-2">Test 11.9.2&nbsp;: Chaque <a href="rgaa4-glossary.html#glossaire-13">bouton</a> affichant un <a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a> vérifie-t-il ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-11-9-2">Test 11.9.2&nbsp;: Does each button having a visible text meet the following conditions (except for particular cases)? 
 								<ul>
-									<li>S'il est présent, le contenu de l'attribut WAI-ARIA <code>aria-label</code> contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
-									<li>S'il est présent, le <a href="rgaa4-glossary.html#glossaire-87">passage de texte</a> lié au <a href="rgaa4-glossary.html#glossaire-13">bouton</a> via un attribut WAI-ARIA <code>aria-labelledby</code> contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
-									<li>S'il est présent, le contenu de l'attribut <code>value</code> d'une balise <code>&lt;input&gt;</code> de type <code>submit</code>, <code>reset</code> ou <code>button</code> contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
-									<li>S'il est présent, le contenu de la balise <code>&lt;button&gt;</code> contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
-									<li>S'il est présent, le contenu de l'attribut <code>alt</code> d'une balise <code>&lt;input&gt;</code> de type <code>image</code> contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
-									<li>S'il est présent, le contenu de l'attribut <code>title</code> contient au moins l'<a href="rgaa4-glossary.html#glossaire-58">intitulé visible</a>.</li>
+									<li>If present, the content of the ARIA property aria-label has the visible text, at least. </li>
+									<li>If present, the piece of text associated with the button via an ARIA property aria-labelledby has the visible text, at least.</li>
+									<li>If present, the content of the value attribute of the form type submit, reset or button buttons has the visible text, at least.</li>
+									<li>If present, the content of the button tag has the visible text, at least.</li>
+									<li>If present, the content of the alt attribute of an image type input has the visible text, at least.</li>
+									<li>•	 If present, the content of the title attribute has the visible text, at least.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Il existe une gestion de cas particulier pour le test 11.2.5 lorsque :</p>
-							<ul>
-								<li>La ponctuation et les lettres majuscules sont présentes dans le texte de l'étiquette visible : elles peuvent être ignorées dans le nom accessible sans porter à conséquence.</li>
-								<li>Le texte de l'étiquette visible sert de symbole : le texte ne doit pas être interprété littéralement au niveau du nom accessible. Le nom doit exprimer la fonction véhiculée par le symbole (par exemple, “B” au niveau d'un éditeur de texte aura pour nom accessible “Mettre en gras”, le signe “>” en fonction du contexte signifiera “Suivant” ou “Lancer la vidéo”).Le cas des symboles mathématiques fait cependant exception(voir la note ci-dessous).</li>
-							</ul>
-
+							<p>For the 11.9.2 test, see Particular cases Criterion 11.2.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 2.5.3 Label in Name (A), 4.1.2 Name, Role, Value (A)</p>
@@ -3300,59 +3279,59 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-10"><em>Criterion 11.10 [AA]</em> Dans chaque formulaire, le <a href="rgaa4-glossary.html#glossaire-33">contrôle de saisie</a> est-il utilisé de manière pertinente (<a href="#cas-">hors cas particulier</a>) ?</h3>
+						<h3 id="crit-11-10"><em>Criterion 11.10 [AA]</em> In each form, is the input control used in a relevant way (except for particular cases)?</h3>
 						<ul>
-							<li id="test-11-10-1">Test 11.10.1&nbsp;: Les indications du caractère obligatoire de la saisie des champs vérifient-elles une de ces conditions (<a href="#cas-">hors cas particulier</a>) ?
+							<li id="test-11-10-1">Test 11.10.1&nbsp;: Do indications of the fields' input mandatory nature meet one of the following conditions (except for particular cases)? 
 								<ul>
-									<li>Une indication de champ obligatoire est visible et permet d'identifier nommément le champ concerné préalablement à la validation du formulaire.</li>
-									<li>Le champ obligatoire dispose de l'attribut <code>aria-required="true"</code> ou <code>required</code> préalablement à la validation du formulaire.</li>
+									<li>The mandatory field indication is visible and identify the form field before its validation.</li>
+									<li>The mandatory field has an aria-required="true" or required attribute before the form's validation.</li>
 								</ul>
 							</li>
-							<li id="test-11-10-2">Test 11.10.2&nbsp;: Les champs obligatoires ayant l'attribut <code>aria-required="true"</code> ou <code>required</code> vérifient-ils une de ces conditions ?
+							<li id="test-11-10-2">Test 11.10.2&nbsp;: Do mandatory fields having the aria-required="true" or required attribute meet one of the following conditions? 
 								<ul>
-									<li>Une indication de champ obligatoire est visible et située dans l'étiquette associé au champ préalablement à la validation du formulaire.</li>
-									<li>Une indication de champ obligatoire est visible et située dans le passage de texte associé au champ préalablement à la validation du formulaire.</li>
+									<li>The mandatory field indication is visible and placed in the form field's label before the form validation.</li>
+									<li>The mandatory field indication is visible and placed in the piece of text associated to the form field, before the form validation.</li>
 								</ul>
 							</li>
-							<li id="test-11-10-3">Test 11.10.3&nbsp;: Les messages d'erreur indiquant l'absence de saisie d'un champ obligatoire vérifient-ils une de ces conditions ?
+							<li id="test-11-10-3">Test 11.10.3&nbsp;: Do the input error messages indicating the absence of input for a mandatory field, meet one of the following conditions? 
 								<ul>
-									<li>le message d'erreur indiquant l'absence de saisie d'un champ obligatoire est visible et permet d'identifier nommément le champ concerné.</li>
-									<li>Le champ obligatoire dispose de l'attribut <code>aria-invalid="true"</code>.</li>
+									<li>The error message indicating the absence of input for a mandatory field is visible and allows to identify the concerned form field.</li>
+									<li>The mandatory field has the aria-invalid="true" attribute.</li>
 								</ul>
 							</li>
-							<li id="test-11-10-4">Test 11.10.4&nbsp;: Les champs obligatoires ayant l'attribut <code>aria-invalid="true"</code> vérifient-ils une de ces conditions ?
+							<li id="test-11-10-4">Test 11.10.4&nbsp;: Do the mandatory fields having the aria-invalid="true" attribute meet one of the following conditions?
 								<ul>
-									<li>Une indication de champ obligatoire est visible et située dans l'étiquette associée au champ.</li>
-									<li>Une indication de champ obligatoire est visible et située dans le passage de texte associé au champ.</li>
+									<li>The mandatory field indication is visible and is placed in the associated form field's label. </li>
+									<li>The mandatory field indication is visible and is placed in the piece of text associated to the form field</li>
 								</ul>
 							</li>
-							<li id="test-11-10-5">Test 11.10.5&nbsp;: Les instructions et indications du type de données et/ou de format obligatoires vérifient-elles une de ces conditions ?
+							<li id="test-11-10-5">Test 11.10.5&nbsp;: Does each data type and/or format indication provided meet one of the following conditions?
 								<ul>
-									<li>Une instruction ou une indication du type de données et/ou de format obligatoire est visible et permet d'identifier nommément le champ concerné préalablement à la validation du formulaire.</li>
-									<li>Une instruction ou une indication du type de données et/ou de format obligatoire est visible dans l'étiquette ou le passage de texte associé au champ préalablement à la validation du formulaire.</li>
+									<li>The data type and/or format indication is visible and allows to identify the concerned form field, before the validation of the form field.</li>
+									<li>The data type and/or format indication is visible and is in the label or piece of text associated to the form field, before the validation of the field.</li>
 								</ul>
 							</li>
-							<li id="test-11-10-6">Test 11.10.6&nbsp;: Les messages d'erreurs fournissant une instruction ou une indication du type de données et/ou de format obligatoire des champs vérifient-ils une de ces conditions ?
+							<li id="test-11-10-6">Test 11.10.6&nbsp;: Do each input error messages indicating the data type and/or mandatory format of the fields meet one of the following conditions? 
 								<ul>
-									<li>Le message d'erreur fournissant une instruction ou une indication du type de données et/ou de format obligatoires est visible et identifie le champ concerné.</li>
-									<li>Le champ dispose de l'attribut <code>aria-invalid="true"</code>.</li>
+									<li>The error message indicating the data type and/or mandatory format is visible and identifies the concerned form field.</li>
+									<li>The form field has the aria-invalid="true" attribute.</li>
 								</ul>
 							</li>
-							<li id="test-11-10-7">Test 11.10.7&nbsp;: Les champs ayant l'attribut <code>aria-invalid="true"</code> dont la saisie requiert un type de données et/ou de format obligatoires vérifient-ils une de ces conditions ?
+							<li id="test-11-10-7">Test 11.10.7&nbsp;: Do fields with the aria-invalid="true" attribute, which input requires a data type and/or mandatory format, meet one of the following conditions?
 								<ul>
-									<li>Une instruction ou une indication du type de données et/ou de format obligatoire est visible et située dans la balise <code>&lt;label&gt;</code> associée au champ.</li>
-									<li>Une instruction ou une indication du type de données et/ou de format obligatoire est visible et située dans le passage de texte associé au champ.</li>
+									<li>An indication of the data type and/or mandatory format is visible and is placed in the label tag associated to the form field. </li>
+									<li>An indication of the data type and/or mandatory format is visible and is placed in the piece of text associated to the form field.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>Le test 11.10.1 sera considéré comme non applicable lorsque le formulaire comporte un seul champ de formulaire ou qu'il indique les champs optionnels de manière :</p>
+							<p>The 11.10.1 test will be considered as not non applicable when the form only has one form field or indicates optional fields so that it is:</p>
 							<ul>
-								<li>Visible ;</li>
-								<li>Dans la balise <code>&lt;label&gt;</code> ou dans la <a href="rgaa4-glossary.html#glossaire-63">légende</a> associée au champ.</li>
-								<li>Dans le cas où l'ensemble des champs d'un formulaire sont obligatoires, le test 11.10.1 reste applicable.</li>
+								<li>Visible;</li>
+								<li>In the <label> tag or in the caption linked to the field.</li>
 							</ul>
+							<p>When all fields in a form are mandatory, the 11.10.1 test remains applicable.</p>
 
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -3371,18 +3350,18 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-11"><em>Criterion 11.11 [AA]</em> Dans chaque formulaire, le <a href="rgaa4-glossary.html#glossaire-33">contrôle de saisie</a> est-il accompagné, si nécessaire, de suggestions facilitant la correction des erreurs de saisie ?
+						<h3 id="crit-11-11"><em>Criterion 11.11 [AA]</em> In each form, is input control accompanied, where necessary, by suggestions helping with the correction of input errors?
 						</h3>
 						<ul>
-							<li id="test-11-11-1">Test 11.11.1&nbsp;: Pour chaque erreur de saisie, les types et les formats de données sont-ils suggérés, si nécessaire ?
+							<li id="test-11-11-1">Test 11.11.1&nbsp;: For each input error, are each data types and formats suggested, where necessary?
 							</li>
-							<li id="test-11-11-2">Test 11.11.2&nbsp;: Pour chaque erreur de saisie, des exemples de valeurs attendues sont-ils suggérés, si nécessaire ?
+							<li id="test-11-11-2">Test 11.11.2&nbsp;: For each input error, are examples for expected values suggested, where necessary?
 							</li>
 						</ul>
 						<aside>
 							<h4>Technical notes</h4>
-							<p>Certains types de contrôles en HTML5 proposent des messages d'aide à la saisie automatique : par exemple le type <code>email</code> affiche un message du type « veuillez saisir une adresse e-mail valide » dans le cas où l'adresse e-mail saisie ne correspond pas au format attendu. Ces messages sont personnalisables via l'API Constraint Validation, ce qui permet de personnaliser les messages d'erreur et de valider le critère. L’attribut <code>pattern</code> permet d'effectuer automatiquement des contrôles de format (via des expressions régulières) et affiche un message d'aide personnalisable via l'attribut <code>title</code> : ce dispositif valide également le critère.</p>
-
+							<p>Some types of HTML5 form controls offer automatic help messages on input: for example, input fields of type email display a message like "Please enter a valid email address" if the entered email address does not match the expected format. These messages are customizable via the API Constraint Validation, which allows to customize error messages and to validate the criterion. The pattern attribute allows to automatically perform format controls (using regular expressions) and displays a help message customizable via the title attribute: this mechanism also validates the criterion.</p>
+							<p>Reference : HTML 5.2 - 4.10.20.3 The constraint validation API.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 3.3.3 Error Suggestion (AA)</p>
@@ -3400,19 +3379,19 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-12"><em>Criterion 11.12 [AA]</em> Pour chaque formulaire qui modifie ou supprime des données, ou qui transmet des réponses à un test ou à un examen, ou dont la validation a des conséquences financières ou juridiques, la saisie des données vérifie-t-elle une de ces conditions ?</h3>
+						<h3 id="crit-11-12"><em>Criterion 11.12 [AA]</em> For each form modifying or deleting data, or transmitting answers to a test or an exam, or which validation has financial or legal consequences, does input control verify one of the following conditions?</h3>
 						<ul>
-							<li id="test-11-12-1">Test 11.12.1&nbsp;: Pour chaque formulaire qui modifie ou supprime des données, ou qui transmet des réponses à un test ou un examen, ou dont la validation a des conséquences financières ou juridiques, la saisie des données vérifie-t-elle une de ces conditions ?
+							<li id="test-11-12-1">Test 11.12.1&nbsp;: For each form, do the input of financial, legal or personal data meet one of the following conditions? 
 								<ul>
-									<li>L'utilisateur peut modifier ou annuler les données et les actions effectuées sur ces données après la validation du formulaire.</li>
-									<li>L'utilisateur peut vérifier et corriger les données avant la validation d'un formulaire en plusieurs étapes.</li>
-									<li>Un mécanisme de confirmation explicite, via une case à cocher (balise <code>&lt;input&gt;</code> de type <code>checkbox</code> ou balise ayant un attribut WAI-ARIA <code>role="checkbox"</code>) ou une étape supplémentaire, est présent.</li>
+									<li>The user can change or reset the data, and cancel actions made on these data after they have been entered.</li>
+									<li>The user can check and modify data before form submission.</li>
+									<li>An explicit confirmation mechanism, via a form field (input tag, of type checkbox) or an additional step, is available.</li>
 								</ul>
 							</li>
-							<li id="test-11-12-2">Test 11.12.2&nbsp;: Chaque formulaire dont la validation modifie ou supprime des données à caractère financier, juridique ou personnel vérifie-t-il une de ces conditions ?
+							<li id="test-11-12-2">Test 11.12.2&nbsp;: For each form, does the deletion of financial, legal or personal data meet one of the following conditions? 
 								<ul>
-									<li>Un mécanisme permet de récupérer les données supprimées ou modifiées par l'utilisateur.</li>
-									<li>Un mécanisme de demande de confirmation explicite de la suppression ou de la modification, via un champ de formulaire ou une étape supplémentaire, est proposé.</li>
+									<li>The user can recover data that have been deleted or modified, via a provided mechanism. </li>
+									<li>An explicit mechanism confirming deletion or modification, via a form field or an additional step, is available.</li>
 								</ul>
 							</li>
 						</ul>
@@ -3434,21 +3413,20 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-11-13"><em>Criterion 11.13 [AA]</em> La finalité d'un champ de saisie peut-elle être déduite pour faciliter le remplissage automatique des champs avec les données de l'utilisateur ?</h3>
+						<h3 id="crit-11-13"><em>Criterion 11.13 [AA]</em> Can the purpose of an input field be deduced to facilitate the automatic input of the fields with the user’s data?</h3>
 						<ul>
-							<li id="test-11-13-1">Test 11.13.1&nbsp;: Chaque champ de formulaire dont l'objet se rapporte à une information concernant l'utilisateur vérifie-t-il ces conditions ?
+							<li id="test-11-13-1">Test 11.13.1&nbsp;: Does each input field which purpose is related to an information about the user meet one of the following conditions? 
 								<ul>
-									<li>Le champ de formulaire possède un attribut <code>autocomplete</code>.</li>
-									<li>L'attribut <code>autocomplete</code> est pourvu d'une valeur présente dans la liste des valeurs possibles pour l'attribut <code>autocomplete</code> associés à un champ de formulaire.</li>
-									<li>La valeur indiquée pour l'attribut <code>autocomplete</code> est pertinente au regard du type d'information attendu.</li>
+									<li>The field has an autocomplete attribute.</li>
+									<li>The autocomplete attribute has a value present in the list of available values for the autocomplete attribute associated to a form field.</li>
+									<li>The value indicated in the autocomplete attribute is relevant with regards to the expected information type.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Technical notes</h4>
-							<p>La liste des valeurs possibles pour l'attribut <code>autocomplete</code> repose sur la liste des valeurs présentes dans la spécifications WCAG2.1 qui reprend elle-même la liste des valeurs de type « <code>field name</code> » de la spécification HTML5.2. Le critère WCAG demande à ce que l'une de ces valeurs soit présente pour qualifier un champ de saisie concernant l'utilisateur.</p>
-							<p>Ce que le critère WCAG laisse implicite, ce sont les différentes règles de construction possibles pour obtenir une valeur (simple ou composée) pour l'attribut <code>autocomplete</code>. C'est cependant l'affaire du développeur de fournir à l'attribut <code>autocomplete</code> une valeur ou un ensemble de valeurs valides au regard des exigences de l'algorithme fourni par la spécification HTML5.2. Ainsi, un attribut <code>autocomplete</code> ne peut contenir qu'une seule valeur de type <code>field name</code>, comme "<code>name</code>" ou "<code>street-address</code>". On peut avoir également un ensemble composé de différentes valeurs comme, par exemple, <code>autocomplete="shipping name"</code> ou <code>autocomplete="section-software shipping street-address"</code> : "<code>section-software</code>" renvoie à une valeur de type <code>scope</code> et "<code>shipping</code>" à une valeur de type <code>hint set</code>, mais toujours une seule valeur de type <code>field name</code>.</p>
-
+							<p>The list of possible values for the autocomplete attribute depends on the list of values available in the WCAG 2.1 specifications, which itself are linked to the list of « field name » type of values of the HTML5.2 specifications. The WCAG Criterion requires for one of those values to be present to qualify an input field that concerns the user.</p>
+							<p>What the WCAG Criterion leaves implicit are the different possible construction rules to obtain a value (simple or multi-value) for the autocomplete attribute. However, it is to the developer’s discretion to provide a value or a set of values valid for the autocomplete attribute in light of the algorithm provided by the HTML5.2 specifications. Thus, an autocomplete attribute can only contain one field name type of value, like "name" or "street-address". There may also be a set consisting of different values like, for example, autocomplete="shipping name" or autocomplete="section-software shipping street-address": "section-software" refers to a scope type of value and "shipping" to a hint set type of value, but always with only one field name type of value.</p>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1&nbsp;: 1.3.5 Identify Input Purpose (AA)</p>

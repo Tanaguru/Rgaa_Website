@@ -105,6 +105,7 @@ ErrorDocument 403 /403.html
 	Redirect 301 /rgaa3/mentions.html http://rgaa.tanaguru.com/mentions.html
 
 	Redirect 301 /base.html http://rgaa.tanaguru.com/rgaa3-base.html
+	Redirect 301 /base-de-reference.html http://rgaa.tanaguru.com/rgaa3-base.html
 	Redirect 301 /cas-particuliers.html http://rgaa.tanaguru.com/rgaa3-cas-particuliers.html
 	Redirect 301 /criteres.html http://rgaa.tanaguru.com/rgaa3-criteres.html
 	Redirect 301 /glossaire.html http://rgaa.tanaguru.com/rgaa3-glossaire.html
@@ -122,10 +123,15 @@ ErrorDocument 403 /403.html
 	Redirect 301 /en/rgaa3/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
 
 	Redirect 301 /en/base.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
+	Redirect 301 /en/baseline.html http://rgaa.tanaguru.com/en/rgaa3-baseline.html
 	Redirect 301 /en/cas-particuliers.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
 	Redirect 301 /en/criteres.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
+	Redirect 301 /en/criteria.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
 	Redirect 301 /en/glossaire.html http://rgaa.tanaguru.com/en/rgaa3-glossary.html
 	Redirect 301 /en/notes-techniques.html http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html
 	Redirect 301 /en/references.html http://rgaa.tanaguru.com/en/rgaa3-references.html
 	Redirect 301 /en/mentions.html http://rgaa.tanaguru.com/en/legal-notice.html
+
+	Redirect 301 /rgaa3-particular-cases.html http://rgaa.tanaguru.com/en/rgaa3-particular-cases.html
+	Redirect 301 /RGAA3.0_Criteria_English_version_v1.html http://rgaa.tanaguru.com/en/rgaa3-criteria.html
 </IfModule>

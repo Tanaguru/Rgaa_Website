@@ -11,6 +11,11 @@ DefaultLanguage fr-FR
 	Header set X-Robots-Tag "noindex"
 </Files>
 
+# Prevent sitemap.xml file indexing
+<Files ~ "sitemap\.xml$">
+	Header set X-Robots-Tag "noindex"
+</Files>
+
 # Add file types
 AddType x-font/otf .otf
 AddType x-font/ttf .ttf

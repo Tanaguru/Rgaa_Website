@@ -12,6 +12,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
         <link rel="alternate" href="http://rgaa.tanaguru.com/rgaa4-criteres.html" hreflang="fr">
 		<link rel="alternate" href="http://rgaa.tanaguru.com/en/rgaa4-criteria.html" hreflang="en">
 		<meta name="google-site-verification" content="zQBPqJNd_ExoycP0KGhFEqON9x6qMVEsGFw6sozLobE">
+		<meta name="robots" content="noindex">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="../favicon.ico">
@@ -2624,15 +2625,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</div>
 						</aside>
 					</section>
-					<section data-level="A">
-						<h3 id="crit-10-5"><em>Criterion 10.5 [A]</em> On each web page, are CSS declarations of background and foreground colours for elements and fonts used appropriately?</h3>
+					<section data-level="AA">
+						<h3 id="crit-10-5"><em>Criterion 10.5 [AA]</em> On each web page, are CSS declarations of background and foreground colours for elements and fonts used appropriately?</h3>
 						<ul>
-							<li id="test-10-5-1">Test 10.5.1: On each web page, is each CSS declaration of a font colour (colour), for an element that may contain text, accompanied by a background colour (background, background-colour) declaration, at least, inherited from a parent element?
-							</li>
-							<li id="test-10-5-2">Test 10.5.2: On each web page, is each CSS declaration of a background colour (background, background-colour), for an element that may contain text, accompanied by a font colour (colour) declaration, at least, inherited from a parent element?
-							</li>
-							<li id="test-10-5-3">Test 10.5.3: On each web page, is each image used to provide a background colour for an element that may contain text, via CSS (background, background-image), accompanied by a background colour declaration (background, background-colour), at least, inherited from a parent element?
-							</li>
+							<li id="test-10-5-1">Test 10.5.1: On each web page, is each CSS declaration of a font colour (<code>color</code>) for an element that may contain text, accompanied by a background colour (<code>background</code>, <code>background-color</code>) declaration, at least, inherited from a parent element?</li>
+							<li id="test-10-5-2">Test 10.5.2: On each web page, is each CSS declaration of a background colour (<code>background</code>, <code>background-color</code>), for an element that may contain text, accompanied by a font colour (<code>color</code>) declaration, at least, inherited from a parent element?</li>
+							<li id="test-10-5-3">Test 10.5.3: On each web page, is each image used to provide a background colour for an element that may contain text, via CSS (<code>background</code>, <code>background-image</code>), accompanied by a background colour declaration (<code>background</code>, <code>background-color</code>), at least, inherited from a parent element?</li>
 						</ul>
 						<aside>
 							<div class="criterion-mapping">
@@ -2684,7 +2682,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-10-7-1">Test 10.7.1: For each element receiving focus, does the focus meet one of the following conditions?
 								<ul>
-									<li>The browser default visual cue must not be degraded or removed. </li>
+									<li>The browser default visual cue must not be removed or degraded.</li>
 									<li>A focus style defined by the author is visible.</li>
 								</ul>
 							</li>
@@ -2718,10 +2716,11 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</ul>
 						<aside>
 							<h4>Technical notes</h4>
-							<p>WAI-ARIA provides an aria-hidden attribute (true or false) that inhibits the rendering of a content to assistive technologies, without affecting its visibility for user agents: a content with aria-hidden="true" will not be spoken out but remains visible.</p>
-							<p>Unless the content controlled by aria-hidden is not intended to be rendered by assistive technologies, the value of the aria-hidden attribute must be consistent with the displayed or hidden status of the on-screen content.</p>
-							<p>The HTML5 specification describes a hidden attribute that can make unavailable (when the hidden attribute is present) content in the generated DOM (similar to type="hidden" on a form control).</p>
-							<p>There can be situations where a content controlled with hidden or aria-hidden is momentarily in a state inconsistent with the content’s displayed or hidden status, for example when an item is meant to be available but visually displayed only upon further action. In this case, it is the final state of the content that should be considered.</p>
+							<p>WAI-ARIA provides an <code>aria-hidden</code> attribute (<code>true</code> or <code>false</code>) that inhibits the rendering of a content to assistive technologies, without affecting its visibility for user agents: a content with <code>aria-hidden="true"</code> will not be spoken out but remains visible.</p>
+							<p>Unless the content controlled by <code>aria-hidden</code> is not intended to be rendered by assistive technologies, the value of the <code>aria-hidden</code> attribute must be consistent with the displayed or hidden status of the on-screen content.</p>
+							<p>The HTML5 specification describes a <code>hidden</code> attribute that can make unavailable (when the <code>hidden</code> attribute is present) content in the generated DOM (similar to <code>type="hidden"</code> on a form control).</p>
+							<p>There can be situations where a content controlled with <code>hidden</code> or <code>aria-hidden</code> is momentarily in a state inconsistent with the content’s displayed or hidden status, for example when an item is meant to be available but visually displayed only upon further action. In this case, it is the final state of the content that should be considered.</p>
+
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1: 1.3.2 Meaningful Sequence(A), 4.1.2 Name, Role, Value(A)</p>
@@ -2741,14 +2740,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-10-9"><em>Criterion 10.9 [A]</em> On each web page, information must not be conveyed through shape, size or position alone. Is this rule followed?</h3>
 						<ul>
-							<li id="test-10-9-1">Test 10.9.1: On each web page, for each text or set of text, information must not be conveyed by shape, size or position alone. Has this rule been followed?
-							</li>
-							<li id="test-10-9-2">Test 10.9.2: On each web page, for each image or set of images, information must not be conveyed by shape, size or position alone. Has this rule been followed?
-							</li>
-							<li id="test-10-9-3">Test 10.9.3: On each web page, for each time-based media, information must not be conveyed by shape, size or position alone. Has this rule been followed?
-							</li>
-							<li id="test-10-9-4">Test 10.9.4: On each web page, for each non time-based media, information must not be conveyed by shape, size or position alone. Has this rule been followed?
-							</li>
+							<li id="test-10-9-1">Test 10.9.1: On each web page, for each text or set of text, information must not be conveyed by shape, size or position alone. Has this rule been followed?</li>
+							<li id="test-10-9-2">Test 10.9.2: On each web page, for each image or set of images, information must not be conveyed by shape, size or position alone. Has this rule been followed?</li>
+							<li id="test-10-9-3">Test 10.9.3: On each web page, for each time-based media, information must not be conveyed by shape, size or position alone. Has this rule been followed?</li>
+							<li id="test-10-9-4">Test 10.9.4: On each web page, for each non time-based media, information must not be conveyed by shape, size or position alone. Has this rule been followed?</li>
 						</ul>
 						<aside>
 							<div class="criterion-mapping">
@@ -2770,14 +2765,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-10-10"><em>Criterion 10.10 [A]</em> On each web page, information must not be conveyed through shape, size or position alone. Is this rule implemented in a relevant way?</h3>
 						<ul>
-							<li id="test-10-10-1">Test 10.10.1: On each web page, for each text or set of text, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
-							</li>
-							<li id="test-10-10-2">Test 10.10.2: On each web page, for each image or set of images, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
-							</li>
-							<li id="test-10-10-3">Test 10.10.3: On each web page, for each time-based media, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
-							</li>
-							<li id="test-10-10-4">Test 10.10.4: On each web page, for each non time-based media, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?
-							</li>
+							<li id="test-10-10-1">Test 10.10.1: On each web page, for each text or set of text, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?</li>
+							<li id="test-10-10-2">Test 10.10.2: On each web page, for each image or set of images, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?</li>
+							<li id="test-10-10-3">Test 10.10.3: On each web page, for each time-based media, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?</li>
+							<li id="test-10-10-4">Test 10.10.4: On each web page, for each non time-based media, information must not be conveyed by shape, size or position alone. Has this rule been implemented in a relevant way?</li>
 						</ul>
 						<aside>
 							<div class="criterion-mapping">
@@ -2799,17 +2790,15 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="AA">
 						<h3 id="crit-10-11"><em>Criterion 10.11 [AA]</em> For each web page, can contents be presented without requiring for both a vertical and horizontal scroll for windows with a height of 256px or with a width of 320px (except for particular cases)?</h3>
 						<ul>
-							<li id="test-10-11-1">Test 10.11.1: For each web page, when the content, which reading direction is horizontal, is put in a window reduced to a width of 320px, all information and functionalities are available without any horizontal scroll bar (expect for particular cases)?
-							</li>
-							<li id="test-10-11-2">Test 10.11.2: For each web page, when the content, which reading direction is vertical, is put in a window reduced to a width of 320px, all information and functionalities are available without any vertical scroll bar (expect for particular cases)?
-							</li>
+							<li id="test-10-11-1">Test 10.11.1: For each web page, when the content, which reading direction is horizontal, is put in a window reduced to a width of 320px, all information and functionalities are available without any horizontal scroll bar (expect for particular cases)?</li>
+							<li id="test-10-11-2">Test 10.11.2: For each web page, when the content, which reading direction is vertical, is put in a window reduced to a height of 256px, all information and functionalities are available without any vertical scroll bar (expect for particular cases)?</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
 							<p>The contents which layout requires two dimensions to be understood or used are exceptions to this criterion, such as:</p>
 							<ul>
 								<li>Images, graphics or videos.</li>
-								<li>Games (platform games for example).</li>
+								<li>Games (platform games, for example).</li>
 								<li>Presentations (slideshow, for example).</li>
 								<li>Data tables (complex).</li>
 								<li>Interfaces where it is necessary to have a horizontal scroll bar during the interface manipulation.</li>
@@ -2837,10 +2826,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-10-12-1">Test 10.12.1: For each web page, does each block of text meet one of the following conditions (expect for particular cases)?
 								<ul>
-									<li>The line spacing (line-height) is, at least, 1.5 times the text size.</li>
-									<li>The spacing between two paragraphs is, at least, 2 times the text size.</li>
-									<li>The letters spacing (letter-spacing) is, at least, 0.12 times the text size.</li>
-									<li>The words spacing (word-spacing) is, at least, 0.16 times the text size.</li>
+									<li>The line spacing (<code>line-height</code>) is, at least, 1.5 times the text size.</li>
+									<li>The spacing between two paragraphs (<code>&lt;p&gt;</code> tag) is, at least, 2 times the text size.</li>
+									<li>The letters spacing (<code>letter-spacing</code>) is, at least, 0.12 times the text size.</li>
+									<li>The words spacing (<code>word-spacing</code>) is, at least, 0.16 times the text size.</li>
 								</ul>
 							</li>
 						</ul>
@@ -2850,7 +2839,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<ul>
 								<li>Subtitles embedded in a video.</li>
 								<li>Images of text.</li>
-								<li>Text inside a canvas tag.</li>
+								<li>Text inside a <code>&lt;canvas&gt;</code> tag.</li>
 							</ul>
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
@@ -2869,24 +2858,23 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						</aside>
 					</section>
 					<section data-level="AA">
-						<h3 id="crit-10-13"><em>Criterion 10.13 [AA]</em> On each web page, are additional contents appearing upon focus or hover over an interface component controllable by the user?</h3>
+						<h3 id="crit-10-13"><em>Criterion 10.13 [AA]</em> On each web page, are additional contents appearing upon focus or hover over an interface component controllable by the user (except for particular cases)?</h3>
 						<ul>
-							<li id="test-10-13-1">Test 10.13.1: Each additional content becoming visible upon focusing or hovering over an interface content can be hidden by an user's action without moving the focus or the mouse cursor (except for particular cases)?
-							</li>
-							<li id="test-10-13-2">Test 10.13.2: Each additional content appearing upon hovering over an interface content can be hovered with the mouse cursor without disappearing (except for particular cases)?
-							</li>
+							<li id="test-10-13-1">Test 10.13.1: Each additional content becoming visible upon focusing or hovering over an interface component can be hidden by an user's action without moving the focus or the mouse cursor (except for particular cases)?</li>
+							<li id="test-10-13-2">Test 10.13.2: Each additional content appearing upon hovering over an interface component can be hovered with the mouse cursor without disappearing (except for particular cases)?</li>
 							<li id="test-10-13-3">Test 10.13.3: Each additional content becoming visible upon focusing or hovering over an interface component meet one of the following conditions (except for particular cases)?
 								<ul>
-									<li>The additional content is still visible until the user moves the mouse cursor out or moves the focus out of the additional content and of the interface component that triggered its appearance. </li>
-									<li>The additional content is still visible until the user makes an action hiding this content without moving the focus or the mouse cursor of the interface component that triggered its appearance. </li>
+									<li>The additional content is still visible until the user moves the mouse cursor out or moves the focus out of the additional content and of the interface component that triggered its appearance.</li>
+									<li>The additional content is still visible until the user makes an action hiding this content without moving the focus or the mouse cursor of the interface component that triggered its appearance.</li>
 									<li>The additional content is still visible until it is no longer valid.</li>
 								</ul>
 							</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
-							<p>When additional content is controlled by the user agent (for example, a title attribute or a native form validation) or corresponds to a modal window compliant with the WAI-ARIA dialog design pattern, the 10.13 Criterion 10.13 is not applicable.</p>
+							<p>When additional content is controlled by the user agent (for example, a <code>title</code> attribute or a native form validation) or corresponds to a modal window compliant with the WAI-ARIA <code>dialog</code> design pattern, the 10.13 Criterion is not applicable.</p>
 							<p>When the additional content does not hide or replace any content conveying information, the 10.13.1 test is not applicable.</p>
+
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<p>Critère(s) de succès WCAG&nbsp;2.1: 1.4.13 Content on Hover or Focus(AA)</p>
@@ -2903,21 +2891,21 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</div>
 						</aside>
 					</section>
-					<section data-level="AA">
-						<h3 id="crit-10-14"><em>Criterion 10.14 [AA]</em> On each web page, can additional contents appearing only via CSS style sheets rendered visible using keyboard or any pointing device?</h3>
+					<section data-level="A">
+						<h3 id="crit-10-14"><em>Criterion 10.14 [A]</em> On each web page, can additional contents appearing only via CSS style sheets rendered visible using keyboard and any pointing device?</h3>
 						<ul>
 							<li id="test-10-14-1">Test 10.14.1: On each web page, does the additional contents appearing upon hovering over an interface component via the CSS styles meet one of the following conditions, where necessary?
 								<ul>
-									<li>Additional contents also appear upon activation of the component via keyboard and pointing device.</li>
+									<li>Additional contents also appear upon activation of the component via keyboard and any pointing device.</li>
 									<li>Additional contents also appear upon focus on the component.</li>
-									<li>Additional contents also appear upon activation of the component or upon focus on another component.</li>
+									<li>Additional contents also appear upon activation of another component or upon focus on another component.</li>
 								</ul>
 							</li>
-							<li id="test-10-14-2">Test 10.14.2: On each web page, does the additional contents appear upon focus on an interface component via the CSS styles meet one of the following conditions, where necessary?
+							<li id="test-10-14-2">Test 10.14.2: On each web page, does the additional contents appearing upon focus on an interface component via the CSS styles meet one of the following conditions, where necessary?
 								<ul>
 									<li>Additional contents appear also upon activation of a component via keyboard and any pointing device.</li>
 									<li>Additional contents appear also upon hovering over the component. </li>
-									<li>Additional contents appear also upon activation of a component or upon hovering over another component.</li>
+									<li>Additional contents appear also upon activation of another component or upon hovering over another component.</li>
 								</ul>
 							</li>
 						</ul>
@@ -2976,22 +2964,22 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-11-1-1">Test 11.1.1: Does each form field meet one of the following conditions?
 								<ul>
-									<li>The form field has a WAI-ARIA aria-labelledby attribute that references an identified chunk of text.</li>
-									<li>The form field has a WAI-ARIA aria-label attribute.</li>
-									<li>A label tag having for attribute is associated with the form field.									</li>
-									<li>The form field has a title attribute.</li>
-									<li>A button adjacent to the form field provides it with a visible label and a WAI-ARIA aria-label, aria-labelledby or title attribute provides it with an accessible name.</li>
+									<li>The form field has a WAI-ARIA <code>aria-labelledby</code> attribute that references an identified chunk of text.</li>
+									<li>The form field has a WAI-ARIA <code>aria-label</code> attribute.</li>
+									<li>A <code>&lt;label&gt;</code> tag having <code>for</code> attribute is associated with the form field.</li>
+									<li>The form field has a <code>title</code> attribute.</li>
+									<li>A button adjacent to the form field provides it with a visible label and a WAI-ARIA <code>aria-label</code>, <code>aria-labelledby</code> attribute or <code>title</code> attribute provides it with an accessible name.</li>
 								</ul>
 							</li>
-							<li id="test-11-1-2">Test 11.2.1: Does each form field associated with a label tag having a for attribute, meet the following conditions?
+							<li id="test-11-1-2">Test 11.1.2: Does each form field associated with a <code>&lt;label&gt;</code> tag having a <code>for</code> attribute, meet the following conditions?
 								<ul>
-									<li>The form field has an id attribute.</li>
-									<li>The value of the for attribute matches the value of the corresponding form field id attribute.</li>
+									<li>The form field has an <code>id</code> attribute.</li>
+									<li>The value of the <code>for</code> attribute matches the value of the corresponding form field <code>id</code> attribute.</li>
 								</ul>
 							</li>
-							<li id="test-11-1-3">Test 10.1.1: Does each form field associated with a label, which content is not visible or adjacent (hidden, aria-label, aria-labelledby), meet one of the following conditions?
+							<li id="test-11-1-3">Test 11.1.3: Does each form field associated with a label, which content is not visible or adjacent (hidden, <code>aria-label</code>, <code>aria-labelledby</code>), meet one of the following conditions?
 								<ul>
-									<li>The form field has a title attribute which content allowing to understand describing the nature of the expected input.</li>
+									<li>The form field has a <code>title</code> attribute which content allowing to understand describing the nature of the expected input.</li>
 									<li>The form field has a piece of text becoming visible upon focus allowing to understand describing the nature of the expected input.</li>
 									<li>The form field has a visible piece of text adjacent to the input allowing to understand describing the nature of the expected input.</li>
 								</ul>
@@ -3017,24 +3005,19 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<section data-level="A">
 						<h3 id="crit-11-2"><em>Criterion 11.2 [A]</em> Is each label associated to a form field relevant (except for particular cases)?</h3>
 						<ul>
-							<li id="test-11-2-1">Test 11.2.1: Does each label tag describe the exact function of the associated form field?
-							</li>
-							<li id="test-11-2-2">Test 11.2.2: Does each label tag describe the exact function of the associated form field?
-							</li>
-							<li id="test-11-2-3">Test 11.2.3: Does each title attribute describe the exact function of the associated form field?
-							</li>
-							<li id="test-11-2-4">Test 11.2.4: Does each label implemented via the WAI-ARIA aria-label attribute describe the exact function of the associated form field?
-							</li>
+							<li id="test-11-2-1">Test 11.2.1: Does each <code>&lt;label&gt;</code> tag describe the exact function of the associated form field?</li>
+							<li id="test-11-2-2">Test 11.2.2: Does each <code>title</code> attribute describe the exact function of the associated form field?</li>
+							<li id="test-11-2-3">Test 11.2.3: Does each label implemented via the WAI-ARIA <code>aria-label</code> attribute describe the exact function of the associated form field?</li>
+							<li id="test-11-2-4">Test 11.2.4: Does each label implemented via the WAI-ARIA <code>aria-label</code> attribute describe the exact function of the associated form field?</li>
 							<li id="test-11-2-5">Test 11.2.5: Does each form field associated with a visible text meet the following conditions (except for particular cases)?
 								<ul>
-									<li>If present, the content of the form field WAI-ARIA aria-label attribute matches the visible text, at least.</li>
-									<li>If present, the content of the form field WAI-ARIA aria-labelledby attribute matches the visible text, at least. </li>
-									<li>If present, the content of the form field title attribute matches the visible text, at least.</li>
-									<li>If present, the content of the form field label attribute matches the visible text, at least.</li>
+									<li>If present, the content of the form field WAI-ARIA <code>aria-label</code> attribute matches the visible text, at least.</li>
+									<li>If present, the content of the form field WAI-ARIA <code>aria-labelledby</code> attribute matches the visible text, at least.</li>
+									<li>If present, the content of the form field <code>title</code> attribute matches the visible text, at least.</li>
+									<li>If present, the content of the form field <code>&lt;label&gt;</code> attribute matches the visible text, at least.</li>
 								</ul>
 							</li>
-							<li id="test-11-2-6">Test 11.2.6: Does each button adjacent to a form field providing a visible label allow to know the exact function of its associated form field.
-							</li>
+							<li id="test-11-2-6">Test 11.2.6: Does each button adjacent to a form field providing a visible label allow to know the exact function of its associated form field?</li>
 						</ul>
 						<aside>
 							<h4>Particular cases</h4>
@@ -3328,7 +3311,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<p>The 11.10.1 test will be considered as not non applicable when the form only has one form field or indicates optional fields so that it is:</p>
 							<ul>
 								<li>Visible;</li>
-								<li>In the <label> tag or in the caption linked to the field.</li>
+								<li>In the <code>&lt;label&gt;</code> tag or in the caption linked to the field.</li>
 							</ul>
 							<p>When all fields in a form are mandatory, the 11.10.1 test remains applicable.</p>
 

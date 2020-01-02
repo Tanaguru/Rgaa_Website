@@ -85,8 +85,4 @@
     <loc>http://rgaa.tanaguru.com/en/rgaa3-technical-notes.html</loc>
     <priority>0.5</priority>
   </url>
-  <url>
-    <loc>http://rgaa.tanaguru.com/en/rgaa4-criteria.html</loc>
-    <priority>0.8</priority>
-  </url>
 </urlset>

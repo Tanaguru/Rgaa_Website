@@ -131,7 +131,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<ul>
 						<li>Un composant d’interface (lien, bouton, …) est accessible au clavier et par tout dispositif de pointage lorsque l’utilisateur peut prendre, indifféremment, le focus par un pointeur ou la touche tabulation.</li>
 						<li>Un composant d’interface (lien, bouton, …) est activable au clavier et par tout dispositif de pointage lorsque l’utilisateur peut enclencher, indifféremment, l’action prévue par le composant d’interface par une pression du pointeur ou la touche entrée du clavier.</li>
-						<li><strong>Attention&nbsp;:</strong> pour certains composants d’interface comme les <span lang="en">sliders</span> (bouton coulissant ou rotatif…), il n’est pas possible de contrôler le composant par la seule touche d’entrée. Dans ces situations, d’autres touches (comme les touches de direction) peuvent être utilisées. En particulier pour les éléments ayant un rôle WAI-ARIA correspondant à un motif de conception il est recommandé de considérer le document <a href="http://www.w3.org/TR/wai-aria-practices/" hreflang="en" rel="external" class="external"><span lang="en">WAI-ARIA 1.1 Authoring Practices</span> lors de leur implémentation</a>.</li>
+						<li><strong>Attention&nbsp;:</strong> pour certains composants d’interface comme les <span lang="en">sliders</span> (bouton coulissant ou rotatif…), il n’est pas possible de contrôler le composant par la seule touche d’entrée. Dans ces situations, d’autres touches (comme les touches de direction) peuvent être utilisées. En particulier pour les éléments ayant un rôle WAI-ARIA correspondant à un <a href="#glossaire-83">motif de conception</a> il est recommandé de considérer le document <a href="http://www.w3.org/TR/wai-aria-practices/" hreflang="en" rel="external" class="external"><span lang="en">WAI-ARIA 1.1 Authoring Practices</span> lors de leur implémentation</a>.</li>
 					</ul>
 					<p>Dans le référentiel, l’expression «&nbsp;contrôlable par le clavier et tout dispositif de pointage&nbsp;» se rapporte également à la présente définition.</p>
 					<p><strong>Note importante&nbsp;:</strong> le recours à certaines technologies peut rendre la gestion du focus trop complexe ou trop instable pour ne reposer que sur la tabulation, les touches de direction et la touche entrée. Dans ce cas, la mise à disposition de raccourcis clavier peut être la seule solution pour rendre le composant utilisable.</p>
@@ -574,8 +574,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p><strong>Note&nbsp;:</strong> la page d’accueil d’un site web peut constituer, à elle seule, un «&nbsp;ensemble de pages&nbsp;» du fait de son unicité.</p>
 
 					<h3 id="glossaire-38">En-tête de colonne ou de ligne</h3>
-					<p>Contenu d’une cellule dans un tableau de données (la première cellule d’une colonne ou d’une ligne, généralement) qui sert d’intitulé pour la totalité ou une partie des cellules de la colonne ou de la ligne. Une colonne ou une ligne peut contenir plusieurs en-têtes (en-tête intermédiaire). Lorsque les en-têtes s’appliquent à l’ensemble d’une ligne ou d’une colonne ils peuvent être structurés avec une balise <code>&lt;th&gt;</code> ou une balise pourvue d’un attribut WAI-ARIA <code>role="rowheader"</code> ou <code>"columnheader"</code>. Dans le cas contraire seul une balise <code>&lt;th&gt;</code> peut être utilisée.</p>
-					<p><strong>Note&nbsp;:</strong> seule la balise <code>&lt;th&gt;</code> étant totalement supportée par l’ensemble des technologies d’assistance, il est fortement recommandé de privilégier cette solution lors de la mise en oeuvre afin d’éviter de nombreuses vérifications dans les différentes combinaisons prévues dans l’environnement de test (ou «&nbsp;base de référence&nbsp;»).</p>
+					<p>Contenu d’une cellule dans un tableau de données (la première cellule d’une colonne ou d’une ligne, généralement) qui sert d’intitulé pour la totalité ou une partie des cellules de la colonne ou de la ligne. Une colonne ou une ligne peut contenir plusieurs en-têtes (en-tête intermédiaire). Lorsque les en-têtes s’appliquent à l’ensemble d’une ligne ou d’une colonne ils peuvent être structurés avec une balise <code>&lt;th&gt;</code> ou une balise pourvue d’un attribut WAI-ARIA <code>role="rowheader"</code> ou <code>"columnheader"</code>. Dans le cas contraire, seule une balise <code>&lt;th&gt;</code> peut être utilisée.</p>
+					<p><strong>Note&nbsp;:</strong> seule la balise <code>&lt;th&gt;</code> étant totalement supportée par l’ensemble des technologies d’assistance, il est fortement recommandé de privilégier cette solution lors de la mise en œuvre afin d’éviter de nombreuses vérifications dans les différentes combinaisons prévues dans l’environnement de test (ou «&nbsp;base de référence&nbsp;»).</p>
 
 					<h3 id="glossaire-39">Environnement maîtrisé</h3>
 					<p>Tout environnement dans lequel l’accès à l’information, les technologies, les conditions d’utilisation et le profil des utilisateurs peuvent être connus et maîtrisés. Les principaux éléments dont la maîtrise est essentielle sont&nbsp;:</p>
@@ -605,8 +605,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</ul>
 					<p>Cet ordre doit être utilisé pour l’évaluation de la pertinence de l’étiquette (<a href="/rgaa4-criteres.html#crit-11-2">critère 11.2</a>). Par exemple, même dans le cas de la présence d’un <code>&lt;label&gt;</code>, c’est le <a href="#glossaire-87">passage de texte</a> référencé par <code>aria-labelledby</code> qui doit être pris en compte.</p>
 					<p>Référence&nbsp;: <a href="http://www.w3.org/TR/html-aam-1.0/#accessible-name-and-description-calculation" lang="en" hreflang="en" rel="external" class="external">Accessible name and description calculation</a>.</p>
-					<p>Note importante au sujet de l’utilisation de <code>placeholder</code>&nbsp;: lorsque l’attribut <code>placeholder</code> est présent, il est susceptible d’être restitué à la place de l’attribut <code>title</code>. Par conséquent, lorsque ces deux attributs <code>title</code> et <code>placeholder</code> sont présents, ils doivent être identiques.</p>
-					<p>Note au sujet des étiquettes liées par <code>aria-labelledby</code>&nbsp;: Il s’agit d’un ou de plusieurs passages de texte identifiés par des <code>id</code> et liés par <code>aria-labelledby</code> sur le modèle suivant&nbsp;: <code>aria-labelledby="ID1 ID2 ID3…"</code>. Pour assurer une compatibilité maximum avec les agents utilisateurs, notamment Internet Explorer 11, il est recommandé d’implémenter un <code>tabindex="-1"</code> sur les passages de textes qui ne sont pas des éléments interactifs (bouton, liens, éléments de formulaires, etc.).</p>
+					<p><strong>Note importante au sujet de l’utilisation de <code>placeholder</code>&nbsp;:</strong> lorsque l’attribut <code>placeholder</code> est présent, il est susceptible d’être restitué à la place de l’attribut <code>title</code>. Par conséquent, lorsque ces deux attributs <code>title</code> et <code>placeholder</code> sont présents, ils doivent être identiques.</p>
+					<p><strong>Note au sujet des étiquettes liées par <code>aria-labelledby</code>&nbsp;:</strong> Il s’agit d’un ou de plusieurs passages de texte identifiés par des <code>id</code> et liés par <code>aria-labelledby</code> sur le modèle suivant&nbsp;: <code>aria-labelledby="ID1 ID2 ID3…"</code>. Pour assurer une compatibilité maximum avec les agents utilisateurs, notamment Internet Explorer 11, il est recommandé d’implémenter un <code>tabindex="-1"</code> sur les passages de textes qui ne sont pas des éléments interactifs (bouton, liens, éléments de formulaires, etc.).</p>
 					<p><strong>Note&nbsp;:</strong> l’attribut <code>aria-label</code> ne peut pas être utilisé pour indiquer le caractère obligatoire d’un champ.</p>
 
 					<h3 id="glossaire-41">Étiquettes cohérentes</h3>
@@ -824,12 +824,12 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Les changements d’états sont également mis à disposition par WAI-ARIA. Par exemple <code>aria-expanded</code> est un état permettant de signaler aux APIs que le composant est «&nbsp;ouvert&nbsp;» ou «&nbsp;fermé&nbsp;». À noter qu’un état peut également être transmis via le nom, lorsque l’intitulé est changé dynamiquement pour correspondre à l’état de la zone contrôlée notamment.</p>
 					<p>Ces paramètres ne sont pas obligatoires mais peuvent être requis s’ils sont indispensables pour rendre le composant accessible. C’est à l’auditeur de considérer les cas où ces paramètres sont indispensables en fonction du contexte lié à l’utilisation du composant.</p>
 					<p>L’auditeur doit également vérifier que, lorsqu’ils sont présents, ces paramètres sont correctement utilisés.</p>
-					<p>Pour ce faire (s’il juge cela pertinent compte tenu du contexte d’implémentation des composants et des choix ergonomiques mis en œuvre) il peut s’appuyer sur les recommandations d’utilisation de WAI-ARIA pour les composants ayant des attributs WAI-ARIA correspondant à un motif de conception tel que décrit dans le document <a href="http://www.w3.org/TR/wai-aria-practices/" lang="en" hreflang="en" rel="external" class="external">WAI-ARIA 1.1 Authoring Practices</a>.</p>
+					<p>Pour ce faire (s’il juge cela pertinent compte tenu du contexte d’implémentation des composants et des choix ergonomiques mis en œuvre) il peut s’appuyer sur les recommandations d’utilisation de WAI-ARIA pour les composants ayant des attributs WAI-ARIA correspondant à un <a href="#glossaire-83">motif de conception</a> tel que décrit dans le document <a href="http://www.w3.org/TR/wai-aria-practices/" lang="en" hreflang="en" rel="external" class="external">WAI-ARIA 1.1 Authoring Practices</a>.</p>
 					<p><strong>Note&nbsp;:</strong> les rôles, propriétés et états WAI-ARIA s’implémentent via des attributs, par exemple <code>role="banner"</code>, <code>aria-hidden="true"</code>.</p>
 
 					<h3 id="glossaire-63">Légende</h3>
 					<p>HTML propose un dispositif permettant de titrer les groupes de champs de même nature par l’intermédiaire des éléments <code>&lt;fieldset&gt;</code> et <code>&lt;legend&gt;</code>.</p>
-					<p>Il est également possible de créer des regroupements avec le rôle WAI-ARIA <code>group</code> et un <a href="#glossaire-87">passage de texte</a>, faisant office de légende, liée par l’attribut WAI-ARIA <code>aria-labelledby</code> ou implémentée par l’intermédiaire d’un attribut WAI-ARIA <code>aria-label</code>.</p>
+					<p>Il est également possible de créer des regroupements avec le rôle WAI-ARIA <code>group</code> et un <a href="#glossaire-87">passage de texte</a>, faisant office de légende, lié par l’attribut WAI-ARIA <code>aria-labelledby</code> ou implémenté par l’intermédiaire d’un attribut WAI-ARIA <code>aria-label</code>.</p>
 					<p><strong>Note 1&nbsp;:</strong> Les regroupements de champs peuvent utiliser d’autres méthodes qui associent l’information du regroupement directement dans l’<a href="#glossaire-40">étiquette</a> du champ. Par exemple, par l’intermédiaire d’un attribut <code>title</code>, d’un attribut WAI-ARIA <code>aria-label</code>, d’une liaison <code>aria-labelledby</code> faisant office d’<a href="#glossaire-40">étiquette</a> ou encore par l’attribut WAI-ARIA <code>aria-describedby</code> associant un texte complémentaire. Dans ce cas, le regroupement de champs devient inutile puisque les labels sont suffisamment pertinents.</p>
 					<p><strong>Note 2&nbsp;:</strong> Lorsque le formulaire est constitué d’un seul bloc d’informations de même nature (l’identité et l’adresse de l’utilisateur, par exemple) ou d’un champ unique (un moteur de recherche, par exemple), le regroupement des champs n’est pas obligatoire.</p>
 
@@ -1007,8 +1007,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p><strong>Note&nbsp;:</strong> l’utilisation du paramètre <code>wmode</code> pour un objet Flash avec les valeurs <code>"transparent"</code> et <code>"opaque"</code> invalide de fait le <a href="/rgaa4-criteres.html#crit-4-12">critère 4.12</a>. En effet, l’utilisation de ces valeurs a pour conséquence que l’animation Flash vue du côté des utilisateurs de lecteur d’écran est invisible.</p>
 
 					<h3 id="glossaire-79">Média temporel (type son, vidéo et synchronisé)</h3>
-					<p><strong>Média temporel seulement audio&nbsp;:</strong> contenu sonore (Wav, Mp3…);</p>
-					<p><strong>Média temporel seulement vidéo&nbsp;:</strong> images ou photos en mouvement ou en séquence;</p>
+					<p><strong>Média temporel seulement audio&nbsp;:</strong> contenu sonore (Wav, Mp3…)&nbsp;;</p>
+					<p><strong>Média temporel seulement vidéo&nbsp;:</strong> images ou photos en mouvement ou en séquence&nbsp;;</p>
 					<p><strong>Média temporel synchronisé&nbsp;:</strong> flux audio ou vidéo synchronisé avec un autre format pour présenter de l’information et/ou comportant des composants temporels interactifs. Un média temporel peut être consulté de 2 manières différentes&nbsp;:</p>
 					<ul>
 						<li>Fichier à télécharger consultable avec un logiciel externe à la page web&nbsp;;</li>
@@ -1127,10 +1127,10 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 
 					<h3 id="glossaire-94">Raccourci clavier</h3>
 					<p>Un moyen de déclencher une action associée à un composant de l’interface utilisateur en appuyant sur une ou plusieurs touches.</p>
-					<p><strong>Note&nbsp;:</strong> les « <span lang="en">Access keys<span> » (attribut HTML <code>accesskey</code>) sont bien des raccourcis clavier, mais ils ne sont pas concernés par le <a href="/rgaa4-criteres.html#crit-12-15">critère 12.15</a> dans la mesure où leur activation nécessite déjà l’usage de touches de modification (variables suivant les navigateurs).</span></span></p>
+					<p><strong>Note&nbsp;:</strong> les « <span lang="en">Access keys<span> » (attribut HTML <code>accesskey</code>) sont bien des raccourcis clavier, mais ils ne sont pas concernés par le <a href="/rgaa4-criteres.html#crit-12-10">critère 12.10</a> dans la mesure où leur activation nécessite déjà l’usage de touches de modification (variables suivant les navigateurs).</span></span></p>
 
 					<h3 id="glossaire-95">Redirection</h3>
-					<p>Procédé qui consiste pour l’affichage d’une page sur le poste client à rediriger l’utilisateur vers une autre page, sur le même domaine ou sur un domaine différent.</p>
+					<p>Procédé qui consiste, pour l’affichage d’une page sur le poste client, à rediriger l’utilisateur vers une autre page, sur le même domaine ou sur un domaine différent.</p>
 
 					<h3 id="glossaire-96">Règles d'écriture</h3>
 					<p>Le code source doit respecter les règles suivantes en accord avec la déclaration de type de document utilisée dans la page&nbsp;:</p>
@@ -1187,7 +1187,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<li>Appartenant au même nom de domaine (ex&nbsp;: references.modernisation.gouv.fr)&nbsp;;</li>
 						<li>Qui constituent un ensemble cohérent du point de vue de l’utilisateur.</li>
 					</ul>
-					<p>Cas particulier des pages web d’un sous-domaine; un sous-domaine peut&nbsp;:</p>
+					<p>Cas particulier des pages web d’un sous-domaine ; un sous-domaine peut&nbsp;:</p>
 					<ul>
 						<li>Soit appartenir au site web attaché au nom de domaine, si l’utilisateur en a une perception cohérente avec les autres pages du site web (par exemple&nbsp;: même structure, même navigation…)&nbsp;;</li>
 						<li>Soit ne pas appartenir au site web attaché au nom de domaine (par exemple&nbsp;: différents blogs en sous-domaine d’un nom de domaine et sans relation les uns avec les autres).</li>
@@ -1218,7 +1218,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					</ul>
 
 					<h3 id="glossaire-107">Tableau de données</h3>
-					<p>Un tableau de données est une structure introduite par une balise <code>&lt;table&gt;</code> ou lorsqu’il est correctement restitué par les technologies d’assistance par une balise pourvue d’un attribut WAI-ARIA <code>role="table"</code>. Cette balise permet de structurer des informations en lignes et en colonnes via des cellules de données et des cellules d’en-têtes.</p>
+					<p>Un tableau de données est une structure introduite par une balise <code>&lt;table&gt;</code> ou, lorsqu’il est correctement restitué par les technologies d’assistance, par une balise pourvue d’un attribut WAI-ARIA <code>role="table"</code>. Cette balise permet de structurer des informations en lignes et en colonnes via des cellules de données et des cellules d’en-têtes.</p>
 
 					<h3 id="glossaire-108">Tableau de données ayant un titre</h3>
 					<p>Tableau de données ayant un attribut ou contenant une balise dont le contenu fait office de titre.</p>
@@ -1233,7 +1233,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p><strong>Note&nbsp;:</strong> seule la balise <code>&lt;caption&gt;</code> étant complètement supportée par l’ensemble des technologies d’assistance, il est fortement recommandé de privilégier cette solution lors de la mise en œuvre afin d’éviter de nombreuses vérifications dans les différentes combinaisons prévues par l’environnement de test (ou «&nbsp;base de référence&nbsp;»).</p>
 
 					<h3 id="glossaire-109">Tableau de données complexe</h3>
-					<p>Un tableau de données est une structure introduite par une balise <code>&lt;table&gt;</code> ou lorsqu’il est correctement restitué par les technologies d’assistance par une balise pourvue d’un attribut WAI-ARIA <code>role="table"</code>.</p>
+					<p>Un tableau de données est une structure introduite par une balise <code>&lt;table&gt;</code> ou, lorsqu’il est correctement restitué par les technologies d’assistance, par une balise pourvue d’un attribut WAI-ARIA <code>role="table"</code>.</p>
 					<p>Lorsqu’un tableau de données contient des en-têtes qui ne sont pas répartis uniquement sur la première ligne et/ou la première colonne de la grille ou dont la portée n’est pas valable pour l’ensemble de la colonne ou de la ligne, on parle de tableau de données complexe. Il est alors nécessaire de fournir un «&nbsp;résumé&nbsp;» permettant d’en expliquer sa nature et sa structure afin d’en faciliter la consultation pour des utilisateurs de technologies d’assistance par exemple.</p>
 
 					<h3 id="glossaire-110">Tableau de mise en forme</h3>
@@ -1246,8 +1246,8 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 					<p>Texte dont la mise en forme est contrôlée par une feuille de styles.</p>
 
 					<h3 id="glossaire-113">Titre</h3>
-					<p>Élément HTML (balise <code>h</code>) à 6 niveaux de hiérarchie (de <code>h1</code> pour le titre le plus important à <code>h6</code> pour le moins important) ou élément HTML ayant les attributs WAI-ARIA <code>role="heading"</code> et <code>aria-level</code> permettant de structurer l’information d’un contenu web.</p>
-					<p>La hiérarchie entre les titres doit être respectée dans une page web et les degrés de titre ne peuvent pas être sautés (un titre <code>h3</code> ne peut pas venir directement après un titre <code>h1</code>, par exemple). Par contre, la hiérarchie ne doit pas obligatoirement débuter par un <code>h1</code>. Même si cet usage n’est pas encouragé, il est considéré comme conforme de débuter la hiérarchie des titres d’une page par un autre niveau que le niveau 1.</p>
+					<p>Élément HTML (balise <code>&lt;hx&gt;</code>) à 6 niveaux de hiérarchie (de <code>&lt;h1&gt;</code> pour le titre le plus important à <code>&lt;h6&gt;</code> pour le moins important) ou élément HTML ayant les attributs WAI-ARIA <code>role="heading"</code> et <code>aria-level</code> permettant de structurer l’information d’un contenu web.</p>
+					<p>La hiérarchie entre les titres doit être respectée dans une page web et les degrés de titre ne peuvent pas être sautés (un titre <code>&lt;h3&gt;</code> ne peut pas venir directement après un titre <code>&lt;h1&gt;</code>, par exemple). Par contre, la hiérarchie ne doit pas obligatoirement débuter par un <code>&lt;h1&gt;</code>. Même si cet usage n’est pas encouragé, il est considéré comme conforme de débuter la hiérarchie des titres d’une page par un autre niveau que le niveau 1.</p>
 					<p><strong>Note&nbsp;:</strong> les titres cachés via CSS sont considérés comme présents et valident le <a href="/rgaa4-criteres.html#crit-9-1">critère 9.1</a>.</p>
 
 					<h3 id="glossaire-114">Titre de cadre</h3>
@@ -1297,9 +1297,9 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 	&lt;br&gt;
 	à l'aide de plusieurs balises &lt;br&gt;
 &lt;/div&gt;</code></pre>
-					<p><strong>Note 2&nbsp;:</strong> WAI-ARIA propose un rôle <code>presentation</code> permettant de supprimer la sémantique d’un élément, par exemple <code>&lt;h1 role="presentation"&gt;Titre&lt;/h1&gt;</code>. Dans ce cas, le texte sera correctement restitué mais son rôle de titre ne le sera plus. L’utilisation du rôle <code>presentation</code> peut être requise lorsque l’on utilise un motif de conception WAI-ARIA.</p>
+					<p><strong>Note 2&nbsp;:</strong> WAI-ARIA propose un rôle <code>presentation</code> permettant de supprimer la sémantique d’un élément, par exemple <code>&lt;h1 role="presentation"&gt;Titre&lt;/h1&gt;</code>. Dans ce cas, le texte sera correctement restitué mais son rôle de titre ne le sera plus. L’utilisation du rôle <code>presentation</code> peut être requise lorsque l’on utilise un <a href="#glossaire-83">motif de conception</a> WAI-ARIA.</p>
 					<p>Le rôle WAI-ARIA <code>presentation</code> peut être également utilisé pour supprimer la sémantique d’un élément lorsque ce dernier est utilisé uniquement à des fins de présentation, par exemple <code>&lt;blockquote role="presentation"&gt;</code> aura le même effet qu’une absence d’élément <code>&lt;blockquote&gt;</code>.</p>
-					<p>Même si cette utilisation est fortement déconseillée (dans le cas de technologie d’assistance qui n’implémenteraient pas WAI-ARIA par exemple) elle peut être considérée comme conforme à WCAG. En revanche l’utilisation d’un rôle WAI-ARIA <code>presentation</code> sur un élément dont la nature (par exemple la sémantique) est essentielle à la compréhension du contenu est une violation des règles WCAG (particulièrement de l’échec <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F92" hreflang="en" rel="external" class="external">F92</a>) et invalide le critère.</p>
+					<p>Même si cette utilisation est fortement déconseillée (dans le cas de technologie d’assistance qui n’implémenteraient pas WAI-ARIA par exemple) elle peut être considérée comme conforme à WCAG. En revanche, l’utilisation d’un rôle WAI-ARIA <code>presentation</code> sur un élément dont la nature (par exemple, la sémantique) est essentielle à la compréhension du contenu est une violation des règles WCAG (particulièrement de l’échec <a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F92" hreflang="en" rel="external" class="external">F92</a>) et invalide le critère.</p>
 
 					<h3 id="glossaire-120">URL</h3>
 					<p>Adresse permettant d’accéder aux ressources du World Wide Web&nbsp;: document HTML, Pages web, image, son…</p>

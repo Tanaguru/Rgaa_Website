@@ -93,7 +93,8 @@
 }
 
 .btn-nav-rgaa {
-    padding: 0.5em 1em;
+    position: relative;
+    padding: 0.5em 1em 0.5em 2em;
     background-color: @color;
     border: 1px solid @color;
     border-radius: 0.5em;
@@ -103,15 +104,61 @@
 
     &:hover,
     &:focus,
-    &:active {
+    &[aria-expanded="true"] {
         background-color: @color-bg;
         color: @color;
+    }
+
+    &[aria-expanded="true"] {
+        &::before,
+        &::after {
+            position: absolute;
+            top: 0.6em;
+            left: 1em;
+            width: 0.2em;
+            height: 1em;
+            background-color:@color;
+            content: "";
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+
+    &[aria-expanded="false"] {
+
+        &::before {
+            position: absolute;
+            top: 0.6em;
+            left: 0.6em;
+            width: 1em;
+            height: 1em;
+            border-top: 0.6em double @color-bg;
+            border-bottom: 0.2em solid @color-bg;
+            content: "";
+        }
+
+        &:hover,
+        &:focus {
+            &::before {
+                border-color: @color;
+            }
+        }
     }
 }
 
 #nav {
 	border-bottom: 1px solid fade(@color-mid,20);
     font-size: .88em;
+
+    &:not(.nav-opened) {
+        display: none;
+    }
 
     @media print {
         display: none;

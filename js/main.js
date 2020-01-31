@@ -7,24 +7,6 @@ $('#nav').hide();
 
 
 $( document ).ready(function() {
-
-	/**
-	 * Corrige la position du scroll si l'url contient une ancre
-	 * L'événement "scroll de la fenêtre" est déclenché pour mettre à jour l'ancre actif
-	 */
-
-	if (document.location.hash.indexOf('#') > -1) {
-		var id = document.location.hash;
-		setTimeout(function() {
-			$('html, body').animate({scrollTop : $(id).offset().top - $('.headsite').height()}, 0);
-		}, 50);
-	}
-	else
-	{
-		// Mise à jour de l'ancre active à l'ouverture du site
-		$(window).trigger('scroll');
-	}
-
 	/**
 	 * Gestion de l'ouverture/fermeture du menu
 	 */
@@ -94,19 +76,6 @@ $( document ).ready(function() {
 			});
 		});
 	}
-
-
-	/**
-	 * Fix : position du scroll lorsque l'on clique sur l'ancre d'un critère
-	 */
-
-	$('a[href^=#crit]').on('click', function(e) {
-		e.preventDefault();
-		var crit = $(this).attr('href');
-		document.location.hash = crit;
-		$('html, body').scrollTop($(crit).offset().top - $('.headsite').height());
-		e.target.blur();
-	});
 
 	/**
 	 * Ouverture du menu principal à l'activation du lien d'évitement "Aller au menu"

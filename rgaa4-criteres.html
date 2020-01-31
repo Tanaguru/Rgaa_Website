@@ -210,7 +210,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -300,7 +300,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>Lorsqu'une image est associée à une <a href="rgaa4-glossaire.html#glossaire-64">légende</a>, la note technique WCAG recommande de prévoir systématiquement une <a href="rgaa4-glossaire.html#glossaire-8">alternative textuelle</a> (cf. <a href="#crit-1-9">critère 1.9</a>). Dans ce cas le critère 1.2 est non applicable.</p>
 							<p>Dans le cas d'une image vectorielle (balise <code>&lt;svg&gt;</code>) <a href="rgaa4-glossaire.html#glossaire-47">de décoration</a> qui serait affichée au travers d'un élément <code>&lt;use href="..."&gt;</code> enfant de l'élément <code>&lt;svg&gt;</code>, le test 1.2.4 s'appliquera également à la balise <code>&lt;svg&gt;</code> associée par le biais de la balise <code>&lt;use&gt;</code>.</p>
@@ -418,7 +418,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-1-3-8">Test 1.3.8&nbsp;: Pour chaque image bitmap (balise <code>&lt;canvas&gt;</code>) porteuse d'information et ayant un <a href="rgaa4-glossaire.html#glossaire-25">contenu alternatif</a> entre <code>&lt;canvas&gt;</code> et <code>&lt;/canvas&gt;</code>, ce <a href="rgaa4-glossaire.html#glossaire-25">contenu alternatif</a> est-il <a href="rgaa4-glossaire.html#glossaire-98">correctement restitué par les technologies d'assistance</a>&nbsp;?</li>
 							<li id="test-1-3-9">Test 1.3.9&nbsp;: Pour chaque image <a href="rgaa4-glossaire.html#glossaire-49">porteuse d'information</a> et ayant une <a href="rgaa4-glossaire.html#glossaire-8">alternative textuelle</a>, l'<a href="rgaa4-glossaire.html#glossaire-8">alternative textuelle</a> est-elle <a href="rgaa4-glossaire.html#glossaire-7">courte et concise</a> (<a href="#cas-1-3">hors cas particuliers</a>)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4 id="cas-1-3">Cas particuliers</h4>
 							<p>Il existe une gestion de cas particuliers lorsque l'image est utilisée comme <a href="rgaa4-glossaire.html#glossaire-15">CAPTCHA</a> ou comme <a href="rgaa4-glossaire.html#glossaire-51">image-test</a>. Dans cette situation, où il n'est pas possible de donner une alternative pertinente sans détruire l'objet du <a href="rgaa4-glossaire.html#glossaire-15">CAPTCHA</a> ou du test, le critère est non applicable.</p>
 							<p>Note : le cas des <a href="rgaa4-glossaire.html#glossaire-15">CAPTCHA</a> et des <a href="rgaa4-glossaire.html#glossaire-51">images-test</a> est traité de manière spécifique par le <a href="#crit-1-4">critère 1.4</a>.</p>
@@ -496,7 +496,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -528,7 +528,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -601,7 +601,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>Dans le cas du SVG, le manque de support de l'élément <code>&lt;title&gt;</code> et <code>&lt;desc&gt;</code> par les technologies d'assistance crée une difficulté dans le cas de l'implémentation de l'<a href="rgaa4-glossaire.html#glossaire-8">alternative textuelle</a> de l'image et de sa <a href="rgaa4-glossaire.html#glossaire-35">description détaillée</a>. Dans ce cas, il est recommandé d'utiliser l'attribut WAI-ARIA <code>aria-label</code> pour implémenter à la fois l'<a href="rgaa4-glossaire.html#glossaire-8">alternative textuelle</a> courte et la référence à <a href="rgaa4-glossaire.html#glossaire-35">description détaillée</a> adjacente ou l'attribut WAI-ARIA <code>aria-labelledby</code> pour associer les passages de texte faisant office d'alternative courte et de <a href="rgaa4-glossaire.html#glossaire-35">description détaillée</a>.</p>
 							<p>L'utilisation de l'attribut WAI-ARIA <code>aria-describedby</code> n'est pas possible pour lier une image à sa <a href="rgaa4-glossaire.html#glossaire-35">description détaillée</a> par manque de support des technologies d'assistance.</p>
@@ -675,7 +675,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -699,7 +699,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-1-8-4">Test 1.8.4&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-52">image texte</a> embarquée (balise <code>&lt;embed&gt;</code> avec l'attribut <code>type="image/…"</code>) <a href="rgaa4-glossaire.html#glossaire-49">porteuse d'information</a>, en l'absence d'un <a href="rgaa4-glossaire.html#glossaire-76">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="rgaa4-glossaire.html#glossaire-112">texte stylé</a>. Cette règle est-elle respectée (hors cas particuliers)&nbsp;?</li>
 							<li id="test-1-8-5">Test 1.8.5&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-52">image texte</a> bitmap (balise <code>&lt;canvas&gt;</code>) <a href="rgaa4-glossaire.html#glossaire-49">porteuse d'information</a>, en l'absence d'un <a href="rgaa4-glossaire.html#glossaire-76">mécanisme de remplacement</a>, doit si possible être remplacée par du <a href="rgaa4-glossaire.html#glossaire-112">texte stylé</a>. Cette règle est-elle respectée (hors cas particuliers)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Pour ce critère, il existe une gestion de cas particulier lorsque le texte fait partie du logo, d'une dénomination commerciale, d'un <a href="rgaa4-glossaire.html#glossaire-15">CAPTCHA</a>, d'une <a href="rgaa4-glossaire.html#glossaire-51">image-test</a> ou d'une image dont l'exactitude graphique serait considérée comme essentielle à la bonne transmission de l'information véhiculée par l'image. Dans ces situations, le critère est non applicable pour ces éléments.</p>
 
@@ -764,7 +764,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>L'implémentation d'un attribut WAI-ARIA <code>role="group"</code> ou <code>role="figure"</code> sur l'élément parent <code>&lt;figure&gt;</code> est destiné à pallier le manque de support actuel des éléments <code>&lt;figure&gt;</code> par les technologies d'assistance. L'utilisation d'un élément <code>&lt;figcaption&gt;</code> pour associer une <a href="rgaa4-glossaire.html#glossaire-64">légende</a> à une image impose au minimum l'utilisation d'un attribut WAI-ARIA <code>aria-label</code> sur l'élément parent <code>&lt;figure&gt;</code> dont le contenu sera identique au contenu de l'élément <code>&lt;figcaption&gt;</code>. Pour s’assurer d’un support optimal, il peut également être fait une association explicite entre le contenu de l’<a href="rgaa4-glossaire.html#glossaire-8">alternative textuelle</a> de l’image et le contenu de l’élément <code>&lt;figcaption&gt;</code>, par exemple :</p>
 	<pre class="html"><code>&lt;img src="image.png" alt="Photo : soleil couchant" /&gt;&lt;figcaption&gt;Photo : crédit xxx&lt;/figcaption&gt;</code></pre>
@@ -813,7 +813,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-2-1-1">Test 2.1.1&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-14">cadre</a> (balise <code>&lt;iframe&gt;</code> ou <code>&lt;frame&gt;</code>) a-t-il un attribut <code>title</code>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -832,7 +832,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-2-2-1">Test 2.2.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-14">cadre</a> (balise <code>&lt;iframe&gt;</code> ou <code>&lt;frame&gt;</code>) ayant un attribut <code>title</code>, le contenu de cet attribut est-il pertinent&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -880,7 +880,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-3-1-5">Test 3.1.5&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> <a href="rgaa4-glossaire.html#glossaire-54">véhiculant une information</a>, l'<a href="rgaa4-glossaire.html#glossaire-56">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
 							<li id="test-3-1-6">Test 3.1.6&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-78">média non temporel</a> <a href="rgaa4-glossaire.html#glossaire-54">véhiculant une information</a>, l'<a href="rgaa4-glossaire.html#glossaire-56">information</a> ne doit pas être donnée uniquement par la couleur. Cette règle est-elle respectée&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -925,7 +925,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-3-2-5">Test 3.2.5&nbsp;: Dans le <a href="rgaa4-glossaire.html#glossaire-77">mécanisme qui permet d'afficher un rapport de contraste conforme</a>, le rapport de <a href="rgaa4-glossaire.html#glossaire-29">contraste</a> entre le texte et la couleur d’arrière-plan est-il suffisamment élevé&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Dans ces situations, les critères sont non applicables pour ces éléments.</p>
 							<ul>
@@ -972,7 +972,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-3-3-4">Test 3.3.4&nbsp;: Dans le <a href="rgaa4-glossaire.html#glossaire-77">mécanisme qui permet d'afficher un rapport de contraste conforme</a>, les couleurs du composant ou des éléments graphiques porteurs d’informations qui le composent, sont-elles suffisamment contrastées&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Les cas suivants sont non applicables pour ce critère :</p>
 							<ul>
@@ -1060,7 +1060,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque :</p>
 							<ul>
@@ -1110,7 +1110,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Voir cas particuliers <a href="#crit-4-1">critère 4.1</a>.</p>
 
@@ -1140,7 +1140,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-4-3-2">Test 4.3.2&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> synchronisé pré-enregistré possédant des <a href="rgaa4-glossaire.html#glossaire-104">sous-titres synchronisés</a> diffusés via une balise <code>&lt;track&gt;</code>, la balise <code>&lt;track&gt;</code> possède-t-elle un attribut <code>kind="captions"</code>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Voir cas particuliers <a href="#crit-4-1">critère 4.1</a>.</p>
 
@@ -1163,7 +1163,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-4-4-1">Test 4.4.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> synchronisé pré-enregistré ayant des <a href="rgaa4-glossaire.html#glossaire-104">sous-titres synchronisés</a>, ces sous-titres sont-ils pertinents&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1194,7 +1194,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Voir cas particuliers <a href="#crit-4-1">critère 4.1</a>.</p>
 
@@ -1218,7 +1218,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-4-6-1">Test 4.6.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> pré-enregistré seulement vidéo ayant une <a href="rgaa4-glossaire.html#glossaire-11">audiodescription synchronisée</a>, celle-ci est-elle pertinente&nbsp;?</li>
 							<li id="test-4-6-2">Test 4.6.2&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> synchronisé ayant une <a href="rgaa4-glossaire.html#glossaire-11">audiodescription synchronisée</a>, celle-ci est-elle pertinente&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1238,7 +1238,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-4-7-1">Test 4.7.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> seulement son, seulement vidéo ou synchronisé, le contenu textuel adjacent permet-il d'identifier clairement le <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> (hors cas particuliers)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque le <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> est utilisé à des fins décoratives (c'est-à-dire qu'il n'apporte aucune information). Dans cette situation, le critère est non applicable.</p>
 
@@ -1272,7 +1272,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque :</p>
 							<ul>
@@ -1301,7 +1301,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-4-9-1">Test 4.9.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-78">média non temporel</a> ayant une alternative, cette alternative permet-elle d'accéder au même contenu et à des fonctionnalités similaires&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1327,7 +1327,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1359,7 +1359,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1391,7 +1391,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1424,7 +1424,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque le <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a> ou <a href="rgaa4-glossaire.html#glossaire-78">non temporel</a> est utilisé à des fins décoratives (c'est-à-dire qu'il n'apporte aucune information). Dans ces situations, le critère est non applicable.</p>
 
@@ -1475,7 +1475,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-5-1-1">Test 5.1.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-109">tableau de données complexe</a> un <a href="rgaa4-glossaire.html#glossaire-99">résumé</a> est-il disponible&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1495,7 +1495,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-5-2-1">Test 5.2.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-109">tableau de données complexe</a> ayant un <a href="rgaa4-glossaire.html#glossaire-99">résumé</a>, celui-ci est-il pertinent&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1520,7 +1520,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1541,7 +1541,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-5-4-1">Test 5.4.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-108">tableau de données ayant un titre</a>, le titre est-il correctement <a href="rgaa4-glossaire.html#glossaire-86">associé au tableau de données</a>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1561,7 +1561,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-5-5-1">Test 5.5.1&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-108">tableau de données ayant un titre</a>, ce titre permet-il d'identifier le contenu du <a href="rgaa4-glossaire.html#glossaire-107">tableau de données</a> de manière claire et concise&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1593,7 +1593,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-5-6-3">Test 5.6.3&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-107">tableau de données</a>, chaque <a href="rgaa4-glossaire.html#glossaire-38">en-tête</a> ne s'appliquant pas à la totalité de la ligne ou de la colonne est-il structuré au moyen d'une balise <code>&lt;th&gt;</code>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1646,7 +1646,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Dans le cas de tableaux de données ayant des <a href="rgaa4-glossaire.html#glossaire-38">en-têtes</a> sur une seule ligne ou une seule colonne, les <a href="rgaa4-glossaire.html#glossaire-38">en-têtes</a> peuvent être structurés à l'aide de balise <code>&lt;th&gt;</code> sans attribut <code>scope</code>.</p>
 
@@ -1677,7 +1677,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1743,7 +1743,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-6-1-5">Test 6.1.5&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-65">lien</a> ayant un <a href="rgaa4-glossaire.html#glossaire-58">intitulé visible</a>, le <a href="rgaa4-glossaire.html#glossaire-57">nom accessible du lien</a> contient-il au moins l'<a href="rgaa4-glossaire.html#glossaire-58">intitulé visible</a> (hors cas particuliers)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier pour les tests 6.1.1, 6.1.2, 6.1.3 et 6.1.4 lorsque le lien est <a href="rgaa4-glossaire.html#glossaire-9">ambigu pour tout le monde</a>. Dans cette situation, où il n'est pas possible de rendre le lien explicite dans son contexte, le critère est non applicable.</p>
 							<p>Il existe une gestion de cas particulier pour le test 6.1.5 lorsque :</p>
@@ -1774,7 +1774,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-6-2-1">Test 6.2.1&nbsp;: Dans chaque page web, chaque <a href="rgaa4-glossaire.html#glossaire-65">lien</a>, à l'exception des <a href="rgaa4-glossaire.html#glossaire-10">ancres</a>, a-t-il un <a href="rgaa4-glossaire.html#glossaire-57">intitulé</a> entre <code>&lt;a&gt;</code> et <code>&lt;/a&gt;</code>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1839,7 +1839,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier pour le test 7.1.3 lorsque :</p>
 							<ul>
@@ -1886,7 +1886,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1913,7 +1913,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-7-3-2">Test 7.3.2&nbsp;: Un <a href="rgaa4-glossaire.html#glossaire-100">script</a> ne doit pas supprimer le focus d'un élément qui le reçoit. Cette règle est-elle respectée (hors cas particuliers)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque la fonctionnalité dépend de l'utilisation d'un gestionnaire d'événement sans équivalent universel ; par exemple, une application de dessin à main levée ne pourra pas être rendue contrôlable au clavier. Dans ces situations, le critère est non applicable.</p>
 
@@ -1944,7 +1944,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -1967,7 +1967,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								<li id="test-7-5-2">Test 7.5.2&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-80">message de statut</a> qui présente une suggestion, ou avertit de l'existence d'une erreur utilise-t-il l'attribut WAI-ARIA <code>role="alert"</code>&nbsp;?</li>
 								<li id="test-7-5-3">Test 7.5.3&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-80">message de statut</a> qui indique la progression d'un processus utilise-t-il l'un des attributs WAI-ARIA <code>role="log"</code>, <code>role="progressbar"</code> ou <code>role="status"</code>&nbsp;?</li>
 							</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>Les rôles WAI-ARIA <code>log</code>, <code>status</code> et <code>alert</code> ont implicitement une valeur d'attribut WAI-ARIA <code>aria-live</code> et <code>aria-atomic</code>. On pourra donc considérer (conformément à la spécification WAI-ARIA 1.1) que :</p>
 							<ul>
@@ -2028,7 +2028,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-8-1-2">Test 8.1.2&nbsp;: Pour chaque page web, le <a href="rgaa4-glossaire.html#glossaire-117">type de document</a> (balise <code>doctype</code>) est-il valide&nbsp;?</li>
 							<li id="test-8-1-3">Test 8.1.3&nbsp;: Pour chaque page web possédant une déclaration de <a href="rgaa4-glossaire.html#glossaire-117">type de document</a>, celle-ci est-elle située avant la balise <code>&lt;html&gt;</code> dans le code source&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2056,7 +2056,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il y a une gestion de cas particulier sur la conformité du code HTML.</p>
 							<p>Pour accompagner la prise en charge progressive de HTML par les navigateurs, les APIs d'accessibilité et les technologies d'assistance, certains critères peuvent exiger la présence d'attributs ou de balises déclarés «&nbsp;obsolètes&nbsp;» en HTML. Par ailleurs, dans la mesure où des balises ou des attributs déclarés «&nbsp;obsolètes&nbsp;» sont utilisés, ils restent soumis aux autres critères du RGAA (exemple la balise <code>&lt;marquee&gt;</code> serait non conforme par rapport au <a href="#crit-13-8">critère 13.8</a>) et leur support d'accessibilité doit être vérifié au regard de l’environnement de test (ou «&nbsp;base de référence&nbsp;») retenu.</p>
@@ -2086,7 +2086,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2111,7 +2111,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2131,7 +2131,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-8-5-1">Test 8.5.1&nbsp;: Chaque page web a-t-elle un <a href="rgaa4-glossaire.html#glossaire-115">titre de page</a> (balise <code>&lt;title&gt;</code>)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2151,7 +2151,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-8-6-1">Test 8.6.1&nbsp;: Pour chaque page web ayant un <a href="rgaa4-glossaire.html#glossaire-115">titre de page</a> (balise <code>&lt;title&gt;</code>), le contenu de cette balise est-il pertinent&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2176,7 +2176,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il y a une gestion de cas particuliers sur le <a href="rgaa4-glossaire.html#glossaire-20">changement de langue</a> pour les cas suivants&nbsp;:</p>
 							<ul>
@@ -2212,7 +2212,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2232,7 +2232,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-8-9-1">Test 8.9.1&nbsp;: Dans chaque page web les balises (à l'exception de <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code> et <code>&lt;table&gt;</code>) ne doivent pas être utilisées <a href="rgaa4-glossaire.html#glossaire-119">uniquement à des fins de présentation</a>. Cette règle est-elle respectée&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2258,7 +2258,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2304,7 +2304,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-9-1-2">Test 9.1.2&nbsp;: Dans chaque page web, le contenu de chaque <a href="rgaa4-glossaire.html#glossaire-113">titre</a> (balise <code>&lt;hx&gt;</code> ou balise possédant un attribut WAI-ARIA <code>role="heading"</code> associé à un attribut WAI-ARIA <code>aria-level</code>) est-il pertinent&nbsp;?</li>
 							<li id="test-9-1-3">Test 9.1.3&nbsp;: Dans chaque page web, chaque passage de texte constituant un <a href="rgaa4-glossaire.html#glossaire-113">titre</a> est-il structuré à l'aide d'une balise <code>&lt;hx&gt;</code> ou d'une balise possédant un attribut WAI-ARIA <code>role="heading"</code> associé à un attribut WAI-ARIA <code>aria-level</code>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Note technique</h4>
 							<p>WAI-ARIA permet de définir des <a href="rgaa4-glossaire.html#glossaire-113">titres</a> via le rôle <code>heading</code> et l'attribut <code>aria-level</code> (indication du niveau de titre). Bien qu'il soit préférable d'utiliser l'élément de titre natif en HTML <code>&lt;hx&gt;</code>, l'utilisation du rôle WAI-ARIA <code>heading</code> est compatible avec l'accessibilité.</p>
 							<p>Bien que la spécification HTML5 autorise l'utilisation exclusive de <a href="rgaa4-glossaire.html#glossaire-113">titres</a> de niveau 1 (<code>&lt;h1&gt;</code>), le manque de support des technologies d'assistance oblige à utiliser une hiérarchie de <a href="rgaa4-glossaire.html#glossaire-113">titres</a> pertinente.</p>
@@ -2340,7 +2340,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Lorsque le doctype déclaré dans la page n’est pas le doctype HTML5, ce critère est non applicable.</p>
 
@@ -2378,7 +2378,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-9-3-3">Test 9.3.3&nbsp;: Dans chaque page web, les informations regroupées sous forme de <a href="rgaa4-glossaire.html#glossaire-74">liste</a> de description utilisent-elles les balises <code>&lt;dl&gt;</code> et <code>&lt;dt&gt;</code> / <code>&lt;dd&gt;</code>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>Les attributs WAI-ARIA <code>role="list"</code> et <code>role="listitem"</code> peuvent nécessiter l'utilisation des attributs WAI-ARIA <code>aria-setsize</code> et <code>aria-posinset</code> dans le cas où l'ensemble de la liste n'est pas disponible via le DOM généré au moment de la consultation.</p>
 							<p>Les attributs WAI-ARIA <code>role="tree"</code>, <code>role="tablist"</code>, <code>role="menu"</code>, <code>role="combobox"</code> et <code>role="listbox"</code> ne sont pas équivalents à une liste HTML <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>.</p>
@@ -2404,7 +2404,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-9-4-1">Test 9.4.1&nbsp;: Dans chaque page web, chaque citation courte utilise-t-elle une balise <code>&lt;q&gt;</code>&nbsp;?</li>
 							<li id="test-9-4-2">Test 9.4.2&nbsp;: Dans chaque page web, chaque bloc de citation utilise-t-il une balise <code>&lt;blockquote&gt;</code>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2466,7 +2466,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2487,7 +2487,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-10-2-1">Test 10.2.1&nbsp;: Dans chaque page web, l'information reste-t-elle présente lorsque les <a href="rgaa4-glossaire.html#glossaire-42">feuilles de style</a> sont désactivées&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2508,7 +2508,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-10-3-1">Test 10.3.1&nbsp;: Dans chaque page web, l'information reste-t-elle <a href="rgaa4-glossaire.html#glossaire-24">compréhensible</a> lorsque les <a href="rgaa4-glossaire.html#glossaire-42">feuilles de style</a> sont désactivées&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2543,7 +2543,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Dans le cas des textes en image et des sous-titres de vidéo le critère est non applicable.</p>
 							<div class="criterion-mapping">
@@ -2567,7 +2567,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-10-5-2">Test 10.5.2&nbsp;: Dans chaque page web, chaque déclaration de couleur de fond (<code>background</code>, <code>background-color</code>), d'un élément susceptible de contenir du texte, est-elle accompagnée d'une déclaration de couleur de police (<code>color</code>) au moins, héritée d'un parent&nbsp;?</li>
 							<li id="test-10-5-3">Test 10.5.3&nbsp;: Dans chaque page web, chaque utilisation d'une image pour créer une couleur de fond d'un élément susceptible de contenir du texte, via CSS (<code>background</code>, <code>background-image</code>), est-elle accompagnée d'une déclaration de couleur de fond (<code>background</code>, <code>background-color</code>), au moins, héritée d'un parent&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2593,7 +2593,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2618,7 +2618,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2644,7 +2644,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>WAI-ARIA propose un attribut <code>aria-hidden</code> (<code>true</code> ou <code>false</code>) qui permet d'inhiber la restitution d'un contenu en direction des technologies d'assistance, sans action sur sa visibilité en direction des agents utilisateurs : un contenu avec <code>aria-hidden="true"</code> ne sera donc plus vocalisable, mais restera visible.</p>
 							<p>Sauf si le contenu contrôlé par <code>aria-hidden</code> n'a pas vocation à être restitué par les technologies d'assistance, la valeur de l'attribut <code>aria-hidden</code> doit être cohérente avec l'état affiché ou masqué du contenu à l'écran.</p>
@@ -2674,7 +2674,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-10-9-3">Test 10.9.3&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a>, l'information ne doit pas être donnée uniquement <a href="rgaa4-glossaire.html#glossaire-55">par la forme, taille ou position</a>. Cette règle est-elle respectée&nbsp;?</li>
 							<li id="test-10-9-4">Test 10.9.4&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossaire.html#glossaire-78">média non temporel</a>, l'information ne doit pas être donnée uniquement <a href="rgaa4-glossaire.html#glossaire-55">par la forme, taille ou position</a>. Cette règle est-elle respectée&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2698,7 +2698,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-10-10-3">Test 10.10.3&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossaire.html#glossaire-79">média temporel</a>, l'information ne doit pas être donnée <a href="rgaa4-glossaire.html#glossaire-55">par la forme, taille ou position</a> uniquement. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
 							<li id="test-10-10-4">Test 10.10.4&nbsp;: Dans chaque page web, pour chaque <a href="rgaa4-glossaire.html#glossaire-78">média non temporel</a>, l'information ne doit pas être donnée <a href="rgaa4-glossaire.html#glossaire-55">par la forme, taille ou position</a> uniquement. Cette règle est-elle implémentée de façon pertinente&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2720,7 +2720,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-10-11-1">Test 10.11.1&nbsp;: Pour chaque page web, lorsque le contenu dont le <a href="rgaa4-glossaire.html#glossaire-101">sens de lecture</a> est horizontal est affiché dans une fenêtre réduite à une largeur de 320px, l'ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement horizontal (hors cas particuliers)&nbsp;?</li>
 							<li id="test-10-11-2">Test 10.11.2&nbsp;: Pour chaque page web, lorsque le contenu dont le <a href="rgaa4-glossaire.html#glossaire-101">sens de lecture</a> est vertical est affiché dans une fenêtre réduite à une hauteur de 256px, l'ensemble des informations et des fonctionnalités sont-elles disponibles sans aucun défilement vertical (hors cas particuliers)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Font exception à ce critère les contenus dont l'agencement requiert deux dimensions pour être compris ou utilisés comme :</p>
 							<ul>
@@ -2757,7 +2757,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Font exception à ce critère les contenus pour lesquels l'utilisateur n'a pas de possibilité de personnalisation :</p>
 							<ul>
@@ -2793,7 +2793,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Lorsque le contenu additionnel est contrôlé par l'agent utilisateur (par exemple, attribut <code>title</code> ou validation native de formulaire) ou correspond à une fenêtre modale conforme au <a href="rgaa4-glossaire.html#glossaire-83">motif de conception</a> WAI-ARIA <code>dialog</code>, le critère 10.13 est non applicable.</p>
 							<p>Lorsque le contenu additionnel ne masque ou ne remplace aucun contenu porteur d'information, le test 10.13.1 est non applicable.</p>
@@ -2830,7 +2830,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2905,7 +2905,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -2941,7 +2941,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							</li>
 							<li id="test-11-2-6">Test 11.2.6&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-13">bouton</a> adjacent au <a href="rgaa4-glossaire.html#glossaire-17">champ de formulaire</a> qui fournit une étiquette visible permet-il de connaître la fonction exacte du <a href="rgaa4-glossaire.html#glossaire-17">champ de formulaire</a> auquel il est associé&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier pour le test 11.2.5 lorsque&nbsp;:</p>
 							<ul>
@@ -2973,7 +2973,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-11-3-1">Test 11.3.1&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-40">étiquette</a> associée à un <a href="rgaa4-glossaire.html#glossaire-17">champ de formulaire</a> ayant la même fonction et répétée plusieurs fois dans une même page est-elle <a href="rgaa4-glossaire.html#glossaire-41">cohérente</a>&nbsp;?</li>
 							<li id="test-11-3-2">Test 11.3.2&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-40">étiquette</a> associée à un <a href="rgaa4-glossaire.html#glossaire-17">champ de formulaire</a> ayant la même fonction et répétée dans un <a href="rgaa4-glossaire.html#glossaire-37">ensemble de pages</a> est-elle <a href="rgaa4-glossaire.html#glossaire-41">cohérente</a>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3005,7 +3005,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Les tests 11.4.2 et 11.4.3 seront considérés comme non applicable&nbsp;:</p>
 							<ul>
@@ -3040,7 +3040,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3061,7 +3061,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-11-6-1">Test 11.6.1&nbsp;: Chaque regroupement de <a href="rgaa4-glossaire.html#glossaire-16">champs de même nature</a> possède-t-il une <a href="rgaa4-glossaire.html#glossaire-63">légende</a>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3082,7 +3082,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-11-7-1">Test 11.7.1&nbsp;: Chaque <a href="rgaa4-glossaire.html#glossaire-63">légende</a> associée à un regroupement de <a href="rgaa4-glossaire.html#glossaire-16">champs de même nature</a> est-elle pertinente&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3105,7 +3105,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-11-8-2">Test 11.8.2&nbsp;: Dans chaque balise <code>&lt;select&gt;</code>, chaque balise <code>&lt;optgroup&gt;</code> possède-t-elle un attribut <code>label</code>&nbsp;?</li>
 							<li id="test-11-8-3">Test 11.8.3&nbsp;: Pour chaque balise <code>&lt;optgroup&gt;</code> ayant un attribut <code>label</code>, le contenu de l'attribut <code>label</code> est-il pertinent&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>Il est possible d’utiliser une balise ayant un attribut WAI-ARIA <code>role="listbox"</code> en remplacement d’une balise <code>&lt;select&gt;</code>. En revanche, il est impossible de créer des groupes d’options au moyen de WAI-ARIA. De ce fait, une liste nécessitant un regroupement d’options et structurée à l’aide d’une balise ayant un attribut WAI-ARIA <code>role="listbox"</code> sera considérée comme non conforme au critère 11.8.</p>
 
@@ -3147,7 +3147,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Pour le test 11.9.2, voir cas particuliers <a href="#crit-11-2">critère 11.2</a>.</p>
 
@@ -3212,7 +3212,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Le test 11.10.1 sera considéré comme non applicable lorsque le <a href="rgaa4-glossaire.html#glossaire-43">formulaire</a> comporte un seul <a href="rgaa4-glossaire.html#glossaire-17">champ de formulaire</a> ou qu'il indique les champs optionnels de manière :</p>
 							<ul>
@@ -3242,7 +3242,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-11-11-1">Test 11.11.1&nbsp;: Pour chaque erreur de saisie, <a href="rgaa4-glossaire.html#glossaire-118">les types et les formats de données</a> sont-ils suggérés, si nécessaire&nbsp;?</li>
 							<li id="test-11-11-2">Test 11.11.2&nbsp;: Pour chaque erreur de saisie, des exemples de valeurs attendues sont-ils suggérés, si nécessaire&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>Certains types de contrôles en HTML5 proposent des messages d'aide à la saisie automatique : par exemple le type <code>email</code> affiche un message du type « veuillez saisir une adresse e-mail valide » dans le cas où l'adresse e-mail saisie ne correspond pas au format attendu. Ces messages sont personnalisables via l'API Constraint Validation, ce qui permet de personnaliser les messages d'erreur et de valider le critère. L’attribut <code>pattern</code> permet d'effectuer automatiquement des contrôles de format (via des expressions régulières) et affiche un message d'aide personnalisable via l'attribut <code>title</code> : ce dispositif valide également le critère.</p>
 
@@ -3277,7 +3277,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3303,7 +3303,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>La <a href="rgaa4-glossaire.html#glossaire-75">liste des valeurs possibles pour l'attribut <code>autocomplete</code></a> repose sur la liste des valeurs présentes dans la spécification WCAG 2.1 qui reprend elle-même la liste des valeurs de type « <span lang="en">field name</span> » de la spécification HTML5.2. Le critère WCAG demande à ce que l'une de ces valeurs soit présente pour qualifier un champ de saisie concernant l'utilisateur.</p>
 							<p>Ce que le critère WCAG laisse implicite, ce sont les différentes règles de construction possibles pour obtenir une valeur (simple ou composée) pour l'attribut <code>autocomplete</code>. C'est cependant l'affaire du développeur de fournir à l'attribut <code>autocomplete</code> une valeur ou un ensemble de valeurs valides au regard des exigences de l'algorithme fourni par la spécification HTML5.2. Ainsi, un attribut <code>autocomplete</code> ne peut contenir qu'une seule valeur de type « <span lang="en">field name</span> », comme <code>name</code> ou <code>street-address</code>. On peut avoir également un ensemble composé de différentes valeurs comme, par exemple, <code>autocomplete="shipping name"</code> ou <code>autocomplete="section-software shipping street-address"</code> : « <code>section-software</code> » renvoie à une valeur de type <span lang="en">scope</span> et « <code>shipping</code> » à une valeur de type « <span lang="en">hint set</span> », mais toujours une seule valeur de type « <span lang="en">field name</span> ».</p>
@@ -3364,7 +3364,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particuliers lorsque le site web est constitué d'une seule page ou d'un nombre très limité de pages (cf. note) pour lesquels la fonction de recherche du navigateur dans le contenu est considérée comme équivalente à un moteur de recherche. Dans ce cas-là, le critère est non applicable.</p>
 							<p>Note : l'appréciation d'un nombre très limité de pages devrait réserver ce cas particulier à un site de 2 ou 3 pages, par exemple, avec un volume de contenu peu important.</p>
@@ -3393,7 +3393,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque :</p>
 							<ul>
@@ -3424,7 +3424,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-12-3-2">Test 12.3.2&nbsp;: Les liens du <a href="rgaa4-glossaire.html#glossaire-85">plan du site</a> sont-ils fonctionnels&nbsp;?</li>
 							<li id="test-12-3-3">Test 12.3.3&nbsp;: Les liens du <a href="rgaa4-glossaire.html#glossaire-85">plan du site</a> renvoient-ils bien vers les pages indiquées par l'<a href="rgaa4-glossaire.html#glossaire-57">intitulé</a>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3446,7 +3446,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-12-4-2">Test 12.4.2&nbsp;: Dans chaque <a href="rgaa4-glossaire.html#glossaire-37">ensemble de pages</a>, la fonctionnalité vers la <a href="rgaa4-glossaire.html#glossaire-85">page « plan du site »</a> est-elle située à la même place dans la présentation&nbsp;?</li>
 							<li id="test-12-4-3">Test 12.4.3&nbsp;: Dans chaque <a href="rgaa4-glossaire.html#glossaire-37">ensemble de pages</a>, la fonctionnalité vers la <a href="rgaa4-glossaire.html#glossaire-85">page « plan du site »</a> se présente-t-elle toujours dans le même ordre relatif dans le code source&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3469,7 +3469,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-12-5-2">Test 12.5.2&nbsp;: Dans chaque <a href="rgaa4-glossaire.html#glossaire-37">ensemble de pages</a>, la fonctionnalité vers le <a href="rgaa4-glossaire.html#glossaire-82">moteur de recherche</a> est-elle située à la même place dans la présentation&nbsp;?</li>
 							<li id="test-12-5-3">Test 12.5.3&nbsp;: Dans chaque <a href="rgaa4-glossaire.html#glossaire-37">ensemble de pages</a>, la fonctionnalité vers le <a href="rgaa4-glossaire.html#glossaire-82">moteur de recherche</a> se présente-t-elle toujours dans le même ordre relatif dans le code source&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3497,7 +3497,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3526,7 +3526,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particuliers lorsque le site web est constitué d'une seule page.</p>
 							<p>Dans ce cas de figure, l'obligation de la présence d'un lien d'accès rapide est liée au contexte de la page : présence ou absence de navigation ou de contenus additionnels, par exemple. Le critère peut être considéré comme non applicable lorsqu'il est avéré qu'un lien d'accès rapide est inutile.</p>
@@ -3552,7 +3552,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-12-8-1">Test 12.8.1&nbsp;: Dans chaque page web, l'<a href="rgaa4-glossaire.html#glossaire-84">ordre de tabulation</a> dans le contenu est-il <a href="rgaa4-glossaire.html#glossaire-24">cohérent</a>&nbsp;?</li>
 							<li id="test-12-8-2">Test 12.8.2&nbsp;: Pour chaque <a href="rgaa4-glossaire.html#glossaire-100">script</a> qui met à jour ou insère un contenu, l'<a href="rgaa4-glossaire.html#glossaire-84">ordre de tabulation</a> reste-t-il <a href="rgaa4-glossaire.html#glossaire-24">cohérent</a>&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3577,7 +3577,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3604,7 +3604,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3623,7 +3623,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-12-11-1">Test 12.11.1&nbsp;: Dans chaque page web, les contenus additionnels apparaissant au survol, à la <a href="rgaa4-glossaire.html#glossaire-91">prise de focus</a> ou à l'activation d'un <a href="rgaa4-glossaire.html#glossaire-23">composant d'interface</a> sont-ils, si nécessaire, atteignables au clavier&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Notes techniques</h4>
 							<p>Ce critère adresse les situations où un contenu additionnel contient des <a href="rgaa4-glossaire.html#glossaire-23">composants d'interface</a> avec lesquels il doit être possible d'interagir au clavier. Par exemple, une infobulle personnalisée qui propose un lien dans son contenu.</p>
 
@@ -3699,7 +3699,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particuliers lorsque la limite de temps est essentielle, notamment lorsqu'elle ne pourrait pas être supprimée sans changer fondamentalement le contenu ou les fonctionnalités liées au contenu.</p>
 							<p>Dans ces situations, le critère est non applicable. Par exemple, le rafraîchissement d'un flux RSS dans une page n'est pas une limite de temps essentielle ; le critère est applicable. En revanche, une redirection automatique qui amène vers la nouvelle version d'une page à partir d'une <a href="rgaa4-glossaire.html#glossaire-120">URL</a> obsolète est essentielle ; le critère est non applicable.</p>
@@ -3724,7 +3724,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 						<ul>
 							<li id="test-13-2-1">Test 13.2.1&nbsp;: Dans chaque page web, l'ouverture d'une nouvelle fenêtre ne doit pas être déclenchée sans action de l'utilisateur. Cette règle est-elle respectée&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3750,7 +3750,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particuliers : pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si les fichiers bureautiques (ex : PDF, documents Microsoft ou libreOffice etc.) ont été publiés avant le 23 septembre 2018 (sauf si ce sont des documents nécessaires pour accomplir une démarche administrative relevant des tâches effectuées par l’organisme concerné), ils sont exemptés de l’obligation d’accessibilité.</p>
 							<p>Dans cette situation, le critère est non applicable.</p>
@@ -3785,7 +3785,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particuliers : pour les personnes de droit privé mentionnées aux 2° à 4° du I de l’article 47 de la loi du 11 février 2005 : si les fichiers bureautiques (ex : PDF, documents Microsoft ou libreOffice etc.) ont été publiés avant le 23 septembre 2018 (sauf si ce sont des documents nécessaires pour accomplir une démarche administrative relevant des tâches effectuées par l’organisme concerné), ils sont exemptés de l’obligation d’accessibilité.</p>
 							<p>Dans cette situation, le critère est non applicable.</p>
@@ -3820,7 +3820,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3845,7 +3845,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3882,7 +3882,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3917,7 +3917,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
@@ -3943,7 +3943,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe des interfaces pour lesquelles l'orientation du périphérique est essentielle à leur utilisation.</p>
 							<p>Dans ces situations, le critère est non applicable. Il peut s'agir d'interfaces de jeu, de piano, de dépôt de chèques bancaires, etc.</p>
@@ -3973,7 +3973,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-13-10-1">Test 13.10.1&nbsp;: Dans chaque page web, chaque fonctionnalité utilisable ou disponible suite à un contact multipoint est-elle également utilisable ou disponible suite à un contact en un point unique de l’écran (hors cas particuliers)&nbsp;?</li>
 							<li id="test-13-10-2">Test 13.10.2&nbsp;: Dans chaque page web, chaque fonctionnalité utilisable ou disponible suite à un geste basé sur le suivi d'une trajectoire sur l'écran est-elle également utilisable ou disponible suite à un contact en un point unique de l'écran (hors cas particuliers)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particuliers dans deux types de situation :</p>
 							<ul>
@@ -4005,7 +4005,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 								</ul>
 							</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque la fonctionnalité nécessite que le comportement attendu soit réalisé lors d'un événement descendant, par exemple, un émulateur de clavier dont les touches doivent s'activer à la pression comme sur un clavier physique. Dans ces situations, le critère est non applicable.</p>
 
@@ -4029,7 +4029,7 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-13-12-2">Test 13.12.2&nbsp;: Dans chaque page web, les fonctionnalités disponibles en faisant un geste en direction de l'appareil peuvent-elles être accomplies avec des <a href="rgaa4-glossaire.html#glossaire-23">composants d'interface</a> utilisateur (hors cas particuliers)&nbsp;?</li>
 							<li id="test-13-12-3">Test 13.12.3&nbsp;: L'utilisateur a-t-il la possibilité de désactiver la détection du mouvement pour éviter un déclenchement accidentel de la fonctionnalité (hors cas particuliers)&nbsp;?</li>
 						</ul>
-						<aside>
+						<aside class="criterion-complementary">
 							<h4>Cas particuliers</h4>
 							<p>Il existe une gestion de cas particulier lorsque :</p>
 							<ul>

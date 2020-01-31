@@ -33,35 +33,87 @@ pre, code, samp, var, tt { padding: .1em .3em; background-color: fade(@color,5%)
 
 #howto,
 #howto h3,
-.thematique p,
-.thematique aside,
 .thematique header h3,
-.thematique h4,
-.thematique .tags {
-	color: @color-mid; font-size: small;
+.thematique header p,
+.rgaa3 .thematique p,
+.rgaa3 .thematique aside,
+.rgaa3 .thematique h4,
+.rgaa3 .thematique .tags,
+.criterion-mapping {
+	color: @color-mid;
+	font-size: small;
 }
+
 #howto p,
 #howto ul,
-.thematique p { margin-bottom: 0; }
-#howto h3 { margin: 0; padding: @p/2 0; }
+.thematique p {
+	margin-bottom: 0;
+}
+
+#howto h3 {
+	margin: 0;
+	padding: @p/2 0;
+}
+
 .thematique header h3,
-.thematique h4 { margin: @gutter 0 0; padding: 0; }
+.thematique h4 {
+	margin: @gutter 0 0;
+	padding: 0;
+}
 
 .thematique aside {
 	margin: @p 0;
-	p { margin: 0; }
+
+	p {
+		margin: @p/2 0;
+	}
 }
 
-.thematique .tags { margin-top: @gutter; }
-.thematique .tags * { display: inline; margin: 0; }
-.thematique .tags span { font-weight: bold; display: none; }
-.thematique .tags span:after { content: " : "; }
-.thematique .tags li:before { content: " / "; }
-.thematique .tags li:first-child:before { content: ""; }
+.thematique .tags {
+	margin-top: @gutter;
+}
+
+.thematique .tags * {
+	display: inline;
+	margin: 0;
+}
+
+.thematique .tags span {
+	font-weight: bold;
+	display: none;
+}
+
+.thematique .tags span:after {
+	content: " : ";
+}
+
+.thematique .tags li:before {
+	content: " / ";
+}
+
+.thematique .tags li:first-child:before {
+	content: "";
+}
 
 .thematique aside h4 {
 	padding-top: @gutter;
 	border-top: 1px dashed fade(@color-mid, 30%);
+
+	&:first-child {
+		margin-top: @gutter*1.5;
+		border-top-width: 2px;
+	}
+}
+
+.thematique .criterion-complementary {
+	color: @color-complementary-txt;
+	font-size: 0.9em;
+
+	> h4 {
+		margin-top: @gutter*1.5;
+		padding-top: @gutter*1.5;
+		border-top: 2px dashed fade(@color-mid, 30%);
+	}
 }
 
 /* * thematique */
@@ -92,10 +144,23 @@ pre, code, samp, var, tt { padding: .1em .3em; background-color: fade(@color,5%)
 .thematique section h3 em { color: @color; font-weight: normal; font-style: normal; }
 
 .thematique section {
-	> ul { list-style: square; }
-	> ul > li { margin-bottom: @p; }
-	> ul ul { margin-top: @gutter/2; list-style-type: disc; font-size: .8em; }
-	> ul ul li { margin-bottom: @gutter/2; }
+	> ul {
+		list-style: square;
+	}
+
+	> ul > li {
+		margin-bottom: @p;
+	}
+
+	> ul ul { // RGAA lists under tests
+		margin-top: @gutter/2;
+		list-style-type: disc;
+		font-size: .9em;
+	}
+
+	> ul ul li {
+		margin-bottom: @gutter/2;
+	}
 }
 
 /* Glossary */

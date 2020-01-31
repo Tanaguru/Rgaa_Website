@@ -3,7 +3,6 @@
  */
 
 var heightFullMenu = $('.headsite').outerHeight(true);
-$('#nav').hide();
 
 
 $( document ).ready(function() {
@@ -13,20 +12,22 @@ $( document ).ready(function() {
 
 	var toto = false;
 
+	openMenu();
+
 	$("#btnnav").on('click', function() {
 		toto ? closeMenu() : openMenu();
 	});
 
 	function closeMenu() {
 		$('body').removeClass('opened-menu');
-		$('#nav').hide();
+		$('#nav').removeClass('nav-opened');
 		$("#btnnav").attr('aria-expanded','false');
 		toto = false;
 	}
 
 	function openMenu() {
 		$('body').addClass('opened-menu');
-		$('#nav').show();
+		$('#nav').addClass('nav-opened');
 		$("#btnnav").attr('aria-expanded','true');
 		toto = true;
 	}

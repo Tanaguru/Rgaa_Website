@@ -92,13 +92,13 @@ ErrorDocument 403 /403.html
 	#Redirect 301 /fr/mentions.html http://rgaa.tanaguru.com/mentions.html
 
 	#Redirect 301 /fr/rgaa4-1/ http://rgaa.tanaguru.com/rgaa4-1-criteres.html
-	Redirect 301 /rgaa4/base.html http://rgaa.tanaguru.com/rgaa4-1-base.html
-	Redirect 301 /rgaa4/cas-particuliers.html http://rgaa.tanaguru.com/rgaa4-1-criteres.html
-	Redirect 301 /rgaa4/criteres.html http://rgaa.tanaguru.com/rgaa4-1-criteres.html
-	Redirect 301 /rgaa4/glossaire.html http://rgaa.tanaguru.com/rgaa4-1-glossaire.html
-	Redirect 301 /rgaa4/notes-techniques.html http://rgaa.tanaguru.com/rgaa4-1-criteres.html
-	Redirect 301 /rgaa4/references.html http://rgaa.tanaguru.com/rgaa4-1-references.html
-	Redirect 301 /rgaa4/mentions.html http://rgaa.tanaguru.com/mentions.html
+	Redirect 301 /rgaa4-1/base.html http://rgaa.tanaguru.com/rgaa4-1-base.html
+	Redirect 301 /rgaa4-1/cas-particuliers.html http://rgaa.tanaguru.com/rgaa4-1-criteres.html
+	Redirect 301 /rgaa4-1/criteres.html http://rgaa.tanaguru.com/rgaa4-1-criteres.html
+	Redirect 301 /rgaa4-1/glossaire.html http://rgaa.tanaguru.com/rgaa4-1-glossaire.html
+	Redirect 301 /rgaa4-1/notes-techniques.html http://rgaa.tanaguru.com/rgaa4-1-criteres.html
+	Redirect 301 /rgaa4-1/references.html http://rgaa.tanaguru.com/rgaa4-1-references.html
+	Redirect 301 /rgaa4-1/mentions.html http://rgaa.tanaguru.com/mentions.html
 
 	#Redirect 301 /fr/rgaa4/ http://rgaa.tanaguru.com/rgaa4-criteres.html
 	Redirect 301 /rgaa4/base.html http://rgaa.tanaguru.com/rgaa4-base.html

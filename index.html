@@ -1794,6 +1794,13 @@ Fork : https://github.com/Tanaguru/Rgaa_Website
 							<li id="test-6-2-1"><a href="#test-6-2-1"><strong>Test 6.2.1</strong></a>&nbsp;: Dans chaque page web, chaque <a href="rgaa4-1-glossaire.html#glossaire-65">lien</a> a-t-il un <a href="rgaa4-1-glossaire.html#glossaire-57">intitulé</a> entre <code>&lt;a&gt;</code> et <code>&lt;/a&gt;</code>&nbsp;?</li>
 						</ul>
 						<aside class="criterion-complementary">
+							<h4>Notes techniques</h4>
+							<p>Une ancre n’est pas un lien même si pendant longtemps l’élément <code>&lt;a&gt;</code> a servi de support à cette technique. Elle n’est donc pas concernée par le présent critère.</p>
+
+							<h4>Note technique Tanaguru</h4>
+							<p>Il faut distinguer les ancres et les <a href="rgaa4-1-glossaire.html#glossaire-65">liens</a> vers les ancres. Dans le cadre de ce critère, les ancres dont il est question sont des éléments <code>&lt;a&gt;</code> sans attribut <code>href</code> avec un attribut <code>name</code> (avant HTML5) ou <code>id</code> qui permettent de faire, ensuite, un lien vers la zone identifiée.</p>
+							<p>Ainsi, une ancre, par exemple <code>&lt;a id="ancre"&gt;&lt;/a&gt;</code>, n'entre pas dans le périmètre de ce critère mais un lien vers une ancre, par exemple <code>&lt;a href="#ancre"&gt;&lt;/a&gt;</code>, sera bien concerné et devra avoir un intitulé entre les balises ouvrante et fermante.</p>
+
 							<div class="criterion-mapping">
 								<h4>Correspondances WCAG&nbsp;2.1</h4>
 								<ul>
